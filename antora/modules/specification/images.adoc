@@ -1,1 +1,1 @@
-../../../content/_static/images
+../../../content/images
