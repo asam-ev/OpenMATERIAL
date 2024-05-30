@@ -1,0 +1,11 @@
+[#top-scope-scope]
+= Scope
+
+ifndef::include-only-once[]
+:root-path: ../
+include::{root-path}_config.adoc[]
+endif::[]
+
+{THIS_STANDARD} specifies ...
+
+> Define the scope of this document/standard

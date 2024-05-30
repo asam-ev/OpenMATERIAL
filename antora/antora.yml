@@ -1,0 +1,43 @@
+# Component name (without spaces!). All content repositories with the same component name are merged in Antora.
+name: asamopenmaterial
+# CENTRAL DOCUMENT ONLY!!! Display name of the component. Define only once per component!
+title: ASAM OpenMATERIAL
+version:
+  # Update version number accordingly. This is the version for the main branch
+  main: 'current'
+  master: 'current'
+  v(*)-antora: V$1
+  x-antora-v(*): V$1
+  v(*): V$1
+  V(*): V$1
+  # Update version number accordingly. This is the version for any other activated branch (branch must be added in the generator site.yml!). Schema = 0.0.x-<branch-name> (only works for branches starting with "feature/")
+  (*): 'V3.6.0-$1'
+# CENTRAL DOCUMENT ONLY!!! First page of the component. Define only once per component!
+start_page: specification:index.adoc
+
+# THE FOLLOWING MAY ONLY DEFINED FOR THE CENTRAL DOCUMENT!!!
+asciidoc: # Sets global AsciiDoc attributes that are applied for every page of this component (from all repositories with the same version and component name!)
+  attributes:
+    # START - Mandatory ASAM attributes
+    use-antora-rules: true
+    THIS_STANDARD: ASAM OpenMATERIAL<sup>®</sup> # Normal attribute
+    THIS_STANDARD_TITLE: 'ASAM OSI^®^' # Normal attribute
+    # THIS_STANDARD: ASAM OSI # PDF version attribute
+    # THIS_STANDARD_TITLE: 'ASAM OSI' # PDF version attribute
+    partials-path: partial$
+    root-path: page$
+    appendix-caption: Annex
+    # appendix-offset: 1
+    # asam-terminology: v0.0.1@ASAM_Terminology:ROOT:partial$terms_and_definitions_opendrive.adoc
+    topicdir: topics
+    reusedir: reuse
+    imagesoutdir: ./images/generated_images
+    asamBibliography: 'specification:general_docs/bibliography.bib'
+
+nav:
+  - modules/specification/nav_introduction.adoc
+
+# Add more items here as required.
+# Recommended: One navigation file per document/repository!
+# Recommended: Name your module (folder) as your document type, e.g. "standard" or "concept" or "topic-guidelines"
+# Format: - modules/<module-folder-name>/<navigation-file-name>.adoc
