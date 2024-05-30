@@ -1,0 +1,8 @@
+* Introduction
+** xref:general_docs/foreword.adoc[]
+** xref:general_docs/introduction.adoc[]
+** xref:general_docs/scope.adoc[]
+** xref:general_docs/normative_references.adoc[]
+** xref:general_docs/terms_and_definitions.adoc[]
+** xref:general_docs/abbreviations.adoc[]
+** xref:general_docs/backward_compatibility.adoc[]
