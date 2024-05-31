@@ -1,0 +1,187 @@
+extends: default
+font:
+  catalog:
+    SourceSans3:
+      normal: SourceSans3-Regular.ttf
+      italic: SourceSans3-Italic.ttf
+      bold: SourceSans3-Bold.ttf
+      bold_italic: SourceSans3-BoldItalic.ttf
+    NotoSans:
+      normal: NotoSans-Regular.ttf
+      italic: NotoSans-Italic.ttf
+      bold: NotoSans-Bold.ttf
+      bold_italic: NotoSans-BoldItalic.ttf
+    Hack:
+      normal: Hack-Regular.ttf
+      italic: Hack-Italic.ttf
+      bold: Hack-Bold.ttf
+      bold_italic: Hack-BoldItalic.ttf
+    DejaVu: 
+      normal: DejaVuSans.ttf
+      bold: DejaVuSans-Bold.ttf
+      italic: DejaVuSans.ttf
+      bold_italic: DejaVuSans-Bold.ttf
+    Roboto: 
+      normal: Roboto-Regular.ttf
+      bold: Roboto-Bold.ttf
+      italic: Roboto-Italic.ttf
+      bold_italic: Roboto-BoldItalic.ttf
+  fallbacks:
+    - DejaVu
+    - Roboto
+page:
+  background_color: '#ffffff'
+  layout: portrait
+  initial_zoom: FitH
+  margin: [2.65cm, 0.67in, 0.67in, 0.67in]
+  # margin_inner and margin_outer keys are used for recto/verso print margins when media=prepress
+  margin_inner: 0.75in
+  margin_outer: 0.59in
+  size: A4
+  numbering:
+    start-at: cover
+base:
+  align: justify
+  # color as hex string (leading # is optional)
+  font_color: '#333333'
+  font_family: SourceSans3
+  font_size: 11.2
+  line-height: 1.15
+  line-height-length: 16
+link:
+  font_color: '#428bca'
+codespan:
+  font_size: 10
+  line_height_length: 16
+  font_color: [150,14,43]
+  font_family: Hack
+  glyphs: circled
+list:
+  indent: 20
+  #marker_font_color: 404040
+  # NOTE outline_list_item_spacing applies to list items that do not have complex content
+  item_spacing: 2 
+# code is used for source blocks
+code:
+  font_color: $base-font-color
+  font_family: $literal-font-family
+  font_size: $base-font-size * 0.8
+  padding: $code-font-size
+  line_height: 1.25
+  # line_gap is an experimental property to control how a background color is applied to an inline block element
+  line_gap: 3.8
+  background_color: '#F5F5F5'
+  border_color: '#CCCCCC'
+  border_radius: $base-border-radius
+  border_width: 0.75
+
+heading:
+  align: left
+  #font_color: 181818
+  font_color: '#006DA2'
+  font_style: bold
+  # h1 is used for part titles (book doctype) or the doctitle (article doctype)
+  h1_font_size: floor($base-font-size * 2.6)
+  # h2 is used for chapter titles (book doctype only)
+  h2_font_size: floor($base-font-size * 2.15)
+  h3_font_size: round($base-font-size * 1.7)
+  h4_font_size: $base-font-size-large
+  h5_font_size: $base-font-size
+  h6_font_size: $base-font-size-small
+title_page:
+  align: right
+  logo:
+    top: 10%
+  title:
+    top: 55%
+    font_size: $heading_h1_font_size
+    font_color: $role-subtitle-font-color
+    line_height: 0.9
+  subtitle:
+    font_size: $heading_h3_font_size
+    font_style: bold_italic
+    line_height: 1
+  authors:
+    margin_top: $base-font-size * 1.25
+    font_size: $base-font-size-large
+    font_color: '#181818'
+  revision:
+    margin_top: $base-font-size * 1.25
+caption:
+  align: left
+  font_size: $base-font-size * 0.95
+  font_style: italic
+  font_color: '#006DA2'
+image:
+  align: center
+  caption:
+    align: center
+table:
+  caption-side: top
+  background_color: $page-background-color
+  border_color: '#5b5b5b'
+  cell_padding: 4
+  border_width: $base-border-width * 0.5
+  grid-color: '#eeeeee'
+  head:
+    font_style: bold
+    border_bottom_width: $base-border-width * 0.5
+    border_bottom_color: '#5b5b5b'
+  foot:
+    background_color: '#f0f0f0'
+running-content:
+  start-at: 2
+header:
+  title-style: basic
+  font_size: $base-font-size
+  font_color: '#8e8e8e'
+  vertical_align: bottom
+  border-style: solid
+  border-width: 0.25
+  border-color: '#000000'
+  height:  2cm
+  padding: [2, 3,8, 1] # Measurement[top,right,bottom,left]
+  image-vertical-align: bottom # # (1)
+  verso:
+    left:
+      content: 'image:asam_logo.png[pdfwidth=4cm]'
+    right:
+      content: '{section-title}'
+  recto:
+    left:
+      content: $header-verso-left-content
+    right:
+      content: $header_verso_right_content
+conum:
+  font_family: $literal_font_family
+  font_color: $literal_font_color
+  font_size: $base_font_size
+  line_height: 4 / 3
+  glyphs: circled
+footer:
+  font_size: $base_font_size
+  font_color: '#8e8e8e'
+  # NOTE if background_color is set, background and border will span width of page
+  border-style: solid
+  border-width: 0.25
+  border-color: '#000000'
+  height: 45px
+  padding: [10px, 1px, 10px, 1px]
+  vertical_align: middle
+  recto:
+    #columns: "<50% =0% >50%"
+    left:
+      content: '{THIS_STANDARD}, {DELIVERABLE}, V{revnumber}'
+      # content: '{doctitle} {revnumber}'
+    right:
+      content: '{page-number}'
+  verso:
+    #columns: $footer_recto_columns
+    left:
+      content: $footer_recto_left_content
+    #columns: $footer_recto_columns
+    right:
+      content: $footer_recto_right_content
+cover:
+  back:
+    image: image:ASAM_Cover_back.pdf[fit=fill]

@@ -1,0 +1,51 @@
+// Contains common settings for all projects
+:version-label: Version
+:release_date: {docdate}
+:author: ASAM e.V.
+:email: info@asam.net
+:copyright: ASAM e.V. {docyear}
+:toclevels: 4
+:sectnumlevels: 4
+:sectnums:
+// do not render tocs of includes
+:no_child_tocs:
+:icons: font
+:doctype: article
+// source highlighting
+:source-highlighter: highlight.js
+:plantuml-format: svg
+ifdef::backend-html5[]
+:toc: left
+:nofooter:
+ifndef::asciidoc-resources[:asciidoc-resources: ../../asciidoc-resources]
+// html themes
+:stylesdir: {asciidoc-resources}/themes/html
+:stylesheet: asam.css
+:linkcs:
+:docinfodir: {asciidoc-resources}/themes/html
+:docinfo: shared,private
+//embed images into html
+:data-uri:
+endif::[]
+ifdef::backend-pdf[]
+:toc: macro
+:notitle:
+// Highlight.js does not support pdf.
+:source-highlighter: rouge
+// pdf themes
+:pdf-theme: asam.yml
+:title-logo-image: image:{asciidoc-resources}/themes/pdf/asam_logo.png[align=left, top=0.9cm, pdfwidth=10cm]
+endif::[]
+//
+:!last-update-label:
+:mathematical-format: svg
+//
+:stem: latexmath
+:xrefstyle: short
+:bibtex-style: iso690-numeric-brackets-cs
+// Custom xrefstyle shorthands for figures, tables, chapters, sections, and code
+:fig-style: xrefstyle="short"
+:tab-style: xrefstyle="short"
+:top-style: xrefstyle="full"
+:sec-style: xrefstyle="full"
+:code-style: xrefstyle="short"
