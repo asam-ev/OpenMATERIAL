@@ -1,0 +1,36 @@
+= Modal verbs
+
+To ensure compliance with the {THIS_STANDARD} standard, users need to be able to distinguish between mandatory requirements, recommendations, permissions, as well as possibilities and capabilities.
+
+The following rules for using modal verbs apply:
+
+[#tab-modal-verb-definition]
+.Rules for using modal verbs
+[%header, cols=2*]
+|===
+|Provision |Verbal form
+|*Requirements* +
+Requirements shall be followed strictly in order to conform to the standard. Deviations are not allowed.
+|shall +
+shall not
+
+|*Recommendations* +
+Recommendations indicate that one possibility out of the several available is particularly suitable, without mentioning or excluding the other possibilities.
+|should +
+should not
+
+|*Permissions* +
+Permissions indicate a course of action permissible within the limits of {THIS_STANDARD} deliverables.
+|may +
+need not
+
+|*Possibilities and capabilities* +
+Verbal forms used to state possibilities or capabilities, whether technical, material, physical, etc.
+|can +
+cannot
+
+|*Obligations and necessities* +
+Verbal forms used to describe legal, organizational, or technical obligations and necessities that are not regulated or enforced by the {THIS_STANDARD} standard.
+|must +
+must not
+|===
