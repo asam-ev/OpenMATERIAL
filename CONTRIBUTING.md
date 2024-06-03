@@ -4,7 +4,7 @@
 
 To make a good faith effort to ensure licensing criteria are met, this project requires the Developer Certificate of Origin (DCO) process to be followed.
 The DCO is an attestation attached to every contribution made by every developer.
-In the commit message of the contribution, (described more fully later in this document), the developer simply adds a Signed-off-by statement and thereby agrees to the DCO.
+In the commit message of the contribution, (described more fully later in this document), the developer simply adds a "Signed-off-by" statement and thereby agrees to the DCO.
 When a developer submits a patch, it is a commitment that the contributor has the right to submit the patch per the license.
 The DCO agreement is shown below and online at [developercertificate.org](https://developercertificate.org/).
 
@@ -62,7 +62,7 @@ fi
 
 Placing this script into a file called `.git/hooks/commit-msg` and making it executable (e.g. using `chmod a+x .git/hooks/commit-msg` on unixoid operating systems) will prevent commits without a sign-off.
 
-## GPG Commit Signature Verification
+## GPG commit signature verification
 
 Every commit in a repository of OpenMSL requires a verification of the commit signature using GPG-sign commits with `-S [<keyid>]`.
 The `keyid` argument is optional and defaults to the committer identity;
@@ -76,39 +76,51 @@ Using DCO, GPG and a custom commit message, your commit command reads e.g.
 git commit -s -S -m "Your commit message"
 ```
 
-## Implement Changes
+## Implement changes
 
 Feature additions and bug fixes from the community are very welcome.
 Therefore, feel free not only to report an issue but also to work on a solution right away.
-In order to implement changes, you can either fork the repository or request access to the contributors group. Then you can make your changes directly in this repository.
-Either way, please follow the process: issue -> branch -> draft pull request -> pull request.
+In order to implement changes, you can:
+
+- fork the repository.
+- request access to the contributors group. Then you can make your changes directly in this repository.
+
+For both ways, the following workflow applies:
+
+1. Open an issue.
+2. Create a branch.
+3. Create a draft pull request.
+4. Convert the draft pull request into a 'real' pull request.
+
 Labels are given for each step as described in the [ASAM contribution workflow](https://asam-ev.github.io/asam-project-guide/asamprojectguide/latest/compendium/Development/contribution.html).
 The steps are further described in the following.
 
-### Issue
+### Open an issue
 
 The first step is to identify and describe a bug or feature.
-Open a new issue in the repository with the respective template for a bug or a feature.
+Open a new issue in the GitHub repository with the respective template for a bug or a feature.
+
 Please check the official [ASAM issue guideline](https://asam-ev.github.io/asam-project-guide/asamprojectguide/latest/compendium/Development/contribute_with_issues.html).
 
-### Branch
+### Create an branch
 
-Create a new branch, where you can start working on the issue.
+Create a new branch where you can start working on the issue.
 You can use the link on the right side in the issue ("Development: Create a branch for this issue") to automatically create a new branch for the issue.
+
 In order to create a branch, either fork the repository or request access to the contributors group.
 
-### Draft Pull Request
+### Create a draft pull request
 
-After creating the branch, commit first changes.
-Please follow the signing instructions for commits above.
-Then create a draft pull request.
-Use the template for pull requests and fill it out accordingly.
+- After creating the branch, commit your first changes. Follow the signing instructions for commits (DCO) above.
+- Create a draft pull request. Use the template for pull requests and fill it out accordingly.
 Be sure to link the issue you created earlier in the pull request.
-On the bottom you can select to either submit as a pull request or a draft pull request.
-Use a draft first, so the community can already see the ongoing work.
+- In the bottom, you can select to either submit as a pull request or as a draft pull request.
+- Use a draft pull request first, so the community can already see the ongoing work.
+  
 Also, the CI pipeline will run for every commit, so you can continuously check your work.
 
-### Pull request
+### Convert into 'real' pull request
 
 Once you are done with your changes, [convert the draft to a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request).
-Then the change control board (CCB) will know, that you are done with your changes and the pull request can be reviewed to be merged.
+
+By this, the change control board (CCB) knows that you are done with your work and that the pull request is ready for review and merge.
