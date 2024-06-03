@@ -102,7 +102,7 @@ Open a new issue in the GitHub repository with the respective template for a bug
 
 Please check the official [ASAM issue guideline](https://asam-ev.github.io/asam-project-guide/asamprojectguide/latest/compendium/Development/contribute_with_issues.html).
 
-### Create an branch
+### Create a branch
 
 Create a new branch where you can start working on the issue.
 You can use the link on the right side in the issue ("Development: Create a branch for this issue") to automatically create a new branch for the issue.
@@ -116,11 +116,12 @@ In order to create a branch, either fork the repository or request access to the
 Be sure to link the issue you created earlier in the pull request.
 - In the bottom, you can select to either submit as a pull request or as a draft pull request.
 - Use a draft pull request first, so the community can already see the ongoing work.
+- In this stage, the review from parson takes place.
   
 Also, the CI pipeline will run for every commit, so you can continuously check your work.
 
 ### Convert into 'real' pull request
 
-Once you are done with your changes, [convert the draft to a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request).
+Once you are done with your changes and the review from parson took place, [convert the draft to a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request).
 
 By this, the change control board (CCB) knows that you are done with your work and that the pull request is ready for review and merge.
