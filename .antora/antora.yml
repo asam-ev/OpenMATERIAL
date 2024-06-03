@@ -11,7 +11,7 @@ version:
   v(*): V$1
   V(*): V$1
   # Update version number accordingly. This is the version for any other activated branch (branch must be added in the generator site.yml!). Schema = 0.0.x-<branch-name> (only works for branches starting with "feature/")
-  (*): 'V3.6.0-$1'
+  (*): 'V1.0.0-$1'
 # CENTRAL DOCUMENT ONLY!!! First page of the component. Define only once per component!
 start_page: specification:index.adoc
 
@@ -21,9 +21,9 @@ asciidoc: # Sets global AsciiDoc attributes that are applied for every page of t
     # START - Mandatory ASAM attributes
     use-antora-rules: true
     THIS_STANDARD: ASAM OpenMATERIAL<sup>®</sup> # Normal attribute
-    THIS_STANDARD_TITLE: 'ASAM OSI^®^' # Normal attribute
-    # THIS_STANDARD: ASAM OSI # PDF version attribute
-    # THIS_STANDARD_TITLE: 'ASAM OSI' # PDF version attribute
+    THIS_STANDARD_TITLE: 'ASAM OpenMATERIAL^®^' # Normal attribute
+    # THIS_STANDARD: ASAM OpenMATERIAL # PDF version attribute
+    # THIS_STANDARD_TITLE: 'ASAM OpenMATERIAL' # PDF version attribute
     partials-path: partial$
     root-path: page$
     appendix-caption: Annex
