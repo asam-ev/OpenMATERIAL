@@ -82,12 +82,14 @@ Feature additions and bug fixes from the community are very welcome.
 Therefore, feel free not only to report an issue but also to work on a solution right away.
 In order to implement changes, you can either fork the repository or request access to the contributors group. Then you can make your changes directly in this repository.
 Either way, please follow the process: issue -> branch -> draft pull request -> pull request.
+Labels are given for each step as described in the [ASAM contribution workflow](https://asam-ev.github.io/asam-project-guide/asamprojectguide/latest/compendium/Development/contribution.html).
 The steps are further described in the following.
 
 ### Issue
 
 The first step is to identify and describe a bug or feature.
 Open a new issue in the repository with the respective template for a bug or a feature.
+Please check the official [ASAM issue guideline](https://asam-ev.github.io/asam-project-guide/asamprojectguide/latest/compendium/Development/contribute_with_issues.html).
 
 ### Branch
 
