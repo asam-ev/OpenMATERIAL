@@ -6,7 +6,276 @@ ifndef::include-only-once[]
 include::{root-path}_config.adoc[]
 endif::[]
 
-TODO: Add terms and definitions
+3D Application Terms::
+(To be defined)
 
-Static road network::
-Collection of connected roads enriched by static objects that do not change during runtime of a simulation.
+* Source: 
+* Notes: Taken over from terminology collection list on Sharepoint.
+
+3D Model::
+A (mathematical) geometrical, coordinate-based representation of the surface of an object.
+
+* Source: 
+* Notes: 
+
+3D Environment::
+(To be defined)
+
+* Source: 
+* Notes: 
+
+Asset::
+A 3D geometry combined with assigned material data and specific meta data.
+
+* Source:
+* Notes: 
+
+Camera sensor::
+(To be defined)
+
+* Source: 
+* Notes: 
+
+Closed loop::
+(To be defined)
+
+* Source: 
+* Notes: 
+
+Co-Simulation::
+Simulating multiple independent models connected with interfaces.
+
+* Source: 
+* Notes: 
+
+Environment::
+(To be defined)
+
+* Source: 
+* Notes: Differentiate between 3D environment and simulation environment.
+
+Ground truth::
+True static and dynamic states of all objects as defined by content creator or observed by omniscient observer (e.g. simulation platform).
+
+* Source: 
+* Notes: 
+
+Label::
+(To be defined)
+
+* Source: 
+* Notes: There is no definition for "Label" in OpenLABEL.
+
+Lidar sensor::
+(To be defined)
+
+* Source:
+* Notes:
+
+Material assignment::
+A mapping of material names to parts of 3D models.
+
+* Source: 
+* Notes:
+
+Material classification::
+Sorting materials into classes.
+
+* Source: 
+* Notes:
+
+Material property::
+Intensive physical or chemical properties of a material 
+
+* Source: 
+* Notes: Open Point: What about geometric properties, i.e. roughness, thickness?
+
+Material::
+(To be defined)
+
+* Source:
+* Notes:
+
+Measurement::
+(To be defined)
+
+* Source: 
+* Notes: We would take different meanings compared to an automotive testing domain.
+
+Model::
+(To be defined)
+
+* Source: 
+* Notes: Differentiate between 3D model and other models, e.g. sensor models, logics models, vehicle models.
+
+Multispectral/hyperspectral::
+Wide range of wavelengths.
+
+* Source: 
+* Notes:
+
+Normals (face, vertex normals)::
+(To be defined)
+
+* Source: 
+* Notes: Look up normal vector on surface.
+
+Object::
+An object ID can be assigned, discrete meshes, defined 3D boundaries.
+
+* Source: 
+* Notes:
+
+Object Part / Subtype::
+(To be defined)
+
+* Source: 
+* Notes: What is an object and what is an object part?
+
+Object Type::
+Class of objects with common properties
+
+* Source: 
+* Notes:
+
+Open loop::
+(To be defined)
+
+* Source: 
+* Notes:
+
+Opacity | Translucence | Transparency::
+(To be defined)
+
+* Source: 
+* Notes: Taken over from terminology collection list on Sharepoint.
+
+Parameter File::
+(To be defined)
+
+* Source: 
+* Notes:
+
+Path tracing::
+(To be defined)
+
+* Source: 
+* Notes:
+
+Perception::
+"Machine perception is to reliably detect all the other road users relevant to the operation of the automated driving, and to assign them correctly to the traffic infrastructure."
+
+* Source: Klaus Dietmayer, Predicting of Machine Perception for Automated Driving, 2016
+* Notes:
+
+Physical (as in physical parameter)::
+A physical property is any property of a physical system that is measurable. 
+
+* Source: Mark, Burgin (2016-10-27). Theory Of Knowledge: Structures And Processes
+* Notes:
+
+Post (Rendering) Effects::
+Rendering techniques to improve fidelity while maintaining performance, that are typically non-physical (or in other words fake)
+
+* Source: 
+* Notes:
+
+Radar sensor::
+(To be defined)
+
+* Source:
+* Notes:
+
+Ray tracing::
+(To be defined)
+
+* Source: 
+* Notes:
+
+Real time / offline::
+(To be defined)
+
+* Source: 
+* Notes:
+
+Roughness::
+(To be defined)
+
+* Source: 
+* Notes:
+
+Scene::
+(To be defined)
+
+* Source: 
+* Notes:
+
+Scenario.::
+A description of the behavior or temporal evolution of physical objects and environmental conditions on the driving infrastructure over an interval of time, including the movement of traffic participants or the change of environmental conditions.
+
+* Source: 
+* Notes: OpenSCENARIO standard, 2024
+
+Signal (Energy) Propagation::
+"During signal [or energy] propagation, the signal travels through the environment and possibly interacts with objects and particles."
+
+* Source: Linnhoff et al., Towards Serious Perception Sensor..., 2021
+* Notes:
+
+Simulation environment::
+(To be defined)
+
+* Source: 
+* Notes:
+
+Simulation Platform::
+Difference between platform (possibly handling rendering, physics etc.)  and an orchestrator (only handling model execution and interfacing)
+
+* Source: 
+* Notes:
+
+Simulation::
+(Look up definition)
+
+* Source: 
+* Notes:
+
+Texture::
+(To be defined)
+
+* Source: 
+* Notes: Taken over from terminology collection list on Sharepoint.
+
+Texture coordinates::
+(To be defined)
+
+* Source: 
+* Notes: Taken over from terminology collection list on Sharepoint.
+
+Thermal camera sensor::
+(To be defined)
+
+* Source: 
+* Notes:
+
+Ultrasonic sensor::
+(To be defined)
+
+* Source: 
+* Notes:
+
+Validation::
+Comparing simulated data to measured data and quantifying the differences.
+
+* Source: 
+* Notes:
+
+
+Suggested terms from the Word list in Sharepoint that might be added to the terminology list::
+
+* Acronym
+* File Formats
+* Fresnel equation
+* ISO Standard
+* Other ASAM standards
+* Road Surface Cover
