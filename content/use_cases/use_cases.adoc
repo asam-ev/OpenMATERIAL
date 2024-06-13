@@ -23,120 +23,189 @@ A project proposal should consider all three perspectives in order to provide a 
 [cols="1,5",caption='Use case 1: ']
 .Creating 3D assets linked to material  properties (incl. meshes, material properties, textures)
 |===
-|*Type of use case*     |technical use case
-|*Description*          |<Write a brief description of the use case>
-|*Relevant users*       |<One or more relevant user perspectives>
-|*Author*               |<Name, e-mail address of the author, in case of questions>
+|*Type of use case*         |technical use case
+|*Description*              |As a content creator, I want to create 3D assets for perception sensor simulation in a standardized format. The assets shall be linked to material properties. 
+|*Material and 3D Structure*|Materials and 3D Structure
+|*Influencing Standards*    |OGC CDB
+|*Influencing Technologies* |3D Modeling (e.g. 3dsMax, Maya), 3D Engine (e.g. Ureal Engine) 
+|*Used 3D Model Formats*    |glTF, FBX, USD, OSG, OBJ, IVE, udatasmith, FLT, DirectX, 3DS, DAE 
+|*Used Material Formats*    |MDL
+|*Companies*                |IAE, IPG, Foretellix, Persival, PilotD, TrianGraphics 
+|*Personas*                 |Content creator
 |===
 
 [cols="1,5",caption='Use case: 2 ']
 .Creating material data with physical or measured properties
 |===
-|*Type of use case*     |technical use case
-|*Description*          |<Write a brief description of the use case>
-|*Relevant users*       |<One or more relevant user perspectives>
-|*Author*               |<Name, e-mail address of the author, in case of questions>
+|*Type of use case*         |technical use case
+|*Description*              |As a measurement engineer, I want to create material data for use in perception sensor simulation. The data shall consist of physical or measured properties of materials, that can be assigned to 3D meshes.
+|*Material and 3D Structure*|Materials and 3D Structure
+|*Influencing Standards*    |
+|*Influencing Technologies* | 
+|*Used 3D Model Formats*    |glTF, FBX, USD, OSG, OBJ, IVE, udatasmith 
+|*Used Material Formats*    |glTF, MDL, AFX, MaterialX, .rrdata.xml (exported from RoadRunner) 
+|*Companies*                |Persival, PilotD 
+|*Personas*                 |Measurement engineer 
 |===
 
 [cols="1,5",caption='Use case 3: ']
 .Validating material properties and 3D geometries
 |===
-|*Type of use case*     |technical use case
-|*Description*          |<Write a brief description of the use case>
-|*Relevant users*       |<One or more relevant user perspectives>
-|*Author*               |<Name, e-mail address of the author, in case of questions>
+|*Type of use case*         |technical use case
+|*Description*              |As a measurement engineer, I want to validate 3D geometries and material properties. This validation is performed as a comparison of the data (material properties and defined points in the 3D geometry) against measurements from the real world.
+|*Material and 3D Structure*|Materials and 3D Structure
+|*Influencing Standards*    |
+|*Influencing Technologies* |
+|*Used 3D Model Formats*    |glTF, FBX, USD, OSG, OBJ 
+|*Used Material Formats*    |glTF, MDL, AFX, MaterialX 
+|*Companies*                |Persival
+|*Personas*                 |Measurement engineer, regulator 
 |===
 
 [cols="1,5",caption='Use case 4: ']
 .Distributing material data and 3D assets with copyright/legal consideration
 |===
-|*Type of use case*     |technical use case
-|*Description*          |<Write a brief description of the use case>
-|*Relevant users*       |<One or more relevant user perspectives>
-|*Author*               |<Name, e-mail address of the author, in case of questions>
+|*Type of use case*         |technical use case
+|*Description*              |As a content creation company, we want to distribute material data and 3D assets under copyright and license considerations. 
+
+To distribute material data and 3D assets efficiently, it shall be possible to reuse the data and assets in different simulation platforms and sensor models with varying sensor technologies (wavelengths). 
+|*Material and 3D Structure*|Materials and 3D Structure
+|*Influencing Standards*    |
+|*Influencing Technologies* |
+|*Used 3D Model Formats*    |glTF, FBX, USD, OSG, OBJ 
+|*Used Material Formats*    |
+|*Companies*                |ADaC, Ansys, BMW, IPG, Fortellix, Persival, PilotD 
+|*Personas*                 |Content creator
 |===
 
 [cols="1,5",caption='Use case 5: ']
-.Sharing and reusing 3D models and material data in different simulation platforms and sensor models with varying sensor technology (wavelength)
+.Importing 3D assets linked to material properties between into shared sensor simulation models (FMU)
 |===
-|*Type of use case*     |technical use case
-|*Description*          |<Write a brief description of the use case>
-|*Relevant users*       |<One or more relevant user perspectives>
-|*Author*               |<Name, e-mail address of the author, in case of questions>
+|*Type of use case*         |technical use case
+|*Description*              |As a sensor model developer, I want to import 3D assets into sensor models, packaged as FMUs.  
+|*Material and 3D Structure*|Materials and 3D Structure
+|*Influencing Standards*    |FMI, OSI (OSMP), OpenLABEL, OpenDRIVE, OpenSCENARIO, 
+|*Influencing Technologies* |Unreal Engine, Unity, OptiX, CUDA 
+|*Used 3D Model Formats*    |glTF, FBX, USD, OSG, OBJ 
+|*Used Material Formats*    |
+|*Companies*                |ADaC, Ansys, BMW, Persival 
+|*Personas*                 |Sensor model developer 
 |===
 
 [cols="1,5",caption='Use case 6: ']
-.Importing 3D assets linked to material properties between into shared sensor simulation models (FMU)
+.Importing 3D assets linked to material  properties into simulation environment/platform
 |===
-|*Type of use case*     |technical use case
-|*Description*          |<Write a brief description of the use case>
-|*Relevant users*       |<One or more relevant user perspectives>
-|*Author*               |<Name, e-mail address of the author, in case of questions>
+|*Type of use case*         |technical use case
+|*Description*              |As a simulation platform developer, I want to import 3D assets into a simulation platform. 
+|*Material and 3D Structure*|Materials and 3D Structure
+|*Influencing Standards*    |
+|*Influencing Technologies* |Unreal Engine, Unity, Unigine, OptiX, CUDA  
+|*Used 3D Model Formats*    |glTF, FBX, USD, OSG, OBJ  
+|*Used Material Formats*    |
+|*Companies*                |IPG
+|*Personas*                 |Simulation platform developer 
 |===
 
 [cols="1,5",caption='Use case 7: ']
-.Importing 3D assets linked to material  properties into simulation environment/platform
+.Retrofitting or changing material  properties independent of 3D assets into simulation environment/platform
 |===
-|*Type of use case*     |technical use case
-|*Description*          |<Write a brief description of the use case>
-|*Relevant users*       |<One or more relevant user perspectives>
-|*Author*               |<Name, e-mail address of the author, in case of questions>
+|*Type of use case*         |technical use case
+|*Description*              |As a simulation platform developer, I want to retrofit or change material properties independent of 3D assets in a simulation platform. 
+|*Material and 3D Structure*|Materials
+|*Influencing Standards*    |OpenLABEL 
+|*Influencing Technologies* |Unreal Engine, Unity, OptiX, CUDA 
+|*Used 3D Model Formats*    |
+|*Used Material Formats*    |
+|*Companies*                |Ansys, dSPACE 
+|*Personas*                 |Simulation platform developer
 |===
 
 [cols="1,5",caption='Use case 8: ']
-.Retrofitting or changing material  properties independent of 3D assets into simulation environment/platform
+.Importing 3D assets with baked/included material properties into simulation environment/platform
 |===
-|*Type of use case*     |technical use case
-|*Description*          |<Write a brief description of the use case>
-|*Relevant users*       |<One or more relevant user perspectives>
-|*Author*               |<Name, e-mail address of the author, in case of questions>
+|*Type of use case*         |technical use case
+|*Description*              |As a simulation platform developer, I want to import 3D assets with included material properties into a simulation platform. 
+|*Material and 3D Structure*|Materials and 3D Structure
+|*Influencing Standards*    |
+|*Influencing Technologies* |
+|*Used 3D Model Formats*    |glTF, FBX, USD, OSG, OBJ  
+|*Used Material Formats*    |
+|*Companies*                |
+|*Personas*                 |Simulation platform developer
 |===
 
 [cols="1,5",caption='Use case 9: ']
-.Importing 3D assets with baked/included material properties into simulation environment/platform
+.Moving object parts in the environment simulation
 |===
-|*Type of use case*     |technical use case
-|*Description*          |<Write a brief description of the use case>
-|*Relevant users*       |<One or more relevant user perspectives>
-|*Author*               |<Name, e-mail address of the author, in case of questions>
+|*Type of use case*         |technical use case
+|*Description*              |As a simulation platform or sensor model developer, I want to move objects as well as individual parts of the objects during simulation runtime. These can be parts of a vehicle, e.g. wheels and doors or the skeleton bones of a pedestrian. One option to manipulate the imported 3D assets during simulation runtime, is using ASAM OSI. In the https://opensimulationinterface.github.io/osi-antora-generator/asamosi/V3.6.0/gen/structosi3_1_1GroundTruth.html[osi3::GroundTruth] message, information about moving and stationary objects is provided from the scenario engine to the sensor model. This entails object positions, orientations, velocities etc. for every simulation time step, but also a so-called model_reference. This reference is the path to a 3D asset associated with the object (or the stationary environment). Using the pose information together with the 3D mesh data, a 3D environment is constructed and updated for every simulation time step. Further attributes, such as https://opensimulationinterface.github.io/osi-antora-generator/asamosi/V3.6.0/gen/structosi3_1_1MovingObject_1_1VehicleAttributes_1_1WheelData.html[wheel positions] for vehicles or https://opensimulationinterface.github.io/osi-antora-generator/asamosi/V3.6.0/gen/structosi3_1_1MovingObject_1_1PedestrianAttributes_1_1Bone.html[bone poses] for pedestrians, enable a more refined movement of traffic participants in the 3D environment. 
+|*Material and 3D Structure*|Materials and 3D Structure
+|*Influencing Standards*    |OSI
+|*Influencing Technologies* |
+|*Used 3D Model Formats*    |glTF, FBX, USD, OSG, OBJ 
+|*Used Material Formats*    |
+|*Companies*                |Persival
+|*Personas*                 |Simulation platform developer
 |===
 
 [cols="1,5",caption='Use case 10: ']
-.Moving object parts in the environment simulation
+.Simulating energy/signal propagation with 3D assets linked to material properties 
 |===
-|*Type of use case*     |technical use case
-|*Description*          |<Write a brief description of the use case>
-|*Relevant users*       |<One or more relevant user perspectives>
-|*Author*               |<Name, e-mail address of the author, in case of questions>
+|*Type of use case*         |technical use case
+|*Description*              |As a simulation platform or sensor model developer, I want to simulate the energy/signal propagation using imported 3D assets with linked material properties. This is for example done with ray tracing. Rays are launched in a virtual 3D scene to simulate the propagation of light beams, radio waves or ultrasonic waves. The interaction of the rays with the surfaces of the objects in the 3D environment depends on the material properties of these surfaces. These properties are assigned to the 3D geometries of the objects and imported from a material database. 
+
+The simulation shall be able to cope with different real-time requirements (SiL, HiL, open-loop, closed-loop etc.).
+|*Material and 3D Structure*|Materials and 3D Structure
+|*Influencing Standards*    |
+|*Influencing Technologies* |Nvidia OptiX 
+|*Used 3D Model Formats*    |glTF, FBX, USD, OSG, OBJ 
+|*Used Material Formats*    |
+|*Companies*                |ADaC, Ansys, Persival, PilotD 
+|*Personas*                 |Simulation platform developer, sensor model developer, end user 
 |===
 
 [cols="1,5",caption='Use case 11: ']
+.Using sensor simulation to train perception algorithms
+|===
+|*Type of use case*         |technical use case
+|*Description*              |As a perception algorithm developer, I want to use simulated environments for model training and testing, as real-world information collection is too expensive and inconvenient. 
+|*Material and 3D Structure*|Materials and 3D Structure
+|*Influencing Standards*    |OSI, OpenSCENARIO, OpenDRIVE 
+|*Influencing Technologies* |Unity, OptiX, Regeneration AI 
+|*Used 3D Model Formats*    |
+|*Used Material Formats*    |
+|*Companies*                |Jiao Tong University, ViF 
+|*Personas*                 |End user
+|===
+
+////
+[cols="1,5",caption='Use case 12: ']
+.Sharing and reusing 3D models and material data in different simulation platforms and sensor models with varying sensor technology (wavelength)
+|===
+|*Type of use case*         |
+|*Description*              | 
+|*Material and 3D Structure*|
+|*Influencing Standards*    |
+|*Influencing Technologies* |
+|*Used 3D Model Formats*    |
+|*Used Material Formats*    |
+|*Companies*                |
+|*Personas*                 |
+|=== 
+
+[cols="1,5",caption='Use case 13: ']
 .Using 3D assets linked to material properties in energy/signal propagation to feed sensor (signal processing)  models
 |===
-|*Type of use case*     |technical use case
-|*Description*          |<Write a brief description of the use case>
-|*Relevant users*       |<One or more relevant user perspectives>
-|*Author*               |<Name, e-mail address of the author, in case of questions>
-|===
-
-[cols="1,5",caption='Use case 12: ']
-.Using  sensor simulation to train perception algorithms
-|===
-|*Type of use case*     |technical use case
-|*Description*          |<Write a brief description of the use case>
-|*Relevant users*       |<One or more relevant user perspectives>
-|*Author*               |<Name, e-mail address of the author, in case of questions>
+|*Type of use case*         |
+|*Description*              | 
+|*Material and 3D Structure*|
+|*Influencing Standards*    |
+|*Influencing Technologies* |
+|*Used 3D Model Formats*    |
+|*Used Material Formats*    |
+|*Companies*                |
+|*Personas*                 |
 |===
 
 
 ////
-== User stories (optional)
-It might be useful for new projects to extend use cases to user stories.
-User stories provide a more comprehensive picture of user needs.
-Use the following template:
-
-_As a <user role>, I want to <do>, <have>, <use> something because / in order to..._
-
-Example: As an AV/ADAS developer, I want to search, review and reuse scenarios built by other companies, because we rely on specialized external suppliers for scenario data for our development activities.
-////
-
