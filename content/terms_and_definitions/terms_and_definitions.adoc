@@ -6,276 +6,86 @@ ifndef::include-only-once[]
 include::{root-path}_config.adoc[]
 endif::[]
 
-3D Application Terms::
-(To be defined)
-
-* Source: 
-* Notes: Taken over from terminology collection list on Sharepoint.
+3D Asset::
+A 3D model. containing the 3D geometry, combined with assigned material properties and specific meta data.
 
 3D Model::
 A (mathematical) geometrical, coordinate-based representation of the surface of an object.
-
-* Source: 
-* Notes: 
+This excludes physical material properties. For a combination of 3D geometry and physical material properties, see 3D Asset.
 
 3D Environment::
-(To be defined)
-
-* Source: 
-* Notes: 
-
-Asset::
-A 3D geometry combined with assigned material data and specific meta data.
-
-* Source:
-* Notes: 
-
-Camera sensor::
-(To be defined)
-
-* Source: 
-* Notes: 
-
-Closed loop::
-(To be defined)
-
-* Source: 
-* Notes: 
+A 3D representation of the surrounding of a simulated sensor.
+The 3D environment can consist of multiple 3D assets.
 
 Co-Simulation::
 Simulating multiple independent models connected with interfaces.
-
-* Source: 
-* Notes: 
-
-Environment::
-(To be defined)
-
-* Source: 
-* Notes: Differentiate between 3D environment and simulation environment.
+A co-simulation platform handles the timing and data transfer between the individual models
 
 Ground truth::
 True static and dynamic states of all objects as defined by content creator or observed by omniscient observer (e.g. simulation platform).
 
-* Source: 
-* Notes: 
-
-Label::
-(To be defined)
-
-* Source: 
-* Notes: There is no definition for "Label" in OpenLABEL.
-
-Lidar sensor::
-(To be defined)
-
-* Source:
-* Notes:
+Material::
+A collection of material properties belonging to one entity.
 
 Material assignment::
-A mapping of material names to parts of 3D models.
-
-* Source: 
-* Notes:
+A mapping of material IDs to parts of 3D models.
+The material IDs are unique a point to a set of material properties in separate material files.
 
 Material classification::
 Sorting materials into classes.
 
-* Source: 
-* Notes:
+Material Parameter File::
+A file in json format containing defined material properties according to the OpenMATERIAL standard.
 
 Material property::
 Intensive physical or chemical properties of a material 
 
-* Source: 
 * Notes: Open Point: What about geometric properties, i.e. roughness, thickness?
 
-Material::
-(To be defined)
-
-* Source:
-* Notes:
-
-Measurement::
-(To be defined)
-
-* Source: 
-* Notes: We would take different meanings compared to an automotive testing domain.
-
-Model::
-(To be defined)
-
-* Source: 
-* Notes: Differentiate between 3D model and other models, e.g. sensor models, logics models, vehicle models.
-
 Multispectral/hyperspectral::
-Wide range of wavelengths.
-
-* Source: 
-* Notes:
+A wide range of wavelengths.
 
 Normals (face, vertex normals)::
-(To be defined)
-
-* Source: 
-* Notes: Look up normal vector on surface.
+A vector that is perpendicular to a given object, surface, vertex or geometrical primitive.
 
 Object::
-An object ID can be assigned, discrete meshes, defined 3D boundaries.
-
-* Source: 
-* Notes:
+An entity to which an object ID can be assigned.
+It comprises discrete meshes and defined 3D boundaries.
 
 Object Part / Subtype::
 (To be defined)
 
-* Source: 
 * Notes: What is an object and what is an object part?
 
 Object Type::
 Class of objects with common properties
 
-* Source: 
-* Notes:
-
-Open loop::
-(To be defined)
-
-* Source: 
-* Notes:
-
-Opacity | Translucence | Transparency::
-(To be defined)
-
-* Source: 
-* Notes: Taken over from terminology collection list on Sharepoint.
-
-Parameter File::
-(To be defined)
-
-* Source: 
-* Notes:
-
-Path tracing::
-(To be defined)
-
-* Source: 
-* Notes:
-
 Perception::
+The process of detecting objects and generating situational awareness of the surrounding of an automated system using perception sensors.
 "Machine perception is to reliably detect all the other road users relevant to the operation of the automated driving, and to assign them correctly to the traffic infrastructure."
 
 * Source: Klaus Dietmayer, Predicting of Machine Perception for Automated Driving, 2016
-* Notes:
 
 Physical (as in physical parameter)::
 A physical property is any property of a physical system that is measurable. 
 
 * Source: Mark, Burgin (2016-10-27). Theory Of Knowledge: Structures And Processes
-* Notes:
 
 Post (Rendering) Effects::
 Rendering techniques to improve fidelity while maintaining performance, that are typically non-physical (or in other words fake)
 
-* Source: 
-* Notes:
-
-Radar sensor::
-(To be defined)
-
-* Source:
-* Notes:
-
-Ray tracing::
-(To be defined)
-
-* Source: 
-* Notes:
-
-Real time / offline::
-(To be defined)
-
-* Source: 
-* Notes:
-
-Roughness::
-(To be defined)
-
-* Source: 
-* Notes:
-
-Scene::
-(To be defined)
-
-* Source: 
-* Notes:
-
 Scenario.::
 A description of the behavior or temporal evolution of physical objects and environmental conditions on the driving infrastructure over an interval of time, including the movement of traffic participants or the change of environmental conditions.
 
-* Source: 
-* Notes: OpenSCENARIO standard, 2024
+* Source: ASAM OpenSCENARIO v1.3.0 standard, 2024
 
 Signal (Energy) Propagation::
 "During signal [or energy] propagation, the signal travels through the environment and possibly interacts with objects and particles."
 
-* Source: Linnhoff et al., Towards Serious Perception Sensor..., 2021
-* Notes:
-
-Simulation environment::
-(To be defined)
-
-* Source: 
-* Notes:
+* Source: Linnhoff et al., Towards Serious Perception Sensor Simulation for Safety Validation of Automated Driving - A Collaborative Method to Specify Sensor Models, 2021
 
 Simulation Platform::
-Difference between platform (possibly handling rendering, physics etc.)  and an orchestrator (only handling model execution and interfacing)
-
-* Source: 
-* Notes:
-
-Simulation::
-(Look up definition)
-
-* Source: 
-* Notes:
-
-Texture::
-(To be defined)
-
-* Source: 
-* Notes: Taken over from terminology collection list on Sharepoint.
-
-Texture coordinates::
-(To be defined)
-
-* Source: 
-* Notes: Taken over from terminology collection list on Sharepoint.
-
-Thermal camera sensor::
-(To be defined)
-
-* Source: 
-* Notes:
-
-Ultrasonic sensor::
-(To be defined)
-
-* Source: 
-* Notes:
+Application orchestrating and running the simulation. The can be an all-in-one solution including the generation of the 3D environment or a co-simulation platform orchestrating a co-simulation of multiple sensor, models, vehicle dynamics models etc.
 
 Validation::
 Comparing simulated data to measured data and quantifying the differences.
-
-* Source: 
-* Notes:
-
-
-Suggested terms from the Word list in Sharepoint that might be added to the terminology list::
-
-* Acronym
-* File Formats
-* Fresnel equation
-* ISO Standard
-* Other ASAM standards
-* Road Surface Cover
