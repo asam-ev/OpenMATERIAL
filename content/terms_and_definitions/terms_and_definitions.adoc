@@ -32,7 +32,7 @@ A mapping of material IDs to parts of 3D models.
 The material IDs are unique a point to a set of material properties in separate material files.
 
 Material classification::
-Sorting materials into classes.
+Standardized classification scheme that sorts materials into classes and groups of classes, for example, based on their physical properties.
 
 Material Parameter File::
 A file in json format containing defined material properties according to the OpenMATERIAL standard.
