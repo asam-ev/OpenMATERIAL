@@ -74,7 +74,7 @@ A physical property is any property of a physical system that is measurable.
 Post (Rendering) Effects::
 Rendering techniques to improve fidelity while maintaining performance, that are typically non-physical (or in other words fake)
 
-Scenario.::
+Scenario::
 A description of the behavior or temporal evolution of physical objects and environmental conditions on the driving infrastructure over an interval of time, including the movement of traffic participants or the change of environmental conditions.
 
 * Source: ASAM OpenSCENARIO v1.3.0 standard, 2024
