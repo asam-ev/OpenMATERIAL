@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "copyright" : "(C) 2023-2024, Example Company",
+    "generator": "Blender",
+    "openmaterial_version": "1.0.0",
+    "creator": "Example Company",
+    "creation_date": "20240703T101728Z",
+    "asset_version": "1.0.0",
+    "id": "87769375a5109c689af8cc3ad3dd8349",
+    "name": "example_car",
+    "label": "vehicle",
+    "description": "Example car to demonstrate how OpenMATERIAL works"
+  },
+  "material_mapping": [
+    ["10;50;255;127", "example_material.xomp"]
+  ]
+}
