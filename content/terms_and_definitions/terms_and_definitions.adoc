@@ -58,7 +58,7 @@ Object Part / Subtype::
 * Notes: What is an object and what is an object part?
 
 Object Type::
-Class of objects with common properties
+Class of objects with the same set of properties. Each instance of the class is described by the same properties, but has individual property values.
 
 Perception::
 The process of detecting objects and generating situational awareness of the surrounding of an automated system using perception sensors.
