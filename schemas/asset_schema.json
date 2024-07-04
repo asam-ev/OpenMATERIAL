@@ -79,7 +79,7 @@
           },
           {
             "type": "string",
-            "description": "Name of the material"
+            "description": "Path to an OpenMATERIAL property file"
           }
         ],
         "minItems": 2,
