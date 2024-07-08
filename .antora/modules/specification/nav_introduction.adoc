@@ -3,6 +3,9 @@
 ** xref:general_docs/introduction.adoc[]
 ** xref:general_docs/scope.adoc[]
 ** xref:general_docs/normative_references.adoc[]
-** xref:general_docs/terms_and_definitions.adoc[]
 ** xref:general_docs/abbreviations.adoc[]
 ** xref:general_docs/backward_compatibility.adoc[]
+* Terms and definitions
+** xref:terms_and_definitions/terms_and_definitions.adoc[]
+* Use cases
+** xref:use_cases/use_cases.adoc[]
