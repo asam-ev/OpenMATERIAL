@@ -99,8 +99,7 @@ interacting with objects and particles.
 Simulation platform::
 Application that orchestrates and runs the simulations. It can be either an
 all-in-one solution including the generation of the 3D environment or a
-co-simulation platform orchestrating a co-simulation of multiple sensors,
-models, vehicle dynamics models, and so on.
+co-simulation platform orchestrating a co-simulation of multiple sensor models, vehicle dynamics models, and so on.
 
 Surface normal::
 A vector that is perpendicular to a given object, surface, or geometrical
