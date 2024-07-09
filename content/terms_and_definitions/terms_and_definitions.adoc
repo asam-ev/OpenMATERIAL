@@ -57,7 +57,10 @@ Material property::
 Denotes the physical, chemical, and geometric properties of a material.
 
 Multispectral/hyperspectral material::
-Material type that interacts with light across multiple wavelengths.
+Material with wavelength-dependent properties. 
+
+Multispectral material shows up in imagery as 3-10 wider bands.
+Hyperspectral material shows hundreds of narrow bands. 
 
 Object::
 A tangible thing with defined 3D boundaries and discrete meshes. An object ID
