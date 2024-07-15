@@ -42,7 +42,7 @@ Material::
 A collection of material properties belonging to one entity.
 
 Material assignment::
-A mapping of material IDs to parts of 3D models. The material ID is a unique
+A mapping of material IDs to meshes of 3D models, or pixels of textures mapped to these meshes. The material ID is a unique
 pointer to a set of material properties in separate material files.
 
 Material classification::
