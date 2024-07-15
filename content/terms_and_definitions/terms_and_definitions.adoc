@@ -23,7 +23,7 @@ multiple 3D assets.
 
 Co-simulation::
 Simulation of multiple independent models connected with interfaces. A
-co-simulation platform handles the timing and data transfer between the
+co-simulation platform handles the timing, synchronization, and data transfer between the
 individual models.
 
 Ground truth::
