@@ -54,7 +54,7 @@ A file in JSON format containing defined material properties according to the
 OpenMATERIAL standard.
 
 Material property::
-Denotes the physical, chemical, and geometric properties of a material.
+Denotes a physical, chemical, or geometric property of a material.
 
 Multispectral/hyperspectral material::
 Material with wavelength-dependent properties. 
