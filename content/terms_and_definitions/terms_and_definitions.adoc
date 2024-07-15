@@ -12,7 +12,7 @@ specific metadata.
 
 3D model::
 A mathematical coordinate-based representation of an object's geometrical
-surface. This excludes physical material properties. For a combination of 3D
+surface. Material properties used for rendering purposes can be part of the 3D model. This excludes physical material properties. For a combination of 3D
 geometry and physical material properties, see 3D asset.
 
 Related terms: 3D asset, 3D environment.
