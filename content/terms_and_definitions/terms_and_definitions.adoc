@@ -78,7 +78,7 @@ Class of objects with the same set of properties. Each instance of the class is
 described by the same properties, but has individual property values.
 
 Physical property::
-Denotes a characteristic of an object that can be measured.
+Denotes a characteristic of an object or material that can be measured.
 Examples: permittivity, density, index of refraction.
 
 Post rendering effect::
