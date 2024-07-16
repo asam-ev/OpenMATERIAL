@@ -1,0 +1,12 @@
+= File format support
+
+* Asset file for OpenMATERIAL mapping (based on node/mesh/material names)
+* glTF
+* FBX
+* USD
+
+////
+The details of FBX's IP are protected by Autodesk's license and are not publicly available information, but are there any concerns?
+
+https://download.autodesk.com/us/FY17/Suites/LSA/en-us/lsa.html  
+////

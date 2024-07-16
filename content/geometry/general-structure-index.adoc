@@ -1,0 +1,12 @@
+= General structure
+
+include::general-structure/General_structure.adoc[]
+
+include::general-structure/Object-Geometry_classes_and_segmentation.adoc[]
+
+include::general-structure/File_format_support.adoc[]
+
+include::general-structure/Metadata.adoc[]
+
+include::general-structure/Performance.adoc[]
+

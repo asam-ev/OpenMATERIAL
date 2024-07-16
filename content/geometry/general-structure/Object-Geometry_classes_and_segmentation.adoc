@@ -1,0 +1,21 @@
+= Object/Geometry classes and segmentation
+
+== Object classes (for example, vehicles, pedestrians, road networks, ...), sync with other standards
+* For vehicles like bicycles, motorbikes, scooters, and so on, differentiate between the vehicle and the person on it. Vehicle and pedestrian are two different objects.
+* Classes to consider in this project:
+** Vehicles
+** Pedestrians
+** Roads and road infrastructure
+** Vegetation (including tree) ?
+**Building ?
+** Animal ?
+** Custom/other/unknown
+
+== Class-specific node/semantic/animation/material structure, coordinate systems, and pivot points
+* General:
+** xy center of bounding box, z on the ground in default pose (vehicle doors closed, T-pose for pedestrians, and so on)
+* Vehicles
+** Hierarchy and nodes see below
+* Class-specific file name convention?
+* Think about new or rare structures (for example, front trunk)
+* Class-specific levels of detail and impostors

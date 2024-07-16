@@ -1,0 +1,40 @@
+= General structure
+
+== Dimensions
+* Unit: meters
+
+== Coordinate systems
+* Use ISO 8855:
+** right-handed: x forward, y left, z up
+* In line with ASAM OpenDRIVE, ASAM OpenSCENARIO, ASAM OSI
+* Origins of the coordinate frames to be discussed for specific object classes later
+
+== Naming conventions
+* Prefix in the 3D model file name to show that it is according to standard, for example, "omg_" (open material geometry)
+* Same file name for 3D model and asset file
+** 3D model file: omg_my-model.gltf
+** Asset file: omg_my-model.x... (extension see below)
+* Putting more information in file name to be discussed for specific object classes
+
+== Asset file (mapping, metadata,...)
+* json format
+* File extension (different from material files)
+** xoma (open material asset)
+** xomg (open material geometry)
+* Contents
+** Metadata
+** Material mapping (with possibility to easily change assignment)
+** Optional link to another asset file to facilitate instancing (same asset file for different 3D models)
+** Semantic information (labels) for sub-meshes ?
+** Description of coordinates, pivot points and so on instead of hierarchy in 3D model file ?
+** Assigning data streams (for example, wheel rotation) to certain sub-meshes ?
+
+== Requirements (quality, semantic/animation/material structure, and so on)
+* Separation of materials
+* ...
+
+== Recommendations (performance measures and so on)
+* Same texel density within a file
+* Object class dependent recommendations for mesh resolution
+* Performance recommendations ? (for example, use alpha textures for vegetation)
+* ...
