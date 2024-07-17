@@ -1,5 +1,7 @@
 = Grp_Door_Bottom_<door_bottom_idx> (T)
-
+////
+door_*_idx: Counting per side from front to rear and right to left (in positive y-direction)  
+////
 Add a description
 
 .<Table title>
