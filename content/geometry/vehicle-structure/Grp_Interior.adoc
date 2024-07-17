@@ -26,3 +26,7 @@ Add a figure.
 
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+////
+Comment: Interior is separated from exterior to enable swiching or exchanging it (LF)  
+////
