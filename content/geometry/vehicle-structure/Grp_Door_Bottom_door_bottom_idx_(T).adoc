@@ -3,6 +3,9 @@
 door_*_idx: Counting per side from front to rear and right to left (in positive y-direction)  
 ////
 Add a description
+////
+Note: trunk, front-trunk, engine hood (lid) etc. are considered doors 
+////
 
 .<Table title>
 [%header, cols="20, 80"]
