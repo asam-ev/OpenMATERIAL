@@ -1,7 +1,11 @@
 = Grp_Convertible_Top
 
 Add a description
+////
+convertible_top: Indicate default mesh (open, closed etc.) in the Asset File  
 
+Enable switching on/off convertible top from within the asset file  
+////
 .<Table title>
 [%header, cols="20, 80"]
 |===
