@@ -31,3 +31,9 @@ Add a figure.
 
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+////
+Note: Don't include windows in hierarchy for now
+
+Comment LF: Door and sunroof interior parts would be defined as child nodes of the exterior node for the door
+////
