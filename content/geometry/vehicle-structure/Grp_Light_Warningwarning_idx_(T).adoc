@@ -1,7 +1,9 @@
 = Grp_Light_Warning<warning_idx> (T)
 
 Add a description
-
+////
+Warning lights incorporate emergency ligths, flashing lights, hazard lights,...  
+////
 .<Table title>
 [%header, cols="20, 80"]
 |===
