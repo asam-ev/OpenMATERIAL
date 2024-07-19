@@ -1,0 +1,35 @@
+= Road structure
+:toc:
+:toclevels: 4
+
+include::road-structure/Road_Network (T).adoc[leveloffset=+1]
+include::road-structure/Road(Road_idx).adoc[leveloffset=+2]
+include::road-structure/Lane(Lane_idx).adoc[leveloffset=+3]
+include::road-structure/Lane_Marking_lane_marking_idx.adoc[leveloffset=+4]
+include::road-structure/Object(Object_idx)(T).adoc[leveloffset=+3]
+include::road-structure/Signal_Signal_idx_T.adoc[leveloffset=+3]
+include::road-structure/Sign_T.adoc[leveloffset=+4]
+include::road-structure/Bulb_Bulb_idx_T.adoc[leveloffset=+4]
+include::road-structure/Railroad_Railroad_idx.adoc[leveloffset=+3]
+include::road-structure/Main_Track_Main_track_idx.adoc[leveloffset=+4]
+include::road-structure/Side_Track_Side_track_idx.adoc[leveloffset=+4]
+include::road-structure/Switch_Switch_idx_T.adoc[leveloffset=+4]
+include::road-structure/Junction_Junction_idx.adoc[leveloffset=+2]
+include::road-structure/Junction_Connection_Junction_connection_idx.adoc[leveloffset=+3]
+include::road-structure/Direct_Junction_Direct_Junction_idx.adoc[leveloffset=+2]
+include::road-structure/Direct_Junction_Connection_Direct_junction_connection_idx.adoc[leveloffset=+3]
+include::road-structure/Virtual_Junction_Virtual_junction_idx.adoc[leveloffset=+2]
+include::road-structure/Virtual_Junction_Connection_Virtual_junction_connection_idx.adoc[leveloffset=+3]
+include::road-structure/Station_Station_idx.adoc[leveloffset=+2]
+include::road-structure/Platform_Platform_idx.adoc[leveloffset=+3]
+include::road-structure/Segment_Segment_idx.adoc[leveloffset=+4]
+
+////
+General comments:
+
+- OpenDRIVE Variable Message Boards already possess local coordinate frame  
+
+- Proposal: Include correct  Road/Lane/Junction/... ID from OpenDRIVE as suffix in naming, e.g. Road_100, Lane_-3 etc.  
+
+- Railroads, corresponding tracks and stations are probably something discuss in GitHub. This may be a topic for a version > 1.0?  
+////
