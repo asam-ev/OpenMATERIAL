@@ -1,4 +1,4 @@
-= Bulb (T)
+= Bulb <Bulb_idx> (T)
 
 
 Add a description

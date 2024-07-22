@@ -1,4 +1,4 @@
-= Signal (T)
+= Signal (Signal_idx) (T)
 
 
 Add a description
