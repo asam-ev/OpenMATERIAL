@@ -1,20 +1,34 @@
 = General structure
 
 == Dimensions
-* Unit: meters
+The unit used for object dimensions are meters.
 
 == Coordinate systems
-* Use ISO 8855:
-** right-handed: x forward, y left, z up
-* In line with ASAM OpenDRIVE, ASAM OpenSCENARIO, ASAM OSI
-* Origins of the coordinate frames to be discussed for specific object classes later
+The local coordinate system is a right-handed coordinate system according to ISO 8855 with the axes pointing to the following directions. For a non-rotated coordinate system the following applies:
+
+* Forward matches x-axis
+* Left matches y-axis
+* Up matches z-axis
+
+The coordinate system is in line with ASAM OpenDRIVE, ASAM OpenSCENARIO, ASAM OSI.
+
+////
+Origins of the coordinate frames for specific object classes are under
+discussion.
+////
 
 == Naming conventions
-* Prefix in the 3D model file name to show that it is according to standard, for example, "omg_" (open material geometry)
+The following naming conventions apply to material files:
+
+* Use prefix in the 3D model file name to show that it is according to standard
+** Example: `omg_` (open material geometry)
 * Same file name for 3D model and asset file
-** 3D model file: omg_my-model.gltf
-** Asset file: omg_my-model.x... (extension see below)
-* Putting more information in file name to be discussed for specific object classes
+** Example of 3D model file: `omg_my-model.gltf`
+** Example of asset file: `omg_my-model.x...` (extension see below)
+
+////
+Putting more information in file name to be discussed for specific object classes.
+////
 
 == Asset file (mapping, metadata,...)
 * json format
