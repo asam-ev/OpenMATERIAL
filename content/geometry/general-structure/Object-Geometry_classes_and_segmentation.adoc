@@ -2,14 +2,14 @@
 
 == Object classes
 In ASAM OpenMATERIAL, object classes represent a collection of similar objects.
-Examples of object classes are vehicles, pedestrians, and the road network. Each
+Examples of object classes are vehicles, humans, and the road network. Each
 instance of the object class is described by the same properties, but has
 individual property values.
 
 The ASAM OpenMATERIAL standard supports the following object classes:
-* Vehicles
-* Pedestrians
-* Roads and road infrastructure
+* Vehicle
+* Human
+* Road and road infrastructure
 * Vegetation, including trees
 * Building
 * Animal
@@ -20,9 +20,9 @@ TODO: Add references to dedicated sections describing object classes. Vegetation
 animal are not yet supported
 ////
 
-If the passenger is clearly distinguishable from the vehicle, then both the
-passenger and the vehicle are represented by two different objects. Examples are
-bicycles, motorbikes, or scooters, where the passengers and the vehicles are
+If the human is clearly distinguishable from the vehicle, then both the
+human and the vehicle are represented by two different objects. Examples are
+bicycles, motorbikes, or scooters, where the human and the vehicle are
 perceived as separate entities.
 
 == Class-specific information
@@ -43,7 +43,7 @@ to describe the shape of the object.
 
 *Example*
 For object class `vehicle`, the z-value defines the pose if a vehicle door is
-closed. For object class `pedestrian`, the z-value defines the T-pose.
+closed. For object class `human`, the z-value defines the T-pose.
 
 For each object class, the recommended mesh resolution should be used.
 
