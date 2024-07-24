@@ -1,12 +1,11 @@
 = Metadata
 
-* (Stored in asset file)
-* (Independent of 3D file format)
+In ASAM OpenMATERIAL, metadata of material assets and geometries is stored in
+each asset file. The metadata is independent of the 3D file format.
 
-//-
-
-* 3D Model name/title, unique ID, version
-* OpenMATERIAL version
+The following list provides examples of metadata information:
+* 3D model name/title, unique ID, version
+* ASAM OpenMATERIAL version
 * Author and authoring tool, creation date
 * Origin/source (3D scan, modeled by image, public ressource, ...)
 * Description field (free text)
