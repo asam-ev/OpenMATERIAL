@@ -10,6 +10,4 @@ A copy of the original repository was created at kick-off of ASAM OpenMATERIAL i
 The standard is still under development. The published HTML reflects the status of the main branch. It can be found here: [ASAM OpenMATERIAL](https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/index.html).
 
 ## Contribute
-Further information can be found in the [ASAM Sharepoint](https://asamev.sharepoint.com/sites/openmaterial).
-
-This is how you can contribute to the project in GitHub:
+If you want to contribute in this project, please read the [Contribution guidelines](https://github.com/asam-ev/.github/blob/main/profile/CONTRIBUTING.md) 
