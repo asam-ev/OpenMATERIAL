@@ -30,23 +30,23 @@ The following naming conventions apply to ASAM OpenMATERIAL files:
 
 * The name of the 3D model file shall have the prefix `omg_` to indicate that the file
 complies with the ASAM OpenMATERIAL standard.
-* The 3D model file and the related asset file shall have the same base name.
+* The 3D model file and the related 3D asset file shall have the same base name.
 
 *Example*
 If the name of the 3D model file is `omg_my-model.gltf`, then the
-asset file has name `omg_my-model.xoma` (for material assets) or
+3D asset file has either the name `omg_my-model.xoma` (for material assets) or
 `omg_my-model.xomg`(for material geometries).
 
 ////
 Putting more information in file name to be discussed for specific object classes.
 ////
 
-== Asset file
-The asset file is used for mapping ASAM OpenMATERIAL objects based on node, mesh,
+== 3D asset file
+The 3D asset file is used for mapping ASAM OpenMATERIAL objects based on node, mesh,
 or material names. It is stored in JSON format.
 
-The asset file either provides material assets or material geometries. The extension of
-an asset file indicates the content type provided:
+The 3D asset file provides either material assets or material geometries. The extension of
+a 3D asset file indicates the content type provided:
 * `xoma` for material assets. Example: `omg_my-model.xoma`.
 * `xomg` for material geometries. Example: `omg_my-model.xomg`.
 
@@ -56,7 +56,7 @@ from material files". Clarify which terms to use for
 different files (open material geometry file = 3D model file?).
 ////
 
-Each asset file contains the following information:
+Each 3D asset file contains the following information:
 * Metadata
 * Material mapping (with possibility to easily change assignment)
 * Optional link to another asset file to facilitate instancing (same asset file for different 3D models)
@@ -67,7 +67,7 @@ Each asset file contains the following information:
 ////
 TODO: Add short descriptions and references
 ////
-
+Suggestion: Add section for material parameter files analogue to asset file 
 == Requirements
 Materials shall be separated.
 
