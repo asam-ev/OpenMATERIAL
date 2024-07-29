@@ -2,8 +2,9 @@
 :toc:
 :toclevels: 4
 
-include::vehicle-structure/Grp_Vehicle_Part_keyword_vehicle_part_idx.adoc[leveloffset=+1]
+include::vehicle-structure/Grp_Vehicle_Part_keyword_vehicle_part_idx_(T).adoc[leveloffset=+1]
 include::vehicle-structure/Grp_Exterior.adoc[leveloffset=+2]
+include::vehicle-structure/Grp_Exterior_Static.adoc[leveloffset=+3]
 include::vehicle-structure/Grp_Exterior_Dynamic.adoc[leveloffset=+3]
 include::vehicle-structure/Grp_Wheel_axle_idx_wheel_idx_(T).adoc[leveloffset=+3]
 include::vehicle-structure/Grp_Wheel_axle_idx_wheel_idx_Steering.adoc[leveloffset=+4]
