@@ -1,4 +1,4 @@
-= Grp_Side_Mirror_Mounting_Left <side_mirror_mounting_left_idx> (T)
+= Grp_Side_Mirror_Mounting_Left <side_mirror_mounting_left_idx> (T) 
 
 Add a description
 

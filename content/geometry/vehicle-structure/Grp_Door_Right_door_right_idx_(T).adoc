@@ -1,4 +1,4 @@
-= Grp_Door_Top_<door_top_idx> (T)
+= Grp_Door_Right_<door_right_idx> (T)
 
 Add a description
 
