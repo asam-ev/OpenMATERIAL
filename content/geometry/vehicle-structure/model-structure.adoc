@@ -1,0 +1,3 @@
+= Model structure
+
+//Describe the vehicle chapter is structured
