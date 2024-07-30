@@ -1,0 +1,29 @@
+= Notes from Miro board
+
+*General comments:*
+
+* OpenDRIVE Variable Message Boards already possess local coordinate frame  
+* Proposal: Include correct  Road/Lane/Junction/... ID from OpenDRIVE as suffix in naming, e.g. Road_100, Lane_-3 etc.  
+* Railroads, corresponding tracks and stations are probably something discuss in GitHub. This may be a topic for a version > 1.0?  
+
+*Object*
+Usage of transforms/group nodes:
+Objects: Position 3D models
+
+*Signals*
+
+* Signals can be further detailed in order to allow positioning of lights and exchange of sign textures  
+* Traffic signal post or mount of traffic signals/traffic lights are defined as objects  
+
+*Sign*
+
+Usage of transforms/group nodes:
+Traffic Signs: Position Light Bulbs and Textures
+
+*Bulb*
+
+Traffic Light Bulbs Positioning has to be estimated. Do we want to do that or postpone that topic?  
+
+*Junction*
+
+OpenDRIVE 1.4: Junctions had holes between connections OpenDRIVE 1.8: Junction Grid provides height information for junction area 

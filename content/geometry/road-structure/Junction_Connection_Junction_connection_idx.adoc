@@ -1,4 +1,4 @@
-= Junction_Connection (Junction_Connection_idx)
+= Junction Connection (junction_connection_idx)
 
 Add a description
 

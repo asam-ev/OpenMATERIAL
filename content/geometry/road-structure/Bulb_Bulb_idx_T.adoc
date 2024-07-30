@@ -1,4 +1,4 @@
-= Bulb <Bulb_idx> (T)
+= Bulb (bulb_idx) (T)
 
 
 Add a description
@@ -27,7 +27,3 @@ Add a figure.
 
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-////
-Traffic Light Bulbs Positioning has to be estimated. Do we want to do that or postpone that topic?  
-////

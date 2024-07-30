@@ -1,4 +1,4 @@
-= Virtual_Junction (Virtual_Junction_idx)
+= Virtual Junction (virtual_junction_idx)
 
 Add a description
 

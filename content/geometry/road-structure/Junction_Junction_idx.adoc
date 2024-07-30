@@ -1,4 +1,4 @@
-= Junction (Junction_idx)
+= Junction (junction_idx)
 
 Add a description
 
@@ -26,7 +26,3 @@ Add a figure.
 
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-////
-OpenDRIVE 1.4: Junctions had holes between connections OpenDRIVE 1.8: Junction Grid provides height information for junction area 
-////

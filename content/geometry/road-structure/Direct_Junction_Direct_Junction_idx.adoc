@@ -1,4 +1,4 @@
-= Direct_Junction (Direct_Junction_idx)
+= Direct Junction (direct_junction_idx)
 
 Add a description
 

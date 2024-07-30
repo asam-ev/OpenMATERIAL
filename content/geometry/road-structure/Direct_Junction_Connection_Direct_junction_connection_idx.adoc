@@ -1,4 +1,4 @@
-= Direct_Junction_Connection (Direct_Junction_Connection_idx)
+= Direct Junction Connection (direct_junction_connection_idx)
 
 Add a description
 
