@@ -15,8 +15,6 @@ A mathematical coordinate-based representation of an object's geometrical
 surface. Material properties used for rendering purposes can be part of the 3D model. This excludes physical material properties. For a combination of 3D
 geometry and physical material properties, see 3D asset.
 
-Related terms: 3D asset, 3D environment.
-
 3D environment::
 A 3D representation of a simulated sensor's surroundings. It can consist of
 multiple 3D assets.
@@ -35,8 +33,8 @@ Machine perception::
 The ability of systems to interpret sensory data and to reliably detect objects
 and other road users relevant to the operation of automated driving. The data is
 used to generate situational awareness of the vehicle environment.
-
-* Source: Klaus Dietmayer, Predicting of Machine Perception for Automated Driving, 2016
++
+Source: Klaus Dietmayer, Predicting of Machine Perception for Automated Driving, 2016
 
 Material::
 A collection of material properties belonging to one entity.
@@ -58,8 +56,9 @@ Denotes a physical, chemical, or geometric property of a material.
 
 Multispectral/hyperspectral material::
 Material with wavelength-specific properties that are defined for multiple spectra. 
-
++
 Multispectral material shows up in imagery as 3-10 wider bands.
++
 Hyperspectral material shows hundreds of narrow bands. 
 
 Object::
@@ -69,7 +68,7 @@ can be assigned.
 Object part::
 A segment of an object that has distinct characteristics, for example, material,
 shape, or function.
-
++
 Example: A car door differs from the rest of the vehicle due to its function
 to open and close.
 
@@ -90,14 +89,14 @@ A description of the behavior or temporal evolution of physical objects and
 environmental conditions on the driving infrastructure over an interval of time,
 including the movement of traffic participants or the change of environmental
 conditions.
-
-* Source: ASAM OpenSCENARIO v1.3.0 standard, 2024
++
+Source: ASAM OpenSCENARIO v1.3.0 standard, 2024
 
 Signal energy propagation::
 The act of a signal traveling through the environment and potentially
 interacting with objects and particles.
-
-* Source: Linnhoff et al., Towards Serious Perception Sensor Simulation for Safety Validation of Automated Driving - A Collaborative Method to Specify Sensor Models, 2021
++
+Source: Linnhoff et al., Towards Serious Perception Sensor Simulation for Safety Validation of Automated Driving - A Collaborative Method to Specify Sensor Models, 2021
 
 Simulation platform::
 Application that orchestrates and runs the simulations. It can be either an
