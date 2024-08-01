@@ -25,14 +25,9 @@ discussion.
 == Naming conventions
 The following naming conventions apply to ASAM OpenMATERIAL geometry files:
 
-* The name of the 3D model file shall have the prefix `omg_` to indicate that the file
-complies with the ASAM OpenMATERIAL standard.
+* The name of a 3D model file shall have the prefix `omg_` to indicate that the file
+complies with the ASAM OpenMATERIAL geometry specification.
 * The 3D model file and the related 3D asset file shall have the same base name.
-
-*Example*
-If the name of the 3D model file is `omg_my-model.gltf`, then the
-3D asset file has either the name `omg_my-model.xoma` (for material assets) or
-`omg_my-model.xomg`(for material geometries).
 
 NOTE: Putting more information in file name to be discussed for specific object classes.
 
