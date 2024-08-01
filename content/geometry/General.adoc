@@ -12,8 +12,6 @@ coordinate system, the following applies:
 * Left matches y-axis
 * Up matches z-axis
 
-
-
 NOTE: TODO: Add images similar to OpenDRIVE? See
 https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/08_coordinate_systems/08_04_local_coordinate_system.html
 
@@ -24,34 +22,25 @@ ASAM OpenSCENARIO, and ASAM OSI.
 NOTE: Origins of the coordinate frames for specific object classes are under
 discussion.
 
-
 == Naming conventions
-The following naming conventions apply to ASAM OpenMATERIAL files:
+The following naming conventions apply to ASAM OpenMATERIAL geometry files:
 
-* The name of the 3D model file shall have the prefix `omg_` to indicate that the file
-complies with the ASAM OpenMATERIAL standard.
+* The name of a 3D model file shall have the prefix `omg_` to indicate that the file
+complies with the ASAM OpenMATERIAL geometry specification.
 * The 3D model file and the related 3D asset file shall have the same base name.
-
-*Example*
-If the name of the 3D model file is `omg_my-model.gltf`, then the
-3D asset file has either the name `omg_my-model.xoma` (for material assets) or
-`omg_my-model.xomg`(for material geometries).
 
 NOTE: Putting more information in file name to be discussed for specific object classes.
 
 == 3D asset file
-The 3D asset file is used for mapping ASAM OpenMATERIAL objects based on node, mesh,
-or material names. It is stored in JSON format.
+The 3D asset file provides meta data as well as a mapping table to ASAM OpenMATERIAL material property files.
+This information extends the geometry of an asset given in standard 3D model file formats, e.g. glTF, FBX or USD.
+The 3D asset file is in JSON format with the file extension `xoma`.
+As indicated above, the asset file has to have the same file name as the accompanying 3D model with the prefix `omg` indicating,
+that the 3D model file is structured according to the ASAM OpenMATERIAL geometry specification.
+This is an example of a 3D model file in glTF format with an accompanying 3D asset file:
 
-The 3D asset file provides metadata and material mapping to the geometry. The extension of
-a 3D asset file indicates the content type provided:
-
-* `xoma` for material assets. Example: `omg_my-model.xoma`.
-* `xomg` for material geometries. Example: `omg_my-model.xomg`.
-
-NOTE: Miro board mentions that the extensions `xoma` and `xomg` are "different
-from material files". Clarify which terms to use for
-different files (open material geometry file = 3D model file?).
+* `omg_my-model.glTF`
+* `omg_my-model.xoma`
 
 Each 3D asset file contains the following information:
 
