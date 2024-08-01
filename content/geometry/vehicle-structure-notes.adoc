@@ -5,6 +5,7 @@
 * Vehicle Parts are for moving entire parts of the vehicle, e.g. in a hinged bus or construction vehicle with a hinge (articulated vehicles).
 When a vehicle part can be detached, like a trailer, it is to be treated as a separate vehicle and not a vehicle part.
 * Don't include windows in hierarchy for now
+* General note: Grp_* Nodes are empty nodes  
 
 == Nodes 
 
@@ -12,7 +13,6 @@ When a vehicle part can be detached, like a trailer, it is to be treated as a se
 * `wheel_idx`: Follow https://opensimulationinterface.github.io/osi-antora-generator/asamosi/latest/gen/structosi3_1_1MovingObject_1_1VehicleAttributes_1_1WheelData.html#a094de989f5a2aab080f9a65f0feb3867[OSI definition] counting per axle from right to left (in positive y-direction)
 * `door_*_idx`: Counting per side from front to rear and right to left (in positive y-direction)
 * trunk, front-trunk, engine hood (lid) etc. are considered doors
-* `Grp_*` Nodes are empty nodes
 * `convertible_top`: Indicate default mesh (open, closed etc.) in the Asset File
 * Enable switching on/off convertible top from within the asset file
 * Warning lights incorporate emergency ligths, flashing lights, hazard lights,...
@@ -28,3 +28,10 @@ When a vehicle part can be detached, like a trailer, it is to be treated as a se
 ** Grp_Vehicle_Part_<part_idx>
 *** Grp_Exterior
 *** Grp_Interior
+* Grp_Vehicle_Part_keyword_vehicle_part_idx
+** The structure can be extended by custom groups for additional use-cases. Custom groups shall follow the general structure (e.g. grouping into static/dynamic, interior/exterior).
+** Each vehicle part has its own transform .
+** Vehicle Parts are for moving entire parts of the vehicle, e.g. in a hinged bus or construction vehicle with a hinge (articulated vehicles). When a vehicle part can be detached, like a trailer, it is to be treated as a separate vehicle and not a vehicle part. 
+*** Comment LF: Trailers and train wagons are treated as separate vehicles
+*** Comment MT: MT: What about buses with middle axis? More complex geometries/functions? Multiple Trailers? movable Cabins?  
+*** Should add nodes for trailer coupling devices, so that you know where to attach (MT)  
