@@ -1,23 +1,8 @@
 = Road structure
-:toc:
-:toclevels: 4
 
-include::road-structure/introduction.adoc[leveloffset=+1]
-include::road-structure/general.adoc[leveloffset=+1]
-include::road-structure/model-creation.adoc[leveloffset=+1]
-include::road-structure/model-structure.adoc[leveloffset=+1]
-include::road-structure/Road_Network_(T).adoc[leveloffset=+2]
-include::road-structure/Road(Road_idx).adoc[leveloffset=+3]
-include::road-structure/Lane(Lane_idx).adoc[leveloffset=+4]
-include::road-structure/Lane_Marking_lane_marking_idx.adoc[leveloffset=+5]
-include::road-structure/Object(Object_idx)(T).adoc[leveloffset=+4]
-include::road-structure/Signal_Signal_idx_T.adoc[leveloffset=+4]
-include::road-structure/Sign_T.adoc[leveloffset=+5]
-include::road-structure/Bulb_Bulb_idx_T.adoc[leveloffset=+5]
-include::road-structure/Junction_Junction_idx.adoc[leveloffset=+3]
-include::road-structure/Junction_Connection_Junction_connection_idx.adoc[leveloffset=+4]
-include::road-structure/Direct_Junction_Direct_Junction_idx.adoc[leveloffset=+3]
-include::road-structure/Direct_Junction_Connection_Direct_junction_connection_idx.adoc[leveloffset=+4]
-include::road-structure/Virtual_Junction_Virtual_junction_idx.adoc[leveloffset=+3]
-include::road-structure/Virtual_Junction_Connection_Virtual_junction_connection_idx.adoc[leveloffset=+4]
-include::road-structure/notes.adoc[leveloffset=+1]
+include::road-structure-introduction.adoc[leveloffset=+1]
+include::road-structure-general.adoc[leveloffset=+1]
+include::road-structure-model-creation.adoc[leveloffset=+1]
+include::road-structure-model-structure.adoc[leveloffset=+1]
+include::road-structure-notes.adoc[leveloffset=+1]
+
