@@ -5,7 +5,7 @@ The unit used for object dimensions is meters.
 
 == Coordinate systems
 The local coordinate system is a right-handed coordinate system according to
-ISO 8855 with the axes pointing to the above mentioned directions. For a non-rotated
+ISO 8855 with the axes pointing to the directions mentioned below. For a non-rotated
 coordinate system, the following applies:
 
 * Forward matches x-axis
