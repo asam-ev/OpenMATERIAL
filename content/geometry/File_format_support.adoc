@@ -1,13 +1,9 @@
 = File format
-The ASAM OpenMATERIAL standard supports the following file formats:
+The ASAM OpenMATERIAL standard supports the following file formats for 3D models:
 
-* JSON for the 3D asset file, which is used for mapping ASAM OpenMATERIAL based on node, mesh, or material names (see also [link to 3D asset in Terms and definitions])
-* glTF for 3D model file
+* glTF
 * FBX
 * USD
-
-NOTE: TODO: Check whether JSON format is correct for first bullet point.
-
 
 NOTE: The details of FBX's IP are protected by Autodesk's license and are not publicly available information, but are there any concerns?
 https://download.autodesk.com/us/FY17/Suites/LSA/en-us/lsa.html
