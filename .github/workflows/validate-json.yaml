@@ -3,7 +3,11 @@
 # Forked from: https://github.com/marketplace/actions/validate-json
 name: Validate JSON schemas for assets and materials
 
-on:  pull_request
+on:  
+  pull_request:
+    paths:
+      - 'examples/**'
+      - 'schemas/**'
   
 jobs:
   json-schema-validation:
