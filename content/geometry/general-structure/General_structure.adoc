@@ -1,29 +1,29 @@
-= General structure
+= General
 
 == Dimensions
 The unit used for object dimensions is meters.
 
 == Coordinate systems
 The local coordinate system is a right-handed coordinate system according to
-ISO 8855 with the axes pointing to the directions as follows. For a non-rotated
+ISO 8855 with the axes pointing to the above mentioned directions. For a non-rotated
 coordinate system, the following applies:
 
 * Forward matches x-axis
 * Left matches y-axis
 * Up matches z-axis
 
-////
-TODO: Add images similar to OpenDRIVE? See
+
+
+NOTE: TODO: Add images similar to OpenDRIVE? See
 https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/08_coordinate_systems/08_04_local_coordinate_system.html
-////
+
 
 The coordinate system is in line with the standards ASAM OpenDRIVE,
 ASAM OpenSCENARIO, and ASAM OSI.
 
-////
-Origins of the coordinate frames for specific object classes are under
+NOTE: Origins of the coordinate frames for specific object classes are under
 discussion.
-////
+
 
 == Naming conventions
 The following naming conventions apply to ASAM OpenMATERIAL files:
@@ -37,26 +37,24 @@ If the name of the 3D model file is `omg_my-model.gltf`, then the
 3D asset file has either the name `omg_my-model.xoma` (for material assets) or
 `omg_my-model.xomg`(for material geometries).
 
-////
-Putting more information in file name to be discussed for specific object classes.
-////
+NOTE: Putting more information in file name to be discussed for specific object classes.
 
 == 3D asset file
 The 3D asset file is used for mapping ASAM OpenMATERIAL objects based on node, mesh,
 or material names. It is stored in JSON format.
 
-The 3D asset file provides either material assets or material geometries. The extension of
+The 3D asset file provides metadata and material mapping to the geometry. The extension of
 a 3D asset file indicates the content type provided:
+
 * `xoma` for material assets. Example: `omg_my-model.xoma`.
 * `xomg` for material geometries. Example: `omg_my-model.xomg`.
 
-////
-Miro board mentions that the extensions `xoma` and `xomg` are "different
+NOTE: Miro board mentions that the extensions `xoma` and `xomg` are "different
 from material files". Clarify which terms to use for
 different files (open material geometry file = 3D model file?).
-////
 
 Each 3D asset file contains the following information:
+
 * Metadata
 * Material mapping (with possibility to easily change assignment)
 * Optional link to another asset file to facilitate instancing (same asset file for different 3D models)
@@ -64,26 +62,21 @@ Each 3D asset file contains the following information:
 * Description of coordinates, pivot points and so on instead of hierarchy in 3D model file ?
 * Assigning data streams (for example, wheel rotation) to certain sub-meshes ?
 
-////
-TODO: Add short descriptions and references
-////
-Suggestion: Add section for material parameter files analogue to asset file 
+NOTE: TODO: Add short descriptions and references
+
 == Requirements
 Materials shall be separated.
 
-////
-TODO: Extend rule and find better location. What do you want to express, that two
+NOTE: TODO: Extend rule and find better location. What do you want to express, that two
 materials with different properties need to be modeled by separate objects?
-
 Are there any other requirements regarding quality, semantic/animation/material structure?
-////
+
 
 == Recommendations
+
 * The same texel density should be used within a file. (asset file?)
 * For each object class, the recommended mesh resolution should be used.
 * To improve performance of vegetation objects, alpha textures should be used.
 
-////
-TODO: Move recommendations to descriptive sections, e.g. object class
+NOTE: TODO: Move recommendations to descriptive sections, e.g. object class
 recommendation to section "Object Class".
-////

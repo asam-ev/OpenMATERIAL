@@ -1,4 +1,4 @@
-= General structure
+= General Structure
 
 include::general-structure/General_structure.adoc[]
 

@@ -7,6 +7,7 @@ instance of the object class is described by the same properties, but has
 individual property values.
 
 The ASAM OpenMATERIAL standard supports the following object classes:
+
 * Vehicle
 * Human
 * Road and road infrastructure
@@ -15,10 +16,8 @@ The ASAM OpenMATERIAL standard supports the following object classes:
 * Animal
 * Custom class
 
-////
-TODO: Add references to dedicated sections describing object classes. Vegetation, building, and
+NOTE: TODO: Add references to dedicated sections describing object classes. Vegetation, building, and
 animal are not yet supported
-////
 
 If the human is clearly distinguishable from the vehicle, then both the
 human and the vehicle are represented by two different objects. Examples are
@@ -27,6 +26,7 @@ perceived as separate entities.
 
 == Class-specific information
 Each object class has a specific set of properties, such as:
+
 * Node structure
 * Semantic structure
 * Animation structure
@@ -37,6 +37,7 @@ Each object class has a specific set of properties, such as:
 
 The interpretation of the following coordinates depends on the class-specific
 rules:
+
 * The x/y position represents the center of the bounding box used
 to describe the shape of the object.
 * The value on the z-axis on the ground represents the default pose.
@@ -47,18 +48,13 @@ closed. For object class `human`, the z-value defines the T-pose.
 
 For each object class, the recommended mesh resolution should be used.
 
-////
-TODO: Added information on mesh resolution to this section. We should consider
-extending the description of the properties above
-////
+NOTE: TODO: Added information on mesh resolution to this section. We should consider
+extending the description of the properties above.
 
-////
-TODO: Discuss and document
+NOTE: TODO: Discuss and document
 - Class-specific file name conventions
 - New or rare structures (for example, front trunk)
 - Class-specific levels of detail and impostors
 ////
 
-////
-TODO: Add information on geometry classes + segmentation?
-////
+NOTE: TODO: Add information on geometry classes + segmentation?
