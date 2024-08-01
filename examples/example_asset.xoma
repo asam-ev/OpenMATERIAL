@@ -12,6 +12,6 @@
     "description": "Example car to demonstrate how OpenMATERIAL works"
   },
   "material_mapping": [
-    ["10;50;255;127", "example_material.xomp"]
+    ["10;50;255;127", "example_material.xomp", "metal with red paint"]
   ]
 }

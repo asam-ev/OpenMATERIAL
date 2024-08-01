@@ -80,6 +80,10 @@
           {
             "type": "string",
             "description": "Path to an OpenMATERIAL property file"
+          },
+          {
+            "type": "string",
+            "description": "Short but precise description of the material"
           }
         ],
         "minItems": 2,
