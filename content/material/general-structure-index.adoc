@@ -1,5 +1,6 @@
 = General structure
 
-include::general-structure/metadata.adoc[]
-include::general-structure/fileformat.adoc[]
-include::general-structure/material-parameters.adoc[]
+include::Introduction.adoc[]
+include::Fileformat.adoc[]
+include::Metadata.adoc[]
+include::Material-parameters.adoc[]
