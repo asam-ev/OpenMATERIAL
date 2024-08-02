@@ -1,0 +1,10 @@
+= File format
+The ASAM OpenMATERIAL standard supports the following file formats for 3D models:
+
+* glTF
+* FBX
+* USD
+
+NOTE: The details of FBX's IP are protected by Autodesk's license and are not publicly available information, but are there any concerns?
+https://download.autodesk.com/us/FY17/Suites/LSA/en-us/lsa.html
+

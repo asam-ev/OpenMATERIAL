@@ -1,0 +1,9 @@
+= General Structure
+
+include::Introduction.adoc[]
+include::General.adoc[]
+include::Object-Geometry_classes_and_segmentation.adoc[]
+include::File_format_support.adoc[]
+include::Metadata.adoc[]
+include::Performance.adoc[]
+

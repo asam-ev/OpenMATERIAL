@@ -1,0 +1,59 @@
+= Object and geometry classes
+
+== Object classes
+In ASAM OpenMATERIAL, object classes represent a collection of similar objects.
+Examples of object classes are vehicles, humans, and the road network. Each
+instance of the object class is described by the same properties, but has
+individual property values.
+
+The ASAM OpenMATERIAL standard supports the following object classes:
+
+* Vehicle
+* Human
+* Road and road infrastructure
+* Vegetation, including trees
+* Building
+* Animal
+* Custom class
+
+NOTE: TODO: Add references to dedicated sections describing object classes. Vegetation, building, and
+animal are not yet supported
+
+If the human is clearly distinguishable from the vehicle, then both the
+human and the vehicle are represented by two different objects. Examples are
+bicycles, motorbikes, or scooters, where the human and the vehicle are
+perceived as separate entities.
+
+== Class-specific information
+Each object class has a specific set of properties, such as:
+
+* Node structure
+* Semantic structure
+* Animation structure
+* Material structure
+* Coordinate system
+* Pivot points
+* Mesh resolution
+
+The interpretation of the following coordinates depends on the class-specific
+rules:
+
+* The x/y position represents the center of the bounding box used
+to describe the shape of the object.
+* The value on the z-axis on the ground represents the default pose.
+
+*Example*
+For object class `vehicle`, the z-value defines the pose if a vehicle door is
+closed. For object class `human`, the z-value defines the T-pose.
+
+For each object class, the recommended mesh resolution should be used.
+
+NOTE: TODO: Added information on mesh resolution to this section. We should consider
+extending the description of the properties above.
+
+NOTE: TODO: Discuss and document
+- Class-specific file name conventions
+- New or rare structures (for example, front trunk)
+- Class-specific levels of detail and impostors
+
+NOTE: TODO: Add information on geometry classes + segmentation?
