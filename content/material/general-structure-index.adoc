@@ -1,6 +1,6 @@
-= General structure
+= Material
 
-include::Introduction.adoc[]
-include::Fileformat.adoc[]
-include::Metadata.adoc[]
-include::Material-parameters.adoc[]
+include::Introduction.adoc[leveloffset=+1]
+include::Fileformat.adoc[leveloffset=+1]
+include::Metadata.adoc[leveloffset=+1]
+include::Material-parameters.adoc[leveloffset=+1]
