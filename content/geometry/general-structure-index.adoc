@@ -1,9 +1,9 @@
-= General Structure
+= Geometry
 
-include::Introduction.adoc[]
-include::General.adoc[]
-include::Object-Geometry_classes_and_segmentation.adoc[]
-include::File_format_support.adoc[]
-include::Metadata.adoc[]
-include::Performance.adoc[]
+include::Introduction.adoc[leveloffset=+1]
+include::General.adoc[leveloffset=+1]
+include::Object-Geometry_classes_and_segmentation.adoc[leveloffset=+1]
+include::File_format_support.adoc[leveloffset=+1]
+include::Metadata.adoc[leveloffset=+1]
+include::Performance.adoc[leveloffset=+1]
 
