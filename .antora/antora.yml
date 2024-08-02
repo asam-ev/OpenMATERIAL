@@ -35,7 +35,7 @@ asciidoc: # Sets global AsciiDoc attributes that are applied for every page of t
     asamBibliography: 'specification:general_docs/bibliography.bib'
 
 nav:
-  - modules/specification/nav_introduction.adoc
+  - modules/specification/nav_openmaterial.adoc
 
 # Add more items here as required.
 # Recommended: One navigation file per document/repository!
