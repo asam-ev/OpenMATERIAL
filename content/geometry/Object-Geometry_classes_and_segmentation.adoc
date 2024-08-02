@@ -55,6 +55,5 @@ NOTE: TODO: Discuss and document
 - Class-specific file name conventions
 - New or rare structures (for example, front trunk)
 - Class-specific levels of detail and impostors
-////
 
 NOTE: TODO: Add information on geometry classes + segmentation?
