@@ -6,7 +6,17 @@
 * xref:general_docs/backward_compatibility.adoc[]
 * xref:terms_and_definitions/terms_and_definitions.adoc[]
 * xref:use_cases/use_cases.adoc[]
-* xref:geometry/general-structure-index.adoc[]
-* xref:material/general-structure-index.adoc[]
-* great
+* Geometry
+* xref:Introduction.adoc[]
+** xref:General.adoc[]
+** xref:Object-Geometry_classes_and_segmentation.adoc[]
+** xref:File_format_support.adoc[]
+** xref:Metadata.adoc[]
+** xref:Performance.adoc[]
+* Material
+** xref:Introduction.adoc[]
+** xref:Fileformat.adoc[]
+** xref:Metadata.adoc[]
+** xref:Material-parameters.adoc[]
+
 
