@@ -7,7 +7,16 @@
 * xref:terms_and_definitions/terms_and_definitions.adoc[]
 * xref:use_cases/use_cases.adoc[]
 * Geometry
-** xref:geometry/general-structure-index.adoc[]
+** xref:geometry/Introduction.adoc[]
+** xref:geometry/General.adoc[]
+** xref:geometry/Object-Geometry_classes_and_segmentation.adoc[]
+** xref:geometry/File_format_support.adoc[]
+** xref:geometry/Metadata.adoc[]
+** xref:geometry/Performance.adoc[]
 * Material
-** xref:material/general-structure-index.adoc[]
+** xref:material/Introduction.adoc[]
+** xref:material/Fileformat.adoc[]
+** xref:material/Metadata.adoc[]
+** xref:material/Material-parameters.adoc[]
+
 
