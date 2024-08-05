@@ -8,6 +8,6 @@
 * xref:use_cases/use_cases.adoc[]
 * Geometry
 ** xref:geometry/general-structure-index.adoc[]
-* Material
+* Materials
 ** xref:material/general-structure-index.adoc[]
 
