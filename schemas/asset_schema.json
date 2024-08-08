@@ -5,11 +5,11 @@
   "properties": {
     "metadata": {
       "type": "object",
-      "description": "Metadata about the asset",
+      "description": "Metadata about the asset.",
       "properties": {
         "name": {
           "type": "string",
-          "description": "Name of the asset"
+          "description": "Name of the asset."
         },
         "description": {
           "type": "string",
@@ -17,22 +17,22 @@
         },
         "uuid": {
           "type": "string",
-          "description": "Universally unique identifier for the asset",
+          "description": "Universally unique identifier for the asset.",
           "pattern": "^[a-f0-9]{32}$"
         },
         "asset_version": {
           "type": "string",
-          "description": "Version of the asset",
+          "description": "Version of the asset.",
           "pattern": "^\\d+\\.\\d+\\.\\d+$"
         },
         "openmaterial_version": {
           "type": "string",
-          "description": "Version of OpenMATERIAL",
+          "description": "Version of OpenMATERIAL.",
           "pattern": "^\\d+\\.\\d+\\.\\d+$"
         },
         "copyright": {
           "type": "string",
-          "description": "Copyright information with year and company"
+          "description": "Copyright information with year and company."
         },
         "license": {
           "type": "string",
@@ -40,19 +40,15 @@
         },
         "author": {
           "type": "string",
-          "description": "Name or email address of the author of this asset. In case of multiple authors, use comma-separation."
+          "description": "Name or email address of the author of this asset. In case of multiple authors, use comma-separation. The author can also be a company name."
         },
-        "generator": {
+        "model_creation_tool": {
           "type": "string",
-          "description": "The tool or software used to generate the asset"
-        },
-        "creator": {
-          "type": "string",
-          "description": "Creator of the asset"
+          "description": "The tool or software used to generate the 3D model of this asset."
         },
         "creation_date": {
           "type": "string",
-          "description": "Creation date of the asset in the format YYYYMMDDTHHMMSSZ",
+          "description": "Creation date of the asset in the format YYYYMMDDTHHMMSSZ.",
           "pattern": "^\\d{8}T\\d{6}Z$"
         }
       },

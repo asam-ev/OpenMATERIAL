@@ -7,8 +7,8 @@
     "openmaterial_version": "1.0.0",
     "copyright" : "(C) 2023-2024, Example Company",
     "license" : "MPL-2.0",
-    "generator": "Blender",
-    "creator": "Example Company",
+    "author" : "john.doe@asam.net"
+    "model_creation_tool": "Blender",
     "creation_date": "20240703T101728Z"
   },
   "material_mapping": [
