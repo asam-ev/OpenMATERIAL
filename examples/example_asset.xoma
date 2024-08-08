@@ -18,7 +18,12 @@
     "pbr_material_workflow" : "metallic",
     "triangle_count" : 100000,
     "texture_resolutions" : ["2K"],
-    "normal_map_format" : "OpenGL"
+    "normal_map_format" : "OpenGL",
+    "bounding_box" : {
+      "x" : [-2.5, 2.5],
+      "y" : [-1.1, 1.1],
+      "z" : [0.0, 1.5]
+    }
   },
   "material_mapping": [
     ["10;50;255;127", "example_material.xomp", "metal with red paint"]

@@ -100,6 +100,40 @@
           "type": "string",
           "description": "Does the 3D model have normal maps as textures? If yes, are they using the DirectX format or the OpenGL format?",
           "enum": ["DirectX", "OpenGL"]
+        },
+        "bounding_box": {
+          "type": "object",
+          "description": "Bounding box dimensions specifying the minimum and maximum values in x, y, and z direction.",
+          "properties": {
+            "x": {
+              "type": "array",
+              "description": "Minimum and maximum values in x direction.",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "y": {
+              "type": "array",
+              "description": "Minimum and maximum values in y direction.",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "z": {
+              "type": "array",
+              "description": "Minimum and maximum values in z direction.",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "required": ["x", "y", "z"]
         }
       },
       "required": [
