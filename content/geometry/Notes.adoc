@@ -1,0 +1,19 @@
+= Notes from Miro board
+
+
+* *Static Equipment* like bicycles, strollers, suitcase, dog (things that can be picked up and released) should be separate assets. thus equipment_static should be removed from the hierarchy  
+* *Hip*: Bone coordinate frame axis have to be specified  
+* *Neck*: For Facial Animation, more bones (Articulated_Face) may be added on top of Neck and Head
+* *Head*: For Facial Animation, more bones (Articulated_Face) may be added on top of Neck and Head. Some use cases (like in-cabin eye-tracking) require eyes. Eyes and facial movement may use an extensions to the rig.
+* *Full Hand Right*: Motorcycle Rider/Cyclist/Scooter Rider/ Person carrying stuff needs fingers. For Hand Animation, additional bones (Articulated_Hand) may be added in Parallel to Full_Hand.
+* *Full Hand Left*: Motorcycle Rider/Cyclist/Scooter Rider/ Person carrying stuff needs fingers. For Hand Animation, additional bones (Articulated_Hand) may be added in Parallel to Full_Hand. Help bones (e.g. center of a closed hand) could be helpful.  
+* *Full Foot Right*: For Foot Animation, additional bones (Articulated_Foot) may be added in Parallel to Full_Foot. Barefoot Pedestrians would need articulated toes.  
+* *Full Foot Left*: For Foot Animation, additional bones (Articulated_Foot) may be added in Parallel to Full_Foot. Barefoot Pedestrians would need articulated toes.  
+* *Grp_Equipment_Dynamic*: If equipment is very specific for a human asset, rather small, not self-contained or animated, it can be part of the human asset.
+
+
+
+
+  
+
+
