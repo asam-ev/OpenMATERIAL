@@ -1,11 +1,12 @@
 {
   "metadata": {
     "name" : "example_car",
-    "description": "Example car to demonstrate how OpenMATERIAL works",
+    "description": "This is an example car asset. It demonstrates how OpenMATERIAL assets work.",
     "uuid": "87769375a5109c689af8cc3ad3dd8349",
     "asset_version": "1.0.0",
     "openmaterial_version": "1.0.0",
     "copyright" : "(C) 2023-2024, Example Company",
+    "license" : "MPL-2.0",
     "generator": "Blender",
     "creator": "Example Company",
     "creation_date": "20240703T101728Z"

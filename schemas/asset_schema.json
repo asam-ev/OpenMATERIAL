@@ -13,7 +13,7 @@
         },
         "description": {
           "type": "string",
-          "description": "Description of the asset"
+          "description": "Short description of the asset in 2 - 3 sentences."
         },
         "uuid": {
           "type": "string",
@@ -32,13 +32,16 @@
         },
         "copyright": {
           "type": "string",
-          "description": "Copyright information"
+          "description": "Copyright information with year and company"
+        },
+        "license": {
+          "type": "string",
+          "description": "License information. For common open source licenses, provide an SPDX identifier. For other types of licenses, provide an URL to a webpage with the license or the filename of a separately provided license file."
         },
         "generator": {
           "type": "string",
           "description": "The tool or software used to generate the asset"
         },
-        
         "creator": {
           "type": "string",
           "description": "Creator of the asset"
