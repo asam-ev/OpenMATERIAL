@@ -11,10 +11,24 @@
           "type": "string",
           "description": "Name of the asset"
         },
+        "description": {
+          "type": "string",
+          "description": "Description of the asset"
+        },
         "uuid": {
           "type": "string",
           "description": "Universally unique identifier for the asset",
           "pattern": "^[a-f0-9]{32}$"
+        },
+        "asset_version": {
+          "type": "string",
+          "description": "Version of the asset",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "openmaterial_version": {
+          "type": "string",
+          "description": "Version of OpenMATERIAL",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
         },
         "copyright": {
           "type": "string",
@@ -24,11 +38,7 @@
           "type": "string",
           "description": "The tool or software used to generate the asset"
         },
-        "openmaterial_version": {
-          "type": "string",
-          "description": "Version of OpenMATERIAL",
-          "pattern": "^\\d+\\.\\d+\\.\\d+$"
-        },
+        
         "creator": {
           "type": "string",
           "description": "Creator of the asset"
@@ -37,32 +47,18 @@
           "type": "string",
           "description": "Creation date of the asset in the format YYYYMMDDTHHMMSSZ",
           "pattern": "^\\d{8}T\\d{6}Z$"
-        },
-        "asset_version": {
-          "type": "string",
-          "description": "Version of the asset",
-          "pattern": "^\\d+\\.\\d+\\.\\d+$"
-        },
-        "label": {
-          "type": "string",
-          "description": "Label or category of the asset"
-        },
-        "description": {
-          "type": "string",
-          "description": "Description of the asset"
         }
       },
       "required": [
+        "name",
+        "description",
+        "uuid",
+        "asset_version",
+        "openmaterial_version",
         "copyright",
         "generator",
-        "openmaterial_version",
         "creator",
-        "creation_date",
-        "asset_version",
-        "id",
-        "name",
-        "label",
-        "description"
+        "creation_date"
       ]
     },
     "material_mapping": {

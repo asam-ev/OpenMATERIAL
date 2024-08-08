@@ -1,15 +1,14 @@
 {
   "metadata": {
-    "name" : "example_car"
+    "name" : "example_car",
+    "description": "Example car to demonstrate how OpenMATERIAL works",
+    "uuid": "87769375a5109c689af8cc3ad3dd8349",
+    "asset_version": "1.0.0",
+    "openmaterial_version": "1.0.0",
     "copyright" : "(C) 2023-2024, Example Company",
     "generator": "Blender",
-    "openmaterial_version": "1.0.0",
     "creator": "Example Company",
-    "creation_date": "20240703T101728Z",
-    "asset_version": "1.0.0",
-    "id": "87769375a5109c689af8cc3ad3dd8349",
-    "label": "vehicle",
-    "description": "Example car to demonstrate how OpenMATERIAL works"
+    "creation_date": "20240703T101728Z"
   },
   "material_mapping": [
     ["10;50;255;127", "example_material.xomp", "metal with red paint"]
