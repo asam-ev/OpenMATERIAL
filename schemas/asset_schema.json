@@ -76,6 +76,11 @@
         "animated": {
           "type": "boolean",
           "description": "Does the 3D model contain animations?"
+        },
+        "pbr_material_workflow": {
+          "type": "string",
+          "description": "Does the 3D model contain materials for a PBR workflow? If yes, for a metallic or specular workflow?",
+          "enum": ["metallic", "specular", "none"]
         }
       },
       "required": [
