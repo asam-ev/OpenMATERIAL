@@ -107,7 +107,7 @@
           "properties": {
             "x": {
               "type": "array",
-              "description": "Minimum and maximum values in x direction.",
+              "description": "Minimum and maximum values in m in x direction.",
               "items": {
                 "type": "number"
               },
@@ -116,7 +116,7 @@
             },
             "y": {
               "type": "array",
-              "description": "Minimum and maximum values in y direction.",
+              "description": "Minimum and maximum values in m in y direction.",
               "items": {
                 "type": "number"
               },
@@ -125,7 +125,7 @@
             },
             "z": {
               "type": "array",
-              "description": "Minimum and maximum values in z direction.",
+              "description": "Minimum and maximum values in m in z direction.",
               "items": {
                 "type": "number"
               },
@@ -134,6 +134,50 @@
             }
           },
           "required": ["x", "y", "z"]
+        },
+        "vehicle_class_data": {
+          "type": "object",
+          "description": "Vehicle specific data. This only applies, if 'object_class' == 'vehicle'",
+          "properties": {
+            "center_of_front_axis": {
+              "type": "object",
+              "description": "Vector from the origin to the center of the front axis.",
+              "properties": {
+                "x": {
+                  "type": "number",
+                  "description": "Distance in m in x direction."
+                },
+                "y": {
+                  "type": "number",
+                  "description": "Distance in m in y direction."
+                },
+                "z": {
+                  "type": "number",
+                  "description": "Distance in m in z direction."
+                }
+              },
+              "required": ["x", "y", "z"]
+            },
+            "center_of_rear_axis": {
+              "type": "object",
+              "description": "Vector from the origin to the center of the rear axis.",
+              "properties": {
+                "x": {
+                  "type": "number",
+                  "description": "Distance in m in x direction."
+                },
+                "y": {
+                  "type": "number",
+                  "description": "Distance in m in y direction."
+                },
+                "z": {
+                  "type": "number",
+                  "description": "Distance in m in z direction."
+                }
+              },
+              "required": ["x", "y", "z"]
+            }
+          }
         }
       },
       "required": [

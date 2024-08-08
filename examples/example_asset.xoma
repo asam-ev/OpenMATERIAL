@@ -1,28 +1,40 @@
 {
   "metadata": {
-    "name" : "example_car",
+    "name": "example_car",
     "description": "This is an example car asset. It demonstrates how OpenMATERIAL assets work.",
     "uuid": "87769375a5109c689af8cc3ad3dd8349",
     "asset_version": "1.0.0",
     "openmaterial_version": "1.0.0",
-    "copyright" : "(C) 2023-2024, Example Company",
-    "license" : "MPL-2.0",
-    "author" : "john.doe@asam.net",
+    "copyright": "(C) 2023-2024, Example Company",
+    "license": "MPL-2.0",
+    "author": "john.doe@asam.net",
     "model_creation_tool": "Blender",
     "creation_date": "20240703T101728Z",
-    "modeling_method" : "Modeled according to images",
-    "validation_description" : "The dimensions of the vehicle in x, y and z where compared to a real vehicle. They were accurate within a margin of 0.01 m.",
-    "asset_type" : "object",
-    "object_class" : "vehicle",
-    "animated" : false,
-    "pbr_material_workflow" : "metallic",
-    "triangle_count" : 100000,
-    "texture_resolutions" : ["2K"],
-    "normal_map_format" : "OpenGL",
-    "bounding_box" : {
+    "modeling_method": "Modeled according to images",
+    "validation_description": "The dimensions of the vehicle in x, y and z where compared to a real vehicle. They were accurate within a margin of 0.01 m.",
+    "asset_type": "object",
+    "object_class": "vehicle",
+    "animated": false,
+    "pbr_material_workflow": "metallic",
+    "triangle_count": 100000,
+    "texture_resolutions": ["2K"],
+    "normal_map_format": "OpenGL",
+    "bounding_box": {
       "x" : [-2.5, 2.5],
       "y" : [-1.1, 1.1],
       "z" : [0.0, 1.5]
+    },
+    "vehicle_class_data": {
+      "center_of_front_axis": {
+        "x": 1.3,
+        "y": 0.0,
+        "z": 0.3
+      },
+      "center_of_rear_axis": {
+        "x": -1.3,
+        "y": 0.0,
+        "z": 0.3
+      }
     }
   },
   "material_mapping": [
