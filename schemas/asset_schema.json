@@ -38,6 +38,10 @@
           "type": "string",
           "description": "License information. For common open source licenses, provide an SPDX identifier. For other types of licenses, provide an URL to a webpage with the license or the filename of a separately provided license file."
         },
+        "author": {
+          "type": "string",
+          "description": "Name or email address of the author of this asset. In case of multiple authors, use comma-separation."
+        },
         "generator": {
           "type": "string",
           "description": "The tool or software used to generate the asset"
