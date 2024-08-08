@@ -58,6 +58,11 @@
         "validation_description": {
           "type": "string",
           "description": "Was the geometry of the 3D model validated against a real-world object? If yes, how?"
+        },
+        "asset_type": {
+          "type": "string",
+          "description": "Type of the asset out of the following: object (individual object), scene (a collection of multiple objects)",
+          "enum": ["object", "scene"]
         }
       },
       "required": [
