@@ -72,6 +72,10 @@
           "type": "string",
           "description": "The class of the object. This only applies if 'asset_type' == 'object'.",
           "enum": ["vehicle", "human", "road_network", "other"]
+        },
+        "animated": {
+          "type": "boolean",
+          "description": "Does the 3D model contain animations?"
         }
       },
       "required": [
