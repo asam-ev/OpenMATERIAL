@@ -12,7 +12,8 @@
     "creation_date": "20240703T101728Z",
     "modeling_method" : "Modeled according to images",
     "validation_description" : "The dimensions of the vehicle in x, y and z where compared to a real vehicle. They were accurate within a margin of 0.01 m.",
-    "asset_type" : "object"
+    "asset_type" : "object",
+    "object_class" : "vehicle"
   },
   "material_mapping": [
     ["10;50;255;127", "example_material.xomp", "metal with red paint"]
