@@ -80,7 +80,7 @@
         "pbr_material_workflow": {
           "type": "string",
           "description": "Does the 3D model contain materials for a PBR workflow? If yes, for a metallic or specular workflow?",
-          "enum": ["metallic", "specular", "none"]
+          "enum": ["metallic", "specular"]
         },
         "triangle_count": {
           "type": "integer",
@@ -95,6 +95,11 @@
           },
           "minItems": 1,
           "uniqueItems": true
+        },
+        "normal_map_format": {
+          "type": "string",
+          "description": "Does the 3D model have normal maps as textures? If yes, are they using the DirectX format or the OpenGL format?",
+          "enum": ["DirectX", "OpenGL"]
         }
       },
       "required": [

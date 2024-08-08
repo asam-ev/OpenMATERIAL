@@ -17,7 +17,8 @@
     "animated" : false,
     "pbr_material_workflow" : "metallic",
     "triangle_count" : 100000,
-    "texture_resolutions" : ["2K"]
+    "texture_resolutions" : ["2K"],
+    "normal_map_format" : "OpenGL"
   },
   "material_mapping": [
     ["10;50;255;127", "example_material.xomp", "metal with red paint"]
