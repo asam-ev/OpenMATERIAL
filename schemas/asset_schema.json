@@ -7,6 +7,15 @@
       "type": "object",
       "description": "Metadata about the asset",
       "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the asset"
+        },
+        "uuid": {
+          "type": "string",
+          "description": "Universally unique identifier for the asset",
+          "pattern": "^[a-f0-9]{32}$"
+        },
         "copyright": {
           "type": "string",
           "description": "Copyright information"
@@ -33,15 +42,6 @@
           "type": "string",
           "description": "Version of the asset",
           "pattern": "^\\d+\\.\\d+\\.\\d+$"
-        },
-        "id": {
-          "type": "string",
-          "description": "Unique identifier for the asset",
-          "pattern": "^[a-f0-9]{32}$"
-        },
-        "name": {
-          "type": "string",
-          "description": "Name of the asset"
         },
         "label": {
           "type": "string",
