@@ -62,10 +62,7 @@
         "uuid",
         "asset_version",
         "openmaterial_version",
-        "copyright",
-        "generator",
-        "creator",
-        "creation_date"
+        "copyright"
       ]
     },
     "material_mapping": {
