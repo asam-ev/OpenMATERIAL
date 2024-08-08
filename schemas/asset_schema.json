@@ -54,6 +54,10 @@
         "modeling_method": {
           "type": "string",
           "description": "Description how the 3D model was modeled. Was it modeled based on a 3D scan, based on photos, or freehand?"
+        },
+        "validation_description": {
+          "type": "string",
+          "description": "Was the geometry of the 3D model validated against a real-world object? If yes, how?"
         }
       },
       "required": [
