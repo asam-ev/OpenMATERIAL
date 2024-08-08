@@ -50,6 +50,10 @@
           "type": "string",
           "description": "Creation date of the asset in the format YYYYMMDDTHHMMSSZ.",
           "pattern": "^\\d{8}T\\d{6}Z$"
+        },
+        "modeling_method": {
+          "type": "string",
+          "description": "Description how the 3D model was modeled. Was it modeled based on a 3D scan, based on photos, or freehand?"
         }
       },
       "required": [

@@ -9,7 +9,8 @@
     "license" : "MPL-2.0",
     "author" : "john.doe@asam.net"
     "model_creation_tool": "Blender",
-    "creation_date": "20240703T101728Z"
+    "creation_date": "20240703T101728Z",
+    "modeling_method" : "Modeled according to images"
   },
   "material_mapping": [
     ["10;50;255;127", "example_material.xomp", "metal with red paint"]
