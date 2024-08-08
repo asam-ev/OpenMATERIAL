@@ -81,6 +81,20 @@
           "type": "string",
           "description": "Does the 3D model contain materials for a PBR workflow? If yes, for a metallic or specular workflow?",
           "enum": ["metallic", "specular", "none"]
+        },
+        "triangle_count": {
+          "type": "integer",
+          "description": "Number of triangles in the 3D model. One quad counts as two triangles."
+        },
+        "texture_resolutions": {
+          "type": "array",
+          "description": "List of all texture resolutions in the 3D model. This can include any combination of '1K', '2K', or '4K'.",
+          "items": {
+            "type": "string",
+            "enum": ["1K", "2K", "4K"]
+          },
+          "minItems": 1,
+          "uniqueItems": true
         }
       },
       "required": [

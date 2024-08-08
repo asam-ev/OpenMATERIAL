@@ -15,7 +15,9 @@
     "asset_type" : "object",
     "object_class" : "vehicle",
     "animated" : false,
-    "pbr_material_workflow" : "metallic"
+    "pbr_material_workflow" : "metallic",
+    "triangle_count" : 100000,
+    "texture_resolutions" : ["2K"]
   },
   "material_mapping": [
     ["10;50;255;127", "example_material.xomp", "metal with red paint"]
