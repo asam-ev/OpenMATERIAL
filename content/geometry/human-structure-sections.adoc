@@ -1,5 +1,31 @@
 = Model structure
 
+== Table of contents
+
+|-------Hip (T)
+       |   |-------Lower_Spine (T)
+       |   |   |-------Upper_Spine (T)
+       |   |      |   |-------Neck (T)
+       |   |      |   |  |-------Head (T)
+       |   |      |-------Shoulder_R (T)
+       |   |      |   |-------Upper_Arm_R (T)
+       |   |      |      |  |-------Lower_Arm_R (T)
+       |   |      |      |  |  |-------Full_Hand_R (T)
+    |   |      |-------Shoulder_L (T)
+    |   |      |    |-------Upper_Arm_L (T)
+    |   |      |       |   |-------Lower_Arm_L (T)
+    |   |      |       |   |  |-------Full_Hand_L (T)
+    |   |-------Upper_Leg_R (T)
+    |   |      |-------Lower_Leg_R (T)
+    |   |      |       |-------Full_Foot_R (T)
+    |   |-------Upper_Leg_L (T)
+    |      |   |-------Lower_Leg_L (T)
+    |      |      |       |-------Full_Foot_L (T)
+    |-------Body
+    |-------Hair
+    |-------Clothing
+    |-------Grp_Equipment_Dynamic (T)
+    
 == Skeleton
 
 Add a description
