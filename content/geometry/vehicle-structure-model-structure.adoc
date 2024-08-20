@@ -1,5 +1,60 @@
 = Model structure
 
+== Table of content
+|-------Grp_Vehicle_Part_<keyword>_<vehicle_part_idx> (T)
+| |-------Grp_Exterior
+| |  |-------Grp_Exterior_Static
+| |  |-------Grp_Exterior_Dynamic
+| |  |-------Grp_Wheel_<axle_idx>_<wheel_idx> (T)
+| |  |  |-------Grp_Wheel_<axle_idx>_<wheel_idx>_Steering
+| |  |  |-------Grp_Wheel_<axle_idx>_<wheel_idx>_Steering_Rotating (T)
+| |  |-------Grp_Door_Front_<door_front_idx> (T)
+| |  |-------Grp_Door_Left_<door_left_idx> (T)
+| |  |-------Grp_Door_Right_<door_right_idx> (T)
+| |  |-------Grp_Door_Rear_<door_rear_idx> (T)
+| |  |-------Grp_Door_Top_<door_top_idx> (T)
+| |  |-------Grp_Door_Bottom_<door_bottom_idx> (T)
+| |     |-------Grp_Light_Day_Left<day_left_idx> (T)
+| |     |-------Grp_Light_Day_Right<day_right_idx> (T)
+| |  |-------Grp_Light_Low_Beam_Left<low_beam_left_idx> (T)
+| |     |-------Grp_Light_Low_Beam_Right<low_beam_right_idx> (T)
+| |  |-------Grp_Light_High_Beam_Left<high_beam_left_idx> (T)
+| |     |-------Grp_Light_High_Beam_Right<high_beam_right_idx> (T)
+| |  |-------Grp_Light_Position_Left<position_left_idx> (T)
+| |     |-------Grp_Light_Position_Right<position_right_idx> (T)
+| |     |-------Grp_Light_Park_Left<position_left_idx> (T)
+| |     |-------Grp_Light_Park_Right<position_right_idx> (T)
+| |  |-------Grp_Light_Tail_Left<tail_left_idx> (T)
+| |     |-------Grp_Light_Tail_Right<tail_right_idx> (T)
+| |  |-------Grp_Light_Brake_Left<brake_left_idx> (T)
+| |     |-------Grp_Light_Brake_Center<brake_center_idx> (T)
+| |     |-------Grp_Light_Brake_Right<brake_right_idx> (T)
+| |  |-------Grp_Light_Reverse_Left<reverse_left_idx> (T)
+| |     |-------Grp_Light_Reverse_Right<reverse_right_idx> (T)
+| |  |-------Grp_Light_Fog_Left<fog_left_idx> (T)
+| |     |-------Grp_Light_Fog_Right<fog_right_idx> (T)
+| |     |-------Grp_Light_Corner_Left<corner_left_idx> (T)
+| |     |-------Grp_Light_Corner_Right<corner_right_idx> (T)
+| |  |-------Grp_Light_Indicator_Left_<indicator_left_idx> (T)
+| |  |-------Grp_Light_Indicator_Right_<indicator_right_idx> (T)
+| |  |-------Grp_Number_Plate_<number_plate_idx> (T)
+| |  |-------Grp_Light_Number_Plate_<number_plate_light_idx> (T)
+| |     |-------Grp_Light_Warning<warning_idx> (T)
+| |  |-------Grp_Convertible_Top
+| |  |-------Grp_Sensors (T)
+| |  |-------Grp_Side_Mirror_Mounting_Left <side_mirror_mounting_left_idx> (T)
+| |  |-------Grp_Side_Mirror_View_Left <side_mirror_view_left_idx> (T)
+| |  |-------Grp_Side_Mirror_Mounting_Right <side_mirror_mounting_right_idx> (T)
+| |  |-------Grp_Side_Mirror_View_Right <side_mirror_view_right_idx> (T)
+| |     |-------Grp_Blindspot_Mirror_Mounting <blindspot_mirror_mounting_idx> (T)
+| |     |-------Grp_Blindspot_Mirror_View <blindspot_mirror_view_idx> (T)
+| |-------Grp_Interior
+| |  |-------Grp_Interior_Static
+| |  |-------Grp_Interior_Dynamic
+| |  | |-------Grp_Steering_Wheel (T)
+| |  | |-------Grp_Eyepoint (T)
+| |  | |-------Grp_Rearview_Mirror_Mounting <rearview_mirror_mounting_idx> (T)
+| |  | |-------Grp_Rearview_Mirror_View <rearview_mirror_view_idx> (T)
 == Grp_Vehicle_Part_keyword (vehicle_part_idx) (T) 
 
 Add a description
