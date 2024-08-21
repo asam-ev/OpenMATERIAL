@@ -82,66 +82,15 @@
             "surface_correlation_length"
           ]
         },
-        "index_of_refraction": {
-          "type": "array",
-          "description": "Index of refraction of the material at different temperatures.",
-          "items": {
-            "type": "object",
-            "properties": {
-              "temperature": {
-                "type": "number",
-                "description": "Temperature at which the index of refraction is measured."
-              },
-              "n": {
-                "type": "array",
-                "description": "Real part of the refractive index as a function of wavelength.",
-                "items": {
-                  "type": "array",
-                  "items": [
-                    {
-                      "type": "number",
-                      "description": "Wavelength."
-                    },
-                    {
-                      "type": "number",
-                      "description": "Real part of the refractive index at the specified wavelength."
-                    }
-                  ],
-                  "minItems": 2,
-                  "maxItems": 2
-                }
-              },
-              "k": {
-                "type": "array",
-                "description": "Imaginary part of the refractive index as a function of wavelength.",
-                "items": {
-                  "type": "array",
-                  "items": [
-                    {
-                      "type": "number",
-                      "description": "Wavelength."
-                    },
-                    {
-                      "type": "number",
-                      "description": "Imaginary part of the refractive index at the specified wavelength."
-                    }
-                  ],
-                  "minItems": 2,
-                  "maxItems": 2
-                }
-              }
-            },
-            "required": [
-              "temperature",
-              "n",
-              "k"
-            ]
-          }
+        "electromagnetic_properties_uri": {
+          "type": "string",
+          "description": "Link to a look-up table file with electromagnetic material properties.",
+          "pattern": ".*_emp\\.xomlt$"
         }
       },
       "required": [
         "surface_roughness",
-        "index_of_refraction"
+        "electromagnetic_properties_uri"
       ]
     }
   },
