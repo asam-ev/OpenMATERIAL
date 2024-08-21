@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "description": "Metadata related to the material.",
+      "properties": {
+        "copyright": {
+          "type": "string",
+          "description": "Copyright information.",
+          "pattern": "^\\(C\\) \\d{4}-\\d{4}, .+$"
+        },
+        "generator": {
+          "type": "string",
+          "description": "Software or tool used to generate the material."
+        },
+        "openmaterial_version": {
+          "type": "string",
+          "description": "Version of OpenMATERIAL.",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "creator": {
+          "type": "string",
+          "description": "Creator of the material."
+        },
+        "creation_date": {
+          "type": "string",
+          "description": "Date when the material was created, in the format YYYYMMDDTHHMMSSZ.",
+          "pattern": "^\\d{8}T\\d{6}Z$"
+        },
+        "material_version": {
+          "type": "string",
+          "description": "Version of the material.",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the material.",
+          "pattern": "^[a-f0-9]{32}$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the material."
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the material."
+        }
+      },
+      "required": [
+        "copyright",
+        "generator",
+        "openmaterial_version",
+        "creator",
+        "creation_date",
+        "material_version",
+        "id",
+        "name",
+        "description"
+      ]
+    },
+    "electromagnetic_properties": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "description": "Array of electromagnetic property values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
+        "items": [
+          {
+            "type": ["number", "null"],
+            "description": "Wavelength in meters."
+          },
+          {
+            "type": ["number", "null"],
+            "description": "Temperature in Kelvin."
+          },
+          {
+            "type": ["number", "null"],
+            "description": "Humidity in percent."
+          },
+          {
+            "type": ["number", "null"],
+            "description": "Real part of complex permeability."
+          },
+          {
+            "type": ["number", "null"],
+            "description": "Imaginary part of complex permeability."
+          },
+          {
+            "type": ["number", "null"],
+            "description": "Real part of complex permittivity."
+          },
+          {
+            "type": ["number", "null"],
+            "description": "Imaginary part of complex permittivity."
+          }
+        ],
+        "minItems": 7,
+        "maxItems": 7
+      }
+    }
+  },
+  "required": [
+    "metadata",
+    "electromagnetic_properties"
+  ]
+}
