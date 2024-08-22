@@ -1,8 +1,0 @@
-= Road structure
-
-include::road-structure-introduction.adoc[leveloffset=+1]
-include::road-structure-general.adoc[leveloffset=+1]
-include::road-structure-model-creation.adoc[leveloffset=+1]
-include::road-structure-model-structure.adoc[leveloffset=+1]
-include::road-structure-notes.adoc[leveloffset=+1]
-
