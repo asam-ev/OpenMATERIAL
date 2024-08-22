@@ -17,6 +17,7 @@
     "animated": false,
     "pbr_material_workflow": "metallic",
     "triangle_count": 100000,
+    "mesh_count": 10,
     "texture_resolutions": ["2K"],
     "normal_map_format": "OpenGL",
     "bounding_box": {

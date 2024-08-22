@@ -64,10 +64,6 @@
           "description": "Type of the asset out of the following: object (individual object), scene (a collection of multiple objects)",
           "enum": ["object", "scene"]
         },
-        "number_of_objects": {
-          "type": "integer",
-          "description": "The number of individual objects in a scene. This only applies if 'asset_type' == 'scene'."
-        },
         "object_class": {
           "type": "string",
           "description": "The class of the object. This only applies if 'asset_type' == 'object'.",
@@ -75,16 +71,20 @@
         },
         "animated": {
           "type": "boolean",
-          "description": "Does the 3D model contain animations?"
+          "description": "Does the 3D model contain keyframe animations?"
         },
         "pbr_material_workflow": {
           "type": "string",
           "description": "Does the 3D model contain materials for a PBR workflow? If yes, for a metallic or specular workflow?",
-          "enum": ["metallic", "specular"]
+          "enum": ["metallic", "specular", "none"]
         },
         "triangle_count": {
           "type": "integer",
-          "description": "Number of triangles in the 3D model. One quad counts as two triangles."
+          "description": "The number of triangles in the 3D model. One quad counts as two triangles."
+        },
+        "mesh_count": {
+          "type": "integer",
+          "description": "The number of meshes in the 3D geometry."
         },
         "texture_resolutions": {
           "type": "array",
@@ -99,11 +99,11 @@
         "normal_map_format": {
           "type": "string",
           "description": "Does the 3D model have normal maps as textures? If yes, are they using the DirectX format or the OpenGL format?",
-          "enum": ["DirectX", "OpenGL"]
+          "enum": ["DirectX", "OpenGL", "none"]
         },
         "bounding_box": {
           "type": "object",
-          "description": "Bounding box dimensions specifying the minimum and maximum values in x, y, and z direction.",
+          "description": "Axis-aligned bounding box dimensions specifying the minimum and maximum values in x, y, and z direction.",
           "properties": {
             "x": {
               "type": "array",
@@ -142,7 +142,19 @@
         "uuid",
         "asset_version",
         "openmaterial_version",
-        "copyright"
+        "copyright",
+        "license",
+        "author",
+        "creation_date",
+        "asset_type",
+        "object_class",
+        "animated",
+        "pbr_material_workflow",
+        "triangle_count",
+        "mesh_count",
+        "texture_resolutions",
+        "normal_map_format",
+        "bounding_box"
       ]
     },
     "material_mapping": {
