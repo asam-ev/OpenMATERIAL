@@ -1,7 +1,0 @@
-= Human structure
-
-include::human-structure-introduction.adoc[leveloffset=+1]
-include::human-structure-general.adoc[leveloffset=+1]
-include::human-structure-model-creation.adoc[leveloffset=+1]
-include::human-structure-sections.adoc[leveloffset=+1]
-include::Notes.adoc[leveloffset=+1]
