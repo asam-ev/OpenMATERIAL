@@ -9,7 +9,7 @@
 * Geometry
 ** xref:geometry/Introduction.adoc[]
 ** xref:geometry/General.adoc[]
-** xref:geometry/Object-Geometry_classes_and_segmentation.adoc[]
+** xref:geometry/object-classes.adoc[]
 ** xref:geometry/File_format_support.adoc[]
 ** xref:geometry/Metadata.adoc[]
 ** xref:geometry/Performance.adoc[]
