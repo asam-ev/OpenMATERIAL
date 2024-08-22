@@ -1,3 +1,0 @@
-= General 
-
-//Add general information about the vehicle structure
