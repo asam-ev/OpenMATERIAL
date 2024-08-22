@@ -134,50 +134,6 @@
             }
           },
           "required": ["x", "y", "z"]
-        },
-        "vehicle_class_data": {
-          "type": "object",
-          "description": "Vehicle specific data. This only applies, if 'object_class' == 'vehicle'",
-          "properties": {
-            "center_of_front_axis": {
-              "type": "object",
-              "description": "Vector from the origin to the center of the front axis.",
-              "properties": {
-                "x": {
-                  "type": "number",
-                  "description": "Distance in m in x direction."
-                },
-                "y": {
-                  "type": "number",
-                  "description": "Distance in m in y direction."
-                },
-                "z": {
-                  "type": "number",
-                  "description": "Distance in m in z direction."
-                }
-              },
-              "required": ["x", "y", "z"]
-            },
-            "center_of_rear_axis": {
-              "type": "object",
-              "description": "Vector from the origin to the center of the rear axis.",
-              "properties": {
-                "x": {
-                  "type": "number",
-                  "description": "Distance in m in x direction."
-                },
-                "y": {
-                  "type": "number",
-                  "description": "Distance in m in y direction."
-                },
-                "z": {
-                  "type": "number",
-                  "description": "Distance in m in z direction."
-                }
-              },
-              "required": ["x", "y", "z"]
-            }
-          }
         }
       },
       "required": [
