@@ -1,0 +1,27 @@
+= Metadata
+
+In ASAM OpenMATERIAL, metadata of material assets and geometries is stored in
+each asset file. The metadata is independent of the 3D file format.
+
+The following list provides examples of metadata information:
+
+* 3D model name/title, unique ID, version
+* ASAM OpenMATERIAL version
+* Author and authoring tool, creation date
+* Origin/source (3D scan, modeled by image, public ressource, ...)
+* Description field (free text)
+* Copyright information (notice/protection) and license type (CC0, GPL, ...)
+* Labeling (object class, materials, abstraction level: Scene/object/component/animation)
+* Complexity information (Mesh/texture resolution or class (real-time, non-real-time), ...)
+* Used technologies (alpha textures, normal maps (DirectX or OpenGL), and so on) ?
+* Validation information
+* Material mapping type (per mesh, per vertex, per texel)
+* Class-dependent metadata ?
+** Vehicles:
+*** Axes and wheel positions
+
+NOTE: What about other geometrical data in the Asset file? E.g. Thickness of meshes, mass of meshes etc. (CL)  
+
+NOTE: Within the metadata, the available nodes of a model should be spcified. I can image classes of model fidelity specifying sets of nodes (LF)  
+
+NOTE: Eyepoint limits could be part of the metadata (LF)  

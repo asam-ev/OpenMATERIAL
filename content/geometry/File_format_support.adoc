@@ -1,0 +1,9 @@
+= File format
+
+ASAM OpenMATERIAL does not define its own 3D model format. ASAM OpenMATERIAL defines coordinate systems, units, node hierarchies, and more, which can be applied in different 3D model formats.
+
+ASAM OpenMATERIAL has tested and supports the following file formats for 3D models:
+
+* glTF
+* FBX
+* USD
