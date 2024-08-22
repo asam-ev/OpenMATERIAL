@@ -36,7 +36,7 @@ include::general_docs/abbreviations.adoc[leveloffset=+1]
 include::general_docs/backward_compatibility.adoc[leveloffset=+1]
 include::terms_and_definitions/terms_and_definitions.adoc[leveloffset=+1]
 include::use_cases/use_cases.adoc[leveloffset=+1]
-include::geometry/general-structure-index.adoc[leveloffset=+1]
+include::geometry/geometry-index.adoc[leveloffset=+1]
 include::material/general-structure-index.adoc[leveloffset=+1]
 
 

@@ -57,7 +57,7 @@
 | |  | |-------Grp_Rearview_Mirror_View_<rearview_mirror_view_idx> (T)
 | |  | |-------Grp_Seat_<seat_idx> (T)
 
-== Grp_Vehicle_Part_keyword <vehicle_part_idx> (T) 
+== Grp_Vehicle_Part_<keyword><vehicle_part_idx> (T) 
 
 Add a description
 

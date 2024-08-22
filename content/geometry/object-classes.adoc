@@ -1,9 +1,9 @@
-= Object and geometry classes
+= Object classes
 
-== Object classes
-In ASAM OpenMATERIAL, object classes represent a collection of similar objects.
-Examples of object classes are vehicles, humans, and the road network. Each
-instance of the object class is described by the same properties, but has
+== Introduction
+In ASAM OpenMATERIAL, an object class is a collection of similar objects.
+Examples of object classes are vehicles, humans, and road networks.
+Each instance of an object class is described by the same properties, but has
 individual property values.
 
 The ASAM OpenMATERIAL standard supports the following object classes:
@@ -11,13 +11,8 @@ The ASAM OpenMATERIAL standard supports the following object classes:
 * Vehicle
 * Human
 * Road and road infrastructure
-* Vegetation, including trees
-* Building
-* Animal
-* Custom class
 
-NOTE: TODO: Add references to dedicated sections describing object classes. Vegetation, building, and
-animal are not yet supported
+NOTE: TODO: Add references to dedicated sections describing object classes.
 
 If the human is clearly distinguishable from the vehicle, then both the
 human and the vehicle are represented by two different objects. Examples are
@@ -57,3 +52,5 @@ NOTE: TODO: Discuss and document
 - Class-specific levels of detail and impostors
 
 NOTE: TODO: Add information on geometry classes + segmentation?
+
+include::object-vehicle/vehicle-index.adoc[leveloffset=+1]
