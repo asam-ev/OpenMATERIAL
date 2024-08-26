@@ -1,0 +1,6 @@
+= Human structure
+
+include::human-general.adoc[leveloffset=+1]
+include::human-model-creation.adoc[leveloffset=+1]
+include::human-model-structure.adoc[leveloffset=+1]
+include::human-notes.adoc[leveloffset=+1]

@@ -1,0 +1,1210 @@
+= Model structure
+
+== Table of contents
+
+[plantuml]
+----
+
+Skeleton
+|_Root_Bone (T)
+  |_ Hip (T)
+    |_ Sitting_Point (T)
+    |_ Lower_Spine (T)
+      |_ Upper_Spine (T)
+        |_ Neck (T)
+          |_ Head (T)
+            |_ Eye_Right (T)
+            |_ Eye_Left (T)
+      |_ Shoulder_Right (T)
+        |_ Upper_Arm_Right (T)
+          |_ Lower_Arm_Right (T)
+            |_ Full_Hand_Right (T)
+            |_ Hand_Right (T)
+              |_ Upper_Fingers_Right (T)
+                |_ Lower_Fingers_Right (T)
+              |_ Upper_Thumb_Right (T)
+                |_ Lower_Thumb_Right (T)
+            |_ Gripping_Point_Right (T)
+      |_ Shoulder_Left (T)
+        |_ Upper_Arm_Left (T)
+          |_ Lower_Arm_Left (T)
+            |_ Full_Hand_Left (T)
+            |_ Hand_Left (T)
+              |_ Upper_Fingers_Left (T)
+                |_ Lower_Fingers_Left (T)
+              |_ Upper_Thumb_Left (T)
+                |_ Lower_Thumb_Left (T)
+            |_ Gripping_Point_Left (T)
+    |_ Upper_Leg_Right (T)
+      |_ Lower_Leg_Right (T)
+        |_ Full_Foot_Right (T)
+        |_ Standing_Point_Right (T)
+    |_ Upper_Leg_Left (T)
+      |_ Lower_Leg_Left (T)
+        |_ Full_Foot_Left (T)
+        |_ Standing_Point_Left (T)
+Body
+Hair
+Clothing
+----
+
+== Root_Bone (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Hip (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Sitting_Point (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Lower_Spine (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Upper_Spine (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Neck (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Head (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Eye_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Eye_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Shoulder_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Upper_Arm_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Lower_Arm_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Full_Hand_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Hand_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Upper_Fingers_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Lower_Fingers_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Upper_Thumb_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Lower_Thumb_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Gripping_Point_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Shoulder_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Upper_Arm_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Lower_Arm_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Full_Hand_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Hand_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Upper_Fingers_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Lower_Fingers_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Upper_Thumb_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Lower_Thumb_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Gripping_Point_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Upper_Leg_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Lower_Leg_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Full_Foot_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Standing_Point_Right (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Upper_Leg_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Lower_Leg_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Full_Foot_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Standing_Point_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Body
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Hair
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Clothing
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
