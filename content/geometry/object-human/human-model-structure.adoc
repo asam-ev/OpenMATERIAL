@@ -2,29 +2,33 @@
 
 == Table of contents
 
-|-------Hip (T)
-       |   |-------Lower_Spine (T)
-       |   |   |-------Upper_Spine (T)
-       |   |      |   |-------Neck (T)
-       |   |      |   |  |-------Head (T)
-       |   |      |-------Shoulder_R (T)
-       |   |      |   |-------Upper_Arm_R (T)
-       |   |      |      |  |-------Lower_Arm_R (T)
-       |   |      |      |  |  |-------Full_Hand_R (T)
-    |   |      |-------Shoulder_L (T)
-    |   |      |    |-------Upper_Arm_L (T)
-    |   |      |       |   |-------Lower_Arm_L (T)
-    |   |      |       |   |  |-------Full_Hand_L (T)
-    |   |-------Upper_Leg_R (T)
-    |   |      |-------Lower_Leg_R (T)
-    |   |      |       |-------Full_Foot_R (T)
-    |   |-------Upper_Leg_L (T)
-    |      |   |-------Lower_Leg_L (T)
-    |      |      |       |-------Full_Foot_L (T)
-    |-------Body
-    |-------Hair
-    |-------Clothing
-    |-------Grp_Equipment_Dynamic (T)
+[plantuml]
+----
+
+Hip (T)
+|_ Lower_Spine (T)
+  |_ Upper_Spine (T)
+    |_ Neck (T)
+      |_ Head (T)
+  |_ Shoulder_R (T)
+    |_ Upper_Arm_R (T)
+      |_ Lower_Arm_R (T)
+        |_ Full_Hand_R (T)
+  |_ Shoulder_L (T)
+    |_ Upper_Arm_L (T)
+      |_ Lower_Arm_L (T)
+        |_ Full_Hand_L (T)
+|_ Upper_Leg_R (T)
+  |_ Lower_Leg_R (T)
+    |_ Full_Foot_R (T)
+|_ Upper_Leg_L (T)
+  |_ Lower_Leg_L (T)
+    |_ Full_Foot_L (T)
+Body
+Hair
+Clothing
+Grp_Equipment_Dynamic (T)
+----
     
 == Skeleton
 
@@ -85,6 +89,9 @@ Add a figure.
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Hip (T)
+////
+2024-08-22: For seated Humans (e.g. as drivers/passengers in a vehicle, we need a helper bone (seat) underneath hip bone 
+////
 
 Add a description
 
