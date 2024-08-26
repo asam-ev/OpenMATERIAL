@@ -43,9 +43,9 @@ Skeleton
       |_ Lower_Leg_Left (T)
         |_ Full_Foot_Left (T)
         |_ Standing_Point_Left (T)
-  |_ Body
-  |_ Hair
-  |_ Clothing
+Body
+Hair
+Clothing
 ----
 
 == Root_Bone (T)
