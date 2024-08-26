@@ -13,11 +13,11 @@ Road_Network (T)
   |_ Signal_<signal_idx> (T) 
     |_ Sign_<sign_idx> (T)
     |_ Bulb_<bulb_idx> (T)
-|_ Junction_<junction_idx> (T)
+|_ Junction_<junction_idx>
   |_ Junction_Connection_<junction_connection_idx>
-|_ Direct_Junction_<direct_junction_idx> (T)
+|_ Direct_Junction_<direct_junction_idx>
   |_ Direct_Junction_Connection_<direct_junction_connection_idx>
-|_ Virtual_Junction_<virtual_junction_idx> (T)
+|_ Virtual_Junction_<virtual_junction_idx>
   |_ Virtual_Junction_Connection_<virtual_junction_connection_idx>
 ----
 
