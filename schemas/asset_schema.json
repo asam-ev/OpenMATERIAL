@@ -5,64 +5,156 @@
   "properties": {
     "metadata": {
       "type": "object",
-      "description": "Metadata about the asset",
+      "description": "Metadata about the asset.",
       "properties": {
-        "copyright": {
-          "type": "string",
-          "description": "Copyright information"
-        },
-        "generator": {
-          "type": "string",
-          "description": "The tool or software used to generate the asset"
-        },
-        "openmaterial_version": {
-          "type": "string",
-          "description": "Version of OpenMATERIAL",
-          "pattern": "^\\d+\\.\\d+\\.\\d+$"
-        },
-        "creator": {
-          "type": "string",
-          "description": "Creator of the asset"
-        },
-        "creation_date": {
-          "type": "string",
-          "description": "Creation date of the asset in the format YYYYMMDDTHHMMSSZ",
-          "pattern": "^\\d{8}T\\d{6}Z$"
-        },
-        "asset_version": {
-          "type": "string",
-          "description": "Version of the asset",
-          "pattern": "^\\d+\\.\\d+\\.\\d+$"
-        },
-        "id": {
-          "type": "string",
-          "description": "Unique identifier for the asset",
-          "pattern": "^[a-f0-9]{32}$"
-        },
         "name": {
           "type": "string",
-          "description": "Name of the asset"
-        },
-        "label": {
-          "type": "string",
-          "description": "Label or category of the asset"
+          "description": "Name of the asset."
         },
         "description": {
           "type": "string",
-          "description": "Description of the asset"
+          "description": "Short description of the asset in 2 - 3 sentences."
+        },
+        "uuid": {
+          "type": "string",
+          "description": "Universally unique identifier for the asset.",
+          "pattern": "^[a-f0-9]{32}$"
+        },
+        "asset_version": {
+          "type": "string",
+          "description": "Version of the asset.",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "openmaterial_version": {
+          "type": "string",
+          "description": "Version of OpenMATERIAL.",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "copyright": {
+          "type": "string",
+          "description": "Copyright information with year and company."
+        },
+        "license": {
+          "type": "string",
+          "description": "License information. For common open source licenses, provide an SPDX identifier. For other types of licenses, provide an URL to a webpage with the license or the filename of a separately provided license file."
+        },
+        "author": {
+          "type": "string",
+          "description": "Name or email address of the author of this asset. In case of multiple authors, use comma-separation. The author can also be a company name."
+        },
+        "model_creation_tool": {
+          "type": "string",
+          "description": "The tool or software used to generate the 3D model of this asset."
+        },
+        "creation_date": {
+          "type": "string",
+          "description": "Creation date of the asset in the format YYYYMMDDTHHMMSSZ.",
+          "pattern": "^\\d{8}T\\d{6}Z$"
+        },
+        "modeling_method": {
+          "type": "string",
+          "description": "Description how the 3D model was modeled. Was it modeled based on a 3D scan, based on photos, or freehand?"
+        },
+        "validation_description": {
+          "type": "string",
+          "description": "Was the geometry of the 3D model validated against a real-world object? If yes, how?"
+        },
+        "asset_type": {
+          "type": "string",
+          "description": "Type of the asset out of the following: object (individual object), scene (a collection of multiple objects)",
+          "enum": ["object", "scene"]
+        },
+        "object_class": {
+          "type": "string",
+          "description": "The class of the object. This only applies if 'asset_type' == 'object'.",
+          "enum": ["vehicle", "human", "road_network", "other"]
+        },
+        "animated": {
+          "type": "boolean",
+          "description": "Does the 3D model contain keyframe animations?"
+        },
+        "pbr_material_workflow": {
+          "type": "string",
+          "description": "Does the 3D model contain materials for a PBR workflow? If yes, for a metallic or specular workflow?",
+          "enum": ["metallic", "specular", "none"]
+        },
+        "triangle_count": {
+          "type": "integer",
+          "description": "The number of triangles in the 3D model. One quad counts as two triangles."
+        },
+        "mesh_count": {
+          "type": "integer",
+          "description": "The number of meshes in the 3D geometry."
+        },
+        "texture_resolutions": {
+          "type": "array",
+          "description": "List of all texture resolutions in the 3D model. This can include any combination of '1K', '2K', or '4K'.",
+          "items": {
+            "type": "string",
+            "enum": ["1K", "2K", "4K"]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "normal_map_format": {
+          "type": "string",
+          "description": "Does the 3D model have normal maps as textures? If yes, are they using the DirectX format or the OpenGL format?",
+          "enum": ["DirectX", "OpenGL", "none"]
+        },
+        "bounding_box": {
+          "type": "object",
+          "description": "Axis-aligned bounding box dimensions specifying the minimum and maximum values in x, y, and z direction.",
+          "properties": {
+            "x": {
+              "type": "array",
+              "description": "Minimum and maximum values in m in x direction.",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "y": {
+              "type": "array",
+              "description": "Minimum and maximum values in m in y direction.",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "z": {
+              "type": "array",
+              "description": "Minimum and maximum values in m in z direction.",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "required": ["x", "y", "z"]
         }
       },
       "required": [
-        "copyright",
-        "generator",
-        "openmaterial_version",
-        "creator",
-        "creation_date",
-        "asset_version",
-        "id",
         "name",
-        "label",
-        "description"
+        "description",
+        "uuid",
+        "asset_version",
+        "openmaterial_version",
+        "copyright",
+        "license",
+        "author",
+        "creation_date",
+        "asset_type",
+        "object_class",
+        "animated",
+        "pbr_material_workflow",
+        "triangle_count",
+        "mesh_count",
+        "texture_resolutions",
+        "normal_map_format",
+        "bounding_box"
       ]
     },
     "material_mapping": {
