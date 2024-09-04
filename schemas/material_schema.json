@@ -137,6 +137,19 @@
               "k"
             ]
           }
+        },
+        "emissivity": {
+          "type": "object",
+          "description": "Describes the ability to emit energy as thermal radiation. Given as the fraction of thermal radiation emitted by a surface relative to the radiation emitted by an ideal black body at the same temperature.",
+          "properties": {
+            "temperature": {
+              "type": "number",
+              "description": "Temperature at which the emissivity is measured"
+            },
+          },
+          "required": [
+            "temperature"
+          ]
         }
       },
       "required": [
