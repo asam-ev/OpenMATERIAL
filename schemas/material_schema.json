@@ -84,7 +84,7 @@
         },
         "electromagnetic_properties_uri": {
           "type": "string",
-          "description": "Link to a look-up table file with electromagnetic material properties.",
+          "description": "Relative path to a property lookup table file with electromagnetic material properties.",
           "pattern": ".*_emp\\.xomlt$"
         }
       },
