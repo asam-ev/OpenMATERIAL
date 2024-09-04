@@ -82,6 +82,28 @@
             "surface_correlation_length"
           ]
         },
+        "elasticity": {
+          "type": "object",
+          "description": "Information about the elasticity of the material.",
+          "properties": {
+            "youngs_modulus": {
+              "type": "number",
+              "description": "Young's modulus of the material in Pa."
+            },
+            "poissons_ratio": {
+              "type": "number",
+              "description": "Poisson's ratio of the material."
+            }
+          },
+          "required": [
+            "youngs_modulus",
+            "poissons_ratio"
+          ]
+        },
+        "density": {
+          "type": "number",
+          "description": "Density of the material in kg/m^3."
+        },
         "index_of_refraction": {
           "type": "array",
           "description": "Index of refraction of the material at different temperatures.",
@@ -141,6 +163,8 @@
       },
       "required": [
         "surface_roughness",
+        "elasticity",
+        "density",
         "index_of_refraction"
       ]
     }
