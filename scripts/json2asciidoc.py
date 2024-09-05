@@ -52,7 +52,7 @@ def main():
     asciidoc_content = generate_asciidoc(field_name, schema, required_fields)
 
     # Save the AsciiDoc content to a file
-    output_filename = f"{field_name}_documentation.adoc"
+    output_filename = f"{field_name}.adoc"
     with open(output_filename, 'w') as file:
         file.write(asciidoc_content)
 
