@@ -4,6 +4,14 @@
 The unit used for object dimensions is meters.
 
 == Coordinate systems
+
+=== Introduction to coordinate systems
+[tbd]
+
+=== Global coordinate systems
+[tbd]
+
+=== Local coordinate systems
 The local coordinate system is a right-handed coordinate system according to
 ISO 8855 with the axes pointing to the directions mentioned below. For a non-rotated
 coordinate system, the following applies:
@@ -12,8 +20,8 @@ coordinate system, the following applies:
 * Left matches y-axis
 * Up matches z-axis
 
-NOTE: TODO: Add images similar to OpenDRIVE? See
-https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/08_coordinate_systems/08_04_local_coordinate_system.html
+[WIP: Add images similar to OpenDRIVE? See
+https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/08_coordinate_systems/08_04_local_coordinate_system.html ]
 
 
 The coordinate system is in line with the standards ASAM OpenDRIVE,
