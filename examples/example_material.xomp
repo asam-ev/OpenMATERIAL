@@ -15,7 +15,10 @@
         "surface_height_rms": 0.8,
         "surface_correlation_length": 1.0
     },
-    "emissivity": 0.8,
+    "emissivity_data": {
+        "emissivity": 0.8,
+        "temperature": 300.0
+    },
     "index_of_refraction": [
       {
         "temperature": 300.0,
