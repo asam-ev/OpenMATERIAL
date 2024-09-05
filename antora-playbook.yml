@@ -13,10 +13,6 @@ urls: # Creates a redirect for the newest version to the link "latest"
 # tag::content[]
 content:
   sources:
-  - url: https://github.com/asam-ev/OpenMATERIAL.git
-    branches: [main, v*.*.*]  
-    tags: [v*,V*]
-    start_path: .antora
   - url: https://code.asam.net/common/asam-terminology.git
     start_path: .antora
     tags: [v*,V*]
