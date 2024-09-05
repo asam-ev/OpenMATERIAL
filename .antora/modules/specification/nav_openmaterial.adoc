@@ -11,7 +11,7 @@
 ** xref:geometry/General.adoc[]
 ** xref:geometry/object-classes.adoc[]
 ** xref:geometry/File_format_support.adoc[]
-** xref:geometry/Metadata.adoc[]
+** xref:geometry/metadata.adoc[]
 ** xref:geometry/Performance.adoc[]
 * Material
 ** xref:material/Introduction.adoc[]
