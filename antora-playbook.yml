@@ -20,7 +20,8 @@ content:
   - url: https://code.asam.net/common/asam-terminology.git
     start_path: .antora
     tags: [v*,V*]
-  - url: ./content/geometry # Path to locally generated files
+  - url: .
+    start_path: .antora
 # end::content[]
 
 ui:
