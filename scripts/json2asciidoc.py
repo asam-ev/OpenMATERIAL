@@ -3,7 +3,7 @@ import argparse
 
 # Function to generate AsciiDoc content for each property
 def generate_asciidoc(field_name, schema, required_fields):
-    asciidoc_content = f"= {field_name.capitalize()} Documentation\n\n"
+    asciidoc_content = f"= {field_name.capitalize()}\n\n"
     field_data = schema['properties'][field_name]
     asciidoc_content += field_data.get("description", "") + "\n\n"
     
