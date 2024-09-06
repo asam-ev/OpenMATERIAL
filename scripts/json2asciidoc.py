@@ -1,9 +1,35 @@
 import json
 import argparse
 
-# Function to generate AsciiDoc content for each property
+
+def escape_special_chars(pattern):
+    """
+    Escape special characters in the pattern string for AsciiDoc compatibility.
+    
+    Args:
+        pattern (str): The pattern string to be escaped.
+    
+    Returns:
+        str: The escaped pattern string.
+    """
+    pattern = pattern.replace("\\", "\\\\")  # Escape backslashes
+    pattern = pattern.replace("{", "\\{").replace("}", "\\}")  # Escape curly braces
+    return pattern
+
+
 def generate_asciidoc(field_name, schema, required_fields):
-    asciidoc_content = f"= {field_name.capitalize()} Documentation\n\n"
+    """
+    Generate AsciiDoc content for the specified field based on the JSON schema.
+    
+    Args:
+        field_name (str): The name of the field to generate documentation for.
+        schema (dict): The JSON schema dictionary.
+        required_fields (list): List of required fields for the specified field.
+    
+    Returns:
+        str: The generated AsciiDoc content.
+    """
+    asciidoc_content = f"= {field_name.capitalize()}\n\n"
     field_data = schema['properties'][field_name]
     asciidoc_content += field_data.get("description", "") + "\n\n"
     
@@ -11,9 +37,10 @@ def generate_asciidoc(field_name, schema, required_fields):
         asciidoc_content += f"== {prop_name}\n"
         asciidoc_content += f"{prop_data.get('description', 'No description')}\n"
         
-        # Add a new line before pattern
+        # Add pattern inline and handle escaping of backslashes and curly braces
         if "pattern" in prop_data:
-            asciidoc_content += f"\n*Pattern:* `{prop_data['pattern']}`\n"
+            pattern = escape_special_chars(prop_data['pattern'])
+            asciidoc_content += f"\n*Pattern:* `{pattern}`\n"
         
         # Add a new line before required status
         if prop_name in required_fields:
@@ -25,7 +52,11 @@ def generate_asciidoc(field_name, schema, required_fields):
 
     return asciidoc_content
 
+
 def main():
+    """
+    Main function to handle command-line arguments, process the JSON schema, and generate the AsciiDoc documentation.
+    """
     # Set up argument parser
     parser = argparse.ArgumentParser(description="Generate AsciiDoc documentation for a given JSON schema field.")
     parser.add_argument('json_schema_path', type=str, help="Path to the JSON schema file.")
@@ -58,6 +89,6 @@ def main():
 
     print(f"AsciiDoc generated successfully! Output saved to {output_filename}")
 
+
 if __name__ == "__main__":
     main()
-
