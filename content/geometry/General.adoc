@@ -5,26 +5,40 @@ The unit used for object dimensions is meters.
 
 == Coordinate systems
 
-=== Introduction to coordinate systems
-[tbd]
+ASAM OpenMATERIAL uses the following types of coordinate systems:
 
-=== Global coordinate systems
-[tbd]
+* World coordinate system, see <<sec-World-coordinate-system>>
+* Local coordinate system, see <<sec-Local-coordinate-system>>
 
-=== Local coordinate systems
-The local coordinate system is a right-handed coordinate system according to
-ISO 8855 with the axes pointing to the directions mentioned below. For a non-rotated
-coordinate system, the following applies:
+Both coordinate systems consist of three orthogonal directions associated with
+X, Y, and Z axes, and a coordinate origin where axes meet. The coordinate
+systems are right-handed Cartesian coordinate systems according to ISO 8855. For
+a non-rotated coordinate system, the following applies:
 
 * Forward matches x-axis
 * Left matches y-axis
 * Up matches z-axis
 
-[WIP: Add images similar to OpenDRIVE? See
-https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/08_coordinate_systems/08_04_local_coordinate_system.html ]
+The positive rotation is assumed to be counter-clockwise ("right-hand rule").
+Orientation of objects is expressed extrinsically by the yaw, pitch, and roll
+angles derived from the Euler rotation sequence in the order Z-axis, then
+Y-axis, then X-axis.
 
+TODO: Add image of right-handed coordinate system with rotation directions
 
-The coordinate system is in line with the standards ASAM OpenDRIVE,
+Each 3D model has an individual reference frame. Individual nodes of an
+object/asset? may have local coordinate frames.
+
+TODO: Clarify previous paragraph
+
+=== [[sec-World-coordinate-system]]World coordinate system
+
+A coordinate system of type (X, Y, Z) that is fixed in the reference frame of
+the simulation environment has the X~w~ and Y~w~ axes parallel to the ground
+plane and Z~w~ axis pointing upward.
+
+=== [[sec-Local-coordinate-system]]Local coordinate system
+The local coordinate system is in line with the standards ASAM OpenDRIVE,
 ASAM OpenSCENARIO, and ASAM OSI.
 
 NOTE: Origins of the coordinate frames for specific object classes are under
