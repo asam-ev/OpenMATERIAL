@@ -75,6 +75,8 @@ Therefore, only one Grp_Vehicle_Part exists with the name `Grp_Vehicle_Part_0`.
 
 NOTE: Define the origin of a vehicle part
 
+NOTE: Add description about keywords
+
 .<Table title>
 [%header, cols="20, 80"]
 |===
@@ -96,9 +98,6 @@ NOTE: Define the origin of a vehicle part
 
 
 NOTE: Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Exterior
 
@@ -125,9 +124,6 @@ This group contains all elements of the exterior of the vehicle (part).
 
 
 NOTE: Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Exterior_Static
 
@@ -156,9 +152,6 @@ Static elements are geometry structures that have a fixed position and orientati
 
 TODO: Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
 == Grp_Exterior_Dynamic
 
 This group contains all dynamic elements of the exterior of the vehicle (part).
@@ -185,9 +178,6 @@ Dynamic elements are geometry structures which position and orientation relative
 
 
 NOTE: Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Wheel_<axle_idx>_<wheel_idx> (T)
 
@@ -225,9 +215,6 @@ Zero rotation and and translation around all axles are defined in neutral load c
 
 NOTE: Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
 == Grp_Wheel_Steering_<axle_idx>_<wheel_idx>
 
 This group contains all components of the wheel assembly, that follow the steering motion but not the rotation of the wheel, e.g. brake calipers.
@@ -255,9 +242,6 @@ The indices are the same as in the parent group.
 
 
 NOTE: Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Wheel_Steering_Rotating_<axle_idx>_<wheel_idx> (T)
 
@@ -287,12 +271,12 @@ The indices are the same as in the parent group.
 
 NOTE: Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
 == Grp_Door_Front_<door_front_idx> (T)
 
-Add a description
+The group contains all components of a door in the front of the vehicle (part).
+This includes e.g. the engine cover.
+
+The `<door_front_idx>` is the index for all doors in the front counting from right to left (in positive y direction), starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -301,27 +285,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Pivot point of the door
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+NOTE: Add a figure.
 
 == Grp_Door_Left_<door_left_idx> (T)
 
-Add a description
+The group contains all components of a door on the left side of the vehicle (part).
+
+The `<door_left_idx>` is the index for all doors on the left counting from front to rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -330,27 +313,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Pivot point of the door
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+NOTE: Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+== Grp_Door_Right_<door_right_idx> (T)
 
-== Grp_Door_Right_(door_right_idx) (T)
+The group contains all components of a door on the right side of the vehicle (part).
 
-Add a description
+The `<door_right_idx>` is the index for all doors on the right counting from front to rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -359,27 +341,27 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Pivot point of the door
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+NOTE: Add a figure.
 
 == Grp_Door_Rear_<door_rear_idx> (T)
 
-Add a description
+The group contains all components of a door in the rear of the vehicle (part).
+This includes e.g. the trunklid.
+
+The `<door_rear_idx>` is the index for all doors in the rear counting from right to left (in positive y direction), starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -388,27 +370,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Pivot point of the door
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+NOTE: Add a figure.
 
 == Grp_Door_Top_<door_top_idx> (T)
 
-Add a description
+The group contains all components of a door on the top of the vehicle (part).
+
+The `<door_top_idx>` is the index for all doors on the top counting from front to rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -417,27 +398,25 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Pivot point of the door
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
-
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+NOTE: Add a figure.
 
 == Grp_Door_Bottom_<door_bottom_idx> (T)
 
-Add a description
+The group contains all components of a door on the bottom of the vehicle (part).
+
+The `<door_bottom_idx>` is the index for all doors on the bottom counting from front to rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -446,23 +425,19 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Pivot point of the door
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
-
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+NOTE: Add a figure.
 
 == Grp_Light_Day_Left_<day_left_idx> (T)
 
