@@ -17,6 +17,6 @@
 ** xref:material/Introduction.adoc[]
 ** xref:material/Fileformat.adoc[]
 ** xref:material/Metadata.adoc[]
-** xref:material/Material-parameters.adoc[]
+** xref:material/material-properties-index.adoc[]
 
 

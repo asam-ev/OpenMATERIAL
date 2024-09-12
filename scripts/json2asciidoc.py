@@ -1,14 +1,13 @@
 import json
 import argparse
 
-
 def escape_special_chars(pattern):
     """
     Escape special characters in the pattern string for AsciiDoc compatibility.
-    
+
     Args:
         pattern (str): The pattern string to be escaped.
-    
+
     Returns:
         str: The escaped pattern string.
     """
@@ -16,6 +15,46 @@ def escape_special_chars(pattern):
     pattern = pattern.replace("{", "\\{").replace("}", "\\}")  # Escape curly braces
     return pattern
 
+def generate_asciidoc_properties(properties, required_fields, level=2):
+    """
+    Recursively generate AsciiDoc content for a dictionary of properties.
+    
+    Args:
+        properties (dict): The dictionary of properties from the JSON schema.
+        required_fields (list): The list of required fields.
+        level (int): The current heading level in the AsciiDoc file.
+    
+    Returns:
+        str: The generated AsciiDoc content for the properties.
+    """
+    asciidoc_content = ""
+    
+    for prop_name, prop_data in properties.items():
+        heading_prefix = "=" * level  # Create heading based on level
+        asciidoc_content += f"{heading_prefix} {prop_name}\n"
+        asciidoc_content += f"{prop_data.get('description', 'No description')}\n"
+        
+        # Add pattern inline and handle escaping of backslashes and curly braces
+        if "pattern" in prop_data:
+            pattern = escape_special_chars(prop_data['pattern'])
+            asciidoc_content += f"\n*Pattern:* `{pattern}`\n"
+        
+        # Add a new line before required status
+        if prop_name in required_fields:
+            asciidoc_content += "\n*Required:* Yes\n"
+        else:
+            asciidoc_content += "\n*Required:* No\n"
+        
+        asciidoc_content += "\n"
+        
+        # If there are nested properties, recursively generate content for them
+        if "properties" in prop_data:
+            nested_required_fields = prop_data.get('required', [])
+            asciidoc_content += generate_asciidoc_properties(
+                prop_data['properties'], nested_required_fields, level + 1
+            )
+
+    return asciidoc_content
 
 def generate_asciidoc(field_name, schema, required_fields):
     """
@@ -33,25 +72,10 @@ def generate_asciidoc(field_name, schema, required_fields):
     field_data = schema['properties'][field_name]
     asciidoc_content += field_data.get("description", "") + "\n\n"
     
-    for prop_name, prop_data in field_data['properties'].items():
-        asciidoc_content += f"== {prop_name}\n"
-        asciidoc_content += f"{prop_data.get('description', 'No description')}\n"
-        
-        # Add pattern inline and handle escaping of backslashes and curly braces
-        if "pattern" in prop_data:
-            pattern = escape_special_chars(prop_data['pattern'])
-            asciidoc_content += f"\n*Pattern:* `{pattern}`\n"
-        
-        # Add a new line before required status
-        if prop_name in required_fields:
-            asciidoc_content += "\n*Required:* Yes\n"
-        else:
-            asciidoc_content += "\n*Required:* No\n"
-        
-        asciidoc_content += "\n"
+    # Generate the content for the properties, recursively handling nested properties
+    asciidoc_content += generate_asciidoc_properties(field_data['properties'], required_fields, level=2)
 
     return asciidoc_content
-
 
 def main():
     """
@@ -88,7 +112,6 @@ def main():
         file.write(asciidoc_content)
 
     print(f"AsciiDoc generated successfully! Output saved to {output_filename}")
-
 
 if __name__ == "__main__":
     main()

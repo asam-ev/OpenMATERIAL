@@ -27,10 +27,11 @@ jobs:
 
     - name: Generate AsciiDoc from JSON
       working-directory: scripts
-      run: python3 json2asciidoc.py ../schemas/asset_schema.json metadata
-    
-    - name: Copy generated AsciiDoc
-      run: cp scripts/metadata.adoc content/geometry/metadata.adoc
+      run: |
+        python3 json2asciidoc.py ../schemas/asset_schema.json metadata
+        mv metadata.adoc ../content/geometry/
+        python3 json2asciidoc.py ../schemas/material_schema.json material_properties
+        mv material_properties.adoc ../content/material/material-properties.adoc
 
     - name: Configure Pages
       uses: actions/configure-pages@v4

@@ -3,4 +3,4 @@
 include::Introduction.adoc[leveloffset=+1]
 include::Fileformat.adoc[leveloffset=+1]
 include::Metadata.adoc[leveloffset=+1]
-include::Material-parameters.adoc[leveloffset=+1]
+include::material-properties-index.adoc[leveloffset=+1]
