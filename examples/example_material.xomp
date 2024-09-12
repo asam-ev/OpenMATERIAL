@@ -16,8 +16,9 @@
         "surface_correlation_length": 1.0
     },
     "emissivity_data": {
-        "emissivity": 0.8,
-        "temperature": 300.0
+        "emissivity": 0.07,
+        "temperature": 300.0,
+        "source": "internet: https://www.engineeringtoolbox.com/emissivity-coefficients-d_447.html"
     },
     "index_of_refraction": [
       {

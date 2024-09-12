@@ -144,16 +144,21 @@
           "properties": {
             "emissivity": {
               "type": "number",
-              "description": "Emissivity describes the ability to emit energy as thermal radiation. Given as the fraction of thermal radiation emitted by a surface relative to the radiation emitted by an ideal black body at the same temperature."
+              "description": "Emissivity describes the ability to emit energy as thermal radiation. Given as the fraction of thermal radiation emitted by a surface relative to the radiation emitted by an ideal black body at the same temperature. Here the hemispherical total emissivity is used which considers full emission over all wavelengths, directions and polarization for a given particular temperature: ε(T)"
             },
             "temperature": {
               "type": "number",
               "description": "Temperature in Kelvin [K] at which the emissivity is measured"
+            },
+            "source": {
+              "type": "string",
+              "description": "Source of the emissivity data."
             }
           },
           "required": [
             "emissivity",
-            "temperature"
+            "temperature",
+            "source"
           ]
         }
       },
