@@ -82,6 +82,24 @@
             "surface_correlation_length"
           ]
         },
+        "retroreflectivity_data": {
+          "type": "object",
+          "description": "Information about the retro-reflective properties of the material in the visible light spectrum.",
+          "properties": {
+            "coefficient_of_retroreflection": {
+              "type": "number",
+              "description": "Coefficient of retro-reflection in cd lx^-1 m^-2."
+            },
+            "source": {
+              "type": "string",
+              "description": "Source of the retro-reflectivity data."
+            }
+          },
+          "required": [
+            "coefficient_of_retroreflection",
+            "source"
+          ]
+        },
         "electromagnetic_properties_uri": {
           "type": "string",
           "description": "Relative path to a property lookup table file with electromagnetic material properties.",
