@@ -82,7 +82,7 @@
             "surface_correlation_length"
           ]
         },
-        "elasticity": {
+        "elasticity_data": {
           "type": "object",
           "description": "Information about the elasticity of the material.",
           "properties": {
@@ -93,16 +93,35 @@
             "poissons_ratio": {
               "type": "number",
               "description": "Poisson's ratio of the material."
+            },
+            "source": {
+              "type": "string",
+              "description": "Source of the elasticity data."
             }
           },
           "required": [
             "youngs_modulus",
-            "poissons_ratio"
+            "poissons_ratio",
+            "source"
           ]
         },
-        "density": {
-          "type": "number",
-          "description": "Density of the material in kg/m^3."
+        "density_data": {
+          "type": "object",
+          "description": "Information about the density of the material.",
+          "properties": {
+            "density": {
+              "type": "number",
+              "description": "Density of the material in kg/m^3."
+            },
+            "source": {
+              "type": "string",
+              "description": "Source of the density data."
+            }
+          },
+          "required": [
+            "density",
+            "source"
+          ]
         },
         "electromagnetic_properties_uri": {
           "type": "string",
@@ -112,8 +131,8 @@
       },
       "required": [
         "surface_roughness",
-        "elasticity",
-        "density",
+        "elasticity_data",
+        "density_data",
         "electromagnetic_properties_uri"
       ]
     }
