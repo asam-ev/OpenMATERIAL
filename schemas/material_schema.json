@@ -139,6 +139,6 @@
   },
   "required": [
     "metadata",
-    "materials_properties"
+    "material_properties"
   ]
 }
