@@ -3,3 +3,5 @@
 include::material-properties.adoc[leveloffset=+1]
 
 == Lookup tables
+
+include::electromagnetic-properties.adoc[leveloffset=+2]
