@@ -21,7 +21,7 @@
     "texture_resolutions": ["2K"],
     "normal_map_format": "OpenGL",
     "bounding_box": {
-      "x" : [-2.5, 2.5],
+      "x" : [-2.5, 2.5,
       "y" : [-1.1, 1.1],
       "z" : [0.0, 1.5]
     }
