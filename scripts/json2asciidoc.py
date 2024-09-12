@@ -109,7 +109,7 @@ def generate_asciidoc(field_name, schema, required_fields):
     """
     asciidoc_content = f"= {field_name.capitalize()}\n\n"
     field_data = schema['properties'][field_name]
-    asciidoc_content += f"{field_data.get('description', '')}\n"
+    asciidoc_content += field_data.get("description", "") + "\n\n"
     
     # Generate the content for the properties, recursively handling nested properties
     if 'properties' in field_data:
