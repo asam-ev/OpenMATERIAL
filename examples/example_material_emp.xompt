@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "copyright" : "(C) 2023-2024, Example Company",
+    "generator": "Example Companies Fancy Material Tool",
+    "openmaterial_version": "1.0.0",
+    "creator": "Example Company",
+    "creation_date": "20240703T101728Z",
+    "material_version": "1.0.0",
+    "id": "bea5a5f266e74b938a8cd773992dc09c",
+    "name": "aluminum_emp",
+    "description": "Electromagnetic properties of aluminum"
+  },
+  "electromagnetic_properties": [
+    [500e-9, 293.0, 50.0, 0.000001256665, 0.0, -56.0, 24.0],
+    [500e-9, 300.0, 50.0, 0.000001256665, 0.0, -57.0, 25.0],
+    [905e-9, 293.0, 50.0, 0.000001256665, 0.0, -182.7, 51.4],
+    [905e-9, 300.0, 50.0, 0.000001256665, 0.0, -185.7, 53.0]
+  ]
+}

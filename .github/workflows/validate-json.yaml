@@ -17,15 +17,21 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       
-      - name: Validate "asset" JSON schemas
+      - name: Validate asset JSON schemas
         uses: nhalstead/validate-json-action@0.1.3
         with:
           schema: ./schemas/asset_schema.json
           jsons: ./examples/*.xoma
           
-      - name: Validate "material" JSON schemas
+      - name: Validate material JSON schemas
         uses: nhalstead/validate-json-action@0.1.3
         with:
           schema: ./schemas/material_schema.json
           jsons: ./examples/*.xomp
+
+      - name: Validate electromagnetic material properties JSON schemas
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: ./schemas/material_emp_schema.json
+          jsons: ./examples/*_emp.xompt
           

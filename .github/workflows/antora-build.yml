@@ -24,20 +24,33 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+
+    - name: Generate AsciiDoc from JSON
+      working-directory: scripts
+      run: python3 json2asciidoc.py ../schemas/asset_schema.json metadata
+    
+    - name: Copy generated AsciiDoc
+      run: cp scripts/metadata.adoc content/geometry/metadata.adoc
+
     - name: Configure Pages
       uses: actions/configure-pages@v4
+
     - name: Install Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '20'
+
     - name: Install Antora
       run: npm i antora
+
     - name: Generate Site
       run: npx antora antora-playbook.yml
+
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@v3
       with:
         path: build/site
+
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4

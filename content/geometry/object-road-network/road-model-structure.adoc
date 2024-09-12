@@ -4,7 +4,7 @@
 
 [plantuml]
 ----
-
+legend
 Road_Network (T)
 |_ Road_<road_idx>
   |_ Lane_<lane_idx>
@@ -19,6 +19,7 @@ Road_Network (T)
   |_ Direct_Junction_Connection_<direct_junction_connection_idx>
 |_ Virtual_Junction_<virtual_junction_idx>
   |_ Virtual_Junction_Connection_<virtual_junction_connection_idx>
+end legend
 ----
 
 == Road_Network (T)

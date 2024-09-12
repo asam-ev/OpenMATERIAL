@@ -60,42 +60,48 @@
         "description"
       ]
     },
-    "materials_properties": {
-      "type": "object",
-      "description": "Properties related to the material.",
-      "properties": {
-        "surface_roughness": {
-          "type": "object",
-          "description": "Information about the surface roughness of the material.",
-          "properties": {
-            "surface_height_rms": {
-              "type": "number",
-              "description": "Root mean square of surface height deviations."
-            },
-            "surface_correlation_length": {
-              "type": "number",
-              "description": "Correlation length of the surface height deviations."
-            }
+    "electromagnetic_properties": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "description": "Array of electromagnetic property values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
+        "items": [
+          {
+            "type": ["number", "null"],
+            "description": "Wavelength in meters."
           },
-          "required": [
-            "surface_height_rms",
-            "surface_correlation_length"
-          ]
-        },
-        "electromagnetic_properties_uri": {
-          "type": "string",
-          "description": "Relative path to a property lookup table file with electromagnetic material properties.",
-          "pattern": ".*_emp\\.xompt$"
-        }
-      },
-      "required": [
-        "surface_roughness",
-        "electromagnetic_properties_uri"
-      ]
+          {
+            "type": ["number", "null"],
+            "description": "Temperature in Kelvin."
+          },
+          {
+            "type": ["number", "null"],
+            "description": "Humidity in percent."
+          },
+          {
+            "type": ["number", "null"],
+            "description": "Real part of complex permeability."
+          },
+          {
+            "type": ["number", "null"],
+            "description": "Imaginary part of complex permeability."
+          },
+          {
+            "type": ["number", "null"],
+            "description": "Real part of complex permittivity."
+          },
+          {
+            "type": ["number", "null"],
+            "description": "Imaginary part of complex permittivity."
+          }
+        ],
+        "minItems": 7,
+        "maxItems": 7
+      }
     }
   },
   "required": [
     "metadata",
-    "materials_properties"
+    "electromagnetic_properties"
   ]
 }
