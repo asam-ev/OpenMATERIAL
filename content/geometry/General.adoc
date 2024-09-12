@@ -24,24 +24,24 @@ Orientation of objects is expressed extrinsically by the yaw, pitch, and roll
 angles derived from the Euler rotation sequence in the order z-axis, then
 y-axis, then x-axis.
 
-[#fig_coordinate_system]
+[#fig-coordinate-system]
 .Yaw, pitch, and roll angle in an ISO 8855:2011 compliant coordinate system
 image::fig_coordinate_system.svg[img, 1100]
 
-<<fig_coordinate_system>> shows a right-handed coordinate system.
+<<fig-coordinate-system>> shows a right-handed coordinate system.
 
-[#fig_coo_sys_rotation]
+[#fig-coo-sys-rotation]
 .Coordinate system with defined rotations
-image::fig_coo_sys_rotation.png[img, 1100]
+image::fig_coo_sys_rotation.svg[img, 1100]
 
-<<fig_coo_sys_rotation>> shows the positive axes and positive directions of the
+<<fig-coo-sys-rotation>> shows the positive axes and positive directions of the
 corresponding angles.
 
-[#fig_coo_sys_example]
+[#fig-coo-sys-example]
 .Examples of rotations in coordinate system
-image::fig_coo_sys_example.png[img, 1100]
+image::fig_coo_sys_example.svg[img, 1100]
 
-<<fig_coo_sys_example>> shows the different states of a coordinate
+<<fig-coo-sys-example>> shows the different states of a coordinate
 system with defined rotations. x’/y’/(z’=z) denotes the coordinate system after
 rotating x/y/z with the heading angle around the z-axis. The coordinate system
 x’’/(y’’=y’)/z’’ denotes the coordinate system after rotating x’/y’/z’ with the
