@@ -15,6 +15,15 @@
         "surface_height_rms": 0.8,
         "surface_correlation_length": 1.0
     },
+    "elasticity_data": {
+        "youngs_modulus": 70e9,
+        "poissons_ratio": 0.35,
+        "source": "internet: https://en.wikipedia.org/wiki/Aluminium"
+    },
+    "density_data": {
+        "density": 2699.0,
+        "source": "internet: https://en.wikipedia.org/wiki/Aluminium"
+    },
     "electromagnetic_properties_uri": "example_material_emp.xompt"
   }
 }
