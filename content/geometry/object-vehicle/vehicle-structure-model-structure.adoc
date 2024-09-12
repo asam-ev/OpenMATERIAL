@@ -64,9 +64,16 @@ Vehicle structure
 end legend
 ----
 
-== Grp_Vehicle_Part_<keyword><vehicle_part_idx> (T) 
+== Grp_Vehicle_Part_<vehicle_part_idx>_<keyword> (T) 
 
-Add a description
+A vehicle part is a large structure of a vehicle, that moves independently from other parts of the same vehicle.
+This mainly applies to articulated vehicles, e.g. a front loader with a hinged axis or an articulated bus with a hinge in the middle.
+When a vehicle part can be detached, like a trailer, it is to be treated as a separate vehicle and not a vehicle part.
+
+Standard vehicles only have one part and no keyword.
+Therefore, only one Grp_Vehicle_Part exists with the name `Grp_Vehicle_Part_0`.
+
+NOTE: Define the origin of a vehicle part
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -78,24 +85,24 @@ Add a description
 | ...
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+NOTE: Add a figure.
 
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Exterior
 
-Add a description
+This group contains all elements of the exterior of the vehicle (part).
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -104,27 +111,28 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the vehicle (part)
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+NOTE: Add a figure.
 
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Exterior_Static
 
-Add a description
+This group contains all static elements of the exterior of the vehicle (part).
+Static elements are geometry structures that have a fixed position and orientation relative to the origin on the vehicle (part) throughout a simulation.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -133,27 +141,28 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the vehicle (part)
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+TODO: Add a figure.
 
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Exterior_Dynamic
 
-Add a description
+This group contains all dynamic elements of the exterior of the vehicle (part).
+Dynamic elements are geometry structures which position and orientation relative to the origin on the vehicle (part) might change throughout a simulation.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -162,27 +171,37 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the vehicle (part)
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+NOTE: Add a figure.
 
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Wheel_<axle_idx>_<wheel_idx> (T)
 
-Add a description
+This group contains all geometries of one wheel assembly.
+This may include tire, rim, brake caliper etc.
+
+The `<axle_idx>` denotes the index of the axle the wheel is mounted to, counting from the front to the rear, starting with 0.
+The `<wheel_idx>` denotes the index of the wheel on the specified axle, counting from right to left (in positive y direction), starting with 0.
+Example: The wheel on the front left of a standar vehicle would be `Grp_Wheel_0_1`.
+
+Steering of the wheel is implemented by a rotation around the z-axis.
+Wheel camber is defined by a rotation around the x-axis.
+Suspension deflection is represented by a translation along the z-axis.
+Zero rotation and and translation around all axles are defined in neutral load contidions.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -191,27 +210,29 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Geometric center of the wheel
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+NOTE: Add a figure.
 
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Wheel_Steering_<axle_idx>_<wheel_idx>
 
-Add a description
+This group contains all components of the wheel assembly, that follow the steering motion but not the rotation of the wheel, e.g. brake calipers.
+
+The indices are the same as in the parent group.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -220,27 +241,29 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Geometric center of the wheel
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+NOTE: Add a figure.
 
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Wheel_Steering_Rotating_<axle_idx>_<wheel_idx> (T)
 
-Add a description
+This group contains all components of the wheel assembly, that follow the steering motion as well as the rotation of the wheel, e.g. tire and rim.
+
+The indices are the same as in the parent group.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -249,20 +272,20 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Geometric center of the wheel
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+NOTE: Add a figure.
 
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
