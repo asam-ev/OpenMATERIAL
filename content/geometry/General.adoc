@@ -35,7 +35,7 @@ image::fig_coordinate_system.svg[img, 1100]
 image::fig_coo_sys_rotation.png[img, 1100]
 
 <<fig_coo_sys_rotation>> shows the positive axes and positive directions of the
-corresponding angles
+corresponding angles.
 
 [#fig_coo_sys_example]
 .Examples of rotations in coordinate system
