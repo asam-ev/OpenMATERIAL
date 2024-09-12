@@ -24,7 +24,7 @@ Orientation of objects is expressed extrinsically by the yaw, pitch, and roll
 angles derived from the Euler rotation sequence in the order z-axis, then
 y-axis, then x-axis.
 
-[#fig-coordinate-system]
+[#fig_coordinate_system]
 .Yaw, pitch, and roll angle in an ISO 8855:2011 compliant coordinate system
 image::fig_coordinate_system.svg[img, 1100]
 
