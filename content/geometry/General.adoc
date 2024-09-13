@@ -7,8 +7,8 @@ The unit used for object dimensions is meters.
 
 ASAM OpenMATERIAL uses the following types of coordinate systems:
 
-* World coordinate system, see <<sec-World-coordinate-system>>
-* Local coordinate system, see <<sec-Local-coordinate-system>>
+* World coordinate system, see <<World coordinate system (x~w~, y~w~, z~w~)>>
+* Local coordinate system, see <<Local coordinate system>>
 
 Both coordinate systems consist of three orthogonal directions associated with
 x-, y-, and z-axes, and a coordinate origin where axes meet. The coordinate
@@ -54,13 +54,13 @@ object/asset? may have local coordinate frames.
 
 NOTE: TODO: Clarify previous paragraph
 
-=== [[sec-World-coordinate-system]]World coordinate system (x~w~, y~w~, z~w~)
+=== World coordinate system (x~w~, y~w~, z~w~)
 
 A coordinate system of type (x, y, z) that is fixed in the reference frame of
 the simulation environment has the x~w~- and y~w~-axes parallel to the ground
 plane and z~w~-axis pointing upward.
 
-=== [[sec-Local-coordinate-system]]Local coordinate system
+=== Local coordinate system
 The local coordinate system is in line with the standards ASAM OpenDRIVE,
 ASAM OpenSCENARIO, and ASAM OSI.
 
