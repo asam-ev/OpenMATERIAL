@@ -7,7 +7,7 @@ The unit used for object dimensions is meters.
 
 ASAM OpenMATERIAL uses the following types of coordinate systems:
 
-* World coordinate system, see <<World coordinate system (x~w~, y~w~, z~w~)>>
+* World coordinate system, see <<World coordinate system>>
 * Local coordinate system, see <<Local coordinate system>>
 
 Both coordinate systems consist of three orthogonal directions associated with
@@ -54,7 +54,7 @@ object/asset? may have local coordinate frames.
 
 NOTE: TODO: Clarify previous paragraph
 
-=== World coordinate system (x~w~, y~w~, z~w~)
+=== World coordinate system
 
 A coordinate system of type (x, y, z) that is fixed in the reference frame of
 the simulation environment has the x~w~- and y~w~-axes parallel to the ground
