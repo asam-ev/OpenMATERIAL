@@ -15,6 +15,11 @@
         "surface_height_rms": 0.8,
         "surface_correlation_length": 1.0
     },
+    "emissivity_data": {
+        "emissivity": 0.07,
+        "temperature": 300.0,
+        "source": "internet: https://www.engineeringtoolbox.com/emissivity-coefficients-d_447.html"
+    },
     "electromagnetic_properties_uri": "example_material_emp.xompt"
   }
 }
