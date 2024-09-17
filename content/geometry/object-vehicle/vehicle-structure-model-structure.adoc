@@ -285,16 +285,16 @@ The `<door_front_idx>` is the index for all doors in the front counting from rig
 2+^| <Header>
 
 | *Origin*
-| Pivot point of the door
+| Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Perpendicular to the z-axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
+| Concentric and coaxial to the virtual hinge axis
 |===
 
 
@@ -313,16 +313,16 @@ The `<door_left_idx>` is the index for all doors on the left counting from front
 2+^| <Header>
 
 | *Origin*
-| Pivot point of the door
+| Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Perpendicular to the z-axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
+| Concentric and coaxial to the virtual hinge axis
 |===
 
 
@@ -341,16 +341,16 @@ The `<door_right_idx>` is the index for all doors on the right counting from fro
 2+^| <Header>
 
 | *Origin*
-| Pivot point of the door
+| Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Perpendicular to the z-axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
+| Concentric and coaxial to the virtual hinge axis
 |===
 
 
@@ -370,16 +370,16 @@ The `<door_rear_idx>` is the index for all doors in the rear counting from right
 2+^| <Header>
 
 | *Origin*
-| Pivot point of the door
+| Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Perpendicular to the z-axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
+| Concentric and coaxial to the virtual hinge axis
 |===
 
 
@@ -398,16 +398,16 @@ The `<door_top_idx>` is the index for all doors on the top counting from front t
 2+^| <Header>
 
 | *Origin*
-| Pivot point of the door
+| Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Perpendicular to the z-axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
+| Concentric and coaxial to the virtual hinge axis
 |===
 
 NOTE: Add a figure.
@@ -425,16 +425,16 @@ The `<door_bottom_idx>` is the index for all doors on the bottom counting from f
 2+^| <Header>
 
 | *Origin*
-| Pivot point of the door
+| Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Perpendicular to the z-axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
+| Concentric and coaxial to the virtual hinge axis
 |===
 
 NOTE: Add a figure.
