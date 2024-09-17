@@ -56,9 +56,11 @@ NOTE: TODO: Clarify previous paragraph
 
 === World coordinate system
 
-A coordinate system of type (x, y, z) that is fixed in the reference frame of
+A coordinate system of type (x, y, z) that is fixed in the inertial reference frame of
 the simulation environment has the x~w~- and y~w~-axes parallel to the ground
 plane and z~w~-axis pointing upward.
+
+Neither origin nor orientation of the world coordinate system are defined by the ASAM OpenMATERIAL standard. If a road network is referenced from a scenario, the world coordinate system is aligned with the inertial coordinate system present in this description.
 
 === Local coordinate system
 The local coordinate system is in line with the standards ASAM OpenDRIVE,
