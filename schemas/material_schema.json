@@ -60,7 +60,7 @@
         "description"
       ]
     },
-    "materials_properties": {
+    "material_properties": {
       "type": "object",
       "description": "Properties related to the material.",
       "properties": {
@@ -139,6 +139,6 @@
   },
   "required": [
     "metadata",
-    "materials_properties"
+    "material_properties"
   ]
 }

@@ -10,7 +10,7 @@
     "name": "aluminum",
     "description": "aluminum material"
   },
-  "materials_properties": {
+  "material_properties": {
     "surface_roughness": {
         "surface_height_rms": 0.8,
         "surface_correlation_length": 1.0
