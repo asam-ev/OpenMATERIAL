@@ -60,7 +60,7 @@
         "description"
       ]
     },
-    "materials_properties": {
+    "material_properties": {
       "type": "object",
       "description": "Properties related to the material.",
       "properties": {
@@ -82,6 +82,47 @@
             "surface_correlation_length"
           ]
         },
+        "elasticity_data": {
+          "type": "object",
+          "description": "Information about the elasticity of the material.",
+          "properties": {
+            "youngs_modulus": {
+              "type": "number",
+              "description": "Young's modulus of the material in Pa."
+            },
+            "poissons_ratio": {
+              "type": "number",
+              "description": "Poisson's ratio of the material."
+            },
+            "source": {
+              "type": "string",
+              "description": "Source of the elasticity data."
+            }
+          },
+          "required": [
+            "youngs_modulus",
+            "poissons_ratio",
+            "source"
+          ]
+        },
+        "density_data": {
+          "type": "object",
+          "description": "Information about the density of the material.",
+          "properties": {
+            "density": {
+              "type": "number",
+              "description": "Density of the material in kg/m^3."
+            },
+            "source": {
+              "type": "string",
+              "description": "Source of the density data."
+            }
+          },
+          "required": [
+            "density",
+            "source"
+          ]
+        },
         "electromagnetic_properties_uri": {
           "type": "string",
           "description": "Relative path to a property lookup table file with electromagnetic material properties.",
@@ -90,12 +131,14 @@
       },
       "required": [
         "surface_roughness",
+        "elasticity_data",
+        "density_data",
         "electromagnetic_properties_uri"
       ]
     }
   },
   "required": [
     "metadata",
-    "materials_properties"
+    "material_properties"
   ]
 }

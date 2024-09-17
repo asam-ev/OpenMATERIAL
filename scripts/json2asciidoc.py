@@ -5,10 +5,10 @@ import argparse
 def escape_special_chars(pattern):
     """
     Escape special characters in the pattern string for AsciiDoc compatibility.
-    
+
     Args:
         pattern (str): The pattern string to be escaped.
-    
+
     Returns:
         str: The escaped pattern string.
     """
@@ -17,25 +17,60 @@ def escape_special_chars(pattern):
     return pattern
 
 
-def generate_asciidoc(field_name, schema, required_fields):
+def generate_asciidoc_array_of_arrays(items, description):
     """
-    Generate AsciiDoc content for the specified field based on the JSON schema.
-    
+    Generate AsciiDoc content for an array of arrays, listing each item as a column.
+
     Args:
-        field_name (str): The name of the field to generate documentation for.
-        schema (dict): The JSON schema dictionary.
-        required_fields (list): List of required fields for the specified field.
-    
+        items (list): The list of item schemas in the array.
+        description (str): The description of the array.
+
     Returns:
-        str: The generated AsciiDoc content.
+        str: The generated AsciiDoc content describing the columns.
     """
-    asciidoc_content = f"= {field_name.capitalize()}\n\n"
-    field_data = schema['properties'][field_name]
-    asciidoc_content += field_data.get("description", "") + "\n\n"
+    content = ""
+    if description:
+        content += f"{description}\n"
+
+    content += "\nColumns of the table:\n\n"
     
-    for prop_name, prop_data in field_data['properties'].items():
-        asciidoc_content += f"== {prop_name}\n"
+    for idx, item in enumerate(items, start=1):
+        item_description = item.get('description', 'No description')
+        content += f"- Column {idx}: {item_description}\n"
+    
+    return content
+
+
+def generate_asciidoc_properties(properties, required_fields, level=2):
+    """
+    Recursively generate AsciiDoc content for a dictionary of properties.
+
+    Args:
+        properties (dict): The dictionary of properties from the JSON schema.
+        required_fields (list): The list of required fields.
+        level (int): The current heading level in the AsciiDoc file.
+
+    Returns:
+        str: The generated AsciiDoc content for the properties.
+    """
+    asciidoc_content = ""
+    
+    for prop_name, prop_data in properties.items():
+        heading_prefix = "=" * level  # Create heading based on level
+        asciidoc_content += f"{heading_prefix} {prop_name}\n"
         asciidoc_content += f"{prop_data.get('description', 'No description')}\n"
+
+        # Handle array types and generate description for array of arrays
+        if prop_data.get('type') == "array":
+            if isinstance(prop_data['items'], dict) and 'items' in prop_data['items']:
+                # Generate list for array of arrays
+                asciidoc_content += generate_asciidoc_array_of_arrays(prop_data['items']['items'], prop_data['items'].get('description', '')) + "\n"
+            elif isinstance(prop_data['items'], list):
+                # If it's a list of items, generate columns description directly
+                asciidoc_content += generate_asciidoc_array_of_arrays(prop_data['items'], prop_data.get('description', '')) + "\n"
+            else:
+                # Simple array, include the description of the array
+                asciidoc_content += f"\n{prop_data['items'].get('description', 'No description')}\n"
         
         # Add pattern inline and handle escaping of backslashes and curly braces
         if "pattern" in prop_data:
@@ -49,7 +84,48 @@ def generate_asciidoc(field_name, schema, required_fields):
             asciidoc_content += "\n*Required:* No\n"
         
         asciidoc_content += "\n"
+        
+        # If there are nested properties, recursively generate content for them
+        if "properties" in prop_data:
+            nested_required_fields = prop_data.get('required', [])
+            asciidoc_content += generate_asciidoc_properties(
+                prop_data['properties'], nested_required_fields, level + 1
+            )
 
+    return asciidoc_content
+
+
+def generate_asciidoc(field_name, schema, required_fields):
+    """
+    Generate AsciiDoc content for the specified field based on the JSON schema.
+
+    Args:
+        field_name (str): The name of the field to generate documentation for.
+        schema (dict): The JSON schema dictionary.
+        required_fields (list): List of required fields for the specified field.
+
+    Returns:
+        str: The generated AsciiDoc content.
+    """
+    asciidoc_content = f"= {field_name.capitalize()}\n\n"
+    field_data = schema['properties'][field_name]
+    asciidoc_content += field_data.get("description", "") + "\n\n"
+    
+    # Generate the content for the properties, recursively handling nested properties
+    if 'properties' in field_data:
+        asciidoc_content += generate_asciidoc_properties(field_data['properties'], required_fields, level=2)
+    elif field_data.get('type') == 'array':
+        # Handle array fields directly
+        if 'items' in field_data and isinstance(field_data['items'], dict) and 'items' in field_data['items']:
+            # Array of arrays, generate list of columns
+            asciidoc_content += generate_asciidoc_array_of_arrays(field_data['items']['items'], field_data['items'].get('description', '')) + "\n"
+        elif isinstance(field_data['items'], list):
+            # Array of simple types, generate columns description
+            asciidoc_content += generate_asciidoc_array_of_arrays(field_data['items'], field_data.get('description', '')) + "\n"
+        else:
+            # Handle single item in array
+            asciidoc_content += f"\n{field_data['items'].get('description', 'No description')}\n"
+    
     return asciidoc_content
 
 
