@@ -1,6 +1,6 @@
 # Validate JSON schema files
-# Source: https://github.com/dsanders11/json-schema-validate-action
-# Forked from: https://github.com/marketplace/actions/json-schema-validate
+# Source: https://github.com/cardinalby/schema-validator-action
+# Forked from: https://github.com/marketplace/actions/schema-validation-action
 name: Validate JSON schemas for assets and materials
 
 on:
@@ -19,19 +19,19 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Validate asset JSON schemas
-        uses: dsanders11/json-schema-validate-action@v1.2.0
+        uses: cardinalby/schema-validator-action@v3
         with:
-         schema: ./schemas/asset_schema.json
-         files: ./examples/*.xoma
+          schema: ./schemas/asset_schema.json
+          file: ./examples/*.xoma
 
       - name: Validate material JSON schemas
-        uses: dsanders11/json-schema-validate-action@v1.2.0
+        uses: cardinalby/schema-validator-action@v3
         with:
           schema: ./schemas/material_schema.json
-          files: ./examples/*.xomp
+          file: ./examples/*.xomp
 
       - name: Validate electromagnetic material properties JSON schemas
-        uses: dsanders11/json-schema-validate-action@v1.2.0
+        uses: cardinalby/schema-validator-action@v3
         with:
           schema: ./schemas/material_emp_schema.json
-          files: ./examples/*_emp.xompt
+          file: ./examples/*_emp.xompt
