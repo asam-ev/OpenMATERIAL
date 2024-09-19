@@ -45,7 +45,7 @@ include::geometry/metadata.adoc[leveloffset=+2]
 include::geometry/performance.adoc[leveloffset=+2]
 Material
 include::material/introduction.adoc[leveloffset=+2]
-include::material/fileformat.adoc[leveloffset=+2]
+include::material/file-format.adoc[leveloffset=+2]
 include::material/metadata.adoc[leveloffset=+2]
 include::material/material-properties.adoc[leveloffset=+2]
 include::material/lookup-tables.adoc[leveloffset=+2]

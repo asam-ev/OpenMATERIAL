@@ -15,7 +15,7 @@
 ** xref:geometry/performance.adoc[]
 * Material
 ** xref:material/introduction.adoc[]
-** xref:material/fileformat.adoc[]
+** xref:material/file-format.adoc[]
 ** xref:material/metadata.adoc[]
 ** xref:material/material-properties.adoc[Material properties]
 ** xref:material/lookup-tables.adoc[]
