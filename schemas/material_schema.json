@@ -99,8 +99,8 @@
             }
           },
           "required": [
-            "youngs_modulus",
-            "poissons_ratio",
+            "youngsModulus",
+            "poissonsRatio",
             "source"
           ]
         },

@@ -1,9 +1,10 @@
 {
   "metadata": {
     "name": "aluminum_emp",
-    "description": "Electromagnetic properties of aluminum"
+    "description": "Electromagnetic properties of aluminum",
     "uuid": "bea5a5f266e74b938a8cd773992dc09c",
     "materialVersion": "1.0.0",
+    "creationDate": "20240703T101728Z",
     "openMaterialVersion": "1.0.0",
     "copyright": "(C) 2023-2024, Example Company",
     "license": "MPL-2.0",
