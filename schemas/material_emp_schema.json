@@ -59,7 +59,6 @@
         "author"
       ]
     },
-    },
     "electromagneticProperties": {
       "type": "array",
       "items": {
