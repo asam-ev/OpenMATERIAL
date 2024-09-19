@@ -15,7 +15,7 @@
           "type": "string",
           "description": "Software or tool used to generate the material."
         },
-        "openmaterial_version": {
+        "openMaterialVersion": {
           "type": "string",
           "description": "Version of OpenMATERIAL.",
           "pattern": "^\\d+\\.\\d+\\.\\d+$"
@@ -24,12 +24,12 @@
           "type": "string",
           "description": "Creator of the material."
         },
-        "creation_date": {
+        "creationDate": {
           "type": "string",
           "description": "Date when the material was created, in the format YYYYMMDDTHHMMSSZ.",
           "pattern": "^\\d{8}T\\d{6}Z$"
         },
-        "material_version": {
+        "materialVersion": {
           "type": "string",
           "description": "Version of the material.",
           "pattern": "^\\d+\\.\\d+\\.\\d+$"
@@ -51,16 +51,16 @@
       "required": [
         "copyright",
         "generator",
-        "openmaterial_version",
+        "openMaterialVersion",
         "creator",
-        "creation_date",
-        "material_version",
+        "creationDate",
+        "materialVersion",
         "id",
         "name",
         "description"
       ]
     },
-    "electromagnetic_properties": {
+    "electromagneticProperties": {
       "type": "array",
       "items": {
         "type": "array",
@@ -102,6 +102,6 @@
   },
   "required": [
     "metadata",
-    "electromagnetic_properties"
+    "electromagneticProperties"
   ]
 }
