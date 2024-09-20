@@ -36,19 +36,19 @@ include::general-docs/abbreviations.adoc[leveloffset=+1]
 include::general-docs/backward-compatibility.adoc[leveloffset=+1]
 include::terms-and-definitions/terms-and-definitions.adoc[leveloffset=+1]
 include::use-cases/use-cases.adoc[leveloffset=+1]
-Geometry
-include::geometry/introduction.adoc[leveloffset=+2]
-include::geometry/general.adoc[leveloffset=+2]
-include::geometry/object-classes.adoc[leveloffset=+2]
-include::geometry/file-format-support.adoc[leveloffset=+2]
-include::geometry/metadata.adoc[leveloffset=+2]
-include::geometry/performance.adoc[leveloffset=+2]
-Material
-include::material/introduction.adoc[leveloffset=+2]
-include::material/file-format.adoc[leveloffset=+2]
-include::material/metadata.adoc[leveloffset=+2]
-include::material/material-properties.adoc[leveloffset=+2]
-include::material/lookup-tables.adoc[leveloffset=+2]
+= Geometry
+include::geometry/introduction.adoc[leveloffset=+1]
+include::geometry/general.adoc[leveloffset=+1]
+include::geometry/object-classes.adoc[leveloffset=+1]
+include::geometry/file-format-support.adoc[leveloffset=+1]
+include::geometry/metadata.adoc[leveloffset=+1]
+include::geometry/performance.adoc[leveloffset=+1]
+= Material
+include::material/introduction.adoc[leveloffset=+1]
+include::material/file-format.adoc[leveloffset=+1]
+include::material/metadata.adoc[leveloffset=+1]
+include::material/material-properties.adoc[leveloffset=+1]
+include::material/lookup-tables.adoc[leveloffset=+1]
 
 
 
