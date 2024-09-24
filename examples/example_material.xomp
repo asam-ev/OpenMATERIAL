@@ -1,29 +1,29 @@
 {
   "metadata": {
-    "copyright" : "(C) 2023-2024, Example Company",
-    "generator": "Example Companies Fancy Material Tool",
-    "openmaterial_version": "1.0.0",
-    "creator": "Example Company",
-    "creation_date": "20240703T101728Z",
-    "material_version": "1.0.0",
-    "id": "fe7d707050e545f19f2658ecacb6ac5e",
     "name": "aluminum",
-    "description": "aluminum material"
+    "description": "aluminum material",
+    "uuid": "fe7d707050e545f19f2658ecacb6ac5e",
+    "materialVersion": "1.0.0",
+    "creationDate": "20240703T101728Z",
+    "openMaterialVersion": "1.0.0",
+    "copyright": "(C) 2023-2024, Example Company",
+    "license": "MPL-2.0",
+    "author": "john.doe@asam.net",
   },
-  "material_properties": {
-    "surface_roughness": {
-        "surface_height_rms": 0.8,
-        "surface_correlation_length": 1.0
+  "materialProperties": {
+    "surfaceRoughness": {
+        "surfaceHeightRms": 0.8,
+        "surfaceCorrelationLength": 1.0
     },
-    "elasticity_data": {
-        "youngs_modulus": 70e9,
-        "poissons_ratio": 0.35,
+    "elasticityData": {
+        "youngsModulus": 70e9,
+        "poissonsRatio": 0.35,
         "source": "internet: https://en.wikipedia.org/wiki/Aluminium"
     },
-    "density_data": {
+    "densityData": {
         "density": 2699.0,
         "source": "internet: https://en.wikipedia.org/wiki/Aluminium"
     },
-    "electromagnetic_properties_uri": "example_material_emp.xompt"
+    "electromagneticPropertiesUri": "example_material_emp.xompt"
   }
 }
