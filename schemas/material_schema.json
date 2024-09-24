@@ -170,18 +170,11 @@
         }
       },
       "required": [
-<<<<<<< HEAD
-        "surface_roughness",
-        "emissivityData",
-        "elasticity_data",
-        "density_data",
-        "electromagnetic_properties_uri"
-=======
         "surfaceRoughness",
+        "emissivityData",
         "elasticityData",
         "densityData",
         "electromagneticPropertiesUri"
->>>>>>> main
       ]
     }
   },
