@@ -32,3 +32,41 @@ output:
   
 runtime:
   fetch: true
+
+# tag::attributes[]
+asciidoc:
+  attributes:
+    page-pagination: true
+    hide-uri-scheme: ""
+    kroki-server-url: 'http://kroki:8000'
+    kroki-fetch-diagram: ""
+    # Allow URI read to retrieve SVG on compilation
+    allow-uri-read: true
+    # use SVG unless otherwise specified
+    kroki-default-format: svg
+    # Make SVG inline so that we can get interactive (can be overridden by schema with "opts=none")
+    kroki-default-options: interactive
+    sectnums: "@"
+    xrefstyle: short@
+    listing-caption: Code
+    page-width-limit: none@
+    THIS_STANDARD: ASAM PLACEHOLDER
+
+
+# end::attributes[]
+
+  extensions:
+  - asciidoctor-kroki
+  - './asam-antora-extensions/asam-asciidoctor_extensions.js'
+  - './asam-antora-extensions/asam-asciidoctor_extensions-registered.js'
+
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+    - require: './asam-antora-extensions/asam-antora_extension.js'
+      numbered_titles: true
+      section_number_style: 'iso'
+      alternate_xref_style: 'full'
+      loft: true
+      local_to_global_references: false
+      bibliography: false
