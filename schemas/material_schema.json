@@ -81,6 +81,29 @@
             "surfaceCorrelationLength"
           ]
         },
+        "emissivityData": {
+          "type": "object",
+          "description": "Emissivity data of the material",
+          "properties": {
+            "emissivityCoefficient": {
+              "type": "number",
+              "description": "Emissivity describes the ability to emit energy as thermal radiation. Given as the fraction of thermal radiation emitted by a surface relative to the radiation emitted by an ideal black body at the same temperature. Here the hemispherical total emissivity is used which considers full emission over all wavelengths, directions and polarization for a given particular temperature: ε(T)"
+            },
+            "temperature": {
+              "type": "number",
+              "description": "Temperature in Kelvin [K] at which the emissivity is measured"
+            },
+            "source": {
+              "type": "string",
+              "description": "Source of the emissivity data."
+            }
+          },
+          "required": [
+            "emissivityCoefficient",
+            "temperature",
+            "source"
+          ]
+        },
         "elasticityData": {
           "type": "object",
           "description": "Information about the elasticity of the material.",
@@ -148,6 +171,7 @@
       },
       "required": [
         "surfaceRoughness",
+        "emissivityData",
         "elasticityData",
         "densityData",
         "electromagneticPropertiesUri"

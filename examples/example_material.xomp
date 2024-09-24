@@ -15,6 +15,11 @@
         "surfaceHeightRms": 0.8,
         "surfaceCorrelationLength": 1.0
     },
+    "emissivityData": {
+        "emissivityCoefficient": 0.07,
+        "temperature": 300.0,
+        "source": "internet: https://www.engineeringtoolbox.com/emissivity-coefficients-d_447.html"
+    },
     "elasticityData": {
         "youngsModulus": 70e9,
         "poissonsRatio": 0.35,
