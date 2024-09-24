@@ -70,7 +70,7 @@ jobs:
         cd ..
 
     - name: Generate AsciiDoc from JSON
-      working-directory: scripts
+      working-directory: repo/scripts
       run: |
         python3 json2asciidoc.py ../schemas/asset_schema.json metadata
         mv metadata.adoc ../content/geometry/
@@ -97,7 +97,7 @@ jobs:
       with:
         path: ./repo/site
 
-    deploy:
+  deploy:
     # Run if it was not triggered from remote OR the remote source was master or main.
     if: ${{ github.event_name != 'repository_dispatch' || contains(github.event.client_payload.ref, 'master') || contains(github.event.client_payload.ref, 'main') }}
     # Allow one concurrent deployment
