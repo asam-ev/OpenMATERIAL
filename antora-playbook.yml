@@ -28,8 +28,7 @@ ui:
 
 output:
   clean: true
-  dir: ./build/site
-  
+  dir: ./site
 runtime:
   fetch: true
 
