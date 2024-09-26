@@ -8,12 +8,13 @@
     "openMaterialVersion": "1.0.0",
     "copyright": "(C) 2023-2024, Example Company",
     "license": "MPL-2.0",
-    "author": "john.doe@asam.net",
+    "author": "john.doe@asam.net"
   },
   "materialProperties": {
     "surfaceRoughness": {
         "surfaceHeightRms": 0.8,
-        "surfaceCorrelationLength": 1.0
+        "surfaceCorrelationLength": 1.0,
+        "source": "estimate"
     },
     "emissivityData": {
         "emissivityCoefficient": 0.07,
