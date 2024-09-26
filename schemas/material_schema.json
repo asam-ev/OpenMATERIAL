@@ -74,11 +74,16 @@
             "surfaceCorrelationLength": {
               "type": "number",
               "description": "Correlation length of the surface height deviations."
+            },
+            "source": {
+              "type": "string",
+              "description": "Source of the surface roughness data."
             }
           },
           "required": [
             "surfaceHeightRms",
-            "surfaceCorrelationLength"
+            "surfaceCorrelationLength",
+            "source"
           ]
         },
         "emissivityData": {

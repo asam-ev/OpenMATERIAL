@@ -45,6 +45,10 @@
         "author": {
           "type": "string",
           "description": "Name or email address of the author of this material. In case of multiple authors, use comma-separation. The author can also be a company name."
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of the electromagnetic property data."
         }
       },
       "required": [
@@ -56,7 +60,8 @@
         "openMaterialVersion",
         "copyright",
         "license",
-        "author"
+        "author",
+        "source"
       ]
     },
     "electromagneticProperties": {
