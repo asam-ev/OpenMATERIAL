@@ -49,7 +49,7 @@ asciidoc:
     xrefstyle: short@
     listing-caption: Code
     page-width-limit: none@
-    THIS_STANDARD: ASAM PLACEHOLDER
+    THIS_STANDARD: ASAM OpenMATERIAL
 
 
 # end::attributes[]
