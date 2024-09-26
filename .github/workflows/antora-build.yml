@@ -33,9 +33,9 @@ jobs:
         python3 json2asciidoc.py ../schemas/material_schema.json metadata
         mv metadata.adoc ../content/material/
         python3 json2asciidoc.py ../schemas/material_schema.json materialProperties
-        mv material_properties.adoc ../content/material/material-properties.adoc
+        mv materialProperties.adoc ../content/material/material-properties.adoc
         python3 json2asciidoc.py ../schemas/material_emp_schema.json electromagneticProperties
-        mv electromagnetic_properties.adoc ../content/material/electromagnetic-properties.adoc
+        mv electromagneticProperties.adoc ../content/material/electromagnetic-properties.adoc
 
     - name: Configure Pages
       uses: actions/configure-pages@v4
