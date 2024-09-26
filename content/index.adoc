@@ -21,7 +21,6 @@ In alteration to the regular https://www.asam.net/license[license terms], ASAM a
 // DO NOT CHANGE!!!
 
 
-:antora_mapping: true
 ifndef::use-antora-rules[]
 
 [preface]
@@ -67,4 +66,3 @@ include::loft/list-of-figures.adoc[leveloffset=+1]
 :sectnums!:
 include::loft/list-of-tables.adoc[leveloffset=+1]
 endif::[]
-:!antora_mapping:

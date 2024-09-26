@@ -1,28 +1,48 @@
+:sectnums!:
 
-//Deprecated, use 'OpenMATERIAL/content/nav-openmaterial.adoc' instead.
+:antora_mapping: true
 
-//But keep this file here, since it is necessary for the asam-antora-extension pipeline!
+[preface]
+* xref:../general-docs/foreword.adoc[]
+[preface]
+* xref:../general-docs/introduction.adoc[]
 
-* xref:general-docs/foreword.adoc[]
-* xref:general-docs/introduction.adoc[]
-
-////
+:sectnums:
 * xref:general-docs/scope.adoc[]
 * xref:general-docs/normative-references.adoc[]
 * xref:general-docs/abbreviations.adoc[]
 * xref:general-docs/backward-compatibility.adoc[]
 * xref:terms-and-definitions/terms-and-definitions.adoc[]
 * xref:use-cases/use-cases.adoc[]
-* Geometry
+* xref:geometry/geometry-index.adoc[]
 ** xref:geometry/introduction.adoc[]
 ** xref:geometry/general.adoc[]
 ** xref:geometry/object-classes.adoc[]
 ** xref:geometry/file-format-support.adoc[]
 ** xref:geometry/metadata.adoc[]
 ** xref:geometry/performance.adoc[]
-* Material
+* xref:material/material-index.adoc[]
 ** xref:material/introduction.adoc[]
 ** xref:material/file-format.adoc[]
 ** xref:material/metadata.adoc[]
 ** xref:material/material-properties.adoc[Material properties]
 ** xref:material/lookup-tables.adoc[]
+
+
+
+:sectnums!:
+== Annexes
+[appendix]
+//include::annexes/REPLACE_ME.adoc[leveloffset=+2]
+// Add  further annexes here as needed and replace the placeholder one above
+
+[bibliography]
+include::bibliography.adoc[leveloffset=+1]
+
+:sectnums!:
+include::loft/list-of-figures.adoc[leveloffset=+1]
+
+:sectnums!:
+include::loft/list-of-tables.adoc[leveloffset=+1]
+
+:!antora_mapping:
