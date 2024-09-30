@@ -42,33 +42,6 @@ jobs:
          fetch-depth: 0 # test if depth in fetch history is required
          submodules: recursive
 
-    - name: Checkout documentation
-      if: ${{ github.event_name == 'repository_dispatch' && github.event.client_payload.head_ref }}
-      uses: actions/checkout@v4
-      with:
-        repository: asam-ev/OpenMATERIAL
-        path: repo #osi-documentation
-        fetch-depth: 0 # test if depth in fetch history is required
-
-    - name: Apply dispatch information
-      if: ${{ github.event_name == 'repository_dispatch' && github.event.client_payload.head_ref }}
-      working-directory: repo
-      run: |
-        SRC=${{ github.event.client_payload.src }}
-        IFS="/"
-        SRC_REPO=($SRC)
-        unset IFS
-        SRC_REPO=${SRC_REPO[1]}
-        HEAD_REF=${{ github.event.client_payload.head_ref }}
-        echo Branch build for ${HEAD_REF} in ${SRC_REPO}
-        sed -i -r "s|\[(.*)\] # o|[\1,HEAD] # ${SRC_REPO} # o|g" site.yml
-        sed -i -r "s|(- url: .*# retrieve content from remote)|# \1|g" site.yml
-        sed -i -r "s|# (- url: .*# retrieve content locally)|\1|g" site.yml
-        echo Checking out the target branch
-        cd OpenMATERIAL
-        git checkout ${HEAD_REF} 2>/dev/null || git checkout -b ${HEAD_REF}
-        cd ..
-
     - name: Generate AsciiDoc from JSON
       working-directory: repo/scripts
       run: |
