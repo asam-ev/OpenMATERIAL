@@ -43,7 +43,6 @@
         },
         "creationDate": {
           "type": "string",
-          "format": "date-time",
           "description": "Date and time when the material mapping was created in ISO 8601 format.",
           "pattern": "^\\d{8}T\\d{6}Z$"
         }
