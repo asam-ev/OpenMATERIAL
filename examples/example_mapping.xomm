@@ -11,7 +11,7 @@
     "creationDate": "20240703T101728Z",
   },
   "materialMapping": [
-    ["material_red", "materials/material_a.xomp", "metal with red paint"],​
+    ["material_red", "materials/material_a.xomp", "metal with red paint"],
     ["rgba:10;50;255;127", "materials/material_a.xomp", "metal with red paint"],
     ["material_green", "materials/material_b.xomp", "metal with green paint"],
     ["material_blue", "materials/material_c.xomp", "metal with blue paint"]

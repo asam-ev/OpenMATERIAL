@@ -63,7 +63,7 @@
           {
             "type": "string",
             "description": "File path to the material.",
-            "pattern": "^materials\\/[a-zA-Z0-9_\\-]+\\.xomp$"
+            "pattern": "^(\\./|/)?([a-zA-Z0-9_\\-./]+)\\.xomp$"
           },
           {
             "type": "string",
