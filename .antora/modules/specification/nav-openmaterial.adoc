@@ -22,7 +22,6 @@
 ** xref:geometry/mapping-schema.adoc[]
 * Material
 ** xref:material/introduction.adoc[]
-** xref:material/file-format.adoc[]
-** xref:material/metadata.adoc[]
+** xref:material/file-structure.adoc[]
 ** xref:material/material-schema.adoc[]
 ** xref:material/material-emp-schema.adoc[]
