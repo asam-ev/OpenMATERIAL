@@ -1,1 +1,1 @@
-= File format
+= File structure
