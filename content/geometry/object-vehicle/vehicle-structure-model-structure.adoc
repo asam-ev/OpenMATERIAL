@@ -6,65 +6,65 @@
 ----
 legend
 Root
-|_ Grp_Vehicle_Part_<keyword>_<vehicle_part_idx> (T)
-  |_ Grp_Exterior_<vehicle_part_idx>
-    |_ Grp_Exterior_Static_<vehicle_part_idx>
-    |_ Grp_Exterior_Dynamic_<vehicle_part_idx>
-      |_ Grp_Wheel_<vehicle_part_idx>_<axle_idx>_<wheel_idx> (T)
-        |_ Grp_Wheel_Steering_<vehicle_part_idx>_<axle_idx>_<wheel_idx>
+|_ Grp_Vehicle_Part_<keyword>_<part_idx> (T)
+  |_ Grp_Exterior_<part_idx>
+    |_ Grp_Exterior_Static_<part_idx>
+    |_ Grp_Exterior_Dynamic_<part_idx>
+      |_ Grp_Wheel_<part_idx>_<axle_idx>_<wheel_idx> (T)
+        |_ Grp_Wheel_Steering_<part_idx>_<axle_idx>_<wheel_idx>
         |_ Grp_Wheel_Steering_Rotating_<axle_idx>_<wheel_idx> (T)
-      |_ Grp_Door_Front_<vehicle_part_idx>_<door_front_idx> (T)
-      |_ Grp_Door_Left_<vehicle_part_idx>_<door_left_idx> (T)
-      |_ Grp_Door_Right_<vehicle_part_idx>_<door_right_idx> (T)
-      |_ Grp_Door_Rear_<vehicle_part_idx>_<door_rear_idx> (T)
-      |_ Grp_Door_Top_<vehicle_part_idx>_<door_top_idx> (T)
-      |_ Grp_Door_Bottom_<vehicle_part_idx>_<door_bottom_idx> (T)
-      |_ Grp_Light_Day_Left_<vehicle_part_idx>_<day_left_idx> (T)
-      |_ Grp_Light_Day_Right_<vehicle_part_idx>_<day_right_idx> (T)
-      |_ Grp_Light_Low_Beam_Left_<vehicle_part_idx>_<low_beam_left_idx> (T)
-      |_ Grp_Light_Low_Beam_Right_<vehicle_part_idx>_<low_beam_right_idx> (T)
-      |_ Grp_Light_High_Beam_Left_<vehicle_part_idx>_<high_beam_left_idx> (T)
-      |_ Grp_Light_High_Beam_Right_<vehicle_part_idx>_<high_beam_right_idx> (T)
-      |_ Grp_Light_Position_Left_<vehicle_part_idx>_<position_left_idx> (T)
-      |_ Grp_Light_Position_Right_<vehicle_part_idx>_<position_right_idx> (T)
-      |_ Grp_Light_Park_Left_<vehicle_part_idx>_<position_left_idx> (T)
-      |_ Grp_Light_Park_Right_<vehicle_part_idx>_<position_right_idx> (T)
-      |_ Grp_Light_Tail_Left_<vehicle_part_idx>_<tail_left_idx> (T)
-      |_ Grp_Light_Tail_Right_<vehicle_part_idx>_<tail_right_idx> (T)
-      |_ Grp_Light_Brake_Left_<vehicle_part_idx>_<brake_left_idx> (T)
-      |_ Grp_Light_Brake_Center_<vehicle_part_idx>_<brake_center_idx> (T)
-      |_ Grp_Light_Brake_Right_<vehicle_part_idx>_<brake_right_idx> (T)
-      |_ Grp_Light_Reverse_Left_<vehicle_part_idx>_<reverse_left_idx> (T)
-      |_ Grp_Light_Reverse_Right_<vehicle_part_idx>_<reverse_right_idx> (T)
-      |_ Grp_Light_Fog_Left_<vehicle_part_idx>_<fog_left_idx> (T)
-      |_ Grp_Light_Fog_Right_<vehicle_part_idx>_<fog_right_idx> (T)
-      |_ Grp_Light_Corner_Left_<vehicle_part_idx>_<corner_left_idx> (T)
-      |_ Grp_Light_Corner_Right_<vehicle_part_idx>_<corner_right_idx> (T)
-      |_ Grp_Light_Indicator_Left_<vehicle_part_idx>_<indicator_left_idx> (T)
-      |_ Grp_Light_Indicator_Right_<vehicle_part_idx>_<indicator_right_idx> (T)
-      |_ Grp_Number_Plate_<vehicle_part_idx>_<number_plate_idx> (T)
-      |_ Grp_Light_Number_Plate_<vehicle_part_idx>_<number_plate_light_idx> (T)
-      |_ Grp_Light_Warning_<vehicle_part_idx>_<warning_idx> (T)
-      |_ Grp_Convertible_Top_<vehicle_part_idx>
-      |_ Grp_Sensors_<vehicle_part_idx> (T)
-      |_ Grp_Side_Mirror_Mounting_Left_<vehicle_part_idx>_<side_mirror_mounting_left_idx> (T)
-      |_ Grp_Side_Mirror_View_Left_<vehicle_part_idx>_<side_mirror_view_left_idx> (T)
-      |_ Grp_Side_Mirror_Mounting_Right_<vehicle_part_idx>_<side_mirror_mounting_right_idx> (T)
-      |_ Grp_Side_Mirror_View_Right_<vehicle_part_idx>_<side_mirror_view_right_idx> (T)
-      |_ Grp_Blindspot_Mirror_Mounting_<vehicle_part_idx>_<blindspot_mirror_mounting_idx> (T)
-      |_ Grp_Blindspot_Mirror_View_<vehicle_part_idx>_<blindspot_mirror_view_idx> (T)
-  |_ Grp_Interior_<vehicle_part_idx>
-    |_ Grp_Interior_Static_<vehicle_part_idx>
-    |_ Grp_Interior_Dynamic_<vehicle_part_idx>
-      |_ Grp_Steering_Wheel_<vehicle_part_idx> (T)
-      |_ Grp_Eyepoint_<vehicle_part_idx>_<eyepoint_idx> (T)
-      |_ Grp_Rearview_Mirror_<vehicle_part_idx>_Mounting_<rearview_mirror_mounting_idx> (T)
-      |_ Grp_Rearview_Mirror_View_<vehicle_part_idx>_<rearview_mirror_view_idx> (T)
-      |_ Grp_Seat_<vehicle_part_idx>_<seat_idx> (T)
+      |_ Grp_Door_Front_<part_idx>_<door_front_idx> (T)
+      |_ Grp_Door_Left_<part_idx>_<door_left_idx> (T)
+      |_ Grp_Door_Right_<part_idx>_<door_right_idx> (T)
+      |_ Grp_Door_Rear_<part_idx>_<door_rear_idx> (T)
+      |_ Grp_Door_Top_<part_idx>_<door_top_idx> (T)
+      |_ Grp_Door_Bottom_<part_idx>_<door_bottom_idx> (T)
+      |_ Grp_Light_Day_Left_<part_idx>_<day_left_idx> (T)
+      |_ Grp_Light_Day_Right_<part_idx>_<day_right_idx> (T)
+      |_ Grp_Light_Low_Beam_Left_<part_idx>_<low_beam_left_idx> (T)
+      |_ Grp_Light_Low_Beam_Right_<part_idx>_<low_beam_right_idx> (T)
+      |_ Grp_Light_High_Beam_Left_<part_idx>_<high_beam_left_idx> (T)
+      |_ Grp_Light_High_Beam_Right_<part_idx>_<high_beam_right_idx> (T)
+      |_ Grp_Light_Position_Left_<part_idx>_<position_left_idx> (T)
+      |_ Grp_Light_Position_Right_<part_idx>_<position_right_idx> (T)
+      |_ Grp_Light_Park_Left_<part_idx>_<position_left_idx> (T)
+      |_ Grp_Light_Park_Right_<part_idx>_<position_right_idx> (T)
+      |_ Grp_Light_Tail_Left_<part_idx>_<tail_left_idx> (T)
+      |_ Grp_Light_Tail_Right_<part_idx>_<tail_right_idx> (T)
+      |_ Grp_Light_Brake_Left_<part_idx>_<brake_left_idx> (T)
+      |_ Grp_Light_Brake_Center_<part_idx>_<brake_center_idx> (T)
+      |_ Grp_Light_Brake_Right_<part_idx>_<brake_right_idx> (T)
+      |_ Grp_Light_Reverse_Left_<part_idx>_<reverse_left_idx> (T)
+      |_ Grp_Light_Reverse_Right_<part_idx>_<reverse_right_idx> (T)
+      |_ Grp_Light_Fog_Left_<part_idx>_<fog_left_idx> (T)
+      |_ Grp_Light_Fog_Right_<part_idx>_<fog_right_idx> (T)
+      |_ Grp_Light_Corner_Left_<part_idx>_<corner_left_idx> (T)
+      |_ Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
+      |_ Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
+      |_ Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
+      |_ Grp_Number_Plate_<part_idx>_<number_plate_idx> (T)
+      |_ Grp_Light_Number_Plate_<part_idx>_<number_plate_light_idx> (T)
+      |_ Grp_Light_Warning_<part_idx>_<warning_idx> (T)
+      |_ Grp_Convertible_Top_<part_idx>
+      |_ Grp_Sensors_<part_idx> (T)
+      |_ Grp_Side_Mirror_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> (T)
+      |_ Grp_Side_Mirror_View_Left_<part_idx>_<side_mirror_view_left_idx> (T)
+      |_ Grp_Side_Mirror_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
+      |_ Grp_Side_Mirror_View_Right_<part_idx>_<side_mirror_view_right_idx> (T)
+      |_ Grp_Blindspot_Mirror_Mounting_<part_idx>_<blindspot_mirror_mounting_idx> (T)
+      |_ Grp_Blindspot_Mirror_View_<part_idx>_<blindspot_mirror_view_idx> (T)
+  |_ Grp_Interior_<part_idx>
+    |_ Grp_Interior_Static_<part_idx>
+    |_ Grp_Interior_Dynamic_<part_idx>
+      |_ Grp_Steering_Wheel_<part_idx> (T)
+      |_ Grp_Eyepoint_<part_idx>_<eyepoint_idx> (T)
+      |_ Grp_Rearview_Mirror_<part_idx>_Mounting_<rearview_mirror_mounting_idx> (T)
+      |_ Grp_Rearview_Mirror_View_<part_idx>_<rearview_mirror_view_idx> (T)
+      |_ Grp_Seat_<part_idx>_<seat_idx> (T)
 end legend
 ----
 
-== Grp_Vehicle_Part_<vehicle_part_idx>_<keyword> (T) 
+== Grp_Vehicle_Part_<part_idx>_<keyword> (T) 
 
 A vehicle part is a large structure of a vehicle, that moves independently from other parts of the same vehicle.
 This mainly applies to articulated vehicles, e.g. a front loader with a hinged axis or an articulated bus with a hinge in the middle.
@@ -73,7 +73,7 @@ When a vehicle part can be detached, like a trailer, it is to be treated as a se
 Standard vehicles only have one part and no keyword.
 Therefore, only one Grp_Vehicle_Part exists with the name `Grp_Vehicle_Part_0`.
 
-The <vehicle_part_idx> must be added to all sub-nodes, as multiple nodes with the same name in different vehicle parts are not possible.
+The <part_idx> must be added to all sub-nodes, as multiple nodes with the same name in different vehicle parts are not possible.
 There cannot be a node "Grp_Exterior" in both Grp_Vehicle_Part_0 and Grp_Vehicle_Part_1.
 
 NOTE: Define the origin of a vehicle part
@@ -101,7 +101,7 @@ NOTE: Add a figure visualizing e.g. a hinged bus to explain what vehicle parts a
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
 
-== Grp_Exterior_<vehicle_part_idx>
+== Grp_Exterior_<part_idx>
 
 This group contains all elements of the exterior of the vehicle (part).
 
@@ -124,7 +124,7 @@ This group contains all elements of the exterior of the vehicle (part).
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
 
-== Grp_Exterior_Static_<vehicle_part_idx>
+== Grp_Exterior_Static_<part_idx>
 
 This group contains all static elements of the exterior of the vehicle (part).
 Static elements are geometry structures that have a fixed position and orientation relative to the origin on the vehicle (part) throughout a simulation.
@@ -148,7 +148,7 @@ Static elements are geometry structures that have a fixed position and orientati
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
 
-== Grp_Exterior_Dynamic_<vehicle_part_idx>
+== Grp_Exterior_Dynamic_<part_idx>
 
 This group contains all dynamic elements of the exterior of the vehicle (part).
 Dynamic elements are geometry structures which position and orientation relative to the origin on the vehicle (part) might change throughout a simulation.
@@ -173,7 +173,7 @@ Dynamic elements are geometry structures which position and orientation relative
 |===
 
 
-== Grp_Wheel_<vehicle_part_idx>_<axle_idx>_<wheel_idx> (T)
+== Grp_Wheel_<part_idx>_<axle_idx>_<wheel_idx> (T)
 
 This group contains all geometries of one wheel assembly.
 This may include tire, rim, brake caliper etc.
@@ -210,7 +210,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Wheel_Steering_<vehicle_part_idx>_<axle_idx>_<wheel_idx>
+== Grp_Wheel_Steering_<part_idx>_<axle_idx>_<wheel_idx>
 
 This group contains all components of the wheel assembly, that follow the steering motion but not the rotation of the wheel, e.g. brake calipers.
 
@@ -236,9 +236,7 @@ The indices are the same as in the parent group.
 |===
 
 
-NOTE: Add a figure.
-
-== Grp_Wheel_Steering_Rotating_<vehicle_part_idx>_<axle_idx>_<wheel_idx> (T)
+== Grp_Wheel_Steering_Rotating_<part_idx>_<axle_idx>_<wheel_idx> (T)
 
 This group contains all components of the wheel assembly, that follow the steering motion as well as the rotation of the wheel, e.g. tire and rim.
 
@@ -254,7 +252,7 @@ The indices are the same as in the parent group.
 | Geometric center of the wheel
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle longitudinal axis, pointing towards the door
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -264,15 +262,15 @@ The indices are the same as in the parent group.
 |===
 
 
-NOTE: Add a figure.
-
-== Grp_Door_Front_<vehicle_part_idx>_<door_front_idx> (T)
+== Grp_Door_Front_<part_idx>_<door_front_idx> (T)
 
 The group contains all components of a door in the front of the vehicle (part).
 This includes e.g. the engine cover.
 
 The `<door_front_idx>` is the index for all doors in the front counting from right to left (in positive y direction), starting with 0.
 
+NOTE: Add a figure with an engine hood.
+
 .<Table title>
 [%header, cols="20, 80"]
 |===
@@ -283,7 +281,7 @@ The `<door_front_idx>` is the index for all doors in the front counting from rig
 | Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Perpendicular to the z-axis, pointing forwards
+| Perpendicular to the z-axis, pointing towards the door
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -293,14 +291,14 @@ The `<door_front_idx>` is the index for all doors in the front counting from rig
 |===
 
 
-NOTE: Add a figure.
-
-== Grp_Door_Left_<vehicle_part_idx>_<door_left_idx> (T)
+== Grp_Door_Left_<part_idx>_<door_left_idx> (T)
 
 The group contains all components of a door on the left side of the vehicle (part).
 
 The `<door_left_idx>` is the index for all doors on the left counting from front to rear, starting with 0.
 
+NOTE: Add a figure.
+
 .<Table title>
 [%header, cols="20, 80"]
 |===
@@ -311,7 +309,7 @@ The `<door_left_idx>` is the index for all doors on the left counting from front
 | Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Perpendicular to the z-axis, pointing forwards
+| Perpendicular to the z-axis, pointing towards the door
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -321,14 +319,14 @@ The `<door_left_idx>` is the index for all doors on the left counting from front
 |===
 
 
-NOTE: Add a figure.
-
-== Grp_Door_Right_<vehicle_part_idx>_<door_right_idx> (T)
+== Grp_Door_Right_<part_idx>_<door_right_idx> (T)
 
 The group contains all components of a door on the right side of the vehicle (part).
 
 The `<door_right_idx>` is the index for all doors on the right counting from front to rear, starting with 0.
 
+NOTE: Add a figure.
+
 .<Table title>
 [%header, cols="20, 80"]
 |===
@@ -339,7 +337,7 @@ The `<door_right_idx>` is the index for all doors on the right counting from fro
 | Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Perpendicular to the z-axis, pointing forwards
+| Perpendicular to the z-axis, pointing towards the door
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -349,15 +347,15 @@ The `<door_right_idx>` is the index for all doors on the right counting from fro
 |===
 
 
-NOTE: Add a figure.
-
-== Grp_Door_Rear_<vehicle_part_idx>_<door_rear_idx> (T)
+== Grp_Door_Rear_<part_idx>_<door_rear_idx> (T)
 
 The group contains all components of a door in the rear of the vehicle (part).
 This includes e.g. the trunklid.
 
 The `<door_rear_idx>` is the index for all doors in the rear counting from right to left (in positive y direction), starting with 0.
 
+NOTE: Add a figure with a trunk.
+
 .<Table title>
 [%header, cols="20, 80"]
 |===
@@ -368,7 +366,7 @@ The `<door_rear_idx>` is the index for all doors in the rear counting from right
 | Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Perpendicular to the z-axis, pointing forwards
+| Perpendicular to the z-axis, pointing towards the door
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -378,14 +376,14 @@ The `<door_rear_idx>` is the index for all doors in the rear counting from right
 |===
 
 
-NOTE: Add a figure.
-
-== Grp_Door_Top_<vehicle_part_idx>_<door_top_idx> (T)
+== Grp_Door_Top_<part_idx>_<door_top_idx> (T)
 
 The group contains all components of a door on the top of the vehicle (part).
 
 The `<door_top_idx>` is the index for all doors on the top counting from front to rear, starting with 0.
 
+NOTE: Add a figure with a hatch on the top.
+
 .<Table title>
 [%header, cols="20, 80"]
 |===
@@ -396,7 +394,7 @@ The `<door_top_idx>` is the index for all doors on the top counting from front t
 | Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Perpendicular to the z-axis, pointing forwards
+| Perpendicular to the z-axis, pointing towards the door
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -405,14 +403,15 @@ The `<door_top_idx>` is the index for all doors on the top counting from front t
 | Concentric and coaxial to the virtual hinge axis
 |===
 
-NOTE: Add a figure.
 
-== Grp_Door_Bottom_<vehicle_part_idx>_<door_bottom_idx> (T)
+== Grp_Door_Bottom_<part_idx>_<door_bottom_idx> (T)
 
 The group contains all components of a door on the bottom of the vehicle (part).
 
 The `<door_bottom_idx>` is the index for all doors on the bottom counting from front to rear, starting with 0.
 
+NOTE: Add a figure with a hatch on the bottom.
+
 .<Table title>
 [%header, cols="20, 80"]
 |===
@@ -432,38 +431,8 @@ The `<door_bottom_idx>` is the index for all doors on the bottom counting from f
 | Concentric and coaxial to the virtual hinge axis
 |===
 
-NOTE: Add a figure.
 
-== Grp_Light_Day_Left_<vehicle_part_idx>_<day_left_idx> (T)
-
-Add a description
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-
-
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-== Grp_Light_Day_Right_<vehicle_part_idx>_<day_right_idx> (T)
+== Grp_Light_Day_Left_<part_idx>_<day_left_idx> (T)
 
 Add a description
 
@@ -492,7 +461,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Low_Beam_Left_<vehicle_part_idx>_<low_beam_left_idx> (T)
+== Grp_Light_Day_Right_<part_idx>_<day_right_idx> (T)
 
 Add a description
 
@@ -521,7 +490,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Low_Beam_Right_<vehicle_part_idx>_<low_beam_right_idx> (T)
+== Grp_Light_Low_Beam_Left_<part_idx>_<low_beam_left_idx> (T)
 
 Add a description
 
@@ -550,7 +519,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_High_Beam_Left_<vehicle_part_idx>_<high_beam_left_idx> (T)
+== Grp_Light_Low_Beam_Right_<part_idx>_<low_beam_right_idx> (T)
 
 Add a description
 
@@ -579,7 +548,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_High_Beam_Right_<vehicle_part_idx>_<high_beam_right_idx> (T)
+== Grp_Light_High_Beam_Left_<part_idx>_<high_beam_left_idx> (T)
 
 Add a description
 
@@ -608,7 +577,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Position_Left_<vehicle_part_idx>_<position_left_idx> (T)
+== Grp_Light_High_Beam_Right_<part_idx>_<high_beam_right_idx> (T)
 
 Add a description
 
@@ -637,7 +606,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Position_Right_<vehicle_part_idx>_<position_right_idx> (T)
+== Grp_Light_Position_Left_<part_idx>_<position_left_idx> (T)
 
 Add a description
 
@@ -666,7 +635,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Park_Left_<vehicle_part_idx>_<position_left_idx> (T)
+== Grp_Light_Position_Right_<part_idx>_<position_right_idx> (T)
 
 Add a description
 
@@ -695,7 +664,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Park_Right_<vehicle_part_idx>_<position_right_idx> (T)
+== Grp_Light_Park_Left_<part_idx>_<position_left_idx> (T)
 
 Add a description
 
@@ -724,7 +693,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Tail_Left_<vehicle_part_idx>_<tail_left_idx> (T)
+== Grp_Light_Park_Right_<part_idx>_<position_right_idx> (T)
 
 Add a description
 
@@ -753,7 +722,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Tail_Right_<vehicle_part_idx>_<tail_right_idx> (T)
+== Grp_Light_Tail_Left_<part_idx>_<tail_left_idx> (T)
 
 Add a description
 
@@ -782,7 +751,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Brake_Left_<vehicle_part_idx>_<brake_left_idx> (T)
+== Grp_Light_Tail_Right_<part_idx>_<tail_right_idx> (T)
 
 Add a description
 
@@ -811,7 +780,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Brake_Center_<vehicle_part_idx>_<brake_center_idx> (T)
+== Grp_Light_Brake_Left_<part_idx>_<brake_left_idx> (T)
 
 Add a description
 
@@ -840,7 +809,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Brake_Right_<vehicle_part_idx>_<brake_right_idx> (T)
+== Grp_Light_Brake_Center_<part_idx>_<brake_center_idx> (T)
 
 Add a description
 
@@ -869,7 +838,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Reverse_Left_<vehicle_part_idx>_<reverse_left_idx> (T)
+== Grp_Light_Brake_Right_<part_idx>_<brake_right_idx> (T)
 
 Add a description
 
@@ -898,7 +867,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Reverse_Right_<vehicle_part_idx>_<reverse_right_idx> (T)
+== Grp_Light_Reverse_Left_<part_idx>_<reverse_left_idx> (T)
 
 Add a description
 
@@ -927,7 +896,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Fog_Left_<vehicle_part_idx>_<fog_left_idx> (T)
+== Grp_Light_Reverse_Right_<part_idx>_<reverse_right_idx> (T)
 
 Add a description
 
@@ -956,7 +925,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Fog_Right_<vehicle_part_idx>_<fog_right_idx> (T)
+== Grp_Light_Fog_Left_<part_idx>_<fog_left_idx> (T)
 
 Add a description
 
@@ -985,7 +954,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Corner_Left_<vehicle_part_idx>_<corner_left_idx> (T)
+== Grp_Light_Fog_Right_<part_idx>_<fog_right_idx> (T)
 
 Add a description
 
@@ -1014,7 +983,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Corner_Right_<vehicle_part_idx>_<corner_right_idx> (T)
+== Grp_Light_Corner_Left_<part_idx>_<corner_left_idx> (T)
 
 Add a description
 
@@ -1043,7 +1012,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Indicator_Left_<vehicle_part_idx>_<indicator_left_idx> (T)
+== Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
 
 Add a description
 
@@ -1072,7 +1041,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Indicator_Right_<vehicle_part_idx>_<indicator_right_idx> (T)
+== Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
 
 Add a description
 
@@ -1101,7 +1070,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Number_Plate_<vehicle_part_idx>_<number_plate_idx> (T)
+== Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
 
 Add a description
 
@@ -1130,7 +1099,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Number_Plate_<vehicle_part_idx>_<number_plate_light_idx> (T)
+== Grp_Number_Plate_<part_idx>_<number_plate_idx> (T)
 
 Add a description
 
@@ -1159,7 +1128,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Light_Warning_<vehicle_part_idx>_<warning_idx> (T)
+== Grp_Light_Number_Plate_<part_idx>_<number_plate_light_idx> (T)
 
 Add a description
 
@@ -1188,7 +1157,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Convertible_Top_<vehicle_part_idx>
+== Grp_Light_Warning_<part_idx>_<warning_idx> (T)
 
 Add a description
 
@@ -1217,7 +1186,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Sensors_<vehicle_part_idx> (T)
+== Grp_Convertible_Top_<part_idx>
 
 Add a description
 
@@ -1246,7 +1215,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Side_Mirror_Mounting_Left_<vehicle_part_idx>_<side_mirror_mounting_left_idx> (T) 
+== Grp_Sensors_<part_idx> (T)
 
 Add a description
 
@@ -1275,7 +1244,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Side_Mirror_Mounting_Right_<vehicle_part_idx>_<side_mirror_mounting_right_idx> (T)
+== Grp_Side_Mirror_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> (T) 
 
 Add a description
 
@@ -1304,7 +1273,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Side_Mirror_View_Left_<vehicle_part_idx>_<side_mirror_view_left_idx> (T)
+== Grp_Side_Mirror_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
 
 Add a description
 
@@ -1333,7 +1302,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Side_Mirror_View_Right_<vehicle_part_idx>_<side_mirror_view_right_idx> (T)
+== Grp_Side_Mirror_View_Left_<part_idx>_<side_mirror_view_left_idx> (T)
 
 Add a description
 
@@ -1362,7 +1331,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Blindspot_Mirror_Mounting_<vehicle_part_idx>_<blindspot_mirror_mounting_idx> (T)
+== Grp_Side_Mirror_View_Right_<part_idx>_<side_mirror_view_right_idx> (T)
 
 Add a description
 
@@ -1391,7 +1360,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Blindspot_Mirror_View_<vehicle_part_idx>_<blindspot_mirror_view_idx> (T)
+== Grp_Blindspot_Mirror_Mounting_<part_idx>_<blindspot_mirror_mounting_idx> (T)
 
 Add a description
 
@@ -1420,7 +1389,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Interior_<vehicle_part_idx>
+== Grp_Blindspot_Mirror_View_<part_idx>_<blindspot_mirror_view_idx> (T)
 
 Add a description
 
@@ -1449,7 +1418,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Interior_Static_<vehicle_part_idx>
+== Grp_Interior_<part_idx>
 
 Add a description
 
@@ -1478,7 +1447,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Interior_Dynamic_<vehicle_part_idx>
+== Grp_Interior_Static_<part_idx>
 
 Add a description
 
@@ -1507,7 +1476,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Steering_Wheel_<vehicle_part_idx> (T)
+== Grp_Interior_Dynamic_<part_idx>
 
 Add a description
 
@@ -1536,7 +1505,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Eyepoint_<vehicle_part_idx>_<eyepoint_idx> (T)
+== Grp_Steering_Wheel_<part_idx> (T)
 
 Add a description
 
@@ -1565,7 +1534,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Rearview_Mirror_Mounting_<vehicle_part_idx>_<rearview_mirror_mounting_idx> (T)
+== Grp_Eyepoint_<part_idx>_<eyepoint_idx> (T)
 
 Add a description
 
@@ -1594,7 +1563,7 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Rearview_Mirror_View_<vehicle_part_idx>_<rearview_mirror_view_idx> (T)
+== Grp_Rearview_Mirror_Mounting_<part_idx>_<rearview_mirror_mounting_idx> (T)
 
 Add a description
 
@@ -1623,7 +1592,36 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Grp_Seat_<vehicle_part_idx>_<seat_idx> (T)
+== Grp_Rearview_Mirror_View_<part_idx>_<rearview_mirror_view_idx> (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Grp_Seat_<part_idx>_<seat_idx> (T)
 
 Add a description
 
