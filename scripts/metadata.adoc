@@ -1,0 +1,140 @@
+== metadata
+
+Metadata about the asset.
+
+=== name
+Name of the asset.
+
+*Required:* Yes
+
+=== description
+Short description of the asset in 2 - 3 sentences.
+
+*Required:* Yes
+
+=== uuid
+Universally unique identifier for the asset.
+
+*Pattern:* `^[a-f0-9]\{32\}$`
+
+*Required:* Yes
+
+=== assetVersion
+Version of the asset.
+
+*Pattern:* `^\\d+\\.\\d+\\.\\d+$`
+
+*Required:* Yes
+
+=== openMaterialVersion
+Version of OpenMATERIAL.
+
+*Pattern:* `^\\d+\\.\\d+\\.\\d+$`
+
+*Required:* Yes
+
+=== copyright
+Copyright information with year and company.
+
+*Required:* Yes
+
+=== license
+License information. For common open source licenses, provide an SPDX identifier. For other types of licenses, provide an URL to a webpage with the license or the filename of a separately provided license file.
+
+*Required:* Yes
+
+=== author
+Name or email address of the author of this asset. In case of multiple authors, use comma-separation. The author can also be a company name.
+
+*Required:* Yes
+
+=== modelCreationTool
+The tool or software used to generate the 3D model of this asset.
+
+*Required:* No
+
+=== creationDate
+Creation date of the asset in the format YYYYMMDDTHHMMSSZ.
+
+*Pattern:* `^\\d\{8\}T\\d\{6\}Z$`
+
+*Required:* Yes
+
+=== modelingMethod
+Description how the 3D model was modeled. Was it modeled based on a 3D scan, based on photos, or freehand?
+
+*Required:* No
+
+=== validationDescription
+Was the geometry of the 3D model validated against a real-world object? If yes, how?
+
+*Required:* No
+
+=== assetType
+Type of the asset out of the following: object (individual object), scene (a collection of multiple objects)
+
+*Required:* Yes
+
+=== objectClass
+The class of the object. This only applies if 'asset_type' == 'object'.
+
+*Required:* Yes
+
+=== animated
+Does the 3D model contain keyframe animations?
+
+*Required:* Yes
+
+=== pbrMaterialWorkflow
+Does the 3D model contain materials for a PBR workflow? If yes, for a metallic or specular workflow?
+
+*Required:* Yes
+
+=== triangleCount
+The number of triangles in the 3D model. One quad counts as two triangles.
+
+*Required:* Yes
+
+=== meshCount
+The number of meshes in the 3D geometry.
+
+*Required:* Yes
+
+=== textureResolutions
+List of all texture resolutions in the 3D model. This can include any combination of '1K', '2K', or '4K'.
+
+No description
+
+*Required:* Yes
+
+=== normalMapFormat
+Does the 3D model have normal maps as textures? If yes, are they using the DirectX format or the OpenGL format?
+
+*Required:* Yes
+
+=== boundingBox
+Axis-aligned bounding box dimensions specifying the minimum and maximum values in x, y, and z direction.
+
+*Required:* Yes
+
+==== x
+Minimum and maximum values in m in x direction.
+
+No description
+
+*Required:* Yes
+
+==== y
+Minimum and maximum values in m in y direction.
+
+No description
+
+*Required:* Yes
+
+==== z
+Minimum and maximum values in m in z direction.
+
+No description
+
+*Required:* Yes
+
