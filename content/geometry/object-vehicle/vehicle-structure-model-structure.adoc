@@ -5,7 +5,7 @@
 [plantuml]
 ----
 legend
-Vehicle structure
+Root
 |_ Grp_Vehicle_Part_<keyword>_<vehicle_part_idx> (T)
   |_ Grp_Exterior
     |_ Grp_Exterior_Static
@@ -77,6 +77,8 @@ NOTE: Define the origin of a vehicle part
 
 NOTE: Add description about keywords
 
+NOTE: Add a figure visualizing e.g. a hinged bus to explain what vehicle parts are.
+
 .<Table title>
 [%header, cols="20, 80"]
 |===
@@ -95,9 +97,6 @@ NOTE: Add description about keywords
 | *z-axis*
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
-NOTE: Add a figure.
 
 == Grp_Exterior
 
@@ -122,9 +121,6 @@ This group contains all elements of the exterior of the vehicle (part).
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
 
-
-NOTE: Add a figure.
-
 == Grp_Exterior_Static
 
 This group contains all static elements of the exterior of the vehicle (part).
@@ -148,9 +144,6 @@ Static elements are geometry structures that have a fixed position and orientati
 | *z-axis*
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
-TODO: Add a figure.
 
 == Grp_Exterior_Dynamic
 
@@ -177,8 +170,6 @@ Dynamic elements are geometry structures which position and orientation relative
 |===
 
 
-NOTE: Add a figure.
-
 == Grp_Wheel_<axle_idx>_<wheel_idx> (T)
 
 This group contains all geometries of one wheel assembly.
@@ -186,12 +177,15 @@ This may include tire, rim, brake caliper etc.
 
 The `<axle_idx>` denotes the index of the axle the wheel is mounted to, counting from the front to the rear, starting with 0.
 The `<wheel_idx>` denotes the index of the wheel on the specified axle, counting from right to left (in positive y direction), starting with 0.
-Example: The wheel on the front left of a standar vehicle would be `Grp_Wheel_0_1`.
+Example: The wheel on the front left of a standard vehicle would be `Grp_Wheel_0_1`.
 
 Steering of the wheel is implemented by a rotation around the z-axis.
 Wheel camber is defined by a rotation around the x-axis.
 Suspension deflection is represented by a translation along the z-axis.
-Zero rotation and and translation around all axles are defined in neutral load contidions.
+Zero rotation and and translation around all axles are defined in neutral load conditions.
+In the 3D model, both caster and camber angles are neglected.
+
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -212,8 +206,6 @@ Zero rotation and and translation around all axles are defined in neutral load c
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
 
-
-NOTE: Add a figure.
 
 == Grp_Wheel_Steering_<axle_idx>_<wheel_idx>
 
