@@ -24,6 +24,12 @@ jobs:
           schema: ./schemas/asset_schema.json
           file: ./examples/*.xoma
 
+      - name: Validate material mapping JSON schemas
+        uses: cardinalby/schema-validator-action@v3
+        with:
+          schema: ./schemas/mapping_schema.json
+          file: ./examples/*.xomm
+
       - name: Validate material JSON schemas
         uses: cardinalby/schema-validator-action@v3
         with:
