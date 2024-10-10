@@ -73,8 +73,8 @@ When a vehicle part can be detached, like a trailer, it is to be treated as a se
 Standard vehicles only have one part and no keyword.
 Therefore, only one Grp_Vehicle_Part exists with the name `Grp_Vehicle_Part_0`.
 
-The <part_idx> must be added to all sub-nodes, as multiple nodes with the same name in different vehicle parts are not possible.
-There cannot be a node "Grp_Exterior" in both Grp_Vehicle_Part_0 and Grp_Vehicle_Part_1.
+The `<part_idx>` must be added to all sub-nodes, as multiple nodes with the same name in different vehicle parts are not possible.
+There cannot be a node `Grp_Exterior` in both `Grp_Vehicle_Part_0`` and `Grp_Vehicle_Part_1``.
 
 NOTE: Define the origin of a vehicle part
 
