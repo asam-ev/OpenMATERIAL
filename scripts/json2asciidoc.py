@@ -1,5 +1,22 @@
+import os
 import json
 import argparse
+
+
+def format_main_headline(file_name):
+    """
+    Convert file name to a title-style headline for the AsciiDoc.
+    Replaces underscores with spaces and capitalizes the first letter.
+
+    Args:
+        file_name (str): The base name of the JSON schema file.
+
+    Returns:
+        str: The formatted headline.
+    """
+    file_name = file_name.replace('_', ' ')  # Replace underscores with spaces
+    file_name = file_name.replace('-', ' ')  # Replace hyphens with spaces
+    return file_name.capitalize()  # Capitalize the first letter
 
 
 def escape_special_chars(pattern):
@@ -107,13 +124,13 @@ def generate_asciidoc(field_name, schema, required_fields):
     Returns:
         str: The generated AsciiDoc content.
     """
-    asciidoc_content = f"= {field_name.capitalize()}\n\n"
+    asciidoc_content = f"== {field_name}\n\n"
     field_data = schema['properties'][field_name]
     asciidoc_content += field_data.get("description", "") + "\n\n"
     
     # Generate the content for the properties, recursively handling nested properties
     if 'properties' in field_data:
-        asciidoc_content += generate_asciidoc_properties(field_data['properties'], required_fields, level=2)
+        asciidoc_content += generate_asciidoc_properties(field_data['properties'], required_fields, level=3)
     elif field_data.get('type') == 'array':
         # Handle array fields directly
         if 'items' in field_data and isinstance(field_data['items'], dict) and 'items' in field_data['items']:
@@ -134,9 +151,9 @@ def main():
     Main function to handle command-line arguments, process the JSON schema, and generate the AsciiDoc documentation.
     """
     # Set up argument parser
-    parser = argparse.ArgumentParser(description="Generate AsciiDoc documentation for a given JSON schema field.")
+    parser = argparse.ArgumentParser(description="Generate AsciiDoc documentation for a given JSON schema field or the entire schema.")
     parser.add_argument('json_schema_path', type=str, help="Path to the JSON schema file.")
-    parser.add_argument('field_name', type=str, help="Name of the field (e.g., metadata) to generate documentation for.")
+    parser.add_argument('field_name', type=str, nargs='?', default='', help="Name of the field (e.g., metadata) to generate documentation for. Leave empty to generate documentation for the entire schema.")
 
     # Parse the arguments
     args = parser.parse_args()
@@ -147,19 +164,40 @@ def main():
     with open(json_schema_path, 'r') as file:
         schema = json.load(file)
 
-    # Check if the field exists in the schema
-    if field_name not in schema['properties']:
-        print(f"Error: The field '{field_name}' does not exist in the provided schema.")
-        return
+    # Generate documentation for the entire schema if field_name is empty
+    if not field_name:
+        # Generate AsciiDoc for all fields
+        print("Generating AsciiDoc for the entire schema...")
 
-    # Get the required fields for the selected field
-    required_fields = schema['properties'][field_name].get('required', [])
+        # Generate the main headline from the file name
+        base_filename = os.path.basename(json_schema_path).replace('_', '-')
+        headline = format_main_headline(os.path.splitext(base_filename)[0])
+        asciidoc_content = f"= {headline}\n\n"
 
-    # Generate the AsciiDoc content
-    asciidoc_content = generate_asciidoc(field_name, schema, required_fields)
+        # Process each field in the schema
+        for field in schema['properties']:
+            required_fields = schema['properties'][field].get('required', [])
+            asciidoc_content += generate_asciidoc(field, schema, required_fields)
 
-    # Save the AsciiDoc content to a file
-    output_filename = f"{field_name}.adoc"
+        # Save the AsciiDoc content to a file
+        base_filename = os.path.basename(json_schema_path).replace('_', '-')
+        output_filename = f"{os.path.splitext(base_filename)[0]}.adoc"
+    else:
+        # Check if the field exists in the schema
+        if field_name not in schema['properties']:
+            print(f"Error: The field '{field_name}' does not exist in the provided schema.")
+            return
+
+        # Get the required fields for the selected field
+        required_fields = schema['properties'][field_name].get('required', [])
+
+        # Generate the AsciiDoc content for the specific field
+        asciidoc_content = generate_asciidoc(field_name, schema, required_fields)
+
+        # Save the AsciiDoc content to a file
+        output_filename = f"{field_name}.adoc"
+
+    # Write the output to a file
     with open(output_filename, 'w') as file:
         file.write(asciidoc_content)
 

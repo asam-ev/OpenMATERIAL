@@ -157,34 +157,28 @@
         "boundingBox"
       ]
     },
-    "materialMapping": {
+    "materialTextureAssignment": {
       "type": "array",
-      "description": "Mapping of materials used in the asset",
+      "description": "Optional array containing material texture assignments. It links material names contained in the 3D model file to OpenMATERIAL assignment textures. In a separate material mapping file, the 'color' values in this texture are linked to OpenMATERIAL property files.",
       "items": {
         "type": "array",
-        "description": "Array of RGB values and material name",
         "items": [
           {
             "type": "string",
-            "description": "RGB values in the format 'R;G;B;A'",
-            "pattern": "^\\d{1,3};\\d{1,3};\\d{1,3};\\d{1,3}$"
+            "description": "Name of the material in the 3D model file."
           },
           {
             "type": "string",
-            "description": "Path to an OpenMATERIAL property file"
-          },
-          {
-            "type": "string",
-            "description": "Short but precise description of the material"
+            "description": "File path to the OpenMATERIAL assignment texture. Supported texture formats are png and jpg.",
+            "pattern": "^(\\./|/)?([a-zA-Z0-9_\\-./]+)\\.(png|jpg|jpeg)$"
           }
         ],
-        "minItems": 3,
-        "maxItems": 3
+        "minItems": 2,
+        "maxItems": 2
       }
     }
   },
   "required": [
-    "metadata",
-    "materialMapping"
+    "metadata"
   ]
 }

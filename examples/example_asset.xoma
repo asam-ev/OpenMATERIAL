@@ -26,7 +26,7 @@
       "z" : [0.0, 1.5]
     }
   },
-  "materialMapping": [
-    ["10;50;255;127", "example_material.xomp", "metal with red paint"]
+  "materialTextureAssignment": [
+    ["example_material_name", "example_texture.png"]
   ]
 }

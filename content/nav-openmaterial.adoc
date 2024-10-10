@@ -19,14 +19,14 @@
 ** xref:geometry/general.adoc[]
 ** xref:geometry/object-classes.adoc[]
 ** xref:geometry/file-format-support.adoc[]
-** xref:geometry/metadata.adoc[]
+** xref:geometry/asset-schema.adoc[]
+** xref:geometry/mapping-schema.adoc[]
 ** xref:geometry/performance.adoc[]
 * xref:material/material-index.adoc[]
 ** xref:material/introduction.adoc[]
-** xref:material/file-format.adoc[]
-** xref:material/metadata.adoc[]
-** xref:material/material-properties.adoc[Material properties]
-** xref:material/lookup-tables.adoc[]
+** xref:material/file-structure.adoc[]
+** xref:material/material-schema.adoc[]
+** xref:material/material-emp-schema.adoc[]
 
 
 

@@ -40,14 +40,13 @@ include::geometry/introduction.adoc[leveloffset=+1]
 include::geometry/general.adoc[leveloffset=+1]
 include::geometry/object-classes.adoc[leveloffset=+1]
 include::geometry/file-format-support.adoc[leveloffset=+1]
-include::geometry/metadata.adoc[leveloffset=+1]
-include::geometry/performance.adoc[leveloffset=+1]
+include::geometry/asset-schema.adoc[leveloffset=+1]
+include::geometry/mapping-schema.adoc[leveloffset=+1]
 = Material
 include::material/introduction.adoc[leveloffset=+1]
-include::material/file-format.adoc[leveloffset=+1]
-include::material/metadata.adoc[leveloffset=+1]
-include::material/material-properties.adoc[leveloffset=+1]
-include::material/lookup-tables.adoc[leveloffset=+1]
+include::material/file-structure.adoc[leveloffset=+1]
+include::material/material-schema.adoc[leveloffset=+1]
+include::material/material-emp-schema.adoc[leveloffset=+1]
 
 
 
