@@ -27,8 +27,8 @@ Root
       |_ Grp_Light_High_Beam_Right_<part_idx>_<high_beam_right_idx> (T)
       |_ Grp_Light_Position_Left_<part_idx>_<position_left_idx> (T)
       |_ Grp_Light_Position_Right_<part_idx>_<position_right_idx> (T)
-      |_ Grp_Light_Park_Left_<part_idx>_<position_left_idx> (T)
-      |_ Grp_Light_Park_Right_<part_idx>_<position_right_idx> (T)
+      |_ Grp_Light_Park_Left_<part_idx>_<park_left_idx> (T)
+      |_ Grp_Light_Park_Right_<part_idx>_<park_right_idx> (T)
       |_ Grp_Light_Tail_Left_<part_idx>_<tail_left_idx> (T)
       |_ Grp_Light_Tail_Right_<part_idx>_<tail_right_idx> (T)
       |_ Grp_Light_Brake_Left_<part_idx>_<brake_left_idx> (T)
@@ -434,7 +434,11 @@ NOTE: Add a figure with a hatch on the bottom.
 
 == Grp_Light_Day_Left_<part_idx>_<day_left_idx> (T)
 
-Add a description
+This group contains all parts of a daytime running light on the left side of a vehicle.
+
+The `<day_left_idx>` is the index for all daytime running lights on the left counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add a figure. This figure might ba applicable to all lights on the front left. I don't think we have to distinguish in the figures between the different kinds of lights.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -443,24 +447,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Day_Right_<part_idx>_<day_right_idx> (T)
 
-Add a description
+This group contains all parts of a daytime running light on the right side of a vehicle.
+
+The `<day_left_idx>` is the index for all daytime running lights on the right counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add a figure. This figure might ba applicable to all lights on the front right. I don't think we have to distinguish in the figures between the different kinds of lights.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -469,19 +475,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Low_Beam_Left_<part_idx>_<low_beam_left_idx> (T)
@@ -495,19 +499,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Low_Beam_Right_<part_idx>_<low_beam_right_idx> (T)
@@ -521,19 +523,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_High_Beam_Left_<part_idx>_<high_beam_left_idx> (T)
@@ -547,19 +547,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_High_Beam_Right_<part_idx>_<high_beam_right_idx> (T)
@@ -573,19 +571,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Position_Left_<part_idx>_<position_left_idx> (T)
@@ -599,19 +595,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Position_Right_<part_idx>_<position_right_idx> (T)
@@ -625,22 +619,20 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-
-
-== Grp_Light_Park_Left_<part_idx>_<position_left_idx> (T)
+== Grp_Light_Park_Left_<part_idx>_<park_left_idx> (T)
 
 Add a description
 
@@ -651,22 +643,20 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-
-
-== Grp_Light_Park_Right_<part_idx>_<position_right_idx> (T)
+== Grp_Light_Park_Right_<part_idx>_<park_right_idx> (T)
 
 Add a description
 
@@ -677,19 +667,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Tail_Left_<part_idx>_<tail_left_idx> (T)
@@ -703,19 +691,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Tail_Right_<part_idx>_<tail_right_idx> (T)
@@ -729,19 +715,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Brake_Left_<part_idx>_<brake_left_idx> (T)
@@ -755,19 +739,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Brake_Center_<part_idx>_<brake_center_idx> (T)
@@ -781,19 +763,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Brake_Right_<part_idx>_<brake_right_idx> (T)
@@ -807,19 +787,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Reverse_Left_<part_idx>_<reverse_left_idx> (T)
@@ -833,19 +811,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Reverse_Right_<part_idx>_<reverse_right_idx> (T)
@@ -859,19 +835,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Fog_Left_<part_idx>_<fog_left_idx> (T)
@@ -885,19 +859,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Fog_Right_<part_idx>_<fog_right_idx> (T)
@@ -911,19 +883,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Corner_Left_<part_idx>_<corner_left_idx> (T)
@@ -937,19 +907,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission in neutral position.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
@@ -963,19 +931,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission in neutral position.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
@@ -989,19 +955,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
@@ -1015,19 +979,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Number_Plate_<part_idx>_<number_plate_idx> (T)
@@ -1041,19 +1003,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Number_Plate_<part_idx>_<number_plate_light_idx> (T)
@@ -1067,19 +1027,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Light_Warning_<part_idx>_<warning_idx> (T)
@@ -1093,19 +1051,17 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element.
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, or forwards for rotating lights.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
-
-
 
 
 == Grp_Convertible_Top_<part_idx>
@@ -1132,8 +1088,6 @@ Add a description
 |===
 
 
-
-
 == Grp_Sensors_<part_idx> (T)
 
 Add a description
@@ -1156,8 +1110,6 @@ Add a description
 | *z-axis*
 | ...
 |===
-
-
 
 
 == Grp_Side_Mirror_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> (T) 
@@ -1184,8 +1136,6 @@ Add a description
 |===
 
 
-
-
 == Grp_Side_Mirror_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
 
 Add a description
@@ -1208,8 +1158,6 @@ Add a description
 | *z-axis*
 | ...
 |===
-
-
 
 
 == Grp_Side_Mirror_View_Left_<part_idx>_<side_mirror_view_left_idx> (T)
@@ -1236,8 +1184,6 @@ Add a description
 |===
 
 
-
-
 == Grp_Side_Mirror_View_Right_<part_idx>_<side_mirror_view_right_idx> (T)
 
 Add a description
@@ -1260,8 +1206,6 @@ Add a description
 | *z-axis*
 | ...
 |===
-
-
 
 
 == Grp_Blindspot_Mirror_Mounting_<part_idx>_<blindspot_mirror_mounting_idx> (T)
@@ -1288,8 +1232,6 @@ Add a description
 |===
 
 
-
-
 == Grp_Blindspot_Mirror_View_<part_idx>_<blindspot_mirror_view_idx> (T)
 
 Add a description
@@ -1312,8 +1254,6 @@ Add a description
 | *z-axis*
 | ...
 |===
-
-
 
 
 == Grp_Interior_<part_idx>
@@ -1340,8 +1280,6 @@ Add a description
 |===
 
 
-
-
 == Grp_Interior_Static_<part_idx>
 
 Add a description
@@ -1364,8 +1302,6 @@ Add a description
 | *z-axis*
 | ...
 |===
-
-
 
 
 == Grp_Interior_Dynamic_<part_idx>
@@ -1392,8 +1328,6 @@ Add a description
 |===
 
 
-
-
 == Grp_Steering_Wheel_<part_idx> (T)
 
 Add a description
@@ -1416,8 +1350,6 @@ Add a description
 | *z-axis*
 | ...
 |===
-
-
 
 
 == Grp_Eyepoint_<part_idx>_<eyepoint_idx> (T)
@@ -1444,8 +1376,6 @@ Add a description
 |===
 
 
-
-
 == Grp_Rearview_Mirror_Mounting_<part_idx>_<rearview_mirror_mounting_idx> (T)
 
 Add a description
@@ -1468,8 +1398,6 @@ Add a description
 | *z-axis*
 | ...
 |===
-
-
 
 
 == Grp_Rearview_Mirror_View_<part_idx>_<rearview_mirror_view_idx> (T)
@@ -1496,8 +1424,6 @@ Add a description
 |===
 
 
-
-
 == Grp_Seat_<part_idx>_<seat_idx> (T)
 
 Add a description
@@ -1520,6 +1446,3 @@ Add a description
 | *z-axis*
 | ...
 |===
-
-
-
