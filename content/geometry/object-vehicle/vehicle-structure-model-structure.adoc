@@ -52,7 +52,7 @@ Root
       |_ Grp_Blindspot_Mirror_View_<part_idx>_<blindspot_mirror_view_idx> (T)
       |_ Grp_License_Plate_<part_idx>_<license_plate_idx> (T)
       |_ Grp_Convertible_Top_<part_idx>
-      |_ Grp_Sensors_<part_idx> (T)
+      |_ Grp_Sensor_<part_idx>_<sensor_idx> (T)
   |_ Grp_Interior_<part_idx>
     |_ Grp_Interior_Static_<part_idx>
     |_ Grp_Interior_Dynamic_<part_idx>
@@ -128,6 +128,7 @@ This group contains all elements of the exterior of the vehicle (part).
 
 This group contains all static elements of the exterior of the vehicle (part).
 Static elements are geometry structures that have a fixed position and orientation relative to the origin on the vehicle (part) throughout a simulation.
+They also do not change their state during the simulation, therefore lights are considered dynamic.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -152,6 +153,7 @@ Static elements are geometry structures that have a fixed position and orientati
 
 This group contains all dynamic elements of the exterior of the vehicle (part).
 Dynamic elements are geometry structures which position and orientation relative to the origin on the vehicle (part) might change throughout a simulation.
+They may also change their state during the simulation, therefore lights are considered dynamic.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -447,10 +449,10 @@ NOTE: Add a figure. This figure might ba applicable to all lights on the front l
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually forwards.
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -475,10 +477,10 @@ NOTE: Add a figure. This figure might be applicable to all lights on the front r
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually forwards.
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -503,10 +505,10 @@ NOTE: Add a figure from left day light.
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually forwards.
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -531,10 +533,10 @@ NOTE: Add a figure from right day light.
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually forwards.
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -559,10 +561,10 @@ NOTE: Add a figure from left day light.
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually forwards.
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -587,10 +589,10 @@ NOTE: Add a figure from right day light.
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually forwards.
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -616,10 +618,10 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission in neutral position.
+| Pointing towards the main light emission in neutral position
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -645,10 +647,10 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission in neutral position.
+| Pointing towards the main light emission in neutral position
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -672,10 +674,10 @@ The `<position_left_idx>` is the index for all position lights on the left count
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission.
+| Pointing towards the main light emission
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -699,10 +701,10 @@ The `<position_right_idx>` is the index for all position lights on the right cou
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission.
+| Pointing towards the main light emission
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -725,10 +727,10 @@ The `<park_left_idx>` is the index for all parking lights on the left counting f
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually forwards.
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -751,10 +753,10 @@ The `<park_right_idx>` is the index for all parking lights on the right counting
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually forwards.
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -777,10 +779,10 @@ The `<indicator_left_idx>` is the index for all indicator lights on the left cou
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission.
+| Pointing towards the main light emission
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -804,10 +806,10 @@ The `<indicator_right_idx>` is the index for all indicator lights on the right c
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission.
+| Pointing towards the main light emission
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -832,10 +834,10 @@ NOTE: Add a figure for the exemplary license plate light on the rear of the vehi
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission.
+| Pointing towards the main light emission
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -860,10 +862,10 @@ NOTE: Add a figure. This figure might be applicable to all lights on the rear le
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually backwards.
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -888,10 +890,10 @@ NOTE: Add a figure. This figure might be applicable to all lights on the rear ri
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually backwards.
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -916,10 +918,10 @@ NOTE: Add figure from tail light.
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually backwards.
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -944,10 +946,10 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually backwards.
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -972,10 +974,10 @@ NOTE: Add figure from tail light.
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually backwards.
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1000,10 +1002,10 @@ NOTE: Add figure from tail light.
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually backwards.
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1028,10 +1030,10 @@ NOTE: Add figure from tail light.
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually backwards.
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1056,10 +1058,10 @@ NOTE: Add figure from tail light.
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually backwards.
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1084,10 +1086,10 @@ NOTE: Add figure from tail light.
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, usually backwards.
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1112,10 +1114,10 @@ NOTE: Add a figure on an exemplary rotating warning light on the roof the vehicl
 2+^| <Header>
 
 | *Origin*
-| Center of the light element.
+| Center of the light element
 
 | *x-axis*
-| Pointing towards the main light emission, or forwards for rotating lights.
+| Pointing towards the main light emission, or forwards for rotating lights
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1140,7 +1142,7 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Base of the mirror mounting.
+| Base of the mirror mounting
 
 | *x-axis*
 | Collinear with the vehicle longitudinal axis, pointing forwards
@@ -1168,16 +1170,16 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Center of the mirror surface.
+| Center of the mirror surface
 
 | *x-axis*
-| Pointing outwards from the front of the mirror.
+| Pointing outwards from the front of the mirror
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards along the mirror face.
+| Perpendicular to the x-axis, pointing vertically upwards along the mirror face
 |===
 
 
@@ -1196,7 +1198,7 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Base of the mirror mounting.
+| Base of the mirror mounting
 
 | *x-axis*
 | Collinear with the vehicle longitudinal axis, pointing forwards
@@ -1224,16 +1226,16 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Center of the mirror surface.
+| Center of the mirror surface
 
 | *x-axis*
-| Pointing outwards from the front of the mirror.
+| Pointing outwards from the front of the mirror
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards along the mirror face.
+| Perpendicular to the x-axis, pointing vertically upwards along the mirror face
 |===
 
 
@@ -1252,7 +1254,7 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Base of the mirror mounting.
+| Base of the mirror mounting
 
 | *x-axis*
 | Collinear with the vehicle longitudinal axis, pointing forwards
@@ -1280,16 +1282,16 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Center of the mirror surface.
+| Center of the mirror surface
 
 | *x-axis*
-| Pointing outwards from the front of the mirror.
+| Pointing outwards from the front of the mirror
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards along the mirror face.
+| Perpendicular to the x-axis, pointing vertically upwards along the mirror face
 |===
 
 
@@ -1306,10 +1308,10 @@ The `<license_plate_idx>` is the index for all license plates counting from righ
 2+^| <Header>
 
 | *Origin*
-| Center of the plate.
+| Center of the plate
 
 | *x-axis*
-| Pointing outwards from the front of the plate.
+| Pointing outwards from the front of the plate
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1343,9 +1345,9 @@ This group contains all parts of a convertible top of the vehicle (part).
 |===
 
 
-== Grp_Sensors_<part_idx> (T)
+== Grp_Sensor_<part_idx>_<sensor_idx> (T)
 
-Add a description
+This group contains all parts of a perception sensor of the vehicle (part).
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1354,10 +1356,10 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| Origin of the sensor.
+| Origin of the sensor
 
 | *x-axis*
-| Pointing outwards from the sensor in the direction of its longitudinal axis.
+| Pointing outwards from the sensor in the direction of its longitudinal axis
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1369,7 +1371,7 @@ Add a description
 
 == Grp_Interior_<part_idx>
 
-Add a description
+This group contains all elements of the interior of the vehicle (part).
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1378,22 +1380,24 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the vehicle (part)
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
 == Grp_Interior_Static_<part_idx>
 
-Add a description
+This group contains all static elements of the interior of the vehicle (part).
+Static elements are geometry structures that have a fixed position and orientation relative to the origin on the vehicle (part) throughout a simulation.
+They also do not change their state during the simulation, therefore lights are considered dynamic.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1402,22 +1406,24 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the vehicle (part)
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
 == Grp_Interior_Dynamic_<part_idx>
 
-Add a description
+This group contains all dynamic elements of the exterior of the vehicle (part).
+Dynamic elements are geometry structures which position and orientation relative to the origin on the vehicle (part) might change throughout a simulation.
+They may also change their state during the simulation, therefore lights are considered dynamic.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1426,22 +1432,24 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the vehicle (part)
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
 == Grp_Steering_Wheel_<part_idx> (T)
 
-Add a description
+This group contains all elements of the steering wheel of the vehicle (part).
+
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1450,22 +1458,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the steering wheel
 
 | *x-axis*
-| ...
+| Collinear with the steering column, pointing towards the axis
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards in neutral position
 |===
 
 
 == Grp_Eyepoint_<part_idx>_<eyepoint_idx> (T)
 
-Add a description
+This group contains is an empty element containing the origin of an average passenger of the vehicle (part).
+
+The `<eyepoint_idx>` is the index for all eye points counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1474,22 +1486,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the eye view point
 
 | *x-axis*
-| ...
+| Collinear with the view direction
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards in neutral position
 |===
 
 
 == Grp_Rearview_Mirror_Mounting_<part_idx>_<rearview_mirror_mounting_idx> (T)
 
-Add a description
+This group contains all parts of a rearview mirror mounting of the vehicle (part).
+
+The `<rearview_mirror_mounting_idx>` is the index for all rearview mirrors mounting counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1498,7 +1514,7 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| Base of the mirror mounting.
+| Base of the mirror mounting
 
 | *x-axis*
 | Collinear with the vehicle longitudinal axis, pointing forwards
@@ -1513,7 +1529,11 @@ Add a description
 
 == Grp_Rearview_Mirror_View_<part_idx>_<rearview_mirror_view_idx> (T)
 
-Add a description
+This group contains all parts of a rearview mirror without the housing.
+
+The `<rearview_mirror_view_idx>` is the index for all rearview mirrors counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1522,22 +1542,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| Center of the mirror surface.
+| Center of the mirror surface
 
 | *x-axis*
-| Pointing outwards from the front of the mirror.
+| Pointing outwards from the front of the mirror
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards along the mirror face.
+| Perpendicular to the x-axis, pointing vertically upwards along the mirror face
 |===
 
 
 == Grp_Seat_<part_idx>_<seat_idx> (T)
 
-Add a description
+This group contains all parts of a seat of the vehicle (part).
+
+The `<seat_idx>` is the index for all seats counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1545,15 +1569,12 @@ Add a description
 
 2+^| <Header>
 
-| *Origin*
-| ...
-
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing in the direction of the seat
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
