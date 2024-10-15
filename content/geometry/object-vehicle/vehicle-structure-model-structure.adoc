@@ -25,10 +25,15 @@ Root
       |_ Grp_Light_Low_Beam_Right_<part_idx>_<low_beam_right_idx> (T)
       |_ Grp_Light_High_Beam_Left_<part_idx>_<high_beam_left_idx> (T)
       |_ Grp_Light_High_Beam_Right_<part_idx>_<high_beam_right_idx> (T)
+      |_ Grp_Light_Corner_Left_<part_idx>_<corner_left_idx> (T)
+      |_ Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
       |_ Grp_Light_Position_Left_<part_idx>_<position_left_idx> (T)
       |_ Grp_Light_Position_Right_<part_idx>_<position_right_idx> (T)
       |_ Grp_Light_Park_Left_<part_idx>_<park_left_idx> (T)
       |_ Grp_Light_Park_Right_<part_idx>_<park_right_idx> (T)
+      |_ Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
+      |_ Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
+      |_ Grp_Light_License_Plate_<part_idx>_<license_plate_light_idx> (T)
       |_ Grp_Light_Tail_Left_<part_idx>_<tail_left_idx> (T)
       |_ Grp_Light_Tail_Right_<part_idx>_<tail_right_idx> (T)
       |_ Grp_Light_Brake_Left_<part_idx>_<brake_left_idx> (T)
@@ -38,21 +43,16 @@ Root
       |_ Grp_Light_Reverse_Right_<part_idx>_<reverse_right_idx> (T)
       |_ Grp_Light_Fog_Left_<part_idx>_<fog_left_idx> (T)
       |_ Grp_Light_Fog_Right_<part_idx>_<fog_right_idx> (T)
-      |_ Grp_Light_Corner_Left_<part_idx>_<corner_left_idx> (T)
-      |_ Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
-      |_ Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
-      |_ Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
-      |_ Grp_License_Plate_<part_idx>_<license_plate_idx> (T)
-      |_ Grp_Light_License_Plate_<part_idx>_<license_plate_light_idx> (T)
       |_ Grp_Light_Warning_<part_idx>_<warning_idx> (T)
-      |_ Grp_Convertible_Top_<part_idx>
-      |_ Grp_Sensors_<part_idx> (T)
       |_ Grp_Side_Mirror_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> (T)
       |_ Grp_Side_Mirror_View_Left_<part_idx>_<side_mirror_view_left_idx> (T)
       |_ Grp_Side_Mirror_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
       |_ Grp_Side_Mirror_View_Right_<part_idx>_<side_mirror_view_right_idx> (T)
       |_ Grp_Blindspot_Mirror_Mounting_<part_idx>_<blindspot_mirror_mounting_idx> (T)
       |_ Grp_Blindspot_Mirror_View_<part_idx>_<blindspot_mirror_view_idx> (T)
+      |_ Grp_License_Plate_<part_idx>_<license_plate_idx> (T)
+      |_ Grp_Convertible_Top_<part_idx>
+      |_ Grp_Sensors_<part_idx> (T)
   |_ Grp_Interior_<part_idx>
     |_ Grp_Interior_Static_<part_idx>
     |_ Grp_Interior_Dynamic_<part_idx>
@@ -600,6 +600,64 @@ NOTE: Add a figure from right day light.
 |===
 
 
+== Grp_Light_Corner_Left_<part_idx>_<corner_left_idx> (T)
+
+This group contains all parts of a corner light on the left side of a vehicle.
+A corner light is a typically white light for lateral illumination in the direction of an intended turn or lane change.
+
+The `<corner_left_idx>` is the index for all corner lights on the left counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add a figure.
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| Center of the light element.
+
+| *x-axis*
+| Pointing towards the main light emission in neutral position.
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+
+== Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
+
+This group contains all parts of a corner light on the right side of a vehicle.
+A corner light is a typically white light for lateral illumination in the direction of an intended turn or lane change.
+
+The `<corner_right_idx>` is the index for all corner lights on the right counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add a figure.
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| Center of the light element.
+
+| *x-axis*
+| Pointing towards the main light emission in neutral position.
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+
 == Grp_Light_Position_Left_<part_idx>_<position_left_idx> (T)
 
 This group contains all parts of a position light on the left side of a vehicle.
@@ -697,6 +755,87 @@ The `<park_right_idx>` is the index for all parking lights on the right counting
 
 | *x-axis*
 | Pointing towards the main light emission, usually forwards.
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+
+== Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
+
+This group contains all parts of an indicator light on the left side of a vehicle.
+
+The `<indicator_left_idx>` is the index for all indicator lights on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| Center of the light element.
+
+| *x-axis*
+| Pointing towards the main light emission.
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+
+== Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
+
+This group contains all parts of an indicator light on the left side of a vehicle.
+
+The `<indicator_right_idx>` is the index for all indicator lights on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| Center of the light element.
+
+| *x-axis*
+| Pointing towards the main light emission.
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+
+== Grp_Light_License_Plate_<part_idx>_<license_plate_light_idx> (T)
+
+This group contains all parts of a license plate light of a vehicle.
+
+The `<license_plate_light_idx>` is the index for all license plate lights counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure for the exemplary license plate light on the rear of a vehicle.
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| Center of the light element.
+
+| *x-axis*
+| Pointing towards the main light emission.
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -958,145 +1097,6 @@ NOTE: Add figure from tail light.
 |===
 
 
-== Grp_Light_Corner_Left_<part_idx>_<corner_left_idx> (T)
-
-This group contains all parts of a corner light on the left side of a vehicle.
-A corner light is a typically white light for lateral illumination in the direction of an intended turn or lane change.
-
-The `<corner_left_idx>` is the index for all corner lights on the left counting from right to left (in positive y direction), starting with 0.
-
-NOTE: Add a figure.
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| Center of the light element.
-
-| *x-axis*
-| Pointing towards the main light emission in neutral position.
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-
-== Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
-
-This group contains all parts of a corner light on the right side of a vehicle.
-A corner light is a typically white light for lateral illumination in the direction of an intended turn or lane change.
-
-The `<corner_right_idx>` is the index for all corner lights on the right counting from right to left (in positive y direction), starting with 0.
-
-NOTE: Add a figure.
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| Center of the light element.
-
-| *x-axis*
-| Pointing towards the main light emission in neutral position.
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-
-== Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
-
-This group contains all parts of an indicator light on the left side of a vehicle.
-
-The `<indicator_left_idx>` is the index for all indicator lights on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| Center of the light element.
-
-| *x-axis*
-| Pointing towards the main light emission.
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-
-== Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
-
-This group contains all parts of an indicator light on the left side of a vehicle.
-
-The `<indicator_right_idx>` is the index for all indicator lights on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
-
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| Center of the light element.
-
-| *x-axis*
-| Pointing towards the main light emission.
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-
-== Grp_Light_License_Plate_<part_idx>_<license_plate_light_idx> (T)
-
-This group contains all parts of a license plate light of a vehicle.
-
-The `<license_plate_light_idx>` is the index for all license plate lights counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
-
-NOTE: Add a figure for the exemplary license plate light on the rear of a vehicle.
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| Center of the light element.
-
-| *x-axis*
-| Pointing towards the main light emission.
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-
 == Grp_Light_Warning_<part_idx>_<warning_idx> (T)
 
 This group contains all parts of a warning light of a vehicle.
@@ -1122,80 +1122,6 @@ NOTE: Add a figure on an exemplary rotating warning light on the roof a vehicle.
 
 | *z-axis*
 | Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-
-== Grp_License_Plate_<part_idx>_<license_plate_idx> (T)
-
-This group contains all parts of a license plate of a vehicle.
-
-The `<license_plate_idx>` is the index for all license plates counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| Center of the plate.
-
-| *x-axis*
-| Pointing outwards from the front of the plate.
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-
-== Grp_Convertible_Top_<part_idx>
-
-Add a description
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-
-
-== Grp_Sensors_<part_idx> (T)
-
-Add a description
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
 |===
 
 
@@ -1320,6 +1246,80 @@ Add a description
 
 
 == Grp_Blindspot_Mirror_View_<part_idx>_<blindspot_mirror_view_idx> (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+== Grp_License_Plate_<part_idx>_<license_plate_idx> (T)
+
+This group contains all parts of a license plate of a vehicle.
+
+The `<license_plate_idx>` is the index for all license plates counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| Center of the plate.
+
+| *x-axis*
+| Pointing outwards from the front of the plate.
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+
+== Grp_Convertible_Top_<part_idx>
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+== Grp_Sensors_<part_idx> (T)
 
 Add a description
 
