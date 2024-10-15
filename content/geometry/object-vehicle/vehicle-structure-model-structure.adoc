@@ -12,7 +12,7 @@ Root
     |_ Grp_Exterior_Dynamic_<part_idx>
       |_ Grp_Wheel_<part_idx>_<axle_idx>_<wheel_idx> (T)
         |_ Grp_Wheel_Steering_<part_idx>_<axle_idx>_<wheel_idx>
-        |_ Grp_Wheel_Steering_Rotating_<axle_idx>_<wheel_idx> (T)
+        |_ Grp_Wheel_Steering_Rotating_<part_idx>_<axle_idx>_<wheel_idx> (T)
       |_ Grp_Door_Front_<part_idx>_<door_front_idx> (T)
       |_ Grp_Door_Left_<part_idx>_<door_left_idx> (T)
       |_ Grp_Door_Right_<part_idx>_<door_right_idx> (T)
@@ -76,9 +76,9 @@ Therefore, only one Grp_Vehicle_Part exists with the name `Grp_Vehicle_Part_0`.
 The `<part_idx>` must be added to all sub-nodes, as multiple nodes with the same name in different vehicle parts are not possible.
 There cannot be a node `Grp_Exterior` in both `Grp_Vehicle_Part_0`` and `Grp_Vehicle_Part_1``.
 
-NOTE: Define the origin of the vehicle (part) part
+NOTE: Define the origin of the vehicle (part)
 
-NOTE: Add description about keywords
+NOTE: Add description and examples for keywords
 
 NOTE: Add a figure visualizing e.g. a hinged bus to explain what vehicle parts are.
 
