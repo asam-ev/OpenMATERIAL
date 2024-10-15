@@ -466,7 +466,7 @@ This group contains all parts of a daytime running light on the right side of a 
 
 The `<day_left_idx>` is the index for all daytime running lights on the right counting from right to left (in positive y direction), starting with 0.
 
-NOTE: Add a figure. This figure might ba applicable to all lights on the front right. I don't think we have to distinguish in the figures between the different kinds of lights.
+NOTE: Add a figure. This figure might be applicable to all lights on the front right. I don't think we have to distinguish in the figures between the different kinds of lights.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -490,7 +490,11 @@ NOTE: Add a figure. This figure might ba applicable to all lights on the front r
 
 == Grp_Light_Low_Beam_Left_<part_idx>_<low_beam_left_idx> (T)
 
-Add a description
+This group contains all parts of a low beam light on the left side of a vehicle.
+
+The `<low_beam_left_idx>` is the index for all low beam lights on the left counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add a figure from left day light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -514,7 +518,11 @@ Add a description
 
 == Grp_Light_Low_Beam_Right_<part_idx>_<low_beam_right_idx> (T)
 
-Add a description
+This group contains all parts of a low beam light on the right side of a vehicle.
+
+The `<low_beam_right_idx>` is the index for all low beam lights on the right counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add a figure from right day light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -538,7 +546,11 @@ Add a description
 
 == Grp_Light_High_Beam_Left_<part_idx>_<high_beam_left_idx> (T)
 
-Add a description
+This group contains all parts of a high beam light on the left side of a vehicle.
+
+The `<high_beam_left_idx>` is the index for all high beam lights on the left counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add a figure from left day light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -562,7 +574,11 @@ Add a description
 
 == Grp_Light_High_Beam_Right_<part_idx>_<high_beam_right_idx> (T)
 
-Add a description
+This group contains all parts of a high beam light on the right side of a vehicle.
+
+The `<high_beam_right_idx>` is the index for all high beam lights on the right counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add a figure from right day light.
 
 .<Table title>
 [%header, cols="20, 80"]
