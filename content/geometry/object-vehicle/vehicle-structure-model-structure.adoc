@@ -456,10 +456,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Day_Right_<part_idx>_<day_right_idx> (T)
 
@@ -485,10 +482,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Low_Beam_Left_<part_idx>_<low_beam_left_idx> (T)
 
@@ -514,10 +508,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Low_Beam_Right_<part_idx>_<low_beam_right_idx> (T)
 
@@ -543,10 +534,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_High_Beam_Left_<part_idx>_<high_beam_left_idx> (T)
 
@@ -572,10 +560,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_High_Beam_Right_<part_idx>_<high_beam_right_idx> (T)
 
@@ -601,10 +586,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Position_Left_<part_idx>_<position_left_idx> (T)
 
@@ -630,10 +612,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Position_Right_<part_idx>_<position_right_idx> (T)
 
@@ -659,10 +638,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Park_Left_<part_idx>_<position_left_idx> (T)
 
@@ -688,10 +664,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Park_Right_<part_idx>_<position_right_idx> (T)
 
@@ -717,10 +690,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Tail_Left_<part_idx>_<tail_left_idx> (T)
 
@@ -746,10 +716,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Tail_Right_<part_idx>_<tail_right_idx> (T)
 
@@ -775,10 +742,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Brake_Left_<part_idx>_<brake_left_idx> (T)
 
@@ -804,10 +768,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Brake_Center_<part_idx>_<brake_center_idx> (T)
 
@@ -833,10 +794,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Brake_Right_<part_idx>_<brake_right_idx> (T)
 
@@ -862,10 +820,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Reverse_Left_<part_idx>_<reverse_left_idx> (T)
 
@@ -891,10 +846,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Reverse_Right_<part_idx>_<reverse_right_idx> (T)
 
@@ -920,10 +872,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Fog_Left_<part_idx>_<fog_left_idx> (T)
 
@@ -949,10 +898,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Fog_Right_<part_idx>_<fog_right_idx> (T)
 
@@ -978,10 +924,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Corner_Left_<part_idx>_<corner_left_idx> (T)
 
@@ -1007,10 +950,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
 
@@ -1036,10 +976,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
 
@@ -1065,10 +1002,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
 
@@ -1094,10 +1028,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Number_Plate_<part_idx>_<number_plate_idx> (T)
 
@@ -1123,10 +1054,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Number_Plate_<part_idx>_<number_plate_light_idx> (T)
 
@@ -1152,10 +1080,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Light_Warning_<part_idx>_<warning_idx> (T)
 
@@ -1181,10 +1106,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Convertible_Top_<part_idx>
 
@@ -1210,10 +1132,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Sensors_<part_idx> (T)
 
@@ -1239,10 +1158,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Side_Mirror_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> (T) 
 
@@ -1268,10 +1184,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Side_Mirror_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
 
@@ -1297,10 +1210,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Side_Mirror_View_Left_<part_idx>_<side_mirror_view_left_idx> (T)
 
@@ -1326,10 +1236,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Side_Mirror_View_Right_<part_idx>_<side_mirror_view_right_idx> (T)
 
@@ -1355,10 +1262,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Blindspot_Mirror_Mounting_<part_idx>_<blindspot_mirror_mounting_idx> (T)
 
@@ -1384,10 +1288,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Blindspot_Mirror_View_<part_idx>_<blindspot_mirror_view_idx> (T)
 
@@ -1413,10 +1314,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Interior_<part_idx>
 
@@ -1442,10 +1340,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Interior_Static_<part_idx>
 
@@ -1471,10 +1366,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Interior_Dynamic_<part_idx>
 
@@ -1500,10 +1392,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Steering_Wheel_<part_idx> (T)
 
@@ -1529,10 +1418,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Eyepoint_<part_idx>_<eyepoint_idx> (T)
 
@@ -1558,10 +1444,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Rearview_Mirror_Mounting_<part_idx>_<rearview_mirror_mounting_idx> (T)
 
@@ -1587,10 +1470,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Rearview_Mirror_View_<part_idx>_<rearview_mirror_view_idx> (T)
 
@@ -1616,10 +1496,7 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Grp_Seat_<part_idx>_<seat_idx> (T)
 
@@ -1645,7 +1522,4 @@ Add a description
 |===
 
 
-Add a figure.
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
