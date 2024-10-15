@@ -42,8 +42,8 @@ Root
       |_ Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
       |_ Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
       |_ Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
-      |_ Grp_Number_Plate_<part_idx>_<number_plate_idx> (T)
-      |_ Grp_Light_Number_Plate_<part_idx>_<number_plate_light_idx> (T)
+      |_ Grp_License_Plate_<part_idx>_<license_plate_idx> (T)
+      |_ Grp_Light_License_Plate_<part_idx>_<license_plate_light_idx> (T)
       |_ Grp_Light_Warning_<part_idx>_<warning_idx> (T)
       |_ Grp_Convertible_Top_<part_idx>
       |_ Grp_Sensors_<part_idx> (T)
@@ -1018,7 +1018,9 @@ NOTE: Add a figure.
 
 == Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
 
-Add a description
+This group contains all parts of an indicator light on the left side of a vehicle.
+
+The `<indicator_left_idx>` is the index for all indicator lights on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1042,7 +1044,10 @@ Add a description
 
 == Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
 
-Add a description
+This group contains all parts of an indicator light on the left side of a vehicle.
+
+The `<indicator_right_idx>` is the index for all indicator lights on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1064,33 +1069,13 @@ Add a description
 |===
 
 
-== Grp_Number_Plate_<part_idx>_<number_plate_idx> (T)
+== Grp_Light_License_Plate_<part_idx>_<license_plate_light_idx> (T)
 
-Add a description
+This group contains all parts of a license plate light of a vehicle.
 
-.<Table title>
-[%header, cols="20, 80"]
-|===
+The `<license_plate_light_idx>` is the index for all license plate lights counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-2+^| <Header>
-
-| *Origin*
-| Center of the light element.
-
-| *x-axis*
-| Pointing towards the main light emission.
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-
-== Grp_Light_Number_Plate_<part_idx>_<number_plate_light_idx> (T)
-
-Add a description
+NOTE: Add a figure for the exemplary license plate light on the rear of a vehicle.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1114,7 +1099,11 @@ Add a description
 
 == Grp_Light_Warning_<part_idx>_<warning_idx> (T)
 
-Add a description
+This group contains all parts of a warning light of a vehicle.
+
+The `<warning_idx>` is the index for all warning lights counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure on an exemplary rotating warning light on the roof a vehicle.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1127,6 +1116,32 @@ Add a description
 
 | *x-axis*
 | Pointing towards the main light emission, or forwards for rotating lights.
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+
+== Grp_License_Plate_<part_idx>_<license_plate_idx> (T)
+
+This group contains all parts of a license plate of a vehicle.
+
+The `<license_plate_idx>` is the index for all license plates counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| Center of the plate.
+
+| *x-axis*
+| Pointing outwards from the front of the plate.
 
 | *y-axis*
 | Completes the right-handed coordinate system
