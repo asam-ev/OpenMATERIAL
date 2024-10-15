@@ -602,7 +602,10 @@ NOTE: Add a figure from right day light.
 
 == Grp_Light_Position_Left_<part_idx>_<position_left_idx> (T)
 
-Add a description
+This group contains all parts of a position light on the left side of a vehicle.
+Position lights are typically smaller, low-intensity, orange lights.
+
+The `<position_left_idx>` is the index for all position lights on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -626,7 +629,10 @@ Add a description
 
 == Grp_Light_Position_Right_<part_idx>_<position_right_idx> (T)
 
-Add a description
+This group contains all parts of a position light on the right side of a vehicle.
+Position lights are typically smaller, low-intensity, orange lights.
+
+The `<position_right_idx>` is the index for all position lights on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -650,7 +656,9 @@ Add a description
 
 == Grp_Light_Park_Left_<part_idx>_<park_left_idx> (T)
 
-Add a description
+This group contains all parts of a parking light on the left side of a vehicle.
+
+The `<park_left_idx>` is the index for all parking lights on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -674,7 +682,9 @@ Add a description
 
 == Grp_Light_Park_Right_<part_idx>_<park_right_idx> (T)
 
-Add a description
+This group contains all parts of a parking light on the right side of a vehicle.
+
+The `<park_right_idx>` is the index for all parking lights on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -698,7 +708,11 @@ Add a description
 
 == Grp_Light_Tail_Left_<part_idx>_<tail_left_idx> (T)
 
-Add a description
+This group contains all parts of a tail light on the left side of a vehicle.
+
+The `<tail_left_idx>` is the index for all tail lights on the left counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add a figure. This figure might be applicable to all lights on the rear left. I don't think we have to distinguish in the figures between the different kinds of lights.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -722,7 +736,11 @@ Add a description
 
 == Grp_Light_Tail_Right_<part_idx>_<tail_right_idx> (T)
 
-Add a description
+This group contains all parts of a tail light on the right side of a vehicle.
+
+The `<tail_right_idx>` is the index for all tail lights on the right counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add a figure. This figure might be applicable to all lights on the rear right. I don't think we have to distinguish in the figures between the different kinds of lights.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -746,7 +764,11 @@ Add a description
 
 == Grp_Light_Brake_Left_<part_idx>_<brake_left_idx> (T)
 
-Add a description
+This group contains all parts of a brake light on the left side of a vehicle.
+
+The `<brake_left_idx>` is the index for all brake lights on the left counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add figure from tail light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -770,7 +792,11 @@ Add a description
 
 == Grp_Light_Brake_Center_<part_idx>_<brake_center_idx> (T)
 
-Add a description
+This group contains all parts of a brake light in the center of a vehicle.
+
+The `<brake_center_idx>` is the index for all brake lights in the center counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -794,7 +820,11 @@ Add a description
 
 == Grp_Light_Brake_Right_<part_idx>_<brake_right_idx> (T)
 
-Add a description
+This group contains all parts of a brake light on the right side of a vehicle.
+
+The `<brake_right_idx>` is the index for all brake lights on the right counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add figure from tail light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -818,7 +848,11 @@ Add a description
 
 == Grp_Light_Reverse_Left_<part_idx>_<reverse_left_idx> (T)
 
-Add a description
+This group contains all parts of a reverse light on the left side of a vehicle.
+
+The `<reverse_left_idx>` is the index for all reverse lights on the left counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add figure from tail light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -842,7 +876,11 @@ Add a description
 
 == Grp_Light_Reverse_Right_<part_idx>_<reverse_right_idx> (T)
 
-Add a description
+This group contains all parts of a reverse light on the right side of a vehicle.
+
+The `<reverse_right_idx>` is the index for all reverse lights on the right counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add figure from tail light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -866,7 +904,11 @@ Add a description
 
 == Grp_Light_Fog_Left_<part_idx>_<fog_left_idx> (T)
 
-Add a description
+This group contains all parts of a fog light on the left side of a vehicle.
+
+The `<fog_left_idx>` is the index for all fog lights on the left counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add figure from tail light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -890,7 +932,11 @@ Add a description
 
 == Grp_Light_Fog_Right_<part_idx>_<fog_right_idx> (T)
 
-Add a description
+This group contains all parts of a fog light on the right side of a vehicle.
+
+The `<fog_right_idx>` is the index for all fog lights on the right counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add figure from tail light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -914,7 +960,12 @@ Add a description
 
 == Grp_Light_Corner_Left_<part_idx>_<corner_left_idx> (T)
 
-Add a description
+This group contains all parts of a corner light on the left side of a vehicle.
+A corner light is a typically white light for lateral illumination in the direction of an intended turn or lane change.
+
+The `<corner_left_idx>` is the index for all corner lights on the left counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -938,7 +989,12 @@ Add a description
 
 == Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
 
-Add a description
+This group contains all parts of a corner light on the right side of a vehicle.
+A corner light is a typically white light for lateral illumination in the direction of an intended turn or lane change.
+
+The `<corner_right_idx>` is the index for all corner lights on the right counting from right to left (in positive y direction), starting with 0.
+
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
