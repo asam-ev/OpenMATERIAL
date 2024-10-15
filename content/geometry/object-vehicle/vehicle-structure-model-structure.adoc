@@ -66,7 +66,7 @@ end legend
 
 == Grp_Vehicle_Part_<part_idx>_<keyword> (T) 
 
-A vehicle part is a large structure of a vehicle, that moves independently from other parts of the same vehicle.
+A vehicle part is a large structure of the vehicle (part), that moves independently from other parts of the same vehicle.
 This mainly applies to articulated vehicles, e.g. a front loader with a hinged axis or an articulated bus with a hinge in the middle.
 When a vehicle part can be detached, like a trailer, it is to be treated as a separate object and not a vehicle part.
 
@@ -76,7 +76,7 @@ Therefore, only one Grp_Vehicle_Part exists with the name `Grp_Vehicle_Part_0`.
 The `<part_idx>` must be added to all sub-nodes, as multiple nodes with the same name in different vehicle parts are not possible.
 There cannot be a node `Grp_Exterior` in both `Grp_Vehicle_Part_0`` and `Grp_Vehicle_Part_1``.
 
-NOTE: Define the origin of a vehicle part
+NOTE: Define the origin of the vehicle (part) part
 
 NOTE: Add description about keywords
 
@@ -434,7 +434,7 @@ NOTE: Add a figure with a hatch on the bottom.
 
 == Grp_Light_Day_Left_<part_idx>_<day_left_idx> (T)
 
-This group contains all parts of a daytime running light on the left side of a vehicle.
+This group contains all parts of a daytime running light on the left side of the vehicle (part).
 
 The `<day_left_idx>` is the index for all daytime running lights on the left counting from right to left (in positive y direction), starting with 0.
 
@@ -462,7 +462,7 @@ NOTE: Add a figure. This figure might ba applicable to all lights on the front l
 
 == Grp_Light_Day_Right_<part_idx>_<day_right_idx> (T)
 
-This group contains all parts of a daytime running light on the right side of a vehicle.
+This group contains all parts of a daytime running light on the right side of the vehicle (part).
 
 The `<day_left_idx>` is the index for all daytime running lights on the right counting from right to left (in positive y direction), starting with 0.
 
@@ -490,7 +490,7 @@ NOTE: Add a figure. This figure might be applicable to all lights on the front r
 
 == Grp_Light_Low_Beam_Left_<part_idx>_<low_beam_left_idx> (T)
 
-This group contains all parts of a low beam light on the left side of a vehicle.
+This group contains all parts of a low beam light on the left side of the vehicle (part).
 
 The `<low_beam_left_idx>` is the index for all low beam lights on the left counting from right to left (in positive y direction), starting with 0.
 
@@ -518,7 +518,7 @@ NOTE: Add a figure from left day light.
 
 == Grp_Light_Low_Beam_Right_<part_idx>_<low_beam_right_idx> (T)
 
-This group contains all parts of a low beam light on the right side of a vehicle.
+This group contains all parts of a low beam light on the right side of the vehicle (part).
 
 The `<low_beam_right_idx>` is the index for all low beam lights on the right counting from right to left (in positive y direction), starting with 0.
 
@@ -546,7 +546,7 @@ NOTE: Add a figure from right day light.
 
 == Grp_Light_High_Beam_Left_<part_idx>_<high_beam_left_idx> (T)
 
-This group contains all parts of a high beam light on the left side of a vehicle.
+This group contains all parts of a high beam light on the left side of the vehicle (part).
 
 The `<high_beam_left_idx>` is the index for all high beam lights on the left counting from right to left (in positive y direction), starting with 0.
 
@@ -574,7 +574,7 @@ NOTE: Add a figure from left day light.
 
 == Grp_Light_High_Beam_Right_<part_idx>_<high_beam_right_idx> (T)
 
-This group contains all parts of a high beam light on the right side of a vehicle.
+This group contains all parts of a high beam light on the right side of the vehicle (part).
 
 The `<high_beam_right_idx>` is the index for all high beam lights on the right counting from right to left (in positive y direction), starting with 0.
 
@@ -602,7 +602,7 @@ NOTE: Add a figure from right day light.
 
 == Grp_Light_Corner_Left_<part_idx>_<corner_left_idx> (T)
 
-This group contains all parts of a corner light on the left side of a vehicle.
+This group contains all parts of a corner light on the left side of the vehicle (part).
 A corner light is a typically white light for lateral illumination in the direction of an intended turn or lane change.
 
 The `<corner_left_idx>` is the index for all corner lights on the left counting from right to left (in positive y direction), starting with 0.
@@ -631,7 +631,7 @@ NOTE: Add a figure.
 
 == Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
 
-This group contains all parts of a corner light on the right side of a vehicle.
+This group contains all parts of a corner light on the right side of the vehicle (part).
 A corner light is a typically white light for lateral illumination in the direction of an intended turn or lane change.
 
 The `<corner_right_idx>` is the index for all corner lights on the right counting from right to left (in positive y direction), starting with 0.
@@ -660,7 +660,7 @@ NOTE: Add a figure.
 
 == Grp_Light_Position_Left_<part_idx>_<position_left_idx> (T)
 
-This group contains all parts of a position light on the left side of a vehicle.
+This group contains all parts of a position light on the left side of the vehicle (part).
 Position lights are typically smaller, low-intensity, orange lights.
 
 The `<position_left_idx>` is the index for all position lights on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
@@ -687,7 +687,7 @@ The `<position_left_idx>` is the index for all position lights on the left count
 
 == Grp_Light_Position_Right_<part_idx>_<position_right_idx> (T)
 
-This group contains all parts of a position light on the right side of a vehicle.
+This group contains all parts of a position light on the right side of the vehicle (part).
 Position lights are typically smaller, low-intensity, orange lights.
 
 The `<position_right_idx>` is the index for all position lights on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
@@ -714,7 +714,7 @@ The `<position_right_idx>` is the index for all position lights on the right cou
 
 == Grp_Light_Park_Left_<part_idx>_<park_left_idx> (T)
 
-This group contains all parts of a parking light on the left side of a vehicle.
+This group contains all parts of a parking light on the left side of the vehicle (part).
 
 The `<park_left_idx>` is the index for all parking lights on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
@@ -740,7 +740,7 @@ The `<park_left_idx>` is the index for all parking lights on the left counting f
 
 == Grp_Light_Park_Right_<part_idx>_<park_right_idx> (T)
 
-This group contains all parts of a parking light on the right side of a vehicle.
+This group contains all parts of a parking light on the right side of the vehicle (part).
 
 The `<park_right_idx>` is the index for all parking lights on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
@@ -766,7 +766,7 @@ The `<park_right_idx>` is the index for all parking lights on the right counting
 
 == Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
 
-This group contains all parts of an indicator light on the left side of a vehicle.
+This group contains all parts of an indicator light on the left side of the vehicle (part).
 
 The `<indicator_left_idx>` is the index for all indicator lights on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
@@ -792,7 +792,7 @@ The `<indicator_left_idx>` is the index for all indicator lights on the left cou
 
 == Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
 
-This group contains all parts of an indicator light on the left side of a vehicle.
+This group contains all parts of an indicator light on the left side of the vehicle (part).
 
 The `<indicator_right_idx>` is the index for all indicator lights on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
@@ -819,11 +819,11 @@ The `<indicator_right_idx>` is the index for all indicator lights on the right c
 
 == Grp_Light_License_Plate_<part_idx>_<license_plate_light_idx> (T)
 
-This group contains all parts of a license plate light of a vehicle.
+This group contains all parts of a license plate light of the vehicle (part).
 
 The `<license_plate_light_idx>` is the index for all license plate lights counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-NOTE: Add a figure for the exemplary license plate light on the rear of a vehicle.
+NOTE: Add a figure for the exemplary license plate light on the rear of the vehicle (part).
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -847,7 +847,7 @@ NOTE: Add a figure for the exemplary license plate light on the rear of a vehicl
 
 == Grp_Light_Tail_Left_<part_idx>_<tail_left_idx> (T)
 
-This group contains all parts of a tail light on the left side of a vehicle.
+This group contains all parts of a tail light on the left side of the vehicle (part).
 
 The `<tail_left_idx>` is the index for all tail lights on the left counting from right to left (in positive y direction), starting with 0.
 
@@ -875,7 +875,7 @@ NOTE: Add a figure. This figure might be applicable to all lights on the rear le
 
 == Grp_Light_Tail_Right_<part_idx>_<tail_right_idx> (T)
 
-This group contains all parts of a tail light on the right side of a vehicle.
+This group contains all parts of a tail light on the right side of the vehicle (part).
 
 The `<tail_right_idx>` is the index for all tail lights on the right counting from right to left (in positive y direction), starting with 0.
 
@@ -903,7 +903,7 @@ NOTE: Add a figure. This figure might be applicable to all lights on the rear ri
 
 == Grp_Light_Brake_Left_<part_idx>_<brake_left_idx> (T)
 
-This group contains all parts of a brake light on the left side of a vehicle.
+This group contains all parts of a brake light on the left side of the vehicle (part).
 
 The `<brake_left_idx>` is the index for all brake lights on the left counting from right to left (in positive y direction), starting with 0.
 
@@ -931,7 +931,7 @@ NOTE: Add figure from tail light.
 
 == Grp_Light_Brake_Center_<part_idx>_<brake_center_idx> (T)
 
-This group contains all parts of a brake light in the center of a vehicle.
+This group contains all parts of a brake light in the center of the vehicle (part).
 
 The `<brake_center_idx>` is the index for all brake lights in the center counting from right to left (in positive y direction), starting with 0.
 
@@ -959,7 +959,7 @@ NOTE: Add a figure.
 
 == Grp_Light_Brake_Right_<part_idx>_<brake_right_idx> (T)
 
-This group contains all parts of a brake light on the right side of a vehicle.
+This group contains all parts of a brake light on the right side of the vehicle (part).
 
 The `<brake_right_idx>` is the index for all brake lights on the right counting from right to left (in positive y direction), starting with 0.
 
@@ -987,7 +987,7 @@ NOTE: Add figure from tail light.
 
 == Grp_Light_Reverse_Left_<part_idx>_<reverse_left_idx> (T)
 
-This group contains all parts of a reverse light on the left side of a vehicle.
+This group contains all parts of a reverse light on the left side of the vehicle (part).
 
 The `<reverse_left_idx>` is the index for all reverse lights on the left counting from right to left (in positive y direction), starting with 0.
 
@@ -1015,7 +1015,7 @@ NOTE: Add figure from tail light.
 
 == Grp_Light_Reverse_Right_<part_idx>_<reverse_right_idx> (T)
 
-This group contains all parts of a reverse light on the right side of a vehicle.
+This group contains all parts of a reverse light on the right side of the vehicle (part).
 
 The `<reverse_right_idx>` is the index for all reverse lights on the right counting from right to left (in positive y direction), starting with 0.
 
@@ -1043,7 +1043,7 @@ NOTE: Add figure from tail light.
 
 == Grp_Light_Fog_Left_<part_idx>_<fog_left_idx> (T)
 
-This group contains all parts of a fog light on the left side of a vehicle.
+This group contains all parts of a fog light on the left side of the vehicle (part).
 
 The `<fog_left_idx>` is the index for all fog lights on the left counting from right to left (in positive y direction), starting with 0.
 
@@ -1071,7 +1071,7 @@ NOTE: Add figure from tail light.
 
 == Grp_Light_Fog_Right_<part_idx>_<fog_right_idx> (T)
 
-This group contains all parts of a fog light on the right side of a vehicle.
+This group contains all parts of a fog light on the right side of the vehicle (part).
 
 The `<fog_right_idx>` is the index for all fog lights on the right counting from right to left (in positive y direction), starting with 0.
 
@@ -1099,11 +1099,11 @@ NOTE: Add figure from tail light.
 
 == Grp_Light_Warning_<part_idx>_<warning_idx> (T)
 
-This group contains all parts of a warning light of a vehicle.
+This group contains all parts of a warning light of the vehicle (part).
 
 The `<warning_idx>` is the index for all warning lights counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-NOTE: Add a figure on an exemplary rotating warning light on the roof a vehicle.
+NOTE: Add a figure on an exemplary rotating warning light on the roof the vehicle (part).
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1127,7 +1127,11 @@ NOTE: Add a figure on an exemplary rotating warning light on the roof a vehicle.
 
 == Grp_Side_Mirror_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> (T) 
 
-Add a description
+This group contains all parts of a mirror mounting on the left side of the vehicle (part).
+
+The `<side_mirror_mounting_left_idx>` is the index for all mirror mountings on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1136,46 +1140,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Base of the mirror mounting.
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
-|===
-
-
-== Grp_Side_Mirror_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
-
-Add a description
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
 == Grp_Side_Mirror_View_Left_<part_idx>_<side_mirror_view_left_idx> (T)
 
-Add a description
+This group contains all parts of a mirror without the housing on the left side of the vehicle (part).
+
+The `<side_mirror_view_left_idx>` is the index for all mirrors on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1184,22 +1168,54 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the mirror surface.
 
 | *x-axis*
-| ...
+| Pointing outwards from the front of the mirror.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards along the mirror face.
+|===
+
+
+== Grp_Side_Mirror_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
+
+This group contains all parts of a mirror mounting on the right side of the vehicle (part).
+
+The `<side_mirror_mounting_right_idx>` is the index for all mirror mountings on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| Base of the mirror mounting.
+
+| *x-axis*
+| Collinear with the vehicle longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
 == Grp_Side_Mirror_View_Right_<part_idx>_<side_mirror_view_right_idx> (T)
 
-Add a description
+This group contains all parts of a mirror without the housing on the right side of the vehicle (part).
+
+The `<side_mirror_view_right_idx>` is the index for all mirrors on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1208,22 +1224,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the mirror surface.
 
 | *x-axis*
-| ...
+| Pointing outwards from the front of the mirror.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards along the mirror face.
 |===
 
 
 == Grp_Blindspot_Mirror_Mounting_<part_idx>_<blindspot_mirror_mounting_idx> (T)
 
-Add a description
+This group contains all parts of a blindspot mirror mounting of the vehicle (part).
+
+The `<blindspot_mirror_mounting_idx>` is the index for all blindspot mountings counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1232,22 +1252,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Base of the mirror mounting.
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
 == Grp_Blindspot_Mirror_View_<part_idx>_<blindspot_mirror_view_idx> (T)
 
-Add a description
+This group contains all parts of a mirror without the housing of the vehicle (part).
+
+The `<side_mirror_view_right_idx>` is the index for all blindspot mirrors counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1256,22 +1280,22 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the mirror surface.
 
 | *x-axis*
-| ...
+| Pointing outwards from the front of the mirror.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards along the mirror face.
 |===
 
 
 == Grp_License_Plate_<part_idx>_<license_plate_idx> (T)
 
-This group contains all parts of a license plate of a vehicle.
+This group contains all parts of a license plate of the vehicle (part).
 
 The `<license_plate_idx>` is the index for all license plates counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
@@ -1297,7 +1321,7 @@ The `<license_plate_idx>` is the index for all license plates counting from righ
 
 == Grp_Convertible_Top_<part_idx>
 
-Add a description
+This group contains all parts of a convertible top of the vehicle (part).
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1306,16 +1330,16 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the vehicle (part)
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
@@ -1330,16 +1354,16 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the sensor.
 
 | *x-axis*
-| ...
+| Pointing outwards from the sensor in the direction of its longitudinal axis.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing upwards in sensor coordinates
 |===
 
 
@@ -1474,16 +1498,16 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Base of the mirror mounting.
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
@@ -1498,16 +1522,16 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the mirror surface.
 
 | *x-axis*
-| ...
+| Pointing outwards from the front of the mirror.
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards along the mirror face.
 |===
 
 
