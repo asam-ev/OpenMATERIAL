@@ -17,45 +17,82 @@ permissions:
   id-token: write
 jobs:
   build:
+    name: Build OpenMATERIAL documentation and deploy it to gh-pages
     runs-on: ubuntu-latest
+    services:
+      kroki:
+        image: yuzutech/kroki:0.15.1
+        env:
+          KROKI_MAX_URI_LENGTH: 8000
+          KROKI_BLOCKDIAG_HOST: blockdiag
+          KROKI_MERMAID_HOST: mermaid
+      blockdiag:
+        image: yuzutech/kroki-blockdiag:0.15.1
+      mermaid:
+        image: yuzutech/kroki-mermaid:0.15.1
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-    - name: Checkout repository
+    - name: Checkout with submodules
       uses: actions/checkout@v4
+      with:
+         path: repo
+         fetch-depth: 0 # test if depth in fetch history is required
+         submodules: recursive
 
     - name: Generate AsciiDoc from JSON
-      working-directory: scripts
+      working-directory: repo/scripts
       run: |
         python3 json2asciidoc.py ../schemas/asset_schema.json metadata
         mv metadata.adoc ../content/geometry/
         python3 json2asciidoc.py ../schemas/material_schema.json metadata
         mv metadata.adoc ../content/material/
-        python3 json2asciidoc.py ../schemas/material_schema.json material_properties
-        mv material_properties.adoc ../content/material/material-properties.adoc
-        python3 json2asciidoc.py ../schemas/material_emp_schema.json electromagnetic_properties
-        mv electromagnetic_properties.adoc ../content/material/electromagnetic-properties.adoc
+        python3 json2asciidoc.py ../schemas/material_schema.json materialProperties
+        mv materialProperties.adoc ../content/material/material-properties.adoc
+        python3 json2asciidoc.py ../schemas/material_emp_schema.json electromagneticProperties
+        mv electromagneticProperties.adoc ../content/material/electromagnetic-properties.adoc
 
     - name: Configure Pages
       uses: actions/configure-pages@v4
 
-    - name: Install Node.js
-      uses: actions/setup-node@v4
+    - name: Generate site
+      uses: docker://ghcr.io/asam-ev/project-guide-docker:4
       with:
-        node-version: '20'
+        entrypoint: sh
+        args: repo/run-build.sh # modfied based on OSI
 
-    - name: Install Antora
-      run: npm i antora
-
-    - name: Generate Site
-      run: npx antora antora-playbook.yml
+   
 
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@v3
       with:
-        path: build/site
+        path: ./repo/site
 
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+  deploy:
+    # Run if it was not triggered from remote OR the remote source was master or main.
+    if: ${{ github.event_name != 'repository_dispatch' || contains(github.event.client_payload.ref, 'master') || contains(github.event.client_payload.ref, 'main') }}
+    # Allow one concurrent deployment
+    concurrency:
+      group: "pages"
+      cancel-in-progress: true
+
+    needs: build
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+

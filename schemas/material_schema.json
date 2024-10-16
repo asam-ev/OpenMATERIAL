@@ -4,93 +4,120 @@
   "properties": {
     "metadata": {
       "type": "object",
-      "description": "Metadata related to the material.",
+      "description": "Metadata about the material.",
       "properties": {
-        "copyright": {
-          "type": "string",
-          "description": "Copyright information.",
-          "pattern": "^\\(C\\) \\d{4}-\\d{4}, .+$"
-        },
-        "generator": {
-          "type": "string",
-          "description": "Software or tool used to generate the material."
-        },
-        "openmaterial_version": {
-          "type": "string",
-          "description": "Version of OpenMATERIAL.",
-          "pattern": "^\\d+\\.\\d+\\.\\d+$"
-        },
-        "creator": {
-          "type": "string",
-          "description": "Creator of the material."
-        },
-        "creation_date": {
-          "type": "string",
-          "description": "Date when the material was created, in the format YYYYMMDDTHHMMSSZ.",
-          "pattern": "^\\d{8}T\\d{6}Z$"
-        },
-        "material_version": {
-          "type": "string",
-          "description": "Version of the material.",
-          "pattern": "^\\d+\\.\\d+\\.\\d+$"
-        },
-        "id": {
-          "type": "string",
-          "description": "Unique identifier for the material.",
-          "pattern": "^[a-f0-9]{32}$"
-        },
         "name": {
           "type": "string",
           "description": "Name of the material."
         },
         "description": {
           "type": "string",
-          "description": "Description of the material."
+          "description": "Short description of the material in 2 - 3 sentences."
+        },
+        "uuid": {
+          "type": "string",
+          "description": "Universally unique identifier for the material.",
+          "pattern": "^[a-f0-9]{32}$"
+        },
+        "materialVersion": {
+          "type": "string",
+          "description": "Version of the material.",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "creationDate": {
+          "type": "string",
+          "description": "Creation date of the material in the format YYYYMMDDTHHMMSSZ.",
+          "pattern": "^\\d{8}T\\d{6}Z$"
+        },
+        "openMaterialVersion": {
+          "type": "string",
+          "description": "Version of OpenMATERIAL.",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "copyright": {
+          "type": "string",
+          "description": "Copyright information with year and company."
+        },
+        "license": {
+          "type": "string",
+          "description": "License information. For common open source licenses, provide an SPDX identifier. For other types of licenses, provide an URL to a webpage with the license or the filename of a separately provided license file."
+        },
+        "author": {
+          "type": "string",
+          "description": "Name or email address of the author of this material. In case of multiple authors, use comma-separation. The author can also be a company name."
         }
       },
       "required": [
-        "copyright",
-        "generator",
-        "openmaterial_version",
-        "creator",
-        "creation_date",
-        "material_version",
-        "id",
         "name",
-        "description"
+        "description",
+        "uuid",
+        "materialVersion",
+        "creationDate",
+        "openMaterialVersion",
+        "copyright",
+        "license",
+        "author"
       ]
     },
-    "material_properties": {
+    "materialProperties": {
       "type": "object",
       "description": "Properties related to the material.",
       "properties": {
-        "surface_roughness": {
+        "surfaceRoughness": {
           "type": "object",
           "description": "Information about the surface roughness of the material.",
           "properties": {
-            "surface_height_rms": {
+            "surfaceHeightRms": {
               "type": "number",
               "description": "Root mean square of surface height deviations."
             },
-            "surface_correlation_length": {
+            "surfaceCorrelationLength": {
               "type": "number",
               "description": "Correlation length of the surface height deviations."
+            },
+            "source": {
+              "type": "string",
+              "description": "Source of the surface roughness data."
             }
           },
           "required": [
-            "surface_height_rms",
-            "surface_correlation_length"
+            "surfaceHeightRms",
+            "surfaceCorrelationLength",
+            "source"
           ]
         },
-        "elasticity_data": {
+        "emissivityData": {
+          "type": "object",
+          "description": "Emissivity data of the material",
+          "properties": {
+            "emissivityCoefficient": {
+              "type": "number",
+              "description": "Emissivity describes the ability to emit energy as thermal radiation. Given as the fraction of thermal radiation emitted by a surface relative to the radiation emitted by an ideal black body at the same temperature. Here the hemispherical total emissivity is used which considers full emission over all wavelengths, directions and polarization for a given particular temperature: ε(T)"
+            },
+            "temperature": {
+              "type": "number",
+              "description": "Temperature in Kelvin [K] at which the emissivity is measured"
+            },
+            "source": {
+              "type": "string",
+              "description": "Source of the emissivity data."
+            }
+          },
+          "required": [
+            "emissivityCoefficient",
+            "temperature",
+            "source"
+          ]
+        },
+        "elasticityData": {
           "type": "object",
           "description": "Information about the elasticity of the material.",
           "properties": {
-            "youngs_modulus": {
+            "youngsModulus": {
               "type": "number",
               "description": "Young's modulus of the material in Pa."
             },
-            "poissons_ratio": {
+            "poissonsRatio": {
               "type": "number",
               "description": "Poisson's ratio of the material."
             },
@@ -100,12 +127,12 @@
             }
           },
           "required": [
-            "youngs_modulus",
-            "poissons_ratio",
+            "youngsModulus",
+            "poissonsRatio",
             "source"
           ]
         },
-        "density_data": {
+        "densityData": {
           "type": "object",
           "description": "Information about the density of the material.",
           "properties": {
@@ -123,22 +150,41 @@
             "source"
           ]
         },
-        "electromagnetic_properties_uri": {
+        "electromagneticPropertiesUri": {
           "type": "string",
           "description": "Relative path to a property lookup table file with electromagnetic material properties.",
           "pattern": ".*_emp\\.xompt$"
+        },
+        "retroreflectivityData": {
+          "type": "object",
+          "description": "Information about the retro-reflective properties of the material in the visible light spectrum.",
+          "properties": {
+            "coefficientOfRetroreflection": {
+              "type": "number",
+              "description": "Coefficient of retro-reflection in cd lx^-1 m^-2."
+            },
+            "source": {
+              "type": "string",
+              "description": "Source of the retro-reflectivity data."
+            }
+          },
+          "required": [
+            "coefficienOfRetroreflection",
+            "source"
+          ]
         }
       },
       "required": [
-        "surface_roughness",
-        "elasticity_data",
-        "density_data",
-        "electromagnetic_properties_uri"
+        "surfaceRoughness",
+        "emissivityData",
+        "elasticityData",
+        "densityData",
+        "electromagneticPropertiesUri"
       ]
     }
   },
   "required": [
     "metadata",
-    "material_properties"
+    "materialProperties"
   ]
 }

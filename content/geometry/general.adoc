@@ -1,0 +1,117 @@
+= General
+
+== Dimensions
+The unit used for object dimensions is meters.
+
+== Coordinate systems
+
+ASAM OpenMATERIAL uses the following types of coordinate systems:
+
+* World coordinate system, see <<World coordinate system>>
+* Local coordinate system, see <<Local coordinate system>>
+
+Both coordinate systems consist of three orthogonal directions associated with
+x-, y-, and z-axes, and a coordinate origin where axes meet. The coordinate
+systems are right-handed Cartesian coordinate systems according to ISO 8855. For
+a non-rotated coordinate system, the following applies:
+
+* Forward matches x-axis
+* Left matches y-axis
+* Up matches z-axis
+
+The positive rotation is assumed to be counter-clockwise ("right-hand rule").
+Orientation of objects is expressed extrinsically by the yaw, pitch, and roll
+angles derived from the Euler rotation sequence in the order z-axis, then
+y-axis, then x-axis.
+
+[#fig-coordinate-system]
+.Yaw, pitch, and roll angle in an ISO 8855:2011 compliant coordinate system
+image::fig_coordinate_system.svg[img, 1100]
+
+<<fig-coordinate-system>> shows a right-handed coordinate system.
+
+[#fig-coo-sys-rotation]
+.Coordinate system with defined rotations
+image::fig_coo_sys_rotation.svg[img, 1100]
+
+<<fig-coo-sys-rotation>> shows the positive axes and positive directions of the
+corresponding angles.
+
+[#fig-coo-sys-example]
+.Examples of rotations in coordinate system
+image::fig_coo_sys_example.svg[img, 1100]
+
+<<fig-coo-sys-example>> shows the different states of a coordinate
+system with defined rotations. x’/y’/(z’=z) denotes the coordinate system after
+rotating x/y/z with the heading angle around the z-axis. The coordinate system
+x’’/(y’’=y’)/z’’ denotes the coordinate system after rotating x’/y’/z’ with the
+pitch angle around the y’-axis. The final rotated coordinate system
+(x’’’=x’’)/y’’’/z’’’ is obtained after rotating system x’’/y’’/z’’ with roll
+angle.
+
+Each 3D model has an individual reference frame. Individual nodes of an
+object may have local coordinate frames, for example, each wheel of a vehicle.
+
+
+=== World coordinate system
+
+A coordinate system of type (x, y, z) that is fixed in the inertial reference frame of
+the simulation environment has the x~w~- and y~w~-axes parallel to the ground
+plane and the z~w~-axis pointing upward.
+
+Neither origin nor orientation of the world coordinate system are defined by the ASAM OpenMATERIAL standard. If a road network is referenced from a scenario, the world coordinate system is aligned with the inertial coordinate system present in this description.
+
+=== Local coordinate system
+The local coordinate system is in line with the standards ASAM OpenDRIVE,
+ASAM OpenSCENARIO, and ASAM OSI.
+
+NOTE: Origins of the coordinate frames for specific object classes are under
+discussion.
+
+== Naming conventions
+The following naming conventions apply to ASAM OpenMATERIAL geometry files:
+
+* The name of a 3D model file shall have the prefix `omg_` to indicate that the file
+complies with the ASAM OpenMATERIAL geometry specification.
+* The 3D model file and the related 3D asset file shall have the same base name.
+
+NOTE: Putting more information in file name to be discussed for specific object classes.
+
+== 3D asset file
+The 3D asset file provides meta data as well as a mapping table to ASAM OpenMATERIAL material property files.
+This information extends the geometry of an asset given in standard 3D model file formats, e.g. glTF, FBX or USD.
+The 3D asset file is in JSON format with the file extension `xoma`.
+As indicated above, the asset file has to have the same file name as the accompanying 3D model with the prefix `omg` indicating,
+that the 3D model file is structured according to the ASAM OpenMATERIAL geometry specification.
+This is an example of a 3D model file in glTF format with an accompanying 3D asset file:
+
+* `omg_my-model.glTF`
+* `omg_my-model.xoma`
+
+Each 3D asset file contains the following information:
+
+* Metadata
+* Material mapping (with possibility to easily change assignment)
+* Optional link to another asset file to facilitate instancing (same asset file for different 3D models)
+* Semantic information (labels) for sub-meshes ?
+* Description of coordinates, pivot points and so on instead of hierarchy in 3D model file ?
+* Assigning data streams (for example, wheel rotation) to certain sub-meshes ?
+
+NOTE: TODO: Add short descriptions and references
+
+== Requirements
+Materials shall be separated.
+
+NOTE: TODO: Extend rule and find better location. What do you want to express, that two
+materials with different properties need to be modeled by separate objects?
+Are there any other requirements regarding quality, semantic/animation/material structure?
+
+
+== Recommendations
+
+* The same texel density should be used within a file. (asset file?)
+* For each object class, the recommended mesh resolution should be used.
+* To improve performance of vegetation objects, alpha textures should be used.
+
+NOTE: TODO: Move recommendations to descriptive sections, e.g. object class
+recommendation to section "Object Class".
