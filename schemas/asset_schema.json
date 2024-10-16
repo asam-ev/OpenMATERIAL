@@ -20,12 +20,12 @@
           "description": "Universally unique identifier for the asset.",
           "pattern": "^[a-f0-9]{32}$"
         },
-        "asset_version": {
+        "assetVersion": {
           "type": "string",
           "description": "Version of the asset.",
           "pattern": "^\\d+\\.\\d+\\.\\d+$"
         },
-        "openmaterial_version": {
+        "openMaterialVersion": {
           "type": "string",
           "description": "Version of OpenMATERIAL.",
           "pattern": "^\\d+\\.\\d+\\.\\d+$"
@@ -42,29 +42,29 @@
           "type": "string",
           "description": "Name or email address of the author of this asset. In case of multiple authors, use comma-separation. The author can also be a company name."
         },
-        "model_creation_tool": {
+        "modelCreationTool": {
           "type": "string",
           "description": "The tool or software used to generate the 3D model of this asset."
         },
-        "creation_date": {
+        "creationDate": {
           "type": "string",
           "description": "Creation date of the asset in the format YYYYMMDDTHHMMSSZ.",
           "pattern": "^\\d{8}T\\d{6}Z$"
         },
-        "modeling_method": {
+        "modelingMethod": {
           "type": "string",
           "description": "Description how the 3D model was modeled. Was it modeled based on a 3D scan, based on photos, or freehand?"
         },
-        "validation_description": {
+        "validationDescription": {
           "type": "string",
           "description": "Was the geometry of the 3D model validated against a real-world object? If yes, how?"
         },
-        "asset_type": {
+        "assetType": {
           "type": "string",
           "description": "Type of the asset out of the following: object (individual object), scene (a collection of multiple objects)",
           "enum": ["object", "scene"]
         },
-        "object_class": {
+        "objectClass": {
           "type": "string",
           "description": "The class of the object. This only applies if 'asset_type' == 'object'.",
           "enum": ["vehicle", "human", "road_network", "other"]
@@ -73,20 +73,20 @@
           "type": "boolean",
           "description": "Does the 3D model contain keyframe animations?"
         },
-        "pbr_material_workflow": {
+        "pbrMaterialWorkflow": {
           "type": "string",
           "description": "Does the 3D model contain materials for a PBR workflow? If yes, for a metallic or specular workflow?",
           "enum": ["metallic", "specular", "none"]
         },
-        "triangle_count": {
+        "triangleCount": {
           "type": "integer",
           "description": "The number of triangles in the 3D model. One quad counts as two triangles."
         },
-        "mesh_count": {
+        "meshCount": {
           "type": "integer",
           "description": "The number of meshes in the 3D geometry."
         },
-        "texture_resolutions": {
+        "textureResolutions": {
           "type": "array",
           "description": "List of all texture resolutions in the 3D model. This can include any combination of '1K', '2K', or '4K'.",
           "items": {
@@ -96,12 +96,12 @@
           "minItems": 1,
           "uniqueItems": true
         },
-        "normal_map_format": {
+        "normalMapFormat": {
           "type": "string",
           "description": "Does the 3D model have normal maps as textures? If yes, are they using the DirectX format or the OpenGL format?",
           "enum": ["DirectX", "OpenGL", "none"]
         },
-        "bounding_box": {
+        "boundingBox": {
           "type": "object",
           "description": "Axis-aligned bounding box dimensions specifying the minimum and maximum values in x, y, and z direction.",
           "properties": {
@@ -140,24 +140,24 @@
         "name",
         "description",
         "uuid",
-        "asset_version",
-        "openmaterial_version",
+        "assetVersion",
+        "openMaterialVersion",
         "copyright",
         "license",
         "author",
-        "creation_date",
-        "asset_type",
-        "object_class",
+        "creationDate",
+        "assetType",
+        "objectClass",
         "animated",
-        "pbr_material_workflow",
-        "triangle_count",
-        "mesh_count",
-        "texture_resolutions",
-        "normal_map_format",
-        "bounding_box"
+        "pbrMaterialWorkflow",
+        "triangleCount",
+        "meshCount",
+        "textureResolutions",
+        "normalMapFormat",
+        "boundingBox"
       ]
     },
-    "material_mapping": {
+    "materialMapping": {
       "type": "array",
       "description": "Mapping of materials used in the asset",
       "items": {
@@ -185,6 +185,6 @@
   },
   "required": [
     "metadata",
-    "material_mapping"
+    "materialMapping"
   ]
 }

@@ -4,10 +4,6 @@
 
 [plantuml]
 ----
-skinparam Legend {
-  BackgroundColor yellow
-  BorderColor red
-}
 legend
 Vehicle structure
 |_ Grp_Vehicle_Part_<keyword>_<vehicle_part_idx> (T)

@@ -4,7 +4,7 @@
 
 [plantuml]
 ----
-
+legend
 Skeleton
 |_Root_Bone (T)
   |_ Hip (T)
@@ -46,6 +46,7 @@ Skeleton
 Body
 Hair
 Clothing
+end legend
 ----
 
 == Root_Bone (T)

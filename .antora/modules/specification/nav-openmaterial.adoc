@@ -1,0 +1,28 @@
+
+//Deprecated, use 'OpenMATERIAL/content/nav-openmaterial.adoc' instead.
+
+//But keep this file here, since it is necessary for the asam-antora-extension pipeline!
+
+* xref:general-docs/foreword.adoc[]
+* xref:general-docs/introduction.adoc[]
+
+////
+* xref:general-docs/scope.adoc[]
+* xref:general-docs/normative-references.adoc[]
+* xref:general-docs/abbreviations.adoc[]
+* xref:general-docs/backward-compatibility.adoc[]
+* xref:terms-and-definitions/terms-and-definitions.adoc[]
+* xref:use-cases/use-cases.adoc[]
+* Geometry
+** xref:geometry/introduction.adoc[]
+** xref:geometry/general.adoc[]
+** xref:geometry/object-classes.adoc[]
+** xref:geometry/file-format-support.adoc[]
+** xref:geometry/metadata.adoc[]
+** xref:geometry/performance.adoc[]
+* Material
+** xref:material/introduction.adoc[]
+** xref:material/file-format.adoc[]
+** xref:material/metadata.adoc[]
+** xref:material/material-properties.adoc[Material properties]
+** xref:material/lookup-tables.adoc[]
