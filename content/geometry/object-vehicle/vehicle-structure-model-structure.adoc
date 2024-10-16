@@ -190,7 +190,7 @@ Suspension deflection is represented by a translation along the z-axis.
 Zero rotation and and translation around all axles are defined in neutral load conditions.
 In the 3D model, both caster and camber angles are neglected.
 
-NOTE: Add a figure.
+image::Grp_Wheel.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -271,7 +271,7 @@ This includes e.g. the engine cover.
 
 The `<door_front_idx>` is the index for all doors in the front counting from right to left (in positive y direction), starting with 0.
 
-NOTE: Add a figure with an engine hood.
+image::Grp_Door_Front.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -299,7 +299,7 @@ The group contains all components of a door on the left side of the vehicle (par
 
 The `<door_left_idx>` is the index for all doors on the left counting from front to rear, starting with 0.
 
-NOTE: Add a figure.
+image::Grp_Door_Left[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
