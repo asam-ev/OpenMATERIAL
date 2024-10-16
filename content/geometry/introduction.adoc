@@ -1,1 +1,38 @@
 = Introduction
+
+
+==    What is a 3D asset/geometry?
+A 3D asset/geometry refers to a digital entity that consists of a 3D geometric representation of an object and its associated attributes and metadata information. GlTF, FBX, and USD are common 3D formats to store 3D models .
+However, following the ASAM OpenMATERIAL specifications, the 3D asset file (e.g. omg_my-model.xoma) contains essential information relevant to the display and interactivity attributes of the 3D model in various computer applications. This includes metadata, material mappings and semantic information such as coordinate system, pivot point descriptions and sub-mesh data stream assignments. The .xoma  file links the geometry with specific material properties (textures, reflectivity, etc.) allowing for dynamic adjustments like changing material mappings.
+This setup allows the 3D asset/geometry to be more versatile and rich in detail, making it more relevant to be used in complex simulations or real-time environments with detailed material and dynamic properties.
+
+==    For which use cases are assets needed?
+In order to accurately replicate the real-world interaction of sensors with objects, ensuring that the behaviour of sensors such as cameras, radars or LIDARs is correctly modelled based on the material and geometric properties of objects in the virtual environment, assets conforming to the ASAM OpenMATERIAL standards may be required in various use cases, such as
+* Accurate simulation of sensor perception: 3D assets are required to ensure that sensors interact realistically with their environment. This includes both visual representation (how objects look and are detected by the sensor) and material properties (how objects reflect or absorb signals such as light or radar waves).
+* Dynamic and real-time environment simulation: 3D assets with changing materials or dynamic properties, such as moving parts (e.g. wheels), are required to simulate environments where the interaction between sensors and objects is constantly changing.
+* Semantic labelling for machine learning applications: Assets with semantic information about sub-meshes (labels for parts of objects) allow the system to understand and differentiate between different parts of an object, such as the wheels or windows of a car, which aid in accurate training.
+* Instancing for efficient simulation: Using the same asset file for several 3D models allows instancing without the need for separate assets for each one, saving computing resources while maintaining consistency.
+
+==    What is the role of 3D exchange formats in OpenMATERIAL?
+3D exchange formats such as glTF, FBX or USD, which provide a standardised way of representing 3D models, are already widely used across industries. In the context of OpenMATERIAL, these formats serve as the basis for seamless integration of OpenMATERIAL into existing 3D modelling and simulation workflows.
+
+==    How do the OpenMATERIAL specifications build on/extend existing file formats and their specifications?
+Users can continue to use their familiar tools and processes to handle geometry, while OpenMATERIAL extends these formats to enable the aforementioned use cases by adding material properties, semantic information and dynamic behaviours through additional files (.xoma files).
+
+==    What is the difference between reference 3D geometry and materials?
+* Reference 3D geometry defines the shape, size and spatial structure of an object, focusing on its physical boundaries and surfaces as captured by sensors in a simulation. It is essential for representing how objects appear and occupy space. 
+* Materials, on the other hand, define how the surface of this geometry interacts with the environment. This includes both rendering materials that define the visual appearance, and physics-based sensor materials which determine how objects respond to sensor signals such as light, radar or LIDAR.
+
+==    How is this standard interacting with other ASAM standards, such as OpenSCENARIO, OpenDRIVE, OSI,...
+ASAM Open Material and other ASAM standards aim for comprehensive and highly realistic simulations that can be created by integrating behavioural logic, infrastructure and material properties into a unified system for the development and testing of autonomous systems ("digital twins" or highly accurate virtual representations of real-world entities).
+* OpenSCENARIO provides the behavioural framework and OpenMATERIAL ensures that objects behave in a realistic manner within this scenario.
+https://www.asam.net/standards/detail/openscenario/v200/
+* OpenDRIVE defines the road infrastructure, OpenMATERIAL adds material details for a more accurate physical representation of the elements of this road and their interactions with the sensors:
+https://www.asam.net/standards/detail/opendrive/
+* Open Simulation Interface handles sensor data exchanging with other parties in the simulation, which is influenced by the material characteristics defined by OpenMATERIAL.
+https://www.asam.net/standards/detail/osi/
+
+==    Is the standardization of 3D models specified by OpenMATERIAL separated from the standardization of materials in OpenMATERIAL? 
+NOTE: TODO: (tbd)
+
+==    How are materials referenced (brief introduction and reference to dedicated chapter here) (concrete description and chapter tbd)
