@@ -5,97 +5,82 @@
 [plantuml]
 ----
 legend
-Vehicle structure
-|_ Grp_Vehicle_Part_<keyword>_<vehicle_part_idx> (T)
-  |_ Grp_Exterior
-    |_ Grp_Exterior_Static
-    |_ Grp_Exterior_Dynamic
-      |_ Grp_Wheel_<axle_idx>_<wheel_idx> (T)
-        |_ Grp_Wheel_<axle_idx>_<wheel_idx>_Steering
-        |_ Grp_Wheel_<axle_idx>_<wheel_idx>_Steering_Rotating (T)
-      |_ Grp_Door_Front_<door_front_idx> (T)
-      |_ Grp_Door_Left_<door_left_idx> (T)
-      |_ Grp_Door_Right_<door_right_idx> (T)
-      |_ Grp_Door_Rear_<door_rear_idx> (T)
-      |_ Grp_Door_Top_<door_top_idx> (T)
-      |_ Grp_Door_Bottom_<door_bottom_idx> (T)
-      |_ Grp_Light_Day_Left_<day_left_idx> (T)
-      |_ Grp_Light_Day_Right_<day_right_idx> (T)
-      |_ Grp_Light_Low_Beam_Left_<low_beam_left_idx> (T)
-      |_ Grp_Light_Low_Beam_Right_<low_beam_right_idx> (T)
-      |_ Grp_Light_High_Beam_Left_<high_beam_left_idx> (T)
-      |_ Grp_Light_High_Beam_Right_<high_beam_right_idx> (T)
-      |_ Grp_Light_Position_Left_<position_left_idx> (T)
-      |_ Grp_Light_Position_Right_<position_right_idx> (T)
-      |_ Grp_Light_Park_Left_<position_left_idx> (T)
-      |_ Grp_Light_Park_Right_<position_right_idx> (T)
-      |_ Grp_Light_Tail_Left_<tail_left_idx> (T)
-      |_ Grp_Light_Tail_Right_<tail_right_idx> (T)
-      |_ Grp_Light_Brake_Left_<brake_left_idx> (T)
-      |_ Grp_Light_Brake_Center_<brake_center_idx> (T)
-      |_ Grp_Light_Brake_Right_<brake_right_idx> (T)
-      |_ Grp_Light_Reverse_Left_<reverse_left_idx> (T)
-      |_ Grp_Light_Reverse_Right_<reverse_right_idx> (T)
-      |_ Grp_Light_Fog_Left_<fog_left_idx> (T)
-      |_ Grp_Light_Fog_Right_<fog_right_idx> (T)
-      |_ Grp_Light_Corner_Left_<corner_left_idx> (T)
-      |_ Grp_Light_Corner_Right_<corner_right_idx> (T)
-      |_ Grp_Light_Indicator_Left_<indicator_left_idx> (T)
-      |_ Grp_Light_Indicator_Right_<indicator_right_idx> (T)
-      |_ Grp_Number_Plate_<number_plate_idx> (T)
-      |_ Grp_Light_Number_Plate_<number_plate_light_idx> (T)
-      |_ Grp_Light_Warning_<warning_idx> (T)
-      |_ Grp_Convertible_Top
-      |_ Grp_Sensors (T)
-      |_ Grp_Side_Mirror_Mounting_Left_<side_mirror_mounting_left_idx> (T)
-      |_ Grp_Side_Mirror_View_Left_<side_mirror_view_left_idx> (T)
-      |_ Grp_Side_Mirror_Mounting_Right_<side_mirror_mounting_right_idx> (T)
-      |_ Grp_Side_Mirror_View_Right_<side_mirror_view_right_idx> (T)
-      |_ Grp_Blindspot_Mirror_Mounting_<blindspot_mirror_mounting_idx> (T)
-      |_ Grp_Blindspot_Mirror_View_<blindspot_mirror_view_idx> (T)
-  |_ Grp_Interior
-    |_ Grp_Interior_Static
-    |_ Grp_Interior_Dynamic
-      |_ Grp_Steering_Wheel (T)
-      |_ Grp_Eyepoint_<eyepoint_idx> (T)
-      |_ Grp_Rearview_Mirror_Mounting_<rearview_mirror_mounting_idx> (T)
-      |_ Grp_Rearview_Mirror_View_<rearview_mirror_view_idx> (T)
-      |_ Grp_Seat_<seat_idx> (T)
+Root
+|_ Grp_Vehicle_Part_<keyword>_<part_idx> (T)
+  |_ Grp_Exterior_<part_idx>
+    |_ Grp_Exterior_Static_<part_idx>
+    |_ Grp_Exterior_Dynamic_<part_idx>
+      |_ Grp_Wheel_<part_idx>_<axle_idx>_<wheel_idx> (T)
+        |_ Grp_Wheel_Steering_<part_idx>_<axle_idx>_<wheel_idx>
+        |_ Grp_Wheel_Steering_Rotating_<part_idx>_<axle_idx>_<wheel_idx> (T)
+      |_ Grp_Door_Front_<part_idx>_<door_front_idx> (T)
+      |_ Grp_Door_Left_<part_idx>_<door_left_idx> (T)
+      |_ Grp_Door_Right_<part_idx>_<door_right_idx> (T)
+      |_ Grp_Door_Rear_<part_idx>_<door_rear_idx> (T)
+      |_ Grp_Door_Top_<part_idx>_<door_top_idx> (T)
+      |_ Grp_Door_Bottom_<part_idx>_<door_bottom_idx> (T)
+      |_ Grp_Light_Day_Left_<part_idx>_<day_left_idx> (T)
+      |_ Grp_Light_Day_Right_<part_idx>_<day_right_idx> (T)
+      |_ Grp_Light_Low_Beam_Left_<part_idx>_<low_beam_left_idx> (T)
+      |_ Grp_Light_Low_Beam_Right_<part_idx>_<low_beam_right_idx> (T)
+      |_ Grp_Light_High_Beam_Left_<part_idx>_<high_beam_left_idx> (T)
+      |_ Grp_Light_High_Beam_Right_<part_idx>_<high_beam_right_idx> (T)
+      |_ Grp_Light_Corner_Left_<part_idx>_<corner_left_idx> (T)
+      |_ Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
+      |_ Grp_Light_Position_Left_<part_idx>_<position_left_idx> (T)
+      |_ Grp_Light_Position_Right_<part_idx>_<position_right_idx> (T)
+      |_ Grp_Light_Park_Left_<part_idx>_<park_left_idx> (T)
+      |_ Grp_Light_Park_Right_<part_idx>_<park_right_idx> (T)
+      |_ Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
+      |_ Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
+      |_ Grp_Light_License_Plate_<part_idx>_<license_plate_light_idx> (T)
+      |_ Grp_Light_Tail_Left_<part_idx>_<tail_left_idx> (T)
+      |_ Grp_Light_Tail_Right_<part_idx>_<tail_right_idx> (T)
+      |_ Grp_Light_Brake_Left_<part_idx>_<brake_left_idx> (T)
+      |_ Grp_Light_Brake_Center_<part_idx>_<brake_center_idx> (T)
+      |_ Grp_Light_Brake_Right_<part_idx>_<brake_right_idx> (T)
+      |_ Grp_Light_Reverse_Left_<part_idx>_<reverse_left_idx> (T)
+      |_ Grp_Light_Reverse_Right_<part_idx>_<reverse_right_idx> (T)
+      |_ Grp_Light_Fog_Left_<part_idx>_<fog_left_idx> (T)
+      |_ Grp_Light_Fog_Right_<part_idx>_<fog_right_idx> (T)
+      |_ Grp_Light_Warning_<part_idx>_<warning_idx> (T)
+      |_ Grp_Side_Mirror_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> (T)
+      |_ Grp_Side_Mirror_View_Left_<part_idx>_<side_mirror_view_left_idx> (T)
+      |_ Grp_Side_Mirror_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
+      |_ Grp_Side_Mirror_View_Right_<part_idx>_<side_mirror_view_right_idx> (T)
+      |_ Grp_Blindspot_Mirror_Mounting_<part_idx>_<blindspot_mirror_mounting_idx> (T)
+      |_ Grp_Blindspot_Mirror_View_<part_idx>_<blindspot_mirror_view_idx> (T)
+      |_ Grp_License_Plate_<part_idx>_<license_plate_idx> (T)
+      |_ Grp_Convertible_Top_<part_idx>
+      |_ Grp_Sensor_<part_idx>_<sensor_idx> (T)
+  |_ Grp_Interior_<part_idx>
+    |_ Grp_Interior_Static_<part_idx>
+    |_ Grp_Interior_Dynamic_<part_idx>
+      |_ Grp_Steering_Wheel_<part_idx> (T)
+      |_ Grp_Eyepoint_<part_idx>_<eyepoint_idx> (T)
+      |_ Grp_Rearview_Mirror_<part_idx>_Mounting_<rearview_mirror_mounting_idx> (T)
+      |_ Grp_Rearview_Mirror_View_<part_idx>_<rearview_mirror_view_idx> (T)
+      |_ Grp_Seat_<part_idx>_<seat_idx> (T)
 end legend
 ----
 
-== Grp_Vehicle_Part_<keyword><vehicle_part_idx> (T) 
+== Grp_Vehicle_Part_<part_idx>_<keyword> (T) 
 
-Add a description
+A vehicle part is a large structure of the vehicle (part), that moves independently from other parts of the same vehicle.
+This mainly applies to articulated vehicles, e.g. a front loader with a hinged axis or an articulated bus with a hinge in the middle.
+When a vehicle part can be detached, like a trailer, it is to be treated as a separate object and not a vehicle part.
 
-.<Table title>
-[%header, cols="20, 80"]
-|===
+Standard vehicles only have one part and no keyword.
+Therefore, only one Grp_Vehicle_Part exists with the name `Grp_Vehicle_Part_0`.
 
-2+^| <Header>
+The `<part_idx>` must be added to all sub-nodes, as multiple nodes with the same name in different vehicle parts are not possible.
+There cannot be a node `Grp_Exterior` in both `Grp_Vehicle_Part_0`` and `Grp_Vehicle_Part_1``.
 
-| *Origin*
-| ...
+NOTE: Define the origin of the vehicle (part)
 
-| *x-axis*
-| ...
+NOTE: Add description and examples for keywords
 
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-
-
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-== Grp_Exterior
-
-Add a description
+NOTE: Add a figure visualizing e.g. a hinged bus to explain what vehicle parts are.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -107,24 +92,18 @@ Add a description
 | ...
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
+== Grp_Exterior_<part_idx>
 
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-== Grp_Exterior_Static
-
-Add a description
+This group contains all elements of the exterior of the vehicle (part).
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -133,27 +112,23 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the vehicle (part)
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
+== Grp_Exterior_Static_<part_idx>
 
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-== Grp_Exterior_Dynamic
-
-Add a description
+This group contains all static elements of the exterior of the vehicle (part).
+Static elements are geometry structures that have a fixed position and orientation relative to the origin on the vehicle (part) throughout a simulation.
+They also do not change their state during the simulation, therefore lights are considered dynamic.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -162,27 +137,23 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the vehicle (part)
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
+== Grp_Exterior_Dynamic_<part_idx>
 
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-== Grp_Wheel_<axle_idx>_<wheel_idx> (T)
-
-Add a description
+This group contains all dynamic elements of the exterior of the vehicle (part).
+Dynamic elements are geometry structures which position and orientation relative to the origin on the vehicle (part) might change throughout a simulation.
+They may also change their state during the simulation, therefore lights are considered dynamic.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -191,27 +162,35 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the vehicle (part)
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Wheel_<part_idx>_<axle_idx>_<wheel_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all geometries of one wheel assembly.
+This may include tire, rim, brake caliper etc.
 
-== Grp_Wheel_Steering_<axle_idx>_<wheel_idx>
+The `<axle_idx>` denotes the index of the axle the wheel is mounted to, counting from the front to the rear, starting with 0.
+The `<wheel_idx>` denotes the index of the wheel on the specified axle, counting from right to left (in positive y direction), starting with 0.
+Example: The wheel on the front left of a standard vehicle would be `Grp_Wheel_0_1`.
 
-Add a description
+Steering of the wheel is implemented by a rotation around the z-axis.
+Wheel camber is defined by a rotation around the x-axis.
+Suspension deflection is represented by a translation along the z-axis.
+Zero rotation and and translation around all axles are defined in neutral load conditions.
+In the 3D model, both caster and camber angles are neglected.
+
+image::Grp_Wheel.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -220,27 +199,24 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Geometric center of the wheel
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Wheel_Steering_<part_idx>_<axle_idx>_<wheel_idx>
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all components of the wheel assembly, that follow the steering motion but not the rotation of the wheel, e.g. brake calipers.
 
-== Grp_Wheel_Steering_Rotating_<axle_idx>_<wheel_idx> (T)
-
-Add a description
+The indices are the same as in the parent group.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -249,27 +225,24 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Geometric center of the wheel
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Wheel_Steering_Rotating_<part_idx>_<axle_idx>_<wheel_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all components of the wheel assembly, that follow the steering motion as well as the rotation of the wheel, e.g. tire and rim.
 
-== Grp_Door_Front_<door_front_idx> (T)
-
-Add a description
+The indices are the same as in the parent group.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -278,27 +251,27 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Geometric center of the wheel
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing towards the door
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Door_Front_<part_idx>_<door_front_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+The group contains all components of a door in the front of the vehicle (part).
+This includes e.g. the engine cover.
 
-== Grp_Door_Left_<door_left_idx> (T)
+The `<door_front_idx>` is the index for all doors in the front counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+image::Grp_Door_Front.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -307,27 +280,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Geometric center of the virtual hinge axis
 
 | *x-axis*
-| ...
+| Perpendicular to the z-axis, pointing towards the door
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Concentric and coaxial to the virtual hinge axis
 |===
 
 
-Add a figure.
+== Grp_Door_Left_<part_idx>_<door_left_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+The group contains all components of a door on the left side of the vehicle (part).
 
-== Grp_Door_Right_(door_right_idx) (T)
+The `<door_left_idx>` is the index for all doors on the left counting from front to rear, starting with 0.
 
-Add a description
+image::Grp_Door_Left[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -336,27 +308,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Geometric center of the virtual hinge axis
 
 | *x-axis*
-| ...
+| Perpendicular to the z-axis, pointing towards the door
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Concentric and coaxial to the virtual hinge axis
 |===
 
 
-Add a figure.
+== Grp_Door_Right_<part_idx>_<door_right_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+The group contains all components of a door on the right side of the vehicle (part).
 
-== Grp_Door_Rear_<door_rear_idx> (T)
+The `<door_right_idx>` is the index for all doors on the right counting from front to rear, starting with 0.
 
-Add a description
+image::Grp_Door_Right[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -365,27 +336,27 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Geometric center of the virtual hinge axis
 
 | *x-axis*
-| ...
+| Perpendicular to the z-axis, pointing towards the door
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Concentric and coaxial to the virtual hinge axis
 |===
 
 
-Add a figure.
+== Grp_Door_Rear_<part_idx>_<door_rear_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+The group contains all components of a door in the rear of the vehicle (part).
+This includes e.g. the trunklid.
 
-== Grp_Door_Top_<door_top_idx> (T)
+The `<door_rear_idx>` is the index for all doors in the rear counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+image::Grp_Door_Rear.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -394,27 +365,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Geometric center of the virtual hinge axis
 
 | *x-axis*
-| ...
+| Perpendicular to the z-axis, pointing towards the door
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Concentric and coaxial to the virtual hinge axis
 |===
 
 
-Add a figure.
+== Grp_Door_Top_<part_idx>_<door_top_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+The group contains all components of a door on the top of the vehicle (part).
 
-== Grp_Door_Bottom_<door_bottom_idx> (T)
+The `<door_top_idx>` is the index for all doors on the top counting from front to rear, starting with 0.
 
-Add a description
+image::Grp_Door_Top.svg[, 1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -423,27 +393,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Geometric center of the virtual hinge axis
 
 | *x-axis*
-| ...
+| Perpendicular to the z-axis, pointing towards the door
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Concentric and coaxial to the virtual hinge axis
 |===
 
 
-Add a figure.
+== Grp_Door_Bottom_<part_idx>_<door_bottom_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+The group contains all components of a door on the bottom of the vehicle (part).
 
-== Grp_Light_Day_Left_<day_left_idx> (T)
+The `<door_bottom_idx>` is the index for all doors on the bottom counting from front to rear, starting with 0.
 
-Add a description
+NOTE: Add a figure with a hatch on the bottom.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -452,27 +421,27 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Geometric center of the virtual hinge axis
 
 | *x-axis*
-| ...
+| Perpendicular to the z-axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Concentric and coaxial to the virtual hinge axis
 |===
 
 
-Add a figure.
+== Grp_Light_Day_Left_<part_idx>_<day_left_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a daytime running light on the left side of the vehicle (part).
 
-== Grp_Light_Day_Right_<day_right_idx> (T)
+The `<day_left_idx>` is the index for all daytime running lights on the left counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+//NOTE: Add a figure. This figure might ba applicable to all lights on the front left. I don't think we have to distinguish in the figures between the different kinds of lights.
+image::Grp_Light_Day_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -481,27 +450,27 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Day_Right_<part_idx>_<day_right_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a daytime running light on the right side of the vehicle (part).
 
-== Grp_Light_Low_Beam_Left_<low_beam_left_idx> (T)
+The `<day_left_idx>` is the index for all daytime running lights on the right counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+//NOTE: Add a figure. This figure might be applicable to all lights on the front right. I don't think we have to distinguish in the figures between the different kinds of lights.
+image::Grp_Light_Day_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -510,27 +479,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Low_Beam_Left_<part_idx>_<low_beam_left_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a low beam light on the left side of the vehicle (part).
 
-== Grp_Light_Low_Beam_Right_<low_beam_right_idx> (T)
+The `<low_beam_left_idx>` is the index for all low beam lights on the left counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+image::Grp_Light_Day_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -539,27 +507,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Low_Beam_Right_<part_idx>_<low_beam_right_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a low beam light on the right side of the vehicle (part).
 
-== Grp_Light_High_Beam_Left_<high_beam_left_idx> (T)
+The `<low_beam_right_idx>` is the index for all low beam lights on the right counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+image::Grp_Light_Day_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -568,27 +535,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_High_Beam_Left_<part_idx>_<high_beam_left_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a high beam light on the left side of the vehicle (part).
 
-== Grp_Light_High_Beam_Right_<high_beam_right_idx> (T)
+The `<high_beam_left_idx>` is the index for all high beam lights on the left counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+image::Grp_Light_Day_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -597,27 +563,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_High_Beam_Right_<part_idx>_<high_beam_right_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a high beam light on the right side of the vehicle (part).
 
-== Grp_Light_Position_Left_<position_left_idx> (T)
+The `<high_beam_right_idx>` is the index for all high beam lights on the right counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+image::Grp_Light_Day_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -626,27 +591,27 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Corner_Left_<part_idx>_<corner_left_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a corner light on the left side of the vehicle (part).
+A corner light is a typically white light for lateral illumination in the direction of an intended turn or lane change.
 
-== Grp_Light_Position_Right_<position_right_idx> (T)
+The `<corner_left_idx>` is the index for all corner lights on the left counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+image::Grp_Light_Day_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -655,27 +620,27 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission in neutral position
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a corner light on the right side of the vehicle (part).
+A corner light is a typically white light for lateral illumination in the direction of an intended turn or lane change.
 
-== Grp_Light_Park_Left_<position_left_idx> (T)
+The `<corner_right_idx>` is the index for all corner lights on the right counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+image::Grp_Light_Day_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -684,27 +649,25 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission in neutral position
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Position_Left_<part_idx>_<position_left_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a position light on the left side of the vehicle (part).
+Position lights are typically smaller, low-intensity, orange lights.
 
-== Grp_Light_Park_Right_<position_right_idx> (T)
-
-Add a description
+The `<position_left_idx>` is the index for all position lights on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -713,27 +676,25 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Position_Right_<part_idx>_<position_right_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a position light on the right side of the vehicle (part).
+Position lights are typically smaller, low-intensity, orange lights.
 
-== Grp_Light_Tail_Left_<tail_left_idx> (T)
-
-Add a description
+The `<position_right_idx>` is the index for all position lights on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -742,27 +703,24 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Park_Left_<part_idx>_<park_left_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a parking light on the left side of the vehicle (part).
 
-== Grp_Light_Tail_Right_<tail_right_idx> (T)
-
-Add a description
+The `<park_left_idx>` is the index for all parking lights on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -771,27 +729,24 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Park_Right_<part_idx>_<park_right_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a parking light on the right side of the vehicle (part).
 
-== Grp_Light_Brake_Left_<brake_left_idx> (T)
-
-Add a description
+The `<park_right_idx>` is the index for all parking lights on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -800,27 +755,24 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of an indicator light on the left side of the vehicle (part).
 
-== Grp_Light_Brake_Center_<brake_center_idx> (T)
-
-Add a description
+The `<indicator_left_idx>` is the index for all indicator lights on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -829,27 +781,25 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of an indicator light on the left side of the vehicle (part).
 
-== Grp_Light_Brake_Right_<brake_right_idx> (T)
+The `<indicator_right_idx>` is the index for all indicator lights on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-Add a description
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -858,27 +808,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_License_Plate_<part_idx>_<license_plate_light_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a license plate light of the vehicle (part).
 
-== Grp_Light_Reverse_Left_<reverse_left_idx> (T)
+The `<license_plate_light_idx>` is the index for all license plate lights counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-Add a description
+NOTE: Add a figure for the exemplary license plate light on the rear of the vehicle (part).
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -887,27 +836,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Tail_Left_<part_idx>_<tail_left_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a tail light on the left side of the vehicle (part).
 
-== Grp_Light_Reverse_Right_<reverse_right_idx> (T)
+The `<tail_left_idx>` is the index for all tail lights on the left counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+NOTE: Add a figure. This figure might be applicable to all lights on the rear left. I don't think we have to distinguish in the figures between the different kinds of lights.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -916,27 +864,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Tail_Right_<part_idx>_<tail_right_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a tail light on the right side of the vehicle (part).
 
-== Grp_Light_Fog_Left_<fog_left_idx> (T)
+The `<tail_right_idx>` is the index for all tail lights on the right counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+NOTE: Add a figure. This figure might be applicable to all lights on the rear right. I don't think we have to distinguish in the figures between the different kinds of lights.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -945,27 +892,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Brake_Left_<part_idx>_<brake_left_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a brake light on the left side of the vehicle (part).
 
-== Grp_Light_Fog_Right_<fog_right_idx> (T)
+The `<brake_left_idx>` is the index for all brake lights on the left counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+NOTE: Add figure from tail light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -974,27 +920,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Brake_Center_<part_idx>_<brake_center_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a brake light in the center of the vehicle (part).
 
-== Grp_Light_Corner_Left_<corner_left_idx> (T)
+The `<brake_center_idx>` is the index for all brake lights in the center counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1003,27 +948,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Brake_Right_<part_idx>_<brake_right_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a brake light on the right side of the vehicle (part).
 
-== Grp_Light_Corner_Right_<corner_right_idx> (T)
+The `<brake_right_idx>` is the index for all brake lights on the right counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+NOTE: Add figure from tail light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1032,27 +976,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Reverse_Left_<part_idx>_<reverse_left_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a reverse light on the left side of the vehicle (part).
 
-== Grp_Light_Indicator_Left_<indicator_left_idx> (T)
+The `<reverse_left_idx>` is the index for all reverse lights on the left counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+NOTE: Add figure from tail light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1061,27 +1004,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Reverse_Right_<part_idx>_<reverse_right_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a reverse light on the right side of the vehicle (part).
 
-== Grp_Light_Indicator_Right_<indicator_right_idx> (T)
+The `<reverse_right_idx>` is the index for all reverse lights on the right counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+NOTE: Add figure from tail light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1090,27 +1032,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Fog_Left_<part_idx>_<fog_left_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a fog light on the left side of the vehicle (part).
 
-== Grp_Number_Plate_<number_plate_idx> (T)
+The `<fog_left_idx>` is the index for all fog lights on the left counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+NOTE: Add figure from tail light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1119,27 +1060,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Fog_Right_<part_idx>_<fog_right_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a fog light on the right side of the vehicle (part).
 
-== Grp_Light_Number_Plate_<number_plate_light_idx> (T)
+The `<fog_right_idx>` is the index for all fog lights on the right counting from right to left (in positive y direction), starting with 0.
 
-Add a description
+NOTE: Add figure from tail light.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1148,27 +1088,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, usually backwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Light_Warning_<part_idx>_<warning_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a warning light of the vehicle (part).
 
-== Grp_Light_Warning_<warning_idx> (T)
+The `<warning_idx>` is the index for all warning lights counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-Add a description
+NOTE: Add a figure on an exemplary rotating warning light on the roof the vehicle (part).
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1177,27 +1116,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the light element
 
 | *x-axis*
-| ...
+| Pointing towards the main light emission, or forwards for rotating lights
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Side_Mirror_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> (T) 
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a mirror mounting on the left side of the vehicle (part).
 
-== Grp_Convertible_Top
+The `<side_mirror_mounting_left_idx>` is the index for all mirror mountings on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-Add a description
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1206,27 +1144,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Base of the mirror mounting
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Side_Mirror_View_Left_<part_idx>_<side_mirror_view_left_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a mirror without the housing on the left side of the vehicle (part).
 
-== Grp_Sensors (T)
+The `<side_mirror_view_left_idx>` is the index for all mirrors on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-Add a description
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1235,27 +1172,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the mirror surface
 
 | *x-axis*
-| ...
+| Pointing outwards from the front of the mirror
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards along the mirror face
 |===
 
 
-Add a figure.
+== Grp_Side_Mirror_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a mirror mounting on the right side of the vehicle (part).
 
-== Grp_Side_Mirror_Mounting_Left_<side_mirror_mounting_left_idx> (T) 
+The `<side_mirror_mounting_right_idx>` is the index for all mirror mountings on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-Add a description
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1264,27 +1200,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Base of the mirror mounting
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Side_Mirror_View_Right_<part_idx>_<side_mirror_view_right_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a mirror without the housing on the right side of the vehicle (part).
 
-== Grp_Side_Mirror_Mounting_Right_<side_mirror_mounting_right_idx> (T)
+The `<side_mirror_view_right_idx>` is the index for all mirrors on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-Add a description
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1293,27 +1228,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the mirror surface
 
 | *x-axis*
-| ...
+| Pointing outwards from the front of the mirror
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards along the mirror face
 |===
 
 
-Add a figure.
+== Grp_Blindspot_Mirror_Mounting_<part_idx>_<blindspot_mirror_mounting_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a blindspot mirror mounting of the vehicle (part).
 
-== Grp_Side_Mirror_View_Left_<side_mirror_view_left_idx> (T)
+The `<blindspot_mirror_mounting_idx>` is the index for all blindspot mountings counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-Add a description
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1322,27 +1256,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Base of the mirror mounting
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Blindspot_Mirror_View_<part_idx>_<blindspot_mirror_view_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a mirror without the housing of the vehicle (part).
 
-== Grp_Side_Mirror_View_Right_<side_mirror_view_right_idx> (T)
+The `<side_mirror_view_right_idx>` is the index for all blindspot mirrors counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-Add a description
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1351,27 +1284,24 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the mirror surface
 
 | *x-axis*
-| ...
+| Pointing outwards from the front of the mirror
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards along the mirror face
 |===
 
 
-Add a figure.
+== Grp_License_Plate_<part_idx>_<license_plate_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a license plate of the vehicle (part).
 
-== Grp_Blindspot_Mirror_Mounting_<blindspot_mirror_mounting_idx> (T)
-
-Add a description
+The `<license_plate_idx>` is the index for all license plates counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1380,27 +1310,22 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the plate
 
 | *x-axis*
-| ...
+| Pointing outwards from the front of the plate
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Convertible_Top_<part_idx>
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-== Grp_Blindspot_Mirror_View_<blindspot_mirror_view_idx> (T)
-
-Add a description
+This group contains all parts of a convertible top of the vehicle (part).
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1409,27 +1334,22 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the vehicle (part)
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Sensor_<part_idx>_<sensor_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-== Grp_Interior
-
-Add a description
+This group contains all parts of a perception sensor of the vehicle (part).
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1438,27 +1358,22 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the sensor
 
 | *x-axis*
-| ...
+| Pointing outwards from the sensor in the direction of its longitudinal axis
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing upwards in sensor coordinates
 |===
 
 
-Add a figure.
+== Grp_Interior_<part_idx>
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-== Grp_Interior_Static
-
-Add a description
+This group contains all elements of the interior of the vehicle (part).
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1467,27 +1382,24 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the vehicle (part)
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Interior_Static_<part_idx>
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-== Grp_Interior_Dynamic
-
-Add a description
+This group contains all static elements of the interior of the vehicle (part).
+Static elements are geometry structures that have a fixed position and orientation relative to the origin on the vehicle (part) throughout a simulation.
+They also do not change their state during the simulation, therefore lights are considered dynamic.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1496,27 +1408,24 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the vehicle (part)
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Interior_Dynamic_<part_idx>
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-== Grp_Steering_Wheel (T)
-
-Add a description
+This group contains all dynamic elements of the exterior of the vehicle (part).
+Dynamic elements are geometry structures which position and orientation relative to the origin on the vehicle (part) might change throughout a simulation.
+They may also change their state during the simulation, therefore lights are considered dynamic.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1525,27 +1434,24 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Origin of the vehicle (part)
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Steering_Wheel_<part_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all elements of the steering wheel of the vehicle (part).
 
-== Grp_Eyepoint_<eyepoint_idx> (T)
-
-Add a description
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1554,27 +1460,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the steering wheel
 
 | *x-axis*
-| ...
+| Collinear with the steering column, pointing towards the axis
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards in neutral position
 |===
 
 
-Add a figure.
+== Grp_Eyepoint_<part_idx>_<eyepoint_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains is an empty element containing the origin of an average passenger of the vehicle (part).
 
-== Grp_Rearview_Mirror_Mounting_<rearview_mirror_mounting_idx> (T)
+The `<eyepoint_idx>` is the index for all eye points counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-Add a description
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1583,27 +1488,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the eye view point
 
 | *x-axis*
-| ...
+| Collinear with the view direction
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards in neutral position
 |===
 
 
-Add a figure.
+== Grp_Rearview_Mirror_Mounting_<part_idx>_<rearview_mirror_mounting_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a rearview mirror mounting of the vehicle (part).
 
-== Grp_Rearview_Mirror_View_<rearview_mirror_view_idx> (T)
+The `<rearview_mirror_mounting_idx>` is the index for all rearview mirrors mounting counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-Add a description
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1612,27 +1516,26 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Base of the mirror mounting
 
 | *x-axis*
-| ...
+| Collinear with the vehicle longitudinal axis, pointing forwards
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
-Add a figure.
+== Grp_Rearview_Mirror_View_<part_idx>_<rearview_mirror_view_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a rearview mirror without the housing.
 
-== Grp_Seat_<seat_idx> (T)
+The `<rearview_mirror_view_idx>` is the index for all rearview mirrors counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-Add a description
+NOTE: Add a figure.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1641,20 +1544,39 @@ Add a description
 2+^| <Header>
 
 | *Origin*
-| ...
+| Center of the mirror surface
 
 | *x-axis*
-| ...
+| Pointing outwards from the front of the mirror
 
 | *y-axis*
-| ...
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| ...
+| Perpendicular to the x-axis, pointing vertically upwards along the mirror face
 |===
 
 
-Add a figure.
+== Grp_Seat_<part_idx>_<seat_idx> (T)
 
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+This group contains all parts of a seat of the vehicle (part).
+
+The `<seat_idx>` is the index for all seats counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *x-axis*
+| Collinear with the vehicle longitudinal axis, pointing in the direction of the seat
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
