@@ -327,7 +327,7 @@ The group contains all components of a door on the right side of the vehicle (pa
 
 The `<door_right_idx>` is the index for all doors on the right counting from front to rear, starting with 0.
 
-NOTE: Add a figure.
+image::Grp_Door_Right[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -356,7 +356,7 @@ This includes e.g. the trunklid.
 
 The `<door_rear_idx>` is the index for all doors in the rear counting from right to left (in positive y direction), starting with 0.
 
-NOTE: Add a figure with a trunk.
+image::Grp_Door_Rear.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -384,7 +384,7 @@ The group contains all components of a door on the top of the vehicle (part).
 
 The `<door_top_idx>` is the index for all doors on the top counting from front to rear, starting with 0.
 
-NOTE: Add a figure with a hatch on the top.
+image::Grp_Door_Top.svg[, 1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -440,7 +440,8 @@ This group contains all parts of a daytime running light on the left side of the
 
 The `<day_left_idx>` is the index for all daytime running lights on the left counting from right to left (in positive y direction), starting with 0.
 
-NOTE: Add a figure. This figure might ba applicable to all lights on the front left. I don't think we have to distinguish in the figures between the different kinds of lights.
+//NOTE: Add a figure. This figure might ba applicable to all lights on the front left. I don't think we have to distinguish in the figures between the different kinds of lights.
+image::Grp_Light_Day_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -468,7 +469,8 @@ This group contains all parts of a daytime running light on the right side of th
 
 The `<day_left_idx>` is the index for all daytime running lights on the right counting from right to left (in positive y direction), starting with 0.
 
-NOTE: Add a figure. This figure might be applicable to all lights on the front right. I don't think we have to distinguish in the figures between the different kinds of lights.
+//NOTE: Add a figure. This figure might be applicable to all lights on the front right. I don't think we have to distinguish in the figures between the different kinds of lights.
+image::Grp_Light_Day_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -496,7 +498,7 @@ This group contains all parts of a low beam light on the left side of the vehicl
 
 The `<low_beam_left_idx>` is the index for all low beam lights on the left counting from right to left (in positive y direction), starting with 0.
 
-NOTE: Add a figure from left day light.
+image::Grp_Light_Day_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -524,7 +526,7 @@ This group contains all parts of a low beam light on the right side of the vehic
 
 The `<low_beam_right_idx>` is the index for all low beam lights on the right counting from right to left (in positive y direction), starting with 0.
 
-NOTE: Add a figure from right day light.
+image::Grp_Light_Day_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -552,7 +554,7 @@ This group contains all parts of a high beam light on the left side of the vehic
 
 The `<high_beam_left_idx>` is the index for all high beam lights on the left counting from right to left (in positive y direction), starting with 0.
 
-NOTE: Add a figure from left day light.
+image::Grp_Light_Day_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -580,7 +582,7 @@ This group contains all parts of a high beam light on the right side of the vehi
 
 The `<high_beam_right_idx>` is the index for all high beam lights on the right counting from right to left (in positive y direction), starting with 0.
 
-NOTE: Add a figure from right day light.
+image::Grp_Light_Day_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -609,7 +611,7 @@ A corner light is a typically white light for lateral illumination in the direct
 
 The `<corner_left_idx>` is the index for all corner lights on the left counting from right to left (in positive y direction), starting with 0.
 
-NOTE: Add a figure.
+image::Grp_Light_Day_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -638,7 +640,7 @@ A corner light is a typically white light for lateral illumination in the direct
 
 The `<corner_right_idx>` is the index for all corner lights on the right counting from right to left (in positive y direction), starting with 0.
 
-NOTE: Add a figure.
+image::Grp_Light_Day_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
