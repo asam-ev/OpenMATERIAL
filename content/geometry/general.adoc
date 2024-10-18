@@ -1,7 +1,21 @@
 = General
 
 == Dimensions
-The unit used for object dimensions is meters.
+
+The following quantities and units are relevant for ASAM OpenMATERIAL:
+
+[cols="1,1"]
+|===
+|Name |Unit
+
+|acceleration |(m/s^2)
+|angle |(rad)
+|distance |(m)
+|mass | (kg)
+|time |(s)
+|velocity |(m/s)
+
+|===
 
 == Coordinate systems
 
