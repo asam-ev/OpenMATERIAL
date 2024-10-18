@@ -4,16 +4,17 @@
 
 The following quantities and units are relevant for ASAM OpenMATERIAL:
 
-[cols="1,1,1,1,1,1"]
+[cols="1,1"]
 |===
-|Name |displayName |PhysicalDimension.name |factor |offset |isRelative
+|Name |Unit
 
-|angle | rad | angle | 1 | 0 | false
-|angle_in_rad | ° | angle | 180/pi | 0 | false
-|length | m | length | 1 | 0 | false
-|time | s | time | 1 | 0 | false
-|acceleration | m/s^2^ \| m/s² | acceleration | 1 | 0 | false
-|mass | kg | mass | 1 | 0 | false
+|acceleration |(m/s^2)
+
+|angle |(rad)
+|distance |(m)
+|mass | (kg)
+|time |(s)
+|velocity |(m/s)
 
 |===
 
