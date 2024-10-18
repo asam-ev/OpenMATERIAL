@@ -9,7 +9,6 @@ The following quantities and units are relevant for ASAM OpenMATERIAL:
 |Name |Unit
 
 |acceleration |(m/s^2)
-
 |angle |(rad)
 |distance |(m)
 |mass | (kg)
