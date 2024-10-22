@@ -1,12 +1,16 @@
 = Model structure
 
+:home-path: ../..
+:imagesdir: {home-path}/_images
+:includedir: {home-path}/_images
+
 == Table of content
 
 [plantuml]
 ----
 legend
 Root
-|_ Grp_Vehicle_Part_<keyword>_<part_idx> (T)
+|_ Grp_Vehicle_Part_<part_idx>_<keyword> (T)
   |_ Grp_Exterior_<part_idx>
     |_ Grp_Exterior_Static_<part_idx>
     |_ Grp_Exterior_Dynamic_<part_idx>
@@ -74,7 +78,7 @@ Standard vehicles only have one part and no keyword.
 Therefore, only one Grp_Vehicle_Part exists with the name `Grp_Vehicle_Part_0`.
 
 The `<part_idx>` must be added to all sub-nodes, as multiple nodes with the same name in different vehicle parts are not possible.
-There cannot be a node `Grp_Exterior` in both `Grp_Vehicle_Part_0`` and `Grp_Vehicle_Part_1``.
+There cannot be a node `Grp_Exterior` in both `Grp_Vehicle_Part_0` and `Grp_Vehicle_Part_1`.
 
 NOTE: Define the origin of the vehicle (part)
 
