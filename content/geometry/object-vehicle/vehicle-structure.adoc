@@ -228,7 +228,7 @@ This group contains all components of the wheel assembly, that follow the steeri
 
 The indices are the same as in the parent group.
 
-This group typically does not move independently in the simulation and therefore does not have its own transforms.
+This group typically does not move independently in the simulation as it moves with the parent transforms.
 
 .<Table title>
 [%header, cols="20, 80"]

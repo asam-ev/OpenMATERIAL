@@ -7,8 +7,8 @@ The vehicle class contains all land vehicles including wheeled or tracked vehicl
 In this version of the standard, only wheeled vehicles are considered.
 
 The vehicle 3D geometry is generically structured into the node structure defined in the next section.
-This enables movement or animation of vehicle parts, such as wheels and doors, and changing the state or position of lights in a simulation.
+This enables movement or animation of vehicle parts, such as wheels and doors, and positioning external light sources in a simulation.
 Each note is an empty note representing the coordinate origin of the contained geometry.
 Meshes are to be placed in the corresponding group node.
 Not all node have to be present in every vehicle 3D model, as not all vehicle have parts to fit all groups.
-Additional group nodes may be added to facilitate additional use-cases.
+Additional group nodes may be added to facilitate additional use-cases, but they shall be integrated into the general structure of external/internal and static/dynamic groups and follow the naming convention.
