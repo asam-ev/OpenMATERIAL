@@ -1,0 +1,5 @@
+= General
+
+NOTE: Trailers and train wagons are treated as separate vehicles
+
+NOTE: The structure can be extended by custom groups for additional use-cases. Custom groups shall follow the general structure (e.g. grouping into static/dynamic, interior/exterior).

@@ -280,6 +280,7 @@ The indices are the same as in the parent group.
 
 The group contains all components of a door in the front of the vehicle (part).
 This includes e.g. the engine cover.
+This also includes the interior parts of the door, since they are moved as one unit.
 
 The `<door_front_idx>` is the index for all doors in the front counting from right to left (in positive y direction), starting with 0.
 
@@ -308,6 +309,7 @@ image::Grp_Door_Front.svg[,1100]
 == Grp_Door_Left_<part_idx>_<door_left_idx>
 
 The group contains all components of a door on the left side of the vehicle (part).
+This also includes the interior parts of the door, since they are moved as one unit.
 
 The `<door_left_idx>` is the index for all doors on the left counting from front to rear, starting with 0.
 
@@ -336,6 +338,7 @@ image::Grp_Door_Left[,1100]
 == Grp_Door_Right_<part_idx>_<door_right_idx>
 
 The group contains all components of a door on the right side of the vehicle (part).
+This also includes the interior parts of the door, since they are moved as one unit.
 
 The `<door_right_idx>` is the index for all doors on the right counting from front to rear, starting with 0.
 
@@ -365,6 +368,7 @@ image::Grp_Door_Right[,1100]
 
 The group contains all components of a door in the rear of the vehicle (part).
 This includes e.g. the trunklid.
+This also includes the interior parts of the door, since they are moved as one unit.
 
 The `<door_rear_idx>` is the index for all doors in the rear counting from right to left (in positive y direction), starting with 0.
 
@@ -393,6 +397,7 @@ image::Grp_Door_Rear.svg[,1100]
 == Grp_Door_Top_<part_idx>_<door_top_idx>
 
 The group contains all components of a door on the top of the vehicle (part).
+This also includes the interior parts of the door, since they are moved as one unit.
 
 The `<door_top_idx>` is the index for all doors on the top counting from front to rear, starting with 0.
 
@@ -421,6 +426,7 @@ image::Grp_Door_Top.svg[, 1100]
 == Grp_Door_Bottom_<part_idx>_<door_bottom_idx>
 
 The group contains all components of a door on the bottom of the vehicle (part).
+This also includes the interior parts of the door, since they are moved as one unit.
 
 The `<door_bottom_idx>` is the index for all doors on the bottom counting from front to rear, starting with 0.
 
@@ -1116,6 +1122,7 @@ NOTE: Add figure from tail light.
 == Grp_Light_Warning_<part_idx>_<warning_idx>
 
 This group contains all parts of a warning light of the vehicle (part).
+Warning lights can be all kinds of emergency lights, hazard lights, etc.
 
 The `<warning_idx>` is the index for all warning lights counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
@@ -1362,6 +1369,7 @@ This group contains all parts of a convertible top of the vehicle (part).
 == Grp_Sensor_<part_idx>_<sensor_idx>
 
 This group contains all parts of a perception sensor of the vehicle (part).
+The geometry of a sensor can alternatively be placed in the Grp_Exterior_Static.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1386,6 +1394,7 @@ This group contains all parts of a perception sensor of the vehicle (part).
 == Grp_Interior_<part_idx>
 
 This group contains all elements of the interior of the vehicle (part).
+The interior is separated form the exterior to enable disabling or exchanging it in the simulation.
 
 This group typically does not move in the simulation and therefore does not have its own transforms.
 
