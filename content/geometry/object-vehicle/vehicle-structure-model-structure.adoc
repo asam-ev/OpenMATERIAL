@@ -10,65 +10,65 @@
 ----
 legend
 Root
-|_ Grp_Vehicle_Part_<part_idx>_<keyword> (T)
+|_ Grp_Vehicle_Part_<part_idx>_<keyword>
   |_ Grp_Exterior_<part_idx>
     |_ Grp_Exterior_Static_<part_idx>
     |_ Grp_Exterior_Dynamic_<part_idx>
-      |_ Grp_Wheel_<part_idx>_<axle_idx>_<wheel_idx> (T)
+      |_ Grp_Wheel_<part_idx>_<axle_idx>_<wheel_idx>
         |_ Grp_Wheel_Steering_<part_idx>_<axle_idx>_<wheel_idx>
-        |_ Grp_Wheel_Steering_Rotating_<part_idx>_<axle_idx>_<wheel_idx> (T)
-      |_ Grp_Door_Front_<part_idx>_<door_front_idx> (T)
-      |_ Grp_Door_Left_<part_idx>_<door_left_idx> (T)
-      |_ Grp_Door_Right_<part_idx>_<door_right_idx> (T)
-      |_ Grp_Door_Rear_<part_idx>_<door_rear_idx> (T)
-      |_ Grp_Door_Top_<part_idx>_<door_top_idx> (T)
-      |_ Grp_Door_Bottom_<part_idx>_<door_bottom_idx> (T)
-      |_ Grp_Light_Day_Left_<part_idx>_<day_left_idx> (T)
-      |_ Grp_Light_Day_Right_<part_idx>_<day_right_idx> (T)
-      |_ Grp_Light_Low_Beam_Left_<part_idx>_<low_beam_left_idx> (T)
-      |_ Grp_Light_Low_Beam_Right_<part_idx>_<low_beam_right_idx> (T)
-      |_ Grp_Light_High_Beam_Left_<part_idx>_<high_beam_left_idx> (T)
-      |_ Grp_Light_High_Beam_Right_<part_idx>_<high_beam_right_idx> (T)
-      |_ Grp_Light_Corner_Left_<part_idx>_<corner_left_idx> (T)
-      |_ Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
-      |_ Grp_Light_Position_Left_<part_idx>_<position_left_idx> (T)
-      |_ Grp_Light_Position_Right_<part_idx>_<position_right_idx> (T)
-      |_ Grp_Light_Park_Left_<part_idx>_<park_left_idx> (T)
-      |_ Grp_Light_Park_Right_<part_idx>_<park_right_idx> (T)
-      |_ Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
-      |_ Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
-      |_ Grp_Light_License_Plate_<part_idx>_<license_plate_light_idx> (T)
-      |_ Grp_Light_Tail_Left_<part_idx>_<tail_left_idx> (T)
-      |_ Grp_Light_Tail_Right_<part_idx>_<tail_right_idx> (T)
-      |_ Grp_Light_Brake_Left_<part_idx>_<brake_left_idx> (T)
-      |_ Grp_Light_Brake_Center_<part_idx>_<brake_center_idx> (T)
-      |_ Grp_Light_Brake_Right_<part_idx>_<brake_right_idx> (T)
-      |_ Grp_Light_Reverse_Left_<part_idx>_<reverse_left_idx> (T)
-      |_ Grp_Light_Reverse_Right_<part_idx>_<reverse_right_idx> (T)
-      |_ Grp_Light_Fog_Left_<part_idx>_<fog_left_idx> (T)
-      |_ Grp_Light_Fog_Right_<part_idx>_<fog_right_idx> (T)
-      |_ Grp_Light_Warning_<part_idx>_<warning_idx> (T)
-      |_ Grp_Mirror_Side_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> (T)
-      |_ Grp_Mirror_Side_View_Left_<part_idx>_<side_mirror_view_left_idx> (T)
-      |_ Grp_Mirror_Side_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
-      |_ Grp_Mirror_Side_View_Right_<part_idx>_<side_mirror_view_right_idx> (T)
-      |_ Grp_Mirror_Blindspot_Mounting_<part_idx>_<blindspot_mirror_mounting_idx> (T)
-      |_ Grp_Mirror_Blindspot_View_<part_idx>_<blindspot_mirror_view_idx> (T)
-      |_ Grp_License_Plate_<part_idx>_<license_plate_idx> (T)
+        |_ Grp_Wheel_Steering_Rotating_<part_idx>_<axle_idx>_<wheel_idx>
+      |_ Grp_Door_Front_<part_idx>_<door_front_idx>
+      |_ Grp_Door_Left_<part_idx>_<door_left_idx>
+      |_ Grp_Door_Right_<part_idx>_<door_right_idx>
+      |_ Grp_Door_Rear_<part_idx>_<door_rear_idx>
+      |_ Grp_Door_Top_<part_idx>_<door_top_idx>
+      |_ Grp_Door_Bottom_<part_idx>_<door_bottom_idx>
+      |_ Grp_Light_Day_Left_<part_idx>_<day_left_idx>
+      |_ Grp_Light_Day_Right_<part_idx>_<day_right_idx>
+      |_ Grp_Light_Low_Beam_Left_<part_idx>_<low_beam_left_idx>
+      |_ Grp_Light_Low_Beam_Right_<part_idx>_<low_beam_right_idx>
+      |_ Grp_Light_High_Beam_Left_<part_idx>_<high_beam_left_idx>
+      |_ Grp_Light_High_Beam_Right_<part_idx>_<high_beam_right_idx>
+      |_ Grp_Light_Corner_Left_<part_idx>_<corner_left_idx>
+      |_ Grp_Light_Corner_Right_<part_idx>_<corner_right_idx>
+      |_ Grp_Light_Position_Left_<part_idx>_<position_left_idx>
+      |_ Grp_Light_Position_Right_<part_idx>_<position_right_idx>
+      |_ Grp_Light_Park_Left_<part_idx>_<park_left_idx>
+      |_ Grp_Light_Park_Right_<part_idx>_<park_right_idx>
+      |_ Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx>
+      |_ Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx>
+      |_ Grp_Light_License_Plate_<part_idx>_<license_plate_light_idx>
+      |_ Grp_Light_Tail_Left_<part_idx>_<tail_left_idx>
+      |_ Grp_Light_Tail_Right_<part_idx>_<tail_right_idx>
+      |_ Grp_Light_Brake_Left_<part_idx>_<brake_left_idx>
+      |_ Grp_Light_Brake_Center_<part_idx>_<brake_center_idx>
+      |_ Grp_Light_Brake_Right_<part_idx>_<brake_right_idx>
+      |_ Grp_Light_Reverse_Left_<part_idx>_<reverse_left_idx>
+      |_ Grp_Light_Reverse_Right_<part_idx>_<reverse_right_idx>
+      |_ Grp_Light_Fog_Left_<part_idx>_<fog_left_idx>
+      |_ Grp_Light_Fog_Right_<part_idx>_<fog_right_idx>
+      |_ Grp_Light_Warning_<part_idx>_<warning_idx>
+      |_ Grp_Mirror_Side_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx>
+      |_ Grp_Mirror_Side_View_Left_<part_idx>_<side_mirror_view_left_idx>
+      |_ Grp_Mirror_Side_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx>
+      |_ Grp_Mirror_Side_View_Right_<part_idx>_<side_mirror_view_right_idx>
+      |_ Grp_Mirror_Blindspot_Mounting_<part_idx>_<blindspot_mirror_mounting_idx>
+      |_ Grp_Mirror_Blindspot_View_<part_idx>_<blindspot_mirror_view_idx>
+      |_ Grp_License_Plate_<part_idx>_<license_plate_idx>
       |_ Grp_Convertible_Top_<part_idx>
-      |_ Grp_Sensor_<part_idx>_<sensor_idx> (T)
+      |_ Grp_Sensor_<part_idx>_<sensor_idx>
   |_ Grp_Interior_<part_idx>
     |_ Grp_Interior_Static_<part_idx>
     |_ Grp_Interior_Dynamic_<part_idx>
-      |_ Grp_Steering_Wheel_<part_idx> (T)
-      |_ Grp_Eyepoint_<part_idx>_<eyepoint_idx> (T)
-      |_ Grp_Mirror_Rearview_<part_idx>_Mounting_<rearview_mirror_mounting_idx> (T)
-      |_ Grp_Mirror_Rearview_View_<part_idx>_<rearview_mirror_view_idx> (T)
-      |_ Grp_Seat_<part_idx>_<seat_idx> (T)
+      |_ Grp_Steering_Wheel_<part_idx>
+      |_ Grp_Eyepoint_<part_idx>_<eyepoint_idx>
+      |_ Grp_Mirror_Rearview_<part_idx>_Mounting_<rearview_mirror_mounting_idx>
+      |_ Grp_Mirror_Rearview_View_<part_idx>_<rearview_mirror_view_idx>
+      |_ Grp_Seat_<part_idx>_<seat_idx>
 end legend
 ----
 
-== Grp_Vehicle_Part_<part_idx>_<keyword> (T) 
+== Grp_Vehicle_Part_<part_idx>_<keyword> 
 
 A vehicle part is a large structure of the vehicle (part), that moves independently from other parts of the same vehicle.
 This mainly applies to articulated vehicles, e.g. a front loader with a hinged axis or an articulated bus with a hinge in the middle.
@@ -109,6 +109,8 @@ NOTE: Add a figure visualizing e.g. a hinged bus to explain what vehicle parts a
 
 This group contains all elements of the exterior of the vehicle (part).
 
+This group typically does not move in the simulation and therefore does not have its own transforms.
+
 .<Table title>
 [%header, cols="20, 80"]
 |===
@@ -133,6 +135,8 @@ This group contains all elements of the exterior of the vehicle (part).
 This group contains all static elements of the exterior of the vehicle (part).
 Static elements are geometry structures that have a fixed position and orientation relative to the origin on the vehicle (part) throughout a simulation.
 They also do not change their state during the simulation, therefore lights are considered dynamic.
+
+This group typically does not move in the simulation and therefore does not have its own transforms.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -159,6 +163,8 @@ This group contains all dynamic elements of the exterior of the vehicle (part).
 Dynamic elements are geometry structures which position and orientation relative to the origin on the vehicle (part) might change throughout a simulation.
 They may also change their state during the simulation, therefore lights are considered dynamic.
 
+This group typically does not move in the simulation and therefore does not have its own transforms.
+
 .<Table title>
 [%header, cols="20, 80"]
 |===
@@ -179,7 +185,7 @@ They may also change their state during the simulation, therefore lights are con
 |===
 
 
-== Grp_Wheel_<part_idx>_<axle_idx>_<wheel_idx> (T)
+== Grp_Wheel_<part_idx>_<axle_idx>_<wheel_idx>
 
 This group contains all geometries of one wheel assembly.
 This may include tire, rim, brake caliper etc.
@@ -222,6 +228,8 @@ This group contains all components of the wheel assembly, that follow the steeri
 
 The indices are the same as in the parent group.
 
+This group typically does not move independently in the simulation and therefore does not have its own transforms.
+
 .<Table title>
 [%header, cols="20, 80"]
 |===
@@ -242,7 +250,7 @@ The indices are the same as in the parent group.
 |===
 
 
-== Grp_Wheel_Steering_Rotating_<part_idx>_<axle_idx>_<wheel_idx> (T)
+== Grp_Wheel_Steering_Rotating_<part_idx>_<axle_idx>_<wheel_idx>
 
 This group contains all components of the wheel assembly, that follow the steering motion as well as the rotation of the wheel, e.g. tire and rim.
 
@@ -268,7 +276,7 @@ The indices are the same as in the parent group.
 |===
 
 
-== Grp_Door_Front_<part_idx>_<door_front_idx> (T)
+== Grp_Door_Front_<part_idx>_<door_front_idx>
 
 The group contains all components of a door in the front of the vehicle (part).
 This includes e.g. the engine cover.
@@ -297,7 +305,7 @@ image::Grp_Door_Front.svg[,1100]
 |===
 
 
-== Grp_Door_Left_<part_idx>_<door_left_idx> (T)
+== Grp_Door_Left_<part_idx>_<door_left_idx>
 
 The group contains all components of a door on the left side of the vehicle (part).
 
@@ -325,7 +333,7 @@ image::Grp_Door_Left[,1100]
 |===
 
 
-== Grp_Door_Right_<part_idx>_<door_right_idx> (T)
+== Grp_Door_Right_<part_idx>_<door_right_idx>
 
 The group contains all components of a door on the right side of the vehicle (part).
 
@@ -353,7 +361,7 @@ image::Grp_Door_Right[,1100]
 |===
 
 
-== Grp_Door_Rear_<part_idx>_<door_rear_idx> (T)
+== Grp_Door_Rear_<part_idx>_<door_rear_idx>
 
 The group contains all components of a door in the rear of the vehicle (part).
 This includes e.g. the trunklid.
@@ -382,7 +390,7 @@ image::Grp_Door_Rear.svg[,1100]
 |===
 
 
-== Grp_Door_Top_<part_idx>_<door_top_idx> (T)
+== Grp_Door_Top_<part_idx>_<door_top_idx>
 
 The group contains all components of a door on the top of the vehicle (part).
 
@@ -410,7 +418,7 @@ image::Grp_Door_Top.svg[, 1100]
 |===
 
 
-== Grp_Door_Bottom_<part_idx>_<door_bottom_idx> (T)
+== Grp_Door_Bottom_<part_idx>_<door_bottom_idx>
 
 The group contains all components of a door on the bottom of the vehicle (part).
 
@@ -438,7 +446,7 @@ NOTE: Add a figure with a hatch on the bottom.
 |===
 
 
-== Grp_Light_Day_Left_<part_idx>_<day_left_idx> (T)
+== Grp_Light_Day_Left_<part_idx>_<day_left_idx>
 
 This group contains all parts of a daytime running light on the left side of the vehicle (part).
 
@@ -467,7 +475,7 @@ image::Grp_Light_Day_Left.svg[,1100]
 |===
 
 
-== Grp_Light_Day_Right_<part_idx>_<day_right_idx> (T)
+== Grp_Light_Day_Right_<part_idx>_<day_right_idx>
 
 This group contains all parts of a daytime running light on the right side of the vehicle (part).
 
@@ -496,7 +504,7 @@ image::Grp_Light_Day_Right.svg[,1100]
 |===
 
 
-== Grp_Light_Low_Beam_Left_<part_idx>_<low_beam_left_idx> (T)
+== Grp_Light_Low_Beam_Left_<part_idx>_<low_beam_left_idx>
 
 This group contains all parts of a low beam light on the left side of the vehicle (part).
 
@@ -524,7 +532,7 @@ image::Grp_Light_Day_Left.svg[,1100]
 |===
 
 
-== Grp_Light_Low_Beam_Right_<part_idx>_<low_beam_right_idx> (T)
+== Grp_Light_Low_Beam_Right_<part_idx>_<low_beam_right_idx>
 
 This group contains all parts of a low beam light on the right side of the vehicle (part).
 
@@ -552,7 +560,7 @@ image::Grp_Light_Day_Right.svg[,1100]
 |===
 
 
-== Grp_Light_High_Beam_Left_<part_idx>_<high_beam_left_idx> (T)
+== Grp_Light_High_Beam_Left_<part_idx>_<high_beam_left_idx>
 
 This group contains all parts of a high beam light on the left side of the vehicle (part).
 
@@ -580,7 +588,7 @@ image::Grp_Light_Day_Left.svg[,1100]
 |===
 
 
-== Grp_Light_High_Beam_Right_<part_idx>_<high_beam_right_idx> (T)
+== Grp_Light_High_Beam_Right_<part_idx>_<high_beam_right_idx>
 
 This group contains all parts of a high beam light on the right side of the vehicle (part).
 
@@ -608,7 +616,7 @@ image::Grp_Light_Day_Right.svg[,1100]
 |===
 
 
-== Grp_Light_Corner_Left_<part_idx>_<corner_left_idx> (T)
+== Grp_Light_Corner_Left_<part_idx>_<corner_left_idx>
 
 This group contains all parts of a corner light on the left side of the vehicle (part).
 A corner light is a typically white light for lateral illumination in the direction of an intended turn or lane change.
@@ -637,7 +645,7 @@ image::Grp_Light_Day_Left.svg[,1100]
 |===
 
 
-== Grp_Light_Corner_Right_<part_idx>_<corner_right_idx> (T)
+== Grp_Light_Corner_Right_<part_idx>_<corner_right_idx>
 
 This group contains all parts of a corner light on the right side of the vehicle (part).
 A corner light is a typically white light for lateral illumination in the direction of an intended turn or lane change.
@@ -666,7 +674,7 @@ image::Grp_Light_Day_Right.svg[,1100]
 |===
 
 
-== Grp_Light_Position_Left_<part_idx>_<position_left_idx> (T)
+== Grp_Light_Position_Left_<part_idx>_<position_left_idx>
 
 This group contains all parts of a position light on the left side of the vehicle (part).
 Position lights are typically smaller, low-intensity, orange lights.
@@ -693,7 +701,7 @@ The `<position_left_idx>` is the index for all position lights on the left count
 |===
 
 
-== Grp_Light_Position_Right_<part_idx>_<position_right_idx> (T)
+== Grp_Light_Position_Right_<part_idx>_<position_right_idx>
 
 This group contains all parts of a position light on the right side of the vehicle (part).
 Position lights are typically smaller, low-intensity, orange lights.
@@ -720,7 +728,7 @@ The `<position_right_idx>` is the index for all position lights on the right cou
 |===
 
 
-== Grp_Light_Park_Left_<part_idx>_<park_left_idx> (T)
+== Grp_Light_Park_Left_<part_idx>_<park_left_idx>
 
 This group contains all parts of a parking light on the left side of the vehicle (part).
 
@@ -746,7 +754,7 @@ The `<park_left_idx>` is the index for all parking lights on the left counting f
 |===
 
 
-== Grp_Light_Park_Right_<part_idx>_<park_right_idx> (T)
+== Grp_Light_Park_Right_<part_idx>_<park_right_idx>
 
 This group contains all parts of a parking light on the right side of the vehicle (part).
 
@@ -772,7 +780,7 @@ The `<park_right_idx>` is the index for all parking lights on the right counting
 |===
 
 
-== Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx> (T)
+== Grp_Light_Indicator_Left_<part_idx>_<indicator_left_idx>
 
 This group contains all parts of an indicator light on the left side of the vehicle (part).
 
@@ -798,7 +806,7 @@ The `<indicator_left_idx>` is the index for all indicator lights on the left cou
 |===
 
 
-== Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx> (T)
+== Grp_Light_Indicator_Right_<part_idx>_<indicator_right_idx>
 
 This group contains all parts of an indicator light on the left side of the vehicle (part).
 
@@ -825,7 +833,7 @@ The `<indicator_right_idx>` is the index for all indicator lights on the right c
 |===
 
 
-== Grp_Light_License_Plate_<part_idx>_<license_plate_light_idx> (T)
+== Grp_Light_License_Plate_<part_idx>_<license_plate_light_idx>
 
 This group contains all parts of a license plate light of the vehicle (part).
 
@@ -853,7 +861,7 @@ NOTE: Add a figure for the exemplary license plate light on the rear of the vehi
 |===
 
 
-== Grp_Light_Tail_Left_<part_idx>_<tail_left_idx> (T)
+== Grp_Light_Tail_Left_<part_idx>_<tail_left_idx>
 
 This group contains all parts of a tail light on the left side of the vehicle (part).
 
@@ -881,7 +889,7 @@ NOTE: Add a figure. This figure might be applicable to all lights on the rear le
 |===
 
 
-== Grp_Light_Tail_Right_<part_idx>_<tail_right_idx> (T)
+== Grp_Light_Tail_Right_<part_idx>_<tail_right_idx>
 
 This group contains all parts of a tail light on the right side of the vehicle (part).
 
@@ -909,7 +917,7 @@ NOTE: Add a figure. This figure might be applicable to all lights on the rear ri
 |===
 
 
-== Grp_Light_Brake_Left_<part_idx>_<brake_left_idx> (T)
+== Grp_Light_Brake_Left_<part_idx>_<brake_left_idx>
 
 This group contains all parts of a brake light on the left side of the vehicle (part).
 
@@ -937,7 +945,7 @@ NOTE: Add figure from tail light.
 |===
 
 
-== Grp_Light_Brake_Center_<part_idx>_<brake_center_idx> (T)
+== Grp_Light_Brake_Center_<part_idx>_<brake_center_idx>
 
 This group contains all parts of a brake light in the center of the vehicle (part).
 
@@ -965,7 +973,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Light_Brake_Right_<part_idx>_<brake_right_idx> (T)
+== Grp_Light_Brake_Right_<part_idx>_<brake_right_idx>
 
 This group contains all parts of a brake light on the right side of the vehicle (part).
 
@@ -993,7 +1001,7 @@ NOTE: Add figure from tail light.
 |===
 
 
-== Grp_Light_Reverse_Left_<part_idx>_<reverse_left_idx> (T)
+== Grp_Light_Reverse_Left_<part_idx>_<reverse_left_idx>
 
 This group contains all parts of a reverse light on the left side of the vehicle (part).
 
@@ -1021,7 +1029,7 @@ NOTE: Add figure from tail light.
 |===
 
 
-== Grp_Light_Reverse_Right_<part_idx>_<reverse_right_idx> (T)
+== Grp_Light_Reverse_Right_<part_idx>_<reverse_right_idx>
 
 This group contains all parts of a reverse light on the right side of the vehicle (part).
 
@@ -1049,7 +1057,7 @@ NOTE: Add figure from tail light.
 |===
 
 
-== Grp_Light_Fog_Left_<part_idx>_<fog_left_idx> (T)
+== Grp_Light_Fog_Left_<part_idx>_<fog_left_idx>
 
 This group contains all parts of a fog light on the left side of the vehicle (part).
 
@@ -1077,7 +1085,7 @@ NOTE: Add figure from tail light.
 |===
 
 
-== Grp_Light_Fog_Right_<part_idx>_<fog_right_idx> (T)
+== Grp_Light_Fog_Right_<part_idx>_<fog_right_idx>
 
 This group contains all parts of a fog light on the right side of the vehicle (part).
 
@@ -1105,7 +1113,7 @@ NOTE: Add figure from tail light.
 |===
 
 
-== Grp_Light_Warning_<part_idx>_<warning_idx> (T)
+== Grp_Light_Warning_<part_idx>_<warning_idx>
 
 This group contains all parts of a warning light of the vehicle (part).
 
@@ -1133,7 +1141,7 @@ NOTE: Add a figure on an exemplary rotating warning light on the roof the vehicl
 |===
 
 
-== Grp_Mirror_Side_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> (T) 
+== Grp_Mirror_Side_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> 
 
 This group contains all parts of a mirror mounting on the left side of the vehicle (part).
 
@@ -1161,7 +1169,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Mirror_Side_View_Left_<part_idx>_<side_mirror_view_left_idx> (T)
+== Grp_Mirror_Side_View_Left_<part_idx>_<side_mirror_view_left_idx>
 
 This group contains all parts of a mirror without the housing on the left side of the vehicle (part).
 
@@ -1189,7 +1197,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Mirror_Side_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
+== Grp_Mirror_Side_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx>
 
 This group contains all parts of a mirror mounting on the right side of the vehicle (part).
 
@@ -1217,7 +1225,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Mirror_Side_View_Right_<part_idx>_<side_mirror_view_right_idx> (T)
+== Grp_Mirror_Side_View_Right_<part_idx>_<side_mirror_view_right_idx>
 
 This group contains all parts of a mirror without the housing on the right side of the vehicle (part).
 
@@ -1245,7 +1253,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Mirror_Blindspot_Mounting_<part_idx>_<blindspot_mirror_mounting_idx> (T)
+== Grp_Mirror_Blindspot_Mounting_<part_idx>_<blindspot_mirror_mounting_idx>
 
 This group contains all parts of a blindspot mirror mounting of the vehicle (part).
 
@@ -1273,7 +1281,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Mirror_Blindspot_View_<part_idx>_<blindspot_mirror_view_idx> (T)
+== Grp_Mirror_Blindspot_View_<part_idx>_<blindspot_mirror_view_idx>
 
 This group contains all parts of a mirror without the housing of the vehicle (part).
 
@@ -1301,7 +1309,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_License_Plate_<part_idx>_<license_plate_idx> (T)
+== Grp_License_Plate_<part_idx>_<license_plate_idx>
 
 This group contains all parts of a license plate of the vehicle (part).
 
@@ -1351,7 +1359,7 @@ This group contains all parts of a convertible top of the vehicle (part).
 |===
 
 
-== Grp_Sensor_<part_idx>_<sensor_idx> (T)
+== Grp_Sensor_<part_idx>_<sensor_idx>
 
 This group contains all parts of a perception sensor of the vehicle (part).
 
@@ -1379,6 +1387,8 @@ This group contains all parts of a perception sensor of the vehicle (part).
 
 This group contains all elements of the interior of the vehicle (part).
 
+This group typically does not move in the simulation and therefore does not have its own transforms.
+
 .<Table title>
 [%header, cols="20, 80"]
 |===
@@ -1404,6 +1414,8 @@ This group contains all elements of the interior of the vehicle (part).
 This group contains all static elements of the interior of the vehicle (part).
 Static elements are geometry structures that have a fixed position and orientation relative to the origin on the vehicle (part) throughout a simulation.
 They also do not change their state during the simulation, therefore lights are considered dynamic.
+
+This group typically does not move in the simulation and therefore does not have its own transforms.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1431,6 +1443,8 @@ This group contains all dynamic elements of the exterior of the vehicle (part).
 Dynamic elements are geometry structures which position and orientation relative to the origin on the vehicle (part) might change throughout a simulation.
 They may also change their state during the simulation, therefore lights are considered dynamic.
 
+This group typically does not move in the simulation and therefore does not have its own transforms.
+
 .<Table title>
 [%header, cols="20, 80"]
 |===
@@ -1451,7 +1465,7 @@ They may also change their state during the simulation, therefore lights are con
 |===
 
 
-== Grp_Steering_Wheel_<part_idx> (T)
+== Grp_Steering_Wheel_<part_idx>
 
 This group contains all elements of the steering wheel of the vehicle (part).
 
@@ -1477,7 +1491,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Eyepoint_<part_idx>_<eyepoint_idx> (T)
+== Grp_Eyepoint_<part_idx>_<eyepoint_idx>
 
 This group contains is an empty element containing the origin of an average passenger of the vehicle (part).
 
@@ -1505,7 +1519,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Mirror_Rearview_Mounting_<part_idx>_<rearview_mirror_mounting_idx> (T)
+== Grp_Mirror_Rearview_Mounting_<part_idx>_<rearview_mirror_mounting_idx>
 
 This group contains all parts of a rearview mirror mounting of the vehicle (part).
 
@@ -1533,7 +1547,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Mirror_Rearview_View_<part_idx>_<rearview_mirror_view_idx> (T)
+== Grp_Mirror_Rearview_View_<part_idx>_<rearview_mirror_view_idx>
 
 This group contains all parts of a rearview mirror without the housing.
 
@@ -1561,7 +1575,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Seat_<part_idx>_<seat_idx> (T)
+== Grp_Seat_<part_idx>_<seat_idx>
 
 This group contains all parts of a seat of the vehicle (part).
 
