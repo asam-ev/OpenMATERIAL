@@ -48,12 +48,12 @@ Root
       |_ Grp_Light_Fog_Left_<part_idx>_<fog_left_idx> (T)
       |_ Grp_Light_Fog_Right_<part_idx>_<fog_right_idx> (T)
       |_ Grp_Light_Warning_<part_idx>_<warning_idx> (T)
-      |_ Grp_Side_Mirror_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> (T)
-      |_ Grp_Side_Mirror_View_Left_<part_idx>_<side_mirror_view_left_idx> (T)
-      |_ Grp_Side_Mirror_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
-      |_ Grp_Side_Mirror_View_Right_<part_idx>_<side_mirror_view_right_idx> (T)
-      |_ Grp_Blindspot_Mirror_Mounting_<part_idx>_<blindspot_mirror_mounting_idx> (T)
-      |_ Grp_Blindspot_Mirror_View_<part_idx>_<blindspot_mirror_view_idx> (T)
+      |_ Grp_Mirror_Side_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> (T)
+      |_ Grp_Mirror_Side_View_Left_<part_idx>_<side_mirror_view_left_idx> (T)
+      |_ Grp_Mirror_Side_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
+      |_ Grp_Mirror_Side_View_Right_<part_idx>_<side_mirror_view_right_idx> (T)
+      |_ Grp_Mirror_Blindspot_Mounting_<part_idx>_<blindspot_mirror_mounting_idx> (T)
+      |_ Grp_Mirror_Blindspot_View_<part_idx>_<blindspot_mirror_view_idx> (T)
       |_ Grp_License_Plate_<part_idx>_<license_plate_idx> (T)
       |_ Grp_Convertible_Top_<part_idx>
       |_ Grp_Sensor_<part_idx>_<sensor_idx> (T)
@@ -62,8 +62,8 @@ Root
     |_ Grp_Interior_Dynamic_<part_idx>
       |_ Grp_Steering_Wheel_<part_idx> (T)
       |_ Grp_Eyepoint_<part_idx>_<eyepoint_idx> (T)
-      |_ Grp_Rearview_Mirror_<part_idx>_Mounting_<rearview_mirror_mounting_idx> (T)
-      |_ Grp_Rearview_Mirror_View_<part_idx>_<rearview_mirror_view_idx> (T)
+      |_ Grp_Mirror_Rearview_<part_idx>_Mounting_<rearview_mirror_mounting_idx> (T)
+      |_ Grp_Mirror_Rearview_View_<part_idx>_<rearview_mirror_view_idx> (T)
       |_ Grp_Seat_<part_idx>_<seat_idx> (T)
 end legend
 ----
@@ -1133,7 +1133,7 @@ NOTE: Add a figure on an exemplary rotating warning light on the roof the vehicl
 |===
 
 
-== Grp_Side_Mirror_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> (T) 
+== Grp_Mirror_Side_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> (T) 
 
 This group contains all parts of a mirror mounting on the left side of the vehicle (part).
 
@@ -1161,7 +1161,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Side_Mirror_View_Left_<part_idx>_<side_mirror_view_left_idx> (T)
+== Grp_Mirror_Side_View_Left_<part_idx>_<side_mirror_view_left_idx> (T)
 
 This group contains all parts of a mirror without the housing on the left side of the vehicle (part).
 
@@ -1189,7 +1189,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Side_Mirror_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
+== Grp_Mirror_Side_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx> (T)
 
 This group contains all parts of a mirror mounting on the right side of the vehicle (part).
 
@@ -1217,7 +1217,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Side_Mirror_View_Right_<part_idx>_<side_mirror_view_right_idx> (T)
+== Grp_Mirror_Side_View_Right_<part_idx>_<side_mirror_view_right_idx> (T)
 
 This group contains all parts of a mirror without the housing on the right side of the vehicle (part).
 
@@ -1245,7 +1245,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Blindspot_Mirror_Mounting_<part_idx>_<blindspot_mirror_mounting_idx> (T)
+== Grp_Mirror_Blindspot_Mounting_<part_idx>_<blindspot_mirror_mounting_idx> (T)
 
 This group contains all parts of a blindspot mirror mounting of the vehicle (part).
 
@@ -1273,7 +1273,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Blindspot_Mirror_View_<part_idx>_<blindspot_mirror_view_idx> (T)
+== Grp_Mirror_Blindspot_View_<part_idx>_<blindspot_mirror_view_idx> (T)
 
 This group contains all parts of a mirror without the housing of the vehicle (part).
 
@@ -1505,7 +1505,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Rearview_Mirror_Mounting_<part_idx>_<rearview_mirror_mounting_idx> (T)
+== Grp_Mirror_Rearview_Mounting_<part_idx>_<rearview_mirror_mounting_idx> (T)
 
 This group contains all parts of a rearview mirror mounting of the vehicle (part).
 
@@ -1533,7 +1533,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Rearview_Mirror_View_<part_idx>_<rearview_mirror_view_idx> (T)
+== Grp_Mirror_Rearview_View_<part_idx>_<rearview_mirror_view_idx> (T)
 
 This group contains all parts of a rearview mirror without the housing.
 
