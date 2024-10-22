@@ -1588,7 +1588,10 @@ NOTE: Add a figure.
 
 This group contains all parts of a seat of the vehicle (part).
 
-The `<seat_idx>` is the index for all seats counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+The seat position can be used for the placement of a human 3D model as a passenger.
+Therefore, a bench is consists of multiple individual seats.
+
+The `<seat_idx>` is the index for all seats counting from from the front to the rear and right to left (in positive y direction), starting with 0.
 
 NOTE: Add a figure.
 
@@ -1597,6 +1600,9 @@ NOTE: Add a figure.
 |===
 
 2+^| <Header>
+
+| *Origin*
+| Center of the seat cushion.
 
 | *x-axis*
 | Collinear with the vehicle longitudinal axis, pointing in the direction of the seat
