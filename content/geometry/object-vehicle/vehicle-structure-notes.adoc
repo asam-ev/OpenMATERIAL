@@ -1,10 +1,5 @@
 = Notes from Miro board
 
-== General structure
-
-
-== Notes 
-
 * `convertible_top`: Indicate default mesh (open, closed etc.) in the Asset File
 * Enable switching on/off convertible top from within the asset file
 * https://github.com/KhronosGroup/glTF/issues/2005[Discussion about switch nodes in glTF]
