@@ -5,7 +5,7 @@
     "uuid": "cd9cc640249e4a1dbc95a713c4250f82",
     "asset_version": "1.0.0",
     "openmaterial_version": "1.0.0",
-    "copyright": "(C) 2024, BMW AG; (C) 2024, Persival GmbH;",
+    "copyright": "(C) 2024 BMW AG; (C) 2024 Persival GmbH;",
     "license": "MPL-2.0",
     "author": "clemens.linnhoff@persival.de",
     "model_creation_tool": "Blender",
