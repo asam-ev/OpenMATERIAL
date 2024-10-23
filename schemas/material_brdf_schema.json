@@ -74,17 +74,10 @@
         },
         "wavelengthRange": {
           "type": "array",
-          "description": "Wavelength range covered by the lookup table.",
-          "items": [
-            {
-              "type": "number",
-              "description": "Min wavelength in meters."
+          "description": "Wavelength range covered by the lookup table. The first item is the minimum wavelength in meters and the second item is the maximum wavelength in meters.",
+          "items": {
+              "type": "number"
             },
-            {
-              "type": "number",
-              "description": "Max wavelength in meters."
-            }
-           ],
            "minItems": 2,
            "maxItems": 2
         },
@@ -95,9 +88,9 @@
         },
         "lookupTable": {
           "type": "array",
+          "description": "Array of bidirectional reflectance distribution function (BRDF) values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
           "items": {
             "type": "array",
-            "description": "Array of bidirectional reflectance distribution function (BRDF) values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
             "items": [
               {
                 "type": ["number", "null"],
