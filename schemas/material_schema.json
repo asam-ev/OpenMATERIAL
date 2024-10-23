@@ -157,7 +157,7 @@
         },
         "brdfUris": {
           "type": "array",
-          "description": "Relative paths to a property lookup table files with wavelength-dependent bidirectional reflectance distribution functions.",
+          "description": "Relative paths to one or multiple property lookup table files with wavelength-dependent bidirectional reflectance distribution functions.",
           "items": {
             "type": "string",
             "pattern": ".*_brdf\\.xompt$"
