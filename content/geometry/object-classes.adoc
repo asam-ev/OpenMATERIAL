@@ -53,6 +53,7 @@ NOTE: TODO: Discuss and document
 
 NOTE: TODO: Add information on geometry classes + segmentation?
 
+
 include::object-vehicle/vehicle-index.adoc[leveloffset=+1]
 include::object-human/human-index.adoc[leveloffset=+1]
 include::object-road-network/road-index.adoc[leveloffset=+1]

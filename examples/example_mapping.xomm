@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "example_mapping",
+    "description": "This is an example for a material mapping table. This file can be shared between multiple assets.",
+    "uuid": "c492bda27c8443e6be1903115545e844",
+    "mappingVersion": "1.0.0",
+    "openMaterialVersion": "1.0.0",
+    "copyright": "(C) 2023-2024, Example Company",
+    "license": "MPL-2.0",
+    "author": "john.doe@asam.net",
+    "creationDate": "20240703T101728Z",
+  },
+  "materialMapping": [
+    ["material_red", "materials/material_a.xomp", "metal with red paint"],
+    ["rgba:10;50;255;127", "materials/material_a.xomp", "metal with red paint"],
+    ["material_green", "materials/material_b.xomp", "metal with green paint"],
+    ["material_blue", "materials/material_c.xomp", "metal with blue paint"]
+  ]
+}

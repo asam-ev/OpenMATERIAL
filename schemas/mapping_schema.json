@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Material Mapping Schema",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the material mapping."
+        },
+        "description": {
+          "type": "string",
+          "description": "This is a short description of the material mapping table. Use 2-3 sentences."
+        },
+        "uuid": {
+          "type": "string",
+          "description": "Universally unique identifier for the material mapping.",
+          "pattern": "^[a-f0-9]{32}$"
+        },
+        "mappingVersion": {
+          "type": "string",
+          "description": "Version of the mapping table.",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "openMaterialVersion": {
+          "type": "string",
+          "description": "Version of the OpenMaterial format.",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "copyright": {
+          "type": "string",
+          "description": "Copyright information with year and company."
+        },
+        "license": {
+          "type": "string",
+          "description": "License information. For common open source licenses, provide an SPDX identifier or a URL to the license."
+        },
+        "author": {
+          "type": "string",
+          "description": "Email address or name of the author. Can also be a company name."
+        },
+        "creationDate": {
+          "type": "string",
+          "description": "Date and time when the material mapping was created in ISO 8601 format.",
+          "pattern": "^\\d{8}T\\d{6}Z$"
+        }
+      },
+      "required": ["name", "uuid", "mappingVersion", "openMaterialVersion", "creationDate"]
+    },
+    "materialMapping": {
+      "type": "array",
+      "description": "Array containing material mappings.",
+      "items": {
+        "type": "array",
+        "items": [
+          {
+            "type": "string",
+            "description": "Material name or RGBA code."
+          },
+          {
+            "type": "string",
+            "description": "File path to the material.",
+            "pattern": "^(\\./|/)?([a-zA-Z0-9_\\-./]+)\\.xomp$"
+          },
+          {
+            "type": "string",
+            "description": "Description of the material."
+          }
+        ],
+        "minItems": 3,
+        "maxItems": 3
+      }
+    }
+  },
+  "required": ["metadata", "materialMapping"]
+}

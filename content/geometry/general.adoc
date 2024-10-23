@@ -1,22 +1,82 @@
 = General
 
 == Dimensions
-The unit used for object dimensions is meters.
+
+The following quantities and units are relevant for ASAM OpenMATERIAL:
+
+[cols="1,1"]
+|===
+|Name |Unit
+
+|acceleration |(m/s^2)
+|angle |(rad)
+|distance |(m)
+|mass | (kg)
+|time |(s)
+|velocity |(m/s)
+
+|===
 
 == Coordinate systems
-The local coordinate system is a right-handed coordinate system according to
-ISO 8855 with the axes pointing to the directions mentioned below. For a non-rotated
-coordinate system, the following applies:
+
+ASAM OpenMATERIAL uses the following types of coordinate systems:
+
+* World coordinate system, see <<World coordinate system>>
+* Local coordinate system, see <<Local coordinate system>>
+
+Both coordinate systems consist of three orthogonal directions associated with
+x-, y-, and z-axes, and a coordinate origin where axes meet. The coordinate
+systems are right-handed Cartesian coordinate systems according to ISO 8855. For
+a non-rotated coordinate system, the following applies:
 
 * Forward matches x-axis
 * Left matches y-axis
 * Up matches z-axis
 
-NOTE: TODO: Add images similar to OpenDRIVE? See
-https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/08_coordinate_systems/08_04_local_coordinate_system.html
+The positive rotation is assumed to be counter-clockwise ("right-hand rule").
+Orientation of objects is expressed extrinsically by the yaw, pitch, and roll
+angles derived from the Euler rotation sequence in the order z-axis, then
+y-axis, then x-axis.
+
+[#fig-coordinate-system]
+.Yaw, pitch, and roll angle in an ISO 8855:2011 compliant coordinate system
+image::fig_coordinate_system.svg[img, 1100]
+
+<<fig-coordinate-system>> shows a right-handed coordinate system.
+
+[#fig-coo-sys-rotation]
+.Coordinate system with defined rotations
+image::fig_coo_sys_rotation.svg[img, 1100]
+
+<<fig-coo-sys-rotation>> shows the positive axes and positive directions of the
+corresponding angles.
+
+[#fig-coo-sys-example]
+.Examples of rotations in coordinate system
+image::fig_coo_sys_example.svg[img, 1100]
+
+<<fig-coo-sys-example>> shows the different states of a coordinate
+system with defined rotations. x’/y’/(z’=z) denotes the coordinate system after
+rotating x/y/z with the heading angle around the z-axis. The coordinate system
+x’’/(y’’=y’)/z’’ denotes the coordinate system after rotating x’/y’/z’ with the
+pitch angle around the y’-axis. The final rotated coordinate system
+(x’’’=x’’)/y’’’/z’’’ is obtained after rotating system x’’/y’’/z’’ with roll
+angle.
+
+Each 3D model has an individual reference frame. Individual nodes of an
+object may have local coordinate frames, for example, each wheel of a vehicle.
 
 
-The coordinate system is in line with the standards ASAM OpenDRIVE,
+=== World coordinate system
+
+A coordinate system of type (x, y, z) that is fixed in the inertial reference frame of
+the simulation environment has the x~w~- and y~w~-axes parallel to the ground
+plane and the z~w~-axis pointing upward.
+
+Neither origin nor orientation of the world coordinate system are defined by the ASAM OpenMATERIAL standard. If a road network is referenced from a scenario, the world coordinate system is aligned with the inertial coordinate system present in this description.
+
+=== Local coordinate system
+The local coordinate system is in line with the standards ASAM OpenDRIVE,
 ASAM OpenSCENARIO, and ASAM OSI.
 
 NOTE: Origins of the coordinate frames for specific object classes are under
