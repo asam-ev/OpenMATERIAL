@@ -1,3 +1,0 @@
-= Model creation
-
-// Describe how the vehicle structure model is created
