@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "description": "Metadata about the material.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the material."
+        },
+        "description": {
+          "type": "string",
+          "description": "Short description of the material in 2 - 3 sentences."
+        },
+        "uuid": {
+          "type": "string",
+          "description": "Universally unique identifier for the material.",
+          "pattern": "^[a-f0-9]{32}$"
+        },
+        "materialVersion": {
+          "type": "string",
+          "description": "Version of the material.",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "creationDate": {
+          "type": "string",
+          "description": "Creation date of the material in the format YYYYMMDDTHHMMSSZ.",
+          "pattern": "^\\d{8}T\\d{6}Z$"
+        },
+        "openMaterialVersion": {
+          "type": "string",
+          "description": "Version of OpenMATERIAL.",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "copyright": {
+          "type": "string",
+          "description": "Copyright information with year and company."
+        },
+        "license": {
+          "type": "string",
+          "description": "License information. For common open source licenses, provide an SPDX identifier. For other types of licenses, provide an URL to a webpage with the license or the filename of a separately provided license file."
+        },
+        "author": {
+          "type": "string",
+          "description": "Name or email address of the author of this material. In case of multiple authors, use comma-separation. The author can also be a company name."
+        },
+        "source": {
+          "type": "string",
+          "description": "Source of the brdf data."
+        }
+      },
+      "required": [
+        "name",
+        "description",
+        "uuid",
+        "materialVersion",
+        "creationDate",
+        "openMaterialVersion",
+        "copyright",
+        "license",
+        "author",
+        "source"
+      ]
+    },
+    "brdf": { 
+      "type": "object",
+      "description": "General information about the lookup table.",
+      "properties": {
+        "typicalSensor": {
+          "type": "string",
+          "description": "Typical sensor technology this BRDF table is used for, e.g., radar, lidar, camera."
+        },
+        "wavelengthRange": {
+          "type": "array",
+          "description": "Wavelength range covered by the lookup table. The first item is the minimum wavelength in meters and the second item is the maximum wavelength in meters.",
+          "items": {
+              "type": "number"
+            },
+           "minItems": 2,
+           "maxItems": 2
+        },
+        "amplitudeUnit": {
+          "type": "string",
+          "description": "The unit of amplitude, either \"1/sr\" or \"linear\"",
+          "enum": ["1/sr", "linear"]
+        },
+        "lookupTable": {
+          "type": "array",
+          "description": "Array of bidirectional reflectance distribution function (BRDF) values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
+          "items": {
+            "type": "array",
+            "items": [
+              {
+                "type": ["number", "null"],
+                "description": "Incident elevation angle in rad."
+              },
+              {
+                "type": ["number", "null"],
+                "description": "Exit elevation angle in rad."
+              },
+              {
+                "type": ["number", "null"],
+                "description": "Exit azimuth angle in rad (for BRDFs with incident and exit vectors on the same plane as the normal, exit azimuth angle is 0.)"
+              },
+              {
+                "type": ["number", "null"],
+                "description": "Polarized plane angle in rad. This is the angle between the plane containing the incident, exit, and normal vector, and the plane of polarization."
+              },
+              {
+                "type": ["number", "null"],
+                "description": "Wavelength in meters."
+              },
+              {
+                "type": ["number", "null"],
+                "description": "Amplitude within the linearly polarized plane."
+              },
+              {
+                "type": ["number", "null"],
+                "description": "Phase within the linearly polarized plane. If the phase is not taken into account, it is null."
+              }
+            ],
+            "minItems": 7,
+            "maxItems": 7
+          }
+        }
+      },
+      "required": [
+        "typicalSensor",
+        "wavelengthRange",
+        "amplitudeUnit",
+        "lookupTable"
+      ]
+    }
+  },
+  "required": [
+    "metadata",
+    "brdf"
+  ]
+}

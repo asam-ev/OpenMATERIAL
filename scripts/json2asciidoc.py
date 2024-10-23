@@ -75,7 +75,7 @@ def generate_asciidoc_properties(properties, required_fields, level=2):
     for prop_name, prop_data in properties.items():
         heading_prefix = "=" * level  # Create heading based on level
         asciidoc_content += f"{heading_prefix} {prop_name}\n"
-        asciidoc_content += f"{prop_data.get('description', 'No description')}\n"
+        asciidoc_content += f"{prop_data.get('description', '')}\n"
 
         # Handle array types and generate description for array of arrays
         if prop_data.get('type') == "array":
@@ -87,7 +87,7 @@ def generate_asciidoc_properties(properties, required_fields, level=2):
                 asciidoc_content += generate_asciidoc_array_of_arrays(prop_data['items'], prop_data.get('description', '')) + "\n"
             else:
                 # Simple array, include the description of the array
-                asciidoc_content += f"\n{prop_data['items'].get('description', 'No description')}\n"
+                asciidoc_content += f"\n{prop_data['items'].get('description', '')}\n"
         
         # Add pattern inline and handle escaping of backslashes and curly braces
         if "pattern" in prop_data:
