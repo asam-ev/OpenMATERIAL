@@ -62,7 +62,7 @@ Root
     |_ Grp_Interior_Dynamic_<part_idx>
       |_ Grp_Steering_Wheel_<part_idx>
       |_ Grp_Eyepoint_<part_idx>_<eyepoint_idx>
-      |_ Grp_Mirror_Rearview_<part_idx>_Mounting_<rearview_mirror_mounting_idx>
+      |_ Grp_Mirror_Rearview_Mounting_<part_idx>_<rearview_mirror_mounting_idx>
       |_ Grp_Mirror_Rearview_View_<part_idx>_<rearview_mirror_view_idx>
       |_ Grp_Seat_<part_idx>_<seat_idx>
 end legend
