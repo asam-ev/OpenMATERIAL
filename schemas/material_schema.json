@@ -158,6 +158,7 @@
         "opticalPropertiesUri": {
           "type": "string",
           "description": "Relative path to a property lookup table file with optical material properties.",
+          "pattern": ".*_optical\\.xompt$"
         },
         "retroreflectivityData": {
           "type": "object",
