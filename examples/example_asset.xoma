@@ -27,6 +27,6 @@
     }
   },
   "materialTextureAssignment": [
-    ["example_material_name", "example_texture.png"]
+    ["Material_Cube", "checker_xom.png"]
   ]
 }
