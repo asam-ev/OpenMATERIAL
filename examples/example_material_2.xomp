@@ -29,6 +29,7 @@
     "densityData": {
         "density": 2699.0,
         "source": "internet: https://en.wikipedia.org/wiki/Aluminium"
-    }
+    },
+    "electromagneticPropertiesUri": "example_material_emp.xompt"
   }
 }
