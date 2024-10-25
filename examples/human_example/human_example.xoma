@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "name": "vehicle_example",
+    "description": "This is an example human asset. It demonstrates how OpenMATERIAL assets and their node structure work.",
+    "uuid": "fee894fa4ea241e481259c27a18a9eba",
+    "assetVersion": "1.0.0",
+    "openMaterialVersion": "1.0.0",
+    "copyright": "(C) 2024 Persival GmbH;",
+    "license": "MPL-2.0",
+    "author": "clemens.linnhoff@persival.de",
+    "modelCreationTool": "Blender",
+    "creationDate": "20241025T180000Z",
+    "modelingMethod": "Modeled freely without real world counterpart",
+    "validationDescription": "Since this is a fictional human, the geometry was not validated. Standard compliance was verified manually.",
+    "assetType": "object",
+    "objectClass": "human",
+    "animated": false,
+    "pbrMaterialWorkflow": "metallic",
+    "triangleCount": 0,
+    "meshCount": 0,
+    "textureResolutions": [],
+    "normalMapFormat": "OpenGL",
+    "boundingBox": {
+      "x" : [-0.5, 0.5],
+      "y" : [-0.5, 0.5],
+      "z" : [0.0, 1.8]
+    }
+  }
+}
