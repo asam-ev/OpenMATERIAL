@@ -13,7 +13,7 @@
     "modelingMethod": "Modeled according to images",
     "validationDescription": "Not validated.",
     "assetType": "object",
-    "objectClass": "vehicle",
+    "objectClass": "other",
     "animated": false,
     "pbrMaterialWorkflow": "metallic",
     "triangleCount": 100000,
