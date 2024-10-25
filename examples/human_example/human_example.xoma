@@ -18,7 +18,7 @@
     "pbrMaterialWorkflow": "metallic",
     "triangleCount": 0,
     "meshCount": 0,
-    "textureResolutions": [],
+    "textureResolutions": [""],
     "normalMapFormat": "OpenGL",
     "boundingBox": {
       "x" : [-0.5, 0.5],
