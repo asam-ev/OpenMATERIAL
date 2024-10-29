@@ -1300,8 +1300,7 @@ This group contains all parts of a mirror without the housing of the vehicle (pa
 
 The `<side_mirror_view_right_idx>` is the index for all blindspot mirrors counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-NOTE: Add a figure.
-NOTE FaKo: Not sure where blindspot mirror should be.
+image::Grp_Mirror_Blindspot_View.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
