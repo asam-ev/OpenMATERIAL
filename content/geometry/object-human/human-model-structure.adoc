@@ -1,48 +1,48 @@
 = Model structure
 
-== Table of contents
+== Structure overview
 
 [plantuml]
 ----
 legend
 Skeleton
-|_Root_Bone (T)
-  |_ Hip (T)
-    |_ Sitting_Point (T)
-    |_ Lower_Spine (T)
-      |_ Upper_Spine (T)
-        |_ Neck (T)
-          |_ Head (T)
-            |_ Eye_Right (T)
-            |_ Eye_Left (T)
-      |_ Shoulder_Right (T)
-        |_ Upper_Arm_Right (T)
-          |_ Lower_Arm_Right (T)
-            |_ Full_Hand_Right (T)
-            |_ Hand_Right (T)
-              |_ Upper_Fingers_Right (T)
-                |_ Lower_Fingers_Right (T)
-              |_ Upper_Thumb_Right (T)
-                |_ Lower_Thumb_Right (T)
-            |_ Gripping_Point_Right (T)
-      |_ Shoulder_Left (T)
-        |_ Upper_Arm_Left (T)
-          |_ Lower_Arm_Left (T)
-            |_ Full_Hand_Left (T)
-            |_ Hand_Left (T)
-              |_ Upper_Fingers_Left (T)
-                |_ Lower_Fingers_Left (T)
-              |_ Upper_Thumb_Left (T)
-                |_ Lower_Thumb_Left (T)
-            |_ Gripping_Point_Left (T)
-    |_ Upper_Leg_Right (T)
-      |_ Lower_Leg_Right (T)
-        |_ Full_Foot_Right (T)
-        |_ Standing_Point_Right (T)
-    |_ Upper_Leg_Left (T)
-      |_ Lower_Leg_Left (T)
-        |_ Full_Foot_Left (T)
-        |_ Standing_Point_Left (T)
+|_ [[../geometry/object-classes.html#_root_bone_t Root_Bone (T)]]
+  |_ [[../geometry/object-classes.html#_hip_t Hip (T)]]
+    |_ [[../geometry/object-classes.html#_lower_spine_t Lower_Spine (T)]]
+      |_ [[../geometry/object-classes.html#_upper_spine_t Upper_Spine (T)]]
+        |_ [[../geometry/object-classes.html#_neck_t Neck (T)]]
+          |_ [[../geometry/object-classes.html#_head_t Head (T)]]
+            |_ [[../geometry/object-classes.html#_eye_left_t Eye_Left (T)]]
+            |_ [[../geometry/object-classes.html#_eye_right_t Eye_Right (T)]]
+      |_ [[../geometry/object-classes.html#_shoulder_right_t Shoulder_Right (T)]]
+        |_ [[../geometry/object-classes.html#_upper_arm_right_t Upper_Arm_Right (T)]]
+          |_ [[../geometry/object-classes.html#_lower_arm_right_t Lower_Arm_Right (T)]]
+            |_ [[../geometry/object-classes.html#_full_hand_right_t Full_Hand_Right (T)]]
+            |_ [[../geometry/object-classes.html#_hand_right_t Hand_Right (T)]]
+              |_ [[../geometry/object-classes.html#_hand_right_t Upper_Fingers_Right (T)]]
+                |_ [[../geometry/object-classes.html#_lower_fingers_right_t Lower_Fingers_Right (T)]]
+              |_ [[../geometry/object-classes.html#_upper_thumb_right_t Upper_Thumb_Right (T)]]
+                |_ [[../geometry/object-classes.html#_lower_thumb_right_t Lower_Thumb_Right (T)]]
+            |_ [[../geometry/object-classes.html#_gripping_point_right_t Gripping_Point_Right (T)]]
+      |_ [[../geometry/object-classes.html#_shoulder_left_t Shoulder_Left (T)]]
+        |_ [[../geometry/object-classes.html#_upper_arm_left_t Upper_Arm_Left (T)]]
+          |_ [[../geometry/object-classes.html#_lower_arm_left_t Lower_Arm_Left (T)]]
+            |_ [[../geometry/object-classes.html#_full_hand_left_t Full_Hand_Left (T)]]
+            |_ [[../geometry/object-classes.html#_hand_left_t Hand_Left (T)]]
+              |_ [[../geometry/object-classes.html#_upper_fingers_left_t Upper_Fingers_Left (T)]]
+                |_ [[../geometry/object-classes.html#_lower_fingers_left_t Lower_Fingers_Left (T)]]
+              |_ [[../geometry/object-classes.html#_upper_thumb_left_t Upper_Thumb_Left (T)]]
+                |_ [[../geometry/object-classes.html#_lower_thumb_left_t Lower_Thumb_Left (T)]]
+            |_ [[../geometry/object-classes.html#_gripping_point_left_t Gripping_Point_Left (T)]]
+    |_ [[../geometry/object-classes.html#_sitting_point_t Sitting_Point (T)]]
+    |_ [[../geometry/object-classes.html#_upper_leg_right_t Upper_Leg_Right (T)]]
+      |_ [[../geometry/object-classes.html#_lower_leg_right_t Lower_Leg_Right (T)]]
+        |_ [[../geometry/object-classes.html#_full_foot_right_t Full_Foot_Right (T)]]
+        |_ [[../geometry/object-classes.html#_standing_point_right_t Standing_Point_Right (T)]]
+    |_ [[../geometry/object-classes.html#_upper_leg_left_t Upper_Leg_Left (T)]]
+      |_ [[../geometry/object-classes.html#_lower_leg_left_t Lower_Leg_Left (T)]]
+        |_ [[../geometry/object-classes.html#_full_foot_left_t Full_Foot_Left (T)]]
+        |_ [[../geometry/object-classes.html#_standing_point_left_t Standing_Point_Left (T)]]
 Body
 Hair
 Clothing
@@ -79,35 +79,6 @@ Add a figure.
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Hip (T)
-
-Add a description
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-
-
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-== Sitting_Point (T)
 
 Add a description
 
@@ -862,6 +833,35 @@ Add a figure.
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
 == Gripping_Point_Left (T)
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Sitting_Point (T)
 
 Add a description
 
