@@ -159,8 +159,8 @@
     },
     "materialMappingUri": {
       "type": "string",
-      "description": "Relative path to a material mapping file (.xomm).",
-          "pattern": ".*\\.xomm$"
+      "description": "Relative path to a material mapping file (.xomm). In this file, material names from the 3D model file or texture color codes from textures assigned in materialTextureAssignment are linked to OpenMATERIAL property files.",
+      "pattern": ".*\\.xomm$"
     },
     "materialTextureAssignment": {
       "type": "array",
