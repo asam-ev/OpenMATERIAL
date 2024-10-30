@@ -26,6 +26,7 @@
       "z" : [0.0, 3]
     }
   },
+  "materialMappingUri": "example_mapping.xomm",
   "materialTextureAssignment": [
     ["Material_Cube", "checker_xom.png"]
   ]
