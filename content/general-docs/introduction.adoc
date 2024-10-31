@@ -9,6 +9,11 @@ endif::[]
 == Overview
 Overview of {THIS_STANDARD}.
 
+
+=== 3D geometry and materials
+* Reference 3D geometry defines the shape, size and spatial structure of an object, focusing on its physical boundaries and surfaces as captured by sensors in a simulation. It is essential for representing how objects appear and occupy space. 
+* Materials, on the other hand, define how the surface of this geometry interacts with the environment. This includes both rendering materials that define the visual appearance, and physics-based sensor materials which determine how objects respond to sensor signals such as light, radar or LIDAR.
+
 == Conventions and notations
 
 [#sec-modal-verbs]
