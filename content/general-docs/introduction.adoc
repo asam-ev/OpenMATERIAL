@@ -9,7 +9,6 @@ endif::[]
 == Overview
 Overview of {THIS_STANDARD}.
 
-
 == Conventions and notations
 
 [#sec-modal-verbs]
