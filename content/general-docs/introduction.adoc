@@ -24,7 +24,7 @@ One fundamental step to describing the real world virtually is a full physical d
 
 It is extremely important to standardize the representation of data and attributes, such as scenarios, road data, and asset data, necessary for AD/ADAS simulation in order to promote the circulation of these data and to obtain consistent results among different systems. 
 
-Standardization activities have been conducted for scenarios and road data using OpenSCENARIO, OpenDRIVE, OpenCRG, and other standards.
+Standardization activities have been conducted for scenarios and road data using ASAM OpenSCENARIO, ASAM OpenDRIVE, ASAM OpenCRG, and other standards.
 ASAM OpenMATERIAL closes the gap to advance standardization by providing standardizes definitions of material properties and 3D geometry.
 
 === The two parts of OpenMATERIAL
@@ -51,12 +51,12 @@ A detailed definition of the https://github.com/asam-ev/OpenMATERIAL/blob/main/s
 It contains metadata, such as description, unique identifier, version information, copyright, etc.
 The asset files also contains a material texture assignment table.
 In this table, dedicated material mapping textures can be assigned to materials within a 3D data files.
-This provides to possibility to map comprehensive material properties to the geometry on a texture level.
+This provides the possibility to map comprehensive material properties to the geometry on a texture level.
 Each texel of the texture contains a 24 Bit code (8 Bit values in the rba channels).
 This code is mapped to a material property file in separate material mapping file, described in the next section.
 The material mapping file is linked in the asset file with a URI.
 
-The *material mapping file* is separated from the asset file to facilitate resuability.
+The *material mapping file* is separated from the asset file to facilitate reusability.
 This way, multiple different assets may be linked to the same material mapping and simulation systems may have a unified mapping table for all assets.
 A detailed definition of the https://github.com/asam-ev/OpenMATERIAL/blob/main/schemas/mapping_schema.json[mapping file JSON schema] is given in xref:geometry/mapping-schema.adoc[].
 It contains metadata, such as description, unique identifier, version information, etc. and the material mapping table.
