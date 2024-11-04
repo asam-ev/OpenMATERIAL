@@ -1200,7 +1200,7 @@ image::Grp_Mirror_Side_View_Left.svg[,1100]
 | Center of the mirror surface
 
 | *x-axis*
-| Pointing outwards from the front of the mirror surface
+| Pointing in the direction of the face normal of the mirror surface
 
 | *y-axis*
 | Completes the right-handed coordinate system
