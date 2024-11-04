@@ -68,7 +68,7 @@ Root
 end legend
 ----
 
-== Grp_Vehicle_Part_<part_idx>_<keyword> 
+== Grp_Vehicle_Part_<part_idx>_<keyword>
 
 A vehicle part is a large structure of the vehicle (part) that moves independently from other parts of the same vehicle.
 This mainly applies to articulated vehicles, e.g. a front loader with a hinged axis or an articulated bus with a hinge in the middle.
@@ -1154,7 +1154,7 @@ image::Grp_Light_Warning.svg[,1100]
 |===
 
 
-== Grp_Mirror_Side_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> 
+== Grp_Mirror_Side_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx>
 
 This group contains all parts of a mirror mounting on the left side of the vehicle (part).
 
@@ -1200,7 +1200,7 @@ image::Grp_Mirror_Side_View_Left.svg[,1100]
 | Center of the mirror surface
 
 | *x-axis*
-| Pointing outwards from the front of the mirror
+| Pointing outwards from the front of the mirror surface
 
 | *y-axis*
 | Completes the right-handed coordinate system
