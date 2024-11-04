@@ -30,7 +30,7 @@ Users can continue to use their familiar tools and processes to handle geometry,
 
 The ASAM OpenX standards aim for comprehensive, realistic and most of all exchangeable simulation data for the development and testing of autonomous systems.
 
-* ASAM OpenDRIVE standardizes the description of road networks. Is contains some geometric definitions of the road surface, but mainly targets a semantic description of the road.
+* ASAM OpenDRIVE standardizes the description of road networks. It contains some geometric definitions of the road surface, but mainly targets a semantic description of the road.
 The OpenMATERIAL object class "Environment" complements this description with the possibility to define a comprehensive 3D environment that is consistent with an OpenDRIVE map. 
 * ASAM OpenSCENARIO is a file format designed to describe dynamic content in driving and traffic simulators, primarily focusing on complex maneuvers involving multiple entities like vehicles and pedestrians.
 For both of these object classes, OpenMATERIAL defines node structures and metadata to seamlessly couple the definitions in OpenSCENARIO with a 3D model.
