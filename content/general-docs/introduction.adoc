@@ -33,7 +33,7 @@ ASAM OpenMATERIAL consists of two main parts:
 * *Material*: This part includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values.
 * *Geometry*: This part contains node hierarchies for different object classes. These structures use a uniform naming scheme and coordinate definitions to enable the exchange of 3D models between various simulation systems.
 
-=== How everything fits together
+=== Structure and file formats
 
 ASAM OpenMATERIAL defines various file formats for specifying assets, material properties, and the mapping between them.
 <<fig-openmaterial-overview>> illustrates these file formats and their interconnections.
