@@ -27,6 +27,8 @@
 ** xref:material/file-structure.adoc[]
 ** xref:material/material-schema.adoc[]
 ** xref:material/material-emp-schema.adoc[]
+** xref:material/material-optical-schema.adoc[]
+** xref:material/material-brdf-schema.adoc[]
 
 
 

@@ -41,3 +41,15 @@ jobs:
         with:
           schema: ./schemas/material_emp_schema.json
           file: ./examples/*_emp.xompt
+
+      - name: Validate optical material properties JSON schemas
+        uses: cardinalby/schema-validator-action@v3
+        with:
+          schema: ./schemas/material_optical_schema.json
+          file: ./examples/*_optical.xompt
+
+      - name: Validate brdf JSON schemas
+        uses: cardinalby/schema-validator-action@v3
+        with:
+          schema: ./schemas/material_brdf_schema.json
+          file: ./examples/*_brdf.xompt
