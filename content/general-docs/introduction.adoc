@@ -12,68 +12,61 @@ endif::[]
 
 === Motivation
 
-Accurate sensor simulation that can replicate physical phenomena is necessary for safety evaluation of AD/ADAS in virtual space. 
+Accurate sensor simulation that replicates physical phenomena is essential for evaluating the safety of AD/ADAS in virtual environments. 
 
-However, previous simulations were heavily limited by computational power and available memory, and while they appeared visually believable, they were not physically accurate.
-As a result, previous simulations were primarily used during the early stages of development, where precise physical modeling was not necessarily required. 
+However, previous simulations were limited by computational power and memory, making them visually believable but not physically accurate. 
+Consequently, these simulations were mainly used in the early development stages, where precise physical modeling was not necessary.
 
-With increased computing power and streamlined simulation techniques, virtual testing plays a more powerful role at all stages of system development.
-This correlates with the growing need to accurately represent the real world in simulations, so-called digital twins, especially as the need for physical sensor simulation increases. 
+With increased computing power and improved simulation techniques, virtual testing now plays a crucial role at all stages of system development. 
+This aligns with the growing need to accurately represent the real-world in simulations, known as digital twins, especially as the demand for physical sensor simulation rises. 
+A fundamental step in virtually describing the real-world is providing a full physical description of all objects, including their material properties and 3D geometries.
 
-One fundamental step to describing the real world virtually is a full physical description of all objects, including their material properties and their 3D geometries.
+Standardizing the representation of data and attributes, such as scenarios, road data, and asset data, is extremely important for AD/ADAS simulation. This promotes data circulation and ensures consistent results across different systems. 
 
-It is extremely important to standardize the representation of data and attributes, such as scenarios, road data, and asset data, necessary for AD/ADAS simulation in order to promote the circulation of these data and to obtain consistent results among different systems. 
+Standardization efforts have been made for scenarios and road data using ASAM OpenSCENARIO, ASAM OpenDRIVE, ASAM OpenCRG, and other standards. 
+ASAM OpenMATERIAL advances standardization by providing standardized definitions of material properties and 3D geometry.
 
-Standardization activities have been conducted for scenarios and road data using ASAM OpenSCENARIO, ASAM OpenDRIVE, ASAM OpenCRG, and other standards.
-ASAM OpenMATERIAL closes the gap to advance standardization by providing standardizes definitions of material properties and 3D geometry.
+=== The two parts of ASAM OpenMATERIAL
 
-=== The two parts of OpenMATERIAL
+ASAM OpenMATERIAL consists of two main parts:
 
-ASAM OpenMATERIAL has two main parts.
-
-* The Material part contains definitions and file formats to store and exchange material properties. These can either be physical properties, such as surface roughness, permittivity, index of refraction, etc., or measured data, such as wavelength and angle depended reflectance values.
-* The Geometry part contains node hierarchies of different objects classes.
-These structures contain a uniform naming scheme and coordinate definitions to enable the exchange of 3D models between different simulation systems.
+* *Material*: This part includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values.
+* *Geometry*: This part contains node hierarchies for different object classes. These structures use a uniform naming scheme and coordinate definitions to enable the exchange of 3D models between various simulation systems.
 
 === How everything fits together
 
-ASAM OpenMATERIAL specifies different file formats for the definition of assets, material properties and the mapping between the two.
-<<fig-openmaterial-overview>> visualizes the different file formats and their connections.
+ASAM OpenMATERIAL defines various file formats for specifying assets, material properties, and the mapping between them.
+<<fig-openmaterial-overview>> illustrates these file formats and their interconnections.
 
 [#fig-openmaterial-overview]
 .Overview of ASAM OpenMATERIAL file formats and data flow
 image::openmaterial_overview.png[,1100]
 
-The first touching point with an OpenMATERIAL compliant 3D model is the asset file.
+The first interaction with an ASAM OpenMATERIAL-compliant 3D model is through the asset file.
 
-The *asset file* is a JSON file with the file extension .xoma (OpenMATERIAL Asset).
+The *asset file* is a JSON file with the file extension .xoma (ASAM OpenMATERIAL Asset).
 A detailed definition of the https://github.com/asam-ev/OpenMATERIAL/blob/main/schemas/asset_schema.json[asset file JSON schema] is given in xref:geometry/asset-schema.adoc[].
-It contains metadata, such as description, unique identifier, version information, copyright, etc.
-The asset files also contains a material texture assignment table.
-In this table, dedicated material mapping textures can be assigned to materials within a 3D data files.
-This provides the possibility to map comprehensive material properties to the geometry on a texture level.
-Each texel of the texture contains a 24 Bit code (8 Bit values in the rba channels).
-This code is mapped to a material property file in separate material mapping file, described in the next section.
-The material mapping file is linked in the asset file with a URI.
+It contains metadata, such as description, unique identifier, version information, copyright details, and so on.
+It also includes a material texture assignment table, allowing dedicated material mapping textures to be assigned to materials within 3D data files.
+This enables comprehensive material properties to be mapped to the geometry at a texture level.
+Each texel of the texture contains a 24 Bit code (8 Bit values in the rba channels) which is mapped to a material property file in a separate material mapping file, linked in the asset file with a URI.
 
 The *material mapping file* is separated from the asset file to facilitate reusability.
-This way, multiple different assets may be linked to the same material mapping and simulation systems may have a unified mapping table for all assets.
+Multiple assets can link to the same material mapping, allowing simulation systems to have a unified mapping table for all assets. 
 A detailed definition of the https://github.com/asam-ev/OpenMATERIAL/blob/main/schemas/mapping_schema.json[mapping file JSON schema] is given in xref:geometry/mapping-schema.adoc[].
-It contains metadata, such as description, unique identifier, version information, etc. and the material mapping table.
-Every row in this table maps a material name of an rgb value to a material property file.
-Furthermore, each row contains a human readable description of the material.
-This enables two mapping possibilities:
+It contains metadata, such as description, unique identifier, version information, and the material mapping table.
+Each row in this table maps a material name or an RGB value to a material property file and includes a human-readable description of the material.
+This setup allows for two mapping possibilities:
 
 * Mapping one material property file per material in the 3D model.
-* Mapping a texture code of an OpenMATERIAL assignment texture to a material property file. This enables more detailed differentiation between material properties.
+* Mapping a texture code of an ASAM OpenMATERIAL assignment texture to a material property file, enabling detailed differentiation between material properties.
 
 The *material property file* contains metadata and the properties of one material.
-Similar to the mapping file, material property files may also be reused for different assets.
+Similar to the mapping file, material property files can also be reused for different assets.
 A detailed definition of the https://github.com/asam-ev/OpenMATERIAL/blob/main/schemas/material_schema.json[material file JSON schema] is given in xref:material/material-schema.adoc[].
-Some material properties depend on other simulation quantities, e.g. wavelength of the simulated sensor, temperature, humidity, etc.
-To not overload one material file with these big look-up tables, they are put into auxiliary look-up table files.
-These files are linked with URIs in the main material property file.
-The following look-up tables are defined:
+Some material properties depend on other simulation quantities, such as wavelength of the simulated sensor, temperature, and humidity.
+To avoid overloading one material file with large lookup tables, these are placed in auxiliary lookup table files linked with URIs in the main material property file. 
+The defined lookup tables include:
 
 * xref:material/material-emp-schema.adoc[Electromagnetic properties]
 * xref:material/material-optical-schema.adoc[Optical properties]
