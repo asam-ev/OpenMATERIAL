@@ -46,10 +46,19 @@ The first interaction with an ASAM OpenMATERIAL-compliant 3D model is through th
 
 The *asset file* is a JSON file with the file extension .xoma (ASAM OpenMATERIAL Asset).
 A detailed definition of the https://github.com/asam-ev/OpenMATERIAL/blob/main/schemas/asset_schema.json[asset file JSON schema] is given in xref:geometry/asset-schema.adoc[].
+The asset file shall have the same name as a corresponding 3D data file in glTF, FBX or USD format.
+To facilitate instancing, multiple asset file may be linked to a single 3D model file by adding an index separated by a dot (.) as a suffix to the asset file name.
 It contains metadata, such as description, unique identifier, version information, copyright details, and so on.
 It also includes a material texture assignment table, allowing dedicated material mapping textures to be assigned to materials within 3D data files.
 This enables comprehensive material properties to be mapped to the geometry at a texture level.
-Each texel of the texture contains a 24 Bit code (8 Bit values in the rba channels) which is mapped to a material property file in a separate material mapping file, linked in the asset file with a URI.
+Each texel of the texture contains a 32 Bit code (8 Bit values in the rgba channels) which is mapped to a material property file in a separate material mapping file, linked in the asset file with a URI.
+For the mapping currently only the rba channels are used (first 24 Bit).
+The last channel is reserved for future use.
+
+The *3D data file* is a standard 3D model file in glTF, FBX or USD format.
+Multiple formats can exist in parallel, so one asset file can have multiple 3D data files with different formats with the same name as the asset file.
+However, to be standard compliant, a simulation environment must support at least one of the named 3D data formats.
+More information about the file formats is given in is given in xref:geometry/file-format-support.adoc[].
 
 The *material mapping file* is separated from the asset file to facilitate reusability.
 Multiple assets can link to the same material mapping, allowing simulation systems to have a unified mapping table for all assets. 
