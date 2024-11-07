@@ -11,9 +11,8 @@
     "creationDate": "20240703T101728Z",
   },
   "materialMapping": [
-    ["material_red", "materials/material_a.xomp", "metal with red paint"],
-    ["rgba:10;50;255;127", "materials/material_a.xomp", "metal with red paint"],
-    ["material_green", "materials/material_b.xomp", "metal with green paint"],
-    ["material_blue", "materials/material_c.xomp", "metal with blue paint"]
+    ["Material_Sphere", "example_material.xomp", "white aluminum"],
+    ["rgb:255;0;0", "example_material.xomp", "white aluminum"],
+    ["rgb:0;11;255", "example_material_2.xomp", "black aluminum"]
   ]
 }

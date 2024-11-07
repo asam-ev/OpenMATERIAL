@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "name": "another example",
+    "description": "Second example material to showcase OpenMATERIAL assignment and mapping",
+    "uuid": "807db46a39654e5d83d43ddebad07dc3",
+    "materialVersion": "1.0.0",
+    "creationDate": "20241024T110000Z",
+    "openMaterialVersion": "1.0.0",
+    "copyright": "(C) 2023-2024, Example Company",
+    "license": "MPL-2.0",
+    "author": "john.doe@asam.net"
+  },
+  "materialProperties": {
+    "surfaceRoughness": {
+        "surfaceHeightRms": 0.5,
+        "surfaceCorrelationLength": 0.3,
+        "source": "estimate"
+    },
+    "emissivityData": {
+        "emissivityCoefficient": 0.07,
+        "temperature": 300.0,
+        "source": "internet: https://www.engineeringtoolbox.com/emissivity-coefficients-d_447.html"
+    },
+    "elasticityData": {
+        "youngsModulus": 70e9,
+        "poissonsRatio": 0.35,
+        "source": "internet: https://en.wikipedia.org/wiki/Aluminium"
+    },
+    "densityData": {
+        "density": 2699.0,
+        "source": "internet: https://en.wikipedia.org/wiki/Aluminium"
+    },
+    "electromagneticPropertiesUri": "example_material_emp.xompt"
+  }
+}

@@ -57,7 +57,7 @@
         "items": [
           {
             "type": "string",
-            "description": "Material name or RGBA code."
+            "description": "Material name or RGB code. The RGB code represents color values in an OpenMATERIAL assignment texture."
           },
           {
             "type": "string",
