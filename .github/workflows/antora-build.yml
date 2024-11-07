@@ -53,6 +53,10 @@ jobs:
         mv material-schema.adoc ../content/material/
         python3 json2asciidoc.py ../schemas/material_emp_schema.json
         mv material-emp-schema.adoc ../content/material/
+        python3 json2asciidoc.py ../schemas/material_optical_schema.json
+        mv material-optical-schema.adoc ../content/material/
+        python3 json2asciidoc.py ../schemas/material_brdf_schema.json
+        mv material-brdf-schema.adoc ../content/material/
 
     - name: Configure Pages
       uses: actions/configure-pages@v4

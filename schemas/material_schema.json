@@ -150,11 +150,6 @@
             "source"
           ]
         },
-        "electromagneticPropertiesUri": {
-          "type": "string",
-          "description": "Relative path to a property lookup table file with electromagnetic material properties.",
-          "pattern": ".*_emp\\.xompt$"
-        },
         "retroreflectivityData": {
           "type": "object",
           "description": "Information about the retro-reflective properties of the material in the visible light spectrum.",
@@ -172,6 +167,24 @@
             "coefficienOfRetroreflection",
             "source"
           ]
+        },
+        "electromagneticPropertiesUri": {
+          "type": "string",
+          "description": "Relative path to a property lookup table file with electromagnetic material properties.",
+          "pattern": ".*_emp\\.xompt$"
+        },
+        "opticalPropertiesUri": {
+          "type": "string",
+          "description": "Relative path to a property lookup table file with optical material properties.",
+          "pattern": ".*_optical\\.xompt$"
+        },
+        "brdfUris": {
+          "type": "array",
+          "description": "Relative paths to one or multiple property lookup table files with wavelength-dependent bidirectional reflectance distribution functions.",
+          "items": {
+            "type": "string",
+            "pattern": ".*_brdf\\.xompt$"
+          }
         }
       },
       "required": [
