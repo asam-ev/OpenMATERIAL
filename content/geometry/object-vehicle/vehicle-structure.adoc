@@ -49,9 +49,9 @@ Root
       |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_mounting_part_idx_blindspot_mirror_mounting_idx Grp_Mirror_Blindspot_Mounting_<part_idx>_<blindspot_mirror_mounting_idx>]]
       |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_view_part_idx_blindspot_mirror_view_idx Grp_Mirror_Blindspot_View_<part_idx>_<blindspot_mirror_view_idx>]] 
       |_ [[../geometry/object-classes.html#_grp_mirror_side_mounting_left_part_idx_side_mirror_mounting_left_id Grp_Mirror_Side_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx>]]
+        |_ [[../geometry/object-classes.html#_grp_mirror_side_view_left_part_idx_side_mirror_view_left_idx Grp_Mirror_Side_View_Left_<part_idx>_<side_mirror_view_left_idx> ]]
       |_ [[../geometry/object-classes.html#_grp_mirror_side_mounting_right_part_idx_side_mirror_mounting_right_idx Grp_Mirror_Side_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx>]]
-      |_ [[../geometry/object-classes.html#_grp_mirror_side_view_left_part_idx_side_mirror_view_left_idx Grp_Mirror_Side_View_Left_<part_idx>_<side_mirror_view_left_idx> ]]     
-      |_ [[../geometry/object-classes.html#_grp_mirror_side_view_right_part_idx_side_mirror_view_right_idx Grp_Mirror_Side_View_Right_<part_idx>_<side_mirror_view_right_idx> ]]          
+        |_ [[../geometry/object-classes.html#_grp_mirror_side_view_right_part_idx_side_mirror_view_right_idx Grp_Mirror_Side_View_Right_<part_idx>_<side_mirror_view_right_idx> ]]          
       |_ [[../geometry/object-classes.html#_grp_sensor_part_idx_sensor_idx Grp_Sensor_<part_idx>_<sensor_idx>]]
       |_ [[../geometry/object-classes.html#_grp_wheel_part_idx_axle_idx_wheel_idx Grp_Wheel_<part_idx>_<axle_idx>_<wheel_idx>]]
         |_ [[../geometry/object-classes.html#_grp_wheel_steering_part_idx_axle_idx_wheel_idx Grp_Wheel_Steering_<part_idx>_<axle_idx>_<wheel_idx>]]
@@ -1056,9 +1056,6 @@ NOTE: Add a figure. This figure might be applicable to all lights on the rear ri
 |===
 
 
-
-
-
 == Grp_Light_Warning_<part_idx>_<warning_idx>
 
 This group contains all parts of a warning light of the vehicle (part).
@@ -1088,9 +1085,39 @@ NOTE: Add a figure on an exemplary rotating warning light on the roof the vehicl
 |===
 
 
+== Grp_Mirror_Blindspot_Joint_Left_<part_idx>_<blindspot_mirror_joint_idx> 
+
+This group contains all parts of the main part a blindspot mirror that moves, when it is adjusted.
+It is a child of the corresponding mirror mounting.
+
+The `<blindspot_mirror_joint_idx>` is the index for all blindspot mirror joints counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| Joint of the movable part of a mirror
+
+| *x-axis*
+| Collinear with the vehicle longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+
 == Grp_Mirror_Blindspot_Mounting_<part_idx>_<blindspot_mirror_mounting_idx>
 
 This group contains all parts of a blindspot mirror mounting of the vehicle (part).
+It shall either be a child of the Grp_Exterior_Dynamic, if mounted directly to the vehicle body, or it shall be a child of a side door, if mounted on the door.
 
 The `<blindspot_mirror_mounting_idx>` is the index for all blindspot mountings counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
@@ -1118,9 +1145,10 @@ NOTE: Add a figure.
 
 == Grp_Mirror_Blindspot_View_<part_idx>_<blindspot_mirror_view_idx>
 
-This group contains all parts of a mirror without the housing of the vehicle (part).
+This group is an empty node indicating the view direction of the mirror glass of a blindspot mirror.
+It is a child of the corresponding mirror joint.
 
-The `<side_mirror_view_right_idx>` is the index for all blindspot mirrors counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+The `<blindspot_mirror_view_idx>` is the index for all blindspot mirrors counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
 NOTE: Add a figure.
 
@@ -1131,22 +1159,81 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Center of the mirror surface
+| Center of the mirror glass surface
 
 | *x-axis*
-| Pointing outwards from the front of the mirror
+| Pointing outwards from the mirror glass, aligned with the surface normal
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards along the mirror face
+| Perpendicular to the x-axis, pointing vertically upwards along the face of the mirror glass
+|===
+
+
+== Grp_Mirror_Side_Joint_Left_<part_idx>_<side_mirror_joint_left_idx> 
+
+This group contains all parts of the main part a mirror that moves, when it is adjusted, on the left side of the vehicle.
+It is a child of the corresponding mirror mounting.
+
+The `<side_mirror_joint_left_idx>` is the index for all mirror joint on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| Joint of the movable part of a mirror
+
+| *x-axis*
+| Collinear with the vehicle longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+
+== Grp_Mirror_Side_Joint_Right_<part_idx>_<side_mirror_joint_right_idx> 
+
+This group contains all parts of the main part a mirror that moves, when it is adjusted, on the right side of the vehicle.
+It is a child of the corresponding mirror mounting.
+
+The `<side_mirror_joint_right_idx>` is the index for all mirror joint on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| Joint of the movable part of a mirror
+
+| *x-axis*
+| Collinear with the vehicle longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 
 == Grp_Mirror_Side_Mounting_Left_<part_idx>_<side_mirror_mounting_left_idx> 
 
-This group contains all parts of a mirror mounting on the left side of the vehicle (part).
+This group contains all parts of a side mirror on the left side of the vehicle (part).
+It shall either be a child of the Grp_Exterior_Dynamic, if mounted directly to the vehicle body, or it shall be a child of a side door, if mounted on the door.
 
 The `<side_mirror_mounting_left_idx>` is the index for all mirror mountings on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
@@ -1171,9 +1258,11 @@ NOTE: Add a figure.
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
 
+
 == Grp_Mirror_Side_Mounting_Right_<part_idx>_<side_mirror_mounting_right_idx>
 
-This group contains all parts of a mirror mounting on the right side of the vehicle (part).
+This group contains all parts of a mirror on the right side of the vehicle (part).
+It shall either be a child of the Grp_Exterior_Dynamic, if mounted directly to the vehicle body, or it shall be a child of a side door, if mounted on the door.
 
 The `<side_mirror_mounting_right_idx>` is the index for all mirror mountings on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
@@ -1199,10 +1288,10 @@ NOTE: Add a figure.
 |===
 
 
-
 == Grp_Mirror_Side_View_Left_<part_idx>_<side_mirror_view_left_idx>
 
-This group contains all parts of a mirror without the housing on the left side of the vehicle (part).
+This group is an empty node indicating the view direction of the mirror glass of a side mirror on the left side of the vehicle (part).
+It is a child of the corresponding mirror joint.
 
 The `<side_mirror_view_left_idx>` is the index for all mirrors on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
@@ -1215,23 +1304,23 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Center of the mirror surface
+| Center of the mirror glass surface
 
 | *x-axis*
-| Pointing outwards from the front of the mirror
+| Pointing outwards from the mirror glass, aligned with the surface normal
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards along the mirror face
+| Perpendicular to the x-axis, pointing vertically upwards along the face of the mirror glass
 |===
-
 
 
 == Grp_Mirror_Side_View_Right_<part_idx>_<side_mirror_view_right_idx>
 
-This group contains all parts of a mirror without the housing on the right side of the vehicle (part).
+This group is an empty node indicating the view direction of the mirror glass of a side mirror on the right side of the vehicle (part).
+It is a child of the corresponding mirror joint.
 
 The `<side_mirror_view_right_idx>` is the index for all mirrors on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
@@ -1244,19 +1333,17 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Center of the mirror surface
+| Center of the mirror glass surface
 
 | *x-axis*
-| Pointing outwards from the front of the mirror
+| Pointing outwards from the mirror glass, aligned with the surface normal
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards along the mirror face
+| Perpendicular to the x-axis, pointing vertically upwards along the face of the mirror glass
 |===
-
-
 
 
 == Grp_Sensor_<part_idx>_<sensor_idx>
@@ -1483,6 +1570,35 @@ NOTE: Add a figure.
 |===
 
 
+== Grp_Mirror_Rearview_Joint_Left_<part_idx>_<rearview_mirror_joint_idx> 
+
+This group contains all parts of the main part a rearview mirror that moves, when it is adjusted.
+It is a child of the corresponding mirror mounting.
+
+The `<rearview_mirror_joint_idx>` is the index for all rearview mirror joints counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+
+NOTE: Add a figure.
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| Joint of the movable part of a mirror
+
+| *x-axis*
+| Collinear with the vehicle longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+
 == Grp_Mirror_Rearview_Mounting_<part_idx>_<rearview_mirror_mounting_idx>
 
 This group contains all parts of a rearview mirror mounting of the vehicle (part).
@@ -1513,7 +1629,8 @@ NOTE: Add a figure.
 
 == Grp_Mirror_Rearview_View_<part_idx>_<rearview_mirror_view_idx>
 
-This group contains all parts of a rearview mirror without the housing.
+This group is an empty node indicating the view direction of the mirror glass of a rearview mirror.
+It is a child of the corresponding mirror joint.
 
 The `<rearview_mirror_view_idx>` is the index for all rearview mirrors counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
@@ -1526,16 +1643,16 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Center of the mirror surface
+| Center of the mirror glass surface
 
 | *x-axis*
-| Pointing outwards from the front of the mirror
+| Pointing outwards from the mirror glass, aligned with the surface normal
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards along the mirror face
+| Perpendicular to the x-axis, pointing vertically upwards along the face of the mirror glass
 |===
 
 
