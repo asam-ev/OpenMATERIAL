@@ -1142,6 +1142,7 @@ This group contains all parts of a blindspot mirror mounting of the vehicle (par
 It shall either be a child of the Grp_Exterior_Dynamic, if mounted directly to the vehicle body, or it shall be a child of a side door, if mounted on the door.
 
 The `<blindspot_mirror_mounting_idx>` is the index for all blindspot mountings counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+The index is used consistently, whether the mirror is mounted on the door or the vehicle body.
 
 NOTE: Add a figure.
 
@@ -1258,6 +1259,7 @@ This group contains all parts of a side mirror on the left side of the vehicle (
 It shall either be a child of the Grp_Exterior_Dynamic, if mounted directly to the vehicle body, or it shall be a child of a side door, if mounted on the door.
 
 The `<side_mirror_mounting_left_idx>` is the index for all mirror mountings on the left counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+The index is used consistently, whether the mirror is mounted on the door or the vehicle body.
 
 NOTE: Add a figure.
 
@@ -1287,6 +1289,7 @@ This group contains all parts of a mirror on the right side of the vehicle (part
 It shall either be a child of the Grp_Exterior_Dynamic, if mounted directly to the vehicle body, or it shall be a child of a side door, if mounted on the door.
 
 The `<side_mirror_mounting_right_idx>` is the index for all mirror mountings on the right counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+The index is used consistently, whether the mirror is mounted on the door or the vehicle body.
 
 NOTE: Add a figure.
 
@@ -1626,6 +1629,7 @@ NOTE: Add a figure.
 This group contains all parts of a rearview mirror mounting of the vehicle (part).
 
 The `<rearview_mirror_mounting_idx>` is the index for all rearview mirrors mounting counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
+The index is used consistently, whether the mirror is mounted on the door or the vehicle body.
 
 NOTE: Add a figure.
 
