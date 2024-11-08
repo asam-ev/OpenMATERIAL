@@ -752,7 +752,7 @@ This group contains all parts of a license plate light of the vehicle (part).
 
 The `<license_plate_light_idx>` is the index for all license plate lights counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-NOTE: Add a figure for the exemplary license plate light on the rear of the vehicle (part).
+image::Grp_Light_License_Plate.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1065,7 +1065,7 @@ Warning lights can be all kinds of emergency lights, hazard lights, etc.
 
 The `<warning_idx>` is the index for all warning lights counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-NOTE: Add a figure on an exemplary rotating warning light on the roof the vehicle (part).
+image::Grp_Light_Warning.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1093,7 +1093,7 @@ This group contains all parts of a blindspot mirror mounting of the vehicle (par
 
 The `<blindspot_mirror_mounting_idx>` is the index for all blindspot mountings counting from right to left (in positive y direction), and from the front to the rear, starting with 0.
 
-NOTE: Add a figure.
+image::Grp_Mirror_Blindspot_Mounting.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
