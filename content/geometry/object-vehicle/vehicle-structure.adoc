@@ -416,7 +416,7 @@ This group contains all parts of a brake light on the left side of the vehicle (
 
 The `<brake_left_idx>` is the index for all brake lights on the left counting from right to left (in positive y direction), starting with 0.
 
-NOTE: Add figure from tail light.
+image::Grp_Light_Tail_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -445,7 +445,7 @@ This group contains all parts of a brake light on the right side of the vehicle 
 
 The `<brake_right_idx>` is the index for all brake lights on the right counting from right to left (in positive y direction), starting with 0.
 
-NOTE: Add figure from tail light.
+image::Grp_Light_Tail_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
