@@ -95,7 +95,7 @@ end legend
 
 This group contains all parts of the vehicle's exterior. 
 
-Typically, these parts do not move in the simulation and therefore do not have their own transforms.
+Typically, this group do not move in the simulation and therefore do not have their own transforms.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -123,7 +123,7 @@ This group contains all dynamic parts of the vehicle's exterior.
 Dynamic parts are geometric structures whose position and orientation relative to the vehicle's origin may change throughout a simulation.
 They may also change their state during the simulation, which is why lights are considered dynamic.
 
-Typically, these parts do not move in the simulation and therefore do not have their own transforms.
+Typically, this group do not move in the simulation and therefore do not have their own transforms.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -146,7 +146,7 @@ Typically, these parts do not move in the simulation and therefore do not have t
 
 == Grp_Convertible_Top
 
-This group contains all parts of the vehicle's convertible top.
+This group contains all parts of a vehicle's convertible top.
 
 .<Table title>
 [%header, cols="20, 80"]
