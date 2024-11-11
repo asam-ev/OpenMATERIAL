@@ -72,19 +72,19 @@
         "items": [
           {
             "type": ["number", "null"],
-            "description": "Wavelength in meters."
+            "description": "Wavelength of radiation in meters."
           },
           {
             "type": ["number", "null"],
-            "description": "Temperature in Kelvin."
+            "description": "Temperature of material in Kelvin."
           },
           {
             "type": ["number", "null"],
-            "description": "Real part of index of refraction."
+            "description": "Real part of index of refraction of material."
           },
           {
             "type": ["number", "null"],
-            "description": "Imaginary part of index of refraction."
+            "description": "Imaginary part of index of refraction of material."
           }
         ],
         "minItems": 4,

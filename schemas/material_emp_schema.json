@@ -72,31 +72,31 @@
         "items": [
           {
             "type": ["number", "null"],
-            "description": "Wavelength in meters."
+            "description": "Wavelength of radiation in meters."
           },
           {
             "type": ["number", "null"],
-            "description": "Temperature in Kelvin."
+            "description": "Temperature of meterial in Kelvin."
           },
           {
             "type": ["number", "null"],
-            "description": "Humidity in percent."
+            "description": "Humidity of material in percent."
           },
           {
             "type": ["number", "null"],
-            "description": "Real part of complex permeability."
+            "description": "Real part of complex permeability of material."
           },
           {
             "type": ["number", "null"],
-            "description": "Imaginary part of complex permeability."
+            "description": "Imaginary part of complex permeability of material."
           },
           {
             "type": ["number", "null"],
-            "description": "Real part of complex permittivity."
+            "description": "Real part of complex permittivity of material."
           },
           {
             "type": ["number", "null"],
-            "description": "Imaginary part of complex permittivity."
+            "description": "Imaginary part of complex permittivity of material."
           }
         ],
         "minItems": 7,

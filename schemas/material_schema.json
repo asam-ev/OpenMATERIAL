@@ -69,11 +69,11 @@
           "properties": {
             "surfaceHeightRms": {
               "type": "number",
-              "description": "Root mean square of surface height deviations."
+              "description": "Root mean square of surface height deviations (RMS-Roughness, being a vertical measure of roughness) in meters."
             },
             "surfaceCorrelationLength": {
               "type": "number",
-              "description": "Correlation length of the surface height deviations."
+              "description": "Correlation length of the surface height deviations in meters (distance after autocorrelation function has dropped to 1/e, being a horizontal measure of roughness. In some cases another value than 1/e is being used regarding the autocorrelation function. If so, please take a note in 'source'.)"
             },
             "source": {
               "type": "string",
@@ -92,11 +92,11 @@
           "properties": {
             "emissivityCoefficient": {
               "type": "number",
-              "description": "Emissivity describes the ability to emit energy as thermal radiation. Given as the fraction of thermal radiation emitted by a surface relative to the radiation emitted by an ideal black body at the same temperature. Here the hemispherical total emissivity is used which considers full emission over all wavelengths, directions and polarization for a given particular temperature: ε(T)"
+              "description": "Emissivity describes the ability to emit energy as thermal radiation. Given as the fraction of thermal radiation emitted by a surface relative to the radiation emitted by an ideal black body at the same temperature. Here the hemispherical total emissivity is used which considers full emission over all wavelengths, directions and polarization for a given particular temperature: ε(T)."
             },
             "temperature": {
               "type": "number",
-              "description": "Temperature in Kelvin [K] at which the emissivity is measured"
+              "description": "Temperature of material in Kelvin [K] at which the emissivity is measured."
             },
             "source": {
               "type": "string",
@@ -156,7 +156,7 @@
           "properties": {
             "coefficientOfRetroreflection": {
               "type": "number",
-              "description": "Coefficient of retro-reflection in cd lx^-1 m^-2."
+              "description": "Coefficient of retro-reflection in cd lx^-1 m^-2. In case only the minimum value of the coefficient is available please take a note in 'source'."
             },
             "source": {
               "type": "string",
