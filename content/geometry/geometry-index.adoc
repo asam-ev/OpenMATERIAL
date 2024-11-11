@@ -1,9 +1,9 @@
 = Geometry
 
-include::Introduction.adoc[leveloffset=+1]
-include::General.adoc[leveloffset=+1]
-include::object-classes.adoc[leveloffset=+1]
-include::File_format_support.adoc[leveloffset=+1]
-include::metadata.adoc[leveloffset=+1]
-include::Performance.adoc[leveloffset=+1]
+* xref:geometry/introduction.adoc[leveloffset=+1]
+* xref:geometry/general.adoc[leveloffset=+1]
+* xref:geometry/object-classes.adoc[leveloffset=+1]
+* xref:geometry/file-format-support.adoc[leveloffset=+1]
+* xref:geometry/asset-schema.adoc[leveloffset=+1]
+* xref:geometry/mapping-schema.adoc[leveloffset=+1]
 

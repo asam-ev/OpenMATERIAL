@@ -21,23 +21,34 @@ In alteration to the regular https://www.asam.net/license[license terms], ASAM a
 // DO NOT CHANGE!!!
 
 
-:antora_mapping: true
 ifndef::use-antora-rules[]
 
 [preface]
-include::general_docs/foreword.adoc[leveloffset=+1]
+include::general-docs/foreword.adoc[leveloffset=+1]
 [preface]
-include::general_docs/introduction.adoc[leveloffset=+1]
+include::general-docs/introduction.adoc[leveloffset=+1]
 
 :sectnums:
-include::general_docs/scope.adoc[leveloffset=+1]
-include::general_docs/normative_references.adoc[leveloffset=+1]
-include::general_docs/abbreviations.adoc[leveloffset=+1]
-include::general_docs/backward_compatibility.adoc[leveloffset=+1]
-include::terms_and_definitions/terms_and_definitions.adoc[leveloffset=+1]
-include::use_cases/use_cases.adoc[leveloffset=+1]
-include::geometry/geometry-index.adoc[leveloffset=+1]
-include::material/general-structure-index.adoc[leveloffset=+1]
+include::general-docs/scope.adoc[leveloffset=+1]
+include::general-docs/normative-references.adoc[leveloffset=+1]
+include::general-docs/abbreviations.adoc[leveloffset=+1]
+include::general-docs/backward-compatibility.adoc[leveloffset=+1]
+include::terms-and-definitions/terms-and-definitions.adoc[leveloffset=+1]
+include::use-cases/use-cases.adoc[leveloffset=+1]
+= Geometry
+include::geometry/introduction.adoc[leveloffset=+1]
+include::geometry/general.adoc[leveloffset=+1]
+include::geometry/object-classes.adoc[leveloffset=+1]
+include::geometry/file-format-support.adoc[leveloffset=+1]
+include::geometry/asset-schema.adoc[leveloffset=+1]
+include::geometry/mapping-schema.adoc[leveloffset=+1]
+= Material
+include::material/introduction.adoc[leveloffset=+1]
+include::material/file-structure.adoc[leveloffset=+1]
+include::material/material-schema.adoc[leveloffset=+1]
+include::material/material-emp-schema.adoc[leveloffset=+1]
+include::material/material-optical-schema.adoc[leveloffset=+1]
+include::material/material-brdf-schema.adoc[leveloffset=+1]
 
 
 
@@ -51,9 +62,8 @@ include::material/general-structure-index.adoc[leveloffset=+1]
 include::bibliography.adoc[leveloffset=+1]
 
 :sectnums!:
-include::loft/list_of_figures.adoc[leveloffset=+1]
+include::loft/list-of-figures.adoc[leveloffset=+1]
 
 :sectnums!:
-include::loft/list_of_tables.adoc[leveloffset=+1]
+include::loft/list-of-tables.adoc[leveloffset=+1]
 endif::[]
-:!antora_mapping:

@@ -1,0 +1,5 @@
+
+// Deprecated, use 'OpenMATERIAL/content/nav-openmaterial.adoc' instead.
+
+// DO NOT DELETE! This is a "dummy-file" needed for the antora-extension that generates the navigation file with numbered headings. It is overwritten during processing, but still needed, as the processing fails when it's removed.
+

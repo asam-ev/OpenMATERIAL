@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "name": "aluminum",
-    "description": "aluminum material",
-    "uuid": "fe7d707050e545f19f2658ecacb6ac5e",
+    "name": "another example",
+    "description": "Second example material to showcase OpenMATERIAL assignment and mapping",
+    "uuid": "807db46a39654e5d83d43ddebad07dc3",
     "materialVersion": "1.0.0",
-    "creationDate": "20240703T101728Z",
+    "creationDate": "20241024T110000Z",
     "openMaterialVersion": "1.0.0",
     "copyright": "(C) 2023-2024, Example Company",
     "license": "MPL-2.0",
@@ -12,8 +12,8 @@
   },
   "materialProperties": {
     "surfaceRoughness": {
-        "surfaceHeightRms": 0.8,
-        "surfaceCorrelationLength": 1.0,
+        "surfaceHeightRms": 0.5,
+        "surfaceCorrelationLength": 0.3,
         "source": "estimate"
     },
     "emissivityData": {
@@ -30,12 +30,6 @@
         "density": 2699.0,
         "source": "internet: https://en.wikipedia.org/wiki/Aluminium"
     },
-    "electromagneticPropertiesUri": "example_material_emp.xompt",
-    "opticalPropertiesUri": "example_material_optical.xompt",
-    "brdfUris": [
-      "example_material_camera_brdf.xompt",
-      "example_material_lidar_brdf.xompt",
-      "example_material_radar_brdf.xompt"
-    ]
+    "electromagneticPropertiesUri": "example_material_emp.xompt"
   }
 }

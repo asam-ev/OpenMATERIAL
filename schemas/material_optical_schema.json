@@ -64,11 +64,11 @@
         "source"
       ]
     },
-    "electromagneticProperties": {
+    "opticalProperties": {
       "type": "array",
-      "description": "Array of electromagnetic property values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
       "items": {
         "type": "array",
+        "description": "Array of optical property values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
         "items": [
           {
             "type": ["number", "null"],
@@ -80,32 +80,20 @@
           },
           {
             "type": ["number", "null"],
-            "description": "Humidity in percent."
+            "description": "Real part of index of refraction."
           },
           {
             "type": ["number", "null"],
-            "description": "Real part of complex permeability."
-          },
-          {
-            "type": ["number", "null"],
-            "description": "Imaginary part of complex permeability."
-          },
-          {
-            "type": ["number", "null"],
-            "description": "Real part of complex permittivity."
-          },
-          {
-            "type": ["number", "null"],
-            "description": "Imaginary part of complex permittivity."
+            "description": "Imaginary part of index of refraction."
           }
         ],
-        "minItems": 7,
-        "maxItems": 7
+        "minItems": 4,
+        "maxItems": 4
       }
     }
   },
   "required": [
     "metadata",
-    "electromagneticProperties"
+    "opticalProperties"
   ]
 }

@@ -1,29 +1,28 @@
 = Model structure
 
-== Table of contents
+== Structure overview
 
 [plantuml]
 ----
 legend
-Road_Network (T)
-|_ Road_<road_idx>
-  |_ Lane_<lane_idx>
-    |_ Lane_Marking_<lane_marking_idx>
-  |_ Object_<object_idx> (T)
-  |_ Signal_<signal_idx> (T) 
-    |_ Sign_<sign_idx> (T)
-    |_ Bulb_<bulb_idx> (T)
-|_ Junction_<junction_idx>
-  |_ Junction_Connection_<junction_connection_idx>
-|_ Direct_Junction_<direct_junction_idx>
-  |_ Direct_Junction_Connection_<direct_junction_connection_idx>
-|_ Virtual_Junction_<virtual_junction_idx>
-  |_ Virtual_Junction_Connection_<virtual_junction_connection_idx>
+[[../geometry/object-classes.html#_road_network_t Road_Network (T)]]
+|_ [[../geometry/object-classes.html#_direct_junction_direct_junction_idx Direct_Junction_<direct_junction_idx>]]
+  |_ [[../geometry/object-classes.html#_direct_junction_connection_direct_junction_connection_idx Direct_Junction_Connection_<direct_junction_connection_idx>]]
+|_ [[../geometry/object-classes.html#_junction_junction_idx Junction_<junction_idx>]]
+  |_ [[../geometry/object-classes.html#_junction_connection_junction_connection_idx Junction_Connection_<junction_connection_idx>]]
+|_ [[../geometry/object-classes.html#_road_road_idx Road_<road_idx>]]
+  |_ [[../geometry/object-classes.html#_lane_lane_idx Lane_<lane_idx>]]
+    |_ [[../geometry/object-classes.html#_lane_marking_lane_marking_idx Lane_Marking_<lane_marking_idx>]]
+  |_ [[../geometry/object-classes.html#_object_object_idx_t Object_<object_idx> (T)]]
+  |_ [[../geometry/object-classes.html#_signal_signal_idx_t Signal_<signal_idx> (T)]]
+    |_ [[../geometry/object-classes.html#_bulb_bulb_idx_t Bulb_<bulb_idx> (T)]]
+    |_ [[../geometry/object-classes.html#_sign_t Sign_<sign_idx> (T)]]
+|_ [[../geometry/object-classes.html#_virtual_junction_virtual_junction_idx Virtual_Junction_<virtual_junction_idx>]]
+  |_ [[../geometry/object-classes.html#_virtual_junction_connection_virtual_juncion_connection_idx Virtual_Junction_Connection_<virtual_junction_connection_idx>]]
 end legend
 ----
 
 == Road_Network (T)
-
 
 Add a description
 
@@ -51,6 +50,123 @@ Add a figure.
 
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Direct_Junction_<direct_junction_idx>
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Direct_Junction_Connection_<direct_junction_connection_idx>
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Junction_<junction_idx>
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
+== Junction_Connection_<junction_connection_idx>
+
+Add a description
+
+.<Table title>
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| ...
+
+| *x-axis*
+| ...
+
+| *y-axis*
+| ...
+
+| *z-axis*
+| ...
+|===
+
+
+Add a figure.
+
+.<Figure caption>
+//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+
 
 == Road_<road_idx>
 
@@ -202,36 +318,6 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Sign (T)
-
-
-Add a description
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-
-
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
 == Bulb_<bulb_idx> (T)
 
 
@@ -262,94 +348,8 @@ Add a figure.
 .<Figure caption>
 //image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
 
-== Junction_<junction_idx>
+== Sign (T)
 
-Add a description
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-
-
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-== Junction_Connection_<junction_connection_idx>
-
-Add a description
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-
-
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-== Direct_Junction_<direct_junction_idx>
-
-Add a description
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-
-
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-== Direct_Junction_Connection_<direct_junction_connection_idx>
 
 Add a description
 
