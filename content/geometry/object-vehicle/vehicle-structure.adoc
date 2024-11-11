@@ -186,7 +186,7 @@ NOTE: Add a figure with a hatch on the bottom.
 | Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Perpendicular to the z-axis, pointing forwards
+| Perpendicular to the z-axis, pointing towards the door
 
 | *y-axis*
 | Completes the right-handed coordinate system
