@@ -123,7 +123,7 @@ This group contains all dynamic parts of the vehicle's exterior.
 Dynamic parts are geometric structures whose position and orientation relative to the vehicle's origin may change throughout a simulation.
 They may also change their state during the simulation, which is why lights are considered dynamic.
 
-Typically, this group do not move in the simulation and therefore do not have their own transforms.
+Typically, this group does not move in the simulation and therefore does not have its own transforms.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1265,7 +1265,7 @@ NOTE: Add a figure.
 This group is an empty node that represents the view direction of the mirror glass on a side mirror on the left side of the vehicle. 
 It is a child of the corresponding mirror joint.
 
-The `<side_mirror_view_left_idx>` index numbers each mirrors on the left side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+The `<side_mirror_view_left_idx>` index numbers each mirror on the left side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
 
 
 NOTE: Add a figure.
@@ -1295,7 +1295,7 @@ NOTE: Add a figure.
 This group is an empty node that represents the view direction of the mirror glass on a side mirror on the right side of the vehicle. 
 It is a child of the corresponding mirror joint.
 
-The `<side_mirror_view_right_idx>` index numbers each mirrors on the right side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+The `<side_mirror_view_right_idx>` index numbers each mirror on the right side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
 
 NOTE: Add a figure.
 
@@ -1355,7 +1355,7 @@ For example, the wheel on the front left of a standard vehicle would be labeled 
 Wheel steering is represented by rotation around the z-axis.
 Wheel camber is defined by a rotation around the x-axis.
 Suspension deflection is represented by translation along the z-axis.
-Zero rotation and and translation around all axles are defined under neutral load conditions.
+Zero rotation and translation around all axles are defined under neutral load conditions.
 In the 3D model, both caster and camber angles are ignored.
 
 image::Grp_Wheel.svg[,1100]
@@ -1492,7 +1492,7 @@ This group typically does not move in the simulation and therefore does not have
 This group contains all dynamic parts of the vehicle's interior.  
 Dynamic elements are geometric structures whose position and orientation relative to the vehicle's origin may change throughout the simulation.
 
-They may also change their state during the simulation; for example, lights are considered dynamic.
+They may also change their state during the simulation. Examples of dynamic elements are lights, which can be switched on and off.
 
 This group typically does not move in the simulation and therefore does not have its own transforms.
 
@@ -1719,7 +1719,7 @@ This group typically does not move in the simulation and therefore does not have
 == Grp_Vehicle_Part
 
 One or more optional vehicle parts may be added to the main vehicle structure.
-A vehicle part is a large component of the vehicle that moves based on other parts of the same vehicle.
+A vehicle part is a large component of a vehicle that moves in a slightly different direction than other parts, for example, the vehicle part follows an individual path during turns.
 A vehicle may have multiple vehicle parts at the same hierarchy level or in a parent-child relationship.
 This typically applies to articulated vehicles, such as a front loader with a hinged axis or an articulated bus with a hinge in the middle, and may also apply to construction vehicles.
 When a vehicle part can be detached, like a trailer, it is treated as a separate object, not as a vehicle part.
@@ -1738,7 +1738,7 @@ Standard passenger vehicles do not have separate parts.
 | Center of the joint to the main vehicle or the parent.
 
 | *x-axis*
-| Collinear with the parts longitudinal axis, pointing forwards
+| Collinear with the vehicle part's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
