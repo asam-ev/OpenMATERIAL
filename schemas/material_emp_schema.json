@@ -76,7 +76,7 @@
           },
           {
             "type": ["number", "null"],
-            "description": "Temperature of meterial in Kelvin."
+            "description": "Temperature of material in Kelvin."
           },
           {
             "type": ["number", "null"],
