@@ -187,13 +187,13 @@ NOTE: Add a figure with a hatch on the bottom.
 | Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Perpendicular to the z-axis, pointing towards the door
+| Perpendicular to the z-axis, pointing along the closed door
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Concentric and coaxial to the virtual hinge axis
+| Concentric and coaxial to the virtual hinge axis, pointing in the direction that enables the door to open with a positive rotation around the z-axis
 |===
 
 == Grp_Door_Front_<door_front_idx>
@@ -215,13 +215,13 @@ image::Grp_Door_Front.svg[,1100]
 | Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Perpendicular to the z-axis, pointing towards the door
+| Perpendicular to the z-axis, pointing along the closed door
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Concentric and coaxial to the virtual hinge axis
+| Concentric and coaxial to the virtual hinge axis, pointing in the direction that enables the door to open with a positive rotation around the z-axis
 |===
 
 
@@ -244,13 +244,13 @@ image::Grp_Door_Left.svg[,1100]
 | Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Perpendicular to the z-axis, pointing towards the door
+| Perpendicular to the z-axis, pointing along the closed door
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Concentric and coaxial to the virtual hinge axis
+| Concentric and coaxial to the virtual hinge axis, pointing in the direction that enables the door to open with a positive rotation around the z-axis
 |===
 
 == Grp_Door_Rear_<door_rear_idx>
@@ -272,13 +272,13 @@ image::Grp_Door_Rear.svg[,1100]
 | Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Perpendicular to the z-axis, pointing towards the door
+| Perpendicular to the z-axis, pointing along the closed door
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Concentric and coaxial to the virtual hinge axis
+| Concentric and coaxial to the virtual hinge axis, pointing in the direction that enables the door to open with a positive rotation around the z-axis
 |===
 
 
@@ -301,13 +301,13 @@ image::Grp_Door_Right.svg[,1100]
 | Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Perpendicular to the z-axis, pointing towards the door
+| Perpendicular to the z-axis, pointing along the closed door
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Concentric and coaxial to the virtual hinge axis
+| Concentric and coaxial to the virtual hinge axis, pointing in the direction that enables the door to open with a positive rotation around the z-axis
 |===
 
 
@@ -332,13 +332,13 @@ image::Grp_Door_Top.svg[, 1100]
 | Geometric center of the virtual hinge axis
 
 | *x-axis*
-| Perpendicular to the z-axis, pointing towards the door
+| Perpendicular to the z-axis, pointing along the closed door
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Concentric and coaxial to the virtual hinge axis
+| Concentric and coaxial to the virtual hinge axis, pointing in the direction that enables the door to open with a positive rotation around the z-axis
 |===
 
 == Grp_License_Plate_<license_plate_idx>
@@ -1085,8 +1085,11 @@ NOTE: Add a figure on an exemplary rotating warning light on the roof the vehicl
 
 == Grp_Mirror_Blindspot_Joint_Left_<blindspot_mirror_joint_idx>
 
-This group contains all parts of the main moving part of a blindspot mirror, which adjusts when moved.
-It is a child of the corresponding mirror mounting.
+This group contains all parts of the movable structure that holds the blindspot
+mirror. The blindspot mirror automatically adjusts when the angle of the
+blindspot joint changes.
+
+It is a child node of the corresponding mirror mounting group.
 
 `<blindspot_mirror_joint_idx>` denotes the index of blindspot mirror joints. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
@@ -1100,7 +1103,7 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Joint of the movable part of a mirror
+| Joint of the movable structure of a mirror
 
 | *x-axis*
 | Collinear with the vehicle's longitudinal axis, pointing forwards
@@ -1116,7 +1119,10 @@ NOTE: Add a figure.
 == Grp_Mirror_Blindspot_Mounting_<blindspot_mirror_mounting_idx>
 
 This group contains all parts of the vehicle's blindspot mirror mounting.
-It shall be a child of `<Grp_Exterior_Dynamic>` if mounted directly to the vehicle body, or a child of `<Grp_Door_Left>` or `<Grp_Door_Right>` if mounted to the door.
+
+It is a child node of `<Grp_Exterior_Dynamic>` if mounted directly to the
+vehicle body, or a child node of either `<Grp_Door_Left>` or `<Grp_Door_Right>` if
+mounted to the door.
 
 `<blindspot_mirror_mounting_idx>` denotes the index of blindspot mirror mountings. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
@@ -1148,8 +1154,10 @@ NOTE: Add a figure.
 
 == Grp_Mirror_Blindspot_View_<blindspot_mirror_view_idx>
 
-This group is an empty node that represents the view direction of the mirror glass on a blindspot mirror.
-It is a child of the corresponding mirror joint.
+This group is an empty node that represents the view direction of the mirror
+glass on a blindspot mirror.
+
+It is a child node of the corresponding mirror joint group.
 
 `<blindspot_mirror_view_idx>` denotes the index of blindspot mirrors. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
@@ -1178,8 +1186,11 @@ NOTE: Add a figure.
 
 == Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx>
 
-This group contains all parts of the main moving part of the mirror on the vehicle's left side, which adjusts when moved.
-It is a child of the corresponding mirror mounting.
+This group contains all parts of the movable structure that holds the mirror on
+the vehicle's left side. The mirror automatically adjusts when the angle of the
+joint changes.
+
+It is a child node of the corresponding mirror mounting group.
 
 `<side_mirror_joint_left_idx>` denotes the index of side mirror joints on the
 left side. The index entries are sorted from right to left in positive
@@ -1194,7 +1205,7 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Joint of the movable part of a mirror
+| Joint of the movable structure of a mirror
 
 | *x-axis*
 | Collinear with the vehicle's longitudinal axis, pointing forwards
@@ -1209,8 +1220,11 @@ NOTE: Add a figure.
 
 == Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx>
 
-This group contains all parts of the main moving part of the mirror on the vehicle's right side, which adjusts when moved.
-It is a child of the corresponding mirror mounting.
+This group contains all parts of the movable structure that holds the mirror on
+the vehicle's left side. The mirror automatically adjusts when the angle of the
+joint changes.
+
+It is a child node of the corresponding mirror mounting group.
 
 `<side_mirror_joint_right_idx>` denotes the index of side mirror joints on the
 right side. The index entries are sorted from right to left in positive
@@ -1225,7 +1239,7 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Joint of the movable part of a mirror
+| Joint of the movable structure of a mirror
 
 | *x-axis*
 | Collinear with the vehicle's longitudinal axis, pointing forwards
@@ -1241,7 +1255,10 @@ NOTE: Add a figure.
 == Grp_Mirror_Side_Mounting_Left_<side_mirror_mounting_left_idx>
 
 This group contains all parts of the side mirror on the vehicle's left side.
-It shall be a child of `<Grp_Exterior_Dynamic>` if mounted directly to the vehicle body, or a child of `<Grp_Door_Left>` or `<Grp_Door_Right>` if mounted to the door.
+
+It is a child node of `<Grp_Exterior_Dynamic>` if mounted directly to the
+vehicle body, or a child node of either `<Grp_Door_Left>` or `<Grp_Door_Right>` if
+mounted to the door.
 
 `<side_mirror_mounting_left_idx>` denotes the index of side mirrors on the left side. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
@@ -1274,8 +1291,9 @@ NOTE: Add a figure.
 == Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx>
 
 This group contains all parts of the side mirror on the vehicle's right side.
-It shall be a child of `<Grp_Exterior_Dynamic>` if mounted directly to the
-vehicle body, or a child of `<Grp_Door_Left>` or `<Grp_Door_Right>` if mounted
+
+It is a child node of `<Grp_Exterior_Dynamic>` if mounted directly to the
+vehicle body, or a child node of either `<Grp_Door_Left>` or `<Grp_Door_Right>` if mounted
 to the door.
 
 `<side_mirror_mounting_right_idx>` denotes the index of side mirrors on the
@@ -1309,8 +1327,10 @@ NOTE: Add a figure.
 
 == Grp_Mirror_Side_View_Left_<side_mirror_view_left_idx>
 
-This group is an empty node that represents the view direction of the mirror glass on a side mirror on the left side of the vehicle.
-It is a child of the corresponding mirror joint.
+This group is an empty node that represents the view direction of the mirror
+glass on a side mirror on the left side of the vehicle.
+
+It is a child node of the corresponding mirror joint group.
 
 `<side_mirror_view_left_idx>` denotes the index of mirror glasses on the left side. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
@@ -1340,8 +1360,10 @@ NOTE: Add a figure.
 
 == Grp_Mirror_Side_View_Right_<side_mirror_view_right_idx>
 
-This group is an empty node that represents the view direction of the mirror glass on a side mirror on the right side of the vehicle.
-It is a child of the corresponding mirror joint.
+This group is an empty node that represents the view direction of the mirror
+glass on a side mirror on the right side of the vehicle.
+
+It is a child node of the corresponding mirror joint group.
 
 `<side_mirror_view_right_idx>` denotes the index of mirror glasses on the right side. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
@@ -1600,8 +1622,8 @@ NOTE: Add a figure.
 
 == Grp_Mirror_Rearview_Joint_Left_<rearview_mirror_joint_idx>
 
-This group contains all parts of the main moving part of the rearview mirror, which adjusts when moved.
-It is a child of the corresponding mirror mounting.
+This group contains all parts of the movable structure that holds the rearview
+mirror. The mirror automatically adjusts when the angle of the joint changes.
 
 `<rearview_mirror_joint_idx>` denotes the index of rearview mirror joints. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
@@ -1615,7 +1637,7 @@ NOTE: Add a figure.
 2+^| <Header>
 
 | *Origin*
-| Joint of the movable part of a mirror
+| Joint of the movable structure of a mirror
 
 | *x-axis*
 | Collinear with the vehicle's longitudinal axis, pointing forwards
@@ -1662,8 +1684,10 @@ NOTE: Add a figure.
 
 == Grp_Mirror_Rearview_View_<rearview_mirror_view_idx>
 
-This group is an empty node that represents the view direction of the mirror glass on a rearview mirror.
-It is a child of the corresponding mirror joint.
+This group is an empty node that represents the view direction of the mirror
+glass on a rearview mirror.
+
+It is a child node of the corresponding mirror joint group.
 
 `<rearview_mirror_view_idx>` denotes the index of rearview mirrors. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
