@@ -13,22 +13,22 @@ Root
 |_ [[../geometry/object-classes.html#_grp_exterior Grp_Exterior]]
   |_ [[../geometry/object-classes.html#_grp_exterior_dynamic Grp_Exterior_Dynamic]]
     |_ [[../geometry/object-classes.html#_grp_convertible_top Grp_Convertible_Top]]
-    |_ [[../geometry/object-classes.html#_grp_door_bottom_door_bottom_idx Grp_Door_Bottom_<door_bottom_idx>]]      
+    |_ [[../geometry/object-classes.html#_grp_door_bottom_door_bottom_idx Grp_Door_Bottom_<door_bottom_idx>]]
     |_ [[../geometry/object-classes.html#_grp_door_front_door_front_idx Grp_Door_Front_<door_front_idx>]]
     |_ [[../geometry/object-classes.html#_grp_door_left_door_left_idx Grp_Door_Left_<door_left_idx>]]
       |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_mounting_blindspot_mirror_mounting_idx Grp_Mirror_Blindspot_Mounting_<blindspot_mirror_mounting_idx>]]
-        |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_joint_blindspot_mirror_joint_idx Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx>]] 
-          |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_view_blindspot_mirror_view_idx Grp_Mirror_Blindspot_View_<blindspot_mirror_view_idx>]] 
+        |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_joint_blindspot_mirror_joint_idx Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx>]]
+          |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_view_blindspot_mirror_view_idx Grp_Mirror_Blindspot_View_<blindspot_mirror_view_idx>]]
       |_ [[../geometry/object-classes.html#_grp_mirror_side_mounting_left_side_mirror_mounting_left_id Grp_Mirror_Side_Mounting_Left_<side_mirror_mounting_left_idx>]]
         |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_left_side_mirror_joint_left_idx Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx> ]]
           |_ [[../geometry/object-classes.html#_grp_mirror_side_view_left_side_mirror_view_left_idx Grp_Mirror_Side_View_Left_<side_mirror_view_left_idx> ]]
       |_ [[../geometry/object-classes.html#_grp_mirror_side_mounting_right_side_mirror_mounting_right_idx Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx>]]
-        |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_right_side_mirror_joint_right_idx Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> ]]   
+        |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_right_side_mirror_joint_right_idx Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> ]]
           |_ [[../geometry/object-classes.html#_grp_mirror_side_view_right_side_mirror_view_right_idx Grp_Mirror_Side_View_Right_<side_mirror_view_right_idx> ]]
     |_ [[../geometry/object-classes.html#_grp_door_rear_door_rear_idx Grp_Door_Rear_<door_rear_idx>]]
     |_ [[../geometry/object-classes.html#_grp_door_right_door_right_idx Grp_Door_Right_<door_right_idx>]]
       |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_mounting_blindspot_mirror_mounting_idx Grp_Mirror_Blindspot_Mounting_<blindspot_mirror_mounting_idx>]]
-        |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_joint_blindspot_mirror_joint_idx Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx>]] 
+        |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_joint_blindspot_mirror_joint_idx Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx>]]
           |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_view_blindspot_mirror_view_idx Grp_Mirror_Blindspot_View_<blindspot_mirror_view_idx>]]
       |_ [[../geometry/object-classes.html#_grp_mirror_side_mounting_left_side_mirror_mounting_left_id Grp_Mirror_Side_Mounting_Left_<side_mirror_mounting_left_idx>]]
         |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_left_side_mirror_joint_left_idx Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx> ]]
@@ -39,7 +39,7 @@ Root
     |_ [[../geometry/object-classes.html#_grp_door_top_door_top_idx Grp_Door_Top_<door_top_idx>]]
     |_ [[../geometry/object-classes.html#_grp_license_plate_license_plate_idx Grp_License_Plate_<license_plate_idx>]]
     |_ [[../geometry/object-classes.html#_grp_light_brake_center_brake_center_idx Grp_Light_Brake_Center_<brake_center_idx>]]
-    |_ [[../geometry/object-classes.html#_grp_light_brake_left_brake_left_idx Grp_Light_Brake_Left_<brake_left_idx>]]      
+    |_ [[../geometry/object-classes.html#_grp_light_brake_left_brake_left_idx Grp_Light_Brake_Left_<brake_left_idx>]]
     |_ [[../geometry/object-classes.html#_grp_light_brake_right_brake_right_idx Grp_Light_Brake_Right_<brake_right_idx>]]
     |_ [[../geometry/object-classes.html#_grp_light_corner_left_corner_left_idx Grp_Light_Corner_Left_<corner_left_idx>]]
     |_ [[../geometry/object-classes.html#_grp_light_corner_right_corner_right_idx Grp_Light_Corner_Right_<corner_right_idx>]]
@@ -64,14 +64,14 @@ Root
     |_ [[../geometry/object-classes.html#_grp_light_tail_right_tail_right_idx Grp_Light_Tail_Right_<tail_right_idx>]]
     |_ [[../geometry/object-classes.html#_grp_light_warning_warning_idx Grp_Light_Warning_<warning_idx>]]
     |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_mounting_blindspot_mirror_mounting_idx Grp_Mirror_Blindspot_Mounting_<blindspot_mirror_mounting_idx>]]
-      |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_joint_blindspot_mirror_joint_idx Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx>]] 
-        |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_view_blindspot_mirror_view_idx Grp_Mirror_Blindspot_View_<blindspot_mirror_view_idx>]] 
+      |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_joint_blindspot_mirror_joint_idx Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx>]]
+        |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_view_blindspot_mirror_view_idx Grp_Mirror_Blindspot_View_<blindspot_mirror_view_idx>]]
     |_ [[../geometry/object-classes.html#_grp_mirror_side_mounting_left_side_mirror_mounting_left_id Grp_Mirror_Side_Mounting_Left_<side_mirror_mounting_left_idx>]]
       |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_left_side_mirror_joint_left_idx Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx> ]]
         |_ [[../geometry/object-classes.html#_grp_mirror_side_view_left_side_mirror_view_left_idx Grp_Mirror_Side_View_Left_<side_mirror_view_left_idx> ]]
     |_ [[../geometry/object-classes.html#_grp_mirror_side_mounting_right_side_mirror_mounting_right_idx Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx>]]
-      |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_right_side_mirror_joint_right_idx Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> ]]   
-        |_ [[../geometry/object-classes.html#_grp_mirror_side_view_right_side_mirror_view_right_idx Grp_Mirror_Side_View_Right_<side_mirror_view_right_idx> ]]          
+      |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_right_side_mirror_joint_right_idx Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> ]]
+        |_ [[../geometry/object-classes.html#_grp_mirror_side_view_right_side_mirror_view_right_idx Grp_Mirror_Side_View_Right_<side_mirror_view_right_idx> ]]
     |_ [[../geometry/object-classes.html#_grp_sensor_sensor_idx Grp_Sensor_<sensor_idx>]]
     |_ [[../geometry/object-classes.html#_grp_wheel_axle_idx_wheel_idx Grp_Wheel_<axle_idx>_<wheel_idx>]]
       |_ [[../geometry/object-classes.html#_grp_wheel_steering_axle_idx_wheel_idx Grp_Wheel_Steering_<axle_idx>_<wheel_idx>]]
@@ -93,7 +93,7 @@ end legend
 
 == Grp_Exterior
 
-This group contains all parts of the vehicle's exterior. 
+This group contains all parts of the vehicle's exterior.
 
 Typically, this group do not move in the simulation and therefore do not have their own transforms.
 
@@ -107,7 +107,7 @@ Typically, this group do not move in the simulation and therefore do not have th
 | Origin of the vehicle
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -118,7 +118,7 @@ Typically, this group do not move in the simulation and therefore do not have th
 
 == Grp_Exterior_Dynamic
 
-This group contains all dynamic parts of the vehicle's exterior. 
+This group contains all dynamic parts of the vehicle's exterior.
 
 Dynamic parts are geometric structures whose position and orientation relative to the vehicle's origin may change throughout a simulation.
 They may also change their state during the simulation, which is why lights are considered dynamic.
@@ -135,7 +135,7 @@ Typically, this group does not move in the simulation and therefore does not hav
 | Origin of the vehicle
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -158,7 +158,7 @@ This group contains all parts of a vehicle's convertible top.
 | Origin of the vehicle
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -172,7 +172,8 @@ This group contains all parts of a vehicle's convertible top.
 
 This group contains all parts of a door located at the bottom of the vehicle, including its interior parts, as they move together as a unit.
 
-The `<door_bottom_idx>` index numbers each door on the bottom, starting from the front of the vehicle with 0 and counting toward the rear.
+`<door_bottom_idx>` denotes the index of doors at the bottom. The index entries
+are sorted from front to rear, starting with 0.
 
 NOTE: Add a figure with a hatch on the bottom.
 
@@ -199,7 +200,8 @@ NOTE: Add a figure with a hatch on the bottom.
 
 This group contains all parts of a door located at the front of the vehicle, such as the engine cover. It also includes the door's interior parts, as they move together as a single unit.
 
-The `<door_front_idx>` index numbers all front doors, starting from the right and counting leftward in positive y-direction, beginning with 0.
+`<door_front_idx>` denotes the index of front doors. The index entries are
+sorted from right to left in positive y-direction, starting with 0.
 
 image::Grp_Door_Front.svg[,1100]
 
@@ -227,7 +229,8 @@ image::Grp_Door_Front.svg[,1100]
 
 This group contains all parts of a door located at the left side of the vehicle, including its interior parts, as they move together as a unit.
 
-The `<door_left_idx>` index numbers all doors on the left side, starting from the front and counting toward the rear, beginning with 0.
+`<door_left_idx>` denotes the index of doors on the left side. The index entries
+are sorted from front to rear, starting with 0.
 
 image::Grp_Door_Left.svg[,1100]
 
@@ -254,7 +257,8 @@ image::Grp_Door_Left.svg[,1100]
 
 This group contains all parts of a door located at the rear of the vehicle, such as the trunklid. It also includes the door's interior parts, as they move together as a single unit.
 
-The `<door_rear_idx>` index numbers all rear doors, starting from the right and counting leftward in positive y-direction, beginning with 0.
+`<door_rear_idx>` denotes the index of rear doors. The index entries are sorted
+from right to left in positive y-direction, starting with 0.
 
 image::Grp_Door_Rear.svg[,1100]
 
@@ -282,7 +286,8 @@ image::Grp_Door_Rear.svg[,1100]
 
 This group contains all parts of a door located at the right side of the vehicle, including its interior parts, as they move together as a unit.
 
-The `<door_right_idx>` index numbers all doors on the right side, starting from the front and counting toward the rear, beginning with 0.
+`<door_right_idx>` denotes the index of doors on the right side. The index entries
+are sorted from front to rear, starting with 0.
 
 image::Grp_Door_Right.svg[,1100]
 
@@ -312,7 +317,8 @@ image::Grp_Door_Right.svg[,1100]
 
 This group contains all parts of a door located at the top of the vehicle, including its interior parts, as they move together as a unit.
 
-The `<door_top_idx>` index numbers all doors on the top of the vehicle, starting from the front and counting toward the rear, beginning with 0.
+`<door_top_idx>` denotes the index of doors on the top of the vehicle. The index entries
+are sorted from front to rear, starting with 0.
 
 image::Grp_Door_Top.svg[, 1100]
 
@@ -339,7 +345,8 @@ image::Grp_Door_Top.svg[, 1100]
 
 This group contains all parts of the vehicle’s license plate.
 
-The `<license_plate_idx>` index numbers each license plate, counting from right to left in positive y-direction, and from front to rear, starting with 0.
+`<license_plate_idx>` denotes the index of license plates. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -351,7 +358,7 @@ The `<license_plate_idx>` index numbers each license plate, counting from right 
 | Center of the plate
 
 | *x-axis*
-| Pointing outwards from the front of the plate
+| Pointing outwards from the front of the license plate
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -364,7 +371,8 @@ The `<license_plate_idx>` index numbers each license plate, counting from right 
 
 This group contains all parts of a brake light located at the center of the vehicle.
 
-The `<brake_center_idx>` index numbers each brake light in the center, counting from right to left in positive y-direction, starting with 0.
+`<brake_center_idx>` denotes the index of brake lights in the center. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 NOTE: Add a figure.
 
@@ -391,7 +399,8 @@ NOTE: Add a figure.
 
 This group contains all parts of a brake light located at the left side of the vehicle.
 
-The `<brake_left_idx>` index numbers each brake light on the left side, counting from right to left in positive y-direction, starting with 0.
+`<brake_left_idx>` denotes the index of brake lights on the left side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 NOTE: Add figure from tail light.
 
@@ -420,7 +429,8 @@ NOTE: Add figure from tail light.
 
 This group contains all parts of a brake light located at the right side of the vehicle.
 
-The `<brake_right_idx>` index numbers each brake light on the right side, counting from right to left in positive y-direction, starting with 0.
+`<brake_right_idx>` denotes the index of brake lights on the right side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 NOTE: Add figure from tail light.
 
@@ -449,7 +459,8 @@ NOTE: Add figure from tail light.
 This group contains all parts of a corner light on the vehicle's left side.
 A corner light is typically a white light that provides side illumination in the direction of a turn or lane change.
 
-The `<corner_left_idx>` index numbers each corner light on the left side, counting from right to left in positive y-direction, starting with 0.
+`<corner_left_idx>` denotes the index of corner lights on the left side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 image::Grp_Light_Day_Left.svg[,1100]
 
@@ -478,7 +489,8 @@ image::Grp_Light_Day_Left.svg[,1100]
 This group contains all parts of a corner light on the vehicle's right side.
 A corner light is typically a white light that provides side illumination in the direction of a turn or lane change.
 
-The `<corner_right_idx>` index numbers each corner light on the right side, counting from right to left in positive y-direction, starting with 0.
+`<corner_right_idx>` denotes the index of corner lights on the right side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 image::Grp_Light_Day_Right.svg[,1100]
 
@@ -506,7 +518,8 @@ image::Grp_Light_Day_Right.svg[,1100]
 
 This group contains all parts of the daytime running light on the vehicle's left side.
 
-The `<day_left_idx>` index numbers each daytime running light on the left side, counting from right to left in positive y-direction, starting with 0.
+`<day_left_idx>` denotes the index of daytime running lights on the left side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 //NOTE: Add a figure. This figure might ba applicable to all lights on the front left. I don't think we have to distinguish in the figures between the different kinds of lights.
 image::Grp_Light_Day_Left.svg[,1100]
@@ -535,7 +548,8 @@ image::Grp_Light_Day_Left.svg[,1100]
 
 This group contains all parts of the daytime running light on the vehicle's right side.
 
-The `<day_right_idx>` index numbers each daytime running light on the right side, counting from right to left in positive y-direction, starting with 0.
+`<day_right_idx>` denotes the index of daytime running lights on the right side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 //NOTE: Add a figure. This figure might be applicable to all lights on the front right. I don't think we have to distinguish in the figures between the different kinds of lights.
 image::Grp_Light_Day_Right.svg[,1100]
@@ -564,7 +578,8 @@ image::Grp_Light_Day_Right.svg[,1100]
 
 This group contains all parts of a fog light on the vehicle's left side.
 
-The `<fog_left_idx>` index numbers each fog light on the left side, counting from right to left in positive y-direction, starting with 0.
+`<fog_left_idx>` denotes the index of fog lights on the left side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 NOTE: Add figure from tail light.
 
@@ -592,7 +607,8 @@ NOTE: Add figure from tail light.
 
 This group contains all parts of a fog light on the vehicle's right side.
 
-The `<fog_right_idx>` index numbers each fog light on the right side, counting from right to left in positive y-direction, starting with 0.
+`<fog_right_idx>` denotes the index of fog lights on the right side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 NOTE: Add figure from tail light.
 
@@ -619,7 +635,8 @@ NOTE: Add figure from tail light.
 
 This group contains all parts of a high beam light on the vehicle's left side.
 
-The `<high_beam_left_idx>` index numbers each high beam light on the left side, counting from right to left in positive y-direction, starting with 0.
+`<high_beam_left_idx>` denotes the index of high beam lights on the left side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 image::Grp_Light_Day_Left.svg[,1100]
 
@@ -647,7 +664,8 @@ image::Grp_Light_Day_Left.svg[,1100]
 
 This group contains all parts of a high beam light on the vehicle's right side.
 
-The `<high_beam_right_idx>` index numbers each high beam light on the right side, counting from right to left in positive y-direction, starting with 0.
+`<high_beam_right_idx>` denotes the index of high beam lights on the right side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 image::Grp_Light_Day_Right.svg[,1100]
 
@@ -675,7 +693,8 @@ image::Grp_Light_Day_Right.svg[,1100]
 
 This group contains all parts of an indicator light on the vehicle's left side.
 
-The `<indicator_left_idx>` index numbers each indicator light on the left side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<indicator_left_idx>` denotes the index of indicator lights on the left side. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -701,7 +720,8 @@ The `<indicator_left_idx>` index numbers each indicator light on the left side, 
 
 This group contains all parts of an indicator light on the vehicle's right side.
 
-The `<indicator_right_idx>` index numbers each indicator light on the right side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<indicator_right_idx>` denotes the index of indicator lights on the right side. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -726,7 +746,8 @@ The `<indicator_right_idx>` index numbers each indicator light on the right side
 
 This group contains all parts of the vehicle's license plate light.
 
-The `<license_plate_light_idx>` index numbers each license plate light, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<license_plate_light_idx>` denotes the index of license plate lights. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 NOTE: Add a figure for the exemplary license plate light on the rear of the vehicle.
 
@@ -754,7 +775,8 @@ NOTE: Add a figure for the exemplary license plate light on the rear of the vehi
 
 This group contains all parts of a low beam light on the vehicle's left side.
 
-The `<low_beam_left_idx>` index numbers each low beam light on the left side, counting from right to left in positive y-direction, starting with 0.
+`<low_beam_left_idx>` denotes the index of low beam lights on the left side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 image::Grp_Light_Day_Left.svg[,1100]
 
@@ -782,7 +804,8 @@ image::Grp_Light_Day_Left.svg[,1100]
 
 This group contains all parts of a low beam light on the vehicle's right side.
 
-The `<low_beam_right_idx>` index numbers each low beam light on the right side, counting from right to left in positive y-direction, starting with 0.
+`<low_beam_right_idx>` denotes the index of low beam lights on the right side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 image::Grp_Light_Day_Right.svg[,1100]
 
@@ -810,7 +833,8 @@ image::Grp_Light_Day_Right.svg[,1100]
 
 This group contains all parts of a parking light on the vehicle's left side.
 
-The `<park_left_idx>` index numbers each parking light on the left side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<park_left_idx>` denotes the index of parking lights on the left side. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -836,7 +860,8 @@ The `<park_left_idx>` index numbers each parking light on the left side, countin
 
 This group contains all parts of a parking light on the vehicle's right side.
 
-The `<park_right_idx>` index numbers each parking light on the right side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<park_right_idx>` denotes the index of parking lights on the right side. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -862,7 +887,8 @@ The `<park_right_idx>` index numbers each parking light on the right side, count
 This group contains all parts of a position light on the vehicle's left side.
 Position lights are usually small, low-intensity, and orange.
 
-The `<position_left_idx>` index numbers each position light on the left side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<position_left_idx>` denotes the index of position lights on the left side. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -889,7 +915,8 @@ The `<position_left_idx>` index numbers each position light on the left side, co
 This group contains all parts of a position light on the vehicle's right side.
 Position lights are usually small, low-intensity, and orange.
 
-The `<position_right_idx>` index numbers each position light on the right side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<position_right_idx>` denotes the index of position lights on the right side. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -914,7 +941,8 @@ The `<position_right_idx>` index numbers each position light on the right side, 
 
 This group contains all parts of a reverse light on the vehicle's left side.
 
-The `<reverse_left_idx>` index numbers each reverse light on the left side, counting from right to left in positive y-direction, starting with 0.
+`<reverse_left_idx>` denotes the index of reverse lights on the left side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 NOTE: Add figure from tail light.
 
@@ -942,7 +970,8 @@ NOTE: Add figure from tail light.
 
 This group contains all parts of a reverse light on the vehicle's right side.
 
-The `<reverse_right_idx>` index numbers each reverse light on the right side, counting from right to left in positive y-direction, starting with 0.
+`<reverse_right_idx>` denotes the index of reverse lights on the right side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 NOTE: Add figure from tail light.
 
@@ -970,7 +999,8 @@ NOTE: Add figure from tail light.
 
 This group contains all parts of a tail light on the vehicle's left side.
 
-The `<tail_left_idx>` index numbers each tail light on the left side, counting from right to left in positive y-direction, starting with 0.
+`<tail_left_idx>` denotes the index of tail lights on the left side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 NOTE: Add a figure. This figure might be applicable to all lights on the rear left. I don't think we have to distinguish in the figures between the different kinds of lights.
 
@@ -998,7 +1028,8 @@ NOTE: Add a figure. This figure might be applicable to all lights on the rear le
 
 This group contains all parts of a tail light on the vehicle's right side.
 
-The `<tail_right_idx>` index numbers each tail light on the right side, counting from right to left in positive y-direction, starting with 0.
+`<tail_right_idx>` denotes the index of tail lights on the right side. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 NOTE: Add a figure. This figure might be applicable to all lights on the rear right. I don't think we have to distinguish in the figures between the different kinds of lights.
 
@@ -1027,7 +1058,8 @@ NOTE: Add a figure. This figure might be applicable to all lights on the rear ri
 This group contains all parts of the vehicle's warning light.
 Warning lights can include various emergency lights, hazard lights, and more.
 
-The `<warning_idx>` index numbers each warning light, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<warning_idx>` denotes the index of warning lights. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 NOTE: Add a figure on an exemplary rotating warning light on the roof the vehicle.
 
@@ -1051,12 +1083,13 @@ NOTE: Add a figure on an exemplary rotating warning light on the roof the vehicl
 |===
 
 
-== Grp_Mirror_Blindspot_Joint_Left_<blindspot_mirror_joint_idx> 
+== Grp_Mirror_Blindspot_Joint_Left_<blindspot_mirror_joint_idx>
 
-This group contains all parts of the main moving part of a blindspot mirror, which adjusts when moved. 
+This group contains all parts of the main moving part of a blindspot mirror, which adjusts when moved.
 It is a child of the corresponding mirror mounting.
 
-The `<blindspot_mirror_joint_idx>` index numbers each blindspot mirror joint, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<blindspot_mirror_joint_idx>` denotes the index of blindspot mirror joints. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 NOTE: Add a figure.
 
@@ -1070,7 +1103,7 @@ NOTE: Add a figure.
 | Joint of the movable part of a mirror
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1083,11 +1116,13 @@ NOTE: Add a figure.
 == Grp_Mirror_Blindspot_Mounting_<blindspot_mirror_mounting_idx>
 
 This group contains all parts of the vehicle's blindspot mirror mounting.
-It shall be a child of `<Grp_Exterior_Dynamic>` if mounted directly to the vehicle body, or a child of `<Grp_Door_Left>` or `<Grp_Door_Right>` if mounted on the door.
+It shall be a child of `<Grp_Exterior_Dynamic>` if mounted directly to the vehicle body, or a child of `<Grp_Door_Left>` or `<Grp_Door_Right>` if mounted to the door.
 
-The `<blindspot_mirror_mounting_idx>` index numbers each blindspot mounting, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<blindspot_mirror_mounting_idx>` denotes the index of blindspot mirror mountings. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
-The index is used consistently, regardless of whether the mirror is mounted on the door or the vehicle body.
+The index is used consistently, regardless of whether the mirror is mounted to
+the door or to the vehicle body.
 
 NOTE: Add a figure.
 
@@ -1101,7 +1136,7 @@ NOTE: Add a figure.
 | Base of the mirror mounting
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1113,10 +1148,11 @@ NOTE: Add a figure.
 
 == Grp_Mirror_Blindspot_View_<blindspot_mirror_view_idx>
 
-This group is an empty node that represents the view direction of the mirror glass on a blindspot mirror. 
+This group is an empty node that represents the view direction of the mirror glass on a blindspot mirror.
 It is a child of the corresponding mirror joint.
 
-The `<blindspot_mirror_view_idx>` index numbers each blindspot mirror, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<blindspot_mirror_view_idx>` denotes the index of blindspot mirrors. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 NOTE: Add a figure.
 
@@ -1140,12 +1176,14 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx> 
+== Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx>
 
 This group contains all parts of the main moving part of the mirror on the vehicle's left side, which adjusts when moved.
 It is a child of the corresponding mirror mounting.
 
-The `<side_mirror_joint_left_idx>` index numbers each side mirror on the left side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<side_mirror_joint_left_idx>` denotes the index of side mirror joints on the
+left side. The index entries are sorted from right to left in positive
+y-direction, and from front to rear, starting with 0.
 
 NOTE: Add a figure.
 
@@ -1159,7 +1197,7 @@ NOTE: Add a figure.
 | Joint of the movable part of a mirror
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1169,12 +1207,14 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> 
+== Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx>
 
 This group contains all parts of the main moving part of the mirror on the vehicle's right side, which adjusts when moved.
 It is a child of the corresponding mirror mounting.
 
-The `<side_mirror_joint_right_idx>` index numbers each side mirror on the right side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<side_mirror_joint_right_idx>` denotes the index of side mirror joints on the
+right side. The index entries are sorted from right to left in positive
+y-direction, and from front to rear, starting with 0.
 
 NOTE: Add a figure.
 
@@ -1188,7 +1228,7 @@ NOTE: Add a figure.
 | Joint of the movable part of a mirror
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1198,14 +1238,16 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Mirror_Side_Mounting_Left_<side_mirror_mounting_left_idx> 
+== Grp_Mirror_Side_Mounting_Left_<side_mirror_mounting_left_idx>
 
-This group contains all parts of the side mirror on the vehicle's left side
-It shall be a child of `<Grp_Exterior_Dynamic>` if mounted directly to the vehicle body, or a child of `<Grp_Door_Left>` or `<Grp_Door_Right>` if mounted on the door.
+This group contains all parts of the side mirror on the vehicle's left side.
+It shall be a child of `<Grp_Exterior_Dynamic>` if mounted directly to the vehicle body, or a child of `<Grp_Door_Left>` or `<Grp_Door_Right>` if mounted to the door.
 
-The `<side_mirror_mounting_left_idx>` index numbers each side mirror on the left side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<side_mirror_mounting_left_idx>` denotes the index of side mirrors on the left side. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
-The index is used consistently, regardless of whether the mirror is mounted on the door or the vehicle body.
+The index is used consistently, regardless of whether the mirror is mounted to
+the door or to the vehicle body.
 
 NOTE: Add a figure.
 
@@ -1219,7 +1261,7 @@ NOTE: Add a figure.
 | Base of the mirror mounting
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1232,11 +1274,16 @@ NOTE: Add a figure.
 == Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx>
 
 This group contains all parts of the side mirror on the vehicle's right side.
-It shall be a child of `<Grp_Exterior_Dynamic>` if mounted directly to the vehicle body, or a child of `<Grp_Door_Left>` or `<Grp_Door_Right>` if mounted on the door.
+It shall be a child of `<Grp_Exterior_Dynamic>` if mounted directly to the
+vehicle body, or a child of `<Grp_Door_Left>` or `<Grp_Door_Right>` if mounted
+to the door.
 
-The `<side_mirror_mounting_right_idx>` index numbers each side mirror on the right side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<side_mirror_mounting_right_idx>` denotes the index of side mirrors on the
+right side. The index entries are sorted from right to left in positive
+y-direction, and from front to rear, starting with 0.
 
-The index is used consistently, regardless of whether the mirror is mounted on the door or the vehicle body.
+The index is used consistently, regardless of whether the mirror is mounted to
+the door or to the vehicle body.
 
 NOTE: Add a figure.
 
@@ -1250,7 +1297,7 @@ NOTE: Add a figure.
 | Base of the mirror mounting
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1262,10 +1309,11 @@ NOTE: Add a figure.
 
 == Grp_Mirror_Side_View_Left_<side_mirror_view_left_idx>
 
-This group is an empty node that represents the view direction of the mirror glass on a side mirror on the left side of the vehicle. 
+This group is an empty node that represents the view direction of the mirror glass on a side mirror on the left side of the vehicle.
 It is a child of the corresponding mirror joint.
 
-The `<side_mirror_view_left_idx>` index numbers each mirror on the left side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<side_mirror_view_left_idx>` denotes the index of mirror glasses on the left side. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 
 NOTE: Add a figure.
@@ -1292,10 +1340,11 @@ NOTE: Add a figure.
 
 == Grp_Mirror_Side_View_Right_<side_mirror_view_right_idx>
 
-This group is an empty node that represents the view direction of the mirror glass on a side mirror on the right side of the vehicle. 
+This group is an empty node that represents the view direction of the mirror glass on a side mirror on the right side of the vehicle.
 It is a child of the corresponding mirror joint.
 
-The `<side_mirror_view_right_idx>` index numbers each mirror on the right side, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<side_mirror_view_right_idx>` denotes the index of mirror glasses on the right side. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 NOTE: Add a figure.
 
@@ -1348,8 +1397,10 @@ The sensor's geometry can also be placed in <Grp_Exterior_Static>.
 
 This group contains all geometries of a single wheel assembly, which may consist of the tire, rim, brake caliper, and so on.
 
-`<axle_idx>` denotes the index of the axle to which the wheel is mounted, counting from the front to the rear, starting at 0.
-`<wheel_idx>` denotes the index of the wheel on the specified axle, counting from right to left in the positive y-direction, starting at 0.
+`<axle_idx>` denotes the index of the axle to which the wheel is mounted,
+counting from front to rear, starting with 0.
+
+`<wheel_idx>` denotes the index of the wheel on the specified axle, counting from right to left in positive y-direction, starting with 0.
 For example, the wheel on the front left of a standard vehicle would be labeled `Grp_Wheel_0_1`.
 
 Wheel steering is represented by rotation around the z-axis.
@@ -1370,7 +1421,7 @@ image::Grp_Wheel.svg[,1100]
 | Geometric center of the wheel
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1398,7 +1449,7 @@ This group typically does not move independently in the simulation, as it moves 
 | Geometric center of the wheel
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1424,7 +1475,7 @@ The indices are the same as in the parent group.
 | Geometric center of the wheel
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing towards the door
+| Collinear with the vehicle's longitudinal axis, pointing towards the door
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1436,9 +1487,12 @@ The indices are the same as in the parent group.
 
 == Grp_Exterior_Static
 
-This group contains all static parts of the vehicle's exterior.  
-Static elements are geometric structures that have a fixed position and orientation relative to the vehicle's origin throughout the simulation. 
-They do not change their state during the simulation, which is why lights are considered dynamic.
+This group contains all static parts of the vehicle's exterior.
+Static elements are geometric structures that have a fixed position and
+orientation relative to the vehicle's origin throughout the simulation.
+
+In contrast to lights, which change their state depending on whether they are
+switched on or off, static elements never change state during the simulation.
 
 This group typically does not move in the simulation and therefore does not have its own transforms.
 
@@ -1452,7 +1506,7 @@ This group typically does not move in the simulation and therefore does not have
 | Origin of the vehicle
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1463,7 +1517,7 @@ This group typically does not move in the simulation and therefore does not have
 
 == Grp_Interior
 
-This group contains all parts of the vehicle's interior.  
+This group contains all parts of the vehicle's interior.
 The interior is separated from the exterior to allow for disabling or exchanging it in the simulation.
 
 This group typically does not move in the simulation and therefore does not have its own transforms.
@@ -1478,7 +1532,7 @@ This group typically does not move in the simulation and therefore does not have
 | Origin of the vehicle
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1489,11 +1543,10 @@ This group typically does not move in the simulation and therefore does not have
 
 == Grp_Interior_Dynamic
 
-This group contains all dynamic parts of the vehicle's interior.  
+This group contains all dynamic parts of the vehicle's interior.
 Dynamic elements are geometric structures whose position and orientation relative to the vehicle's origin may change throughout the simulation.
 
 They may also change their state during the simulation. Examples of dynamic elements are lights, which can be switched on and off.
-
 This group typically does not move in the simulation and therefore does not have its own transforms.
 
 .<Table title>
@@ -1506,7 +1559,7 @@ This group typically does not move in the simulation and therefore does not have
 | Origin of the vehicle
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1520,7 +1573,8 @@ This group typically does not move in the simulation and therefore does not have
 
 This group contains an empty element that contains the origin of an average passenger in the vehicle.
 
-The `<eyepoint_idx>` index numbers all eye points, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<eyepoint_idx>` denotes the index of eye points. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 NOTE: Add a figure.
 
@@ -1544,12 +1598,13 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Mirror_Rearview_Joint_Left_<rearview_mirror_joint_idx> 
+== Grp_Mirror_Rearview_Joint_Left_<rearview_mirror_joint_idx>
 
 This group contains all parts of the main moving part of the rearview mirror, which adjusts when moved.
 It is a child of the corresponding mirror mounting.
 
-The `<rearview_mirror_joint_idx>` index numbers all rearview mirror joints, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<rearview_mirror_joint_idx>` denotes the index of rearview mirror joints. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 NOTE: Add a figure.
 
@@ -1563,7 +1618,7 @@ NOTE: Add a figure.
 | Joint of the movable part of a mirror
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1577,9 +1632,11 @@ NOTE: Add a figure.
 
 This group contains all parts of a vehicle's rearview mirror mounting.
 
-The `<rearview_mirror_mounting_idx>` index numbers all rearview mirror mountings, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<rearview_mirror_mounting_idx>` denotes the index of rearview mirror mountings. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
-The index is used consistently, regardless of whether the mirror is mounted on the door or the vehicle body.
+The index is used consistently, regardless of whether the mirror is mounted to
+the door or to the vehicle body.
 
 NOTE: Add a figure.
 
@@ -1593,7 +1650,7 @@ NOTE: Add a figure.
 | Base of the mirror mounting
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1605,10 +1662,11 @@ NOTE: Add a figure.
 
 == Grp_Mirror_Rearview_View_<rearview_mirror_view_idx>
 
-This group is an empty node that represents the view direction of the mirror glass on a rearview mirror. 
+This group is an empty node that represents the view direction of the mirror glass on a rearview mirror.
 It is a child of the corresponding mirror joint.
 
-The `<rearview_mirror_view_idx>` index numbers all rearview mirrors, counting from right to left in positive y-direction, and from the front to the rear, starting with 0.
+`<rearview_mirror_view_idx>` denotes the index of rearview mirrors. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 NOTE: Add a figure.
 
@@ -1636,10 +1694,11 @@ NOTE: Add a figure.
 
 This group contains all parts of the vehicles's seats.
 
-The seat position can be used to place a human 3D model as a passenger. 
+The seat position can be used to place a human 3D model as a passenger.
 Therefore, a bench consists of multiple individual seats.
 
-The `<seat_idx>` index numbers all seats, counting from right to left in positive y-direction, starting with 0.
+`<seat_idx>` denotes the index of seats. The index entries
+are sorted from right to left in positive y-direction, starting with 0.
 
 NOTE: Add a figure.
 
@@ -1653,7 +1712,7 @@ NOTE: Add a figure.
 | Center of the seat cushion.
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing in the direction of the seat
+| Collinear with the vehicle's longitudinal axis, pointing in the direction of the seat
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1690,9 +1749,11 @@ NOTE: Add a figure.
 
 == Grp_Interior_Static
 
-This group contains all static parts of the vehicle's interior.  
-Static elements are geometric structures that have a fixed position and orientation relative to the vehicle's origin throughout the simulation. 
-They do not change their state during the simulation, which is why lights are considered dynamic.
+This group contains all static parts of the vehicle's interior.
+Static elements are geometric structures that have a fixed position and orientation relative to the vehicle's origin throughout the simulation.
+
+In contrast to lights, which change their state depending on whether they are
+switched on or off, static elements never change state during the simulation.
 
 This group typically does not move in the simulation and therefore does not have its own transforms.
 
@@ -1706,7 +1767,7 @@ This group typically does not move in the simulation and therefore does not have
 | Origin of the vehicle
 
 | *x-axis*
-| Collinear with the vehicle longitudinal axis, pointing forwards
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
@@ -1719,7 +1780,11 @@ This group typically does not move in the simulation and therefore does not have
 == Grp_Vehicle_Part
 
 One or more optional vehicle parts may be added to the main vehicle structure.
-A vehicle part is a large component of a vehicle that moves in a slightly different direction than other parts, for example, the vehicle part follows an individual path during turns.
+
+A vehicle part is a large component of a vehicle that moves in a slightly
+different direction than other parts, for example, the vehicle part follows an
+individual path during turns.
+
 A vehicle may have multiple vehicle parts at the same hierarchy level or in a parent-child relationship.
 This typically applies to articulated vehicles, such as a front loader with a hinged axis or an articulated bus with a hinge in the middle, and may also apply to construction vehicles.
 When a vehicle part can be detached, like a trailer, it is treated as a separate object, not as a vehicle part.
@@ -1738,7 +1803,7 @@ Standard passenger vehicles do not have separate parts.
 | Center of the joint to the main vehicle or the parent.
 
 | *x-axis*
-| Collinear with the vehicle part's longitudinal axis, pointing forwards
+| Collinear with the parts longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
