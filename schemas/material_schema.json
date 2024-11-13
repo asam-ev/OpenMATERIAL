@@ -16,7 +16,7 @@
         },
         "uuid": {
           "type": "string",
-          "description": "Universally unique identifier for the material.",
+          "description": "Universally unique identifier for the material. See https://en.wikipedia.org/wiki/Universally_unique_identifier. The uuid stays the same, even if version is updated.",
           "pattern": "^[a-f0-9]{32}$"
         },
         "materialVersion": {
@@ -69,11 +69,11 @@
           "properties": {
             "surfaceHeightRms": {
               "type": "number",
-              "description": "Root mean square of surface height deviations (RMS-Roughness, being a vertical measure of roughness) in meters."
+              "description": "Root mean square of surface height deviations, called RMS-Roughness, being a vertical measure of roughness and given in meters."
             },
             "surfaceCorrelationLength": {
               "type": "number",
-              "description": "Correlation length of the surface height deviations in meters (distance after autocorrelation function has dropped to 1/e, being a horizontal measure of roughness. In some cases another value than 1/e is being used regarding the autocorrelation function. If so, please take a note in 'source'.)"
+              "description": "Correlation length of the surface height deviations, being the distance after autocorrelation function has dropped to 1/e. Thus being a horizontal measure of roughness and given in meters."
             },
             "source": {
               "type": "string",
@@ -156,7 +156,7 @@
           "properties": {
             "coefficientOfRetroreflection": {
               "type": "number",
-              "description": "Coefficient of retro-reflection in cd lx^-1 m^-2. In case only the minimum value of the coefficient is available please take a note in 'source'."
+              "description": "Coefficient of retro-reflection in cd lx^-1 m^-2."
             },
             "source": {
               "type": "string",

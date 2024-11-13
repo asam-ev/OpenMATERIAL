@@ -16,7 +16,7 @@
         },
         "uuid": {
           "type": "string",
-          "description": "Universally unique identifier for the material.",
+          "description": "Universally unique identifier for the material. See https://en.wikipedia.org/wiki/Universally_unique_identifier. The uuid stays the same, even if version is updated.",
           "pattern": "^[a-f0-9]{32}$"
         },
         "materialVersion": {
@@ -101,19 +101,11 @@
               },
               {
                 "type": ["number", "null"],
-                "description": "Polarized plane angle in rad. This is the angle between the plane containing the incident, exit, and normal vector, and the plane of polarization. Please take a note in 'source' whether polarization filter is applied to transmitter or receiver. In case of unpolarized radiation, use null."
-              },
-              {
-                "type": ["number", "null"],
                 "description": "Wavelength of radiation in meters."
               },
               {
                 "type": ["number", "null"],
-                "description": "BRDF value in 1/sr. If polarization plane angle is NOT set as null, the BRDF is considered to be polarization dependent with regards to the given polarization plane."
-              },
-              {
-                "type": ["number", "null"],
-                "description": "Phase of radiation within the linearly polarized plane in rad. If the phase is not taken into account, it is null."
+                "description": "BRDF value in 1/sr."
               }
             ],
             "minItems": 7,
