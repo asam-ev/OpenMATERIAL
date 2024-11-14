@@ -77,14 +77,14 @@
             </g>
         </g>
         <g id="Coordinate-system" serif:id="Coordinate system" transform="matrix(1,0,0,1,-268.898,73.3496)">
-            <g id="arrow-blue" serif:id="arrow blue" transform="matrix(-0.824964,-0.176153,-0.208821,0.977954,1735.47,-3.49269)">
-                <g transform="matrix(-1.18545,2.6358e-21,2.77529e-17,1,1319.91,386.133)">
+            <g id="arrow-blue" serif:id="arrow blue" transform="matrix(-0.832619,-0.135432,-0.160548,0.987028,1717.26,-46.9051)">
+                <g transform="matrix(1.18125,-0.0840878,-0.099682,-0.996458,610.403,703.256)">
+                    <path d="M320.163,136.913L326.858,137.33L322.507,142.436L320.163,136.913Z" style="fill:rgb(0,113,180);"/>
+                    <path d="M309.203,144.824C309.203,144.824 313.043,143.194 322.44,139.205" style="fill:none;stroke:rgb(0,113,180);stroke-width:2px;"/>
+                </g>
+                <g transform="matrix(-1.03671,0.484966,0.574904,0.874532,1192.45,256.751)">
                     <path d="M320.163,136.913L326.858,137.33L322.507,142.436L320.163,136.913Z" style="fill:rgb(0,113,180);"/>
                     <path d="M303.601,147.202C303.601,147.202 313.043,143.194 322.44,139.205" style="fill:none;stroke:rgb(0,113,180);stroke-width:2px;"/>
-                </g>
-                <g transform="matrix(1.00444,-0.531098,-0.629591,-0.84731,739.78,820.864)">
-                    <path d="M320.163,136.913L326.858,137.33L322.507,142.436L320.163,136.913Z" style="fill:rgb(0,113,180);"/>
-                    <path d="M311.099,144.019C311.099,144.019 313.043,143.194 322.44,139.205" style="fill:none;stroke:rgb(0,113,180);stroke-width:2px;"/>
                 </g>
             </g>
             <g transform="matrix(0.999999,-6.57e-28,-9.7202e-28,1,539.444,196.818)">
@@ -95,16 +95,16 @@
                     </g>
                 </g>
             </g>
-            <g transform="matrix(1,0,0,1,852.945,356.282)">
+            <g transform="matrix(1,0,0,1,808.765,346.612)">
                 <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:16px;fill:rgb(0,113,180);">y</text>
             </g>
             <g transform="matrix(1.11514,0,0,1.11514,819.852,322.97)">
                 <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:14.348px;fill:rgb(0,113,180);">z</text>
             </g>
-            <g transform="matrix(1,0,0,1,810.744,355.857)">
+            <g transform="matrix(1,0,0,1,850.8,350.065)">
                 <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:16px;fill:rgb(0,113,180);">x</text>
             </g>
-            <g transform="matrix(1.12889,0,0,1.12889,823.993,362.952)">
+            <g transform="matrix(1.12889,0,0,1.12889,823.641,362.937)">
                 <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:14.173px;fill:rgb(0,113,180);">O</text>
             </g>
         </g>
