@@ -24,7 +24,6 @@
 ** xref:geometry/performance.adoc[]
 * xref:material/material-index.adoc[]
 ** xref:material/introduction.adoc[]
-** xref:material/file-structure.adoc[]
 ** xref:material/material-schema.adoc[]
 ** xref:material/material-emp-schema.adoc[]
 ** xref:material/material-optical-schema.adoc[]

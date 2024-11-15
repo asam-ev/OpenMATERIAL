@@ -1,5 +1,12 @@
 = Introduction
 
+ifndef::include-only-once[]
+:root-path: ../
+:imagesdir: {root-path}/_images
+:includedir: {root-path}/_images
+include::{root-path}_config.adoc[]
+endif::[]
+
 == Motivation
 
 A 3D asset is a digital entity that includes a 3D geometric representation of an object along with its attributes and metadata. 
@@ -8,10 +15,16 @@ Common formats for storing the geometry and visual materials of 3D models includ
 However, these formats do not provide a standardized way to structure the geometry or provide extensive metadata storage and exchange capabilities. 
 The ASAM OpenMATERIAL standard addresses these needs.
 
+This chapter includes all geometry related definitions of ASAM OpenMATERIAL, marked in red in <<fig-openmaterial-geometry-overview>>.
+
 The ASAM OpenMATERIAL asset file (for example, "omg_my-model.xoma") contains essential information relevant to the display and interactivity attributes of the 3D model in various computer applications.
 This includes metadata, material mappings, and semantic information like coordinate system and pivot point descriptions.
 The mapping of materials is stored in a separate material mapping file (.xomm), which is linked in the asset file.
 This setup ensures that the 3D asset can be consistently integrated into complex simulations or real-time environments with detailed material and dynamic properties.
+
+[#fig-openmaterial-geometry-overview]
+.Overview of ASAM OpenMATERIAL Geometry file formats and data flow
+image::overview_geometry.png[,1100]
 
 
 == Use cases
