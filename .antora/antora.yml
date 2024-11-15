@@ -32,7 +32,7 @@ asciidoc: # Sets global AsciiDoc attributes that are applied for every page of t
     topicdir: topics
     reusedir: reuse
     imagesoutdir: ./images/generated_images
-    asamBibliography: 'specification:general-docs/bibliography.bib'
+    asamBibliography: 'specification:bibliography.bib'
 
 nav:
   - modules/specification/nav-openmaterial.adoc
