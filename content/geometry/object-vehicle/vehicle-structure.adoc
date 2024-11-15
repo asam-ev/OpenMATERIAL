@@ -355,7 +355,7 @@ are sorted from right to left in positive y-direction, and from front to rear, s
 2+^| <Header>
 
 | *Origin*
-| Center of the plate
+| Geometric center of the plate's surface
 
 | *x-axis*
 | Pointing outwards from the front of the license plate
