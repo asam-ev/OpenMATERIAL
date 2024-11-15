@@ -1,6 +1,7 @@
 = Material
 
 * xref:material/introduction.adoc[leveloffset=+1]
-* xref:material/file-structure.adoc[leveloffset=+1]
 * xref:material/material-schema.adoc[leveloffset=+1]
 * xref:material/material-emp-schema.adoc[leveloffset=+1]
+* xref:material/material-optical-schema.adoc[leveloffset=+1]
+* xref:material/material-brdf-schema.adoc[leveloffset=+1]

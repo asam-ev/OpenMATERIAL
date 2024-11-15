@@ -69,4 +69,4 @@ antora:
       alternate_xref_style: 'full'
       loft: true
       local_to_global_references: false
-      bibliography: false
+      bibliography: true
