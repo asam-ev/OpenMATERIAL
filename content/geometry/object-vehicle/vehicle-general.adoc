@@ -2,7 +2,7 @@
 
 A vehicle is any machine that moves on land and is either self-propelled or attached to a self-propelled machine.
 Trailers or train wagons are considered separate vehicles.
-However, permanently attached parts, such as the front and rear of an articulated bus, are considered a single vehicle.
+However, permanently attached parts, such as the front and rear of an articulated bus, are considered parts of a single vehicle.
 The vehicle class includes all land vehicles, whether wheeled or tracked.
 In this version of the standard, only wheeled vehicles are considered.
 
