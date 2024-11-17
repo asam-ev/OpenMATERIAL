@@ -22,17 +22,11 @@ Root
       |_ [[../geometry/object-classes.html#_grp_mirror_side_mounting_left_side_mirror_mounting_left_id Grp_Mirror_Side_Mounting_Left_<side_mirror_mounting_left_idx>]]
         |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_left_side_mirror_joint_left_idx Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx> ]]
           |_ [[../geometry/object-classes.html#_grp_mirror_side_view_left_side_mirror_view_left_idx Grp_Mirror_Side_View_Left_<side_mirror_view_left_idx> ]]
-      |_ [[../geometry/object-classes.html#_grp_mirror_side_mounting_right_side_mirror_mounting_right_idx Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx>]]
-        |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_right_side_mirror_joint_right_idx Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> ]]
-          |_ [[../geometry/object-classes.html#_grp_mirror_side_view_right_side_mirror_view_right_idx Grp_Mirror_Side_View_Right_<side_mirror_view_right_idx> ]]
     |_ [[../geometry/object-classes.html#_grp_door_rear_door_rear_idx Grp_Door_Rear_<door_rear_idx>]]
     |_ [[../geometry/object-classes.html#_grp_door_right_door_right_idx Grp_Door_Right_<door_right_idx>]]
       |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_mounting_blindspot_mirror_mounting_idx Grp_Mirror_Blindspot_Mounting_<blindspot_mirror_mounting_idx>]]
         |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_joint_blindspot_mirror_joint_idx Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx>]]
           |_ [[../geometry/object-classes.html#_grp_mirror_blindspot_view_blindspot_mirror_view_idx Grp_Mirror_Blindspot_View_<blindspot_mirror_view_idx>]]
-      |_ [[../geometry/object-classes.html#_grp_mirror_side_mounting_left_side_mirror_mounting_left_id Grp_Mirror_Side_Mounting_Left_<side_mirror_mounting_left_idx>]]
-        |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_left_side_mirror_joint_left_idx Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx> ]]
-          |_ [[../geometry/object-classes.html#_grp_mirror_side_view_left_side_mirror_view_left_idx Grp_Mirror_Side_View_Left_<side_mirror_view_left_idx> ]]
       |_ [[../geometry/object-classes.html#_grp_mirror_side_mounting_right_side_mirror_mounting_right_idx Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx>]]
         |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_right_side_mirror_joint_right_idx Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> ]]
           |_ [[../geometry/object-classes.html#_grp_mirror_side_view_right_side_mirror_view_right_idx Grp_Mirror_Side_View_Right_<side_mirror_view_right_idx> ]]
@@ -1083,7 +1077,7 @@ NOTE: Add a figure on an exemplary rotating warning light on the roof the vehicl
 |===
 
 
-== Grp_Mirror_Blindspot_Joint_Left_<blindspot_mirror_joint_idx>
+== Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx>
 
 This group contains all parts of the movable structure that holds the blindspot
 mirror. The blindspot mirror automatically adjusts when the angle of the
