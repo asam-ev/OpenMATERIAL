@@ -10,7 +10,7 @@ The ASAM OpenMATERIAL standard supports the following object classes:
 
 * Vehicle
 * Human
-* Road and road infrastructure
+* Environment (including traffic areas and traffic infrastructure)
 
 NOTE: TODO: Add references to dedicated sections describing object classes.
 
@@ -56,4 +56,4 @@ NOTE: TODO: Add information on geometry classes + segmentation?
 
 include::object-vehicle/vehicle-index.adoc[leveloffset=+1]
 include::object-human/human-index.adoc[leveloffset=+1]
-include::object-road-network/road-index.adoc[leveloffset=+1]
+include::environment/environment-index.adoc[leveloffset=+1]
