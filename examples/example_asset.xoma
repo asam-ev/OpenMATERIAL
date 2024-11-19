@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "example_car",
-    "description": "This is an example car asset. It demonstrates how OpenMATERIAL assets work.",
+    "description": "This is an example asset. It demonstrates how OpenMATERIAL assets work.",
     "uuid": "87769375a5109c689af8cc3ad3dd8349",
     "assetVersion": "1.0.0",
     "openMaterialVersion": "1.0.0",
@@ -11,9 +11,9 @@
     "modelCreationTool": "Blender",
     "creationDate": "20240703T101728Z",
     "modelingMethod": "Modeled according to images",
-    "validationDescription": "The dimensions of the vehicle in x, y and z where compared to a real vehicle. They were accurate within a margin of 0.01 m.",
+    "validationDescription": "Not validated.",
     "assetType": "object",
-    "objectClass": "vehicle",
+    "objectClass": "other",
     "animated": false,
     "pbrMaterialWorkflow": "metallic",
     "triangleCount": 100000,
@@ -21,12 +21,13 @@
     "textureResolutions": ["2K"],
     "normalMapFormat": "OpenGL",
     "boundingBox": {
-      "x" : [-2.5, 2.5],
-      "y" : [-1.1, 1.1],
-      "z" : [0.0, 1.5]
+      "x" : [-1, 1],
+      "y" : [-1, 1],
+      "z" : [0.0, 3]
     }
   },
+  "materialMappingUri": "example_mapping.xomm",
   "materialTextureAssignment": [
-    ["example_material_name", "example_texture.png"]
+    ["Material_Cube", "checker_xom.png"]
   ]
 }

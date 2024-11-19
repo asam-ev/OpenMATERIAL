@@ -157,6 +157,11 @@
         "boundingBox"
       ]
     },
+    "materialMappingUri": {
+      "type": "string",
+      "description": "Relative path to a material mapping file (.xomm). In this file, material names from the 3D model file or texture color codes from textures assigned in materialTextureAssignment are linked to OpenMATERIAL property files.",
+      "pattern": ".*\\.xomm$"
+    },
     "materialTextureAssignment": {
       "type": "array",
       "description": "Optional array containing material texture assignments. It links material names contained in the 3D model file to OpenMATERIAL assignment textures. In a separate material mapping file, the 'color' values in this texture are linked to OpenMATERIAL property files.",

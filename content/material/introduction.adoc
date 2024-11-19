@@ -1,1 +1,16 @@
 = Introduction
+
+ifndef::include-only-once[]
+:root-path: ../
+:imagesdir: {root-path}/_images
+:includedir: {root-path}/_images
+include::{root-path}_config.adoc[]
+endif::[]
+
+This chapter includes all material related definitions of ASAM OpenMATERIAL, marked in red in <<fig-openmaterial-material-overview>>.
+
+[#fig-openmaterial-material-overview]
+.Overview of ASAM OpenMATERIAL Material file formats and data flow
+image::overview_material.png[,1100]
+
+NOTE: Further introduction t.b.d.
