@@ -8,9 +8,9 @@ legend
 [[../geometry/object-classes.html#_environment_t Environment_Root (T)]]
 |_[[../geometry/object-classes.html#_terrain_t Terrain]]
 |_[[../geometry/object-classes.html#_environment_objects_t Objects]]
-  |_ [[../geometry/object-classes.html#_building_idx Building_<building_idx>]]
-  |_ [[../geometry/object-classes.html#_vegetation_idx Vegetation_<vegetation_idx>]]
-  |_ [[../geometry/object-classes.html#_other_idx Other_Objects_<object_idx>]]
+  |_ [[../geometry/object-classes.html#_buildings Buildings]]
+  |_ [[../geometry/object-classes.html#_vegetation Vegetation]]
+  |_ [[../geometry/object-classes.html#_other_objects Other_Objects]]
 |_[[../geometry/object-classes.html#_road_network_t Road_Network]]
   |_ [[../geometry/object-classes.html#_drivable_area_t Drivable_Area]]
   |_ [[../geometry/object-classes.html#_sidewalk_t Sidewalk]]
@@ -18,7 +18,7 @@ legend
   |_ [[../geometry/object-classes.html#_road_object_idx_t Road_Object_<object_idx> (T)]]
   |_ [[../geometry/object-classes.html#_signal_signal_idx_t Signal_<signal_idx> (T)]]
     |_ [[../geometry/object-classes.html#_sign_idx_t Sign_<sign_idx> (T)]]
-    |_ [[../geometry/object-classes.html#_light_bulb_idx_t Light_Bulb_<bulb_idx> (T)]]
+    |_ [[../geometry/object-classes.html#_light_idx_t Light_<light_idx> (T)]]
     |_ [[../geometry/object-classes.html#_cover_idx_t Cover<cover_idx> (T)]]
 end legend
 ----
@@ -128,7 +128,7 @@ Add a figure.
 
 .<Figure caption>
 
-== Buildings_<building_idx>
+== Buildings
 
 Buildings belong to the human-made environment, including , e.g., houses, towers, or skysrapers.
 
@@ -156,7 +156,7 @@ Add a figure.
 
 .<Figure caption>
 
-== Vegetation_<vegetation_idx>
+== Vegetation
 
 Vegetation includes all organic growths or plants that are part of the landscape and grow on the terrain or on human-made structures, e.g., between roads and buildings. 
 
@@ -184,7 +184,7 @@ Add a figure.
 
 .<Figure caption>
 
-== Other_Objects_<object_idx>
+== Other_Objects
 
 Apart from buildings, vegetation, and terrain, there are further objects part of the stationary surrounding. Some examples are bridges, highways, or tunnels. Road objects, e.g., signals, signs and traffic lights do not belong to this category, since they belong to the road network's Road Objects class, see below. 
 
@@ -422,10 +422,10 @@ Add a figure.
 .<Figure caption>
 
 
-== Light_Bulb_<bulb_idx> (T)
+== Light_<light_idx> (T)
 
 
-Light bulbs belong to traffic signals or traffic lights to provide temporary changes in elumination. 
+Lights belong to traffic signals or traffic lights or street lights to provide temporary changes in elumination. 
 
 .<Table title>
 [%header, cols="20, 80"]
