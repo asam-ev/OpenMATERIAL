@@ -16,13 +16,13 @@
     "objectClass": "human",
     "animated": false,
     "pbrMaterialWorkflow": "metallic",
-    "triangleCount": 41410,
-    "meshCount": 1,
+    "triangleCount": 46514,
+    "meshCount": 4,
     "textureResolutions": [""],
     "normalMapFormat": "OpenGL",
     "boundingBox": {
-      "x" : [-0.55, 0.55],
-      "y" : [-0.178, 0.178],
+      "x" : [-0.151239, 0.21534],
+      "y" : [-0.54689, 0.54689],
       "z" : [0.0, 1.78]
     }
   }
