@@ -9,7 +9,7 @@ endif::[]
 
 == Motivation
 
-A 3D asset is a digital entity that includes a 3D geometric representation of an object along with its attributes and metadata. 
+A 3D asset (or **3D Data File**) is a digital entity that includes a 3D geometric representation of an object along with its attributes and metadata. 
 Common formats for storing the geometry and visual materials of 3D models include glTF, FBX, and USD.
 
 However, these formats do not provide a standardized way to structure the geometry or provide extensive metadata storage and exchange capabilities. 
@@ -17,10 +17,10 @@ The ASAM OpenMATERIAL standard addresses these needs.
 
 This chapter includes all geometry related definitions of ASAM OpenMATERIAL, marked in red in <<fig-openmaterial-geometry-overview>>.
 
-The ASAM OpenMATERIAL asset file (for example, "omg_my-model.xoma") contains essential information relevant to the display and interactivity attributes of the 3D model in various computer applications.
+The ASAM OpenMATERIAL **Asset File** (for example, "omg_my-model.xoma") contains essential information relevant to the display and interactivity attributes of the 3D model in various computer applications.
 This includes metadata, material mappings, and semantic information like coordinate system and pivot point descriptions.
-The mapping of materials is stored in a separate material mapping file (.xomm), which is linked in the asset file.
-This setup ensures that the 3D asset can be consistently integrated into complex simulations or real-time environments with detailed material and dynamic properties.
+The mapping of materials is stored in a separate **Material Mapping File** (.xomm), which is linked in the Asset File.
+This setup ensures that the 3D asset (or 3D Data File) can be consistently integrated into complex simulations or real-time environments with detailed material and dynamic properties.
 
 [#fig-openmaterial-geometry-overview]
 .Overview of ASAM OpenMATERIAL Geometry file formats and data flow
@@ -48,7 +48,7 @@ Users can continue using their familiar tools and processes to manage geometry, 
 
 The ASAM OpenX standards strive to provide comprehensive, realistic, and most importantly, exchangeable simulation data for the development and testing of autonomous systems:
 
-* ASAM OpenDRIVE standardizes the description of road networks, including some geometric definitions of the road surface, but primarily focuses on the semantic description of the road. The ASAM OpenMATERIAL object class "Environment" enhances this by allowing the definition of a comprehensive 3D environment that aligns with an ASAM OpenDRIVE map.
+* ASAM OpenDRIVE standardizes the description of road networks, including geometric definitions of the road, but primarily focuses on the semantic description of the road. The ASAM OpenMATERIAL object class "Environment" enhances this by allowing the definition of a comprehensive 3D environment that aligns with an ASAM OpenDRIVE map.
 * ASAM OpenSCENARIO is a file format created to describe dynamic content in driving and traffic simulators, with a primary focus on complex maneuvers involving multiple entities like vehicles and pedestrians. ASAM OpenMATERIAL defines node structures and metadata for these object classes to seamlessly integrate ASAM OpenSCENARIO definitions with a 3D model.
 The 3D environment SHALL be linked in ASAM OpenSCENARIO using the https://publications.pages.asam.net/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_XML/latest/generated/content/RoadNetwork.html[SceneGraphFile property], while
 Individual objects, such as vehicles, SHALL be linked using the https://publications.pages.asam.net/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_XML/latest/07_components_scenario/07_02_storyboard_entities.html#_3d_models_for_entities[model3d property].
