@@ -1,0 +1,113 @@
+=== Naming convention
+
+General naming structure for the bones: BoneName_Side
+
+.Side indicator
+[%header, cols="20, 80"]
+|===
+
+2+^| Side
+
+| *Keyword*
+| *Usage*
+
+|*Left*
+| Specifies the left side
+
+|*Right*
+| Specifies the right side
+
+|===
+
+  
+.Node Names
+[%header, cols="20, 80"]
+|===
+
+2+^| Node Names
+
+| *Keyword*
+| *Usage*
+
+| *Grp*
+| Prefix for group nodes
+
+|*Accessories*
+| Prefix all (exchangable) accessories
+  
+|*Body*
+| Prefix for the body
+
+|*Clothing*
+| Prefix for all (exchangable) clothings
+
+|*Hair*
+| Prefix all (exchangable) hairs
+
+|===
+
+
+.Bone names
+[%header, cols="20, 80"]
+|===
+
+2+^| Bones
+
+| *Bone name*
+| *Usage*
+
+| *Root*
+| Bone to transform the whole skeleton
+
+| *Lower_Spine*
+| Bone for the lowest part of the spine
+
+| *Middle_Spine*
+| Bone for the middle part of the spine
+
+| *Upper_Spine*
+| Bone for the upper part of the spine
+
+| *Hip_<Side>*
+| Bone for the hip
+
+| *Neck*
+| Bone for the neck
+
+| *Head*
+| Bone for the head
+
+| *Eye_<Side>*
+| Bone for the eye
+
+| *Shoulder_<Side>*
+| Bone for the shoulder
+
+| *Upper_Arm_<Side>*
+| Bone for the upper arm
+
+| *Lower_Arm_<Side>*
+| Bone for the lower arm
+
+| *Hand_<Side>*
+| Bone for the hand
+
+| *Full_Thumb_<Side>*
+| Bone for the thumb
+
+| *Full_Fingers_<Side>*
+| Bone for all fingers, exluding the thumb
+
+| *Upper_Leg_<Side>*
+| Bone for the upper part of the leg (thigh)
+
+|*Lower_leg_<Side>*
+| Bone for the lower part of the leg (leg)
+
+| *Foot_<Side>*
+| Bone for the foot, excluding the toes
+
+| *Full_Toes_<Side>*
+| Bone for the toes.
+
+|===

@@ -1,0 +1,174 @@
+=== Naming convention
+
+
+.Vehicle Keywords
+[%header, cols="20, 80"]
+|===
+
+2+^| Vehicle Keywords
+
+| *Keyword*
+| *Usage*
+
+| *Grp*
+| Prefix for group nodes
+
+| *Static*
+| Contains all static components
+
+| *Dynamic*
+| Contains all dynamic components
+
+| *Exterior*
+| Contains the exterior of an vehicle
+
+| *Interior*
+| Contains the interior of an vehicle
+
+| *Wheel*
+| Contains wheels of an vehicle
+
+| *Wheel_Steering*
+| Contains the wheel steering
+
+| *Door*
+| Contains doors of an vehicle (inlucding trunks, engine hoods, etc.).
+  After this subkey always follows a subkey which indicates the specific view side
+
+| *Number_Plate*
+| Contains license plates of an vehicle
+
+| *Convertible_Top*
+| Contains the convertible top of an vehicle
+
+| *Rear_Axle_Center*
+| Contains the sensors reference coordinate frame of the vehicle
+
+| *Mirror*
+| Contains all mirrors of an vehicle
+
+| *Steering_Wheel*
+| Contains all steering wheels of an vehicle
+
+| *Eyepoint*
+| Contains the eyepoint of the passenger(s)
+
+| *Seat*
+| Contains the seat positions of the passenger(s)
+
+|===
+
+.View Keyword
+[%header, cols="20, 80"]
+|===
+
+2+^| Vehicle View Keyword
+
+| *Front*
+| Specifies the front view side
+
+| *Left*
+| Specifies the left view side
+
+| *Right*
+| Specifies the right view side
+
+| *Top*
+| Specifies the top view side
+
+| *Rear*
+| Specifies the rear view side
+
+|===
+
+
+.Light Keyword
+[%header, cols="20, 80"]
+|===
+
+2+^| Vehicle Light Keyword
+
+| *Light*
+| Contains vehicle lights
+  After this keyword  always follows a keyword which indicates the specific vehicle light
+
+| *Day*
+| Specifies day lights of the vehicle and is always used after the keyword  "Light".
+  After this keyword  always follows a keyword  which indicates the specific view side.
+
+| *Low_Beam*
+| Specifies low beam lights of the vehicle and is always used after the keyword  "Light".
+  After this keyword  always follows a keyword  which indicates the specific view side.
+
+| *High_Beam*
+| Specifies high beam lights of the vehicle and is always used after the keyword  "Light".
+  After this keyword  always follows a keyword  which indicates the specific view side.
+
+| *Corner*
+| Specifies corner lights of the vehicle and is always used after the keyword  "Light".
+  After this keyword  always follows a keyword  which indicates the specific view side.
+
+| *Position*
+| Specifies position lights of the vehicle and is always used after the keyword  "Light".
+  After this keyword  always follows a keyword  which indicates the specific view side.
+
+| *Park*
+| Specifies park lights of the vehicle and is always used after the keyword  "Light".
+  After this keyword  always follows a keyword  which indicates the specific view side.
+
+| *Indicator*
+| Specifies indicator lights of the vehicle and is always used after the keyword  "Light".
+  After this keyword  always follows a keyword  which indicates the specific view side.
+
+| *License_Plate*
+| Specifies license plate lights of the vehicle and is always used after the keyword  "Light".
+  After this keyword  always follows a keyword  which indicates the specific view side.
+
+| *Tail*
+| Specifies tail lights of the vehicle and is always used after the keyword  "Light".
+  After this keyword  always follows a keyword  which indicates the specific view side.
+
+| *Brake*
+| Specifies brake lights of the vehicle and is always used after the keyword  "Light".
+  After this keyword  always follows a keyword  which indicates the specific view side.
+
+| *Reverse*
+| Specifies reverse lights of the vehicle and is always used after the keyword  "Light".
+  After this keyword  always follows a keyword  which indicates the specific view side.
+
+| *Fog*
+| Specifies fog lights of the vehicle and is always used after the keyword  "Light".
+  After this keyword  always follows a keyword  which indicates the specific view side.
+
+| *Warning*
+| Specifies warning lights of the vehicle and is always used after the keyword  "Light".
+  After this keyword  always follows a keyword  which indicates the specific view side.
+
+|===
+
+.Mirror Keywords
+[%header, cols="20, 80"]
+|===
+
+2+^| Vehicle Mirror Keywords
+
+| *Side*
+| Specifies the side mirror(s) of an vehicle.
+
+| *Blindspot*
+| Specifies the blindspot mirror(s) of an vehicle
+
+| *Rearview*
+| Specifies the rearview mirror(s) of an vehicle
+
+| *Mounting*
+| Specifies the mirror mounting on the vehicle, always used after the keyword , which specifies the type of the mirror
+
+|*Joint*
+| Specifies the movable part of the mirror on the mirror mounting.
+  After this keyword always follows a keyword  which indicates the specific view side.
+
+| *View*
+| Specifies the view direction of the mirror glass on a the mirror
+
+|===
