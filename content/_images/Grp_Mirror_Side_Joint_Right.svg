@@ -167,7 +167,7 @@
         <g transform="matrix(-1,0,0,1,1549,0)">
             <path d="M563.5,542.5C573.1,545.883 582.701,549.267 592.201,552.1C601.701,554.933 611.1,557.217 620.5,559.5" style="fill:none;stroke:rgb(127,127,127);stroke-width:1.33px;"/>
         </g>
-        <g id="Coordinate-system" serif:id="Coordinate system" transform="matrix(1,0,0,1,-170.025,65.5134)">
+        <g id="Coordinate-system" serif:id="Coordinate system" transform="matrix(1,0,0,1,-170.636,62.064)">
             <g transform="matrix(1,0,0,1,860.645,334.594)">
                 <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:16px;fill:rgb(0,113,180);">y</text>
             </g>
@@ -177,7 +177,7 @@
             <g transform="matrix(1,0,0,1,825.033,323)">
                 <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:16px;fill:rgb(0,113,180);">z</text>
             </g>
-            <g transform="matrix(1.12889,0,0,1.12889,824.572,363.034)">
+            <g transform="matrix(1.12889,0,0,1.12889,824.572,364.034)">
                 <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:14.173px;fill:rgb(0,113,180);">O</text>
             </g>
             <g transform="matrix(0.999999,0,0,1,711.798,284.903)">

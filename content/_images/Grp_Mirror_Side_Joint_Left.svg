@@ -65,7 +65,7 @@
         <path d="M564.5,542.5L558.5,526.5" style="fill:none;stroke:rgb(127,127,127);stroke-width:1.33px;"/>
         <path d="M559.5,526.5C569.217,529.667 578.933,532.833 588.1,535.5C597.267,538.167 605.883,540.333 614.5,542.5" style="fill:none;stroke:rgb(127,127,127);stroke-width:1.33px;"/>
         <path d="M563.5,542.5C573.1,545.883 582.701,549.267 592.201,552.1C601.701,554.933 611.1,557.217 620.5,559.5" style="fill:none;stroke:rgb(127,127,127);stroke-width:1.33px;"/>
-        <g id="Coordinate-system" serif:id="Coordinate system" transform="matrix(1,0,0,1,48.1966,65.6747)">
+        <g id="Coordinate-system" serif:id="Coordinate system" transform="matrix(1,0,0,1,49.7001,62.4628)">
             <g transform="matrix(1,0,0,1,802.177,369.038)">
                 <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:16px;fill:rgb(0,113,180);">x</text>
             </g>
