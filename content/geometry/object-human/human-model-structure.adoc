@@ -34,21 +34,17 @@
         |_ [[../geometry/object-classes.html#_lower_leg_right Lower_Leg_Right]]
           |_ [[../geometry/object-classes.html#_foot_right Foot_Right]]
             |_ [[../geometry/object-classes.html#_full_toes_right Full_Toes_Right]]
-  |_ [[../geometry/object-classes.html#_grp_accessories Grp_Accessories]]
-    |_ [[../geometry/object-classes.html#_accessorie Accessorie]]
-  |_ [[../geometry/object-classes.html#_grp_body Grp_Body]]
-    |_ [[../geometry/object-classes.html#_human Human]]
-  |_ [[../geometry/object-classes.html#_grp_clothing Grp_Clothing]]
-    |_ [[../geometry/object-classes.html#_vest Vest]]
-  |_ [[../geometry/object-classes.html#_grp_hair Grp_Hair]]
-    |_ [[../geometry/object-classes.html#_hair Hair]]
+  |_ [[../geometry/object-classes.html#_accessories Accessories_Wristband]]
+  |_ [[../geometry/object-classes.html#_body Body_Human]]
+  |_ [[../geometry/object-classes.html#_clothing Clothing_Vest]]
+  |_ [[../geometry/object-classes.html#_hair Hair_Short]]
 ----
 
 
 == Grp_Root 
 
 This group is used as a parent for all following nodes. It can be used to place the whole asset and select the complete node hierarchy at once.
-The origin of the Root group is set at the world origin.
+The origin of the `Root` group is set at the center of the bounding box on the ground.
 
 .Grp_Root 
 [%header, cols="20, 40, 40"]
@@ -57,7 +53,7 @@ The origin of the Root group is set at the world origin.
 3+^| Grp_Root
 
 | *Axis*
-| *World origin*
+| *Transformation*
 | *Direction*
 
 | *X*
@@ -74,19 +70,19 @@ The origin of the Root group is set at the world origin.
 |===
 
 
-== Grp_Accessories
+== Accessories_<Name>
 
-This group contains all additional or exchangable accessories of the human.
-The origin of the Accessories group is set at the world origin.
+This object represents an additional or exchangable accessorie of the human.
+The origin of the `Accessorie` is set at the center of the bounding box on the ground.
 
-.Grp_Accessories 
+.Accessories 
 [%header, cols="20, 40, 40"]
 |===
 
-3+^| Grp_Accessories
+3+^| Accessorie
 
 | *Axis*
-| *World origin*
+| *Transformation*
 | *Direction*
 
 | *X*
@@ -103,19 +99,19 @@ The origin of the Accessories group is set at the world origin.
 |===
 
 
-== Grp_Body
+== Body_<Name>
 
-This group contains the body of the human.
-The origin of the Body group is set at the world origin.
+This object represents the body of the human.
+The origin of the `Body` is set at the center of the bounding box on the ground.
 
-.Grp_Body
+.Body
 [%header, cols="20, 40, 40"]
 |===
 
-3+^| Grp_Body
+3+^| Body
 
 | *Axis*
-| *World origin*
+| *Transformation*
 | *Direction*
 
 | *X*
@@ -132,19 +128,19 @@ The origin of the Body group is set at the world origin.
 |===
 
 
-== Grp_Clothing
+== Clothing_<Name>
 
-This group contains all additional or exchangable cloth parts of the human.
-The origin of the Clothing group is set at the world origin.
+This object represents an additional or exchangable cloth part of the human.
+The origin of the `Clothing` is set at the center of the bounding box on the ground.
 
-.Grp_Clothing
+.Clothing
 [%header, cols="20, 40, 40"]
 |===
 
-3+^| Grp_Clothing
+3+^| Clothing
 
 | *Axis*
-| *World origin*
+| *Transformation*
 | *Direction*
 
 | *X*
@@ -161,19 +157,19 @@ The origin of the Clothing group is set at the world origin.
 |===
 
 
-== Grp_Hair
+== Hair_<Name>
 
-This group contains all additional or exchangable hair parts of the human.
-The origin of the Hair group is set at the world origin.
+This object represents an additional or exchangable hair part of the human.
+The origin of the `Hair` is set at the center of the bounding box on the ground.
 
-.Grp_Hair
+.Hair
 [%header, cols="20, 40, 40"]
 |===
 
-3+^| Grp_Hair
+3+^| Hair
 
 | *Axis*
-| *World origin*
+| *Transformation*
 | *Direction*
 
 | *X*
@@ -202,7 +198,7 @@ The origin of the `Root` bone is set at the world origin.
 3+^| Root
 
 | *Axis*
-| *World origin*
+| *Transformation*
 | *Direction*
 
 | *X*
