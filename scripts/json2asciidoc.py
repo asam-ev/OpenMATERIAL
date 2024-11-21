@@ -91,8 +91,8 @@ def generate_asciidoc_properties(properties, required_fields, level=2):
         
         # Add pattern inline and handle escaping of backslashes and curly braces
         if "pattern" in prop_data:
-            #pattern = escape_special_chars(prop_data['pattern'])
-            asciidoc_content += f"\n*Pattern:* `{prop_data['pattern']}`\n"
+            pattern = escape_special_chars(prop_data['pattern'])
+            asciidoc_content += f"\n*Pattern:* `+{pattern}+`\n"
         
         # Add a new line before required status
         if prop_name in required_fields:
