@@ -5,90 +5,90 @@
   "properties": {
     "metadata": {
       "type": "object",
-      "description": "Metadata about the asset.",
+      "description": " Part of the 3D asset file https://github.com/asam-ev/OpenMATERIAL/blob/main/content/geometry/general.adoc#3d-asset-file ; contains key information about the asset, including its identity, authorship, technical specifications, and legal details.",
       "properties": {
         "name": {
           "type": "string",
-          "description": "Name of the asset."
+          "description": "The display name of the asset, such as 'Car Model A' or 'Urban Scene 1'."
         },
         "description": {
           "type": "string",
-          "description": "Short description of the asset in 2 - 3 sentences."
+          "description": "A concise summary of the asset's purpose or features (2–3 sentences)."
         },
         "uuid": {
           "type": "string",
-          "description": "Universally unique identifier for the asset.",
+          "description": "A 32-character hexadecimal string serving as a unique identifier for the asset.",
           "pattern": "^[a-f0-9]{32}$"
         },
         "assetVersion": {
           "type": "string",
-          "description": "Version of the asset.",
+          "description": "The version number of the asset, following Semantic Versioning (e.g., '1.0.0').",
           "pattern": "^\\d+\\.\\d+\\.\\d+$"
         },
         "openMaterialVersion": {
           "type": "string",
-          "description": "Version of OpenMATERIAL.",
+          "description": "The version of the OpenMATERIAL specification used, adhering to Semantic Versioning.",
           "pattern": "^\\d+\\.\\d+\\.\\d+$"
         },
         "copyright": {
           "type": "string",
-          "description": "Copyright information with year and company."
+          "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.')."
         },
         "license": {
           "type": "string",
-          "description": "License information. For common open source licenses, provide an SPDX identifier. For other types of licenses, provide an URL to a webpage with the license or the filename of a separately provided license file."
+          "description": "Describes the license for asset distribution. Use an SPDX identifier for open-source licenses (e.g., 'MIT'), or provide a URL or filename for proprietary licenses."
         },
         "author": {
           "type": "string",
-          "description": "Name or email address of the author of this asset. In case of multiple authors, use comma-separation. The author can also be a company name."
+          "description": "Lists the author(s) of the asset as a name, email, or company. Multiple authors should be comma-separated."
         },
         "modelCreationTool": {
           "type": "string",
-          "description": "The tool or software used to generate the 3D model of this asset."
+          "description": "Specifies the software or tool (and version) used to create the 3D model (e.g., 'Blender 3.5')."
         },
         "creationDate": {
           "type": "string",
-          "description": "Creation date of the asset in the format YYYYMMDDTHHMMSSZ.",
+          "description": "The date and time of asset creation, formatted in ISO 8601 (e.g., '2024-11-20T15:30:00Z').",
           "pattern": "^\\d{8}T\\d{6}Z$"
         },
         "modelingMethod": {
           "type": "string",
-          "description": "Description how the 3D model was modeled. Was it modeled based on a 3D scan, based on photos, or freehand?"
+          "description": "Indicates how the model was created, e.g., '3D scan', 'photo-based modeling', or 'freehand design'."
         },
         "validationDescription": {
           "type": "string",
-          "description": "Was the geometry of the 3D model validated against a real-world object? If yes, how?"
+          "description": "Details the validation process used to compare the model geometry with real-world objects."
         },
         "assetType": {
           "type": "string",
-          "description": "Type of the asset out of the following: object (individual object), scene (a collection of multiple objects)",
+          "description": "Specifies whether the asset represents an individual object ('object') or a collection of objects ('scene').",
           "enum": ["object", "scene"]
         },
         "objectClass": {
           "type": "string",
-          "description": "The class of the object. This only applies if 'asset_type' == 'object'.",
+          "description": "Classifies the object type when 'assetType' is 'object', e.g., 'vehicle' or 'human'.",
           "enum": ["vehicle", "human", "road_network", "other"]
         },
         "animated": {
           "type": "boolean",
-          "description": "Does the 3D model contain keyframe animations?"
+          "description": "Indicates whether the 3D model contains keyframe animations."
         },
         "pbrMaterialWorkflow": {
           "type": "string",
-          "description": "Does the 3D model contain materials for a PBR workflow? If yes, for a metallic or specular workflow?",
+          "description": "Describes the Physically Based Rendering (PBR) material workflow used, either 'metallic' or 'specular'.",
           "enum": ["metallic", "specular", "none"]
         },
         "triangleCount": {
           "type": "integer",
-          "description": "The number of triangles in the 3D model. One quad counts as two triangles."
+          "description": "The total number of triangles in the model. A quad polygon counts as two triangles."
         },
         "meshCount": {
           "type": "integer",
-          "description": "The number of meshes in the 3D geometry."
+          "description": "The total number of meshes in the 3D geometry."
         },
         "textureResolutions": {
           "type": "array",
-          "description": "List of all texture resolutions in the 3D model. This can include any combination of '1K', '2K', or '4K'.",
+          "description": "Lists all texture resolutions used in the 3D model (e.g., '1K', '2K', '4K').",
           "items": {
             "type": "string",
             "enum": ["1K", "2K", "4K"]
@@ -98,16 +98,16 @@
         },
         "normalMapFormat": {
           "type": "string",
-          "description": "Does the 3D model have normal maps as textures? If yes, are they using the DirectX format or the OpenGL format?",
+          "description": "Specifies the format of normal maps, such as 'DirectX' or 'OpenGL'.",
           "enum": ["DirectX", "OpenGL", "none"]
         },
         "boundingBox": {
           "type": "object",
-          "description": "Axis-aligned bounding box dimensions specifying the minimum and maximum values in x, y, and z direction.",
+          "description": "Defines the axis-aligned bounding box dimensions for the asset.",
           "properties": {
             "x": {
               "type": "array",
-              "description": "Minimum and maximum values in m in x direction.",
+              "description": "Minimum and maximum values in meters along the x-axis.",
               "items": {
                 "type": "number"
               },
@@ -116,7 +116,7 @@
             },
             "y": {
               "type": "array",
-              "description": "Minimum and maximum values in m in y direction.",
+              "description": "Minimum and maximum values in meters along the y-axis.",
               "items": {
                 "type": "number"
               },
@@ -125,7 +125,7 @@
             },
             "z": {
               "type": "array",
-              "description": "Minimum and maximum values in m in z direction.",
+              "description": "Minimum and maximum values in meters along the z-axis.",
               "items": {
                 "type": "number"
               },
