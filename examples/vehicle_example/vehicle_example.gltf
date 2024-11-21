@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.3.47",
+		"generator":"Khronos glTF Blender I/O v4.2.57",
 		"version":"2.0"
 	},
 	"scene":0,
@@ -892,7 +892,7 @@
 				100,
 				101
 			],
-			"name":"Grp_Seat_0",
+			"name":"Grp_Seat_0_0",
 			"translation":[
 				0.07343578338623047,
 				0.4904346168041229,
@@ -917,7 +917,7 @@
 				103,
 				104
 			],
-			"name":"Grp_Seat_1",
+			"name":"Grp_Seat_0_1",
 			"translation":[
 				0.07343578338623047,
 				0.4904346168041229,
@@ -925,7 +925,7 @@
 			]
 		},
 		{
-			"name":"Grp_Seat_2",
+			"name":"Grp_Seat_1_0",
 			"translation":[
 				-0.5966542959213257,
 				0.5258066058158875,
@@ -955,7 +955,7 @@
 				107,
 				108
 			],
-			"name":"Grp_Seat_3",
+			"name":"Grp_Seat_1_1",
 			"translation":[
 				-0.5966542959213257,
 				0.5258066058158875,
@@ -963,7 +963,7 @@
 			]
 		},
 		{
-			"name":"Grp_Seat_4",
+			"name":"Grp_Seat_1_2",
 			"translation":[
 				-0.5966542959213257,
 				0.5258066058158875,

@@ -77,7 +77,7 @@ Root
     |_ [[../geometry/object-classes.html#_grp_mirror_rearview_mounting_rearview_mirror_mounting_idx Grp_Mirror_Rearview_Mounting_<rearview_mirror_mounting_idx>]]
       |_ [[../geometry/object-classes.html#_grp_mirror_rearview_joint_rearview_mirror_joint_idx Grp_Mirror_Rearview_Joint_<rearview_mirror_joint_idx>]]
         |_ [[../geometry/object-classes.html#_grp_mirror_rearview_view_rearview_mirror_view_idx Grp_Mirror_Rearview_View_<rearview_mirror_view_idx>]]
-    |_ [[../geometry/object-classes.html#_grp_seat_seat_idx Grp_Seat_<seat_idx>]]
+    |_ [[../geometry/object-classes.html#_grp_seat_seat_row_seat_idx Grp_Seat_<seat_row><seat_idx>]]
     |_ [[../geometry/object-classes.html#_grp_steering_wheel Grp_Steering_Wheel]]
   |_ [[../geometry/object-classes.html#_grp_interior_static Grp_Interior_Static]]
 |_ [[../geometry/object-classes.html#_grp_vehicle_part Optional Grp_Vehicle_Part]]
@@ -1709,14 +1709,15 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Seat_<seat_idx>
+== Grp_Seat_<seat_row><seat_idx>
 
 This group contains all parts of the vehicles's seats.
 
 The seat position can be used to place a human 3D model as a passenger.
 Therefore, a bench consists of multiple individual seats.
 
-`<seat_idx>` denotes the index of seats. The index entries
+`<seat_row_idx>` denotes a row of seats, counted from the front to the rear, starting with 0.
+`<seat_idx>` denotes the index of a seat per row. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
 NOTE: Add a figure.
