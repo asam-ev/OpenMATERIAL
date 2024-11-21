@@ -185,6 +185,18 @@
             "type": "string",
             "pattern": ".*_brdf\\.xompt$"
           }
+        },
+        "customProperties" : {
+          "type" : "array",
+          "description" : "Custom properties in this material.",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+            },
+            "additionalProperties" : {
+              "type" : "object"
+            }
+          }
         }
       },
       "required": [
