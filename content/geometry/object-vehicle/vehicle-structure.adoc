@@ -66,7 +66,7 @@ Root
     |_ [[../geometry/object-classes.html#_grp_mirror_side_mounting_right_side_mirror_mounting_right_idx Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx>]]
       |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_right_side_mirror_joint_right_idx Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> ]]
         |_ [[../geometry/object-classes.html#_grp_mirror_side_view_right_side_mirror_view_right_idx Grp_Mirror_Side_View_Right_<side_mirror_view_right_idx> ]]
-    |_ [[../geometry/object-classes.html#_grp_sensor_sensor_idx Grp_Sensor_<sensor_idx>]]
+    |_ [[../geometry/object-classes.html#_grp_rear_axle_center Grp_Rear_Axle_Center]]
     |_ [[../geometry/object-classes.html#_grp_wheel_axle_idx_wheel_idx Grp_Wheel_<axle_idx>_<wheel_idx>]]
       |_ [[../geometry/object-classes.html#_grp_wheel_steering_axle_idx_wheel_idx Grp_Wheel_Steering_<axle_idx>_<wheel_idx>]]
       |_ [[../geometry/object-classes.html#_grp_wheel_steering_rotating_axle_idx_wheel_idx Grp_Wheel_Steering_Rotating_<axle_idx>_<wheel_idx>]]
@@ -77,7 +77,7 @@ Root
     |_ [[../geometry/object-classes.html#_grp_mirror_rearview_mounting_rearview_mirror_mounting_idx Grp_Mirror_Rearview_Mounting_<rearview_mirror_mounting_idx>]]
       |_ [[../geometry/object-classes.html#_grp_mirror_rearview_joint_rearview_mirror_joint_idx Grp_Mirror_Rearview_Joint_<rearview_mirror_joint_idx>]]
         |_ [[../geometry/object-classes.html#_grp_mirror_rearview_view_rearview_mirror_view_idx Grp_Mirror_Rearview_View_<rearview_mirror_view_idx>]]
-    |_ [[../geometry/object-classes.html#_grp_seat_seat_idx Grp_Seat_<seat_idx>]]
+    |_ [[../geometry/object-classes.html#_grp_seat_seat_row_seat_idx Grp_Seat_<seat_row><seat_idx>]]
     |_ [[../geometry/object-classes.html#_grp_steering_wheel Grp_Steering_Wheel]]
   |_ [[../geometry/object-classes.html#_grp_interior_static Grp_Interior_Static]]
 |_ [[../geometry/object-classes.html#_grp_vehicle_part Optional Grp_Vehicle_Part]]
@@ -1382,11 +1382,12 @@ image::Grp_Mirror_Side_View_Right.svg[,1100]
 |===
 
 
-== Grp_Sensor_<sensor_idx>
+== Grp_Rear_Axle_Center
 
-This group contains all parts of the vehicle's perception sensors.
+This group is an empty node in the center or the rear axle.
 
-The sensor's geometry can also be placed in <Grp_Exterior_Static>.
+The coordinate origin of this group is aligned with the ASAM OSI host vehicle coordinate system and may be used as the reference frame for perception sensor data.
+
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1395,16 +1396,16 @@ The sensor's geometry can also be placed in <Grp_Exterior_Static>.
 2+^| <Header>
 
 | *Origin*
-| Origin of the sensor
+| Center of the rear axle of the vehicle
 
 | *x-axis*
-| Pointing outwards from the sensor in the direction of its longitudinal axis
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing upwards in sensor coordinates
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 == Grp_Wheel_<axle_idx>_<wheel_idx>
@@ -1706,14 +1707,15 @@ image::Grp_Mirror_Rearview_View.svg[,1100]
 |===
 
 
-== Grp_Seat_<seat_idx>
+== Grp_Seat_<seat_row><seat_idx>
 
 This group contains all parts of the vehicles's seats.
 
 The seat position can be used to place a human 3D model as a passenger.
 Therefore, a bench consists of multiple individual seats.
 
-`<seat_idx>` denotes the index of seats. The index entries
+`<seat_row_idx>` denotes a row of seats, counted from the front to the rear, starting with 0.
+`<seat_idx>` denotes the index of a seat per row. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
 image::Grp_Seat.svg[,1100]
