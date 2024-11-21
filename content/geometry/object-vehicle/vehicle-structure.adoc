@@ -66,7 +66,7 @@ Root
     |_ [[../geometry/object-classes.html#_grp_mirror_side_mounting_right_side_mirror_mounting_right_idx Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx>]]
       |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_right_side_mirror_joint_right_idx Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> ]]
         |_ [[../geometry/object-classes.html#_grp_mirror_side_view_right_side_mirror_view_right_idx Grp_Mirror_Side_View_Right_<side_mirror_view_right_idx> ]]
-    |_ [[../geometry/object-classes.html#_grp_sensor_sensor_idx Grp_Sensor_<sensor_idx>]]
+    |_ [[../geometry/object-classes.html#_grp_rear_axle_center Grp_Rear_Axle_Center]]
     |_ [[../geometry/object-classes.html#_grp_wheel_axle_idx_wheel_idx Grp_Wheel_<axle_idx>_<wheel_idx>]]
       |_ [[../geometry/object-classes.html#_grp_wheel_steering_axle_idx_wheel_idx Grp_Wheel_Steering_<axle_idx>_<wheel_idx>]]
       |_ [[../geometry/object-classes.html#_grp_wheel_steering_rotating_axle_idx_wheel_idx Grp_Wheel_Steering_Rotating_<axle_idx>_<wheel_idx>]]
@@ -1384,11 +1384,12 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Sensor_<sensor_idx>
+== Grp_Rear_Axle_Center
 
-This group contains all parts of the vehicle's perception sensors.
+This group is an empty node in the center or the rear axle.
 
-The sensor's geometry can also be placed in <Grp_Exterior_Static>.
+The coordinate origin of this group is aligned with the ASAM OSI host vehicle coordinate system and may be used as the reference frame for perception sensor data.
+
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1397,16 +1398,16 @@ The sensor's geometry can also be placed in <Grp_Exterior_Static>.
 2+^| <Header>
 
 | *Origin*
-| Origin of the sensor
+| Center of the rear axle of the vehicle
 
 | *x-axis*
-| Pointing outwards from the sensor in the direction of its longitudinal axis
+| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing upwards in sensor coordinates
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 == Grp_Wheel_<axle_idx>_<wheel_idx>
