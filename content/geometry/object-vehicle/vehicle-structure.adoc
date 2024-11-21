@@ -169,7 +169,7 @@ This group contains all parts of a door located at the bottom of the vehicle, in
 `<door_bottom_idx>` denotes the index of doors at the bottom. The index entries
 are sorted from front to rear, starting with 0.
 
-NOTE: Add a figure with a hatch on the bottom.
+image::Grp_Door_Bottom.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -368,7 +368,7 @@ This group contains all parts of a brake light located at the center of the vehi
 `<brake_center_idx>` denotes the index of brake lights in the center. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
-NOTE: Add a figure.
+image::Grp_Light_Brake_Center.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -396,7 +396,7 @@ This group contains all parts of a brake light located at the left side of the v
 `<brake_left_idx>` denotes the index of brake lights on the left side. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
-NOTE: Add figure from tail light.
+image::Grp_Light_Tail_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -426,7 +426,7 @@ This group contains all parts of a brake light located at the right side of the 
 `<brake_right_idx>` denotes the index of brake lights on the right side. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
-NOTE: Add figure from tail light.
+image::Grp_Light_Tail_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -515,7 +515,6 @@ This group contains all parts of the daytime running light on the vehicle's left
 `<day_left_idx>` denotes the index of daytime running lights on the left side. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
-//NOTE: Add a figure. This figure might ba applicable to all lights on the front left. I don't think we have to distinguish in the figures between the different kinds of lights.
 image::Grp_Light_Day_Left.svg[,1100]
 
 .<Table title>
@@ -545,7 +544,6 @@ This group contains all parts of the daytime running light on the vehicle's righ
 `<day_right_idx>` denotes the index of daytime running lights on the right side. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
-//NOTE: Add a figure. This figure might be applicable to all lights on the front right. I don't think we have to distinguish in the figures between the different kinds of lights.
 image::Grp_Light_Day_Right.svg[,1100]
 
 .<Table title>
@@ -575,7 +573,7 @@ This group contains all parts of a fog light on the vehicle's left side.
 `<fog_left_idx>` denotes the index of fog lights on the left side. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
-NOTE: Add figure from tail light.
+image::Grp_Light_Tail_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -604,7 +602,7 @@ This group contains all parts of a fog light on the vehicle's right side.
 `<fog_right_idx>` denotes the index of fog lights on the right side. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
-NOTE: Add figure from tail light.
+image::Grp_Light_Tail_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -743,7 +741,7 @@ This group contains all parts of the vehicle's license plate light.
 `<license_plate_light_idx>` denotes the index of license plate lights. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
-NOTE: Add a figure for the exemplary license plate light on the rear of the vehicle.
+image::Grp_Light_License_Plate.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -938,7 +936,7 @@ This group contains all parts of a reverse light on the vehicle's left side.
 `<reverse_left_idx>` denotes the index of reverse lights on the left side. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
-NOTE: Add figure from tail light.
+image::Grp_Light_Tail_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -967,7 +965,7 @@ This group contains all parts of a reverse light on the vehicle's right side.
 `<reverse_right_idx>` denotes the index of reverse lights on the right side. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
-NOTE: Add figure from tail light.
+image::Grp_Light_Tail_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -996,7 +994,7 @@ This group contains all parts of a tail light on the vehicle's left side.
 `<tail_left_idx>` denotes the index of tail lights on the left side. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
-NOTE: Add a figure. This figure might be applicable to all lights on the rear left. I don't think we have to distinguish in the figures between the different kinds of lights.
+image::Grp_Light_Tail_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1025,7 +1023,7 @@ This group contains all parts of a tail light on the vehicle's right side.
 `<tail_right_idx>` denotes the index of tail lights on the right side. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
-NOTE: Add a figure. This figure might be applicable to all lights on the rear right. I don't think we have to distinguish in the figures between the different kinds of lights.
+image::Grp_Light_Tail_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1055,7 +1053,7 @@ Warning lights can include various emergency lights, hazard lights, and more.
 `<warning_idx>` denotes the index of warning lights. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
-NOTE: Add a figure on an exemplary rotating warning light on the roof the vehicle.
+image::Grp_Light_Warning.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1088,7 +1086,7 @@ It is a child node of the corresponding mirror mounting group.
 `<blindspot_mirror_joint_idx>` denotes the index of blindspot mirror joints. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
-NOTE: Add a figure.
+image::Grp_Mirror_Blindspot_Joint.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1124,7 +1122,7 @@ are sorted from right to left in positive y-direction, and from front to rear, s
 The index is used consistently, regardless of whether the mirror is mounted to
 the door or to the vehicle body.
 
-NOTE: Add a figure.
+image::Grp_Mirror_Blindspot_Mounting.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1190,7 +1188,7 @@ It is a child node of the corresponding mirror mounting group.
 left side. The index entries are sorted from right to left in positive
 y-direction, and from front to rear, starting with 0.
 
-NOTE: Add a figure.
+image::Grp_Mirror_Side_Joint_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1224,7 +1222,7 @@ It is a child node of the corresponding mirror mounting group.
 right side. The index entries are sorted from right to left in positive
 y-direction, and from front to rear, starting with 0.
 
-NOTE: Add a figure.
+image::Grp_Mirror_Side_Joint_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1260,7 +1258,7 @@ are sorted from right to left in positive y-direction, and from front to rear, s
 The index is used consistently, regardless of whether the mirror is mounted to
 the door or to the vehicle body.
 
-NOTE: Add a figure.
+image::Grp_Mirror_Side_Mounting_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1297,7 +1295,7 @@ y-direction, and from front to rear, starting with 0.
 The index is used consistently, regardless of whether the mirror is mounted to
 the door or to the vehicle body.
 
-NOTE: Add a figure.
+image::Grp_Mirror_Side_Mounting_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1330,7 +1328,7 @@ It is a child node of the corresponding mirror joint group.
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
 
-NOTE: Add a figure.
+image::Grp_Mirror_Side_View_Left.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1362,7 +1360,7 @@ It is a child node of the corresponding mirror joint group.
 `<side_mirror_view_right_idx>` denotes the index of mirror glasses on the right side. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
-NOTE: Add a figure.
+image::Grp_Mirror_Side_View_Right.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1592,7 +1590,7 @@ This group contains an empty element that contains the origin of an average pass
 `<eyepoint_idx>` denotes the index of eye points. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
-NOTE: Add a figure.
+image::Grp_Eyepoint.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1614,7 +1612,7 @@ NOTE: Add a figure.
 |===
 
 
-== Grp_Mirror_Rearview_Joint_Left_<rearview_mirror_joint_idx>
+== Grp_Mirror_Rearview_Joint_<rearview_mirror_joint_idx>
 
 This group contains all parts of the movable structure that holds the rearview
 mirror. The mirror automatically adjusts when the angle of the joint changes.
@@ -1622,7 +1620,7 @@ mirror. The mirror automatically adjusts when the angle of the joint changes.
 `<rearview_mirror_joint_idx>` denotes the index of rearview mirror joints. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
-NOTE: Add a figure.
+image::Grp_Mirror_Rearview_Joint.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1654,7 +1652,7 @@ are sorted from right to left in positive y-direction, and from front to rear, s
 The index is used consistently, regardless of whether the mirror is mounted to
 the door or to the vehicle body.
 
-NOTE: Add a figure.
+image::Grp_Mirror_Rearview_Mounting.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1686,7 +1684,7 @@ It is a child node of the corresponding mirror joint group.
 `<rearview_mirror_view_idx>` denotes the index of rearview mirrors. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
-NOTE: Add a figure.
+image::Grp_Mirror_Rearview_View.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1718,7 +1716,7 @@ Therefore, a bench consists of multiple individual seats.
 `<seat_idx>` denotes the index of seats. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
-NOTE: Add a figure.
+image::Grp_Seat.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -1743,7 +1741,7 @@ NOTE: Add a figure.
 
 This group contains all elements of the vehicles's steering wheel.
 
-NOTE: Add a figure.
+image::Grp_Steering_Wheel.svg[,1100]
 
 .<Table title>
 [%header, cols="20, 80"]
