@@ -7,10 +7,9 @@
 legend
 [[../geometry/object-classes.html#_environment_t Environment_Root (T)]]
 |_[[../geometry/object-classes.html#_terrain_t Terrain]]
-|_[[../geometry/object-classes.html#_environment_objects_t Objects]]
+|_[[../geometry/object-classes.html#_objects_t Objects]]
   |_ [[../geometry/object-classes.html#_buildings Buildings]]
   |_ [[../geometry/object-classes.html#_vegetation Vegetation]]
-  |_ [[../geometry/object-classes.html#_other_objects Other_Objects]]
 |_[[../geometry/object-classes.html#_road_network_t Road_Network]]
   |_ [[../geometry/object-classes.html#_drivable_area_t Drivable_Area]]
   |_ [[../geometry/object-classes.html#_sidewalk_t Sidewalk]]
@@ -18,7 +17,7 @@ legend
   |_ [[../geometry/object-classes.html#_road_object_idx_t Road_Object_<object_idx> (T)]]
   |_ [[../geometry/object-classes.html#_signal_signal_idx_t Signal_<signal_idx> (T)]]
     |_ [[../geometry/object-classes.html#_sign_idx_t Sign_<sign_idx> (T)]]
-    |_ [[../geometry/object-classes.html#_light_idx_t Light_<light_idx> (T)]]
+    |_ [[../geometry/object-classes.html#_traffic_light_idx_t Traffic_Light_<traffic_light_idx> (T)]]
     |_ [[../geometry/object-classes.html#_cover_idx_t Cover<cover_idx> (T)]]
 end legend
 ----
@@ -100,9 +99,9 @@ Add a figure.
 //.<Figure caption>
 
 
-== Environment_Objects
+== Objects
 
-Environment Objects include buildings, vegetation and any other (stationary) objects of the surrounding that are elevations or other changes to the terrain. 
+Objects include buildings, vegetation and any other (stationary) objects of the surrounding that are elevations or other changes to the terrain. 
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -184,33 +183,6 @@ Add a figure.
 
 .<Figure caption>
 
-== Other_Objects
-
-Apart from buildings, vegetation, and terrain, there are further objects part of the stationary surrounding. Some examples are bridges, highways, or tunnels. Road objects, e.g., signals, signs and traffic lights do not belong to this category, since they belong to the road network's Road Objects class, see below. 
-
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-
-
-Add a figure.
-
-.<Figure caption>
 
 == Road_Network
 
@@ -334,7 +306,7 @@ Add a figure.
 == Road_Object_<object_idx> (T)
 
 
-Road Objects include all other traffic items on or nearby the road, including, e.g., signals, signs, or traffic lights. 
+Road Objects include all other objects on or nearby the road, excluding signals, signs, and traffic lights.
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -422,10 +394,10 @@ Add a figure.
 .<Figure caption>
 
 
-== Light_<light_idx> (T)
+== Traffic_Light_<traffic_light_idx> (T)
 
 
-Lights belong to traffic signals or traffic lights or street lights to provide temporary changes in elumination. 
+Traffic lights belong to traffic signals to provide temporary changes in illumination. 
 
 .<Table title>
 [%header, cols="20, 80"]
