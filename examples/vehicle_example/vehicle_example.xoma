@@ -16,14 +16,14 @@
     "objectClass": "vehicle",
     "animated": false,
     "pbrMaterialWorkflow": "metallic",
-    "triangleCount": 35743,
-    "meshCount": 115,
+    "triangleCount": 50760,
+    "meshCount": 63,
     "textureResolutions": ["1K"],
     "normalMapFormat": "OpenGL",
     "boundingBox": {
-      "x" : [-1.93, 1.93],
-      "y" : [-0.81, 0.81],
-      "z" : [0.0, 1.3]
+      "x" : [-1.92728, 1.92728],
+      "y" : [-0.808808  , 0.808808],
+      "z" : [0, 1.29637]
     }
   }
 }
