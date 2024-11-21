@@ -30,7 +30,6 @@ def escape_special_chars(pattern):
         str: The escaped pattern string.
     """
     pattern = pattern.replace("\\", "\\\\")  # Escape backslashes
-    #pattern = pattern.replace("{", "\\{").replace("}", "\\}")  # Escape curly braces
     return pattern
 
 
