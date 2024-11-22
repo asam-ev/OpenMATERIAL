@@ -8,9 +8,9 @@ individual property values.
 
 The ASAM OpenMATERIAL standard supports the following object classes:
 
-* xref:geometry/object-vehicle/vehicle-general.adoc[Vehicle]
-* xref:geometry/object-human/human-general.adoc[Human]
-* xref:geometry/object-road-network/road-general.adoc[Environment]
+* xref:../geometry/object-classes.adoc#_vehicle_structure[Vehicle] 
+* xref:../geometry/object-classes.adoc#_human_structure[Human] 
+* xref:../geometry/object-classes.adoc#_road_network_structure[Environment]
 
 If a human is clearly distinguishable from a vehicle, then both the
 human and the vehicle are represented by two different objects. Examples are
