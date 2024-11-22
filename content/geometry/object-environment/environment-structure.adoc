@@ -5,7 +5,7 @@
 [plantuml]
 ----
 legend
-[[../geometry/object-classes.html#_environment_t Environment_Root (T)]]
+[[../geometry/object-classes.html#_environment_t Environment_Root]]
 |_[[../geometry/object-classes.html#_grp_terrain Grp_Terrain]]
 |_[[../geometry/object-classes.html#_grp_environment_objects Grp_Environment_Objects]]
   |_ [[../geometry/object-classes.html#_grp_buildings Grp_Buildings]]
@@ -16,34 +16,12 @@ legend
   |_ [[../geometry/object-classes.html#_grp_road_marks Grp_Road_Marks]]
   |_ [[../geometry/object-classes.html#_grp_road_object Grp_Road_Objects]]
   |_ [[../geometry/object-classes.html#_grp_signals Grp_Signals]]
-    |_ [[../geometry/object-classes.html#_grp_sign_idx_t Grp_Sign_<signal_idx> (T)]]
-    |_ [[../geometry/object-classes.html#_traffic_light_idx_t Grp_Traffic_Light_<signal_idx> (T)]]
+    |_ [[../geometry/object-classes.html#_grp_sign_idx_t Grp_Sign_<signal_idx>]]
+    |_ [[../geometry/object-classes.html#_traffic_light_idx_t Grp_Traffic_Light_<signal_idx>]]
 end legend
 ----
 
-////
-[plantuml]
-----
-legend
-Root (T)
-|-- Grp_Terrain
-|-- Grp_Objects
-----|--Grp_Buildings
-----|--Grp_Vegetation
-|-- Grp_Road_Network
-----|--Grp_Driving_Area
-----|--Grp_Sidewalks
-----|--Grp_Road_Marks
-----|--Grp_Road_Objects
-----|--Grp_Signals
--------|--Grp_Sign_<signal_idx> (T)
--------|--Grp_Traffic_Light_<signal_idx> (T)
-
-end legend
-----
-////
-
-== Environment_Root (T)
+== Environment_Root
 
 The environment contains terrain, buildings, objects and traffic areas, e.g., roads, including all stationary traffic items, such as traffic signals, signs or lights. 
 
@@ -67,313 +45,69 @@ The environment contains terrain, buildings, objects and traffic areas, e.g., ro
 |===
 
 
-
 == Grp_Terrain
 
 The terrain is characterized by the environment's ground structure, such as hills, mountains, or flat territory, thus, the landscape in general. It does not include local elevations like vegetation, buildings or other human-made structures.
 
-////
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-////
-
-Add a figure.
-
-//.<Figure caption>
-
+NOTE: Add a figure.
 
 == Grp_Environment_Objects
 
 Environment Objects include buildings, vegetation and any other (stationary) objects of the surrounding that are elevations or other changes to the terrain. 
 
-////
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-////
-
-Add a figure.
-
-.<Figure caption>
+NOTE: Add a figure.
 
 == Grp_Buildings
 
-Buildings belong to the human-made environment, including , e.g., houses, towers, or skysrapers.
+Buildings belong to the human-made environment, including houses, towers, or skyscrapers.
 
-////
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-////
-
-Add a figure.
-
-.<Figure caption>
+NOTE: Add a figure.
 
 == Grp_Vegetation
 
 Vegetation includes all organic growths or plants that are part of the landscape and grow on the terrain or on human-made structures, e.g., between roads and buildings. 
 
-////
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-////
-
-Add a figure.
-
-.<Figure caption>
-
+NOTE: Add a figure.
 
 == Grp_Road_Network
 
 The Road Network includes the drivable area, sidewalks, and any other traffic objects such as traffic signals, signs, traffic lights or other traffic objects.
 
-////
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-////
-
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+NOTE: Add a figure.
 
 == Grp_Drivable_Area
 
-The drivable area includes any surfaces that are part of the road structure including lanes and parking areas. It is comparable to the scope of the OpenDrive standard for on-road use cases.
+The drivable area includes any surfaces that are part of the road structure including lanes and parking areas. It is comparable to the scope of the ASAM OpenDrive standard for on-road use cases.
 
-////
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-////
-
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+NOTE: Add a figure.
 
 == Grp_Sidewalks 
 
 Sidewalks are traffic spaces that are dedicated for pedestrians and sometimes cyclists. 
 
-////
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-////
-
-Add a figure.
-
-.<Figure caption>
-
-
-
+NOTE: Add a figure.
 
 == Grp_Road_Marks
 
-
 Road marks include any markings on the road and traffic spaces.
 
-////
-.<Table title>
-[%header, cols="20, 80"]
-|===
-
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-////
-
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
+NOTE: Add a figure.
 
 == Grp_Road_Objects
 
 Road Objects include all other objects on or nearby the road, excluding signals, i.e., signs and traffic lights.
-////
-.<Table title>
-[%header, cols="20, 80"]
-|===
 
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-////
-
-Add a figure.
-
-.<Figure caption>
-
+NOTE: Add a figure.
 
 == Grp_Signals
 
+Traffic signals, including signs and lights. Signals describe the relevant area or volume of a traffic signal only. Posts and gantries are considered road objects.
 
-Traffic signals, including signs and lights. Signals describe the relevant area or volume of a traffic signal only. Posts and gantrys are considered road objects.
+NOTE: Add a figure.
 
-////
-.<Table title>
-[%header, cols="20, 80"]
-|===
+== Grp_Sign_<signal_idx>
 
-2+^| <Header>
-
-| *Origin*
-| ...
-
-| *x-axis*
-| ...
-
-| *y-axis*
-| ...
-
-| *z-axis*
-| ...
-|===
-
-////
-Add a figure.
-
-.<Figure caption>
-
-
-
-== Grp_Sign_<signal_idx> (T)
-
-
-Traffic signs belong to traffic signals. Therefore, they are indexed using a signal-index and cannot have the same ID as a traffic light, which is also enumerated by the signal-index. The signal-index can be taken over from OpenDRIVE or OSI. If no predefined indices exist, they can be generated by iterating over all signals from (0,...,n).
+Traffic signs belong to traffic signals. Therefore, they are indexed using a signal_index and cannot have the same ID as a traffic light, which is also enumerated by the signal_index. The signal_index may be taken over from ASAM OpenDRIVE or ASAM OSI. If no predefined indices exist, they can be generated by iterating over all signals from (0,...,n).
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -395,15 +129,11 @@ Traffic signs belong to traffic signals. Therefore, they are indexed using a sig
 |===
 
 
-Add a figure.
+NOTE: Add a figure.
 
-.<Figure caption>
+== Grp_Traffic_Light_<signal_idx>
 
-
-== Grp_Traffic_Light_<signal_idx> (T)
-
-
-Traffic lights belong to traffic signals to provide temporary changes in illumination. The signal-index can be taken over from OpenDRIVE or OSI. If no predefined indices exist, they can be generated by iterating over all signals from (0,...,n). The indices are used for both, traffic signs and traffic lights. A  traffic light cannot have the same index ID as a traffic sign in a single environment. 
+Traffic lights belong to traffic signals to provide temporary changes in illumination. The signal_index can be taken over from ASAM OpenDRIVE or ASAM OSI. If no predefined indices exist, they can be generated by iterating over all signals from (0,...,n). The indices are used for both, traffic signs and traffic lights. A traffic light cannot have the same index as a traffic sign in a single environment. 
 
 .<Table title>
 [%header, cols="20, 80"]
@@ -424,10 +154,4 @@ Traffic lights belong to traffic signals to provide temporary changes in illumin
 | ...
 |===
 
-
-Add a figure.
-
-.<Figure caption>
-//image::images/Vehicle_Structure_Door_Coord_Frame.svg[width=70%, scalewidth=10cm]
-
-
+NOTE: Add a figure.
