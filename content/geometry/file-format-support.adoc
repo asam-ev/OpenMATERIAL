@@ -1,9 +1,36 @@
 = File format
 
-ASAM OpenMATERIAL does not define its own 3D model format. ASAM OpenMATERIAL defines coordinate systems, units, node hierarchies, and more, which can be applied in different 3D model formats.
+ifndef::include-only-once[]
+:root-path: ../
+:imagesdir: {root-path}/_images
+:includedir: {root-path}/_images
+include::{root-path}_config.adoc[]
+endif::[]
 
-ASAM OpenMATERIAL has tested and supports the following file formats for 3D models:
+ASAM OpenMATERIAL does not define its own 3D model format.
+However, the geometry specification defines coordinate systems, units, node hierarchies, and more, which can be applied across different 3D model formats.
 
-* glTF
-* FBX
-* USD
+ASAM OpenMATERIAL supports the 3D model file formats glTF, FBX, and USD with the following considerations:
+
+**glTF**
+
+ASAM OpenMATERIAL 3D models in glTF format SHALL comply with the official https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html[glTF specification].
+
+The glTF coordinate system is right-handed, with +Y as the up axis, +Z as forward, and -X as right. The front of a glTF asset faces +Z. 
+
+This setup differs from how coordinate systems are defined in ASAM OpenMATERIAL, see xref:geometry/general.adoc#_coordinate_systems[Coordinate systems].
+While modeling, the ASAM OpenMATERIAL coordinate definitions SHALL be used.
+During export to and import from glTF, a coordinate transformation SHALL be applied to conform with the glTF specification.
+Common modeling tools like Blender handle this conversion automatically.
+
+**FBX**
+
+Although FBX lacks a formal specification, ASAM OpenMATERIAL 3D models in FBX format SHALL be compatible with the official https://help.autodesk.com/view/FBX/2020/ENU/?guid=FBX_Developer_Help_welcome_to_the_fbx_sdk_html[AUTODESK FBX SDK].
+
+**USD**
+
+ASAM OpenMATERIAL 3D models in USD format SHALL comply with the official https://openusd.org/release/index.html[USD specification].
+
+The USD coordinate specification allows either +Y or +Z as the up axis, defined in the upAxis metadata.
+To adhere to the ASAM OpenMATERIAL geometry specification, +Z SHALL be used as the up axis.
+

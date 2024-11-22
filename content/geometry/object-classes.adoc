@@ -8,51 +8,14 @@ individual property values.
 
 The ASAM OpenMATERIAL standard supports the following object classes:
 
-* Vehicle
-* Human
-* Road and road infrastructure
+* xref:../geometry/object-classes.adoc#_vehicle_structure[Vehicle] 
+* xref:../geometry/object-classes.adoc#_human_structure[Human] 
+* xref:../geometry/object-classes.adoc#_road_network_structure[Environment]
 
-NOTE: TODO: Add references to dedicated sections describing object classes.
-
-If the human is clearly distinguishable from the vehicle, then both the
+If a human is clearly distinguishable from a vehicle, then both the
 human and the vehicle are represented by two different objects. Examples are
 bicycles, motorbikes, or scooters, where the human and the vehicle are
 perceived as separate entities.
-
-== Class-specific information
-Each object class has a specific set of properties, such as:
-
-* Node structure
-* Semantic structure
-* Animation structure
-* Material structure
-* Coordinate system
-* Pivot points
-* Mesh resolution
-
-The interpretation of the following coordinates depends on the class-specific
-rules:
-
-* The x/y position represents the center of the bounding box used
-to describe the shape of the object.
-* The value on the z-axis on the ground represents the default pose.
-
-*Example*
-For object class `vehicle`, the z-value defines the pose if a vehicle door is
-closed. For object class `human`, the z-value defines the T-pose.
-
-For each object class, the recommended mesh resolution should be used.
-
-NOTE: TODO: Added information on mesh resolution to this section. We should consider
-extending the description of the properties above.
-
-NOTE: TODO: Discuss and document
-- Class-specific file name conventions
-- New or rare structures (for example, front trunk)
-- Class-specific levels of detail and impostors
-
-NOTE: TODO: Add information on geometry classes + segmentation?
-
 
 include::object-vehicle/vehicle-index.adoc[leveloffset=+1]
 include::object-human/human-index.adoc[leveloffset=+1]

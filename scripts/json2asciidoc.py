@@ -30,7 +30,6 @@ def escape_special_chars(pattern):
         str: The escaped pattern string.
     """
     pattern = pattern.replace("\\", "\\\\")  # Escape backslashes
-    pattern = pattern.replace("{", "\\{").replace("}", "\\}")  # Escape curly braces
     return pattern
 
 
@@ -92,7 +91,7 @@ def generate_asciidoc_properties(properties, required_fields, level=2):
         # Add pattern inline and handle escaping of backslashes and curly braces
         if "pattern" in prop_data:
             pattern = escape_special_chars(prop_data['pattern'])
-            asciidoc_content += f"\n*Pattern:* `{pattern}`\n"
+            asciidoc_content += f"\n*Pattern:* `+{pattern}+`\n"
         
         # Add a new line before required status
         if prop_name in required_fields:

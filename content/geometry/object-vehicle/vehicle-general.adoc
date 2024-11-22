@@ -2,14 +2,17 @@
 
 A vehicle is any machine that moves on land and is either self-propelled or attached to a self-propelled machine.
 Trailers or train wagons are considered separate vehicles.
-However, permanently attached parts, such as the front and rear of an articulated bus are considered a single vehicle.
-The vehicle class contains all land vehicles including wheeled or tracked vehicles.
+However, permanently attached parts, such as the front and rear of an articulated bus, are considered parts of a single vehicle.
+The vehicle class includes all land vehicles, whether wheeled or tracked.
 In this version of the standard, only wheeled vehicles are considered.
 
-The vehicle 3D geometry is generically structured into the node structure defined in the next section.
-The structure starts with a Root node as a parent to all other nodes in the structure
-A separation of vehicle parts into different groups enables movement or animation of parts, such as wheels and doors, positioning external light sources in a simulation and many other use-cases.
-Each node is an empty node representing the coordinate origin of the contained geometry.
+The vehicle's 3D geometry is structured according to the node structure defined in xref:../geometry/object-classes.adoc#_model_structure[Model structure]. 
+The structure begins with a Root node, which is the parent of all other nodes. 
+The origin of the Root node is the center of the vehicle's bounding box projected to the ground, including all vehicle parts in their default positions, i.e. the vehicle is under neutral load conditions, the wheels are running straight, the doors are closed and the lights are off.
+
+Separating vehicle elements into different groups allows for the movement or animation of parts, such as wheels and doors, positioning external light sources in a simulation, and many other use cases.
+Group nodes are empty nodes representing the coordinate origin of the contained geometry.
 Meshes are to be placed in the corresponding group node.
-Not all node have to be present in every vehicle 3D model, as not all vehicle have parts to fit all groups.
-Additional group nodes may be added to facilitate additional use-cases, but they shall be integrated into the general structure of external/internal and static/dynamic groups and follow the naming convention.
+Not all nodes need to be present in every vehicle 3D model, as not all vehicles have parts that fit all groups.
+Additional group nodes may be added to support additional use cases, but they shall be integrated into the general structure of external/internal and static/dynamic groups and follow the naming convention.
+ 
