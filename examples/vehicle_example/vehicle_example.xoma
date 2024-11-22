@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "name": "vehicle_example",
+    "description": "This is an example vehicle asset. It demonstrates how OpenMATERIAL assets and their node structure work.",
+    "uuid": "cd9cc640249e4a1dbc95a713c4250f82",
+    "assetVersion": "1.0.0",
+    "openMaterialVersion": "1.0.0",
+    "copyright": "(C) 2024 BMW AG; (C) 2024 Persival GmbH;",
+    "license": "MPL-2.0",
+    "author": "clemens.linnhoff@persival.de",
+    "modelCreationTool": "Blender",
+    "creationDate": "20241023T180000Z",
+    "modelingMethod": "Modeled freely without real world counterpart",
+    "validationDescription": "Since this is a fictional vehicle, the geometry was not validated. Standard compliance was verified manually.",
+    "assetType": "object",
+    "objectClass": "vehicle",
+    "animated": false,
+    "pbrMaterialWorkflow": "metallic",
+    "triangleCount": 50760,
+    "meshCount": 63,
+    "textureResolutions": ["1K"],
+    "normalMapFormat": "OpenGL",
+    "boundingBox": {
+      "x" : [-1.92728, 1.92728],
+      "y" : [-0.808808  , 0.808808],
+      "z" : [0, 1.29637]
+    }
+  }
+}
