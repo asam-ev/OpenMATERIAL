@@ -9,7 +9,7 @@ endif::[]
 
 == Motivation
 
-A 3D asset (or **3D Data File**) is a digital entity that includes a 3D geometric representation of an object along with its attributes and metadata. 
+A 3D asset is a digital entity that includes a 3D geometric representation of an object (also known as 3D model or **3D Data File**) along with its attributes and metadata. 
 Common formats for storing the geometry and visual materials of 3D models include glTF, FBX, and USD.
 
 However, these formats do not provide a standardized way to structure the geometry or provide extensive metadata storage and exchange capabilities. 
