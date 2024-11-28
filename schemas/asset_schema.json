@@ -1,11 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "description": "Root object for the JSON data structure",
+    "description": "ASAM OpenMATERIAL Asset file definition.",
     "properties": {
         "metadata": {
             "type": "object",
-            "description": " Part of the 3D asset file https://github.com/asam-ev/OpenMATERIAL/blob/main/content/geometry/general.adoc#3d-asset-file ; contains key information about the asset, including its identity, authorship, technical specifications, and legal details.",
+            "description": "The key meta information about the asset, including its identity, authorship, technical specifications, and legal details.",
             "properties": {
                 "name": {
                     "type": "string",
@@ -17,17 +17,17 @@
                 },
                 "uuid": {
                     "type": "string",
-                    "description": "Universally unique identifier for the asset. See https://en.wikipedia.org/wiki/Universally_unique_identifier. The uuid stays the same, even if version is updated.",
+                    "description": "Universally unique identifier for the asset, see https://en.wikipedia.org/wiki/Universally_unique_identifier. The uuid stays the same, even if version is updated.",
                     "pattern": "^[a-f0-9]{32}$"
                 },
                 "assetVersion": {
                     "type": "string",
-                    "description": "The version number of the asset, following Semantic Versioning (e.g., '1.0.0').",
+                    "description": "The version number of the asset, following semantic versioning (e.g., '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
                 "openMaterialVersion": {
                     "type": "string",
-                    "description": "The version of the OpenMATERIAL specification used, adhering to Semantic Versioning.",
+                    "description": "The version of the OpenMATERIAL specification used, adhering to semantic versioning (e.g., '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
                 "copyright": {
@@ -48,7 +48,7 @@
                 },
                 "creationDate": {
                     "type": "string",
-                    "description": "The date and time of asset creation, formatted in ISO 8601 (e.g., '2024-11-20T15:30:00Z').",
+                    "description": "The date and time of asset creation, formatted in ISO 8601 (e.g., '20240703T101728Z').",
                     "pattern": "^\\d{8}T\\d{6}Z$"
                 },
                 "modelingMethod": {
@@ -69,11 +69,11 @@
                 },
                 "objectClass": {
                     "type": "string",
-                    "description": "Classifies the object type when 'assetType' is 'object', e.g., 'vehicle' or 'human'.",
+                    "description": "Classifies the object type when 'assetType' is 'object', i.e., 'vehicle', 'human', 'environment', 'other'.",
                     "enum": [
                         "vehicle",
                         "human",
-                        "road_network",
+                        "environment",
                         "other"
                     ]
                 },
@@ -83,7 +83,7 @@
                 },
                 "pbrMaterialWorkflow": {
                     "type": "string",
-                    "description": "Whether the Physically Based Rendering (PBR) material workflow used. If so, workflow should be either 'metallic' or 'specular' Example: \"pbrMaterialWorkflow\": \"metallic\", In materialTextureAssignment: \"materialTextureAssignment\": [[\"Material_Cube\", \"checker_xom.png\"]], In gltf Model file: \"materials\": [{\"doubleSided\":true,\"name\":\"Material_Cube\",\"pbrMetallicRoughness\":{\"baseColorTexture\":{\"index\":0},\"metallicFactor\":0,\"roughnessFactor\":0.5}}].",
+                    "description": "Indicates the usage of a Physically Based Rendering (PBR) material workflow as 'metallic', 'specular' or 'none'. This only applies to the internal materials of the 3D model file, not to mapped OpenMATERIAL property files.",
                     "enum": [
                         "metallic",
                         "specular",
@@ -96,11 +96,11 @@
                 },
                 "meshCount": {
                     "type": "integer",
-                    "description": "The total number of meshes in the 3D geometry."
+                    "description": "The total number of meshes in the 3D geometry. A model geometry typically consists of several sub-meshes."
                 },
                 "textureResolutions": {
                     "type": "array",
-                    "description": "Lists all the used texture resolutions in the 3D model i.e. mapped with the material texture assignment table.(e.g., '1K', '2K', '4K').",
+                    "description": "Lists all the used texture resolutions in the 3D model i.e. albedo, normal or displacement textures. Possible values are '1K', '2K', '4K'.",
                     "items": {
                         "type": "string",
                         "enum": [
@@ -114,7 +114,7 @@
                 },
                 "normalMapFormat": {
                     "type": "string",
-                    "description": "Specifies whether the 3D model utilizes normal maps as textures. If so, its format should be either DirectX or OpenGL. ",
+                    "description": "Specifies whether the 3D model utilizes normal maps as textures. If so, their format should be either 'DirectX' or 'OpenGL'. ",
                     "enum": [
                         "DirectX",
                         "OpenGL",
@@ -123,7 +123,7 @@
                 },
                 "boundingBox": {
                     "type": "object",
-                    "description": "Defines the Axis-Aligned Bounding Box (AABB) which defines the spatial boundaries of an asset in a 3D space. Example: \"boundingBox\": { \"x\": [1, 4], \"y\": [1, 5],\"z\": [1, 6]}",
+                    "description": "Defines the Axis-Aligned Bounding Box (AABB) which defines the spatial boundaries of an asset in a 3D space. Example: \"boundingBox\": { \"x\": [-2.5, 2.5], \"y\": [-1.1, 1.1],\"z\": [0, 1.8]}",
                     "properties": {
                         "x": {
                             "type": "array",
