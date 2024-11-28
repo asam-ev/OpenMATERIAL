@@ -16,7 +16,7 @@
         },
         "uuid": {
           "type": "string",
-          "description": "Universally unique identifier for the material.",
+          "description": "Universally unique identifier for the material. See https://en.wikipedia.org/wiki/Universally_unique_identifier. The uuid stays the same, even if version is updated.",
           "pattern": "^[a-f0-9]{32}$"
         },
         "materialVersion": {
@@ -69,11 +69,11 @@
           "properties": {
             "surfaceHeightRms": {
               "type": "number",
-              "description": "Root mean square of surface height deviations."
+              "description": "Root mean square of surface height deviations, called RMS-Roughness, being a vertical measure of roughness and given in meters."
             },
             "surfaceCorrelationLength": {
               "type": "number",
-              "description": "Correlation length of the surface height deviations."
+              "description": "Correlation length of the surface height deviations, being the distance after autocorrelation function has dropped to 1/e. Thus being a horizontal measure of roughness and given in meters."
             },
             "source": {
               "type": "string",
@@ -92,11 +92,11 @@
           "properties": {
             "emissivityCoefficient": {
               "type": "number",
-              "description": "Emissivity describes the ability to emit energy as thermal radiation. Given as the fraction of thermal radiation emitted by a surface relative to the radiation emitted by an ideal black body at the same temperature. Here the hemispherical total emissivity is used which considers full emission over all wavelengths, directions and polarization for a given particular temperature: ε(T)"
+              "description": "Emissivity describes the ability to emit energy as thermal radiation. Given as the fraction of thermal radiation emitted by a surface relative to the radiation emitted by an ideal black body at the same temperature. Here the hemispherical total emissivity is used which considers full emission over all wavelengths, directions and polarization for a given particular temperature: ε(T)."
             },
             "temperature": {
               "type": "number",
-              "description": "Temperature in Kelvin [K] at which the emissivity is measured"
+              "description": "Temperature of material in Kelvin [K] at which the emissivity is measured."
             },
             "source": {
               "type": "string",
