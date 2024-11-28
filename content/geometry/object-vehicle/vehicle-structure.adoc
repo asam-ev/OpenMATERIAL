@@ -31,6 +31,10 @@ Root
         |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_right_side_mirror_joint_right_idx Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> ]]
           |_ [[../geometry/object-classes.html#_grp_mirror_side_view_right_side_mirror_view_right_idx Grp_Mirror_Side_View_Right_<side_mirror_view_right_idx> ]]
     |_ [[../geometry/object-classes.html#_grp_door_top_door_top_idx Grp_Door_Top_<door_top_idx>]]
+    |_ [[../geometry/object-classes.html#_grp_hitch_front Grp_Hitch_Front]]
+      |_ [[../geometry/object-classes.html#_grp_hitch_front_contact_point Grp_Hitch_Front_Contact_Point]]
+    |_ [[../geometry/object-classes.html#_grp_hitch_rear Grp_Hitch_Rear]]
+      |_ [[../geometry/object-classes.html#_grp_hitch_rear_contact_point Grp_Hitch_Rear_Contact_Point]]
     |_ [[../geometry/object-classes.html#_grp_license_plate_license_plate_idx Grp_License_Plate_<license_plate_idx>]]
     |_ [[../geometry/object-classes.html#_grp_light_brake_center_brake_center_idx Grp_Light_Brake_Center_<brake_center_idx>]]
     |_ [[../geometry/object-classes.html#_grp_light_brake_left_brake_left_idx Grp_Light_Brake_Left_<brake_left_idx>]]
@@ -70,10 +74,6 @@ Root
     |_ [[../geometry/object-classes.html#_grp_wheel_axle_idx_wheel_idx Grp_Wheel_<axle_idx>_<wheel_idx>]]
       |_ [[../geometry/object-classes.html#_grp_wheel_steering_axle_idx_wheel_idx Grp_Wheel_Steering_<axle_idx>_<wheel_idx>]]
       |_ [[../geometry/object-classes.html#_grp_wheel_steering_rotating_axle_idx_wheel_idx Grp_Wheel_Steering_Rotating_<axle_idx>_<wheel_idx>]]
-    |_ [[../geometry/object-classes.html#_grp_hitch_front Grp_Hitch_Front]]
-      |_ [[../geometry/object-classes.html#_grp_hitch_front_contact_point Grp_Hitch_Front_Contact_Point]]
-    |_ [[../geometry/object-classes.html#_grp_hitch_back Grp_Hitch_Back]]
-      |_ [[../geometry/object-classes.html#_grp_hitch_back_contact_point Grp_Hitch_Back_Contact_Point]]
   |_ [[../geometry/object-classes.html#_grp_exterior_static Grp_Exterior_Static]]  
 |_ [[../geometry/object-classes.html#_grp_interior Grp_Interior]]
   |_ [[../geometry/object-classes.html#_grp_interior_dynamic Grp_Interior_Dynamic]]
@@ -343,6 +343,103 @@ image::Grp_Door_Top.svg[, 600]
 
 | *z-axis*
 | Concentric and coaxial to the virtual hinge axis, pointing in the direction that enables the door to open with a positive rotation around the z-axis
+|===
+
+== Grp_Hitch_Front
+
+This group contains a hitch in front of the vehicle. It exists on cars and most often on trailers. 
+
+.Grp_Hitch_Front
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Hitch_Front
+
+| *Origin*
+| Mounting point of the hitch to the vehicle body
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+== Grp_Hitch_Front_Contact_Point
+
+This group defines the contact point to attach another vehicle. 
+
+During simulation a vehicle's Grp_Hitch_Rear_Contact_Point and another vehicle's Grp_Hitch_Front_Contact_Point are placed at the same position.
+
+.Grp_Hitch_Front_Contact_Point
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Hitch_Front_Contact_Point
+
+| *Origin*
+| Point of contact to the hitch of another vehicle
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+
+== Grp_Hitch_Rear
+
+This group contains a hitch in the rear of the vehicle. It exists on cars and sometimes on trailers for multi-trailer setups.
+
+.Grp_Hitch_Rear
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Hitch_Rear
+
+| *Origin*
+| Mounting point of the hitch to the vehicle body
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+== Grp_Hitch_Rear_Contact_Point
+
+This group defines the contact point to attach another vehicle.
+
+During simulation a vehicle's Grp_Hitch_Rear_Contact_Point and another vehicle's Grp_Hitch_Front_Contact_Point are placed at the same position.
+
+.Grp_Hitch_Rear_Contact_Point
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Hitch_Rear_Contact_Point
+
+| *Origin*
+| Point of contact to the hitch of another vehicle
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 == Grp_License_Plate_<license_plate_idx>
@@ -1527,104 +1624,6 @@ The indices are the same as in the parent group.
 
 | *x-axis*
 | Collinear with the vehicle's longitudinal axis, pointing towards the door
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-
-== Grp_Front_Hitch
-
-This group contains a hitch in front of the vehicle. It exists on cars and most often on trailers. 
-
-.Grp_Front_Hitch
-[%header, cols="20, 80"]
-|===
-
-2+^| Grp_Front_Hitch
-
-| *Origin*
-| Origin of the vehicle
-
-| *x-axis*
-| Collinear with the vehicle's longitudinal axis, pointing forwards
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-== Grp_Front_Hitch_Contact_Point
-
-This group defines the contact point to attach another vehicle. 
-
-During simulation a vehicle's Grp_Back_Hitch_Contact_Point and another vehicle's Grp_Front_Hitch_Contact_Point are placed at the same position.
-
-.Grp_Front_Hitch_Contact_Point
-[%header, cols="20, 80"]
-|===
-
-2+^| Grp_Front_Hitch_Contact_Point
-
-| *Origin*
-| Origin of the vehicle
-
-| *x-axis*
-| Collinear with the vehicle's longitudinal axis, pointing forwards
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-
-== Grp_Hitch_Back
-
-This group contains a hitch in the back of the vehicle. It exists on cars and sometimes on trailers for multi-trailer setups.
-
-.Grp_Hitch_Back
-[%header, cols="20, 80"]
-|===
-
-2+^| Grp_Hitch_Back
-
-| *Origin*
-| Origin of the vehicle
-
-| *x-axis*
-| Collinear with the vehicle's longitudinal axis, pointing forwards
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-== Grp_Hitch_Back_Contact_Point
-
-This group defines the contact point to attach another vehicle.
-
-During simulation a vehicle's Grp_Back_Hitch_Contact_Point and another vehicle's Grp_Front_Hitch_Contact_Point are placed at the same position.
-
-.Grp_Hitch_Back_Contact_Point
-[%header, cols="20, 80"]
-|===
-
-2+^| Grp_Hitch_Back_Contact_Point
-
-| *Origin*
-| Origin of the vehicle
-
-| *x-axis*
-| Collinear with the vehicle's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system
