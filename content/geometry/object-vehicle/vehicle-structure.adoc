@@ -70,7 +70,11 @@ Root
     |_ [[../geometry/object-classes.html#_grp_wheel_axle_idx_wheel_idx Grp_Wheel_<axle_idx>_<wheel_idx>]]
       |_ [[../geometry/object-classes.html#_grp_wheel_steering_axle_idx_wheel_idx Grp_Wheel_Steering_<axle_idx>_<wheel_idx>]]
       |_ [[../geometry/object-classes.html#_grp_wheel_steering_rotating_axle_idx_wheel_idx Grp_Wheel_Steering_Rotating_<axle_idx>_<wheel_idx>]]
-  |_ [[../geometry/object-classes.html#_grp_exterior_static Grp_Exterior_Static]]
+    |_ [[../geometry/object-classes.html#_grp_hitch_front Grp_Hitch_Front]]
+      |_ [[../geometry/object-classes.html#_grp_hitch_front_contact_point Grp_Hitch_Front_Contact_Point]]
+    |_ [[../geometry/object-classes.html#_grp_hitch_back Grp_Hitch_Back]]
+      |_ [[../geometry/object-classes.html#_grp_hitch_back_contact_point Grp_Hitch_Back_Contact_Point]]
+    |_ [[../geometry/object-classes.html#_grp_exterior_static Grp_Exterior_Static]]  
 |_ [[../geometry/object-classes.html#_grp_interior Grp_Interior]]
   |_ [[../geometry/object-classes.html#_grp_interior_dynamic Grp_Interior_Dynamic]]
     |_ [[../geometry/object-classes.html#_grp_eyepoint_eyepoint_idx Grp_Eyepoint_<eyepoint_idx>]]
@@ -1531,6 +1535,100 @@ The indices are the same as in the parent group.
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
 
+
+== Grp_Front_Hitch
+
+This group contains a hitch in front of the vehicle. It exists on cars and most often on trailers. 
+
+.Grp_Front_Hitch
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Front_Hitch
+
+| *Origin*
+| Origin of the vehicle
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+== Grp_Front_Hitch_Contact_Point
+
+This group defines the contact point to attach another vehicle.
+
+.Grp_Front_Hitch_Contact_Point
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Front_Hitch_Contact_Point
+
+| *Origin*
+| Origin of the vehicle
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+
+== Grp_Hitch_Back
+
+This group contains a hitch in the back of the vehicle. It exists on cars and sometimes on trailers.
+
+.Grp_Hitch_Back
+[%header, cols="20, 80"]
+|===
+
+
+2+^| Grp_Hitch_Back
+
+| *Origin*
+| Origin of the vehicle
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+== Grp_Hitch_Back_Contact_Point
+
+This group defines the contact point to attach another vehicle.
+
+.Grp_Hitch_Back_Contact_Point
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Hitch_Back_Contact_Point
+
+| *Origin*
+| Origin of the vehicle
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
 
 == Grp_Exterior_Static
 
