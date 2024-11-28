@@ -181,6 +181,15 @@
         "minItems": 2,
         "maxItems": 2
       }
+    },
+    "customProperties" : {
+      "type" : "array",
+      "description" : "Names of custom properties used somewhere in this asset.",
+      "items" : {
+        "type" : "string",
+      },
+      "uniqueItems" : true,
+      "default" : []
     }
   },
   "required": [
