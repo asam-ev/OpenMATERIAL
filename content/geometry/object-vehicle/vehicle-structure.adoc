@@ -1587,7 +1587,7 @@ During simulation a vehicle's Grp_Back_Hitch_Contact_Point and another vehicle's
 
 == Grp_Hitch_Back
 
-This group contains a hitch in the back of the vehicle. It exists on cars and sometimes on trailers.
+This group contains a hitch in the back of the vehicle. It exists on cars and sometimes on trailers for multi-trailer setups.
 
 .Grp_Hitch_Back
 [%header, cols="20, 80"]
