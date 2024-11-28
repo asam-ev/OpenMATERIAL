@@ -83,7 +83,7 @@
                 },
                 "pbrMaterialWorkflow": {
                     "type": "string",
-                    "description": "Whether the Physically Based Rendering (PBR) material workflow used. If so, workflow should be either 'metallic' or 'specular'.",
+                    "description": "Whether the Physically Based Rendering (PBR) material workflow used. If so, workflow should be either 'metallic' or 'specular' Example: \"pbrMaterialWorkflow\": \"metallic\", In materialTextureAssignment: \"materialTextureAssignment\": [[\"Material_Cube\", \"checker_xom.png\"]], In gltf Model file: \"materials\": [{\"doubleSided\":true,\"name\":\"Material_Cube\",\"pbrMetallicRoughness\":{\"baseColorTexture\":{\"index\":0},\"metallicFactor\":0,\"roughnessFactor\":0.5}}].",
                     "enum": [
                         "metallic",
                         "specular",
@@ -100,7 +100,7 @@
                 },
                 "textureResolutions": {
                     "type": "array",
-                    "description": "Lists all texture resolutions used in the 3D model (e.g., '1K', '2K', '4K').",
+                    "description": "Lists all the used texture resolutions in the 3D model i.e. mapped with the material texture assignment table.(e.g., '1K', '2K', '4K').",
                     "items": {
                         "type": "string",
                         "enum": [
@@ -123,7 +123,7 @@
                 },
                 "boundingBox": {
                     "type": "object",
-                    "description": "Defines the axis-aligned which defines the spatial boundaries of an asset in a 3D space.",
+                    "description": "Defines the Axis-Aligned Bounding Box (AABB) which defines the spatial boundaries of an asset in a 3D space. Example: \"boundingBox\": { \"x\": [1, 4], \"y\": [1, 5],\"z\": [1, 6]}",
                     "properties": {
                         "x": {
                             "type": "array",
