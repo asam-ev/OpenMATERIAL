@@ -1561,7 +1561,9 @@ This group contains a hitch in front of the vehicle. It exists on cars and most 
 
 == Grp_Front_Hitch_Contact_Point
 
-This group defines the contact point to attach another vehicle.
+This group defines the contact point to attach another vehicle. 
+
+During simulation a vehicle's Grp_Back_Hitch_Contact_Point and another vehicle's Grp_Front_Hitch_Contact_Point are placed at the same position.
 
 .Grp_Front_Hitch_Contact_Point
 [%header, cols="20, 80"]
@@ -1591,7 +1593,6 @@ This group contains a hitch in the back of the vehicle. It exists on cars and so
 [%header, cols="20, 80"]
 |===
 
-
 2+^| Grp_Hitch_Back
 
 | *Origin*
@@ -1610,6 +1611,8 @@ This group contains a hitch in the back of the vehicle. It exists on cars and so
 == Grp_Hitch_Back_Contact_Point
 
 This group defines the contact point to attach another vehicle.
+
+During simulation a vehicle's Grp_Back_Hitch_Contact_Point and another vehicle's Grp_Front_Hitch_Contact_Point are placed at the same position.
 
 .Grp_Hitch_Back_Contact_Point
 [%header, cols="20, 80"]
