@@ -74,7 +74,7 @@ Root
       |_ [[../geometry/object-classes.html#_grp_hitch_front_contact_point Grp_Hitch_Front_Contact_Point]]
     |_ [[../geometry/object-classes.html#_grp_hitch_back Grp_Hitch_Back]]
       |_ [[../geometry/object-classes.html#_grp_hitch_back_contact_point Grp_Hitch_Back_Contact_Point]]
-    |_ [[../geometry/object-classes.html#_grp_exterior_static Grp_Exterior_Static]]  
+|_ [[../geometry/object-classes.html#_grp_exterior_static Grp_Exterior_Static]]  
 |_ [[../geometry/object-classes.html#_grp_interior Grp_Interior]]
   |_ [[../geometry/object-classes.html#_grp_interior_dynamic Grp_Interior_Dynamic]]
     |_ [[../geometry/object-classes.html#_grp_eyepoint_eyepoint_idx Grp_Eyepoint_<eyepoint_idx>]]
