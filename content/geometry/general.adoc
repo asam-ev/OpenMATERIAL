@@ -1,5 +1,12 @@
 = General
 
+ifndef::include-only-once[]
+:root-path: ../
+:imagesdir: {root-path}/_images
+:includedir: {root-path}/_images
+include::{root-path}_config.adoc[]
+endif::[]
+
 == Dimensions
 
 The following quantities and units are relevant for ASAM OpenMATERIAL:
