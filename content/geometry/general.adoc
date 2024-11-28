@@ -80,16 +80,17 @@ A coordinate system of type (x, y, z) that is fixed in the inertial reference fr
 the simulation environment has the x~w~- and y~w~-axes parallel to the ground
 plane and the z~w~-axis pointing upward.
 
-Neither origin nor orientation of the world coordinate system are defined by the ASAM OpenMATERIAL standard. If a road network is referenced from a scenario, the world coordinate system is aligned with the inertial coordinate system present in this description.
+Neither origin nor orientation of the world coordinate system are defined by the ASAM OpenMATERIAL standard. Nevertheless, the origin of the world coordinate system in an OpenMATERIAL 3D environment should coincide with the origin of a corresponding ASAM OpenDRIVE map (if available).
+The origin of the world coordinate system in ASAM OSI should also be aligned with these two coordinate systems.
 
 === Local coordinate system
-The local coordinate system is in line with the standards ASAM OpenDRIVE,
-ASAM OpenSCENARIO, and ASAM OSI.
 
-NOTE: Origins of the coordinate frames for specific object classes are under
-discussion.
+Top-most local coordinate frames of 3D assets (so called reference coordinate frames) in OpenMATERIAL are defined in the center of the bounding box of the corresponding asset, projected to the bottom of the bounding box.
+By static transformations, these coordinate frames may be synchronized with reference coordinate frames in ASAM OpenSCENARIO and ASAM OSI.
+Besides reference coordinate frames, 3D assets may incorporate other local coordinate frames, see xref:../geometry/object-classes.adoc[Object classes].
 
 == Naming conventions
+
 The following naming conventions apply to ASAM OpenMATERIAL geometry files:
 
 * The name of a 3D model file shall have the prefix `omg_` to indicate that the file
@@ -99,6 +100,7 @@ complies with the ASAM OpenMATERIAL geometry specification.
 NOTE: Putting more information in file name to be discussed for specific object classes.
 
 == 3D asset file
+
 The 3D asset file provides meta data as well as a mapping table to ASAM OpenMATERIAL material property files.
 This information extends the geometry of an asset given in standard 3D model file formats, e.g. glTF, FBX or USD.
 The 3D asset file is in JSON format with the file extension `xoma`.
@@ -121,6 +123,7 @@ Each 3D asset file contains the following information:
 NOTE: TODO: Add short descriptions and references
 
 == Requirements
+
 Materials shall be separated.
 
 NOTE: TODO: Extend rule and find better location. What do you want to express, that two
