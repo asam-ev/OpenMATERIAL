@@ -205,41 +205,16 @@
                 "minItems": 2,
                 "maxItems": 2
             }
+        },
+        "customProperties": {
+            "type": "object",
+            "description" : "Non-standardized asset properties for custom tools or tool chains.",
+            "additionalProperties": {
+                "type": "string"
+            }
         }
     },
-    "materialMappingUri": {
-      "type": "string",
-      "description": "Relative path to a material mapping file (.xomm). In this file, material names from the 3D model file or texture color codes from textures assigned in materialTextureAssignment are linked to OpenMATERIAL property files.",
-      "pattern": ".*\\.xomm$"
-    },
-    "materialTextureAssignment": {
-      "type": "array",
-      "description": "Optional array containing material texture assignments. It links material names contained in the 3D model file to OpenMATERIAL assignment textures. In a separate material mapping file, the 'color' values in this texture are linked to OpenMATERIAL property files.",
-      "items": {
-        "type": "array",
-        "items": [
-          {
-            "type": "string",
-            "description": "Name of the material in the 3D model file."
-          },
-          {
-            "type": "string",
-            "description": "File path to the OpenMATERIAL assignment texture. Supported texture formats are png and jpg.",
-            "pattern": "^(\\./|/)?([a-zA-Z0-9_\\-./]+)\\.(png|jpg|jpeg)$"
-          }
-        ],
-        "minItems": 2,
-        "maxItems": 2
-      }
-    },
-    "customProperties": {
-      "type": "object",
-      "description" : "Non-standardized asset properties for custom tools or tool chains.",
-      "propertyValues": {
-        "type": "string"
-    }
-  },
-  "required": [
-    "metadata"
-  ]
+    "required": [
+        "metadata"
+    ]
 }
