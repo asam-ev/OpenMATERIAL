@@ -209,7 +209,7 @@
         "customProperties": {
             "type": "object",
             "description" : "Non-standardized asset properties for custom tools or tool chains.",
-            "propertyValues": {
+            "additionalProperties": {
                 "type": "string"
             }
         }
