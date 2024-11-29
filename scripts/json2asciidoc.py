@@ -54,13 +54,6 @@ def generate_asciidoc_array_of_arrays(items: List[Dict], description: str, requi
         item_description = item.get('description', 'No description')
         content += f"- Column {idx}: {item_description}\n"
 
-    # # Add data type of the property
-    # content += f"\n*Type:* `array` +"
-    #
-    # # Add required status
-    # content += f"\n*Required:* {'Yes' if required else 'No'}\n"
-    # content += "\n test \n"
-
     return content
 
 
@@ -166,7 +159,7 @@ def generate_asciidoc_main_field(field_name: str, schema: Dict, required_fields:
     return asciidoc_content
 
 
-def generate_asciidoc_file(json_schema_path: str):
+def generate_asciidoc_file(json_schema_path: str, output_path: str):
     """
     Generate AsciiDoc file for the given JSON schema.
 
@@ -185,11 +178,12 @@ def generate_asciidoc_file(json_schema_path: str):
         asciidoc_content += generate_asciidoc_main_field(field, schema, required_fields)
 
     output_filename = f"{os.path.splitext(base_filename)[0]}.adoc"
+    output_file = os.path.join(output_path, output_filename)
 
-    with open(output_filename, 'w') as file:
+    with open(output_file, 'w') as file:
         file.write(asciidoc_content)
 
-    print(f"AsciiDoc generated successfully! Output saved to {output_filename}")
+    print(f"AsciiDoc generated successfully! Output saved to {output_file}")
 
 
 def main() -> None:
@@ -201,7 +195,7 @@ def main() -> None:
     parser.add_argument('json_schema_path', type=str, help="Path to the JSON schema file.")
     args = parser.parse_args()
 
-    generate_asciidoc_file(args.json_schema_path)
+    generate_asciidoc_file(args.json_schema_path, ".")
 
 
 if __name__ == "__main__":
