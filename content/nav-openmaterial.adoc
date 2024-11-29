@@ -41,9 +41,9 @@
 * xref:bibliography.adoc[leveloffset=+1]
 
 :sectnums!:
-include::loft/list-of-figures.adoc[leveloffset=+1]
+xref:loft/list-of-figures.adoc[leveloffset=+1]
 
 :sectnums!:
-include::loft/list-of-tables.adoc[leveloffset=+1]
+xref:loft/list-of-tables.adoc[leveloffset=+1]
 
 :!antora_mapping:
