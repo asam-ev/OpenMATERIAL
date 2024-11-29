@@ -50,7 +50,7 @@ def generate_asciidoc_array_of_arrays(items, description, required):
         content += f"{description}\n"
 
     content += "\nColumns of the table:\n\n"
-
+    
     for idx, item in enumerate(items, start=1):
         item_description = item.get('description', 'No description')
         content += f"- Column {idx}: {item_description}\n"
@@ -80,7 +80,7 @@ def generate_asciidoc_properties(properties, required_fields, level=2):
         str: The generated AsciiDoc content for the properties.
     """
     asciidoc_content = ""
-
+    
     for prop_name, prop_data in properties.items():
         heading_prefix = "=" * level  # Create heading based on level
         asciidoc_content += f"{heading_prefix} {prop_name}\n"
@@ -90,14 +90,10 @@ def generate_asciidoc_properties(properties, required_fields, level=2):
         if prop_data.get('type') == "array":
             if isinstance(prop_data['items'], dict) and 'items' in prop_data['items']:
                 # Generate list for array of arrays
-                asciidoc_content += generate_asciidoc_array_of_arrays(prop_data['items']['items'],
-                                                                      prop_data['items'].get('description', ''),
-                                                                      prop_name in required_fields) + "\n"
+                asciidoc_content += generate_asciidoc_array_of_arrays(prop_data['items']['items'], prop_data['items'].get('description', ''), prop_name in required_fields) + "\n"
             elif isinstance(prop_data['items'], list):
                 # If it's a list of items, generate columns description directly
-                asciidoc_content += generate_asciidoc_array_of_arrays(prop_data['items'],
-                                                                      prop_data.get('description', ''),
-                                                                      prop_name in required_fields) + "\n"
+                asciidoc_content += generate_asciidoc_array_of_arrays(prop_data['items'], prop_data.get('description', ''), prop_name in required_fields) + "\n"
             else:
                 # Simple array, include the description of the array
                 asciidoc_content += f"\n{prop_data['items'].get('description', '')}\n"
@@ -117,9 +113,9 @@ def generate_asciidoc_properties(properties, required_fields, level=2):
             asciidoc_content += "\n*Required:* Yes\n"
         else:
             asciidoc_content += "\n*Required:* No\n"
-
+        
         asciidoc_content += "\n"
-
+        
         # If there are nested properties, recursively generate content for them
         if "properties" in prop_data:
             nested_required_fields = prop_data.get('required', [])
@@ -145,7 +141,7 @@ def generate_asciidoc(field_name, schema, required_fields):
     asciidoc_content = f"== {field_name}\n\n"
     field_data = schema['properties'][field_name]
     asciidoc_content += field_data.get("description", "") + "\n\n"
-
+    
     # Generate the content for the properties, recursively handling nested properties
     if 'properties' in field_data:
         asciidoc_content += generate_asciidoc_properties(field_data['properties'], required_fields, level=3)
@@ -153,14 +149,10 @@ def generate_asciidoc(field_name, schema, required_fields):
         # Handle array fields directly
         if 'items' in field_data and isinstance(field_data['items'], dict) and 'items' in field_data['items']:
             # Array of arrays, generate list of columns
-            asciidoc_content += generate_asciidoc_array_of_arrays(field_data['items']['items'],
-                                                                  field_data['items'].get('description', ''),
-                                                                  field_name in required_fields) + "\n"
+            asciidoc_content += generate_asciidoc_array_of_arrays(field_data['items']['items'], field_data['items'].get('description', ''), field_name in required_fields) + "\n"
         elif isinstance(field_data['items'], list):
             # Array of simple types, generate columns description
-            asciidoc_content += generate_asciidoc_array_of_arrays(field_data['items'],
-                                                                  field_data.get('description', ''),
-                                                                  field_name in required_fields) + "\n"
+            asciidoc_content += generate_asciidoc_array_of_arrays(field_data['items'], field_data.get('description', ''), field_name in required_fields) + "\n"
         else:
             # Handle single item in array
             asciidoc_content += f"\n{field_data['items'].get('description', 'No description')}\n"
@@ -191,11 +183,9 @@ def main():
     Main function to handle command-line arguments, process the JSON schema, and generate the AsciiDoc documentation.
     """
     # Set up argument parser
-    parser = argparse.ArgumentParser(
-        description="Generate AsciiDoc documentation for a given JSON schema field or the entire schema.")
+    parser = argparse.ArgumentParser(description="Generate AsciiDoc documentation for a given JSON schema field or the entire schema.")
     parser.add_argument('json_schema_path', type=str, help="Path to the JSON schema file.")
-    parser.add_argument('field_name', type=str, nargs='?', default='',
-                        help="Name of the field (e.g., metadata) to generate documentation for. Leave empty to generate documentation for the entire schema.")
+    parser.add_argument('field_name', type=str, nargs='?', default='', help="Name of the field (e.g., metadata) to generate documentation for. Leave empty to generate documentation for the entire schema.")
 
     # Parse the arguments
     args = parser.parse_args()
