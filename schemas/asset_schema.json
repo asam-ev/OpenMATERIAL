@@ -182,14 +182,13 @@
         "maxItems": 2
       }
     },
-    "customProperties" : {
-      "type" : "array",
-      "description" : "Names of custom properties used somewhere in this asset.",
-      "items" : {
-        "type" : "string",
-      },
-      "uniqueItems" : true,
-      "default" : []
+    "customProperties": {
+      "type": "object",
+      "description" : "Non-standardized asset properties for custom tools or tool chains.",
+      "propertyValues": {
+        "type": "string"
+      }
+    }
     }
   },
   "required": [
