@@ -6,7 +6,7 @@ However, permanently attached parts, such as the front and rear of an articulate
 The vehicle class includes all land vehicles, whether wheeled or tracked.
 In this version of the standard, only wheeled vehicles are considered.
 
-The vehicle's 3D geometry is structured according to the node structure defined in xref:geometry/object-vehicle/vehicle-structure.adoc[].
+The vehicle's 3D geometry is structured according to the node structure defined in xref:../geometry/object-classes.adoc#_model_structure[Model structure]. 
 The structure begins with a Root node, which is the parent of all other nodes. 
 The origin of the Root node is the center of the vehicle's bounding box projected to the ground, including all vehicle parts in their default positions, i.e. the vehicle is under neutral load conditions, the wheels are running straight, the doors are closed and the lights are off.
 
