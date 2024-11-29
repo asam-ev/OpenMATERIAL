@@ -185,7 +185,14 @@
             "type": "string",
             "pattern": ".*_brdf\\.xompt$"
           }
-        }
+        },
+    "customProperties": {
+      "type": "object",
+      "description" : "Non-standardized material properties for custom tools or tool chains.",
+      "propertyValues": {
+        "type": "string"
+      }
+    }
       },
       "required": [
         "surfaceRoughness",
