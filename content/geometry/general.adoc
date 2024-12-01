@@ -83,13 +83,42 @@ NOTE: Origins of the coordinate frames for specific object classes are under
 discussion.
 
 == Naming conventions
+=== General
 The following naming conventions apply to ASAM OpenMATERIAL geometry files:
 
-* The name of a 3D model file shall have the prefix `omg_` to indicate that the file
-complies with the ASAM OpenMATERIAL geometry specification.
-* The 3D model file and the related 3D asset file shall have the same base name.
+* The name of a 3D model file shall have the prefix "omg_" to indicate that the file complies with the ASAM OpenMATERIAL geometry specification.
+* The 3D model file and the related 3D asset file must have the same base name.
+  Example: omg_Example.gltf, omg_Example.xoma
+* The naming convention inside the 3D model file (contains 3D informations) must follow the snake_case definition, to improve human readability and enable consistent parsing of the file structure.
+* The naming convention inside the 3D asset file (contains meta data) must follow the lowerCamelCase definition, to allow a consistent naming convention in all .json files and an consistent parsing.
+* LOD levels (Level of Detail) are not part of the first version of the standard, but will be added in future versions for each asset type.
+* Keywords are predefined names for objects inside the node structure.
 
-NOTE: Putting more information in file name to be discussed for specific object classes.
+=== Node Structure
+Every Node Structure for a 3D object uses predfined subkeys to allow a consistent naming convention and parsing. Some subkeys are already defined by the standard and more could follow in future updates. The User is free to add more subkeys for himself, if they are needed.
+
+* All components should be named according to the snake_case definition, starting with uppercase letters.
+* Group Nodes (also known as empty nodes or parent nodes) shall have "Grp_" as a Prefix.
+* Iterators are added as suffixes. In the documentation, iterator names are written in pointy braces (e.g. <type_idx>). In the node names itself, the iterator names are replaced by integer values starting from 0.
+* Enums (e.g. from OpenDRIVE road/lane type) should be added as suffixes in capital letters.
+* Sequence of suffixes: 1: Iterator 2: Type Enumerator 3: Subtype Enumerator.
+* Count the axle index by following the OSI definition from front to rear starting with 0.
+* Count the wheel index by following the OSI definition counting per axle from right to left (in positive y-direction).
+//Note: Please add link to OSI definition (https://opensimulationinterface.github.io/osi-antora-generator/asamosi/latest/gen/structosi3_1_1MovingObject_1_1VehicleAttributes_1_1WheelData.html#a094de989f5a2aab080f9a65f0feb3867)
+* Count the door index per side from front to rear and right to left (in positive y-direction).
+* Count the seat index per level from first level front to rear, and right to left, to the next level from right to left and front to rear. Note: A rear bench with 3 seats will be consideres as 3 seats, because 3 passengers could take a seat on it.
+* The predefined subkeys and keywords must be used for the corresponding asset parts.
+* LOD levels (Level of Detail) are not part of the first version of the standard, but will be added in future versions for each asset type.
+* All keywords can be found in the according subchapters.
+//Note: Please add links to the vehicle structure, human structure and environment structure
+
+=== Metadata
+
+* Naming of fields must be according to lowerCamelCase definition, starting with lower letters.
+* Naming of Custom Properties must follow the predefined keys.
+* Objects, Arrays (lists) and Enums must follow the .json notation.
+
+//NOTE: Putting more information in file name to be discussed for specific object classes.
 
 == 3D asset file
 The 3D asset file provides meta data as well as a mapping table to ASAM OpenMATERIAL material property files.
