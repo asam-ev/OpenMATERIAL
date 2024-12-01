@@ -147,7 +147,7 @@ Traffic lights belong to traffic signals. They show temporary changes in illumin
 | Geometric center of the traffic light signal area surface.
 
 | *x-axis*
-| Concentric and coaxial to the surface normal of the sign face.
+| Concentric and coaxial to the surface normal of the signal area surface.
 
 | *y-axis*
 | Completes the right-handed coordinate system.
