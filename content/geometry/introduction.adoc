@@ -56,6 +56,9 @@ The ASAM OpenX standards strive to provide comprehensive, realistic, and most im
   Asset files (.xoma) of individual objects, such as vehicles, SHALL be linked using the https://publications.pages.asam.net/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_XML/latest/07_components_scenario/07_02_storyboard_entities.html#_3d_models_for_entities[model3d property].
   Both environment and objects may either be given as an absolute path or as a path relative to the OpenSCENARIO file (.xosc).
   A relative path is indicated by a dot (.) as the first character.
+  The paths to 3D assets specified in the scenario definition SHALL serve as single source of truth and be used consistently in simulation environments.
+  In the case of distributed simulation environments, the paths SHALL be synchronized between all relevant simulation components.
+  Synchronization MAY be implemented using ASAM Open Simulation Interface (see below).
 * ASAM Open Simulation Interface (OSI) is a specification for interfaces between models and components in a distributed simulation.
   OSI primarily focuses on the environmental perception of automated driving functions, but it also covers interfaces for models of traffic participants.
   The asset file (.xoma) of a 3D environment SHALL be linked in OSI using the https://opensimulationinterface.github.io/osi-antora-generator/asamosi/current/gen/structosi3_1_1GroundTruth.html#a83042861723a4a9e890a53aa98d88858[GroundTruth::model_reference].
