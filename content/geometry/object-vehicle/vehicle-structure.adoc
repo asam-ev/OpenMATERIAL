@@ -74,7 +74,7 @@ Root
     |_ [[../geometry/object-classes.html#_grp_wheel_axle_idx_wheel_idx Grp_Wheel_<axle_idx>_<wheel_idx>]]
       |_ [[../geometry/object-classes.html#_grp_wheel_steering_axle_idx_wheel_idx Grp_Wheel_Steering_<axle_idx>_<wheel_idx>]]
       |_ [[../geometry/object-classes.html#_grp_wheel_steering_rotating_axle_idx_wheel_idx Grp_Wheel_Steering_Rotating_<axle_idx>_<wheel_idx>]]
-  |_ [[../geometry/object-classes.html#_grp_exterior_static Grp_Exterior_Static]]  
+  |_ [[../geometry/object-classes.html#_grp_exterior_static Grp_Exterior_Static]]
 |_ [[../geometry/object-classes.html#_grp_interior Grp_Interior]]
   |_ [[../geometry/object-classes.html#_grp_interior_dynamic Grp_Interior_Dynamic]]
     |_ [[../geometry/object-classes.html#_grp_eyepoint_eyepoint_idx Grp_Eyepoint_<eyepoint_idx>]]
@@ -347,7 +347,11 @@ image::Grp_Door_Top.svg[, 600]
 
 == Grp_Hitch_Front
 
-This group contains a hitch in front of the vehicle. It exists on cars and most often on trailers. 
+This group contains a hitch at the front of the vehicle. It exists on some cars
+and on most trailers.
+
+.Grp_Hitch_Front
+image::Grp_Hitch_Front.svg[,600]
 
 .Grp_Hitch_Front
 [%header, cols="20, 80"]
@@ -356,7 +360,7 @@ This group contains a hitch in front of the vehicle. It exists on cars and most 
 2+^| Grp_Hitch_Front
 
 | *Origin*
-| Mounting point of the hitch to the vehicle body
+| Mounting point between the hitch and the vehicle body
 
 | *x-axis*
 | Collinear with the vehicle's longitudinal axis, pointing forwards
@@ -370,9 +374,13 @@ This group contains a hitch in front of the vehicle. It exists on cars and most 
 
 == Grp_Hitch_Front_Contact_Point
 
-This group defines the contact point to attach another vehicle. 
+This group defines the contact point to attach another vehicle.
 
-During simulation a vehicle's Grp_Hitch_Rear_Contact_Point and another vehicle's Grp_Hitch_Front_Contact_Point are placed at the same position.
+During simulation a vehicle's `Grp_Hitch_Rear_Contact_Point` and another
+vehicle's `Grp_Hitch_Front_Contact_Point` are placed at the same position.
+
+.Grp_Hitch_Front_Contact_Point
+image::Grp_Hitch_Front_Contact_Point.svg[,600]
 
 .Grp_Hitch_Front_Contact_Point
 [%header, cols="20, 80"]
@@ -396,7 +404,11 @@ During simulation a vehicle's Grp_Hitch_Rear_Contact_Point and another vehicle's
 
 == Grp_Hitch_Rear
 
-This group contains a hitch in the rear of the vehicle. It exists on cars and sometimes on trailers for multi-trailer setups.
+This group contains a hitch at the rear of the vehicle. It exists on cars and
+on some trailers for multi-trailer setups.
+
+.Grp_Hitch_Rear
+image::Grp_Hitch_Rear.svg[,600]
 
 .Grp_Hitch_Rear
 [%header, cols="20, 80"]
@@ -405,7 +417,7 @@ This group contains a hitch in the rear of the vehicle. It exists on cars and so
 2+^| Grp_Hitch_Rear
 
 | *Origin*
-| Mounting point of the hitch to the vehicle body
+| Mounting point between the hitch and the vehicle body
 
 | *x-axis*
 | Collinear with the vehicle's longitudinal axis, pointing forwards
@@ -421,7 +433,11 @@ This group contains a hitch in the rear of the vehicle. It exists on cars and so
 
 This group defines the contact point to attach another vehicle.
 
-During simulation a vehicle's Grp_Hitch_Rear_Contact_Point and another vehicle's Grp_Hitch_Front_Contact_Point are placed at the same position.
+During simulation a vehicle's `Grp_Hitch_Rear_Contact_Point` and another
+vehicle's `Grp_Hitch_Front_Contact_Point` are placed at the same position.
+
+.Grp_Hitch_Rear_Contact_Point
+image::Grp_Hitch_Rear_Contact_Point.svg[,600]
 
 .Grp_Hitch_Rear_Contact_Point
 [%header, cols="20, 80"]
@@ -1282,7 +1298,8 @@ It is a child node of the corresponding mirror joint group.
 `<blindspot_mirror_view_idx>` denotes the index of blindspot mirrors. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
-NOTE: Add a figure.
+.Grp_Mirror_Blindspot_View_<blindspot_mirror_view_idx>
+image::Grp_Mirror_Blindspot_View.svg[,600]
 
 .Grp_Mirror_Blindspot_View_<blindspot_mirror_view_idx>
 [%header, cols="20, 80"]
@@ -1843,7 +1860,7 @@ image::Grp_Mirror_Rearview_View.svg[,600]
 |===
 
 
-== Grp_Seat_<seat_row>_<seat_idx> 
+== Grp_Seat_<seat_row>_<seat_idx>
 
 This group contains all parts of the vehicles's seats.
 
@@ -1854,14 +1871,14 @@ Therefore, a bench consists of multiple individual seats.
 `<seat_idx>` denotes the index of a seat per row. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
-.Grp_Seat_<seat_row>_<seat_idx> 
+.Grp_Seat_<seat_row>_<seat_idx>
 image::Grp_Seat.svg[,600]
 
-.Grp_Seat_<seat_row>_<seat_idx> 
+.Grp_Seat_<seat_row>_<seat_idx>
 [%header, cols="20, 80"]
 |===
 
-2+^| Grp_Seat_<seat_row>_<seat_idx> 
+2+^| Grp_Seat_<seat_row>_<seat_idx>
 
 | *Origin*
 | Center of the seat cushion.
