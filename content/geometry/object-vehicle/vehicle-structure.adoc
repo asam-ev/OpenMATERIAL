@@ -89,7 +89,7 @@ end legend
 
 This group contains all parts of the vehicle's exterior.
 
-Typically, this group do not move in the simulation and therefore do not have their own transforms.
+Typically, this group does not move in the simulation and therefore does not have its own transforms.
 
 .Grp_Exterior
 [%header, cols="20, 80"]
