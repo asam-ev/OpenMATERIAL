@@ -2,7 +2,3 @@
 
 include::vehicle-general.adoc[leveloffset=+1]
 include::vehicle-structure.adoc[leveloffset=+1]
-include::vehicle-structure-notes.adoc[leveloffset=+1]
-
-
-
