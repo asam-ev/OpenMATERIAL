@@ -5,19 +5,19 @@
 [plantuml]
 ----
 legend
-[[../geometry/object-classes.html#_environment_t Environment_Root (T)]]
-|_[[../geometry/object-classes.html#_grp_terrain Grp_Terrain]]
-|_[[../geometry/object-classes.html#_grp_environment_objects Grp_Environment_Objects]]
-  |_ [[../geometry/object-classes.html#_grp_buildings Grp_Buildings]]
-  |_ [[../geometry/object-classes.html#_grp_vegetation Grp_Vegetation]]
-|_[[../geometry/object-classes.html#_grp_road_network Grp_Road_Network]]
-  |_ [[../geometry/object-classes.html#_grp_drivable_area Grp_Drivable_Area]]
-  |_ [[../geometry/object-classes.html#_grp_sidewalks Grp_Sidewalks]]
-  |_ [[../geometry/object-classes.html#_grp_road_marks Grp_Road_Marks]]
-  |_ [[../geometry/object-classes.html#_grp_road_object Grp_Road_Objects]]
-  |_ [[../geometry/object-classes.html#_grp_signals Grp_Signals]]
-    |_ [[../geometry/object-classes.html#_grp_sign_idx_t Grp_Sign_<signal_idx> (T)]]
-    |_ [[../geometry/object-classes.html#_traffic_light_idx_t Grp_Traffic_Light_<signal_idx> (T)]]
+[[../geometry/object-environment/environment-index.html#_environment_t Environment_Root (T)]]
+|_[[../geometry/object-environment/environment-index.html#_grp_terrain Grp_Terrain]]
+|_[[../geometry/object-environment/environment-index.html#_grp_environment_objects Grp_Environment_Objects]]
+  |_ [[../geometry/object-environment/environment-index.html#_grp_buildings Grp_Buildings]]
+  |_ [[../geometry/object-environment/environment-index.html#_grp_vegetation Grp_Vegetation]]
+|_[[../geometry/object-environment/environment-index.html#_grp_road_network Grp_Road_Network]]
+  |_ [[../geometry/object-environment/environment-index.html#_grp_drivable_area Grp_Drivable_Area]]
+  |_ [[../geometry/object-environment/environment-index.html#_grp_sidewalks Grp_Sidewalks]]
+  |_ [[../geometry/object-environment/environment-index.html#_grp_road_marks Grp_Road_Marks]]
+  |_ [[../geometry/object-environment/environment-index.html#_grp_road_object Grp_Road_Objects]]
+  |_ [[../geometry/object-environment/environment-index.html#_grp_signals Grp_Signals]]
+    |_ [[../geometry/object-environment/environment-index.html#_grp_sign_idx_t Grp_Sign_<signal_idx> (T)]]
+    |_ [[../geometry/object-environment/environment-index.html#_traffic_light_idx_t Grp_Traffic_Light_<signal_idx> (T)]]
 end legend
 ----
 
