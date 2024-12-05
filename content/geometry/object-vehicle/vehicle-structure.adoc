@@ -31,6 +31,10 @@ Root
         |_ [[../geometry/object-classes.html#_grp_mirror_side_joint_right_side_mirror_joint_right_idx Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> ]]
           |_ [[../geometry/object-classes.html#_grp_mirror_side_view_right_side_mirror_view_right_idx Grp_Mirror_Side_View_Right_<side_mirror_view_right_idx> ]]
     |_ [[../geometry/object-classes.html#_grp_door_top_door_top_idx Grp_Door_Top_<door_top_idx>]]
+    |_ [[../geometry/object-classes.html#_grp_hitch_front Grp_Hitch_Front]]
+      |_ [[../geometry/object-classes.html#_grp_hitch_front_contact_point Grp_Hitch_Front_Contact_Point]]
+    |_ [[../geometry/object-classes.html#_grp_hitch_rear Grp_Hitch_Rear]]
+      |_ [[../geometry/object-classes.html#_grp_hitch_rear_contact_point Grp_Hitch_Rear_Contact_Point]]
     |_ [[../geometry/object-classes.html#_grp_license_plate_license_plate_idx Grp_License_Plate_<license_plate_idx>]]
     |_ [[../geometry/object-classes.html#_grp_light_brake_center_brake_center_idx Grp_Light_Brake_Center_<brake_center_idx>]]
     |_ [[../geometry/object-classes.html#_grp_light_brake_left_brake_left_idx Grp_Light_Brake_Left_<brake_left_idx>]]
@@ -354,6 +358,119 @@ image::Grp_Door_Top.svg[, 600]
 
 | *z-axis*
 | Concentric and coaxial to the virtual hinge axis, pointing in the direction that enables the door to open with a positive rotation around the z-axis
+|===
+
+== Grp_Hitch_Front
+
+This group contains a hitch at the front of the vehicle. It exists on some cars
+and on most trailers.
+
+.Grp_Hitch_Front
+image::Grp_Hitch_Front.svg[,600]
+
+.Grp_Hitch_Front
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Hitch_Front
+
+| *Origin*
+| Mounting point between the hitch and the vehicle body
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+== Grp_Hitch_Front_Contact_Point
+
+This group defines the contact point to attach another vehicle.
+
+During simulation a vehicle's `Grp_Hitch_Rear_Contact_Point` and another
+vehicle's `Grp_Hitch_Front_Contact_Point` are placed at the same position.
+
+.Grp_Hitch_Front_Contact_Point
+image::Grp_Hitch_Front_Contact_Point.svg[,600]
+
+.Grp_Hitch_Front_Contact_Point
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Hitch_Front_Contact_Point
+
+| *Origin*
+| Point of contact to the hitch of another vehicle
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+
+== Grp_Hitch_Rear
+
+This group contains a hitch at the rear of the vehicle. It exists on cars and
+on some trailers for multi-trailer setups.
+
+.Grp_Hitch_Rear
+image::Grp_Hitch_Rear.svg[,600]
+
+.Grp_Hitch_Rear
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Hitch_Rear
+
+| *Origin*
+| Mounting point between the hitch and the vehicle body
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+== Grp_Hitch_Rear_Contact_Point
+
+This group defines the contact point to attach another vehicle.
+
+During simulation a vehicle's `Grp_Hitch_Rear_Contact_Point` and another
+vehicle's `Grp_Hitch_Front_Contact_Point` are placed at the same position.
+
+.Grp_Hitch_Rear_Contact_Point
+image::Grp_Hitch_Rear_Contact_Point.svg[,600]
+
+.Grp_Hitch_Rear_Contact_Point
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Hitch_Rear_Contact_Point
+
+| *Origin*
+| Point of contact to the hitch of another vehicle
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 == Grp_License_Plate_<license_plate_idx>
@@ -1244,7 +1361,8 @@ It is a child node of the corresponding mirror joint group.
 `<blindspot_mirror_view_idx>` denotes the index of blindspot mirrors. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
-NOTE: Add a figure.
+.Grp_Mirror_Blindspot_View_<blindspot_mirror_view_idx>
+image::Grp_Mirror_Blindspot_View.svg[,600]
 
 [#tab-Grp-Mirror-Blindspot-View-blindspot-mirror-view-idx]
 .Grp_Mirror_Blindspot_View_<blindspot_mirror_view_idx>
@@ -1612,7 +1730,6 @@ The indices are the same as in the parent group.
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
 
-
 == Grp_Exterior_Static
 
 This group contains all static parts of the vehicle's exterior.
@@ -1835,7 +1952,7 @@ image::Grp_Mirror_Rearview_View.svg[,600]
 |===
 
 
-== Grp_Seat_<seat_row>_<seat_idx> 
+== Grp_Seat_<seat_row>_<seat_idx>
 
 This group contains all parts of the vehicles's seats.
 
@@ -1855,7 +1972,7 @@ image::Grp_Seat.svg[,600]
 [%header, cols="20, 80"]
 |===
 
-2+^| Grp_Seat_<seat_row>_<seat_idx> 
+2+^| Grp_Seat_<seat_row>_<seat_idx>
 
 | *Origin*
 | Center of the seat cushion.
