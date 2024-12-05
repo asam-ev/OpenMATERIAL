@@ -10,7 +10,7 @@ The ASAM OpenMATERIAL standard supports the following object classes:
 
 * xref:../geometry/object-vehicle/vehicle-index.adoc[Vehicle] 
 * xref:../geometry/object-human/human-index.adoc[Human] 
-* xref:../geometry/object-road-network/road-index.adoc[Environment]
+* xref:../geometry/object-environment/environment-index.adoc[Environment]
 
 If a human is clearly distinguishable from a vehicle, then both the
 human and the vehicle are represented by two different objects. Examples are
