@@ -1,7 +1,7 @@
 = General
 
-A human is any object, which represents a human character.
+A human is a bipedal being that can be represented by an object in 3D geometry according to the human body's physical representation.
 
-The human 3D geometry is generically structured into the node structure and skeleton (also often called armature) defined in the next section. The structure starts with a Root node as a parent group for all other nodes in the structure. A separation of different object parts enables animation and exchange of parts, such as clothing, hair and accessories. Not all nodes have to be present in every human 3D model. Additional object parts may be added to facilitate additional use-cases, but they shall follow the same principle.
+The human 3D geometry is generically structured into the node structure and skeleton (also often called armature) defined in the <<Structure overview>>. The structure starts with a Root node as a parent group for all other nodes in the structure. Splitting different object parts, such as clothing, hair, and accessories enables the animation and exchange of parts. Not all nodes have to be present in every human 3D model. Additional object parts may be added to facilitate and better visualize additional use cases. They should adhere to the same structure principle.
 
-The human 3D geometry is orientated at X as Forward-Axis, Y as Side-Axis and Z as Up-Axis and the default pose is the A-pose. The naming conventions allows to mirror one side of the skeleton to the other. The bone orientation allows (future) animations to be mirrored an both sides.
+The human 3D geometry is orientated at x as the axis facing forwards, y as the axis facing sidewards, and z as the axis facing upwards. The default pose is the A-pose. The naming convention makes it possible to mirror one side of the skeleton to the other. The bone orientation allows (future) animations to be mirrored an both sides.
