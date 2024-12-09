@@ -2,7 +2,7 @@
   "metadata": {
 		"name": "asphalt_brdf_for_camera",
     "description": "Reflectance properties of asphalt for camera sensor.",
-		"uuid": "42e8da0fba1d4cc8b07a178819c894c0",
+		"uuid": "42e8da0f-ba1d-4cc8-b07a-178819c894c0",
 		"materialVersion": "1.0.0",
 		"creationDate": "20240919T101728Z",
     "openMaterialVersion": "1.0.0",
