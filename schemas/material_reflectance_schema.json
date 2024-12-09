@@ -79,7 +79,7 @@
         },
         "lookupTable": {
           "type": "array",
-          "description": "Array of Reflectance values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
+          "description": "Array of reflectance values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
           "items": {
             "type": "array",
             "items": [
