@@ -1,3 +1,6 @@
 = General
 
-//General information about road structure in geometry chapter
+NOTE: General description t.d.d
+
+Groups with a local transform are indicated in the structure by a (T).
+This is only an indicator in the documentation and must not be contained in the actual node name.
