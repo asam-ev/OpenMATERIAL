@@ -18,13 +18,14 @@
 ** xref:geometry/introduction.adoc[]
 ** xref:geometry/general.adoc[]
 ** xref:geometry/object-classes.adoc[]
+*** xref:geometry/object-vehicle/vehicle-index.adoc[]
+*** xref:geometry/object-human/human-index.adoc[]
+*** xref:geometry/object-environment/environment-index.adoc[]
 ** xref:geometry/file-format-support.adoc[]
 ** xref:geometry/asset-schema.adoc[]
 ** xref:geometry/mapping-schema.adoc[]
-** xref:geometry/performance.adoc[]
 * xref:material/material-index.adoc[]
 ** xref:material/introduction.adoc[]
-** xref:material/file-structure.adoc[]
 ** xref:material/material-schema.adoc[]
 ** xref:material/material-emp-schema.adoc[]
 ** xref:material/material-optical-schema.adoc[]
@@ -39,12 +40,12 @@
 // Add  further annexes here as needed and replace the placeholder one above
 
 [bibliography]
-include::bibliography.adoc[leveloffset=+1]
+* xref:bibliography.adoc[leveloffset=+1]
 
 :sectnums!:
-include::loft/list-of-figures.adoc[leveloffset=+1]
+xref:loft/list-of-figures.adoc[leveloffset=+1]
 
 :sectnums!:
-include::loft/list-of-tables.adoc[leveloffset=+1]
+xref:loft/list-of-tables.adoc[leveloffset=+1]
 
 :!antora_mapping:
