@@ -15,4 +15,6 @@ Group nodes are empty nodes representing the coordinate origin of the contained 
 Meshes are to be placed in the corresponding group node.
 Not all nodes need to be present in every vehicle 3D model, as not all vehicles have parts that fit all groups.
 Additional group nodes may be added to support additional use cases, but they shall be integrated into the general structure of external/internal and static/dynamic groups and follow the naming convention.
- 
+
+Groups with a local transform are indicated in the structure by a (T).
+This is only an indicator in the documentation and must not be contained in the actual node name.
