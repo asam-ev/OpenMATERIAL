@@ -15,3 +15,4 @@ json2asciidoc.generate_asciidoc_file("../schemas/material_schema.json", "../cont
 json2asciidoc.generate_asciidoc_file("../schemas/material_emp_schema.json", "../content/material/")
 json2asciidoc.generate_asciidoc_file("../schemas/material_optical_schema.json", "../content/material/")
 json2asciidoc.generate_asciidoc_file("../schemas/material_brdf_schema.json", "../content/material/")
+json2asciidoc.generate_asciidoc_file("../schemas/material_reflectance_schema.json", "../content/material/")
