@@ -36,10 +36,21 @@
                 <path d="M34483.2,11534.7L35102.9,11761.1L26712.3,11772L26872,11545.6L34483.2,11534.7Z" style="fill:white;"/>
             </g>
             <g transform="matrix(1.2919,0,0,3.79436,-629.631,-1737.34)">
-                <path d="M897.16,508.754L897.16,484.911" style="fill:none;stroke:rgb(128,128,128);stroke-width:3.32px;"/>
+                <path d="M897.16,508.754L897.16,484.911" style="fill:none;stroke:rgb(144,144,144);stroke-width:3.32px;"/>
             </g>
-            <g transform="matrix(1.5741,-0,-0,1.92827,11.0282,15.6284)">
-                <use xlink:href="#_Image2" x="321.263" y="24.221" width="16px" height="34px"/>
+            <g>
+                <g transform="matrix(0.0299978,0,0,0.0299989,0,0)">
+                    <rect x="17242" y="2098" width="804" height="2088" style="fill:rgb(166,165,166);stroke:rgb(128,128,128);stroke-width:33px;stroke-linejoin:miter;stroke-miterlimit:8;"/>
+                </g>
+                <g transform="matrix(0.0299978,0,0,0.0299989,0,0)">
+                    <path d="M17414,2536C17414,2387 17518,2266 17646,2266C17775,2266 17878,2387 17878,2536C17878,2686 17775,2806 17646,2806C17518,2806 17414,2686 17414,2536" style="fill:rgb(255,0,0);"/>
+                </g>
+                <g transform="matrix(0.0299978,0,0,0.0299989,0,0)">
+                    <path d="M17414,3174C17414,3026 17518,2906 17646,2906C17775,2906 17878,3026 17878,3174C17878,3322 17775,3442 17646,3442C17518,3442 17414,3322 17414,3174" style="fill:rgb(255,255,0);"/>
+                </g>
+                <g transform="matrix(0.0299978,0,0,0.0299989,0,0)">
+                    <path d="M17414,3812C17414,3663 17518,3542 17646,3542C17775,3542 17878,3663 17878,3812C17878,3962 17775,4082 17646,4082C17518,4082 17414,3962 17414,3812" style="fill:rgb(0,176,80);"/>
+                </g>
             </g>
             <g id="Coordinate-system" serif:id="Coordinate system" transform="matrix(1.5741,0,0,1.92827,-778.763,-579.192)">
                 <g transform="matrix(0.999999,-2.77556e-17,-4.33681e-19,1,539.435,196.543)">
@@ -98,8 +109,8 @@
                 <text x="5.182px" y="0px" style="font-family:'ArialMT', 'Arial';font-size:23.441px;fill:rgb(127,127,127);">N</text>
             </g>
         </g>
+        <g transform="matrix(0.325539,0,0,1.58645,762.141,396.167)">
+            <rect x="321.577" y="24.535" width="15.322" height="32.484" style="fill:rgb(234,234,234);fill-opacity:0.83;"/>
+        </g>
     </g>
-    <defs>
-        <image id="_Image2" width="16px" height="34px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAiCAYAAABWQVnHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACMElEQVRIiZ2W0W7aMBSGP9tAwlIotGoLoyXqI/T9H4NO06SuK2LaVlVaAqE0hNjeRWFS5jideqTcHP/ny5HPbydiNpstlFI73hFaa1pKqV23271+D+Bl8/JFNiqMfX0aolWXDJdLBvM5wXoNQBFFJHFMPhg4WqeD6OmJ0WxGuFohjEEYQ5BljG5vOXp8bAbIsuT07s7b7un9PbKo7ncFEGQZUmsvQGhNmGV+gGgo9mkqgG2v9ybgX00FoIOA1WTiLV6Nx5TdsJJzxpjEMUYpjhcLhN17QAjSy0uWV1cO1AFYKUmnU1aTCe3nZ7CWXXSEaanarmqNBGCUojiOXqG2vtgL6HYThsMHOp1nAIriA2kas9mcOlrHib3eLy4uPv0tBuh0Npyff6bf+9kMkLLk5OTe2+7w5BtKFn5AEKwQwngBQhiCsMmJovnoHiBewDbvAaIRkOd9P0CbDkky9Ran6RStg0rOGeNyeYXRbQbDOYer0pgWSRKTZWMHWuuDbD0iW49oqRwElGVYJ/MDDrHWr8v+cg/gUax5kAk7zF4kic2AsXWPuwP4LpY8yLSSKzF8lb/ZGcPUHlfWKlMo0Mzl0tvuQqZsKf2ATGyx+M1k9xovQLxhooPKC+jZTiNEAH1bNVIF0EZxbdyvzyFiM6BD9XJxpvDR9mkbxVym5PsNC1DEZsi5jRxorQ/ObMSZjtihseC8tQLQWgd5nv/wKoCc+t8HbXTYMsbcFEVRK/iPsH8AKNTZZotfIW4AAAAASUVORK5CYII="/>
-    </defs>
 </svg>
