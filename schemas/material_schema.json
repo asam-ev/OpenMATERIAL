@@ -186,6 +186,14 @@
             "pattern": ".*_brdf\\.xompt$"
           }
         },
+        "reflectanceUris": {
+          "type": "array",
+          "description": "Relative paths to one or multiple property lookup table files with wavelength-dependent reflectance values.",
+          "items": {
+            "type": "string",
+            "pattern": ".*_reflectance\\.xompt$"
+          }
+        },
         "customProperties": {
           "type": "object",
           "description" : "Non-standardized material properties for custom tools or tool chains.",
