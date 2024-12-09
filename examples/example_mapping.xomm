@@ -2,7 +2,7 @@
   "metadata": {
     "name": "example_mapping",
     "description": "This is an example for a material mapping table. This file can be shared between multiple assets.",
-    "uuid": "c492bda27c8443e6be1903115545e844",
+    "uuid": "c492bda2-7c84-43e6-be19-03115545e844",
     "mappingVersion": "1.0.0",
     "openMaterialVersion": "1.0.0",
     "copyright": "(C) 2023-2024, Example Company",

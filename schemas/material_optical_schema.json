@@ -1,99 +1,99 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "properties": {
-    "metadata": {
-      "type": "object",
-      "description": "Metadata about the material.",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "Name of the material."
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "metadata": {
+            "type": "object",
+            "description": "Metadata about the material.",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name of the material."
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Short description of the material in 2 - 3 sentences."
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Universally unique identifier for the material in 8-4-4-4-12 format, see https://en.wikipedia.org/wiki/Universally_unique_identifier. The uuid stays the same, even if version is updated.",
+                    "pattern": "\\b[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\\b$"
+                },
+                "materialVersion": {
+                    "type": "string",
+                    "description": "Version of the material.",
+                    "pattern": "^\\d+\\.\\d+\\.\\d+$"
+                },
+                "creationDate": {
+                    "type": "string",
+                    "description": "Creation date of the material in the format YYYYMMDDTHHMMSSZ.",
+                    "pattern": "^\\d{8}T\\d{6}Z$"
+                },
+                "openMaterialVersion": {
+                    "type": "string",
+                    "description": "Version of OpenMATERIAL.",
+                    "pattern": "^\\d+\\.\\d+\\.\\d+$"
+                },
+                "copyright": {
+                    "type": "string",
+                    "description": "Copyright information with year and company."
+                },
+                "license": {
+                    "type": "string",
+                    "description": "License information. For common open source licenses, provide an SPDX identifier. For other types of licenses, provide an URL to a webpage with the license or the filename of a separately provided license file."
+                },
+                "author": {
+                    "type": "string",
+                    "description": "Name or email address of the author of this material. In case of multiple authors, use comma-separation. The author can also be a company name."
+                },
+                "source": {
+                    "type": "string",
+                    "description": "Source of the optical property data."
+                }
+            },
+            "required": [
+                "name",
+                "description",
+                "uuid",
+                "materialVersion",
+                "creationDate",
+                "openMaterialVersion",
+                "copyright",
+                "license",
+                "author",
+                "source"
+            ]
         },
-        "description": {
-          "type": "string",
-          "description": "Short description of the material in 2 - 3 sentences."
-        },
-        "uuid": {
-          "type": "string",
-          "description": "Universally unique identifier for the material. See https://en.wikipedia.org/wiki/Universally_unique_identifier. The uuid stays the same, even if version is updated.",
-          "pattern": "^[a-f0-9]{32}$"
-        },
-        "materialVersion": {
-          "type": "string",
-          "description": "Version of the material.",
-          "pattern": "^\\d+\\.\\d+\\.\\d+$"
-        },
-        "creationDate": {
-          "type": "string",
-          "description": "Creation date of the material in the format YYYYMMDDTHHMMSSZ.",
-          "pattern": "^\\d{8}T\\d{6}Z$"
-        },
-        "openMaterialVersion": {
-          "type": "string",
-          "description": "Version of OpenMATERIAL.",
-          "pattern": "^\\d+\\.\\d+\\.\\d+$"
-        },
-        "copyright": {
-          "type": "string",
-          "description": "Copyright information with year and company."
-        },
-        "license": {
-          "type": "string",
-          "description": "License information. For common open source licenses, provide an SPDX identifier. For other types of licenses, provide an URL to a webpage with the license or the filename of a separately provided license file."
-        },
-        "author": {
-          "type": "string",
-          "description": "Name or email address of the author of this material. In case of multiple authors, use comma-separation. The author can also be a company name."
-        },
-        "source": {
-          "type": "string",
-          "description": "Source of the electromagnetic property data."
+        "opticalProperties": {
+            "type": "array",
+            "items": {
+                "type": "array",
+                "description": "Array of optical property values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
+                "items": [
+                    {
+                        "type": ["number", "null"],
+                        "description": "Wavelength of radiation in meters."
+                    },
+                    {
+                        "type": ["number", "null"],
+                        "description": "Temperature of material in Kelvin."
+                    },
+                    {
+                        "type": ["number", "null"],
+                        "description": "Real part of index of refraction of material."
+                    },
+                    {
+                        "type": ["number", "null"],
+                        "description": "Imaginary part of index of refraction of material."
+                    }
+                ],
+                "minItems": 4,
+                "maxItems": 4
+            }
         }
-      },
-      "required": [
-        "name",
-        "description",
-        "uuid",
-        "materialVersion",
-        "creationDate",
-        "openMaterialVersion",
-        "copyright",
-        "license",
-        "author",
-        "source"
-      ]
     },
-    "opticalProperties": {
-      "type": "array",
-      "items": {
-        "type": "array",
-        "description": "Array of optical property values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
-        "items": [
-          {
-            "type": ["number", "null"],
-            "description": "Wavelength of radiation in meters."
-          },
-          {
-            "type": ["number", "null"],
-            "description": "Temperature of material in Kelvin."
-          },
-          {
-            "type": ["number", "null"],
-            "description": "Real part of index of refraction of material."
-          },
-          {
-            "type": ["number", "null"],
-            "description": "Imaginary part of index of refraction of material."
-          }
-        ],
-        "minItems": 4,
-        "maxItems": 4
-      }
-    }
-  },
-  "required": [
-    "metadata",
-    "opticalProperties"
-  ]
+    "required": [
+        "metadata",
+        "opticalProperties"
+    ]
 }
