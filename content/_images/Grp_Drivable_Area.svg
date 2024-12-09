@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 469 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;">
-    <g transform="matrix(1,0,0,0.816327,-540,-285.714)">
-        <g id="cardinal-direction" serif:id="cardinal direction" transform="matrix(0.162902,0,0,0.212382,-464.853,11843.8)">
-            <g id="arrow-black" serif:id="arrow black" transform="matrix(0.174172,-0.274958,-2.52825,-1.41391,7413.97,-52843.1)">
-                <g transform="matrix(9.21956,-1.79289,-15.49,-1.06712,1555.33,599.787)">
-                    <path d="M27.299,61.489L34.828,56.661L34.174,65.581L27.299,61.489Z"/>
-                    <path d="M18.011,84.916C18.011,84.916 26.662,70.38 31.555,62.16" style="fill:none;stroke:black;stroke-width:2.67px;"/>
-                </g>
-            </g>
-            <g transform="matrix(-3.3625,-1.28353e-15,1.77636e-15,-3.1594,6459.95,-53692.3)">
-                <g transform="matrix(28.0001,0,0,28.0001,25.4024,0)">
-                </g>
-                <text x="5.182px" y="0px" style="font-family:'ArialMT', 'Arial';font-size:28px;">N</text>
-            </g>
-        </g>
-        <g transform="matrix(0.633078,0,0,0.775521,540,309.774)">
+<svg width="100%" height="100%" viewBox="0 0 469 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.633078,0,0,0.633078,0,-32.8378)">
+        <g>
             <rect x="0" y="0" width="740.825" height="367.787" style="fill:none;"/>
             <clipPath id="_clip1">
                 <rect x="0" y="0" width="740.825" height="367.787"/>
@@ -25,10 +12,7 @@
                     <use xlink:href="#_Image2" x="0" y="0" width="1565px" height="777px"/>
                 </g>
                 <g transform="matrix(1.33248,0,0,1.57958,-867.246,-569.379)">
-                    <path d="M957.195,360.462L1206.83,360.462L1206.83,593.299L1032.05,593.299L957.195,360.462Z" style="fill:rgb(200,200,200);fill-opacity:0.8;"/>
-                </g>
-                <g transform="matrix(1.57958,0,0,1.57958,0,51.8701)">
-                    <rect x="110.251" y="112.9" width="5.855" height="0.255" style="fill:white;"/>
+                    <path d="M1001.49,360.462L1129.57,593.299L1206.83,593.299L1206.83,507.312L1071.83,360.462L1001.49,360.462Z" style="fill:rgb(234,234,234);fill-opacity:0.8;"/>
                 </g>
             </g>
         </g>
