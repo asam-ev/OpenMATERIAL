@@ -66,7 +66,7 @@
     },
     "brdf": { 
       "type": "object",
-      "description": "General information about the lookup table.",
+      "description": "BRDF lookup table including relevant meta data.",
       "properties": {
         "typicalSensor": {
           "type": "string",
