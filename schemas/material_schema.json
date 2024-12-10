@@ -1,218 +1,218 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "properties": {
-    "metadata": {
-      "type": "object",
-      "description": "Metadata about the material.",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "Name of the material."
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "metadata": {
+            "type": "object",
+            "description": "Metadata about the material.",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name of the material."
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Short description of the material in 2 - 3 sentences."
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Universally unique identifier for the material in 8-4-4-4-12 format, see https://en.wikipedia.org/wiki/Universally_unique_identifier. The uuid stays the same, even if version is updated.",
+                    "pattern": "\\b[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\\b$"
+                },
+                "materialVersion": {
+                    "type": "string",
+                    "description": "Version of the material.",
+                    "pattern": "^\\d+\\.\\d+\\.\\d+$"
+                },
+                "creationDate": {
+                    "type": "string",
+                    "description": "Creation date of the material in the format YYYYMMDDTHHMMSSZ.",
+                    "pattern": "^\\d{8}T\\d{6}Z$"
+                },
+                "openMaterialVersion": {
+                    "type": "string",
+                    "description": "Version of OpenMATERIAL.",
+                    "pattern": "^\\d+\\.\\d+\\.\\d+$"
+                },
+                "copyright": {
+                    "type": "string",
+                    "description": "Copyright information with year and company."
+                },
+                "license": {
+                    "type": "string",
+                    "description": "License information. For common open source licenses, provide an SPDX identifier. For other types of licenses, provide an URL to a webpage with the license or the filename of a separately provided license file."
+                },
+                "author": {
+                    "type": "string",
+                    "description": "Name or email address of the author of this material. In case of multiple authors, use comma-separation. The author can also be a company name."
+                }
+            },
+            "required": [
+                "name",
+                "description",
+                "uuid",
+                "materialVersion",
+                "creationDate",
+                "openMaterialVersion",
+                "copyright",
+                "license",
+                "author"
+            ]
         },
-        "description": {
-          "type": "string",
-          "description": "Short description of the material in 2 - 3 sentences."
-        },
-        "uuid": {
-          "type": "string",
-          "description": "Universally unique identifier for the material.",
-          "pattern": "^[a-f0-9]{32}$"
-        },
-        "materialVersion": {
-          "type": "string",
-          "description": "Version of the material.",
-          "pattern": "^\\d+\\.\\d+\\.\\d+$"
-        },
-        "creationDate": {
-          "type": "string",
-          "description": "Creation date of the material in the format YYYYMMDDTHHMMSSZ.",
-          "pattern": "^\\d{8}T\\d{6}Z$"
-        },
-        "openMaterialVersion": {
-          "type": "string",
-          "description": "Version of OpenMATERIAL.",
-          "pattern": "^\\d+\\.\\d+\\.\\d+$"
-        },
-        "copyright": {
-          "type": "string",
-          "description": "Copyright information with year and company."
-        },
-        "license": {
-          "type": "string",
-          "description": "License information. For common open source licenses, provide an SPDX identifier. For other types of licenses, provide an URL to a webpage with the license or the filename of a separately provided license file."
-        },
-        "author": {
-          "type": "string",
-          "description": "Name or email address of the author of this material. In case of multiple authors, use comma-separation. The author can also be a company name."
+        "materialProperties": {
+            "type": "object",
+            "description": "Properties related to the material.",
+            "properties": {
+                "surfaceRoughness": {
+                    "type": "object",
+                    "description": "Information about the surface roughness of the material.",
+                    "properties": {
+                        "surfaceHeightRms": {
+                            "type": "number",
+                            "description": "Root mean square of surface height deviations, called RMS-Roughness, being a vertical measure of roughness and given in meters."
+                        },
+                        "surfaceCorrelationLength": {
+                            "type": "number",
+                            "description": "Correlation length of the surface height deviations, being the distance after autocorrelation function has dropped to 1/e. Thus being a horizontal measure of roughness and given in meters."
+                        },
+                        "source": {
+                            "type": "string",
+                            "description": "Source of the surface roughness data."
+                        }
+                    },
+                    "required": [
+                        "surfaceHeightRms",
+                        "surfaceCorrelationLength",
+                        "source"
+                    ]
+                },
+                "emissivityData": {
+                    "type": "object",
+                    "description": "Emissivity data of the material",
+                    "properties": {
+                        "emissivityCoefficient": {
+                            "type": "number",
+                            "description": "Emissivity describes the ability to emit energy as thermal radiation. Given as the fraction of thermal radiation emitted by a surface relative to the radiation emitted by an ideal black body at the same temperature. Here the hemispherical total emissivity is used which considers full emission over all wavelengths, directions and polarization for a given particular temperature: ε(T)."
+                        },
+                        "temperature": {
+                            "type": "number",
+                            "description": "Temperature of material in Kelvin [K] at which the emissivity is measured."
+                        },
+                        "source": {
+                            "type": "string",
+                            "description": "Source of the emissivity data."
+                        }
+                    },
+                    "required": [
+                        "emissivityCoefficient",
+                        "temperature",
+                        "source"
+                    ]
+                },
+                "elasticityData": {
+                    "type": "object",
+                    "description": "Information about the elasticity of the material.",
+                    "properties": {
+                        "youngsModulus": {
+                            "type": "number",
+                            "description": "Young's modulus of the material in Pa."
+                        },
+                        "poissonsRatio": {
+                            "type": "number",
+                            "description": "Poisson's ratio of the material."
+                        },
+                        "source": {
+                            "type": "string",
+                            "description": "Source of the elasticity data."
+                        }
+                    },
+                    "required": [
+                        "youngsModulus",
+                        "poissonsRatio",
+                        "source"
+                    ]
+                },
+                "densityData": {
+                    "type": "object",
+                    "description": "Information about the density of the material.",
+                    "properties": {
+                        "density": {
+                            "type": "number",
+                            "description": "Density of the material in kg/m^3."
+                        },
+                        "source": {
+                            "type": "string",
+                            "description": "Source of the density data."
+                        }
+                    },
+                    "required": [
+                        "density",
+                        "source"
+                    ]
+                },
+                "retroreflectivityData": {
+                    "type": "object",
+                    "description": "Information about the retro-reflective properties of the material in the visible light spectrum.",
+                    "properties": {
+                        "coefficientOfRetroreflection": {
+                            "type": "number",
+                            "description": "Coefficient of retro-reflection in cd lx^-1 m^-2."
+                        },
+                        "source": {
+                            "type": "string",
+                            "description": "Source of the retro-reflectivity data."
+                        }
+                    },
+                    "required": [
+                        "coefficienOfRetroreflection",
+                        "source"
+                    ]
+                },
+                "electromagneticPropertiesUri": {
+                    "type": "string",
+                    "description": "Relative path to a property lookup table file with electromagnetic material properties.",
+                    "pattern": ".*_emp\\.xompt$"
+                },
+                "opticalPropertiesUri": {
+                    "type": "string",
+                    "description": "Relative path to a property lookup table file with optical material properties.",
+                    "pattern": ".*_optical\\.xompt$"
+                },
+                "brdfUris": {
+                    "type": "array",
+                    "description": "Relative paths to one or multiple property lookup table files with wavelength-dependent bidirectional reflectance distribution functions.",
+                    "items": {
+                        "type": "string",
+                        "pattern": ".*_brdf\\.xompt$"
+                    }
+                },
+                "reflectanceUris": {
+                    "type": "array",
+                    "description": "Relative paths to one or multiple property lookup table files with wavelength-dependent reflectance values.",
+                    "items": {
+                        "type": "string",
+                        "pattern": ".*_reflectance\\.xompt$"
+                    }
+                },
+                "customProperties": {
+                    "type": "object",
+                    "description" : "Non-standardized material properties for custom tools or tool chains.",
+                    "additionalProperties": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "surfaceRoughness",
+                "emissivityData",
+                "elasticityData",
+                "densityData",
+                "electromagneticPropertiesUri"
+            ]
         }
-      },
-      "required": [
-        "name",
-        "description",
-        "uuid",
-        "materialVersion",
-        "creationDate",
-        "openMaterialVersion",
-        "copyright",
-        "license",
-        "author"
-      ]
     },
-    "materialProperties": {
-      "type": "object",
-      "description": "Properties related to the material.",
-      "properties": {
-        "surfaceRoughness": {
-          "type": "object",
-          "description": "Information about the surface roughness of the material.",
-          "properties": {
-            "surfaceHeightRms": {
-              "type": "number",
-              "description": "Root mean square of surface height deviations."
-            },
-            "surfaceCorrelationLength": {
-              "type": "number",
-              "description": "Correlation length of the surface height deviations."
-            },
-            "source": {
-              "type": "string",
-              "description": "Source of the surface roughness data."
-            }
-          },
-          "required": [
-            "surfaceHeightRms",
-            "surfaceCorrelationLength",
-            "source"
-          ]
-        },
-        "emissivityData": {
-          "type": "object",
-          "description": "Emissivity data of the material",
-          "properties": {
-            "emissivityCoefficient": {
-              "type": "number",
-              "description": "Emissivity describes the ability to emit energy as thermal radiation. Given as the fraction of thermal radiation emitted by a surface relative to the radiation emitted by an ideal black body at the same temperature. Here the hemispherical total emissivity is used which considers full emission over all wavelengths, directions and polarization for a given particular temperature: ε(T)"
-            },
-            "temperature": {
-              "type": "number",
-              "description": "Temperature in Kelvin [K] at which the emissivity is measured"
-            },
-            "source": {
-              "type": "string",
-              "description": "Source of the emissivity data."
-            }
-          },
-          "required": [
-            "emissivityCoefficient",
-            "temperature",
-            "source"
-          ]
-        },
-        "elasticityData": {
-          "type": "object",
-          "description": "Information about the elasticity of the material.",
-          "properties": {
-            "youngsModulus": {
-              "type": "number",
-              "description": "Young's modulus of the material in Pa."
-            },
-            "poissonsRatio": {
-              "type": "number",
-              "description": "Poisson's ratio of the material."
-            },
-            "source": {
-              "type": "string",
-              "description": "Source of the elasticity data."
-            }
-          },
-          "required": [
-            "youngsModulus",
-            "poissonsRatio",
-            "source"
-          ]
-        },
-        "densityData": {
-          "type": "object",
-          "description": "Information about the density of the material.",
-          "properties": {
-            "density": {
-              "type": "number",
-              "description": "Density of the material in kg/m^3."
-            },
-            "source": {
-              "type": "string",
-              "description": "Source of the density data."
-            }
-          },
-          "required": [
-            "density",
-            "source"
-          ]
-        },
-        "retroreflectivityData": {
-          "type": "object",
-          "description": "Information about the retro-reflective properties of the material in the visible light spectrum.",
-          "properties": {
-            "coefficientOfRetroreflection": {
-              "type": "number",
-              "description": "Coefficient of retro-reflection in cd lx^-1 m^-2."
-            },
-            "source": {
-              "type": "string",
-              "description": "Source of the retro-reflectivity data."
-            }
-          },
-          "required": [
-            "coefficienOfRetroreflection",
-            "source"
-          ]
-        },
-        "electromagneticPropertiesUri": {
-          "type": "string",
-          "description": "Relative path to a property lookup table file with electromagnetic material properties.",
-          "pattern": ".*_emp\\.xompt$"
-        },
-        "opticalPropertiesUri": {
-          "type": "string",
-          "description": "Relative path to a property lookup table file with optical material properties.",
-          "pattern": ".*_optical\\.xompt$"
-        },
-        "brdfUris": {
-          "type": "array",
-          "description": "Relative paths to one or multiple property lookup table files with wavelength-dependent bidirectional reflectance distribution functions.",
-          "items": {
-            "type": "string",
-            "pattern": ".*_brdf\\.xompt$"
-          }
-        },
-        "reflectanceUris": {
-          "type": "array",
-          "description": "Relative paths to one or multiple property lookup table files with wavelength-dependent reflectance values.",
-          "items": {
-            "type": "string",
-            "pattern": ".*_reflectance\\.xompt$"
-          }
-        },
-        "customProperties": {
-          "type": "object",
-          "description" : "Non-standardized material properties for custom tools or tool chains.",
-          "additionalProperties": {
-            "type": "string"
-          }
-        }
-      },
-      "required": [
-        "surfaceRoughness",
-        "emissivityData",
-        "elasticityData",
-        "densityData",
-        "electromagneticPropertiesUri"
-      ]
-    }
-  },
-  "required": [
-    "metadata",
-    "materialProperties"
-  ]
+    "required": [
+        "metadata",
+        "materialProperties"
+    ]
 }
