@@ -13,8 +13,10 @@
     },
     "brdf": {
   	    "typicalSensor": "camera",
-  	    "wavelengthRange": [ 3.9e-07, 1e-06 ],
-  	    "amplitudeUnit": "1/sr",
+  	    "wavelengthRange": [
+			3.9e-07,
+			1e-06
+		],
 		"lookupTable": [
 			[1e-06, -0.017453, 0.000000, 0.000000, 3.7e-05],
 			[1e-06, -0.034907, 0.000000, 0.000000, 3.7e-05],
