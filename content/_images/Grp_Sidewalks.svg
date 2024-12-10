@@ -115,8 +115,8 @@
                         </g>
                     </g>
                 </g>
-                <g transform="matrix(-0.00259213,0.999996,-0.999997,-0.00259214,984.297,58.2357)">
-                    <g id="arrow-blue1" serif:id="arrow blue">
+                <g id="arrow-blue1" serif:id="arrow blue" transform="matrix(-0.000549454,1,-0.999999,-7.03087e-05,983.647,57.8701)">
+                    <g>
                         <g>
                             <path d="M288.925,128.5L291.925,122.5L294.925,128.5L288.925,128.5Z" style="fill:rgb(0,113,180);"/>
                             <path d="M291.925,153.129L291.925,127.3" style="fill:none;stroke:rgb(0,113,180);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
@@ -136,17 +136,17 @@
                 <g transform="matrix(1,0,-1.75162e-46,1,804.293,338.822)">
                     <g transform="matrix(16,0,0,16,8,0)">
                     </g>
-                    <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:16px;fill:rgb(0,113,180);">x</text>
+                    <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:16px;fill:rgb(0,113,180);">y</text>
                 </g>
                 <g transform="matrix(1.11514,0,0,1.11514,834.196,322.695)">
                     <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:14.348px;fill:rgb(0,113,180);">z</text>
                 </g>
-                <g transform="matrix(1,0,0,1,860.875,351.598)">
+                <g transform="matrix(1,0,-3.50325e-46,1,856.932,346.786)">
                     <g transform="matrix(16,0,0,16,8,0)">
                     </g>
-                    <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:16px;fill:rgb(0,113,180);">y</text>
+                    <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:16px;fill:rgb(0,113,180);">x</text>
                 </g>
-                <g transform="matrix(1.12889,0,-1.97739e-46,1.12889,825.11,364.135)">
+                <g transform="matrix(1.12889,0,-5.93217e-46,1.12889,826.045,364.639)">
                     <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:14.173px;fill:rgb(0,113,180);">O</text>
                 </g>
             </g>
