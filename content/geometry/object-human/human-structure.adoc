@@ -42,184 +42,153 @@
 
 == Grp_Root 
 
-This group is used as a parent for all following nodes. It can be used to place the whole asset and select the complete node hierarchy at once.
-The origin of the `Root` group is set at the center of the bounding box on the ground.
+This group is used as a parent for all following nodes. It can be used to place the whole asset and select the complete node hierarchy at once. The transformation is set to 0 for all axes.
 
 .Grp_Root 
-[%header, cols="20, 40, 40"]
+[%header, cols="20, 80"]
 |===
 
-3+^| Grp_Root
+2+^| Grp_Exterior
 
-| *Axis*
-| *Transformation*
-| *Direction*
+| *Origin*
+| Center of the bounding box on the ground
 
-| *X*
-| 0
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| 0 
-| Side
+| *y-axis*
+| Pointing sidewards
 
-| *Z*
-| 0
-| Up
+| *z-axis*
+| Pointing upwards
 |===
 
 
 == Accessories_<Name>
 
 This object represents an additional or exchangeable accessory of the human.
-The origin of the `Accessory` is set at the center of the bounding box on the ground.
 
 .Accessories 
-[%header, cols="20, 40, 40"]
+[%header, cols="20, 80"]
 |===
 
-3+^| Accessories
+2+^| Accessories
 
-| *Axis*
-| *Transformation*
-| *Direction*
+| *Origin*
+| Center of the bounding box on the ground
 
-| *X*
-| 0
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| 0 
-| Side
+| *y-axis*
+| Pointing sidewards
 
-| *Z*
-| 0
-| Up
+| *z-axis*
+| Pointing upwards
+
 |===
 
 
 == Body_<Name>
 
 This object represents the body of the human.
-The origin of the `Body` is set at the center of the bounding box on the ground.
 
 .Body
-[%header, cols="20, 40, 40"]
+[%header, cols="20, 80"]
 |===
 
-3+^| Body
+2+^| Body
 
-| *Axis*
-| *Transformation*
-| *Direction*
+| *Origin*
+| Center of the bounding box on the ground
 
-| *X*
-| 0
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| 0 
-| Side
+| *y-axis*
+| Pointing sidewards
 
-| *Z*
-| 0
-| Up
+| *z-axis*
+| Pointing upwards
 |===
 
 
 == Clothing_<Name>
 
 This object represents an additional or exchangeable clothing part of the human.
-The origin of the `Clothing` is set at the center of the bounding box on the ground.
 
 .Clothing
-[%header, cols="20, 40, 40"]
+[%header, cols="20, 80"]
 |===
 
-3+^| Clothing
+2+^| Clothing
 
-| *Axis*
-| *Transformation*
-| *Direction*
+| *Origin*
+| Center of the bounding box on the ground
 
-| *X*
-| 0
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| 0 
-| Side
+| *y-axis*
+| Pointing sidewards
 
-| *Z*
-| 0
-| Up
+| *z-axis*
+| Pointing upwards
 |===
 
 
 == Hair_<Name>
 
 This object represents an additional or exchangeable hair part of the human.
-The origin of the `Hair` is set at the center of the bounding box on the ground.
 
 .Hair
-[%header, cols="20, 40, 40"]
+[%header, cols="20, 80"]
 |===
 
-3+^| Hair
+2+^| Hair
 
-| *Axis*
-| *Transformation*
-| *Direction*
+| *Origin*
+| Center of the bounding box on the ground
 
-| *X*
-| 0
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| 0 
-| Side
+| *y-axis*
+| Pointing sidewards
 
-| *Z*
-| 0
-| Up
+| *z-axis*
+| Pointing upwards
 |===
 
 
 == Root
 
 The `Root` bone is the parent bone for all other bones. It can be used to control the whole skeleton.
-The origin of the `Root` bone is set at the world origin.
 
 .Root bone
-[%header, cols="20, 40, 40"]
+[%header, cols="20, 80"]
 |===
 
-3+^| Root
+2+^| Root
 
-| *Axis*
-| *Transformation*
-| *Direction*
+| *Origin*
+| World coordinate system
 
-| *X*
-| 0
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| 0 
-| Side
+| *y-axis*
+| Pointing sidewards
 
-| *Z*
-| 0
-| Up
+| *z-axis*
+| Pointing upwards
 |===
 
 NOTE: Please add a figure and description.
 
 == Lower_Spine
 
-The `Lower_Spine` bone represents the lowest parts and bones of the spine.
-Transferred to a human skeleton, it represents and controls the Coccyx and Sacrum spine bones.
-The origin of the `Lower_Spine` bone should be set at the height of the Coccyx bone and in the middle of the geometry.
+The `Lower_Spine` bone represents the lowest parts and bones of the spine, that is, the Coccyx and Sacrum spine bones of the human skeleton.
 
 .Lower_Spine bone
 [%header, cols="20, 80"]
@@ -227,26 +196,24 @@ The origin of the `Lower_Spine` bone should be set at the height of the Coccyx b
 
 2+^| Lower_Spine
 
-| *Axis*
-| *Direction*
+| *Origin*
+| At the height of the Coccyx bone and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Up
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Side
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Middle_Spine
 
-The `Middle_Spine` bone represents the mid parts und bones of the spine.
-Transferred to a human skeleton, it represents and controls the Lumbar spine bones.
-The origin of the `Middle_Spine` bone should be set at the height of the first Lumbar spine bone and in the middle of the geometry.
+The `Middle_Spine` bone represents the middle parts und bones of the spine, that is, the Lumbar spine bones of the human skeleton.
 
 .Middle_Spine bone
 [%header, cols="20, 80"]
@@ -254,26 +221,24 @@ The origin of the `Middle_Spine` bone should be set at the height of the first L
 
 2+^| Middle_Spine
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the first Lumbar spine bone and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Upper_Spine 
 
-The `Upper_Spine` bone represents the upper parts und bones of the spine.
-Transferred to a human skeleton, it represents and controls the Thoracic spine bones.
-The origin of the `Upper_Spine` bone should be set at the height of the lowest Thoracic spine bone and in the middle of the geometry.
+The `Upper_Spine` bone represents the upper parts und bones of the spine, that is, the Thoracic spine bones of the human skeleton.
 
 .Upper_Spine bone
 [%header, cols="20, 80"]
@@ -281,25 +246,24 @@ The origin of the `Upper_Spine` bone should be set at the height of the lowest T
 
 2+^| Upper_Spine
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the lowest Thoracic spine bone and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Neck 
 
-The `Neck` bone represents the most upper parts und bones of the spine. Transferred to a human skeleton, it represents and controls the Cervical spine bones.
-The origin of the `Neck` bone should be set at the height of the lowest Cervical spine bone and in the middle of the geometry.
+The `Neck` bone represents the most upper parts und bones of the spine, that is, the Cervical spine bones of the human skeleton.
 
 .Neck bone
 [%header, cols="20, 80"]
@@ -307,25 +271,24 @@ The origin of the `Neck` bone should be set at the height of the lowest Cervical
 
 2+^| Neck 
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the lowest Cervical spine bone and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Head
 
-The `Head` bone represents the head. Transferred to a human skeleton, it represents and controls the skull.
-The origin of the `Head` bone should be set at the height of the first Cervical spine bone and in the middle of the geometry.
+The `Head` bone represents the head, that is, the skull of the human skeleton.
 
 .Head bone
 [%header, cols="20, 80"]
@@ -333,26 +296,24 @@ The origin of the `Head` bone should be set at the height of the first Cervical 
 
 2+^| Head
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the first Cervical spine bone and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Eye_Left
 
-The `Eye_Left` bone represents the left eye.
-It is used to represent the left eye and to allow the calculation of the eye level.
-The origin of the `Eye_Left` bone should be set at the middle of the (eyeball) geometry.
+The `Eye_Left` bone represents the left eye of the human body. It is used to calculate the eye level.
 
 .Eye_Left bone
 [%header, cols="20, 80"]
@@ -360,25 +321,24 @@ The origin of the `Eye_Left` bone should be set at the middle of the (eyeball) g
 
 2+^| Eye_Left
 
-| *Axis*
-| Direction
+| *Origin*
+| At the middle of the (eyeball) geometry
 
-| *X*
-| Up
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Forward
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Side
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Eye_Right
 
-The `Eye_Right` bone represents the left eye. It is used to represent the left eye and to allow the calculation of the eye level.
-The origin of the `Eye_Right` bone should be set at the middle of the (eyeball) geometry.
+The `Eye_Right` bone represents the right eye of the human body. It is used to calculate the eye level.
 
 .Eye_Right bone
 [%header, cols="20, 80"]
@@ -386,25 +346,24 @@ The origin of the `Eye_Right` bone should be set at the middle of the (eyeball) 
 
 2+^| Eye_Right
 
-| *Axis*
-| Direction
+| *Origin*
+| At the middle of the (eyeball) geometry
 
-| *X*
-| Up
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Forward
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Side
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Shoulder_Left 
 
-The `Shoulder_Left` bone represents the upper part of the left shoulder. Transferred to a human skeleton, it represents and controls the interaction between the clavicle bone and the humerus head.
-The origin of the `Shoulder_Left` bone should be set at the height of the clavicle bone and in the middle of the geometry.
+The `Shoulder_Left` bone represents the upper part of the left shoulder, that is, the interaction between the clavicle bone and the humerus head of the human skeleton.
 
 .Shoulder_Left bone
 [%header, cols="20, 80"]
@@ -412,25 +371,24 @@ The origin of the `Shoulder_Left` bone should be set at the height of the clavic
 
 2+^| Shoulder_Left
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the clavicle bone and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Upper_Arm_Left
 
-The `Upper_Arm_Left` bone represents the upper part of the left arm. Transferred to a human skeleton, it represents and controls the humerus head.
-The origin of the `Upper_Arm_Left` bone should be set at the height of the humerus head and in the middle of the geometry.
+The `Upper_Arm_Left` bone represents the upper part of the left arm, that is, the humerus head of the human skeleton.
 
 .Upper_Arm_Left bone
 [%header, cols="20, 80"]
@@ -438,25 +396,24 @@ The origin of the `Upper_Arm_Left` bone should be set at the height of the humer
 
 2+^| Upper_Arm_Left
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the humerus head and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Lower_Arm_Left
 
-The `Lower_Arm_Left` bone represents the lower part of the left arm. Transferred to a human skeleton, it represents and controls the elbow.
-The origin of the `Lower_Arm_Left` bone should be set at the height of the elbow and in the middle of the geometry.
+The `Lower_Arm_Left` bone represents the lower part of the left arm, that is, the left elbow and Radius and Ulna of the human skeleton.
 
 .Lower_Arm_Left bone
 [%header, cols="20, 80"]
@@ -464,26 +421,24 @@ The origin of the `Lower_Arm_Left` bone should be set at the height of the elbow
 
 2+^| Lower_Arm_Left
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the elbow and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Hand_Left
 
-The `Hand_Left` bone represents the left hand.
-Transferred to a human skeleton, it represents and controls the carpal bones.
-The origin of the `Hand_Left` bone should be set at the height of the beginning carpal bones and in the middle of the geometry.
+The `Hand_Left` bone represents the left hand, that is, the left carpal bones of the human skeleton.
 
 .Hand_Left bone
 [%header, cols="20, 80"]
@@ -491,26 +446,24 @@ The origin of the `Hand_Left` bone should be set at the height of the beginning 
 
 2+^| Hand_Left
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the beginning carpal bones and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Full_Thumb_Left 
 
-The `Full_Thumb_Left` bone represents the thumb of the left hand.
-Transferred to a human skeleton, it represents and controls the full thumb.
-The origin of the `Full_Thumb_Left` bone should be set at the height of the beginning carpal bones and in the middle of the geometry.
+The `Full_Thumb_Left` bone represents the thumb of the left hand, that is, the full thumb of the human skeleton.
 
 .Full_Thumb_Left bone
 [%header, cols="20, 80"]
@@ -518,26 +471,24 @@ The origin of the `Full_Thumb_Left` bone should be set at the height of the begi
 
 2+^| Full_Thumb_Left
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the beginning carpal bones and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Up
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Side
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Full_Fingers_Left
 
-The `Full_Fingers_Left` bone represents all other fingers of the left hand.
-Transferred to a human skeleton, it represents and controls the full index finger, middle finger, ring finger and pinkie finger.
-The origin of the `Full_Fingers_Left` bone should be set at the height of the beginning carpal bones and in the middle of the hand geometry. The middle finger position and length should be used to place the bone correctly.
+The `Full_Fingers_Left` bone represents all other fingers of the left hand, that is, the full index finger, middle finger, ring finger, and pinkie finger of the human skeleton. The middle finger position and length are used to place the bone correctly.
 
 .Full_Fingers_Left bone
 [%header, cols="20, 80"]
@@ -545,26 +496,24 @@ The origin of the `Full_Fingers_Left` bone should be set at the height of the be
 
 2+^| Full_Fingers_Left
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the beginning carpal bones and in the middle of the hand geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Up
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Side
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Shoulder_Right 
 
-The `Shoulder_Right` bone represents the upper part of the right shoulder.
-Transferred to a human skeleton, it represents and controls the interaction between the clavicle bone and the humerus head.
-The origin of the `Shoulder_Right` bone should be set at the height of the clavicle bone and in the middle of the geometry.
+The `Shoulder_Right` bone represents the upper part of the right shoulder, that is, the interaction between the clavicle bone and the humerus head of the human skeleton.
 
 .Shoulder_Right bone
 [%header, cols="20, 80"]
@@ -572,26 +521,24 @@ The origin of the `Shoulder_Right` bone should be set at the height of the clavi
 
 2+^| Shoulder_Right
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the clavicle bone and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Upper_Arm_Right
 
-The `Upper_Arm_Right` bone represents the upper part of the right arm.
-Transferred to a human skeleton, it represents and controls the humerus head.
-The origin of the `Upper_Arm_Right` bone should be set at the height of the humerus head and in the middle of the geometry.
+The `Upper_Arm_Right` bone represents the upper part of the right arm, that is, the humerus head of the human skeleton.
 
 .Upper_Arm_Right bone
 [%header, cols="20, 80"]
@@ -599,26 +546,24 @@ The origin of the `Upper_Arm_Right` bone should be set at the height of the hume
 
 2+^| Upper_Arm_Right
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the humerus head and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Lower_Arm_Right
 
-The `Lower_Arm_Right` bone represents the lower part of the right arm.
-Transferred to a human skeleton, it represents and controls the elbow.
-The origin of the `Lower_Arm_Right` bone should be set at the height of the elbow and in the middle of the geometry.
+The `Lower_Arm_Right` bone represents the lower part of the right arm, that is, the right elbow and Radius and Ulna of the human skeleton.
 
 .Lower_Arm_Right bone
 [%header, cols="20, 80"]
@@ -626,25 +571,24 @@ The origin of the `Lower_Arm_Right` bone should be set at the height of the elbo
 
 2+^| Lower_Arm_Right
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the elbow and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Hand_Right
 
-The `Hand_Right` bone represents the right hand. Transferred to a human skeleton, it represents and controls the carpal bones.
-The origin of the `Hand_Right` bone should be set at the height of the beginning carpal bones and in the middle of the geometry.
+The `Hand_Right` bone represents the right hand, that is, the right carpal bones of the human skeleton.
 
 .Hand_Right bone
 [%header, cols="20, 80"]
@@ -652,26 +596,24 @@ The origin of the `Hand_Right` bone should be set at the height of the beginning
 
 2+^| Hand_Right
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the beginning carpal bones and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Full_Thumb_Right
 
-The `Full_Thumb_Right` bone represents the thumb of the right hand.
-Transferred to a human skeleton, it represents and controls the full thumb.
-The origin of the `Full_Thumb_Right` bone should be set at the height of the beginning carpal bones and in the middle of the geometry.
+The `Full_Thumb_Right` bone represents the thumb of the right hand, that is, the full thumb of the human skeleton.
 
 .Full_Thumb_Right bone
 [%header, cols="20, 80"]
@@ -679,26 +621,24 @@ The origin of the `Full_Thumb_Right` bone should be set at the height of the beg
 
 2+^| Full_Thumb_Right
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the beginning carpal bones and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Up
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Side
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Full_Fingers_Right
 
-The `Full_Fingers_Right` bone represents all other fingers of the right hand.
-Transferred to a human skeleton, it represents and controls the full index finger, middle finger, ring finger and pinkie finger.
-The origin of the `Full_Fingers_Right` bone should be set at the height of the beginning carpal bones and in the middle of the hand geometry. The middle finger position and length should be used to place the bone correctly.
+The `Full_Fingers_Right` bone represents all other fingers of the right hand, that is, the full index finger, middle finger, ring finger, and pinkie finger. The middle finger position and length are used to place the bone correctly.
 
 .Full_Fingers_Right bone
 [%header, cols="20, 80"]
@@ -706,26 +646,24 @@ The origin of the `Full_Fingers_Right` bone should be set at the height of the b
 
 2+^| Full_Fingers_Right
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the beginning carpal bones and in the middle of the hand geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Up
+| *y-axis*
+| Pointing upwards
 
-| *Z*
-| Side
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Upper_Leg_Left
 
-The `Upper_Leg_Left` bone represents the upper part of the left leg.
-Transferred to a human skeleton, it represents the thigh and controls the hip joint.
-The origin of the `Upper_Leg_Left` bone should be set at the height of the hip joint and in the middle of the geometry.
+The `Upper_Leg_Left` bone represents the upper part of the left leg, that is, the thigh of the human skeleton. It controls the hip joint.
 
 .Upper_Leg_Left bone
 [%header, cols="20, 80"]
@@ -733,53 +671,48 @@ The origin of the `Upper_Leg_Left` bone should be set at the height of the hip j
 
 2+^| Upper_Leg_Left
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the hip joint and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing sidewards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing upwards
 |===
 
 NOTE: Please add a figure and description.
 
 == Lower_Leg_Left
 
-The `Lower_Leg_Left` bone represents the lower part of the left leg.
-Transferred to a human skeleton, it represents the leg and controls the knee.
-The origin of the `Lower_Leg_Left` bone should be set at the height of the knee and in the middle of the geometry.
-
+The `Lower_Leg_Left` bone represents the lower part of the left leg, that is, the Tibula and Fibula of the human skeleton. It controls the knee.
 .Lower_Leg_Left bone
 [%header, cols="20, 80"]
 |===
 
 2+^| Lower_Leg_Left
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the knee and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing sidewards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing upwards
 |===
 
 NOTE: Please add a figure and description.
 
 == Foot_Left 
 
-The `Foot_Left` bone represents the left foot without the toes.
-Transferred to a human skeleton, it represents the foot and controls the ankle.
-The origin of the `Foot_Left` bone should be set at the height of the ankle and in the middle of the geometry.
+The `Foot_Left` bone represents the left foot of the human skeleton without the toes. It controls the ankle.
 
 .Foot_Left bone
 [%header, cols="20, 80"]
@@ -787,26 +720,24 @@ The origin of the `Foot_Left` bone should be set at the height of the ankle and 
 
 2+^| Foot_Left
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the ankle and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing sidewards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing upwards
 |===
 
 NOTE: Please add a figure and description.
 
 == Full_Toes_Left 
 
-The `Full_Toes_Left` bone represents the all toes of the left foot.
-Transferred to a human skeleton, it represents and controls the toes.
-The origin of the `Full_Toes_Left` bone should be set at the height of the phalanges and in the middle of the geometry.
+The `Full_Toes_Left` bone represents all toes of the left foot of the human skeleton.
 
 .Full_Toes_Left bone
 [%header, cols="20, 80"]
@@ -814,26 +745,24 @@ The origin of the `Full_Toes_Left` bone should be set at the height of the phala
 
 2+^| Full_Toes_Left 
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the phalanges and in the middle of the geometry
 
-| *X*
-| Up
+| *x-axis*
+| Pointing upwards
 
-| *Y*
-| Forward
+| *y-axis*
+| Pointing forewards
 
-| *Z*
-| Side
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
 
 == Upper_Leg_Right
 
-The `Upper_Leg_Right` bone represents the upper part of the right leg.
-Transferred to a human skeleton, it represents the thigh and controls the hip joint.
-The origin of the `Upper_Leg_Right` bone should be set at the height of the hip joint and in the middle of the geometry.
+The `Upper_Leg_Right` bone represents the upper part of the right leg, that is, the thigh of the human skeleton. It controls the hip joint.
 
 .Upper_Leg_Right bone
 [%header, cols="20, 80"]
@@ -841,26 +770,24 @@ The origin of the `Upper_Leg_Right` bone should be set at the height of the hip 
 
 2+^| Upper_Leg_Right
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the hip joint and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing sidewards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing upwards
 |===
 
 NOTE: Please add a figure and description.
 
 == Lower_Leg_Right
 
-The `Lower_Leg_Right` bone represents the lower part of the right leg.
-Transferred to a human skeleton, it represents the leg and controls the knee.
-The origin of the `Lower_Leg_Right` bone should be set at the height of the knee and in the middle of the geometry.
+The `Lower_Leg_Right` bone represents the lower part of the right leg, that is, the Tibula and Fibula of the human skeleton. It controls the knee.
 
 .Lower_Leg_Right bone
 [%header, cols="20, 80"]
@@ -868,26 +795,24 @@ The origin of the `Lower_Leg_Right` bone should be set at the height of the knee
 
 2+^| Lower_Leg_Right
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the knee and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing sidewards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing upwards
 |===
 
 NOTE: Please add a figure and description.
 
 == Foot_Right
 
-The `Foot_Right` bone represents the right foot without the toes.
-Transferred to a human skeleton, it represents the foot and controls the ankle.
-The origin of the `Foot_Right` bone should be set at the height of the ankle and in the middle of the geometry.
+The `Foot_Right` bone represents the right foot of the human skeleton without the toes. It controls the ankle.
 
 .Foot_Right bone
 [%header, cols="20, 80"]
@@ -895,26 +820,24 @@ The origin of the `Foot_Right` bone should be set at the height of the ankle and
 
 2+^| Foot_Right
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the ankle and in the middle of the geometry
 
-| *X*
-| Forward
+| *x-axis*
+| Pointing forwards
 
-| *Y*
-| Side
+| *y-axis*
+| Pointing sidewards
 
-| *Z*
-| Up
+| *z-axis*
+| Pointing upwards
 |===
 
 NOTE: Please add a figure and description.
 
 == Full_Toes_Right
 
-The `Full_Toes_Right` bone represents the all toes of the right foot.
-Transferred to a human skeleton, it represents and controls the toes.
-The origin of the `Full_Toes_Right` bone should be set at the height of the phalanges and in the middle of the geometry.
+The `Full_Toes_Right` bone in a human skeleton represents all toes of the right foot of the human skeleton.
 
 .Full_Toes_Right bone
 [%header, cols="20, 80"]
@@ -922,17 +845,17 @@ The origin of the `Full_Toes_Right` bone should be set at the height of the phal
 
 2+^| Full_Toes_Right 
 
-| *Axis*
-| Direction
+| *Origin*
+| At the height of the phalanges and in the middle of the geometry
 
-| *X*
-| Up
+| *x-axis*
+| Pointing upwards
 
-| *Y*
-| Forward
+| *y-axis*
+| Pointing forwards
 
-| *Z*
-| Side
+| *z-axis*
+| Pointing sidewards
 |===
 
 NOTE: Please add a figure and description.
