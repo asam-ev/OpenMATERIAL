@@ -2,7 +2,7 @@
   "metadata": {
 		"name": "asphalt_brdf_for_radar",
     "description": "Reflectance properties of asphalt for radar sensor.",
-		"uuid": "e9e2a27eee53437eb5783b61b7cc47f2",
+		"uuid": "e9e2a27e-ee53-437e-b578-3b61b7cc47f2",
 		"materialVersion": "1.0.0",
 		"creationDate": "20240919T101728Z",
     "openMaterialVersion": "1.0.0",
