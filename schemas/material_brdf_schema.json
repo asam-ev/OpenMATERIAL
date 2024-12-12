@@ -71,7 +71,6 @@
             "type": "object",
             "description": "General information about the lookup table.",
             "properties": {
-
                 "wavelengths": {
                     "type": "array",
                     "description": "List of all wavelengths in meters contained in the lookup table.",
@@ -127,8 +126,7 @@
                 }
             },
             "required": [
-                "typicalSensor",
-                "wavelengthRange",
+                "wavelengths",
                 "lookupTable"
             ]
         }
