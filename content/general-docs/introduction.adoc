@@ -160,4 +160,9 @@ Notes, footnotes, and examples shall not contain requirements or any information
 
 The following deliverables are provided for {THIS_STANDARD}:
 
-> Define the deliverables of this project here
+* ASAM OpenMATERIAL 3D Specification
+* https://github.com/asam-ev/OpenMATERIAL/tree/main/schemas[JSON schema files] for all json formats
+* https://github.com/asam-ev/OpenMATERIAL/tree/main/examples[Example files] for all defined file formats including examples of
+** a https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/vehicle_example[vehicle],
+** a https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/human_example[human] and
+** an https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/environment_example[environment]
