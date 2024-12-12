@@ -53,3 +53,9 @@ jobs:
         with:
           schema: ./schemas/material_brdf_schema.json
           file: ./examples/*_brdf.xompt
+
+      - name: Validate reflectance JSON schemas
+        uses: cardinalby/schema-validator-action@v3
+        with:
+          schema: ./schemas/material_reflectance_schema.json
+          file: ./examples/*_reflectance.xompt
