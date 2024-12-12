@@ -9,12 +9,11 @@
 		"copyright": "(C) 2023-2024, DIVP",
 		"license": "MPL-2.0",
 		"author": "DIVP",
-		"source": "measurement"
+		"source": "measurement",
+		"typicalSensorTechnology": "lidar"
 	},
 	"brdf": {
-		"typicalSensor": "lidar",
-		"wavelengthRange": [
-			9.05e-07,
+		"wavelengths": [
 			9.05e-07
 		],
 		"lookupTable": [
