@@ -15,6 +15,8 @@ ASAM OpenMATERIAL supports the 3D model file formats glTF, FBX, and USD with the
 **glTF**
 
 ASAM OpenMATERIAL 3D models in glTF format SHALL comply with the official https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html[glTF specification].
+The glTF specification has two delivery options: glTF + bin + textures and the container format glb.
+Both delivery options are supported in ASAM OpenMATERIAL.
 
 The glTF coordinate system is right-handed, with +Y as the up axis, +Z as forward, and -X as right. The front of a glTF asset faces +Z. 
 
