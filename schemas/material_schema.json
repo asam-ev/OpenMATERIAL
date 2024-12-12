@@ -49,10 +49,8 @@
             },
             "required": [
                 "name",
-                "description",
                 "uuid",
                 "materialVersion",
-                "creationDate",
                 "openMaterialVersion",
                 "copyright",
                 "license",
@@ -164,7 +162,7 @@
                         }
                     },
                     "required": [
-                        "coefficienOfRetroreflection",
+                        "coefficientOfRetroreflection",
                         "source"
                     ]
                 },
@@ -193,14 +191,7 @@
                         "type": "string"
                     }
                 }
-            },
-            "required": [
-                "surfaceRoughness",
-                "emissivityData",
-                "elasticityData",
-                "densityData",
-                "electromagneticPropertiesUri"
-            ]
+            }
         }
     },
     "required": [
