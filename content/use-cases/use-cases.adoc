@@ -30,7 +30,7 @@ A project proposal should consider all three perspectives in order to provide a 
 |*Influencing technologies* |3D Modeling (for example, 3dsMax and Maya), 3D Engine (for example, Unreal Engine)
 |*Used 3D model formats*    |glTF, FBX, USD, OSG, OBJ, IVE, udatasmith, FLT, DirectX, 3DS, DAE
 |*Used material formats*    |MDL
-|*Companies*                |IAE, IPG, Foretellix, Persival, PilotD, TrianGraphics
+|*Companies*                |IAE, IPG Automotive, Foretellix, Persival, PilotD, TrianGraphics
 |*Relevant user*            |Content creator
 |===
 
@@ -73,7 +73,7 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 |*Influencing technologies* |
 |*Used 3D model formats*    |glTF, FBX, USD, OSG, OBJ
 |*Used material formats*    |
-|*Companies*                |ADaC, Ansys, BMW, IPG, Fortellix, Persival, PilotD
+|*Companies*                |ADaC, Ansys, BMW, IPG Automotive, Fortellix, Persival, PilotD
 |*Relevant user*            |Content creator
 |===
 
@@ -101,7 +101,7 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 |*Influencing technologies* |Unreal Engine, Unity, Unigine, OptiX, CUDA
 |*Used 3D model formats*    |glTF, FBX, USD, OSG, OBJ
 |*Used material formats*    |
-|*Companies*                |IPG
+|*Companies*                |IPG Automotive
 |*Relevant user*            |Simulation platform developer
 |===
 
