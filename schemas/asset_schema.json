@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "description": "ASAM OpenMATERIAL Geometry Asset file definition.",
+    "description": "ASAM OpenMATERIAL 3D Geometry Asset file definition.",
     "properties": {
         "metadata": {
             "type": "object",
@@ -27,7 +27,7 @@
                 },
                 "openMaterialVersion": {
                     "type": "string",
-                    "description": "The version of the OpenMATERIAL specification used, adhering to semantic versioning (e.g., '1.0.0').",
+                    "description": "The version of the OpenMATERIAL 3D specification used, adhering to semantic versioning (e.g., '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
                 "copyright": {
@@ -83,7 +83,7 @@
                 },
                 "pbrMaterialWorkflow": {
                     "type": "string",
-                    "description": "Indicates the usage of a Physically Based Rendering (PBR) material workflow as 'metallic', 'specular' or 'none'. This only applies to the internal materials of the 3D model file, not to mapped OpenMATERIAL property files.",
+                    "description": "Indicates the usage of a Physically Based Rendering (PBR) material workflow as 'metallic', 'specular' or 'none'. This only applies to the internal materials of the 3D model file, not to mapped OpenMATERIAL 3D property files.",
                     "enum": [
                         "metallic",
                         "specular",
@@ -181,12 +181,12 @@
         },
         "materialMappingUri": {
             "type": "string",
-            "description": "Relative path to a material mapping file (.xomm). In this file, material names from the 3D model file or texture color codes from textures assigned in materialTextureAssignment are linked to OpenMATERIAL property files.",
+            "description": "Relative path to a material mapping file (.xomm). In this file, material names from the 3D model file or texture color codes from textures assigned in materialTextureAssignment are linked to OpenMATERIAL 3D property files.",
             "pattern": ".*\\.xomm$"
         },
         "materialTextureAssignment": {
             "type": "array",
-            "description": "Optional array containing material texture assignments. It links material names contained in the 3D model file to OpenMATERIAL assignment textures. In a separate material mapping file, the 'color' values in this texture are linked to OpenMATERIAL property files.",
+            "description": "Optional array containing material texture assignments. It links material names contained in the 3D model file to OpenMATERIAL 3D assignment textures. In a separate material mapping file, the 'color' values in this texture are linked to OpenMATERIAL 3D property files.",
             "items": {
                 "type": "array",
                 "items": [
@@ -196,7 +196,7 @@
                     },
                     {
                         "type": "string",
-                        "description": "File path to the OpenMATERIAL assignment texture. Supported texture formats are png and jpg.",
+                        "description": "File path to the OpenMATERIAL 3D assignment texture. Supported texture formats are png and jpg.",
                         "pattern": "^(\\./|/)?([a-zA-Z0-9_\\-./]+)\\.(png|jpg|jpeg)$"
                     }
                 ],

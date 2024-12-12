@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "description": "ASAM OpenMATERIAL Geometry Asset file definition.",
+    "description": "ASAM OpenMATERIAL 3D Geometry Asset file definition.",
     "properties": {
         "metadata": {
             "type": "object",
@@ -27,7 +27,7 @@
                 },
                 "openMaterialVersion": {
                     "type": "string",
-                    "description": "The version of the OpenMATERIAL specification used, adhering to semantic versioning (e.g., '1.0.0').",
+                    "description": "The version of the OpenMATERIAL 3D specification used, adhering to semantic versioning (e.g., '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
                 "copyright": {
@@ -66,7 +66,7 @@
                 "items": [
                     {
                         "type": "string",
-                        "description": "Material name or RGB code. The RGB code represents color values in an OpenMATERIAL assignment texture."
+                        "description": "Material name or RGB code. The RGB code represents color values in an OpenMATERIAL 3D assignment texture."
                     },
                     {
                         "type": "string",
