@@ -50,6 +50,10 @@
                 "source": {
                     "type": "string",
                     "description": "Source of the BRDF data. Was is measured, simulated, or taken from literature?"
+                },
+                "typicalSensorTechnology": {
+                    "type": "string",
+                    "description": "Typical sensor technology this BRDF table is used for, e.g., radar, lidar, camera. If multiply apply, use comma-separation."
                 }
             },
             "required": [
@@ -67,18 +71,13 @@
             "type": "object",
             "description": "General information about the lookup table.",
             "properties": {
-                "typicalSensor": {
-                    "type": "string",
-                    "description": "Typical sensor technology this BRDF table is used for, e.g., radar, lidar, camera."
-                },
-                "wavelengthRange": {
+
+                "wavelengths": {
                     "type": "array",
-                    "description": "Wavelength range covered by the lookup table. The first item is the minimum wavelength in meters and the second item is the maximum wavelength in meters.",
+                    "description": "List of all wavelengths in meters contained in the lookup table.",
                     "items": {
                         "type": "number"
-                    },
-                    "minItems": 2,
-                    "maxItems": 2
+                    }
                 },
                 "lookupTable": {
                     "type": "array",
