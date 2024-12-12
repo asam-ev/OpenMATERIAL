@@ -5,6 +5,7 @@
     "properties": {
         "metadata": {
             "type": "object",
+            "description": "The key meta information about the mapping table, including its identity, authorship, technical specifications, and legal details.",
             "properties": {
                 "name": {
                     "type": "string",
