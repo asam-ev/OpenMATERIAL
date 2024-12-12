@@ -36,15 +36,15 @@
                 },
                 "license": {
                     "type": "string",
-                    "description": "Describes the license for asset distribution. Use an SPDX identifier for open-source licenses (e.g., 'MIT'), or provide a URL or filename for proprietary licenses."
+                    "description": "Describes the license for material distribution. Use an SPDX identifier for open-source licenses (e.g., 'MIT'), or provide a URL or filename for proprietary licenses."
                 },
                 "author": {
                     "type": "string",
-                    "description": "Lists the author(s) of the asset as a name, email, or company. Multiple authors should be comma-separated."
+                    "description": "Lists the author(s) of the material as a name, email, or company. Multiple authors should be comma-separated."
                 },
                 "creationDate": {
                     "type": "string",
-                    "description": "The date and time of asset creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (e.g., '20240703T101728Z').",
+                    "description": "The date and time of material creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (e.g., '20240703T101728Z').",
                     "pattern": "^\\d{8}T\\d{6}Z$"
                 },
                 "source": {
