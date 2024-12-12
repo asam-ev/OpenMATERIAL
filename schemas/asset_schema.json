@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "description": "ASAM OpenMATERIAL Asset file definition.",
+    "description": "ASAM OpenMATERIAL Geometry Asset file definition.",
     "properties": {
         "metadata": {
             "type": "object",
@@ -48,7 +48,7 @@
                 },
                 "creationDate": {
                     "type": "string",
-                    "description": "The date and time of asset creation, formatted in ISO 8601 (e.g., '20240703T101728Z').",
+                    "description": "The date and time of asset creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (e.g., '20240703T101728Z').",
                     "pattern": "^\\d{8}T\\d{6}Z$"
                 },
                 "modelingMethod": {
@@ -162,14 +162,12 @@
             },
             "required": [
                 "name",
-                "description",
                 "uuid",
                 "assetVersion",
                 "openMaterialVersion",
                 "copyright",
                 "license",
                 "author",
-                "creationDate",
                 "assetType",
                 "objectClass",
                 "animated",

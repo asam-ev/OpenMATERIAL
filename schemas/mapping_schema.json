@@ -1,58 +1,60 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Material Mapping Schema",
     "type": "object",
+    "description": "ASAM OpenMATERIAL Geometry Asset file definition.",
     "properties": {
         "metadata": {
             "type": "object",
             "properties": {
                 "name": {
                     "type": "string",
-                    "description": "Name of the material mapping."
+                    "description": "The display name of the material mapping table."
                 },
                 "description": {
                     "type": "string",
-                    "description": "This is a short description of the material mapping table. Use 2-3 sentences."
+                    "description": "Short description of the mapping table in 2 - 3 sentences."
                 },
                 "uuid": {
                     "type": "string",
-                    "description": "Universally unique identifier for the material mapping in 8-4-4-4-12 format, see https://en.wikipedia.org/wiki/Universally_unique_identifier. The uuid stays the same, even if version is updated.",
+                    "description": "Universally unique identifier for the mapping table in 8-4-4-4-12 format, see https://en.wikipedia.org/wiki/Universally_unique_identifier. The uuid stays the same, even if version is updated.",
                     "pattern": "\\b[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\\b$"
                 },
-                "mappingVersion": {
+                "materialVersion": {
                     "type": "string",
-                    "description": "Version of the mapping table.",
+                    "description": "The version number of the mapping table, following semantic versioning (e.g., '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
                 "openMaterialVersion": {
                     "type": "string",
-                    "description": "Version of the OpenMaterial format.",
+                    "description": "The version of the OpenMATERIAL specification used, adhering to semantic versioning (e.g., '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
                 "copyright": {
                     "type": "string",
-                    "description": "Copyright information with year and company."
+                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.')."
                 },
                 "license": {
                     "type": "string",
-                    "description": "License information. For common open source licenses, provide an SPDX identifier or a URL to the license."
+                    "description": "Describes the license for asset distribution. Use an SPDX identifier for open-source licenses (e.g., 'MIT'), or provide a URL or filename for proprietary licenses."
                 },
                 "author": {
                     "type": "string",
-                    "description": "Email address or name of the author. Can also be a company name."
+                    "description": "Lists the author(s) of the asset as a name, email, or company. Multiple authors should be comma-separated."
                 },
                 "creationDate": {
                     "type": "string",
-                    "description": "Date and time when the material mapping was created in ISO 8601 format.",
+                    "description": "The date and time of asset creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (e.g., '20240703T101728Z').",
                     "pattern": "^\\d{8}T\\d{6}Z$"
                 }
             },
             "required": [
                 "name",
                 "uuid",
-                "mappingVersion",
+                "materialVersion",
                 "openMaterialVersion",
-                "creationDate"
+                "copyright",
+                "license",
+                "author"
             ]
         },
         "materialMapping": {
