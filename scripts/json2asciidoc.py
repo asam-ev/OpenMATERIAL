@@ -117,7 +117,7 @@ def generate_asciidoc_properties(properties: Dict, required_fields: List[str], l
     return asciidoc_content
 
 
-def generate_asciidoc_main_field(field_name: str, schema: Dict, required_fields: List[str]) -> str:
+def generate_asciidoc_main_field(field_name: str, schema: Dict, is_required: bool, required_fields: List[str]) -> str:
     """
     Generate AsciiDoc content for the specified field based on the JSON schema.
 
@@ -139,7 +139,7 @@ def generate_asciidoc_main_field(field_name: str, schema: Dict, required_fields:
     if "pattern" in field_data:
         pattern = escape_special_chars(field_data['pattern'])
         asciidoc_content += f"\n*Pattern:* `+{pattern}+` +"
-    asciidoc_content += f"\n*Required:* {'Yes' if field_name in required_fields else 'No'}\n\n"
+    asciidoc_content += f"\n*Required:* {'Yes' if is_required else 'No'}\n\n"
 
     # Generate the content for the properties, recursively handling nested properties
     if 'properties' in field_data:
@@ -174,8 +174,9 @@ def generate_asciidoc_file(json_schema_path: str, output_path: str):
     asciidoc_content = f"= {headline}\n\n"
 
     for field in schema['properties']:
+        is_required = field in schema.get('required', [])
         required_fields = schema['properties'][field].get('required', [])
-        asciidoc_content += generate_asciidoc_main_field(field, schema, required_fields)
+        asciidoc_content += generate_asciidoc_main_field(field, schema, is_required, required_fields)
 
     output_filename = f"{os.path.splitext(base_filename)[0]}.adoc"
     output_file = os.path.join(output_path, output_filename)
