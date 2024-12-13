@@ -1,37 +1,6 @@
 === Naming convention
 
 Every bone has a unique name and represents a part of the human body. The left and right side of the armature are indicated with the keywords "Left" and "Right" as a postfix.
-All included meshes use a keyword as a prefix to indicate which kind of asset it represents.
+All included meshes use a keyword as a prefix to indicate which kind of asset it represents. They shall be named meaningful.
 
-
-.Keywords
-[%header, cols="20, 80"]
-|===
-
-2+^| Side
-
-| *Keyword*
-| *Usage*
-
-| *Grp*
-| Prefix for group nodes
-
-| *Accessories*
-| Prefix for all (exchangable) accessories
-  
-| *Body*
-| Prefix for the body
-
-| *Clothing*
-| Prefix for all (exchangable) clothings
-
-| *Hair*
-| Prefix for all (exchangable) hairs
-
-| *Left*
-| Postfix with specifies the left side
-
-| *Right*
-| Postfix with specifies the right side
-
-|===
+If needed, the user is free to add more prefixes or bones, which are not part of the standard, for himself.
