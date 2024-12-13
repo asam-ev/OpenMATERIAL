@@ -48,6 +48,7 @@ include::material/material-schema.adoc[leveloffset=+1]
 include::material/material-emp-schema.adoc[leveloffset=+1]
 include::material/material-optical-schema.adoc[leveloffset=+1]
 include::material/material-brdf-schema.adoc[leveloffset=+1]
+include::material/material-reflectance-schema.adoc[leveloffset=+1]
 
 
 
