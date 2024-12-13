@@ -2,7 +2,9 @@
 
 == Structure overview
 
+[plantuml]
 ----
+legend
 |_ [[../geometry/object-classes.html#_grp_root Grp_Root]]
   |_ [[../geometry/object-classes.html#_skeleton Skeleton]]
     |_ [[../geometry/object-classes.html#_root Root]]
@@ -36,6 +38,7 @@
   |_ [[../geometry/object-classes.html#_body Body_Human]]
   |_ [[../geometry/object-classes.html#_clothing Clothing_Vest]]
   |_ [[../geometry/object-classes.html#_hair Hair_Short]]
+end legend
 ----
 
 == Grp_Root 

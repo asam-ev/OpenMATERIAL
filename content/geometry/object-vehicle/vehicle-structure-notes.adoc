@@ -1,7 +1,0 @@
-= Notes from Miro board
-
-* `convertible_top`: Indicate default mesh (open, closed etc.) in the Asset File
-* Enable switching on/off convertible top from within the asset file
-* https://github.com/KhronosGroup/glTF/issues/2005[Discussion about switch nodes in glTF]
-* Should add nodes for trailer coupling devices, so that you know where to attach (MT)
-* Any need for moving pedals or shift levers, or the levers on the steering wheel? (SG)
