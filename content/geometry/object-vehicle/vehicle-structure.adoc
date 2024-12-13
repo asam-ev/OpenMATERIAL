@@ -89,6 +89,32 @@ end legend
 ----
 
 
+== Grp_Root (T)
+
+This group is the root node of the entire vehicle.
+All components of the vehicle SHALL be children of this node.
+The origin of the Root node is the center of the vehicle's bounding box projected to the ground, including all vehicle parts in their default positions, i.e. the vehicle is under neutral load conditions, the wheels are running straight, the doors are closed and the lights are off.
+
+[#tab-Vehicle-Grp-Root]
+.Grp_Root
+[%header, cols="20, 80"]
+|===
+
+2+^| <Header>
+
+| *Origin*
+| Center of the vehicle's bounding box projected to the ground, including all vehicle parts in their default positions
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
 == Grp_Exterior
 
 This group contains all parts of the vehicle's exterior.
