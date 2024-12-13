@@ -2,6 +2,47 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "description": "ASAM OpenMATERIAL 3D Geometry Asset file definition.",
+    "definitions": {
+        "Axle": {
+        "type": "object",
+        "description": "The definition of vehicle axle. based on the OpenSCENARIO vehicle axle definition : https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Axle.html",
+        "properties": {
+            "maxSteering": {
+                "type": "number",
+                "description": "Maximum steering angle which can be performed by the wheels on this axle. Unit: rad; Range: [0;PI], symmetrical.",
+                "minimum": 0,
+                "maximum": 3.14159
+            },
+            "wheelDiameter": {
+                "type": "number",
+                "description": "Diameter of the wheels on this axle. Unit: meter; Range: ]0..inf[.",
+                "exclusiveMinimum": 0
+            },
+            "trackWidth": {
+                "type": "number",
+                "description": "Distance of the wheels center lines at zero steering. Unit: meter; Range: [0..inf[.",
+                "minimum": 0
+            },
+            "positionX": {
+                "type": "number",
+                "description": "Longitudinal position of the axle with respect to the vehicles reference point. Unit: meter; Range: [0..inf[.",
+                "minimum": 0
+          },
+            "positionZ": {
+                "type": "number",
+                "description": "Z-position of the axle with respect to the vehicles reference point. Usually this is half of wheel diameter. Unit:meter; Range:[0..inf[.",
+                "minimum": 0
+          }
+        },
+        "required": [
+            "maxSteering",
+            "wheelDiameter",
+            "trackWidth",
+            "positionX",
+            "positionZ"  
+        ]
+      }
+    },
     "properties": {
         "metadata": {
             "type": "object",
@@ -76,6 +117,72 @@
                         "environment",
                         "other"
                     ]
+                },
+                "vehicleClassData": {
+                    "type": ["object", "null"],
+                    "description": "Vehicle specific data. This only applies when 'objectClass' is 'vehicle'. based on the OpenSCENARIO vehicle definition : https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Axle.html",
+                    "if": {
+                        "properties": {
+                            "objectClass": {"const": "vehicle"}
+                        }
+                    },
+                    "then": {
+                        "type": "object",
+                        "properties": {
+                            "vehicleCategory": {
+                                "type": "string",
+                                "description": "Type of the vehicle.",
+                                "enum": ["car", "van", "truck", "trailer", "semitrailer", "bus", "motorbike", "bicycle", "train", "tram"]
+                            },
+                            "performance": {
+                            "type": "object",
+                            "description": "Performance values of a vehicle.",
+                            "properties": {
+                                    "maxSpeed": {
+                                    "type": "number",
+                                    "description": "Maximum speed of the vehicle. Unit: meter/second."
+                                },
+                                "maxAcceleration": {
+                                    "type": "number",
+                                    "description": "Maximum acceleration of the vehicle. Unit: meter/second^2. Range: [0..inf[.",
+                                    "minimum": 0
+                                },
+                                "maxDeceleration": {
+                                    "type": "number",
+                                    "description": "Maximum deceleration of the vehicle. Unit: meter/second^2. Range: [0..inf[.",
+                                    "minimum": 0    
+                                }
+                            },
+                            "required": ["maxSpeed", "maxAcceleration", "maxDeceleration"]
+                        },
+                        "Axles": {
+                            "type": "array",
+                            "description": "A set of the axles of a vehicle. A vehicle must have a front axle and a rear axle. It might have additional axles.",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "frontAxle": {
+                                        "$ref": "#/definitions/Axle",
+                                        "description": "Details about the front axle."
+                                    },
+                                    "rearAxle": {
+                                        "$ref": "#/definitions/Axle",
+                                        "description": "Details about the rear axle."
+                                    },
+                                    "additionalAxles": {
+                                        "type": "array",
+                                        "description": "An optional array of additional axles.",
+                                        "items": {"$ref": "#/definitions/Axle"}
+                                    }
+                                },
+                                "required": ["frontAxle", "rearAxle"]                     
+                            },
+                            "minItems": 2,
+                            "uniqueItems": true
+                        }
+                    },
+                    "required": ["vehicleCategory", "performance", "Axles"]
+                    }
                 },
                 "animated": {
                     "type": "boolean",
