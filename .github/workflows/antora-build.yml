@@ -45,16 +45,7 @@ jobs:
     - name: Generate AsciiDoc from JSON
       working-directory: repo/scripts
       run: |
-        python3 json2asciidoc.py ../schemas/asset_schema.json
-        mv asset-schema.adoc ../content/geometry/
-        python3 json2asciidoc.py ../schemas/mapping_schema.json
-        mv mapping-schema.adoc ../content/geometry/
-        python3 json2asciidoc.py ../schemas/material_schema.json
-        mv material-schema.adoc ../content/material/
-        python3 json2asciidoc.py ../schemas/material_emp_schema.json
-        mv material-emp-schema.adoc ../content/material/
-        python3 json2asciidoc.py ../schemas/material_brdf_schema.json
-        mv material-brdf-schema.adoc ../content/material/
+        python3 generate_schema_docs.py
 
     - name: Configure Pages
       uses: actions/configure-pages@v4

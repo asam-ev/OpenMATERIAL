@@ -1,1 +1,45 @@
 = Introduction
+
+ifndef::include-only-once[]
+:root-path: ../
+:imagesdir: {root-path}/_images
+:includedir: {root-path}/_images
+include::{root-path}_config.adoc[]
+endif::[]
+
+== Motivation
+
+In virtual environments and simulations, the accurate representation of materials plays a critical role in achieving realism and ensuring proper interaction between objects and perception sensors.
+Material properties, such as roughness, permittivity, and index of refraction, influence how sensors like cameras, radars, and lidars perceive and interact with objects.
+However, existing formats for materials in 3D models lack a standardized way to represent and manage multi-spectral materials, which can lead to inconsistencies in simulation scenarios and are not exchangeable between simulation tools.
+
+The ASAM OpenMATERIAL standard addresses this gap by providing a robust framework for defining materials in a way that is comprehensive, multi-spectral, and interchangeable.
+
+This chapter includes all material definitions of ASAM OpenMATERIAL, marked in blue in <<fig-openmaterial-material-overview>>.
+
+The first point of contact with a material is the **Material Data File** (for example, "my-material.xomp").
+This file contains metadata as well as basic material properties, such as roughness or density.
+The Material Data File may link one or multiple wavelength-dependent **Look-up Table Files** (.xompt).
+There are different kinds of look-up tables:
+
+- Electromagnetic properties (*_emp.xompt) containing complex permeability and permittivity values
+- Optical properties (*_optical.xompt) containing complex index of refraction values
+- BRDFs (*_brdf.xompt) containing bidirectional reflectance distribution values
+- Reflectance (*_reflectance.xompt) containing reflectance values
+
+[#fig-openmaterial-material-overview]
+.Overview of ASAM OpenMATERIAL Material file formats and data flow
+image::overview_material.png[,1100]
+
+== Applications
+
+ASAM OpenMATERIAL materials are particularly useful in a variety of scenarios where material properties are critical for realistic simulations and interactions.
+Some key use cases include:
+
+- Accurate simulation of sensor perception:
+  To simulate sensors in virtual environments, the material properties of objects must be accurately defined.
+  These definitions require wavelength-dependent multi-spectral material definitions, as various sensor types perceive the environment differently.
+
+- Material reusability across platforms:
+  To ensure consistency in simulations, 3D assets including their material data must be reusable across different tools and platforms.
+  Therefore, material definitions need to be compatible and portable, allowing the same materials to be used in various simulation environments without requiring rework or translation.
