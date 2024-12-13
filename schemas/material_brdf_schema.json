@@ -36,20 +36,24 @@
                 },
                 "license": {
                     "type": "string",
-                    "description": "Describes the license for asset distribution. Use an SPDX identifier for open-source licenses (e.g., 'MIT'), or provide a URL or filename for proprietary licenses."
+                    "description": "Describes the license for material distribution. Use an SPDX identifier for open-source licenses (e.g., 'MIT'), or provide a URL or filename for proprietary licenses."
                 },
                 "author": {
                     "type": "string",
-                    "description": "Lists the author(s) of the asset as a name, email, or company. Multiple authors should be comma-separated."
+                    "description": "Lists the author(s) of the material as a name, email, or company. Multiple authors should be comma-separated."
                 },
                 "creationDate": {
                     "type": "string",
-                    "description": "The date and time of asset creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (e.g., '20240703T101728Z').",
+                    "description": "The date and time of material creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (e.g., '20240703T101728Z').",
                     "pattern": "^\\d{8}T\\d{6}Z$"
                 },
                 "source": {
                     "type": "string",
                     "description": "Source of the BRDF data. Was is measured, simulated, or taken from literature?"
+                },
+                "typicalSensorTechnology": {
+                    "type": "string",
+                    "description": "Typical sensor technology this BRDF table is used for, e.g., radar, lidar, camera. If multiply apply, use comma-separation."
                 }
             },
             "required": [
@@ -67,30 +71,16 @@
             "type": "object",
             "description": "General information about the lookup table.",
             "properties": {
-                "typicalSensor": {
-                    "type": "string",
-                    "description": "Typical sensor technology this BRDF table is used for, e.g., radar, lidar, camera."
-                },
-                "wavelengthRange": {
+                "wavelengths": {
                     "type": "array",
-                    "description": "Wavelength range covered by the lookup table. The first item is the minimum wavelength in meters and the second item is the maximum wavelength in meters.",
+                    "description": "List of all wavelengths in meters contained in the lookup table.",
                     "items": {
                         "type": "number"
-                    },
-                    "minItems": 2,
-                    "maxItems": 2
-                },
-                "amplitudeUnit": {
-                    "type": "string",
-                    "description": "The unit of amplitude, either \"1/sr\" or \"linear\"",
-                    "enum": [
-                        "1/sr",
-                        "linear"
-                    ]
+                    }
                 },
                 "lookupTable": {
                     "type": "array",
-                    "description": "Array of bidirectional reflectance distribution function (BRDF) values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
+                    "description": "Array of bidirectional reflectance distribution function (BRDF) values. The array SHALL be sorted based on the columns starting with the first.",
                     "items": {
                         "type": "array",
                         "items": [
@@ -99,60 +89,44 @@
                                     "number",
                                     "null"
                                 ],
-                                "description": "Incident elevation angle in rad."
+                                "description": "Wavelength of radiation in meters."
                             },
                             {
                                 "type": [
                                     "number",
                                     "null"
                                 ],
-                                "description": "Exit elevation angle in rad."
+                                "description": "Incident elevation angle (= zenith angle) relative to the surface normal in rad."
                             },
                             {
                                 "type": [
                                     "number",
                                     "null"
                                 ],
-                                "description": "Exit azimuth angle in rad (for BRDFs with incident and exit vectors on the same plane as the normal, exit azimuth angle is 0.)"
+                                "description": "Exit elevation angle (= zenith angle) relative to the surface normal in rad."
                             },
                             {
                                 "type": [
                                     "number",
                                     "null"
                                 ],
-                                "description": "Polarized plane angle in rad. This is the angle between the plane containing the incident, exit, and normal vector, and the plane of polarization."
+                                "description": "Exit azimuth angle in rad. For BRDFs with incident and exit vectors on the same plane as the normal, exit azimuth angle is 0."
                             },
                             {
                                 "type": [
                                     "number",
                                     "null"
                                 ],
-                                "description": "Wavelength in meters."
-                            },
-                            {
-                                "type": [
-                                    "number",
-                                    "null"
-                                ],
-                                "description": "Amplitude within the linearly polarized plane."
-                            },
-                            {
-                                "type": [
-                                    "number",
-                                    "null"
-                                ],
-                                "description": "Phase within the linearly polarized plane. If the phase is not taken into account, it is null."
+                                "description": "BRDF value in 1/sr."
                             }
                         ],
-                        "minItems": 7,
-                        "maxItems": 7
+                        "minItems": 5,
+                        "maxItems": 5
                     }
                 }
             },
             "required": [
-                "typicalSensor",
-                "wavelengthRange",
-                "amplitudeUnit",
+                "wavelengths",
                 "lookupTable"
             ]
         }

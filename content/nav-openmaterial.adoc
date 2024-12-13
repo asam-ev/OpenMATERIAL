@@ -30,6 +30,7 @@
 ** xref:material/material-emp-schema.adoc[]
 ** xref:material/material-optical-schema.adoc[]
 ** xref:material/material-brdf-schema.adoc[]
+** xref:material/material-reflectance-schema.adoc[]
 
 
 
