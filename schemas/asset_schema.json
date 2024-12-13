@@ -161,7 +161,7 @@
                                 },
                                 "additionalAxles": {
                                     "type": "array",
-                                    "description": "An optional array of additional axles.",
+                                    "description": "An optional array of additional axles with the same properties as frontAxle and rearAxle.",
                                     "items": {"$ref": "#/definitions/Axle"}
                                 }
                             },

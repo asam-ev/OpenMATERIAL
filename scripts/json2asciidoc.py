@@ -1,5 +1,6 @@
 import os
 import json
+import copy
 import argparse
 from typing import List, Dict
 
@@ -124,6 +125,7 @@ def generate_asciidoc_main_field(field_name: str, schema: Dict, is_required: boo
     Args:
         field_name (str): The name of the field to generate documentation for.
         schema (dict): The JSON schema dictionary.
+        is_required (bool): True if the field is required
         required_fields (list): List of required fields for the specified field.
 
     Returns:
@@ -159,15 +161,61 @@ def generate_asciidoc_main_field(field_name: str, schema: Dict, is_required: boo
     return asciidoc_content
 
 
+def resolve_references(definitions, schema):
+    """
+        Resolve JSON Schema references in the provided schema using the given definitions.
+
+        This function recursively traverses the input schema, replacing `$ref` fields with their corresponding
+        definitions from the `definitions` dictionary. It supports nested objects and arrays, ensuring that
+        all references within the schema are resolved. The function also preserves additional fields in objects
+        containing `$ref`.
+
+        Args:
+            definitions (dict): A dictionary containing schema definitions, where keys are the definition names
+                                and values are the corresponding schema fragments.
+            schema (dict or list): The JSON schema to process. This can be an object, an array, or any other valid
+                                   JSON structure.
+
+        Returns:
+            dict or list: The schema with all `$ref` references resolved.
+
+        Note:
+            - If a `$ref` cannot be resolved (e.g., the referenced key is missing from `definitions`), the function
+              leaves the `$ref` field untouched.
+            - Circular references are not handled and may cause infinite recursion.
+    """
+    if isinstance(schema, dict):
+        if "$ref" in schema:
+            ref = schema["$ref"]
+            if ref.startswith("#/definitions/"):
+                definition_key = ref.split("/")[-1]
+                if definition_key in definitions:
+                    resolved_def = copy.deepcopy(definitions[definition_key])
+                    # Include other fields in the original object
+                    schema.pop("$ref")
+                    schema.update(resolved_def)
+        else:
+            # Recursively resolve other fields
+            for key, value in schema.items():
+                schema[key] = resolve_references(definitions, value)
+    elif isinstance(schema, list):
+        schema = [resolve_references(definitions, item) for item in schema]
+    return schema
+
+
 def generate_asciidoc_file(json_schema_path: str, output_path: str):
     """
     Generate AsciiDoc file for the given JSON schema.
 
     Args:
         json_schema_path (str): Path to the json schema.
+        output_path:  (str): Path to write the ASCIIdoc file to.
     """
     with open(json_schema_path, 'r') as file:
         schema = json.load(file)
+
+    definitions = schema.get("definitions", {})
+    schema = resolve_references(definitions, schema)
 
     base_filename = os.path.basename(json_schema_path).replace('_', '-')
     headline = format_main_headline(os.path.splitext(base_filename)[0])
