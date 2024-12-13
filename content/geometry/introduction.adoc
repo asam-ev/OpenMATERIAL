@@ -27,7 +27,7 @@ This setup ensures that the 3D asset (or 3D Data File) can be consistently integ
 image::overview_geometry.png[,1100]
 
 
-== Use cases
+== Applications
 
 To accurately replicate how sensors interact with objects in the real world, it is essential to model the behavior of sensors like cameras, radars, and lidars based on the material and geometric properties of objects in a virtual environment. For this purpose, assets that conform to the ASAM OpenMATERIAL standards may be necessary in various scenarios, such as:
 

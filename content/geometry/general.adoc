@@ -120,7 +120,6 @@ Each 3D asset file contains the following information:
 * Description of coordinates, pivot points and so on instead of hierarchy in 3D model file ?
 * Assigning data streams (for example, wheel rotation) to certain sub-meshes ?
 
-NOTE: TODO: Add short descriptions and references
 
 == Requirements
 
