@@ -1,54 +1,8 @@
 === Naming convention
 
-.Keyword 
-[%header, cols="20, 80"]
-|===
+Every asset has a unique name and represents a part of the environment. All included meshes are part of a group to indicate which kind of asset type it represents.
+All meshes should be named meaningful.
 
-2+^| Keywords
-
-| *Keyword*
-| *Usage*
-
-| *Grp*
-| Prefix for group nodes
-
-| *Root*
-| Used as parent node for all assets
-
-| *Terrain*
-| Contains all assets, which represent the ground (terrain)
-
-| *Objects*
-| Contains all assets, which can be placed onto the terrain or road network
-
-| *Buildings*
-| Contains all buildings
-
-| *Vegetation*
-| Contains all vegetation
-
-| *Road_Network*
-| Contains all assets, which represent the road network
-
-| *Driving_Area*
-| Contains all assets, which represent the drivable areas
-
-| *Sidewalks*
-| Contains all assets, which represent the sidewalks
-
-| *Road_Marks*
-| Contains all assets, which represent the road markings
-
-| *Road_Object*
-| Contains all road objects from OpenDRIVE
-
-| *Signals*
-| Contains all assets, which represent signals
-
-| *Sign*
-| Contains all assets, which represent traffic signs
-
-| *Traffic_Light*
-| Contains all assets, which represent traffic lights
+If needed, the user is free to add more groups and new keywords, which are not part of the standard, for himself.
 
 |===
