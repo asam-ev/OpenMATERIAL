@@ -1,13 +1,14 @@
 {
   "metadata": {
-    "name": "vehicle_example",
+    "name": "human_example",
     "description": "This is an example human asset. It demonstrates how OpenMATERIAL assets and their node structure work.",
     "uuid": "fee894fa4ea241e481259c27a18a9eba",
     "assetVersion": "1.0.0",
     "openMaterialVersion": "1.0.0",
-    "copyright": "(C) 2024 Persival GmbH;",
+    "copyright": "(C) 2024 Persival GmbH",
     "license": "MPL-2.0",
     "author": "clemens.linnhoff@persival.de",
+	"co-author": "simone.graf@ipg-automotive.com",
     "modelCreationTool": "Blender",
     "creationDate": "20241025T180000Z",
     "modelingMethod": "Modeled freely without real world counterpart",
