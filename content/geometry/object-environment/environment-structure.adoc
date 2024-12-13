@@ -31,7 +31,8 @@ The environment consists of the terrain, buildings, objects, and traffic areas, 
 
 If applicable, the origin of this inertial coordinate frame should match that of the corresponding OpenDRIVE map.  
 
-.<Table title>
+[#tab-Environment-Grp-Root]
+.Grp_Root
 [%header, cols="20, 80"]
 |===
 
@@ -139,7 +140,8 @@ Traffic signs belong to traffic signals. They are indexed using a <signal_index>
 .Grp_Sign_<signal_idx>
 image::Grp_Sign.svg[,600]
 
-.<Table title>
+[#tab-Environment-Grp_Sign]
+.Grp_Sign
 [%header, cols="20, 80"]
 |===
 
@@ -166,7 +168,8 @@ Traffic lights belong to traffic signals. They show temporary changes in illumin
 .Grp_Traffic_Light_<signal_idx>
 image::Grp_Traffic_Light.svg[,600]
 
-.<Table title>
+[#tab-Environment-Grp_Traffic_Light]
+.Grp_Traffic_Light
 [%header, cols="20, 80"]
 |===
 
