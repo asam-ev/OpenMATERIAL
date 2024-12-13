@@ -25,8 +25,7 @@
             },
             "positionX": {
                 "type": "number",
-                "description": "Longitudinal position of the axle with respect to the vehicles reference point. Unit: meter; Range: [0..inf[.",
-                "minimum": 0
+                "description": "Longitudinal position of the axle with respect to the vehicles reference point. Unit: meter; Range: [0..inf[."
           },
             "positionZ": {
                 "type": "number",
@@ -119,7 +118,7 @@
                     ]
                 },
                 "vehicleClassData": {
-                    "type": ["object", "null"],
+                    "type": "object",
                     "description": "Vehicle specific data. This only applies when 'objectClass' is 'vehicle'. based on the OpenSCENARIO vehicle definition : https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Axle.html",
                     "if": {
                         "properties": {
@@ -155,33 +154,28 @@
                             },
                             "required": ["maxSpeed", "maxAcceleration", "maxDeceleration"]
                         },
-                        "Axles": {
-                            "type": "array",
+                        "axles": {
+                            "type": "object",
                             "description": "A set of the axles of a vehicle. A vehicle must have a front axle and a rear axle. It might have additional axles.",
-                            "items": {
-                                "type": "object",
-                                "properties": {
-                                    "frontAxle": {
-                                        "$ref": "#/definitions/Axle",
-                                        "description": "Details about the front axle."
-                                    },
-                                    "rearAxle": {
-                                        "$ref": "#/definitions/Axle",
-                                        "description": "Details about the rear axle."
-                                    },
-                                    "additionalAxles": {
-                                        "type": "array",
-                                        "description": "An optional array of additional axles.",
-                                        "items": {"$ref": "#/definitions/Axle"}
-                                    }
+                            "properties": {
+                                "frontAxle": {
+                                    "$ref": "#/definitions/Axle",
+                                    "description": "Details about the front axle."
                                 },
-                                "required": ["frontAxle", "rearAxle"]                     
+                                "rearAxle": {
+                                    "$ref": "#/definitions/Axle",
+                                    "description": "Details about the rear axle."
+                                },
+                                "additionalAxles": {
+                                    "type": "array",
+                                    "description": "An optional array of additional axles.",
+                                    "items": {"$ref": "#/definitions/Axle"}
+                                }
                             },
-                            "minItems": 2,
-                            "uniqueItems": true
+                            "required": ["frontAxle", "rearAxle"]
                         }
                     },
-                    "required": ["vehicleCategory", "performance", "Axles"]
+                    "required": ["vehicleCategory", "performance", "axles"]
                     }
                 },
                 "animated": {
