@@ -9,7 +9,7 @@
 [plantuml]
 ----
 legend
-[[../geometry/object-environment/environment-index.html#_environment_t Grp_Root (T)]]
+[[../geometry/object-environment/environment-index.html#_grp_root_t Grp_Root (T)]]
 |_[[../geometry/object-environment/environment-index.html#_grp_terrain Grp_Terrain]]
 |_[[../geometry/object-environment/environment-index.html#_grp_environment_objects Grp_Environment_Objects]]
   |_ [[../geometry/object-environment/environment-index.html#_grp_buildings Grp_Buildings]]
