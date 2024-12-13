@@ -9,7 +9,7 @@
 [plantuml]
 ----
 legend
-Root
+[[../geometry/object-vehicle/vehicle-index.html#_grp_root_t Grp_Root (T)]]
 |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_exterior Grp_Exterior]]
   |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_exterior_dynamic Grp_Exterior_Dynamic]]
     |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_convertible_top Grp_Convertible_Top (T)]]
