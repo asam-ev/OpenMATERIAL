@@ -7,5 +7,7 @@ The structure begins with a root node, which is the parent of all other nodes. I
 Children of the root node are terrain, environment objects and the road network.
 The latter is further detailed by its child nodes drivable area, sidewalks, roadmarks, road objects and signals.
 
+An https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/environment_example[example environment asset] is provided in the examples folder.
+
 Groups with a local transform are indicated in the structure by a (T).
 This is only an indicator in the documentation and must not be contained in the actual node name.
