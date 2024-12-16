@@ -11,3 +11,4 @@ Custom object parts may be added to facilitate and better visualize additional u
 In the coordinate system for human 3D geometry, the x-axis points forwards, the y-axis points sidewards, and the z-axis points upwards.
 The default pose is the A-pose.
 The naming convention makes it possible to mirror one side of the skeleton to the other.
+The bones follow a specific bone orientation: The y-axis of a bone always follows the bone direction, regardless of whether it points sidewards, upwards, or forwards. The x-axis usually faces forwards accordingly.
