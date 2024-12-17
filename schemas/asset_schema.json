@@ -119,7 +119,7 @@
                 },
                 "vehicleClassData": {
                     "type": "object",
-                    "description": "Vehicle specific data. This SHALL be filled if 'objectClass' is 'vehicle' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Axle.html[OpenSCENARIO vehicle definition].",
+                    "description": "Vehicle specific data. This SHALL be filled if 'objectClass' is 'vehicle' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Vehicle.html[OpenSCENARIO vehicle definition].",
                     "properties": {
                         "vehicleCategory": {
                             "type": "string",
@@ -169,6 +169,17 @@
                         }
                     },
                     "required": ["vehicleCategory", "performance", "axles"]
+                },
+                "humanClassData": {
+                    "type" : "object",
+                    "description": "Human specific data. This SHALL be filled if 'objectClass' is 'human' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Pedestrian.html[OpenSCENARIO pedestrian definition].",
+                    "properties": {
+                        "mass": {
+                            "type": "number",
+                            "description": "The mass of a human. Unit: kg."
+                        }
+                    },
+                    "required": ["mass"]
                 },
                 "animated": {
                     "type": "boolean",
