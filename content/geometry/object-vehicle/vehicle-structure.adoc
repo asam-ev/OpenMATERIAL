@@ -119,7 +119,7 @@ The origin of the Root node is the center of the vehicle's bounding box projecte
 
 This group contains all parts of the vehicle's exterior.
 
-Typically, this group do not move in the simulation and therefore do not have their own transforms.
+Typically, this group does not move in the simulation and therefore does not have their own transforms.
 The origin of this group is in the origin of the entire asset.
 
 == Grp_Exterior_Dynamic
