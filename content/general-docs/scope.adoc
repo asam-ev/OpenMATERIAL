@@ -6,6 +6,10 @@ ifndef::include-only-once[]
 include::{root-path}_config.adoc[]
 endif::[]
 
-{THIS_STANDARD} specifies ...
+{THIS_STANDARD} specifies:
 
-> Define the scope of this document/standard
+* Structure and coordinate frames for 3D models (*3D Data Files*), supporting common 3D exchange formats such as FBX, glTF and USD. 
+* Metadata for 3D models and references to *Material Mapping Files* based on JSON schemas in *Asset Files*.
+* Material mapping based on JSON schemas in *Material Mapping Files*.
+* Physics-based or measured material properties based on JSON schemas in *Material Data Files*.
+* Variable material properties based on JSON schemas in *Look-Up Table Files*.

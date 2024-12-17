@@ -36,6 +36,7 @@ asciidoc: # Sets global AsciiDoc attributes that are applied for every page of t
 
 nav:
   - modules/specification/nav-openmaterial.adoc
+  - modules/specification/nav_loft.adoc
 
 # Add more items here as required.
 # Recommended: One navigation file per document/repository!

@@ -1,0 +1,5 @@
+= Environment structure
+
+include::environment-general.adoc[leveloffset=+1]
+include::environment-structure.adoc[leveloffset=+1]
+
