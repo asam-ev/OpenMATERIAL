@@ -100,13 +100,14 @@
                 },
                 "textureResolutions": {
                     "type": "array",
-                    "description": "Lists all the used texture resolutions in the 3D model i.e. albedo, normal or displacement textures. Possible values are '1K', '2K', '4K'.",
+                    "description": "Lists all the used texture resolutions in the 3D model i.e. albedo, normal or displacement textures. Possible values are '1K', '2K', '4K'. If no textures are used in the model, add empty element ''",
                     "items": {
                         "type": "string",
                         "enum": [
                             "1K",
                             "2K",
-                            "4K"
+                            "4K",
+                            ""
                         ]
                     },
                     "minItems": 1,
