@@ -6,7 +6,7 @@
 ----
 legend
 |_ [[../geometry/object-classes.html#_grp_root Grp_Root]]
-  |_ [[../geometry/object-classes.html#_skeleton Skeleton]]
+  |_ [[../geometry/object-classes.html#_armature Armature]]
     |_ [[../geometry/object-classes.html#_root Root]]
       |_ [[../geometry/object-classes.html#_hip Hip]]
         |_ [[../geometry/object-classes.html#_lower_spine Lower_Spine]]
@@ -34,10 +34,10 @@ legend
         |_ [[../geometry/object-classes.html#_lower_leg_right Lower_Leg_Right]]
           |_ [[../geometry/object-classes.html#_foot_right Foot_Right]]
             |_ [[../geometry/object-classes.html#_full_toes_right Full_Toes_Right]]
-  |_ [[../geometry/object-classes.html#_accessories Accessories_Wristband]]
-  |_ [[../geometry/object-classes.html#_body Body_Human]]
-  |_ [[../geometry/object-classes.html#_clothing Clothing_Vest]]
-  |_ [[../geometry/object-classes.html#_hair Hair_Short]]
+    |_ [[../geometry/object-classes.html#_accessories Accessories_Wristband]]
+    |_ [[../geometry/object-classes.html#_body Body_Human]]
+    |_ [[../geometry/object-classes.html#_clothing Clothing_Vest]]
+    |_ [[../geometry/object-classes.html#_hair Hair_Short]]
 end legend
 ----
 
@@ -50,6 +50,32 @@ This group is used as a parent for all following nodes. It can be used to place 
 |===
 
 2+^| Grp_Root
+
+| *Origin*
+| Center of the bounding box on the ground
+
+| *x-axis*
+| Pointing forwards
+
+| *y-axis*
+| Pointing sidewards
+
+| *z-axis*
+| Pointing upwards
+|===
+
+
+== Armature_<Name> 
+
+This object or group represents the armature (skeleton) of the object and contains all bones. It is needed to ensure that the bone hierarchy can be exported and imported correctly.
+Depending on the 3D software, the armature is a separate object type (for example in Blender) or represented by a group (for example in Maya).
+
+
+.Armature
+[%header, cols="20, 80"]
+|===
+
+2+^| Armature
 
 | *Origin*
 | Center of the bounding box on the ground
