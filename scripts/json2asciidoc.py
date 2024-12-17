@@ -112,7 +112,6 @@ def generate_asciidoc_properties(properties: Dict, required_fields: List[str], l
                     asciidoc_content += f"\n*Items enum:* `+{prop_data['items'].get('enum', '')}+` +"
                 asciidoc_content += f"\n{prop_data['items'].get('description', '')}\n"
 
-
         asciidoc_content += "\n"
 
         # If there are nested properties, recursively generate content for them
