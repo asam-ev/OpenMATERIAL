@@ -2,42 +2,43 @@
 
 == Structure overview
 
+[plantuml]
 ----
-|_ [[../geometry/object-classes.html#_grp_root Grp_Root]]
-  |_ [[../geometry/object-classes.html#_skeleton Skeleton]]
-    |_ [[../geometry/object-classes.html#_root Root]]
-      |_ [[../geometry/object-classes.html#_lower_spine Lower_Spine]]
-        |_ [[../geometry/object-classes.html#_hip_left Hip_Left]]
-        |_ [[../geometry/object-classes.html#_hip_right Hip_Right]]
-        |_ [[../geometry/object-classes.html#_middle_spine Middle_Spine]]
-          |_ [[../geometry/object-classes.html#_upper_spine Upper_Spine]]
-            |_ [[../geometry/object-classes.html#_neck Neck]]
-              |_ [[../geometry/object-classes.html#_head Head]]
-                |_ [[../geometry/object-classes.html#_eye_left Eye_Left]]
-                |_ [[../geometry/object-classes.html#_eye_right Eye_Right]]
-          |_ [[../geometry/object-classes.html#_shoulder_left Shoulder_Left]]
-            |_ [[../geometry/object-classes.html#_upper_arm_left Upper_Arm_Left]]
-              |_ [[../geometry/object-classes.html#_lower_arm_left Lower_Arm_Left]]
-                |_ [[../geometry/object-classes.html#_hand_left Hand_Left]]
-                  |_ [[../geometry/object-classes.html#_full_lingers_left Full_Fingers_Left]]
-                  |_ [[../geometry/object-classes.html#_full_thumb_left Full_Thumb_Left]]
-            |_ [[../geometry/object-classes.html#_upper_arm_right Upper_Arm_Right]]
-              |_ [[../geometry/object-classes.html#_lower_arm_right Lower_Arm_Right]]
-                |_ [[../geometry/object-classes.html#_hand_right Hand_Right]]
-                  |_ [[../geometry/object-classes.html#_full_fingers_right Full_Fingers_Right]]
-                  |_ [[../geometry/object-classes.html#_full_thumb_right Full_Thumb_Right]]
-      |_ [[../geometry/object-classes.html#_upper_leg_left Upper_Leg_Left]]
-        |_ [[../geometry/object-classes.html#_lower_leg_left Lower_Leg_Left]]
-          |_ [[../geometry/object-classes.html#_foot_left Foot_Left]]
-            |_ [[../geometry/object-classes.html#_full_toes_left Full_Toes_Left]]
-      |_ [[../geometry/object-classes.html#_upper_leg_right Upper_Leg_Right]]
-        |_ [[../geometry/object-classes.html#_lower_leg_right Lower_Leg_Right]]
-          |_ [[../geometry/object-classes.html#_foot_right Foot_Right]]
-            |_ [[../geometry/object-classes.html#_full_toes_right Full_Toes_Right]]
-  |_ [[../geometry/object-classes.html#_accessories Accessories_Wristband]]
-  |_ [[../geometry/object-classes.html#_body Body_Human]]
-  |_ [[../geometry/object-classes.html#_clothing Clothing_Vest]]
-  |_ [[../geometry/object-classes.html#_hair Hair_Short]]
+legend
+|_ [[../geometry/object-human/human-index.html#_grp_root Grp_Root]]
+  |_ [[../geometry/object-human/human-index.html#_armature Armature]]
+    |_ [[../geometry/object-human/human-index.html#_root Root]]
+      |_ [[../geometry/object-human/human-index.html#_hip Hip]]
+        |_ [[../geometry/object-human/human-index.html#_lower_spine Lower_Spine]]
+          |_ [[../geometry/object-human/human-index.html#_upper_spine Upper_Spine]]
+            |_ [[../geometry/object-human/human-index.html#_neck Neck]]
+              |_ [[../geometry/object-human/human-index.html#_head Head]]
+                |_ [[../geometry/object-human/human-index.html#_eye_left Eye_Left]]
+                |_ [[../geometry/object-human/human-index.html#_eye_right Eye_Right]]
+          |_ [[../geometry/object-human/human-index.html#_shoulder_left Shoulder_Left]]
+            |_ [[../geometry/object-human/human-index.html#_upper_arm_left Upper_Arm_Left]]
+              |_ [[../geometry/object-human/human-index.html#_lower_arm_left Lower_Arm_Left]]
+                |_ [[../geometry/object-human/human-index.html#_hand_left Hand_Left]]
+                  |_ [[../geometry/object-human/human-index.html#_full_lingers_left Full_Fingers_Left]]
+                  |_ [[../geometry/object-human/human-index.html#_full_thumb_left Full_Thumb_Left]]
+            |_ [[../geometry/object-human/human-index.html#_upper_arm_right Upper_Arm_Right]]
+              |_ [[../geometry/object-human/human-index.html#_lower_arm_right Lower_Arm_Right]]
+                |_ [[../geometry/object-human/human-index.html#_hand_right Hand_Right]]
+                  |_ [[../geometry/object-human/human-index.html#_full_fingers_right Full_Fingers_Right]]
+                  |_ [[../geometry/object-human/human-index.html#_full_thumb_right Full_Thumb_Right]]
+      |_ [[../geometry/object-human/human-index.html#_upper_leg_left Upper_Leg_Left]]
+        |_ [[../geometry/object-human/human-index.html#_lower_leg_left Lower_Leg_Left]]
+          |_ [[../geometry/object-human/human-index.html#_foot_left Foot_Left]]
+            |_ [[../geometry/object-human/human-index.html#_full_toes_left Full_Toes_Left]]
+      |_ [[../geometry/object-human/human-index.html#_upper_leg_right Upper_Leg_Right]]
+        |_ [[../geometry/object-human/human-index.html#_lower_leg_right Lower_Leg_Right]]
+          |_ [[../geometry/object-human/human-index.html#_foot_right Foot_Right]]
+            |_ [[../geometry/object-human/human-index.html#_full_toes_right Full_Toes_Right]]
+    |_ [[../geometry/object-human/human-index.html#_accessories Accessories_Wristband]]
+    |_ [[../geometry/object-human/human-index.html#_body Body_Human]]
+    |_ [[../geometry/object-human/human-index.html#_clothing Clothing_Vest]]
+    |_ [[../geometry/object-human/human-index.html#_hair Hair_Short]]
+end legend
 ----
 
 == Grp_Root 
@@ -48,7 +49,33 @@ This group is used as a parent for all following nodes. It can be used to place 
 [%header, cols="20, 80"]
 |===
 
-2+^| Grp_Exterior
+2+^| Grp_Root
+
+| *Origin*
+| Center of the bounding box on the ground
+
+| *x-axis*
+| Pointing forwards
+
+| *y-axis*
+| Pointing sidewards
+
+| *z-axis*
+| Pointing upwards
+|===
+
+
+== Armature_<Name> 
+
+This object or group represents the armature (skeleton) of the object and contains all bones. It is needed to ensure that the bone hierarchy can be exported and imported correctly.
+Depending on the 3D software, the armature is a separate object type (for example in Blender) or represented by a group (for example in Maya).
+
+
+.Armature
+[%header, cols="20, 80"]
+|===
+
+2+^| Armature
 
 | *Origin*
 | Center of the bounding box on the ground
@@ -178,23 +205,22 @@ The `Root` bone is the parent bone for all other bones. It can be used to contro
 | Pointing forwards
 
 | *y-axis*
-| Pointing sidewards
+| Pointing upwards
 
 | *z-axis*
-| Pointing upwards
+| Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
-== Lower_Spine
+== Hip
 
-The `Lower_Spine` bone represents the lowest parts and bones of the spine, that is, the Coccyx and Sacrum spine bones of the human skeleton.
+The `Hip` bone represents the lowest parts and bones of the spine, that is, the Hip, Coccyx and Sacrum spine bones of the human skeleton.
 
-.Lower_Spine bone
+.Hip bone
 [%header, cols="20, 80"]
 |===
 
-2+^| Lower_Spine
+2+^| Hip
 
 | *Origin*
 | At the height of the Coccyx bone and in the middle of the geometry
@@ -209,17 +235,16 @@ The `Lower_Spine` bone represents the lowest parts and bones of the spine, that 
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
-== Middle_Spine
+== Lower_Spine
 
-The `Middle_Spine` bone represents the middle parts und bones of the spine, that is, the Lumbar spine bones of the human skeleton.
+The `Lower_Spine` bone represents the middle parts und bones of the spine, that is, the Lumbar spine bones of the human skeleton.
 
-.Middle_Spine bone
+.Lower_Spine bone
 [%header, cols="20, 80"]
 |===
 
-2+^| Middle_Spine
+2+^| Lower_Spine
 
 | *Origin*
 | At the height of the first Lumbar spine bone and in the middle of the geometry
@@ -234,7 +259,6 @@ The `Middle_Spine` bone represents the middle parts und bones of the spine, that
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Upper_Spine 
 
@@ -259,7 +283,6 @@ The `Upper_Spine` bone represents the upper parts und bones of the spine, that i
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Neck 
 
@@ -284,7 +307,6 @@ The `Neck` bone represents the most upper parts und bones of the spine, that is,
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Head
 
@@ -309,7 +331,6 @@ The `Head` bone represents the head, that is, the skull of the human skeleton.
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Eye_Left
 
@@ -325,16 +346,15 @@ The `Eye_Left` bone represents the left eye of the human body. It is used to cal
 | At the middle of the (eyeball) geometry
 
 | *x-axis*
-| Pointing forwards
+| Pointing upwards
 
 | *y-axis*
-| Pointing upwards
+| Pointing forwards
 
 | *z-axis*
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Eye_Right
 
@@ -350,16 +370,15 @@ The `Eye_Right` bone represents the right eye of the human body. It is used to c
 | At the middle of the (eyeball) geometry
 
 | *x-axis*
-| Pointing forwards
+| Pointing upwards
 
 | *y-axis*
-| Pointing upwards
+| Pointing forwards
 
 | *z-axis*
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Shoulder_Left 
 
@@ -384,7 +403,6 @@ The `Shoulder_Left` bone represents the upper part of the left shoulder, that is
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Upper_Arm_Left
 
@@ -409,7 +427,6 @@ The `Upper_Arm_Left` bone represents the upper part of the left arm, that is, th
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Lower_Arm_Left
 
@@ -434,7 +451,6 @@ The `Lower_Arm_Left` bone represents the lower part of the left arm, that is, th
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Hand_Left
 
@@ -459,7 +475,6 @@ The `Hand_Left` bone represents the left hand, that is, the left carpal bones of
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Full_Thumb_Left 
 
@@ -484,7 +499,6 @@ The `Full_Thumb_Left` bone represents the thumb of the left hand, that is, the f
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Full_Fingers_Left
 
@@ -509,7 +523,6 @@ The `Full_Fingers_Left` bone represents all other fingers of the left hand, that
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Shoulder_Right 
 
@@ -534,7 +547,6 @@ The `Shoulder_Right` bone represents the upper part of the right shoulder, that 
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Upper_Arm_Right
 
@@ -559,7 +571,6 @@ The `Upper_Arm_Right` bone represents the upper part of the right arm, that is, 
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Lower_Arm_Right
 
@@ -584,7 +595,6 @@ The `Lower_Arm_Right` bone represents the lower part of the right arm, that is, 
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Hand_Right
 
@@ -609,7 +619,6 @@ The `Hand_Right` bone represents the right hand, that is, the right carpal bones
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Full_Thumb_Right
 
@@ -634,7 +643,6 @@ The `Full_Thumb_Right` bone represents the thumb of the right hand, that is, the
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Full_Fingers_Right
 
@@ -659,9 +667,6 @@ The `Full_Fingers_Right` bone represents all other fingers of the right hand, th
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
-
-== Upper_Leg_Left
 
 The `Upper_Leg_Left` bone represents the upper part of the left leg, that is, the thigh of the human skeleton. It controls the hip joint.
 
@@ -678,17 +683,17 @@ The `Upper_Leg_Left` bone represents the upper part of the left leg, that is, th
 | Pointing forwards
 
 | *y-axis*
-| Pointing sidewards
+| Pointing upwards
 
 | *z-axis*
-| Pointing upwards
+| Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Lower_Leg_Left
 
 The `Lower_Leg_Left` bone represents the lower part of the left leg, that is, the Tibula and Fibula of the human skeleton. It controls the knee.
+
 .Lower_Leg_Left bone
 [%header, cols="20, 80"]
 |===
@@ -702,13 +707,12 @@ The `Lower_Leg_Left` bone represents the lower part of the left leg, that is, th
 | Pointing forwards
 
 | *y-axis*
-| Pointing sidewards
+| Pointing upwards
 
 | *z-axis*
-| Pointing upwards
+| Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Foot_Left 
 
@@ -724,16 +728,15 @@ The `Foot_Left` bone represents the left foot of the human skeleton without the 
 | At the height of the ankle and in the middle of the geometry
 
 | *x-axis*
-| Pointing forwards
+| Pointing upwards
 
 | *y-axis*
-| Pointing sidewards
+| Pointing forwards
 
 | *z-axis*
-| Pointing upwards
+| Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Full_Toes_Left 
 
@@ -752,13 +755,12 @@ The `Full_Toes_Left` bone represents all toes of the left foot of the human skel
 | Pointing upwards
 
 | *y-axis*
-| Pointing forewards
+| Pointing forwards
 
 | *z-axis*
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Upper_Leg_Right
 
@@ -777,13 +779,12 @@ The `Upper_Leg_Right` bone represents the upper part of the right leg, that is, 
 | Pointing forwards
 
 | *y-axis*
-| Pointing sidewards
+| Pointing upwards
 
 | *z-axis*
-| Pointing upwards
+| Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Lower_Leg_Right
 
@@ -802,13 +803,12 @@ The `Lower_Leg_Right` bone represents the lower part of the right leg, that is, 
 | Pointing forwards
 
 | *y-axis*
-| Pointing sidewards
+| Pointing upwards
 
 | *z-axis*
-| Pointing upwards
+| Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Foot_Right
 
@@ -824,16 +824,15 @@ The `Foot_Right` bone represents the right foot of the human skeleton without th
 | At the height of the ankle and in the middle of the geometry
 
 | *x-axis*
-| Pointing forwards
+| Pointing upwards
 
 | *y-axis*
-| Pointing sidewards
+| Pointing forwards
 
 | *z-axis*
-| Pointing upwards
+| Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.
 
 == Full_Toes_Right
 
@@ -858,4 +857,3 @@ The `Full_Toes_Right` bone in a human skeleton represents all toes of the right 
 | Pointing sidewards
 |===
 
-NOTE: Please add a figure and description.

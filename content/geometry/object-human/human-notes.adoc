@@ -18,11 +18,11 @@
 * The second detailed LOD level was set as the default, but simplified
 * added bones for foot and toe
 * added bones for hand and thumb
-* added bones for hip
+* added bones for hip => Removed, since OSI only supports one hip, lower and upper spine
 * added bones for eyes
-* added groups for accessories, clothing, hair, body
+* added groups for accessories, clothing, hair, body => removed and replaced with prefixes of the mesh names
 * Added hip bones as seperate bone to stay compatible between (future) LOD levels. Therefore the bones can all have an unique name 
-and can be used for the (future) animations as before.
+and can be used for the (future) animations as before => Removed, since OSI only supports one hip, lower and upper spine
 * renamed some bones
 * adjusted axis orientation
 * adjusted bone orientation, so mirroring would be possible to use for animating the character

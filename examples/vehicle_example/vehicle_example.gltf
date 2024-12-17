@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.2.57",
+		"generator":"Khronos glTF Blender I/O v4.3.47",
 		"version":"2.0"
 	},
 	"scene":0,
@@ -1048,7 +1048,7 @@
 				93,
 				117
 			],
-			"name":"Root"
+			"name":"Grp_Root"
 		}
 	],
 	"materials":[
