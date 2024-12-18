@@ -134,17 +134,17 @@ This is an example of a 3D model file in glTF format with an accompanying 3D ass
 
 == Requirements
 
-* The object's geometry shall be in real word scale, using meters as measurement for distances.
-* The object's origins and pivot points shall coincide with the origin of the reference coordinate frame (0/0/0) if not specified otherwise.
+* The object's geometry shall be in real word scale, using meters as unit for measurement for distances.
+* The object's origins and pivot points shall coincide with position and orientation of the origin of the object's reference coordinate frame if not specified otherwise.
 * Meshes shall not contain problematic characteristics such as doubled/isolated/coincident/coplanar/degenerate primitives.
-* Meshes shall have outside facing normals, soft or hard edges shall be set correctly.
+* Meshes shall have outside facing normals. Soft or hard edges shall be set correctly.
 * Meshes shall not be empty, nor contain multiple LODs.
-* Meshes shall be triangulated and potential normal maps shall fit to that triangulation.
-* Rendered materials shall use the PBR workflow and there shall not be geometry without assigned material.
+* Meshes shall be triangulated and potential normal maps shall match that triangulation.
+* Rendering materials shall support PBR workflows and there shall not be geometry without assigned material.
 * Additional requirements apply, when OpenMATERIAL 3D assignment textures are used:
-* UVs shall not overlap, they shall be within 0-1 UV space and channel 1 shall be used for assignment textures.
-* UV Islands shal have margins inbetween, so that assignment texture interpolation errors can be avoided.
-* There shall not be any geometry without UV coverage.
+** UVs shall not overlap, they shall be within 0-1 UV space and channel 1 shall be used for assignment textures.
+** UV Islands shall have margins inbetween, so that assignment texture interpolation errors are avoided.
+** There shall not be any geometry without UV coverage.
 
 
 == Recommendations
@@ -154,9 +154,9 @@ This is an example of a 3D model file in glTF format with an accompanying 3D ass
 * Meshes should not have holes or gaps.
 * Usage of N-Gons is not recommended.
 * Faces should be one-sided.
-* The lowest number of polygons possible should be strived for while still retaining the model’s shape.
-* The texel density should be homogeneous and as low as possible.
+* The lowest number of polygons possible should be strived for while still retaining the object’s shape.
+* Texel density should be homogeneous and as low as possible.
 * UV stretching should be minimized.
 * Naming of files, nodes, meshes and materials should be meaningful.
-* The usage of multiple PBR maps is encouraged (albedo/roughness/metallic/normals).
+* Usage of multiple PBR maps is encouraged (albedo/roughness/metallic/normals).
 * Smaller objects should have one material per object (e.g. baked traffic cone), while larger objects should contain multiple seamless repeatable materials (e.g. brick building).
