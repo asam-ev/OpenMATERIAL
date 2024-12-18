@@ -95,9 +95,8 @@ Besides reference coordinate frames, 3D assets may incorporate other local coord
 
 The following naming conventions apply to ASAM OpenMATERIAL geometry files:
 
-* The name of a 3D model file shall have the prefix "omg_" to indicate that the file complies with the ASAM OpenMATERIAL geometry specification.
 * The 3D model file and the related 3D asset file shall have the same base name.
-  Example: omg_Example.gltf, omg_Example.xoma
+  Example: Example.gltf, Example.xoma
 * The naming convention inside the 3D model file (contains 3D information) must follow the capital Snake_Case definition, to improve human readability and enable consistent parsing of the file structure.
 * The naming convention inside the 3D asset file (contains metadata) must follow the lowerCamelCase definition, to allow a consistent naming convention in all .json files and consistent parsing.
 * Keywords are predefined names for objects inside the node structure.
@@ -113,7 +112,6 @@ The user is free to add more keywords for himself, if they are needed.
 * Iterators are added as suffixes.
   In the documentation, iterator names are written in pointy braces (e.g. <type_idx>).
   In the node names itself, the iterator names are replaced by integer values starting from 0.
-* Enums (e.g. from OpenDRIVE road/lane type) should be added as suffixes in capital letters.
 * Sequence of suffixes: 1: Iterator 2: Type Enumerator 3: Subtype Enumerator.
 * The predefined keywords shall be used for the corresponding asset parts and can be found in the according subchapters.
 
@@ -128,12 +126,11 @@ The user is free to add more keywords for himself, if they are needed.
 The 3D asset file provides metadata as well as a mapping table to ASAM OpenMATERIAL material property files.
 This information extends the geometry of an asset given in standard 3D model file formats, e.g. glTF, FBX or USD.
 The 3D asset file is in JSON format with the file extension `xoma`.
-As indicated above, the asset file has to have the same file name as the accompanying 3D model with the prefix `omg` indicating,
-that the 3D model file is structured according to the ASAM OpenMATERIAL geometry specification.
+As indicated above, the asset file has to have the same file name as the accompanying 3D model.
 This is an example of a 3D model file in glTF format with an accompanying 3D asset file:
 
-* `omg_my-model.gltf`
-* `omg_my-model.xoma`
+* `my-model.gltf`
+* `my-model.xoma`
 
 == Requirements
 
