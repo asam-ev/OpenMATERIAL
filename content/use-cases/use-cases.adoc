@@ -1,5 +1,3 @@
-
-
 = Use Cases
 
 ////
@@ -20,7 +18,10 @@ A project proposal should consider all three perspectives in order to provide a 
 * *Technical use cases* describe technical requirements for the operation and interoperability of technical systems, such as tools, test systems, or application software, which the standard supports.
 ////
 
-[cols="1,5",caption='Use case 1: ']
+The following section provides practical use cases for ASAM OpenMATERIAL.
+
+:table-caption: Use Case
+
 .Creating 3D assets
 |===
 |*Type of use case*         |Technical use case
@@ -34,7 +35,6 @@ A project proposal should consider all three perspectives in order to provide a 
 |*Relevant user*            |Content creator
 |===
 
-[cols="1,5",caption='Use case: 2 ']
 .Creating material data
 |===
 |*Type of use case*         |Technical use case
@@ -48,7 +48,6 @@ A project proposal should consider all three perspectives in order to provide a 
 |*Relevant user*            |Measurement engineer
 |===
 
-[cols="1,5",caption='Use case 3: ']
 .Validating material properties and 3D geometries
 |===
 |*Type of use case*         |Technical use case
@@ -62,8 +61,7 @@ A project proposal should consider all three perspectives in order to provide a 
 |*Relevant user*            |Measurement engineer, regulator
 |===
 
-[cols="1,5",caption='Use case 4: ']
-.Title	Distributing and reusing material data and 3D assets
+.Distributing and reusing material data and 3D assets
 |===
 |*Type of use case*         |Technical use case
 |*Description*              |As a content creation company, we want to distribute material data and 3D assets under copyright and license considerations.
@@ -77,7 +75,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 |*Relevant user*            |Content creator
 |===
 
-[cols="1,5",caption='Use case 5: ']
 .Importing 3D assets linked to material properties between into shared sensor simulation models (FMU)
 |===
 |*Type of use case*         |Technical use case
@@ -91,7 +88,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 |*Relevant user*            |Sensor model developer
 |===
 
-[cols="1,5",caption='Use case 6: ']
 .Importing 3D assets linked to material properties into simulation platform
 |===
 |*Type of use case*         |Technical use case
@@ -105,7 +101,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 |*Relevant user*            |Simulation platform developer
 |===
 
-[cols="1,5",caption='Use case 7: ']
 .Retrofitting or changing material properties independent of 3D assets
 |===
 |*Type of use case*         |Technical use case
@@ -119,7 +114,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 |*Relevant user*            |Simulation platform developer
 |===
 
-[cols="1,5",caption='Use case 8: ']
 .Importing 3D assets with included material properties into simulation platform
 |===
 |*Type of use case*         |Technical use case
@@ -133,7 +127,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 |*Relevant user*            |Simulation platform developer
 |===
 
-[cols="1,5",caption='Use case 9: ']
 .Moving object parts in the environment simulation
 |===
 |*Type of use case*         |Technical use case
@@ -147,7 +140,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 |*Relevant user*            |Simulation platform developer
 |===
 
-[cols="1,5",caption='Use case 10: ']
 .Simulating energy/signal propagation with 3D assets linked to material properties
 |===
 |*Type of use case*         |Technical use case
@@ -163,7 +155,6 @@ The simulation shall be able to cope with different real-time requirements, for 
 |*Relevant user*            |Simulation platform developer, sensor model developer, end user
 |===
 
-[cols="1,5",caption='Use case 11: ']
 .Using sensor simulation to train perception algorithms
 |===
 |*Type of use case*         |Technical use case
