@@ -143,7 +143,7 @@ This is an example of a 3D model file in glTF format with an accompanying 3D ass
 * Rendered materials shall use the PBR workflow and there shall not be geometry without assigned material.
 * Additional requirements apply, when OpenMATERIAL 3D assignment textures are used:
 * UVs shall not overlap, they shall be within 0-1 UV space and channel 1 shall be used for assignment textures.
-* UV Islands have large enough shall have sufficently big margins inbetween, so that assignment texture interpolation errors are avoided.
+* UV Islands shal have margins inbetween, so that assignment texture interpolation errors can be avoided.
 * There shall not be any geometry without UV coverage.
 
 
