@@ -82,6 +82,10 @@ def generate_asciidoc_properties(properties: Dict, required_fields: List[str], l
             property_type = escape_special_chars(prop_data['type'])
             asciidoc_content += f"\n*Type:* `+{property_type}+` +"
 
+        # Add enum options
+        if "enum" in prop_data:
+            asciidoc_content += f"\n*Enum:* `+{prop_data['enum']}+` +"
+
         # Add pattern inline and handle escaping of backslashes and curly braces
         if "pattern" in prop_data:
             pattern = escape_special_chars(prop_data['pattern'])
@@ -104,6 +108,9 @@ def generate_asciidoc_properties(properties: Dict, required_fields: List[str], l
                 ) + "\n"
             else:
                 # Simple array, include the description of the array
+                # Add enum options
+                if "enum" in prop_data['items']:
+                    asciidoc_content += f"\n*Items enum:* `+{prop_data['items'].get('enum', '')}+` +"
                 asciidoc_content += f"\n{prop_data['items'].get('description', '')}\n"
 
         asciidoc_content += "\n"
