@@ -85,41 +85,52 @@ The origin of the world coordinate system in ASAM OSI should also be aligned wit
 
 === Local coordinate system
 
-Top-most local coordinate frames of 3D assets (so called reference coordinate frames) in OpenMATERIAL are defined in the center of the bounding box of the corresponding asset, projected to the bottom of the bounding box.
+Top-most local coordinate frames of 3D assets (so-called reference coordinate frames) in OpenMATERIAL are defined in the center of the bounding box of the corresponding asset, projected to the bottom of the bounding box.
 By static transformations, these coordinate frames may be synchronized with reference coordinate frames in ASAM OpenSCENARIO and ASAM OSI.
 Besides reference coordinate frames, 3D assets may incorporate other local coordinate frames, see xref:../geometry/object-classes.adoc[Object classes].
 
 == Naming conventions
 
+=== General
+
 The following naming conventions apply to ASAM OpenMATERIAL geometry files:
 
-* The name of a 3D model file shall have the prefix `omg_` to indicate that the file
-complies with the ASAM OpenMATERIAL geometry specification.
 * The 3D model file and the related 3D asset file shall have the same base name.
+  Example: Example.gltf, Example.xoma
+* The naming convention inside the 3D model file (contains 3D information) must follow the capital Snake_Case definition, to improve human readability and enable consistent parsing of the file structure.
+* The naming convention inside the 3D asset file (contains metadata) must follow the lowerCamelCase definition, to allow a consistent naming convention in all .json files and consistent parsing.
+* Keywords are predefined names for objects inside the node structure.
 
-NOTE: Putting more information in file name to be discussed for specific object classes.
+=== Node structure
+
+Every node structure for a 3D object uses predefined keywords to allow a consistent naming convention and parsing.
+Some keywords are already defined by the standard and more could follow in future updates.
+The user is free to add more keywords for himself, if they are needed.
+
+* All components shall be named according to the capital Snake_Case definition, starting with uppercase letters.
+* Group nodes (also known as empty nodes or parent nodes) shall have "Grp_" as a prefix.
+* Iterators are added as suffixes.
+  In the documentation, iterator names are written in pointy braces (e.g. <type_idx>).
+  In the node names itself, the iterator names are replaced by integer values starting from 0.
+* Sequence of suffixes: 1: Iterator 2: Type Enumerator 3: Subtype Enumerator.
+* The predefined keywords shall be used for the corresponding asset parts and can be found in the according subchapters.
+
+=== Metadata
+
+* Naming of fields shall be according to lowerCamelCase definition, starting with lower letters.
+* Naming of custom properties shall follow the predefined keys.
+* Objects, arrays (lists) and enums shall follow the .json notation.
 
 == 3D asset file
 
-The 3D asset file provides meta data as well as a mapping table to ASAM OpenMATERIAL material property files.
+The 3D asset file provides metadata as well as a mapping table to ASAM OpenMATERIAL material property files.
 This information extends the geometry of an asset given in standard 3D model file formats, e.g. glTF, FBX or USD.
 The 3D asset file is in JSON format with the file extension `xoma`.
-As indicated above, the asset file has to have the same file name as the accompanying 3D model with the prefix `omg` indicating,
-that the 3D model file is structured according to the ASAM OpenMATERIAL geometry specification.
+As indicated above, the asset file has to have the same file name as the accompanying 3D model.
 This is an example of a 3D model file in glTF format with an accompanying 3D asset file:
 
-* `omg_my-model.glTF`
-* `omg_my-model.xoma`
-
-Each 3D asset file contains the following information:
-
-* Metadata
-* Material mapping (with possibility to easily change assignment)
-* Optional link to another asset file to facilitate instancing (same asset file for different 3D models)
-* Semantic information (labels) for sub-meshes ?
-* Description of coordinates, pivot points and so on instead of hierarchy in 3D model file ?
-* Assigning data streams (for example, wheel rotation) to certain sub-meshes ?
-
+* `my-model.gltf`
+* `my-model.xoma`
 
 == Requirements
 
