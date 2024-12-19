@@ -37,14 +37,10 @@ Each chapter addresses specific aspects of the standard, enabling users to adopt
 ASAM OpenMATERIAL 3D supports a modular approach to compliance. Based on their individual use-cases, users of ASAM OpenMATERIAL 3D can decide if they want to implement the standard for 3D models, materials, or both:
 
 * https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/geometry/geometry-index.html[*Geometry Chapter] Compliance*: Users who primarily deal with geometric data, such as 3D models, shapes, or spatial structures, can claim compliance with the Geometry chapter independently.
-* https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/material/material-index.html[*Material Chapter] Compliance*: Users who focus exclusively on material properties can claim compliance with the Material chapter alone.
+* https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/material/material-index.html[*Material Chapter] Compliance*: Users who focus on material properties can claim compliance with the Material chapter alone.
 * *Full Compliance*: For a full exchange and use of simulation-ready 3D assets however, both parts must be supported. Users who implement and support both material and geometric data according to this standard can claim full compliance with ASAM OpenMATERIAL 3D.
 
-The https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/use-cases/use-cases.html[Use Cases] chapter contains a detailed list of use cases, each highlighting its relevance to the Material chapter, the Geometry chapter, or both.
-These use cases are organized to show how different aspects of the standard apply, including influencing technologies (such as 3D modeling tools and 3D engines) and the specific 3D model formats used (like glTF, FBX, and others).
-This clear categorization helps users understand the practical applications of the standard and how it relates to their workflows.
-
-By providing clear and independent pathways for compliance, ASAM OpenMATERIAL 3D enables organizations to tailor their implementation to their specific use cases while ensuring consistency and compatibility within the broader simulation ecosystem.
+A list of use cases examples can be found in the https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/use-cases/use-cases.html[Use Cases] chapter, each highlighting its relevance to the Material chapter, the Geometry chapter, or both.
 
 === Structure and file formats
 
