@@ -8,6 +8,8 @@ ifndef::include-only-once[]
 include::{root-path}_config.adoc[]
 endif::[]
 
+:sectnums!:
+
 == Overview
 
 === Motivation
