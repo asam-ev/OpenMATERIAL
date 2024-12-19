@@ -69,7 +69,7 @@
         },
         "brdf": {
             "type": "object",
-            "description": "General information about the lookup table.",
+            "description": "The BRDF is used as a basic quantity to characterize the reflecting properties of a surface geometrically. The following BRDF definition applies: “The ratio of the radiance or power per unit solid-angle in the outgoing direction from a unit projected surface area to the collimated irradiance or power per unit projected surface area.” A physically plausible BRDF shall additionally obey the following three properties. (1) Positivity: The BRDF has units of inverse steradians (1/sr) and can vary from 0 to infinity. (2) Helmholtz reciprocity: It is symmetric in the incoming and outgoing direction. (3) Energy conservation: No more radiant energy is reflected from a point on the surface than incident radiant energy to that point. ",
             "properties": {
                 "wavelengths": {
                     "type": "array",
