@@ -9,7 +9,7 @@
 [plantuml]
 ----
 legend
-[[../geometry/object-vehicle/vehicle-index.html#_grp_root_t Grp_Root (T)]]
+[[../geometry/object-vehicle/vehicle-index.html#_grp_root Grp_Root]]
 |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_exterior Grp_Exterior]]
   |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_exterior_dynamic Grp_Exterior_Dynamic]]
     |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_convertible_top_t Grp_Convertible_Top (T)]]
@@ -89,7 +89,7 @@ end legend
 ----
 
 
-== Grp_Root (T)
+== Grp_Root
 
 This group is the root node of the entire vehicle.
 All components of the vehicle SHALL be children of this node.

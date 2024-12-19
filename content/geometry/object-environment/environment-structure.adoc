@@ -9,7 +9,7 @@
 [plantuml]
 ----
 legend
-[[../geometry/object-environment/environment-index.html#_grp_root_t Grp_Root (T)]]
+[[../geometry/object-environment/environment-index.html#_grp_root Grp_Root]]
 |_[[../geometry/object-environment/environment-index.html#_grp_terrain Grp_Terrain]]
 |_[[../geometry/object-environment/environment-index.html#_grp_environment_objects Grp_Environment_Objects]]
   |_ [[../geometry/object-environment/environment-index.html#_grp_buildings Grp_Buildings]]
@@ -25,7 +25,7 @@ legend
 end legend
 ----
 
-== Grp_Root (T)
+== Grp_Root
 
 The environment consists of the terrain, buildings, objects, and traffic areas, for example roads. It also includes all stationary traffic items, such as traffic signals, signs or lights.
 
