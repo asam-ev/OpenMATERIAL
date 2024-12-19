@@ -35,10 +35,6 @@
 
 
 :sectnums!:
-== Annexes
-[appendix]
-//include::annexes/REPLACE_ME.adoc[leveloffset=+2]
-// Add  further annexes here as needed and replace the placeholder one above
 
 [bibliography]
 * xref:bibliography.adoc[leveloffset=+1]
