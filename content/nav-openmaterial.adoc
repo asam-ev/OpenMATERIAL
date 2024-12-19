@@ -24,8 +24,8 @@
 ** xref:geometry/file-format-support.adoc[]
 ** xref:geometry/asset-schema.adoc[]
 ** xref:geometry/mapping-schema.adoc[]
-* xref:material/material-index.adoc[]
 * 8 Material
+** xref:material/introduction.adoc[]
 ** xref:material/material-schema.adoc[]
 ** xref:material/material-emp-schema.adoc[]
 ** xref:material/material-optical-schema.adoc[]
