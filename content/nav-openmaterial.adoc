@@ -14,7 +14,7 @@
 * xref:general-docs/backward-compatibility.adoc[]
 * xref:terms-and-definitions/terms-and-definitions.adoc[]
 * xref:use-cases/use-cases.adoc[]
-* xref:geometry/geometry-index.adoc[]
+* 7 Geometry
 ** xref:geometry/introduction.adoc[]
 ** xref:geometry/general.adoc[]
 ** xref:geometry/object-classes.adoc[]
@@ -25,7 +25,7 @@
 ** xref:geometry/asset-schema.adoc[]
 ** xref:geometry/mapping-schema.adoc[]
 * xref:material/material-index.adoc[]
-** xref:material/introduction.adoc[]
+* 8 Material
 ** xref:material/material-schema.adoc[]
 ** xref:material/material-emp-schema.adoc[]
 ** xref:material/material-optical-schema.adoc[]
