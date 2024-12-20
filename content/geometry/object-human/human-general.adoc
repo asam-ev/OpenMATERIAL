@@ -13,3 +13,6 @@ In the coordinate system for human 3D geometry, the x-axis points forwards, the 
 The default pose is the A-pose.
 The naming convention makes it possible to mirror one side of the skeleton to the other.
 The bones follow a specific bone orientation: The y-axis of a bone always follows the bone direction, regardless of whether it points sidewards, upwards, or forwards. The x-axis usually faces forwards accordingly.
+
+Bones with a local transform are indicated in the structure by a (T).
+This is only an indicator in the documentation and must not be contained in the actual node name.

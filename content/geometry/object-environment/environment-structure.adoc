@@ -20,8 +20,8 @@ legend
   |_ [[../geometry/object-environment/environment-index.html#_grp_road_marks Grp_Road_Marks]]
   |_ [[../geometry/object-environment/environment-index.html#_grp_road_object Grp_Road_Objects]]
   |_ [[../geometry/object-environment/environment-index.html#_grp_signals Grp_Signals]]
-    |_ [[../geometry/object-environment/environment-index.html#_grp_sign_idx_t Grp_Sign_<signal_idx> (T)]]
-    |_ [[../geometry/object-environment/environment-index.html#_traffic_light_idx_t Grp_Traffic_Light_<signal_idx> (T)]]
+    |_ [[../geometry/object-environment/environment-index.html#_grp_sign_idx_t Grp_Sign_<signal_idx>]] (T)
+    |_ [[../geometry/object-environment/environment-index.html#_traffic_light_idx_t Grp_Traffic_Light_<signal_idx>]] (T)
 end legend
 ----
 
