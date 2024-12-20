@@ -2,6 +2,46 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "description": "ASAM OpenMATERIAL 3D Geometry Asset file definition.",
+    "definitions": {
+        "Axle": {
+        "type": "object",
+        "description": "The definition of vehicle axle. based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Axle.html[OpenSCENARIO vehicle axle definition].",
+        "properties": {
+            "maxSteering": {
+                "type": "number",
+                "description": "Maximum steering angle which can be performed by the wheels on this axle. Unit: rad; Range: [0;PI], symmetrical.",
+                "minimum": 0,
+                "maximum": 3.14159
+            },
+            "wheelDiameter": {
+                "type": "number",
+                "description": "Diameter of the wheels on this axle. Unit: meter; Range: ]0..inf[.",
+                "exclusiveMinimum": 0
+            },
+            "trackWidth": {
+                "type": "number",
+                "description": "Distance of the wheels center lines at zero steering. Unit: meter; Range: [0..inf[.",
+                "minimum": 0
+            },
+            "positionX": {
+                "type": "number",
+                "description": "Longitudinal position of the axle with respect to the vehicles center of the bounding box projected to the ground. Unit: meter; Range: [0..inf[."
+          },
+            "positionZ": {
+                "type": "number",
+                "description": "Z-position of the axle with respect to the vehicles center of the bounding box projected to the ground. Usually this is half of wheel diameter. Unit:meter; Range:[0..inf[.",
+                "minimum": 0
+          }
+        },
+        "required": [
+            "maxSteering",
+            "wheelDiameter",
+            "trackWidth",
+            "positionX",
+            "positionZ"  
+        ]
+      }
+    },
     "properties": {
         "metadata": {
             "type": "object",
@@ -76,6 +116,70 @@
                         "environment",
                         "other"
                     ]
+                },
+                "vehicleClassData": {
+                    "type": "object",
+                    "description": "Vehicle specific data. This SHALL be filled if 'objectClass' is 'vehicle' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Vehicle.html[OpenSCENARIO vehicle definition].",
+                    "properties": {
+                        "vehicleCategory": {
+                            "type": "string",
+                            "description": "Type of the vehicle.",
+                            "enum": ["car", "van", "truck", "trailer", "semitrailer", "bus", "motorbike", "bicycle", "train", "tram"]
+                        },
+                        "performance": {
+                            "type": "object",
+                            "description": "Performance values of a vehicle.",
+                            "properties": {
+                                "maxSpeed": {
+                                "type": "number",
+                                "description": "Maximum speed of the vehicle. Unit: meter/second."
+                                },
+                                "maxAcceleration": {
+                                    "type": "number",
+                                    "description": "Maximum acceleration of the vehicle. Unit: meter/second^2. Range: [0..inf[.",
+                                    "minimum": 0
+                                },
+                                "maxDeceleration": {
+                                    "type": "number",
+                                    "description": "Maximum deceleration of the vehicle. Unit: meter/second^2. Range: [0..inf[.",
+                                    "minimum": 0
+                                }
+                            },
+                            "required": ["maxSpeed", "maxAcceleration", "maxDeceleration"]
+                        },
+                        "axles": {
+                            "type": "object",
+                            "description": "A set of the axles of a vehicle. A vehicle must have a front axle and a rear axle. It might have additional axles.",
+                            "properties": {
+                                "frontAxle": {
+                                    "$ref": "#/definitions/Axle",
+                                    "description": "Details about the front axle."
+                                },
+                                "rearAxle": {
+                                    "$ref": "#/definitions/Axle",
+                                    "description": "Details about the rear axle."
+                                },
+                                "additionalAxles": {
+                                    "type": "array",
+                                    "description": "An optional array of additional axles with the same properties as frontAxle and rearAxle.",
+                                    "items": {"$ref": "#/definitions/Axle"}
+                                }
+                            },
+                            "required": ["frontAxle", "rearAxle"]
+                        }
+                    },
+                    "required": ["vehicleCategory", "performance", "axles"]
+                },
+                "humanClassData": {
+                    "type" : "object",
+                    "description": "Human specific data. This SHALL be filled if 'objectClass' is 'human' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Pedestrian.html[OpenSCENARIO pedestrian definition].",
+                    "properties": {
+                        "mass": {
+                            "type": "number",
+                            "description": "The mass of a human. Unit: kg."
+                        }
+                    },
+                    "required": ["mass"]
                 },
                 "animated": {
                     "type": "boolean",

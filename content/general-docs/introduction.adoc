@@ -8,6 +8,8 @@ ifndef::include-only-once[]
 include::{root-path}_config.adoc[]
 endif::[]
 
+:sectnums!:
+
 == Overview
 
 === Motivation
@@ -26,16 +28,21 @@ Standardizing the representation of data and attributes, such as scenarios, road
 Standardization efforts have been made for scenarios and road data using ASAM OpenSCENARIO, ASAM OpenDRIVE, ASAM OpenCRG, and other standards. 
 ASAM OpenMATERIAL advances standardization by providing standardized definitions of material properties and 3D geometry.
 
-=== The two parts of ASAM OpenMATERIAL
+=== The two main chapters of ASAM OpenMATERIAL 3D
 
-ASAM OpenMATERIAL consists of two main parts:
+ASAM OpenMATERIAL 3D is divided into distinct yet complementary chapters: https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/geometry/geometry-index.html[Geometry] and https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/material/material-index.html[Material].
+Each chapter addresses specific aspects of the standard, enabling users to adopt and implement the parts most relevant to their needs.
 
-* *Material*: This part includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values.
-* *Geometry*: This part contains node hierarchies for different object classes. These structures use a uniform naming scheme and coordinate definitions to enable the exchange of 3D models between various simulation systems.
+* *Material*: This chapter includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values.
+* *Geometry*: This chapter contains structures for different object classes. These structures define uniform node structure, naming scheme and coordinate systems to enable exchange, common integration and animation of 3D models.
 
-These two parts may be used independently.
-For example, a simulation tool may use the material definitions without supporting the geometry part, or the other way around.
-For a full exchange of simulation-ready 3D assets however, both parts must be supported.
+ASAM OpenMATERIAL 3D supports a modular approach to compliance. Based on their individual use-cases, users of ASAM OpenMATERIAL 3D can decide if they want to implement the standard for 3D models, materials, or both:
+
+* https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/geometry/geometry-index.html[*Geometry Chapter] Compliance*: Users who primarily deal with geometric data, such as 3D models, shapes, or spatial structures, can claim compliance with the Geometry chapter independently.
+* https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/material/material-index.html[*Material Chapter] Compliance*: Users who focus on material properties can claim compliance with the Material chapter alone.
+* *Full Compliance*: For a full exchange and use of simulation-ready 3D assets however, both parts must be supported. Users who implement and support both material and geometric data according to this standard can claim full compliance with ASAM OpenMATERIAL 3D.
+
+A list of use cases examples can be found in the https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/use-cases/use-cases.html[Use Cases] chapter, each highlighting its relevance to the Material chapter, the Geometry chapter, or both.
 
 === Structure and file formats
 

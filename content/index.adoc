@@ -53,10 +53,6 @@ include::material/material-reflectance-schema.adoc[leveloffset=+1]
 
 
 :sectnums!:
-== Annexes
-[appendix]
-//include::annexes/REPLACE_ME.adoc[leveloffset=+2]
-// Add  further annexes here as needed and replace the placeholder one above
 
 [bibliography]
 include::bibliography.adoc[leveloffset=+1]

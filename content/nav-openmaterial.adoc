@@ -14,7 +14,7 @@
 * xref:general-docs/backward-compatibility.adoc[]
 * xref:terms-and-definitions/terms-and-definitions.adoc[]
 * xref:use-cases/use-cases.adoc[]
-* xref:geometry/geometry-index.adoc[]
+* 7 Geometry
 ** xref:geometry/introduction.adoc[]
 ** xref:geometry/general.adoc[]
 ** xref:geometry/object-classes.adoc[]
@@ -24,7 +24,7 @@
 ** xref:geometry/file-format-support.adoc[]
 ** xref:geometry/asset-schema.adoc[]
 ** xref:geometry/mapping-schema.adoc[]
-* xref:material/material-index.adoc[]
+* 8 Material
 ** xref:material/introduction.adoc[]
 ** xref:material/material-schema.adoc[]
 ** xref:material/material-emp-schema.adoc[]
@@ -35,10 +35,6 @@
 
 
 :sectnums!:
-== Annexes
-[appendix]
-//include::annexes/REPLACE_ME.adoc[leveloffset=+2]
-// Add  further annexes here as needed and replace the placeholder one above
 
 [bibliography]
 * xref:bibliography.adoc[leveloffset=+1]

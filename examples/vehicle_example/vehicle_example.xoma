@@ -14,6 +14,30 @@
     "validationDescription": "Since this is a fictional vehicle, the geometry was not validated. Standard compliance was verified manually.",
     "assetType": "object",
     "objectClass": "vehicle",
+    "vehicleClassData": {
+      "vehicleCategory": "car",
+      "performance": {
+        "maxSpeed": 41.67,
+        "maxAcceleration": 8.0,
+        "maxDeceleration": 8.0
+      },
+      "axles": {
+        "frontAxle": {
+          "maxSteering": 0.175,
+          "wheelDiameter": 0.661,
+          "trackWidth": 1.318,
+          "positionX": 1.254,
+          "positionZ": 0.33
+        },
+        "rearAxle": {
+          "maxSteering": 0.0,
+          "wheelDiameter": 0.661,
+          "trackWidth": 1.318,
+          "positionX": -1.146,
+          "positionZ": 0.33
+        }
+      }
+    },
     "animated": false,
     "pbrMaterialWorkflow": "metallic",
     "triangleCount": 50760,
