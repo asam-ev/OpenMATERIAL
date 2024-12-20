@@ -142,13 +142,13 @@ This is an example of a 3D model file in glTF format with an accompanying 3D ass
 * Meshes shall be triangulated and potential normal maps shall match that triangulation.
 * Rendering materials shall support PBR workflows and there shall not be geometry without assigned material.
 * Additional requirements apply, when OpenMATERIAL 3D assignment textures are used:
-** UVs shall not overlap, they shall be within 0-1 UV space and channel 1 shall be used for assignment textures.
+** UV Channel 1 shall be used for assignment textures.
 ** UV Islands shall have margins inbetween, so that assignment texture interpolation errors are avoided.
 ** There shall not be any geometry without UV coverage.
 
 
 == Recommendations
-
+* UVs should not overlap and be within 0-1 UV space.
 * Elongated primitives should be avoided as they fit badly in acceleration structures.
 * Alpha-textured meshes should be optimized to minimize the amount of alpha testing.
 * Meshes should not have holes or gaps.
