@@ -152,9 +152,9 @@ This is an example of a 3D model file in glTF format with an accompanying 3D ass
 * Elongated primitives should be avoided as they fit badly in acceleration structures.
 * Alpha-textured meshes should be optimized to minimize the amount of alpha testing.
 * Meshes should not have holes or gaps.
+* Meshes should have clean edgeflow.
 * Usage of N-Gons is not recommended.
 * Faces should be one-sided.
-* Mesh should have clean edgeflow.
 * The lowest number of polygons possible should be strived for while still retaining the object’s shape.
 * Texel density should be homogeneous and as low as possible.
 * UV stretching should be minimized.
