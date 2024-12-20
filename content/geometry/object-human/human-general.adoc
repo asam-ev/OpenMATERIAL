@@ -4,7 +4,8 @@ A human is a bipedal being that can be represented by an object in 3D geometry.
 
 The human 3D geometry is generically structured into the node structure and skeleton (also often called armature) defined in the xref:../geometry/object-human/human-index.adoc#_model_structure[Model structure].
 The structure starts with a Root node as a parent group for all other nodes in the structure.
-Splitting the object into different parts, such as clothing, hair, and accessories, enables animation and exchange of parts.
+Splitting the object into different parts, such as clothing, hair, and accessories, enables animation and exchange of parts. If equipment or accessories are very specific for a human, rather small and not self-contained or animated, they can be part of the human asset itself.
+For example: Backpacks, sunglasses and jewelry can be part of the human asset. Bycicles, scooter and skateboards are separate objects and not part of the human asset.
 Not all nodes have to be present in every human 3D model.
 Custom object parts may be added to facilitate and better visualize additional use cases, but all custom parts shall adhere to the specified structure principle.
 
@@ -12,3 +13,6 @@ In the coordinate system for human 3D geometry, the x-axis points forwards, the 
 The default pose is the A-pose.
 The naming convention makes it possible to mirror one side of the skeleton to the other.
 The bones follow a specific bone orientation: The y-axis of a bone always follows the bone direction, regardless of whether it points sidewards, upwards, or forwards. The x-axis usually faces forwards accordingly.
+
+Bones with a local transform are indicated in the structure by a (T).
+This is only an indicator in the documentation and must not be contained in the actual node name.
