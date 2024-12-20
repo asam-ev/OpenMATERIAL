@@ -8,36 +8,36 @@ legend
 |_ [[../geometry/object-human/human-index.html#_grp_root Grp_Root]]
   |_ [[../geometry/object-human/human-index.html#_armature Armature]]
     |_ [[../geometry/object-human/human-index.html#_root Root]]
-      |_ [[../geometry/object-human/human-index.html#_hip Hip]]
-        |_ [[../geometry/object-human/human-index.html#_lower_spine Lower_Spine]]
-          |_ [[../geometry/object-human/human-index.html#_upper_spine Upper_Spine]]
-            |_ [[../geometry/object-human/human-index.html#_neck Neck]]
-              |_ [[../geometry/object-human/human-index.html#_head Head]]
-                |_ [[../geometry/object-human/human-index.html#_eye_left Eye_Left]]
-                |_ [[../geometry/object-human/human-index.html#_eye_right Eye_Right]]
-          |_ [[../geometry/object-human/human-index.html#_shoulder_left Shoulder_Left]]
-            |_ [[../geometry/object-human/human-index.html#_upper_arm_left Upper_Arm_Left]]
-              |_ [[../geometry/object-human/human-index.html#_lower_arm_left Lower_Arm_Left]]
-                |_ [[../geometry/object-human/human-index.html#_hand_left Hand_Left]]
-                  |_ [[../geometry/object-human/human-index.html#_full_lingers_left Full_Fingers_Left]]
-                  |_ [[../geometry/object-human/human-index.html#_full_thumb_left Full_Thumb_Left]]
-            |_ [[../geometry/object-human/human-index.html#_upper_arm_right Upper_Arm_Right]]
-              |_ [[../geometry/object-human/human-index.html#_lower_arm_right Lower_Arm_Right]]
-                |_ [[../geometry/object-human/human-index.html#_hand_right Hand_Right]]
-                  |_ [[../geometry/object-human/human-index.html#_full_fingers_right Full_Fingers_Right]]
-                  |_ [[../geometry/object-human/human-index.html#_full_thumb_right Full_Thumb_Right]]
-      |_ [[../geometry/object-human/human-index.html#_upper_leg_left Upper_Leg_Left]]
-        |_ [[../geometry/object-human/human-index.html#_lower_leg_left Lower_Leg_Left]]
-          |_ [[../geometry/object-human/human-index.html#_foot_left Foot_Left]]
-            |_ [[../geometry/object-human/human-index.html#_full_toes_left Full_Toes_Left]]
-      |_ [[../geometry/object-human/human-index.html#_upper_leg_right Upper_Leg_Right]]
-        |_ [[../geometry/object-human/human-index.html#_lower_leg_right Lower_Leg_Right]]
-          |_ [[../geometry/object-human/human-index.html#_foot_right Foot_Right]]
-            |_ [[../geometry/object-human/human-index.html#_full_toes_right Full_Toes_Right]]
-    |_ [[../geometry/object-human/human-index.html#_accessories Accessories_Wristband]]
-    |_ [[../geometry/object-human/human-index.html#_body Body_Human]]
-    |_ [[../geometry/object-human/human-index.html#_clothing Clothing_Vest]]
-    |_ [[../geometry/object-human/human-index.html#_hair Hair_Short]]
+      |_ [[../geometry/object-human/human-index.html#_hip Hip]] (T)
+        |_ [[../geometry/object-human/human-index.html#_lower_spine Lower_Spine]] (T)
+          |_ [[../geometry/object-human/human-index.html#_upper_spine Upper_Spine]] (T)
+            |_ [[../geometry/object-human/human-index.html#_neck Neck]] (T)
+              |_ [[../geometry/object-human/human-index.html#_head Head]] (T)
+                |_ [[../geometry/object-human/human-index.html#_eye_left Eye_Left]] (T)
+                |_ [[../geometry/object-human/human-index.html#_eye_right Eye_Right]] (T)
+          |_ [[../geometry/object-human/human-index.html#_shoulder_left Shoulder_Left]] (T)
+            |_ [[../geometry/object-human/human-index.html#_upper_arm_left Upper_Arm_Left]] (T)
+              |_ [[../geometry/object-human/human-index.html#_lower_arm_left Lower_Arm_Left]] (T)
+                |_ [[../geometry/object-human/human-index.html#_hand_left Hand_Left]] (T)
+                  |_ [[../geometry/object-human/human-index.html#_full_lingers_left Full_Fingers_Left]] (T)
+                  |_ [[../geometry/object-human/human-index.html#_full_thumb_left Full_Thumb_Left]] (T)
+            |_ [[../geometry/object-human/human-index.html#_upper_arm_right Upper_Arm_Right]] (T)
+              |_ [[../geometry/object-human/human-index.html#_lower_arm_right Lower_Arm_Right]] (T)
+                |_ [[../geometry/object-human/human-index.html#_hand_right Hand_Right]] (T)
+                  |_ [[../geometry/object-human/human-index.html#_full_fingers_right Full_Fingers_Right]] (T)
+                  |_ [[../geometry/object-human/human-index.html#_full_thumb_right Full_Thumb_Right]] (T)
+        |_ [[../geometry/object-human/human-index.html#_upper_leg_left Upper_Leg_Left]] (T)
+          |_ [[../geometry/object-human/human-index.html#_lower_leg_left Lower_Leg_Left]] (T)
+            |_ [[../geometry/object-human/human-index.html#_foot_left Foot_Left]] (T)
+              |_ [[../geometry/object-human/human-index.html#_full_toes_left Full_Toes_Left]] (T)
+        |_ [[../geometry/object-human/human-index.html#_upper_leg_right Upper_Leg_Right]] (T)
+          |_ [[../geometry/object-human/human-index.html#_lower_leg_right Lower_Leg_Right]] (T)
+            |_ [[../geometry/object-human/human-index.html#_foot_right Foot_Right]] (T)
+              |_ [[../geometry/object-human/human-index.html#_full_toes_right Full_Toes_Right]] (T)
+    |_ [[../geometry/object-human/human-index.html#_accessories Accessories_<Name>]]
+    |_ [[../geometry/object-human/human-index.html#_body Body_<Name>]]
+    |_ [[../geometry/object-human/human-index.html#_clothing Clothing_<Name>]]
+    |_ [[../geometry/object-human/human-index.html#_hair Hair_<Name>]]
 end legend
 ----
 
@@ -212,7 +212,7 @@ The `Root` bone is the parent bone for all other bones. It can be used to contro
 |===
 
 
-== Hip
+== Hip (T)
 
 The `Hip` bone represents the lowest parts and bones of the spine, that is, the Hip, Coccyx and Sacrum spine bones of the human skeleton.
 
@@ -236,7 +236,7 @@ The `Hip` bone represents the lowest parts and bones of the spine, that is, the 
 |===
 
 
-== Lower_Spine
+== Lower_Spine (T)
 
 The `Lower_Spine` bone represents the middle parts und bones of the spine, that is, the Lumbar spine bones of the human skeleton.
 
@@ -260,7 +260,7 @@ The `Lower_Spine` bone represents the middle parts und bones of the spine, that 
 |===
 
 
-== Upper_Spine 
+== Upper_Spine (T)
 
 The `Upper_Spine` bone represents the upper parts und bones of the spine, that is, the Thoracic spine bones of the human skeleton.
 
@@ -284,7 +284,7 @@ The `Upper_Spine` bone represents the upper parts und bones of the spine, that i
 |===
 
 
-== Neck 
+== Neck (T)
 
 The `Neck` bone represents the most upper parts und bones of the spine, that is, the Cervical spine bones of the human skeleton.
 
@@ -308,7 +308,7 @@ The `Neck` bone represents the most upper parts und bones of the spine, that is,
 |===
 
 
-== Head
+== Head (T)
 
 The `Head` bone represents the head, that is, the skull of the human skeleton.
 
@@ -332,7 +332,7 @@ The `Head` bone represents the head, that is, the skull of the human skeleton.
 |===
 
 
-== Eye_Left
+== Eye_Left (T)
 
 The `Eye_Left` bone represents the left eye of the human body. It is used to calculate the eye level.
 
@@ -356,7 +356,7 @@ The `Eye_Left` bone represents the left eye of the human body. It is used to cal
 |===
 
 
-== Eye_Right
+== Eye_Right (T)
 
 The `Eye_Right` bone represents the right eye of the human body. It is used to calculate the eye level.
 
@@ -380,7 +380,7 @@ The `Eye_Right` bone represents the right eye of the human body. It is used to c
 |===
 
 
-== Shoulder_Left 
+== Shoulder_Left (T)
 
 The `Shoulder_Left` bone represents the upper part of the left shoulder, that is, the interaction between the clavicle bone and the humerus head of the human skeleton.
 
@@ -404,7 +404,7 @@ The `Shoulder_Left` bone represents the upper part of the left shoulder, that is
 |===
 
 
-== Upper_Arm_Left
+== Upper_Arm_Left (T)
 
 The `Upper_Arm_Left` bone represents the upper part of the left arm, that is, the humerus head of the human skeleton.
 
@@ -428,7 +428,7 @@ The `Upper_Arm_Left` bone represents the upper part of the left arm, that is, th
 |===
 
 
-== Lower_Arm_Left
+== Lower_Arm_Left (T)
 
 The `Lower_Arm_Left` bone represents the lower part of the left arm, that is, the left elbow and Radius and Ulna of the human skeleton.
 
@@ -452,7 +452,7 @@ The `Lower_Arm_Left` bone represents the lower part of the left arm, that is, th
 |===
 
 
-== Hand_Left
+== Hand_Left (T)
 
 The `Hand_Left` bone represents the left hand, that is, the left carpal bones of the human skeleton.
 
@@ -476,7 +476,7 @@ The `Hand_Left` bone represents the left hand, that is, the left carpal bones of
 |===
 
 
-== Full_Thumb_Left 
+== Full_Thumb_Left (T)
 
 The `Full_Thumb_Left` bone represents the thumb of the left hand, that is, the full thumb of the human skeleton.
 
@@ -500,7 +500,7 @@ The `Full_Thumb_Left` bone represents the thumb of the left hand, that is, the f
 |===
 
 
-== Full_Fingers_Left
+== Full_Fingers_Left (T)
 
 The `Full_Fingers_Left` bone represents all other fingers of the left hand, that is, the full index finger, middle finger, ring finger, and pinkie finger of the human skeleton. The middle finger position and length are used to place the bone correctly.
 
@@ -524,7 +524,7 @@ The `Full_Fingers_Left` bone represents all other fingers of the left hand, that
 |===
 
 
-== Shoulder_Right 
+== Shoulder_Right (T)
 
 The `Shoulder_Right` bone represents the upper part of the right shoulder, that is, the interaction between the clavicle bone and the humerus head of the human skeleton.
 
@@ -548,7 +548,7 @@ The `Shoulder_Right` bone represents the upper part of the right shoulder, that 
 |===
 
 
-== Upper_Arm_Right
+== Upper_Arm_Right (T)
 
 The `Upper_Arm_Right` bone represents the upper part of the right arm, that is, the humerus head of the human skeleton.
 
@@ -572,7 +572,7 @@ The `Upper_Arm_Right` bone represents the upper part of the right arm, that is, 
 |===
 
 
-== Lower_Arm_Right
+== Lower_Arm_Right (T)
 
 The `Lower_Arm_Right` bone represents the lower part of the right arm, that is, the right elbow and Radius and Ulna of the human skeleton.
 
@@ -596,7 +596,7 @@ The `Lower_Arm_Right` bone represents the lower part of the right arm, that is, 
 |===
 
 
-== Hand_Right
+== Hand_Right (T)
 
 The `Hand_Right` bone represents the right hand, that is, the right carpal bones of the human skeleton.
 
@@ -620,7 +620,7 @@ The `Hand_Right` bone represents the right hand, that is, the right carpal bones
 |===
 
 
-== Full_Thumb_Right
+== Full_Thumb_Right (T)
 
 The `Full_Thumb_Right` bone represents the thumb of the right hand, that is, the full thumb of the human skeleton.
 
@@ -644,7 +644,7 @@ The `Full_Thumb_Right` bone represents the thumb of the right hand, that is, the
 |===
 
 
-== Full_Fingers_Right
+== Full_Fingers_Right (T)
 
 The `Full_Fingers_Right` bone represents all other fingers of the right hand, that is, the full index finger, middle finger, ring finger, and pinkie finger. The middle finger position and length are used to place the bone correctly.
 
@@ -674,7 +674,7 @@ The `Upper_Leg_Left` bone represents the upper part of the left leg, that is, th
 [%header, cols="20, 80"]
 |===
 
-2+^| Upper_Leg_Left
+2+^| Upper_Leg_Left (T)
 
 | *Origin*
 | At the height of the hip joint and in the middle of the geometry
@@ -690,7 +690,7 @@ The `Upper_Leg_Left` bone represents the upper part of the left leg, that is, th
 |===
 
 
-== Lower_Leg_Left
+== Lower_Leg_Left (T)
 
 The `Lower_Leg_Left` bone represents the lower part of the left leg, that is, the Tibula and Fibula of the human skeleton. It controls the knee.
 
@@ -714,7 +714,7 @@ The `Lower_Leg_Left` bone represents the lower part of the left leg, that is, th
 |===
 
 
-== Foot_Left 
+== Foot_Left (T)
 
 The `Foot_Left` bone represents the left foot of the human skeleton without the toes. It controls the ankle.
 
@@ -738,7 +738,7 @@ The `Foot_Left` bone represents the left foot of the human skeleton without the 
 |===
 
 
-== Full_Toes_Left 
+== Full_Toes_Left (T)
 
 The `Full_Toes_Left` bone represents all toes of the left foot of the human skeleton.
 
@@ -762,7 +762,7 @@ The `Full_Toes_Left` bone represents all toes of the left foot of the human skel
 |===
 
 
-== Upper_Leg_Right
+== Upper_Leg_Right (T)
 
 The `Upper_Leg_Right` bone represents the upper part of the right leg, that is, the thigh of the human skeleton. It controls the hip joint.
 
@@ -786,7 +786,7 @@ The `Upper_Leg_Right` bone represents the upper part of the right leg, that is, 
 |===
 
 
-== Lower_Leg_Right
+== Lower_Leg_Right (T)
 
 The `Lower_Leg_Right` bone represents the lower part of the right leg, that is, the Tibula and Fibula of the human skeleton. It controls the knee.
 
@@ -810,7 +810,7 @@ The `Lower_Leg_Right` bone represents the lower part of the right leg, that is, 
 |===
 
 
-== Foot_Right
+== Foot_Right (T)
 
 The `Foot_Right` bone represents the right foot of the human skeleton without the toes. It controls the ankle.
 
@@ -834,7 +834,7 @@ The `Foot_Right` bone represents the right foot of the human skeleton without th
 |===
 
 
-== Full_Toes_Right
+== Full_Toes_Right (T)
 
 The `Full_Toes_Right` bone in a human skeleton represents all toes of the right foot of the human skeleton.
 
