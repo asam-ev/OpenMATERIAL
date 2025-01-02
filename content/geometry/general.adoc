@@ -9,7 +9,7 @@ endif::[]
 
 == Dimensions
 
-The following quantities and units are relevant for ASAM OpenMATERIAL:
+The following quantities and units are relevant for {THIS_STANDARD}:
 
 [cols="1,1"]
 |===
@@ -26,7 +26,7 @@ The following quantities and units are relevant for ASAM OpenMATERIAL:
 
 == Coordinate systems
 
-ASAM OpenMATERIAL uses the following types of coordinate systems:
+{THIS_STANDARD} uses the following types of coordinate systems:
 
 * World coordinate system, see <<World coordinate system>>
 * Local coordinate system, see <<Local coordinate system>>
@@ -80,7 +80,7 @@ A coordinate system of type (x, y, z) that is fixed in the inertial reference fr
 the simulation environment has the x~w~- and y~w~-axes parallel to the ground
 plane and the z~w~-axis pointing upward.
 
-Neither origin nor orientation of the world coordinate system are defined by the ASAM OpenMATERIAL standard. Nevertheless, the origin of the world coordinate system in an OpenMATERIAL 3D environment should coincide with the origin of a corresponding ASAM OpenDRIVE map (if available).
+Neither origin nor orientation of the world coordinate system are defined by the {THIS_STANDARD} standard. Nevertheless, the origin of the world coordinate system in an OpenMATERIAL 3D environment should coincide with the origin of a corresponding ASAM OpenDRIVE map (if available).
 The origin of the world coordinate system in ASAM OSI should also be aligned with these two coordinate systems.
 
 === Local coordinate system
@@ -93,7 +93,7 @@ Besides reference coordinate frames, 3D assets may incorporate other local coord
 
 === General
 
-The following naming conventions apply to ASAM OpenMATERIAL geometry files:
+The following naming conventions apply to {THIS_STANDARD} geometry files:
 
 * The 3D model file and the related 3D asset file shall have the same base name.
   Example: Example.gltf, Example.xoma
@@ -123,7 +123,7 @@ The user is free to add more keywords for himself, if they are needed.
 
 == 3D asset file
 
-The 3D asset file provides metadata as well as a mapping table to ASAM OpenMATERIAL material property files.
+The 3D asset file provides metadata as well as a mapping table to {THIS_STANDARD} material property files.
 This information extends the geometry of an asset given in standard 3D model file formats, e.g. glTF, FBX or USD.
 The 3D asset file is in JSON format with the file extension `xoma`.
 As indicated above, the asset file has to have the same file name as the accompanying 3D model.

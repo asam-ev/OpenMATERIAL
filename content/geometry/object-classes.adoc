@@ -1,12 +1,12 @@
 = Object classes
 
 == Introduction
-In ASAM OpenMATERIAL, an object class is a collection of similar objects.
+In {THIS_STANDARD}, an object class is a collection of similar objects.
 Examples of object classes are vehicles, humans, and road networks.
 Each instance of an object class is described by the same properties, but has
 individual property values.
 
-The ASAM OpenMATERIAL standard supports the following object classes:
+The {THIS_STANDARD} standard supports the following object classes:
 
 * xref:../geometry/object-vehicle/vehicle-index.adoc[Vehicle] 
 * xref:../geometry/object-human/human-index.adoc[Human] 

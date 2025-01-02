@@ -26,38 +26,38 @@ A fundamental step in virtually describing the real-world is providing a full ph
 Standardizing the representation of data and attributes, such as scenarios, road data, and asset data, is extremely important for AD/ADAS simulation. This promotes data circulation and ensures consistent results across different systems. 
 
 Standardization efforts have been made for scenarios and road data using ASAM OpenSCENARIO, ASAM OpenDRIVE, ASAM OpenCRG, and other standards. 
-ASAM OpenMATERIAL advances standardization by providing standardized definitions of material properties and 3D geometry.
+{THIS_STANDARD} advances standardization by providing standardized definitions of material properties and 3D geometry.
 
-=== The two main chapters of ASAM OpenMATERIAL 3D
+=== The two main chapters of {THIS_STANDARD}
 
-ASAM OpenMATERIAL 3D is divided into distinct yet complementary chapters: https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/geometry/geometry-index.html[Geometry] and https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/material/material-index.html[Material].
+{THIS_STANDARD} is divided into distinct yet complementary chapters: https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/geometry/geometry-index.html[Geometry] and https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/material/material-index.html[Material].
 Each chapter addresses specific aspects of the standard, enabling users to adopt and implement the parts most relevant to their needs.
 
 * *Material*: This chapter includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values.
 * *Geometry*: This chapter contains structures for different object classes. These structures define uniform node structure, naming scheme and coordinate systems to enable exchange, common integration and animation of 3D models.
 
-ASAM OpenMATERIAL 3D supports a modular approach to compliance. Based on their individual use-cases, users of ASAM OpenMATERIAL 3D can decide if they want to implement the standard for 3D models, materials, or both:
+{THIS_STANDARD} supports a modular approach to compliance. Based on their individual use-cases, users of {THIS_STANDARD} can decide if they want to implement the standard for 3D models, materials, or both:
 
 * https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/geometry/geometry-index.html[*Geometry Chapter] Compliance*: Users who primarily deal with geometric data, such as 3D models, shapes, or spatial structures, can claim compliance with the Geometry chapter independently.
 * https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/material/material-index.html[*Material Chapter] Compliance*: Users who focus on material properties can claim compliance with the Material chapter alone.
-* *Full Compliance*: For a full exchange and use of simulation-ready 3D assets however, both parts must be supported. Users who implement and support both material and geometric data according to this standard can claim full compliance with ASAM OpenMATERIAL 3D.
+* *Full Compliance*: For a full exchange and use of simulation-ready 3D assets however, both parts must be supported. Users who implement and support both material and geometric data according to this standard can claim full compliance with {THIS_STANDARD}.
 
 A list of use cases examples can be found in the https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/use-cases/use-cases.html[Use Cases] chapter, each highlighting its relevance to the Material chapter, the Geometry chapter, or both.
 
 === Structure and file formats
 
-ASAM OpenMATERIAL defines various file formats for specifying assets, material properties, and the mapping between them.
+{THIS_STANDARD} defines various file formats for specifying assets, material properties, and the mapping between them.
 <<fig-openmaterial-overview>> illustrates these file formats and their interconnections.
 The definitions of the geometry related data formats marked in red can be found in xref:geometry/geometry-index.adoc[].
 The definitions of the material related data formats marked in blue can be found in xref:material/material-index.adoc[].
 
 [#fig-openmaterial-overview]
-.Overview of ASAM OpenMATERIAL file formats and data flow
+.Overview of {THIS_STANDARD} file formats and data flow
 image::overview.png[,1100]
 
-The first interaction with an ASAM OpenMATERIAL-compliant 3D model is through the asset file.
+The first interaction with an {THIS_STANDARD}-compliant 3D model is through the asset file.
 
-The *asset file* is a JSON file with the file extension .xoma (ASAM OpenMATERIAL Asset).
+The *asset file* is a JSON file with the file extension .xoma ({THIS_STANDARD} Asset).
 A detailed definition of the https://github.com/asam-ev/OpenMATERIAL/blob/main/schemas/asset_schema.json[asset file JSON schema] is given in xref:geometry/asset-schema.adoc[].
 The asset file shall have the same name as a corresponding 3D data file in glTF, FBX or USD format.
 To facilitate instancing, multiple asset file may be linked to a single 3D model file by adding an index separated by a dot (.) as a suffix to the asset file name.
@@ -83,7 +83,7 @@ Each row in this table maps a material name or an RGB value to a material proper
 This setup allows for two mapping possibilities:
 
 * Mapping one material property file per material in the 3D model.
-* Mapping a texture code of an ASAM OpenMATERIAL assignment texture to a material property file, enabling detailed differentiation between material properties.
+* Mapping a texture code of an {THIS_STANDARD} assignment texture to a material property file, enabling detailed differentiation between material properties.
 
 An https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/example_mapping.xomm[example mapping file] is provided in the examples folder of the repository.
 
@@ -167,7 +167,7 @@ Notes, footnotes, and examples shall not contain requirements or any information
 
 The following deliverables are provided for {THIS_STANDARD}:
 
-* https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/index.html[ASAM OpenMATERIAL 3D BS 1.0.0 Specification, 2025-MM-DD] (this document, contained in this site)
+* https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/index.html[{THIS_STANDARD} BS 1.0.0 Specification, 2025-MM-DD] (this document, contained in this site)
 * https://github.com/asam-ev/OpenMATERIAL/tree/main/schemas[JSON schema files] for all json formats (contained in the open-source standard repository)
 * https://github.com/asam-ev/OpenMATERIAL/tree/main/examples[Example files] for all defined file formats (contained in the open-source standard repository) and further examples of
 ** a https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/vehicle_example[vehicle] (contained in the open-source standard repository)
