@@ -1,7 +1,7 @@
 {
     "metadata": {
         "name": "example_car",
-        "description": "This is an example asset. It demonstrates how OpenMATERIAL assets work.",
+        "description": "This is an example asset. It demonstrates how ASAM OpenMATERIAL 3D assets work.",
         "uuid": "87769375-a510-9c68-9af8-cc3ad3dd8349",
         "assetVersion": "1.0.0",
         "openMaterialVersion": "1.0.0",

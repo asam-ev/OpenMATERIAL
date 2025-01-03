@@ -85,7 +85,7 @@ The origin of the world coordinate system in ASAM OSI should also be aligned wit
 
 === Local coordinate system
 
-Top-most local coordinate frames of 3D assets (so-called reference coordinate frames) in OpenMATERIAL are defined in the center of the bounding box of the corresponding asset, projected to the bottom of the bounding box.
+Top-most local coordinate frames of 3D assets (so-called reference coordinate frames) in {THIS_STANDARD} are defined in the center of the bounding box of the corresponding asset, projected to the bottom of the bounding box.
 By static transformations, these coordinate frames may be synchronized with reference coordinate frames in ASAM OpenSCENARIO and ASAM OSI.
 Besides reference coordinate frames, 3D assets may incorporate other local coordinate frames, see xref:../geometry/object-classes.adoc[Object classes].
 
@@ -141,7 +141,7 @@ This is an example of a 3D model file in glTF format with an accompanying 3D ass
 * Meshes shall not be empty, nor contain multiple LODs.
 * Meshes shall be triangulated and potential normal maps shall match that triangulation.
 * Rendering materials shall support PBR workflows and there shall not be geometry without assigned material.
-* Additional requirements apply, when OpenMATERIAL 3D assignment textures are used:
+* Additional requirements apply, when {THIS_STANDARD} assignment textures are used:
 ** UV channel 1 shall be used for assignment textures.
 ** UV Islands shall have margins inbetween, so that assignment texture interpolation errors are avoided.
 ** There shall not be any geometry without UV coverage.
