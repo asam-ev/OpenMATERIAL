@@ -27,7 +27,7 @@
                 },
                 "openMaterialVersion": {
                     "type": "string",
-                    "description": "The version of the OpenMATERIAL 3D specification used, adhering to semantic versioning (e.g., '1.0.0').",
+                    "description": "The version of the ASAM OpenMATERIAL 3D specification used, adhering to semantic versioning (e.g., '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
                 "copyright": {

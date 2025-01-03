@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "vehicle_example",
-    "description": "This is an example vehicle asset. It demonstrates how OpenMATERIAL assets and their node structure work.",
+    "description": "This is an example vehicle asset. It demonstrates how ASAM OpenMATERIAL 3D assets and their node structure work.",
     "uuid": "cd9cc640-249e-4a1d-bc95-a713c4250f82",
     "assetVersion": "1.0.0",
     "openMaterialVersion": "1.0.0",

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "human_example",
-    "description": "This is an example human asset. It demonstrates how OpenMATERIAL assets and their node structure work.",
+    "description": "This is an example human asset. It demonstrates how ASAM OpenMATERIAL 3D assets and their node structure work.",
     "uuid": "fee894fa4ea241e481259c27a18a9eba",
     "assetVersion": "1.0.0",
     "openMaterialVersion": "1.0.0",

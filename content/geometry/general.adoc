@@ -9,7 +9,7 @@ endif::[]
 
 == Dimensions
 
-The following quantities and units are relevant for ASAM OpenMATERIAL:
+The following quantities and units are relevant for {THIS_STANDARD}:
 
 [cols="1,1"]
 |===
@@ -26,7 +26,7 @@ The following quantities and units are relevant for ASAM OpenMATERIAL:
 
 == Coordinate systems
 
-ASAM OpenMATERIAL uses the following types of coordinate systems:
+{THIS_STANDARD} uses the following types of coordinate systems:
 
 * World coordinate system, see <<World coordinate system>>
 * Local coordinate system, see <<Local coordinate system>>
@@ -80,12 +80,12 @@ A coordinate system of type (x, y, z) that is fixed in the inertial reference fr
 the simulation environment has the x~w~- and y~w~-axes parallel to the ground
 plane and the z~w~-axis pointing upward.
 
-Neither origin nor orientation of the world coordinate system are defined by the ASAM OpenMATERIAL standard. Nevertheless, the origin of the world coordinate system in an OpenMATERIAL 3D environment should coincide with the origin of a corresponding ASAM OpenDRIVE map (if available).
+Neither origin nor orientation of the world coordinate system are defined by the {THIS_STANDARD} standard. Nevertheless, the origin of the world coordinate system in an {THIS_STANDARD} environment should coincide with the origin of a corresponding ASAM OpenDRIVE map (if available).
 The origin of the world coordinate system in ASAM OSI should also be aligned with these two coordinate systems.
 
 === Local coordinate system
 
-Top-most local coordinate frames of 3D assets (so-called reference coordinate frames) in OpenMATERIAL are defined in the center of the bounding box of the corresponding asset, projected to the bottom of the bounding box.
+Top-most local coordinate frames of 3D assets (so-called reference coordinate frames) in {THIS_STANDARD} are defined in the center of the bounding box of the corresponding asset, projected to the bottom of the bounding box.
 By static transformations, these coordinate frames may be synchronized with reference coordinate frames in ASAM OpenSCENARIO and ASAM OSI.
 Besides reference coordinate frames, 3D assets may incorporate other local coordinate frames, see xref:../geometry/object-classes.adoc[Object classes].
 
@@ -93,7 +93,7 @@ Besides reference coordinate frames, 3D assets may incorporate other local coord
 
 === General
 
-The following naming conventions apply to ASAM OpenMATERIAL geometry files:
+The following naming conventions apply to {THIS_STANDARD} geometry files:
 
 * The 3D model file and the related 3D asset file shall have the same base name.
   Example: Example.gltf, Example.xoma
@@ -123,7 +123,7 @@ The user is free to add more keywords for himself, if they are needed.
 
 == 3D asset file
 
-The 3D asset file provides metadata as well as a mapping table to ASAM OpenMATERIAL material property files.
+The 3D asset file provides metadata as well as a mapping table to {THIS_STANDARD} material property files.
 This information extends the geometry of an asset given in standard 3D model file formats, e.g. glTF, FBX or USD.
 The 3D asset file is in JSON format with the file extension `xoma`.
 As indicated above, the asset file has to have the same file name as the accompanying 3D model.
@@ -141,7 +141,7 @@ This is an example of a 3D model file in glTF format with an accompanying 3D ass
 * Meshes shall not be empty, nor contain multiple LODs.
 * Meshes shall be triangulated and potential normal maps shall match that triangulation.
 * Rendering materials shall support PBR workflows and there shall not be geometry without assigned material.
-* Additional requirements apply, when OpenMATERIAL 3D assignment textures are used:
+* Additional requirements apply, when {THIS_STANDARD} assignment textures are used:
 ** UV channel 1 shall be used for assignment textures.
 ** UV Islands shall have margins inbetween, so that assignment texture interpolation errors are avoided.
 ** There shall not be any geometry without UV coverage.
