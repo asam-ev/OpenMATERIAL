@@ -49,7 +49,7 @@ of classes, for example, based on their physical properties.
 
 [[sec-Material-parameter-file]] Material parameter file::
 A file in JSON format containing defined material properties according to the
-OpenMATERIAL standard.
+{THIS_STANDARD} standard.
 
 [[sec-Material-property]] Material property::
 Denotes a physical, chemical, or geometric property of a material.

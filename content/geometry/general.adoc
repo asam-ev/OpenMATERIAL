@@ -80,7 +80,7 @@ A coordinate system of type (x, y, z) that is fixed in the inertial reference fr
 the simulation environment has the x~w~- and y~w~-axes parallel to the ground
 plane and the z~w~-axis pointing upward.
 
-Neither origin nor orientation of the world coordinate system are defined by the {THIS_STANDARD} standard. Nevertheless, the origin of the world coordinate system in an OpenMATERIAL 3D environment should coincide with the origin of a corresponding ASAM OpenDRIVE map (if available).
+Neither origin nor orientation of the world coordinate system are defined by the {THIS_STANDARD} standard. Nevertheless, the origin of the world coordinate system in an {THIS_STANDARD} environment should coincide with the origin of a corresponding ASAM OpenDRIVE map (if available).
 The origin of the world coordinate system in ASAM OSI should also be aligned with these two coordinate systems.
 
 === Local coordinate system
