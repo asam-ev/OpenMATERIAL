@@ -140,9 +140,10 @@ Further informative content is shown in table <<tab-informative-text-components>
 |Introduction                                 |Informative
 |Scope                                        |Normative
 |Normative references                         |Informative
-|Terms and definitions                        |Normative
 |Abbreviations                                |Normative
 |Backward compatibility                       |Normative
+|Terms and definitions                        |Normative
+|Use Cases                                    |Informative
 |First to last specification-specific section |Normative
 |Annexes                                      |Annexes can be normative or informative. The annex heading contains the indication "(normative)" or "(informative)".
 |Bibliography                                 |Informative
