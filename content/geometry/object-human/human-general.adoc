@@ -1,5 +1,9 @@
 = General
 
+:home-path: ../..
+:imagesdir: {home-path}/_images
+:includedir: {home-path}/_images
+
 A human is a bipedal being that can be represented by an object in 3D geometry.
 
 The human 3D geometry is generically structured into the node structure and skeleton (also often called armature) defined in the xref:../geometry/object-human/human-index.adoc#_model_structure[Model structure].
@@ -13,6 +17,12 @@ In the coordinate system for human 3D geometry, the x-axis points forwards, the 
 The default pose is the A-pose.
 The naming convention makes it possible to mirror one side of the skeleton to the other.
 The bones follow a specific bone orientation: The y-axis of a bone always follows the bone direction, regardless of whether it points sidewards, upwards, or forwards. The x-axis usually faces forwards accordingly.
+
+<<fig-human-structure>> shows the orientation of the coordinate system of a human skeleton.
+
+[#fig-human-structure]
+.fig_human-structure
+image::fig_human-structure.svg[,400]
 
 Bones with a local transform are indicated in the structure by a (T).
 This is only an indicator in the documentation and must not be contained in the actual node name.
