@@ -70,19 +70,31 @@
                 "description": "Array of optical property values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
                 "items": [
                     {
-                        "type": ["number", "null"],
+                        "type": [
+                            "number",
+                            "null"
+                        ],
                         "description": "Wavelength of radiation in meters."
                     },
                     {
-                        "type": ["number", "null"],
+                        "type": [
+                            "number",
+                            "null"
+                        ],
                         "description": "Temperature of material in Kelvin."
                     },
                     {
-                        "type": ["number", "null"],
+                        "type": [
+                            "number",
+                            "null"
+                        ],
                         "description": "Real part of index of refraction of material."
                     },
                     {
-                        "type": ["number", "null"],
+                        "type": [
+                            "number",
+                            "null"
+                        ],
                         "description": "Imaginary part of index of refraction of material."
                     }
                 ],

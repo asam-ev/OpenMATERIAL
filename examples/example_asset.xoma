@@ -18,16 +18,30 @@
         "pbrMaterialWorkflow": "metallic",
         "triangleCount": 100000,
         "meshCount": 10,
-        "textureResolutions": ["2K"],
+        "textureResolutions": [
+            "2K"
+        ],
         "normalMapFormat": "OpenGL",
         "boundingBox": {
-            "x" : [-1, 1],
-            "y" : [-1, 1],
-            "z" : [0.0, 3]
+            "x": [
+                -1,
+                1
+            ],
+            "y": [
+                -1,
+                1
+            ],
+            "z": [
+                0.0,
+                3
+            ]
         }
     },
     "materialMappingUri": "example_mapping.xomm",
     "materialTextureAssignment": [
-        ["Material_Cube", "checker_xom.png"]
+        [
+            "Material_Cube",
+            "checker_xom.png"
+        ]
     ]
 }

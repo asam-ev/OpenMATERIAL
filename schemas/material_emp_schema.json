@@ -70,31 +70,52 @@
                 "type": "array",
                 "items": [
                     {
-                        "type": ["number", "null"],
+                        "type": [
+                            "number",
+                            "null"
+                        ],
                         "description": "Wavelength of radiation in meters."
                     },
                     {
-                        "type": ["number", "null"],
+                        "type": [
+                            "number",
+                            "null"
+                        ],
                         "description": "Temperature of material in Kelvin."
                     },
                     {
-                        "type": ["number", "null"],
+                        "type": [
+                            "number",
+                            "null"
+                        ],
                         "description": "Humidity of material in percent."
                     },
                     {
-                        "type": ["number", "null"],
+                        "type": [
+                            "number",
+                            "null"
+                        ],
                         "description": "Real part of complex permeability of material."
                     },
                     {
-                        "type": ["number", "null"],
+                        "type": [
+                            "number",
+                            "null"
+                        ],
                         "description": "Imaginary part of complex permeability of material."
                     },
                     {
-                        "type": ["number", "null"],
+                        "type": [
+                            "number",
+                            "null"
+                        ],
                         "description": "Real part of complex permittivity of material."
                     },
                     {
-                        "type": ["number", "null"],
+                        "type": [
+                            "number",
+                            "null"
+                        ],
                         "description": "Imaginary part of complex permittivity of material."
                     }
                 ],
