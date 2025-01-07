@@ -60,10 +60,10 @@ The ASAM OpenX standards strive to provide comprehensive, realistic, and most im
   In the case of distributed simulation environments, the paths SHALL be synchronized between all relevant simulation components.
   Synchronization MAY be implemented using ASAM Open Simulation Interface (see below).
 * ASAM Open Simulation Interface (OSI) is a specification for interfaces between models and components in a distributed simulation.
-  OSI primarily focuses on the environmental perception of automated driving functions, but it also covers interfaces for models of traffic participants.
-  The asset file (.xoma) of a 3D environment SHALL be linked in OSI using the https://opensimulationinterface.github.io/osi-antora-generator/asamosi/current/gen/structosi3_1_1GroundTruth.html#a83042861723a4a9e890a53aa98d88858[GroundTruth::model_reference].
+  ASAM OSI primarily focuses on the environmental perception of automated driving functions, but it also covers interfaces for models of traffic participants.
+  The asset file (.xoma) of a 3D environment SHALL be linked in ASAM OSI using the https://opensimulationinterface.github.io/osi-antora-generator/asamosi/current/gen/structosi3_1_1GroundTruth.html#a83042861723a4a9e890a53aa98d88858[GroundTruth::model_reference].
   Asset files (.xoma) of individual objects, like vehicles, SHALL be linked with the https://opensimulationinterface.github.io/osi-antora-generator/asamosi/current/gen/structosi3_1_1MovingObject.html#a07558573bee7a5fa2f0729e1cad1325f[MovingObject::model_reference] or the https://opensimulationinterface.github.io/osi-antora-generator/asamosi/current/gen/structosi3_1_1StationaryObject.html#aad1c24fcdb11699954bf3494b8632288[StationaryObject::model_reference].
   Both environment and objects may either be given as an absolute path or a relative path.
   A relative path is indicated by a dot (.) as the first character.
-  As OSI transfers the data between tools and simulation models, the root path, that a relative model reference path is relative to, has to be given or known to all tools and models in the tool chain.
-  This can be done with tool settings, configs or model parameters, e.g. an FMI parameter.
+  As ASAM OSI transfers the data between tools and simulation models, the root path, that a relative model reference path is relative to, has to be given or known to all tools and models in the tool chain.
+  This can be done with tool settings, configs or model parameters, for example, an FMI parameter.

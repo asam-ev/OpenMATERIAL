@@ -93,7 +93,7 @@ end legend
 
 This group is the root node of the entire vehicle.
 All components of the vehicle SHALL be children of this node.
-The origin of the Root node is the center of the vehicle's bounding box projected to the ground, including all vehicle parts in their default positions, i.e. the vehicle is under neutral load conditions, the wheels are running straight, the doors are closed and the lights are off.
+The origin of the Root node is the center of the vehicle's bounding box projected to the ground, including all vehicle parts in their default positions, meaning the vehicle is under neutral load conditions, the wheels are running straight, the doors are closed and the lights are off.
 
 [#tab-Vehicle-Grp-Root]
 .Grp_Root

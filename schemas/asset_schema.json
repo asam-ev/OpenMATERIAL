@@ -62,21 +62,21 @@
                 },
                 "assetVersion": {
                     "type": "string",
-                    "description": "The version number of the asset, following semantic versioning (e.g., '1.0.0').",
+                    "description": "The version number of the asset, following semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
                 "openMaterialVersion": {
                     "type": "string",
-                    "description": "The version of the ASAM OpenMATERIAL 3D specification used, adhering to semantic versioning (e.g., '1.0.0').",
+                    "description": "The version of the ASAM OpenMATERIAL 3D specification used, adhering to semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
                 "copyright": {
                     "type": "string",
-                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.')."
+                    "description": "Indicates copyright details, including the year and copyright holder (for example, '© 2024 ACME Inc.')."
                 },
                 "license": {
                     "type": "string",
-                    "description": "Describes the license for asset distribution. Use an SPDX identifier for open-source licenses (e.g., 'MIT'), or provide a URL or filename for proprietary licenses."
+                    "description": "Describes the license for asset distribution. Use an SPDX identifier for open-source licenses (for example, 'MIT'), or provide a URL or filename for proprietary licenses."
                 },
                 "author": {
                     "type": "string",
@@ -84,16 +84,16 @@
                 },
                 "modelCreationTool": {
                     "type": "string",
-                    "description": "Specifies the software or tool (and version) used to create the 3D model (e.g., 'Blender 3.5')."
+                    "description": "Specifies the software or tool (and version) used to create the 3D model (for example, 'Blender 3.5')."
                 },
                 "creationDate": {
                     "type": "string",
-                    "description": "The date and time of asset creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (e.g., '20240703T101728Z').",
+                    "description": "The date and time of asset creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (for example, '20240703T101728Z').",
                     "pattern": "^\\d{8}T\\d{6}Z$"
                 },
                 "modelingMethod": {
                     "type": "string",
-                    "description": "Indicates how the model was created, e.g., '3D scan', 'photo-based modeling', or 'freehand design'."
+                    "description": "Indicates how the model was created, for example, '3D scan', 'photo-based modeling', or 'freehand design'."
                 },
                 "validationDescription": {
                     "type": "string",
@@ -109,7 +109,7 @@
                 },
                 "objectClass": {
                     "type": "string",
-                    "description": "Classifies the object type when 'assetType' is 'object', i.e., 'vehicle', 'human', 'environment', 'other'.",
+                    "description": "Classifies the object type when 'assetType' is 'object', meaning, 'vehicle', 'human', 'environment', 'other'.",
                     "enum": [
                         "vehicle",
                         "human",
@@ -230,7 +230,7 @@
                 },
                 "textureResolutions": {
                     "type": "array",
-                    "description": "Lists all the used texture resolutions in the 3D model i.e. albedo, normal or displacement textures. Possible values are '1K', '2K', '4K'. If no textures are used in the model, add empty element ''",
+                    "description": "Lists all the used texture resolutions in the 3D model, meaning albedo, normal, or displacement textures. Possible values are '1K', '2K', '4K'. If no textures are used in the model, add empty element ''",
                     "items": {
                         "type": "string",
                         "enum": [
