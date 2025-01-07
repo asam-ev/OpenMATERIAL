@@ -7,7 +7,7 @@
         "openMaterialVersion": "1.0.0",
         "copyright": "(C) 2024 Persival GmbH",
         "license": "MPL-2.0",
-        "author": "clemens.linnhoff@persival.de, simone.graf@ipg-automotive.com",
+        "authors": "clemens.linnhoff@persival.de, simone.graf@ipg-automotive.com",
         "modelCreationTool": "Blender",
         "creationDate": "20241025T180000Z",
         "modelingMethod": "Modeled freely without real world counterpart",

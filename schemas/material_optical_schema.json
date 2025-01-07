@@ -32,13 +32,13 @@
                 },
                 "copyright": {
                     "type": "string",
-                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.')."
+                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.'). Multiple copyrights should be comma-separated."
                 },
                 "license": {
                     "type": "string",
                     "description": "Describes the license for material distribution. Use an SPDX identifier for open-source licenses (e.g., 'MIT'), or provide a URL or filename for proprietary licenses."
                 },
-                "author": {
+                "authors": {
                     "type": "string",
                     "description": "Lists the author(s) of the material as a name, email, or company. Multiple authors should be comma-separated."
                 },
@@ -59,7 +59,7 @@
                 "openMaterialVersion",
                 "copyright",
                 "license",
-                "author",
+                "authors",
                 "source"
             ]
         },

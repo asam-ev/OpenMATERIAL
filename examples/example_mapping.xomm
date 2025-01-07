@@ -5,9 +5,9 @@
         "uuid": "c492bda2-7c84-43e6-be19-03115545e844",
         "mappingVersion": "1.0.0",
         "openMaterialVersion": "1.0.0",
-        "copyright": "(C) 2023-2024, Example Company",
+        "copyright": "(C) 2023-2024 Example Company",
         "license": "MPL-2.0",
-        "author": "john.doe@asam.net",
+        "authors": "john.doe@asam.net",
         "creationDate": "20240703T101728Z"
     },
     "materialMapping": [
