@@ -9,13 +9,42 @@ endif::[]
 ASAM::
 Association for Standardization of Automation and Measuring Systems
 
-ECU::
-Electronic Control Unit
+AD/ADAS::
+Automated Driving/Automated Driving Assistance Systems
 
-UML::
-Unified Modeling Language
+BRDF::
+Bidirectional Reflectance Distribution Function
 
-XML::
-Extensible Markup Language
+CAD::
+Computer-Aided Design
 
-> Update as needed
+FBX::
+Filmbox (proprietary file format)
+
+FMI::
+Functional Mock-up Interface
+
+glTF::
+Graphics Library Transmission Format
+
+ISO::
+International Organization for Standardization
+
+JSON::
+JavaScript Object Notation
+
+LiDAR::
+Light Detection and Ranging
+
+LoD::
+Level of Detail
+
+PBR::
+Physically Based Rendering
+
+USD::
+Universal Scene Description (proprietary file format)
+
+UV::
+Ultraviolet
+

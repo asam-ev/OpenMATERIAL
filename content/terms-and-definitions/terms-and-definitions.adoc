@@ -54,7 +54,7 @@ A file in JSON format containing defined material properties according to the
 [[sec-Material-property]] Material property::
 Denotes a physical, chemical, or geometric property of a material.
 
-[[sec-Multispectral_hyperspectral-material]] Multispectral/hyperspectral material::
+[[sec-Multispectral_hyperspectral-material]] Multispectral or hyperspectral material::
 Material with wavelength-specific properties that are defined for multiple spectra. 
 +
 Multispectral material shows up in imagery as 3-10 wider bands.
