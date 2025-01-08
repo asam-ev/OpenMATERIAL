@@ -92,7 +92,7 @@ end legend
 == Grp_Root
 
 This group is the root node of the entire vehicle.
-All components of the vehicle SHALL be children of this node.
+All components of the vehicle shall be children of this node.
 The origin of the Root node is the center of the vehicle's bounding box projected to the ground, including all vehicle parts in their default positions, meaning the vehicle is under neutral load conditions, the wheels are running straight, the doors are closed and the lights are off.
 
 [#tab-Vehicle-Grp-Root]
@@ -1633,7 +1633,7 @@ Wheel steering is represented by rotation around the z-axis.
 Wheel camber is defined by a rotation around the x-axis.
 Suspension deflection is represented by translation along the z-axis.
 Zero rotation and translation around all axles are defined under neutral load conditions.
-In the 3D model, both caster and camber angles are ignored.
+In the _3D model_, both caster and camber angles are ignored.
 
 [#fig-wheel]
 .Grp_Wheel_<axle_idx>_<wheel_idx>
@@ -1883,7 +1883,7 @@ image::Grp_Mirror_Rearview_View.svg[,600]
 
 This group contains all parts of the vehicle's seats.
 
-The seat position can be used to place a human 3D model as a passenger.
+The seat position can be used to place a human _3D model_ as a passenger.
 Therefore, a bench consists of multiple individual seats.
 
 `<seat_row_idx>` denotes a row of seats, counted from the front to the rear, starting with 0.

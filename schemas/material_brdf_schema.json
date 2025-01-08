@@ -80,7 +80,7 @@
                 },
                 "lookupTable": {
                     "type": "array",
-                    "description": "Array of bidirectional reflectance distribution function (BRDF) values. The array SHALL be sorted based on the columns starting with the first.",
+                    "description": "Array of bidirectional reflectance distribution function (BRDF) values. The array shall be sorted based on the columns starting with the first.",
                     "items": {
                         "type": "array",
                         "items": [

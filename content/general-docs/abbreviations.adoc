@@ -21,6 +21,9 @@ Computer-Aided Design
 FBX::
 Filmbox (proprietary file format)
 
+FMI::
+Functional Mock-up Interface
+
 glTF::
 Graphics Library Transmission Format
 
@@ -35,9 +38,6 @@ Light Detection and Ranging
 
 LoD::
 Level of Detail
-
-OMG::
-Object Management Group
 
 PBR::
 Physically Based Rendering

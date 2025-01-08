@@ -65,7 +65,7 @@
         },
         "electromagneticProperties": {
             "type": "array",
-            "description": "Array of electromagnetic property values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
+            "description": "Array of electromagnetic property values, with each item representing a different property. The array shall be sorted based on the columns starting with the first.",
             "items": {
                 "type": "array",
                 "items": [
