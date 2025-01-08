@@ -19,5 +19,6 @@ They are applied worldwide.
 {THIS_STANDARD} defines physical material properties and standardizes 3D model structures addressing the need for accurate, standardized 3D assets and material properties to simulate sensor behavior effectively.
 
 {THIS_STANDARD} is divided into two key chapters:
+
 - Material: Covers formats and definitions for material properties, such as surface roughness and reflectance data.
 - Geometry: Establishes structures for object classes, standardizing nodes, naming, and coordinate systems to support 3D model exchange and animation.
