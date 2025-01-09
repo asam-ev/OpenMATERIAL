@@ -22,21 +22,21 @@
                 },
                 "materialVersion": {
                     "type": "string",
-                    "description": "The version number of the material, following semantic versioning (e.g., '1.0.0').",
+                    "description": "The version number of the material, following semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
                 "openMaterialVersion": {
                     "type": "string",
-                    "description": "The version of the OpenMATERIAL 3D specification used, adhering to semantic versioning (e.g., '1.0.0').",
+                    "description": "The version of the ASAM OpenMATERIAL 3D specification used, adhering to semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
                 "copyright": {
                     "type": "string",
-                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.')."
+                    "description": "Indicates copyright details, including the year and copyright holder (for example, '© 2024 ACME Inc.')."
                 },
                 "license": {
                     "type": "string",
-                    "description": "Describes the license for material distribution. Use an SPDX identifier for open-source licenses (e.g., 'MIT'), or provide a URL or filename for proprietary licenses."
+                    "description": "Describes the license for material distribution. Use an SPDX identifier for open-source licenses (for example, 'MIT'), or provide a URL or filename for proprietary licenses."
                 },
                 "author": {
                     "type": "string",
@@ -44,7 +44,7 @@
                 },
                 "creationDate": {
                     "type": "string",
-                    "description": "The date and time of material creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (e.g., '20240703T101728Z').",
+                    "description": "The date and time of material creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (for example, '20240703T101728Z').",
                     "pattern": "^\\d{8}T\\d{6}Z$"
                 },
                 "source": {
@@ -53,7 +53,7 @@
                 },
                 "typicalSensorTechnology": {
                     "type": "string",
-                    "description": "Typical sensor technology this BRDF table is used for, e.g., radar, lidar, camera. If multiply apply, use comma-separation."
+                    "description": "Typical sensor technology this BRDF table is used for. Examples: radar, lidar, camera. If multiply apply, use comma-separation."
                 }
             },
             "required": [
@@ -69,7 +69,7 @@
         },
         "brdf": {
             "type": "object",
-            "description": "General information about the lookup table.",
+            "description": "The BRDF is used as a basic quantity to characterize the reflecting properties of a surface geometrically. The following BRDF definition applies: “The ratio of the radiance or power per unit solid-angle in the outgoing direction from a unit projected surface area to the collimated irradiance or power per unit projected surface area.” A physically plausible BRDF shall additionally obey the following three properties. (1) Positivity: The BRDF has units of inverse steradians (1/sr) and can vary from 0 to infinity. (2) Helmholtz reciprocity: It is symmetric in the incoming and outgoing direction. (3) Energy conservation: No more radiant energy is reflected from a point on the surface than incident radiant energy to that point. ",
             "properties": {
                 "wavelengths": {
                     "type": "array",
@@ -80,7 +80,7 @@
                 },
                 "lookupTable": {
                     "type": "array",
-                    "description": "Array of bidirectional reflectance distribution function (BRDF) values. The array SHALL be sorted based on the columns starting with the first.",
+                    "description": "Array of bidirectional reflectance distribution function (BRDF) values. The array shall be sorted based on the columns starting with the first.",
                     "items": {
                         "type": "array",
                         "items": [

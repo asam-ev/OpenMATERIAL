@@ -23,7 +23,7 @@ ifndef::include-only-once[]
 :revdate: {docdate}
 :bibtex-file: content/bibliography.bib
 // Replace PLACEHOLDER with the name of your standard, e.g. OpenDRIVE
-:THIS_STANDARD: ASAM OpenMATERIAL
+:THIS_STANDARD: ASAM OpenMATERIAL 3D
 :imagesdir: {root-path}/_images
 :include-only-once: true
 endif::[]

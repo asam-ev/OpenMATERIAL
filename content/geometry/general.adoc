@@ -9,8 +9,10 @@ endif::[]
 
 == Dimensions
 
-The following quantities and units are relevant for ASAM OpenMATERIAL:
+The following quantities and units are relevant for {THIS_STANDARD}:
 
+[#tab-quantities-units]
+.Quantities and units
 [cols="1,1"]
 |===
 |Name |Unit
@@ -26,7 +28,7 @@ The following quantities and units are relevant for ASAM OpenMATERIAL:
 
 == Coordinate systems
 
-ASAM OpenMATERIAL uses the following types of coordinate systems:
+{THIS_STANDARD} uses the following types of coordinate systems:
 
 * World coordinate system, see <<World coordinate system>>
 * Local coordinate system, see <<Local coordinate system>>
@@ -70,7 +72,7 @@ pitch angle around the y’-axis. The final rotated coordinate system
 (x’’’=x’’)/y’’’/z’’’ is obtained after rotating system x’’/y’’/z’’ with roll
 angle.
 
-Each 3D model has an individual reference frame. Individual nodes of an
+Each _3D model_ has an individual reference frame. Individual nodes of an
 object may have local coordinate frames, for example, each wheel of a vehicle.
 
 
@@ -80,61 +82,84 @@ A coordinate system of type (x, y, z) that is fixed in the inertial reference fr
 the simulation environment has the x~w~- and y~w~-axes parallel to the ground
 plane and the z~w~-axis pointing upward.
 
-Neither origin nor orientation of the world coordinate system are defined by the ASAM OpenMATERIAL standard. Nevertheless, the origin of the world coordinate system in an OpenMATERIAL 3D environment should coincide with the origin of a corresponding ASAM OpenDRIVE map (if available).
+Neither origin nor orientation of the world coordinate system are defined by the {THIS_STANDARD} standard. Nevertheless, the origin of the world coordinate system in an {THIS_STANDARD} environment should coincide with the origin of a corresponding ASAM OpenDRIVE map (if available).
 The origin of the world coordinate system in ASAM OSI should also be aligned with these two coordinate systems.
 
 === Local coordinate system
 
-Top-most local coordinate frames of 3D assets (so called reference coordinate frames) in OpenMATERIAL are defined in the center of the bounding box of the corresponding asset, projected to the bottom of the bounding box.
+Top-most local coordinate frames of _3D assets_ (so-called reference coordinate frames) in {THIS_STANDARD} are defined in the center of the bounding box of the corresponding asset, projected to the bottom of the bounding box.
 By static transformations, these coordinate frames may be synchronized with reference coordinate frames in ASAM OpenSCENARIO and ASAM OSI.
-Besides reference coordinate frames, 3D assets may incorporate other local coordinate frames, see xref:../geometry/object-classes.adoc[Object classes].
+Besides reference coordinate frames, _3D assets_ may incorporate other local coordinate frames, see xref:../geometry/object-classes.adoc[Object classes].
 
 == Naming conventions
 
-The following naming conventions apply to ASAM OpenMATERIAL geometry files:
+=== General
 
-* The name of a 3D model file shall have the prefix `omg_` to indicate that the file
-complies with the ASAM OpenMATERIAL geometry specification.
-* The 3D model file and the related 3D asset file shall have the same base name.
+The following naming conventions apply to {THIS_STANDARD} geometry files:
 
-NOTE: Putting more information in file name to be discussed for specific object classes.
+* The _3D model_ file and the related _3D asset_ file shall have the same base name.
+  Example: Example.gltf, Example.xoma
+* The naming convention inside the _3D model_ file (contains 3D information) must follow the capital Snake_Case definition, to improve human readability and enable consistent parsing of the file structure.
+* The naming convention inside the _3D asset_ file (contains metadata) must follow the lowerCamelCase definition, to allow a consistent naming convention in all .json files and consistent parsing.
+* Keywords are predefined names for objects inside the node structure.
 
-== 3D asset file
+=== Node structure
 
-The 3D asset file provides meta data as well as a mapping table to ASAM OpenMATERIAL material property files.
-This information extends the geometry of an asset given in standard 3D model file formats, e.g. glTF, FBX or USD.
-The 3D asset file is in JSON format with the file extension `xoma`.
-As indicated above, the asset file has to have the same file name as the accompanying 3D model with the prefix `omg` indicating,
-that the 3D model file is structured according to the ASAM OpenMATERIAL geometry specification.
-This is an example of a 3D model file in glTF format with an accompanying 3D asset file:
+Every node structure for a 3D object uses predefined keywords to allow a consistent naming convention and parsing.
+Some keywords are already defined by the standard and more could follow in future updates.
+The user is free to add more keywords for himself, if they are needed.
 
-* `omg_my-model.glTF`
-* `omg_my-model.xoma`
+* All components shall be named according to the capital Snake_Case definition, starting with uppercase letters.
+* Group nodes (also known as empty nodes or parent nodes) shall have "Grp_" as a prefix.
+* Iterators are added as suffixes.
+  In the documentation, iterator names are written in pointy braces. Example: <type_idx>.
+  In the node names itself, the iterator names are replaced by integer values starting from 0.
+* Sequence of suffixes: 1: Iterator 2: Type Enumerator 3: Subtype Enumerator.
+* The predefined keywords shall be used for the corresponding asset parts and can be found in the according subchapters.
 
-Each 3D asset file contains the following information:
+=== Metadata
 
-* Metadata
-* Material mapping (with possibility to easily change assignment)
-* Optional link to another asset file to facilitate instancing (same asset file for different 3D models)
-* Semantic information (labels) for sub-meshes ?
-* Description of coordinates, pivot points and so on instead of hierarchy in 3D model file ?
-* Assigning data streams (for example, wheel rotation) to certain sub-meshes ?
+* Naming of fields shall be according to lowerCamelCase definition, starting with lower letters.
+* Naming of custom properties shall follow the predefined keys.
+* Objects, arrays (lists) and enums shall follow the .json notation.
 
+== _3D asset_ file
+
+The _3D asset_ file provides metadata as well as a mapping table to {THIS_STANDARD} _material property_ files.
+This information extends the geometry of an asset given in standard _3D model_ file formats, for example, glTF, FBX or USD.
+The _3D asset_ file is in JSON format with the file extension `xoma`.
+As indicated above, the asset file has to have the same file name as the accompanying _3D model_.
+This is an example of a _3D model_ file in glTF format with an accompanying _3D asset_ file:
+
+* `my-model.gltf`
+* `my-model.xoma`
 
 == Requirements
 
-Materials shall be separated.
-
-NOTE: TODO: Extend rule and find better location. What do you want to express, that two
-materials with different properties need to be modeled by separate objects?
-Are there any other requirements regarding quality, semantic/animation/material structure?
+* The object's geometry shall be in real word scale, using meters as unit for measurement for distances.
+* The object's origins and pivot points shall coincide with position and orientation of the origin of the object's reference coordinate frame if not specified otherwise.
+* Meshes shall not contain problematic characteristics such as doubled, isolated, coincident, coplanar, degenerate, or primitives.
+* Meshes shall have outside facing normals. Soft or hard edges shall be set correctly.
+* Meshes shall not be empty, nor contain multiple LODs.
+* Meshes shall be triangulated and potential normal maps shall match that triangulation.
+* Rendering materials shall support PBR workflows and there shall not be geometry without assigned material.
+* Additional requirements apply, when {THIS_STANDARD} assignment textures are used:
+** UV channel 1 shall be used for assignment textures.
+** UV Islands shall have margins inbetween, so that assignment texture interpolation errors are avoided.
+** There shall not be any geometry without UV coverage.
 
 
 == Recommendations
-
-* The same texel density should be used within a file. (asset file?)
-* For each object class, the recommended mesh resolution should be used.
-* To improve performance of vegetation objects, alpha textures should be used.
-
-NOTE: TODO: Move recommendations to descriptive sections, e.g. object class
-recommendation to section "Object Class".
+* UVs should not overlap and be within 0-1 UV space.
+* Elongated primitives should be avoided as they fit badly in acceleration structures.
+* Alpha-textured meshes should be optimized to minimize the amount of alpha testing.
+* Meshes should not have holes or gaps.
+* Meshes should have clean edgeflow.
+* Usage of N-Gons is not recommended.
+* Faces should be one-sided.
+* The lowest number of polygons possible should be strived for while still retaining the object’s shape.
+* Texel density should be homogeneous and as low as possible.
+* UV stretching should be minimized.
+* Naming of files, nodes, meshes and materials should be meaningful.
+* Usage of multiple PBR maps is encouraged (albedo, roughness, metallic, normals).
+* Smaller objects should have one _material_ per object (for example, baked traffic cone), while larger objects should contain multiple seamless repeatable materials (for example, brick building).

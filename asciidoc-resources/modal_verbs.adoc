@@ -25,7 +25,7 @@ Permissions indicate a course of action permissible within the limits of {THIS_S
 need not
 
 |*Possibilities and capabilities* +
-Verbal forms used to state possibilities or capabilities, whether technical, material, physical, etc.
+Verbal forms used to state possibilities or capabilities, whether technical, material, physical, and so on.
 |can +
 cannot
 
