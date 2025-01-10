@@ -9,20 +9,20 @@ endif::[]
 
 == Dimensions
 
-The following quantities and units are relevant for {THIS_STANDARD}:
+Unless stated otherwise, all numeric values within {THIS_STANDARD} are in SI units. <<tab-quantities-units>> lists the units and dimensions:
 
 [#tab-quantities-units]
 .Quantities and units
-[cols="1,1"]
+[cols="1,1,1"]
 |===
-|Name |Unit
+|Name |Unit | Symbol
 
-|acceleration |(m/s^2)
-|angle |(rad)
-|distance |(m)
-|mass | (kg)
-|time |(s)
-|velocity |(m/s)
+|acceleration |meters per second squared | m/s^2^
+|angle |radians | rad
+|distance, dimension |meter |m
+|mass |kilogram | kg
+|time |second |s
+|velocity |meters per second squared| m/s^2^
 
 |===
 
