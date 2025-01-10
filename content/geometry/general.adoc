@@ -17,12 +17,12 @@ Unless stated otherwise, all numeric values within {THIS_STANDARD} are in SI uni
 |===
 |Name |Unit | Symbol
 
-|acceleration |meters per second squared | m/s^2^
-|angle |radians | rad
+|acceleration |meters per second squared|m/s^2^
+|angle |radians |rad
 |distance, dimension |meter |m
-|mass |kilogram | kg
+|mass |kilogram |kg
 |time |second |s
-|velocity |meters per second squared| m/s^2^
+|velocity |meters per second|m/s
 
 |===
 
