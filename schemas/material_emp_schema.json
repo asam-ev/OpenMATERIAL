@@ -30,7 +30,7 @@
                     "description": "The version of the ASAM OpenMATERIAL 3D specification used, adhering to semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
-                "copyright": {
+                "copyrights": {
                     "type": "string",
                     "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.'). Multiple copyrights should be comma-separated."
                 },
@@ -47,9 +47,9 @@
                     "description": "The date and time of material creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (for example, '20240703T101728Z').",
                     "pattern": "^\\d{8}T\\d{6}Z$"
                 },
-                "source": {
+                "sources": {
                     "type": "string",
-                    "description": "Source of the electro-magnetic property data. Was is measured, simulated, or taken from literature?"
+                    "description": "Sources of the electro-magnetic property data. Was is measured, simulated, or taken from literature? Multiple sources should be comma-separated."
                 }
             },
             "required": [
@@ -57,10 +57,10 @@
                 "uuid",
                 "materialVersion",
                 "openMaterialVersion",
-                "copyright",
+                "copyrights",
                 "license",
                 "authors",
-                "source"
+                "sources"
             ]
         },
         "electromagneticProperties": {
