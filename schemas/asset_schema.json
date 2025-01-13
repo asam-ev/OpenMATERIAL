@@ -72,13 +72,12 @@
                 },
                 "copyrights": {
                     "type": "array",
-                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.'). Multiple copyrights should be comma-separated.",
-                    "items": [
-                        {
-                            "type": "string",
-                            "description": "Copyright entry."
-                        }
-                    ]
+                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.').",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1,
+                    "maxItems": 1
                 },
                 "license": {
                     "type": "string",
@@ -87,12 +86,11 @@
                 "authors": {
                     "type": "array",
                     "description": "Lists the author(s) of the asset as a name, email, or company. Multiple authors should be comma-separated.",
-                    "items": [
-                        {
-                            "type": "string",
-                            "description": "Author entry."
-                        }
-                    ]
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1,
+                    "maxItems": 1
                 },
                 "modelCreationTool": {
                     "type": "string",
