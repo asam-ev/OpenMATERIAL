@@ -97,9 +97,9 @@ The following table provides and overview of the translations between the ASAM O
 |===
 |Standard |Coordinate System | Transformation
 
-|ASAM OpenSCNEARIO XML | Vehicle | The origin is the center of the rear axle projected to the ground. Add the x-coordinate of the xref:../geometry/asset-schema.adoc#_rearAxle[rear axle] from the vehicle asset metadata to the ASAM OpenMATERIAL 3D reference frame.
-|ASAM OSI |Moving or stationary object | The origin is in the center of the bounding box. Add half of the height of the asset defined as the maximum z-coordinate in the xref:../geometry/asset-schema.adoc#_bounding-box[bounding box] to the ASAM OpenMATERIAL 3D reference frame.
-|ASAM OSI |Host vehicle | The origin is the center of the rear axle. Add the x- and z-coordinate of the xref:../geometry/asset-schema.adoc#_rearAxle[rear axle] from the vehicle asset metadata to the ASAM OpenMATERIAL 3D reference frame.
+|ASAM OpenSCNEARIO XML | Vehicle | The origin is the center of the rear axle projected to the ground. Add the x-coordinate of the xref:../geometry/asset-schema.adoc#_rearaxle[rear axle] from the vehicle asset metadata to the ASAM OpenMATERIAL 3D reference frame.
+|ASAM OSI |Moving or stationary object | The origin is in the center of the bounding box. Add half of the height of the asset defined as the maximum z-coordinate in the xref:../geometry/asset-schema.adoc#_boundingbox[bounding box] to the ASAM OpenMATERIAL 3D reference frame.
+|ASAM OSI |Host vehicle | The origin is the center of the rear axle. Add the x- and z-coordinate of the xref:../geometry/asset-schema.adoc#_rearaxle[rear axle] from the vehicle asset metadata to the ASAM OpenMATERIAL 3D reference frame.
 |===
 
 
