@@ -91,6 +91,8 @@ Top-most local coordinate frames of _3D assets_ (so-called reference coordinate 
 By static transformations, these coordinate frames may be synchronized with reference coordinate frames in ASAM OpenSCENARIO and ASAM OSI.
 The following table provides and overview of the translations between the ASAM OpenMATERIAL 3D asset reference coordinates to reference coordinates of ASAM OpenSCENARIO XML and ASAM OSI.
 
+This is a test: <<tab-local-coordinates>>
+
 [#tab-local-coordinates]
 .Transformation of asset coordinates to ASAM OpenSCENARIO and ASAM OSI
 [cols="1,1,1"]
