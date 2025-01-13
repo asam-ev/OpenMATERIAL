@@ -6,29 +6,29 @@
         "materialVersion": "1.0.0",
         "creationDate": "20240703T101728Z",
         "openMaterialVersion": "1.0.0",
-        "copyright": "(C) 2023-2024, Example Company",
+        "copyrights": ["(C) 2023-2024 Example Company"],
         "license": "MPL-2.0",
-        "author": "john.doe@asam.net"
+        "authors": ["john.doe@asam.net"]
     },
     "materialProperties": {
         "surfaceRoughness": {
             "surfaceHeightRms": 0.8,
             "surfaceCorrelationLength": 1.0,
-            "source": "estimate"
+            "sources": "estimate"
         },
         "emissivityData": {
             "emissivityCoefficient": 0.07,
             "temperature": 300.0,
-            "source": "internet: https://www.engineeringtoolbox.com/emissivity-coefficients-d_447.html"
+            "sources": "internet: https://www.engineeringtoolbox.com/emissivity-coefficients-d_447.html"
         },
         "elasticityData": {
             "youngsModulus": 70e9,
             "poissonsRatio": 0.35,
-            "source": "internet: https://en.wikipedia.org/wiki/Aluminium"
+            "sources": "internet: https://en.wikipedia.org/wiki/Aluminium"
         },
         "densityData": {
             "density": 2699.0,
-            "source": "internet: https://en.wikipedia.org/wiki/Aluminium"
+            "sources": "internet: https://en.wikipedia.org/wiki/Aluminium"
         },
         "electromagneticPropertiesUri": "example_material_emp.xompt",
         "opticalPropertiesUri": "example_material_optical.xompt",

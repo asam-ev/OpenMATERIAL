@@ -1,13 +1,13 @@
 {
     "metadata": {
-        "name": "example_car",
+        "name": "example_asset",
         "description": "This is an example asset. It demonstrates how ASAM OpenMATERIAL 3D assets work.",
         "uuid": "87769375-a510-9c68-9af8-cc3ad3dd8349",
         "assetVersion": "1.0.0",
         "openMaterialVersion": "1.0.0",
-        "copyright": "(C) 2023-2024, Example Company",
+        "copyrights": ["(C) 2023-2024 Example Company"],
         "license": "MPL-2.0",
-        "author": "john.doe@asam.net",
+        "authors": ["john.doe@asam.net"],
         "modelCreationTool": "Blender",
         "creationDate": "20240703T101728Z",
         "modelingMethod": "Modeled according to images",

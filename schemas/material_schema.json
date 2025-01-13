@@ -30,17 +30,25 @@
                     "description": "The version of the ASAM OpenMATERIAL 3D specification used, adhering to semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
-                "copyright": {
-                    "type": "string",
-                    "description": "Indicates copyright details, including the year and copyright holder (for example, '© 2024 ACME Inc.')."
+                "copyrights": {
+                    "type": "array",
+                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.').",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1
                 },
                 "license": {
                     "type": "string",
                     "description": "Describes the license for material distribution. Use an SPDX identifier for open-source licenses (for example, 'MIT'), or provide a URL or filename for proprietary licenses."
                 },
-                "author": {
-                    "type": "string",
-                    "description": "Lists the author(s) of the material as a name, email, or company. Multiple authors should be comma-separated."
+                "authors": {
+                    "type": "array",
+                    "description": "Lists the author(s) of the material as a name, email, or company.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1
                 },
                 "creationDate": {
                     "type": "string",
@@ -53,9 +61,9 @@
                 "uuid",
                 "materialVersion",
                 "openMaterialVersion",
-                "copyright",
+                "copyrights",
                 "license",
-                "author"
+                "authors"
             ]
         },
         "materialProperties": {
@@ -74,15 +82,15 @@
                             "type": "number",
                             "description": "Correlation length of the surface height deviations, being the distance after autocorrelation function has dropped to 1/e. Thus being a horizontal measure of roughness and given in meters."
                         },
-                        "source": {
+                        "sources": {
                             "type": "string",
-                            "description": "Source of the surface roughness data."
+                            "description": "Sources of the surface roughness data. Multiple sources should be comma-separated."
                         }
                     },
                     "required": [
                         "surfaceHeightRms",
                         "surfaceCorrelationLength",
-                        "source"
+                        "sources"
                     ]
                 },
                 "emissivityData": {
@@ -97,15 +105,15 @@
                             "type": "number",
                             "description": "Temperature of material in Kelvin [K] at which the emissivity is measured."
                         },
-                        "source": {
+                        "sources": {
                             "type": "string",
-                            "description": "Source of the emissivity data."
+                            "description": "Sources of the emissivity data. Multiple sources should be comma-separated."
                         }
                     },
                     "required": [
                         "emissivityCoefficient",
                         "temperature",
-                        "source"
+                        "sources"
                     ]
                 },
                 "elasticityData": {
@@ -120,15 +128,15 @@
                             "type": "number",
                             "description": "Poisson's ratio of the material."
                         },
-                        "source": {
+                        "sources": {
                             "type": "string",
-                            "description": "Source of the elasticity data."
+                            "description": "Sources of the elasticity data. Multiple sources should be comma-separated."
                         }
                     },
                     "required": [
                         "youngsModulus",
                         "poissonsRatio",
-                        "source"
+                        "sources"
                     ]
                 },
                 "densityData": {
@@ -139,14 +147,14 @@
                             "type": "number",
                             "description": "Density of the material in kg/m^3."
                         },
-                        "source": {
+                        "sources": {
                             "type": "string",
-                            "description": "Source of the density data."
+                            "description": "Sources of the density data. Multiple sources should be comma-separated."
                         }
                     },
                     "required": [
                         "density",
-                        "source"
+                        "sources"
                     ]
                 },
                 "retroreflectivityData": {
@@ -157,14 +165,14 @@
                             "type": "number",
                             "description": "Coefficient of retro-reflection in cd lx^-1 m^-2."
                         },
-                        "source": {
+                        "sources": {
                             "type": "string",
-                            "description": "Source of the retro-reflectivity data."
+                            "description": "Sources of the retro-reflectivity data. Multiple sources should be comma-separated."
                         }
                     },
                     "required": [
                         "coefficientOfRetroreflection",
-                        "source"
+                        "sources"
                     ]
                 },
                 "electromagneticPropertiesUri": {
