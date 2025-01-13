@@ -168,7 +168,7 @@ Notes, footnotes, and examples shall not contain requirements or any information
 
 The following deliverables are provided for {THIS_STANDARD}:
 
-* https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/index.html[{THIS_STANDARD} BS 1-0-0 Specification, 2025-MM-DD] (this document, contained in this site)
+* https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/index.html[{THIS_STANDARD}^®^ BS 1-0-0 Specification, 2025-MM-DD] (this document, contained in this site)
 * https://github.com/asam-ev/OpenMATERIAL/tree/main/schemas[JSON schema files] for all json formats (contained in the open-source standard repository)
 * https://github.com/asam-ev/OpenMATERIAL/tree/main/examples[Example files] for all defined file formats (contained in the open-source standard repository) and further examples of
 ** a https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/vehicle_example[vehicle] (contained in the open-source standard repository)

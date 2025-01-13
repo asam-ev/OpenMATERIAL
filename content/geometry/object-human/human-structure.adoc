@@ -215,7 +215,7 @@ The `Root` bone is the parent bone for all other bones. It can be used to contro
 
 == Hip (T)
 
-The `Hip` bone represents the lowest parts and bones of the spine, that is, the Hip, Coccyx and Sacrum spine bones of the human skeleton.
+The `Hip` bone represents the lowest parts and bones of the spine, that is, the Hip, Coccyx, and Sacrum spine bones of the human skeleton.
 
 .Hip bone
 [%header, cols="20, 80"]
