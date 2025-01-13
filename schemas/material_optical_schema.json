@@ -31,16 +31,28 @@
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
                 "copyrights": {
-                    "type": "string",
-                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.'). Multiple copyrights should be comma-separated."
+                    "type": "array",
+                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.'). Multiple copyrights should be comma-separated.",
+                    "items": [
+                        {
+                            "type": "string",
+                            "description": "Copyright entry."
+                        }
+                    ]
                 },
                 "license": {
                     "type": "string",
                     "description": "Describes the license for material distribution. Use an SPDX identifier for open-source licenses (for example, 'MIT'), or provide a URL or filename for proprietary licenses."
                 },
                 "authors": {
-                    "type": "string",
-                    "description": "Lists the author(s) of the material as a name, email, or company. Multiple authors should be comma-separated."
+                    "type": "array",
+                    "description": "Lists the author(s) of the material as a name, email, or company. Multiple authors should be comma-separated.",
+                    "items": [
+                        {
+                            "type": "string",
+                            "description": "Author entry."
+                        }
+                    ]
                 },
                 "creationDate": {
                     "type": "string",

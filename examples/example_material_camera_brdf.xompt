@@ -6,9 +6,9 @@
         "materialVersion": "1.0.0",
         "creationDate": "20240919T101728Z",
         "openMaterialVersion": "1.0.0",
-        "copyrights": "(C) 2023-2024 DIVP",
+        "copyrights": ["(C) 2023-2024 DIVP"],
         "license": "MPL-2.0",
-        "authors": "DIVP",
+        "authors": ["DIVP"],
         "sources": "measurement",
         "typicalSensorTechnology": "camera"
     },
