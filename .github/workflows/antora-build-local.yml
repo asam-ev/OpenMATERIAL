@@ -3,7 +3,7 @@
 name: Publish locally with Antora
 on:
   pull_request:
-    types: [ opened, edited, reopened ]
+    types: [ opened, edited, synchronize, reopened ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 concurrency:
