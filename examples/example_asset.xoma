@@ -20,7 +20,7 @@
         "meshCount": 10,
         "textureResolutions": [
             "2K"
-        ],
+
         "normalMapFormat": "OpenGL",
         "boundingBox": {
             "x": [
