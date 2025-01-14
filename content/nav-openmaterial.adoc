@@ -3,46 +3,38 @@
 :antora_mapping: true
 
 [preface]
-* xref:../general-docs/foreword.adoc[]
+include::general-docs/foreword.adoc[leveloffset=+1]
 [preface]
-* xref:../general-docs/introduction.adoc[]
+include::general-docs/introduction.adoc[leveloffset=+1]
 
 :sectnums:
-* xref:general-docs/scope.adoc[]
-* xref:general-docs/normative-references.adoc[]
-* xref:general-docs/abbreviations.adoc[]
-* xref:general-docs/backward-compatibility.adoc[]
-* xref:terms-and-definitions/terms-and-definitions.adoc[]
-* xref:use-cases/use-cases.adoc[]
-* 7 Geometry
-** xref:geometry/introduction.adoc[]
-** xref:geometry/general.adoc[]
-** xref:geometry/object-classes.adoc[]
-*** xref:geometry/object-vehicle/vehicle-index.adoc[]
-*** xref:geometry/object-human/human-index.adoc[]
-*** xref:geometry/object-environment/environment-index.adoc[]
-** xref:geometry/file-format-support.adoc[]
-** xref:geometry/asset-schema.adoc[]
-** xref:geometry/mapping-schema.adoc[]
-* 8 Material
-** xref:material/introduction.adoc[]
-** xref:material/material-schema.adoc[]
-** xref:material/material-emp-schema.adoc[]
-** xref:material/material-optical-schema.adoc[]
-** xref:material/material-brdf-schema.adoc[]
-** xref:material/material-reflectance-schema.adoc[]
+include::general-docs/scope.adoc[leveloffset=+1]
+include::general-docs/normative-references.adoc[leveloffset=+1]
+include::general-docs/abbreviations.adoc[leveloffset=+1]
+include::general-docs/backward-compatibility.adoc[leveloffset=+1]
+include::terms-and-definitions/terms-and-definitions.adoc[leveloffset=+1]
+include::use-cases/use-cases.adoc[leveloffset=+1]
 
+== 7 Geometry
+include::geometry/introduction.adoc[leveloffset=+2]
+include::geometry/general.adoc[leveloffset=+2]
+include::geometry/object-classes.adoc[leveloffset=+2]
+include::geometry/object-vehicle/vehicle-index.adoc[leveloffset=+3]
+include::geometry/object-human/human-index.adoc[leveloffset=+3]
+include::geometry/object-environment/environment-index.adoc[leveloffset=+3]
+include::geometry/file-format-support.adoc[leveloffset=+2]
+include::geometry/asset-schema.adoc[leveloffset=+2]
+include::geometry/mapping-schema.adoc[leveloffset=+2]
 
+== 8 Material
+include::material/introduction.adoc[leveloffset=+2]
+include::material/material-schema.adoc[leveloffset=+2]
+include::material/material-emp-schema.adoc[leveloffset=+2]
+include::material/material-optical-schema.adoc[leveloffset=+2]
+include::material/material-brdf-schema.adoc[leveloffset=+2]
 
 :sectnums!:
-
 [bibliography]
-* xref:bibliography.adoc[leveloffset=+1]
-
-:sectnums!:
-xref:loft/list-of-figures.adoc[leveloffset=+1]
-
-:sectnums!:
-xref:loft/list-of-tables.adoc[leveloffset=+1]
+* include:bibliography.adoc[leveloffset=+1]
 
 :!antora_mapping:

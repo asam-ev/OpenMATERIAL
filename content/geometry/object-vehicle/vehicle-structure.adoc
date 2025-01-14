@@ -353,9 +353,11 @@ image::Grp_Door_Top.svg[, 600]
 This group contains a hitch at the front of the vehicle. It exists on some cars
 and on most trailers.
 
+[#fig-Hitch-Front]
 .Grp_Hitch_Front
 image::Grp_Hitch_Front.svg[,600]
 
+[#tab-Grp-Hitch-Front]
 .Grp_Hitch_Front
 [%header, cols="20, 80"]
 |===
@@ -382,9 +384,11 @@ This group defines the contact point to attach another vehicle.
 During simulation a vehicle's `Grp_Hitch_Rear_Contact_Point` and another
 vehicle's `Grp_Hitch_Front_Contact_Point` are placed at the same position.
 
+[#fig-Hitch-Front-Contact-Point]
 .Grp_Hitch_Front_Contact_Point
 image::Grp_Hitch_Front_Contact_Point.svg[,600]
 
+[#tab-Hitch-Front-Contact-Point]
 .Grp_Hitch_Front_Contact_Point
 [%header, cols="20, 80"]
 |===
@@ -410,9 +414,11 @@ image::Grp_Hitch_Front_Contact_Point.svg[,600]
 This group contains a hitch on the rear of the vehicle. It exists on cars and
 on some trailers for multi-trailer setups.
 
+[#fig-Hitch-Rear]
 .Grp_Hitch_Rear
 image::Grp_Hitch_Rear.svg[,600]
 
+[#tab-Hitch-Rear]
 .Grp_Hitch_Rear
 [%header, cols="20, 80"]
 |===
@@ -439,9 +445,11 @@ This group defines the contact point to attach another vehicle.
 During simulation a vehicle's `Grp_Hitch_Rear_Contact_Point` and another
 vehicle's `Grp_Hitch_Front_Contact_Point` are placed at the same position.
 
+[#fig-Hitch-Rear-Contact-Point]
 .Grp_Hitch_Rear_Contact_Point
 image::Grp_Hitch_Rear_Contact_Point.svg[,600]
 
+[#tab-Hitch-Rear-Contact-Point]
 .Grp_Hitch_Rear_Contact_Point
 [%header, cols="20, 80"]
 |===
