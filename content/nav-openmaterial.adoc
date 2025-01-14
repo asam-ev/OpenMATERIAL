@@ -35,6 +35,6 @@ include::material/material-brdf-schema.adoc[leveloffset=+2]
 
 :sectnums!:
 [bibliography]
-* include:bibliography.adoc[leveloffset=+1]
+include::bibliography.adoc[leveloffset=+1]
 
 :!antora_mapping:
