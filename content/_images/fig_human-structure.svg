@@ -94,7 +94,7 @@
                 <path d="M0,0L49.312,468.154" style="fill:none;stroke:black;stroke-width:4.58px;stroke-linejoin:miter;stroke-miterlimit:8;"/>
             </g>
             <path d="M2274.5,1201.5L2297.06,1680.13" style="fill:none;stroke:black;stroke-width:4.58px;stroke-linejoin:miter;stroke-miterlimit:8;"/>
-            <g transform="matrix(1,-3.11546e-06,-3.23953e-06,0.885402,-78.7227,111.725)">
+            <g transform="matrix(0.98869,-3.08023e-06,-3.20289e-06,0.875388,-52.9975,123.756)">
                 <path d="M2274.5,1201.5L2274.53,2143.33" style="fill:none;stroke:black;stroke-width:4.58px;stroke-linejoin:miter;stroke-miterlimit:8;"/>
             </g>
             <g transform="matrix(-1,0,0,1,2060.3,1653.5)">
@@ -112,6 +112,9 @@
             <path d="M2053.5,1647C2053.5,1643.41 2056.41,1640.5 2060,1640.5C2063.59,1640.5 2066.5,1643.41 2066.5,1647C2066.5,1650.59 2063.59,1653.5 2060,1653.5C2056.41,1653.5 2053.5,1650.59 2053.5,1647Z" style="stroke:black;stroke-width:4.58px;stroke-linejoin:miter;stroke-miterlimit:8;"/>
             <path d="M2290.5,1686C2290.5,1682.41 2293.41,1679.5 2297,1679.5C2300.59,1679.5 2303.5,1682.41 2303.5,1686C2303.5,1689.59 2300.59,1692.5 2297,1692.5C2293.41,1692.5 2290.5,1689.59 2290.5,1686Z" style="stroke:black;stroke-width:4.58px;stroke-linejoin:miter;stroke-miterlimit:8;"/>
             <path d="M2028.5,2044C2028.5,2040.41 2031.41,2037.5 2035,2037.5C2038.59,2037.5 2041.5,2040.41 2041.5,2044C2041.5,2047.59 2038.59,2050.5 2035,2050.5C2031.41,2050.5 2028.5,2047.59 2028.5,2044Z" style="stroke:black;stroke-width:4.58px;stroke-linejoin:miter;stroke-miterlimit:8;"/>
+            <g transform="matrix(1,0,0,1,160.777,-41.8132)">
+                <path d="M2028.5,2044C2028.5,2040.41 2031.41,2037.5 2035,2037.5C2038.59,2037.5 2041.5,2040.41 2041.5,2044C2041.5,2047.59 2038.59,2050.5 2035,2050.5C2031.41,2050.5 2028.5,2047.59 2028.5,2044Z" style="stroke:black;stroke-width:4.58px;stroke-linejoin:miter;stroke-miterlimit:8;"/>
+            </g>
             <path d="M2309.5,2101C2309.5,2097.41 2312.41,2094.5 2316,2094.5C2319.59,2094.5 2322.5,2097.41 2322.5,2101C2322.5,2104.59 2319.59,2107.5 2316,2107.5C2312.41,2107.5 2309.5,2104.59 2309.5,2101Z" style="stroke:black;stroke-width:4.58px;stroke-linejoin:miter;stroke-miterlimit:8;"/>
             <g transform="matrix(1,0,0,1,0.617442,-3.0002)">
                 <path d="M1905.5,2219C1905.5,2215.41 1908.41,2212.5 1912,2212.5C1915.59,2212.5 1918.5,2215.41 1918.5,2219C1918.5,2222.59 1915.59,2225.5 1912,2225.5C1908.41,2225.5 1905.5,2222.59 1905.5,2219Z" style="stroke:black;stroke-width:4.58px;stroke-linejoin:miter;stroke-miterlimit:8;"/>
@@ -160,14 +163,12 @@
                 <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial';font-size:30px;">Lower_Leg_Left</text>
             </g>
         </g>
-        <g transform="matrix(1,0,0,1,168.407,236.842)">
+        <g transform="matrix(1,0,0,1,131.073,328.554)">
             <g transform="matrix(0.808297,0,0,0.641026,432.651,664.824)">
                 <rect x="2168.5" y="1813.5" width="280" height="78" style="fill:white;stroke:black;stroke-width:3.44px;"/>
             </g>
             <g transform="matrix(1,0,0,1,2199.93,1860.26)">
                 <g>
-                    <g transform="matrix(30,0,0,30,83.3496,0)">
-                    </g>
                     <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial';font-size:30px;">Full_F</text>
                     <g transform="matrix(1,0,0,1,80.024,0)">
                         <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial';font-size:30px;">oot_Left</text>
@@ -175,14 +176,12 @@
                 </g>
             </g>
         </g>
-        <g transform="matrix(1,0,0,1,-34.6571,-102.561)">
+        <g transform="matrix(1,0,0,1,24.5908,-118.793)">
             <g transform="matrix(0.30927,0,0,0.641026,1514.79,664.824)">
                 <rect x="2168.5" y="1813.5" width="280" height="78" style="fill:white;stroke:black;stroke-width:5.17px;"/>
             </g>
             <g transform="matrix(1,0,0,1,2199.93,1860.26)">
                 <g>
-                    <g transform="matrix(26.8927,0,0,26.8927,56.8055,0)">
-                    </g>
                     <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial';font-size:26.893px;">Root</text>
                 </g>
             </g>
@@ -220,19 +219,15 @@
             </g>
         </g>
         <g transform="matrix(1,0,0,1,72.7984,88.9386)">
-            <g transform="matrix(0.607331,0,0,0.641026,854.591,389.506)">
+            <g transform="matrix(0.607331,0,0,0.641026,854.591,382.201)">
                 <rect x="2133.5" y="1045.5" width="125" height="78" style="fill:white;stroke:black;stroke-width:4.16px;"/>
             </g>
-            <g transform="matrix(1,0,0,1,2163.3,1093.28)">
-                <g transform="matrix(30,0,0,30,45.0146,0)">
-                </g>
+            <g transform="matrix(1,0,0,1,2165.73,1090.16)">
                 <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial';font-size:30px;">Hip</text>
             </g>
         </g>
-        <g transform="matrix(1,0,0,1,1655,70)">
-            <g transform="matrix(4.53221,0,0,4.53221,705.555,1087.54)">
-            </g>
-            <text x="703.034px" y="1087.54px" style="font-family:'ArialMT', 'Arial';font-size:4.532px;">a</text>
+        <g transform="matrix(1,0,0,1,2358.03,1157.54)">
+            <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial';font-size:4.532px;">a</text>
         </g>
         <g transform="matrix(1,0,0,1,56.0859,87.7402)">
             <g transform="matrix(0.789222,0,0,0.641026,462.331,321.103)">
@@ -242,14 +237,14 @@
                 <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial';font-size:30px;">Lower_Spine</text>
             </g>
         </g>
-        <g transform="matrix(1,0,0,1,60.7831,934.415)">
-            <g transform="matrix(1,0,0,1,2040.03,1296.7)">
+        <g transform="matrix(1,0,0,1,59.9715,944.966)">
+            <g transform="matrix(1,0,0,1,2083.33,1299.53)">
                 <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:55px;fill:rgb(0,100,150);">x</text>
             </g>
-            <g transform="matrix(1,0,0,1,2171.61,1234.93)">
+            <g transform="matrix(1,0,0,1,2181.58,1218.31)">
                 <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:55px;fill:rgb(0,100,150);">O</text>
             </g>
-            <g transform="matrix(1,0,0,1,2336.75,1246.45)">
+            <g transform="matrix(1,0,0,1,2338.18,1185.56)">
                 <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:55px;fill:rgb(0,100,150);">y</text>
             </g>
             <g transform="matrix(1,0,0,1,2212.53,1025.09)">
@@ -263,7 +258,7 @@
                     </g>
                 </g>
             </g>
-            <g transform="matrix(1,-8.872e-22,1.45321e-21,0.999998,2041.3,999.981)">
+            <g transform="matrix(0.929703,-0.173208,0.183152,0.983082,2019.19,1029.01)">
                 <g id="arrow-blue1" serif:id="arrow blue">
                     <g>
                         <path d="M282.369,181.235L309.174,201.397L276.961,210.744L282.369,181.235Z" style="fill:rgb(0,100,150);"/>
@@ -271,7 +266,7 @@
                     </g>
                 </g>
             </g>
-            <g transform="matrix(1,-4.9255e-07,5.732e-08,1,2041.3,999.975)">
+            <g transform="matrix(0.80504,-0.309747,0.359096,0.933301,2010.46,1054.86)">
                 <g id="arrow-blue2" serif:id="arrow blue">
                     <g>
                         <path d="M46.17,249.81L12.676,251.586L31.352,223.725L46.17,249.81Z" style="fill:rgb(0,100,150);"/>
@@ -279,6 +274,9 @@
                     </g>
                 </g>
             </g>
+        </g>
+        <g transform="matrix(0.864178,0,0,0.881217,495.766,-700.3)">
+            <path d="M2028.5,2044C2028.5,2040.41 2031.41,2037.5 2035,2037.5C2038.59,2037.5 2041.5,2040.41 2041.5,2044C2041.5,2047.59 2038.59,2050.5 2035,2050.5C2031.41,2050.5 2028.5,2047.59 2028.5,2044Z" style="stroke:black;stroke-width:4.58px;stroke-linejoin:miter;stroke-miterlimit:8;"/>
         </g>
     </g>
 </svg>
