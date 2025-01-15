@@ -30,17 +30,13 @@ Standardization efforts have been made for scenarios and road data using ASAM Op
 
 === The two main chapters of {THIS_STANDARD}
 
-{THIS_STANDARD} is divided into distinct yet complementary chapters: https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/geometry/geometry-index.html[Geometry] and https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/material/material-index.html[Material].
-Each chapter addresses specific aspects of the standard, enabling users to adopt and implement the parts most relevant to their needs.
+{THIS_STANDARD} is divided into distinct yet complementary chapters enabling a modular approach to implementation. Key to this is the distinction between Material and Geometry. Based on specific use-cases, users of {THIS_STANDARD} can implement the standard for one or both chapters.  At least one of the two chapters shall be implemented to conform with the standard.
 
-* *Material*: This chapter includes definitions and file formats for storing and exchanging _material properties_. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values.
-* *Geometry*: This chapter contains structures for different object classes. These structures define uniform node structure, naming scheme and coordinate systems to enable exchange, common integration and animation of _3D models_.
+* *Material*: This chapter includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values. Tools or systems focusing on material properties can implement support for the Material chapter. For example: “This tool supports {THIS_STANDARD}: Material”.
 
-{THIS_STANDARD} supports a modular approach to compliance. Based on their individual use-cases, users of {THIS_STANDARD} can decide if they want to implement the standard for _3D models_, materials, or both:
+* *Geometry*: This chapter contains structures for different object classes. These structures define uniform node structure, naming scheme and coordinate systems to enable exchange, common integration and animation of 3D models. Tools or systems working primarily with geometric data, such as 3D models or spatial structures, can implement support for the Geometry chapter. For example: “This tool supports {THIS_STANDARD}: Geometry”.
 
-* https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/geometry/geometry-index.html[*Geometry Chapter] Compliance*: Users who primarily deal with geometric data, such as _3D models_, shapes, or spatial structures, can claim compliance with the Geometry chapter independently.
-* https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/material/material-index.html[*Material Chapter] Compliance*: Users who focus on _material properties_ can claim compliance with the material chapter alone.
-* *Full Compliance*: For a full exchange and use of simulation-ready _3D assets_ however, both parts must be supported. Users who implement and support both _material_ and geometric data according to this standard can claim full compliance with {THIS_STANDARD}.
+* *Full Compliance*: For a full exchange of simulation-ready 3D assets however, both chapters must be supported. Systems or tools providing full support for both material and geometric data can be described as follows: “This tool supports {THIS_STANDARD}”.
 
 A list of use cases examples can be found in the https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/use-cases/use-cases.html[Use Cases] chapter, each highlighting its relevance to the material chapter, the geometry chapter, or both.
 
