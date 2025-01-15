@@ -21,7 +21,7 @@ The bones follow a specific bone orientation: The y-axis of a bone always follow
 <<fig-human-structure>> shows the orientation of the coordinate system of a human skeleton.
 
 [#fig-human-structure]
-.fig_human-structure
+.Human bone structure
 image::fig_human-structure.svg[,400]
 
 Bones with a local transform are indicated in the structure by a (T).
