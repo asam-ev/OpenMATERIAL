@@ -5,7 +5,7 @@
     "definitions": {
         "Axle": {
             "type": "object",
-            "description": "The definition of vehicle axle. based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Axle.html[OpenSCENARIO vehicle axle definition].",
+            "description": "The definition of vehicle axle based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Axle.html[OpenSCENARIO vehicle axle definition].",
             "properties": {
                 "maxSteering": {
                     "type": "number",
