@@ -232,7 +232,7 @@
                 },
                 "meshCount": {
                     "type": "integer",
-                    "description": "The total number of meshes in the 3D geometry. A model geometry typically consists of several sub-meshes."
+                    "description": "The total number of meshes in the 3D model file. A model geometry typically consists of several sub-meshes."
                 },
                 "textureResolutions": {
                     "type": "array",
