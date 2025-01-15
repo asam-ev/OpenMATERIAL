@@ -21,6 +21,7 @@ legend
                 |_ [[../geometry/object-human/human-index.html#_hand_left_t Hand_Left]] (T)
                   |_ [[../geometry/object-human/human-index.html#_full_lingers_left_t Full_Fingers_Left]] (T)
                   |_ [[../geometry/object-human/human-index.html#_full_thumb_left_t Full_Thumb_Left]] (T)
+          |_ [[../geometry/object-human/human-index.html#_shoulder_right_t Shoulder_Right]] (T)
             |_ [[../geometry/object-human/human-index.html#_upper_arm_right_t Upper_Arm_Right]] (T)
               |_ [[../geometry/object-human/human-index.html#_lower_arm_right_t Lower_Arm_Right]] (T)
                 |_ [[../geometry/object-human/human-index.html#_hand_right_t Hand_Right]] (T)
@@ -68,7 +69,7 @@ This group is used as a parent for all following nodes. It can be used to place 
 == Armature_<Name> 
 
 This object or group represents the armature (skeleton) of the object and contains all bones. It is needed to ensure that the bone hierarchy can be exported and imported correctly.
-Depending on the 3D software, the armature is a separate object type (for example in Blender) or represented by a group (for example in Maya).
+Depending on the 3D software, the armature is a separate _object type_ (for example in Blender) or represented by a group (for example in Maya).
 The postfix "_<Name>" is optional, but is recommended to use, if you prepare multiple human assets in one file of an 3D application to keep the names unique and within the naming convention.
 
 
