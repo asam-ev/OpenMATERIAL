@@ -1357,6 +1357,7 @@ It is a child node of the corresponding mirror joint group.
 `<blindspot_mirror_view_idx>` denotes the index of blindspot mirrors. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
 
+[#fig-mirror-blindspot-view]
 .Grp_Mirror_Blindspot_View_<blindspot_mirror_view_idx>
 image::Grp_Mirror_Blindspot_View.svg[,600]
 
