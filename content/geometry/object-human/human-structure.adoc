@@ -21,6 +21,7 @@ legend
                 |_ [[../geometry/object-human/human-index.html#_hand_left_t Hand_Left]] (T)
                   |_ [[../geometry/object-human/human-index.html#_full_lingers_left_t Full_Fingers_Left]] (T)
                   |_ [[../geometry/object-human/human-index.html#_full_thumb_left_t Full_Thumb_Left]] (T)
+          |_ [[../geometry/object-human/human-index.html#_shoulder_right_t Shoulder_Right]] (T)
             |_ [[../geometry/object-human/human-index.html#_upper_arm_right_t Upper_Arm_Right]] (T)
               |_ [[../geometry/object-human/human-index.html#_lower_arm_right_t Lower_Arm_Right]] (T)
                 |_ [[../geometry/object-human/human-index.html#_hand_right_t Hand_Right]] (T)
