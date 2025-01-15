@@ -68,4 +68,6 @@ The ASAM OpenX standards strive to provide comprehensive, realistic, and most im
   As ASAM OSI transfers the data between tools and simulation models, the root path, that a relative model reference path is relative to, has to be given or known to all tools and models in the tool chain.
   This can be done with tool settings, configs or model parameters, for example, an FMI parameter.
 
+The transformation of reference frames between these ASAM standards is described in the xref:../geometry/general.adoc#_local_coordinate_system[General section].
+
   

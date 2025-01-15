@@ -97,6 +97,7 @@ The defined look-up tables include:
 * xref:material/material-emp-schema.adoc[Electromagnetic properties]
 * xref:material/material-optical-schema.adoc[Optical properties]
 * xref:material/material-brdf-schema.adoc[Bidirectional reflectance distribution functions (BRDFs)]
+* xref:material/material-reflectance-schema.adoc[Reflectance table]
 
 Examples for _material property_ files and look-up table files are provided in the https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/[examples folder] of the repository.
 
