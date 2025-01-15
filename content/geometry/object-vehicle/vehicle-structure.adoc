@@ -1119,6 +1119,7 @@ This group contains all parts of a reverse light on the vehicle's left side.
 `<reverse_left_idx>` denotes the index of reverse lights on the left side. The index entries
 are sorted from right to left in positive y-direction, starting with 0.
 
+[#fig-light-reverse-left]
 .Grp_Light_Reverse_Left_<reverse_left_idx>
 image::Grp_Light_Tail_Left.svg[,400]
 
