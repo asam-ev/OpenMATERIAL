@@ -164,7 +164,7 @@
                         },
                         "axles": {
                             "type": "object",
-                            "description": "A set of the axles of a vehicle. A vehicle must have a front axle and a rear axle. It might have additional axles. The information about the rear axle is needed to transform the origin of the model to coordinate systems of other ASAM standards, for example the ASAM OpenSCENARIO XML vehicle coordinate systems or the ASAM OSI host vehicle coordinate system.",
+                            "description": "A set of the axles of a vehicle. A vehicle must have a front axle and a rear axle. It might have additional axles. The information about the rear axle is needed to transform the origin of the model to coordinate systems of other ASAM standards, for example the ASAM OpenSCENARIO XML vehicle coordinate system or the ASAM OSI host vehicle coordinate system.",
                             "properties": {
                                 "frontAxle": {
                                     "$ref": "#/definitions/Axle"
