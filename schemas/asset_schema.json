@@ -234,7 +234,7 @@
                 },
                 "meshCount": {
                     "type": "integer",
-                    "description": "The total number of meshes in the 3D model file. A model geometry typically consists of several sub-meshes. The export from a 3D modeling application might change the mesh count, for example, due to the assignment of multiple materials per mesh. This property represents the number of meshes in the actual 3D model file after the export."
+                    "description": "The total number of meshes in the 3D model file. A model geometry typically consists of several sub-meshes."
                 },
                 "textureResolutions": {
                     "type": "array",
