@@ -64,7 +64,7 @@ image::Grp_Terrain.svg[,600]
 
 An environment object consists of buildings, vegetation, and any other (stationary) object of the surrounding. An environment object causes a local elevation or other additions in the terrain. 
 
-[#Grp_Environment_Objects]
+[#fig-environment-objects]
 .Grp_Environment_Objects
 image::Grp_Environment_Objects.svg[,600]
 
