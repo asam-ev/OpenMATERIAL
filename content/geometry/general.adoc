@@ -107,19 +107,19 @@ The following naming conventions apply to {THIS_STANDARD} geometry files:
 
 Every node structure for a 3D object uses predefined keywords to allow a consistent naming convention and parsing.
 Some keywords are already defined by the standard and more could follow in future updates.
-The user is free to add more keywords for himself, if they are needed.
+The user is free to add more keywords for themself, if they are needed.
 
-* All components shall be named according to the capital Snake_Case definition, starting with uppercase letters.
+* All components shall be named according to capital Snake_Case definition, starting with uppercase letters.
 * Group nodes (also known as empty nodes or parent nodes) shall have "Grp_" as a prefix.
-* Iterators are added as suffixes.
-  In the documentation, iterator names are written in pointy braces. Example: <type_idx>.
-  In the node names itself, the iterator names are replaced by integer values starting from 0.
+* Iterators shall be added as suffixes.
+  In the documentation, iterator names are written in angled brackets. Example: <type_idx>.
+  In the node names itself, the iterator names are replaced by integer values, starting from 0.
 * Sequence of suffixes: 1: Iterator 2: Type Enumerator 3: Subtype Enumerator.
 * The predefined keywords shall be used for the corresponding asset parts and can be found in the according subchapters.
 
 === Metadata
 
-* Naming of fields shall be according to lowerCamelCase definition, starting with lower letters.
+* Naming of fields shall be according to CamelCase definition, starting with lowercase letters.
 * Naming of custom properties shall follow the predefined keys.
 * Objects, arrays (lists) and enums shall follow the .json notation.
 
@@ -141,9 +141,9 @@ This is an example of a _3D model_ file in glTF format with an accompanying _3D 
 * Meshes shall not contain problematic characteristics such as doubled, isolated, coincident, coplanar, degenerate, or primitives.
 * Meshes shall have outside facing normals. Soft or hard edges shall be set correctly.
 * Meshes shall not be empty, nor contain multiple LODs.
-* Meshes shall be triangulated and potential normal maps shall match that triangulation.
-* Rendering materials shall support PBR workflows and there shall not be geometry without assigned material.
-* Additional requirements apply, when {THIS_STANDARD} assignment textures are used:
+* Meshes shall be triangulated. Potential normal maps shall match that triangulation.
+* Rendering materials shall support physically based rendering (PBR) workflows and there shall not be geometry without assigned material.
+* Additional requirements apply when {THIS_STANDARD} assignment textures are used:
 ** UV channel 1 shall be used for assignment textures.
 ** UV Islands shall have margins inbetween, so that assignment texture interpolation errors are avoided.
 ** There shall not be any geometry without UV coverage.
@@ -154,12 +154,12 @@ This is an example of a _3D model_ file in glTF format with an accompanying _3D 
 * Elongated primitives should be avoided as they fit badly in acceleration structures.
 * Alpha-textured meshes should be optimized to minimize the amount of alpha testing.
 * Meshes should not have holes or gaps.
-* Meshes should have clean edgeflow.
+* Meshes should have a clean edgeflow.
 * Usage of N-Gons is not recommended.
 * Faces should be one-sided.
-* The lowest number of polygons possible should be strived for while still retaining the object’s shape.
+* An object's shape should have the lowest possible number of polygons.
 * Texel density should be homogeneous and as low as possible.
 * UV stretching should be minimized.
-* Naming of files, nodes, meshes and materials should be meaningful.
+* Naming of files, nodes, meshes, and materials should be meaningful.
 * Usage of multiple PBR maps is encouraged (albedo, roughness, metallic, normals).
 * Smaller objects should have one _material_ per object (for example, baked traffic cone), while larger objects should contain multiple seamless repeatable materials (for example, brick building).
