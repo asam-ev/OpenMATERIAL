@@ -12,7 +12,7 @@ The origin of the Root node is the center of the vehicle's bounding box projecte
 
 Separating vehicle elements into different groups allows for the movement or animation of parts, such as wheels and doors, positioning external light sources in a simulation, and many other use cases.
 Group nodes are empty nodes representing the coordinate origin of the contained geometry.
-Meshes are to be placed in the corresponding group node.
+Meshes should be placed in the corresponding group node.
 Not all nodes need to be present in every vehicle _3D model_, as not all vehicles have parts that fit all groups.
 Additional group nodes may be added to support additional use cases, but they shall be integrated into the general structure of external or internal and static or dynamic groups and follow the naming convention.
 
