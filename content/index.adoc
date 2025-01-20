@@ -18,7 +18,7 @@ This document is the copyrighted property of ASAM e.V.
 In alteration to the regular https://www.asam.net/license[license terms], ASAM allows unrestricted distribution of this standard. §2 (1) of ASAM's regular https://www.asam.net/license[license terms] is therefore substituted by the following clause: "The licensor grants everyone a basic, non-exclusive and unlimited license to use the standard {THIS_STANDARD}".
 ====
 
-ASAM OpenMATERIAL is a registered trade mark of ASAM e.V.
+ASAM OpenMATERIAL 3D is a registered trademark of ASAM e.V.
 
 //
 // DO NOT CHANGE!!!
