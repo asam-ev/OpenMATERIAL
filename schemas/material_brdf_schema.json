@@ -34,7 +34,7 @@
                     "type": "array",
                     "description": "Indicates copyright details, including the year and copyright holder (for example, '© 2024 ACME Inc.').",
                     "items": {
-                "type": "string"
+                        "type": "string"
                     },
                     "minItems": 1
                 },
@@ -44,7 +44,7 @@
                 },
                 "authors": {
                     "type": "array",
-                    "description": "Lists the author(s) of the mapping table as a name, email, or company. Multiple authors should be comma-separated.",
+                    "description": "Lists the author(s) of the material as a name, email, or company. Multiple authors should be comma-separated.",
                     "items": {
                         "type": "string"
                     },
