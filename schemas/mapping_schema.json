@@ -42,9 +42,13 @@
                     "type": "string",
                     "description": "Describes the license for mapping table distribution. Use an SPDX identifier for open-source licenses (for example, 'MIT'), or provide a URL or filename for proprietary licenses."
                 },
-                "author": {
-                    "type": "string",
-                    "description": "Lists the author(s) of the mapping table as a name, email, or company. Multiple authors should be comma-separated."
+                 "authors": {
+                    "type": "array",
+                    "description": "Lists the author(s) of the mapping table as a name, email, or company. Multiple authors should be comma-separated.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1
                 },
                 "creationDate": {
                     "type": "string",
@@ -57,9 +61,9 @@
                 "uuid",
                 "mappingVersion",
                 "openMaterialVersion",
-                "copyright",
+                "copyrights",
                 "license",
-                "author"
+                "authors"
             ]
         },
         "materialMapping": {
