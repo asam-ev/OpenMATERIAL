@@ -4,8 +4,8 @@
 :imagesdir: {home-path}/_images
 :includedir: {home-path}/_images
 
-The other object class comprises all objects not yet specified by OpenMATERIAL 3D.
-Therfore, it includes all objects that aren't specified by other object classes.
+The other object class comprises all objects not yet specified by {THIS_STANDARD}.
+Therefore, it includes all objects that are not specified by other object classes.
 Definitions specified in other object classes overwrite the specifications in other.
 
 For objects of class other, only the presence of the Grp_Root node is mandatory.
