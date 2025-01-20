@@ -18,6 +18,6 @@ human and the vehicle are represented by two different objects. Examples are
 bicycles, motorbikes, or scooters, where the human and the vehicle are
 perceived as separate entities.
 
-The other object class comprises all objects not yet specified by OpenMATERIAL 3D.
+The other object class comprises all objects not yet specified by {THIS_STANDARD}.
 It includes all objects that aren't specified by other object classes.
 Definitions specified in other object classes overwrite the specifications in other.
