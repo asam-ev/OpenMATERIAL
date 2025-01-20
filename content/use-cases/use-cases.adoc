@@ -24,7 +24,6 @@ This clear categorization helps users understand the practical applications of t
 [cols="1,5",caption='Use case 1: ']
 .Creating _3D assets_
 |===
-|*Type of use case*         |End user use cases
 |*Description*              |As a content creator, I want to create _3D assets_ for perception sensor simulation in a standardized format. The assets shall be linked to material properties.
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |OGC CDB
@@ -37,7 +36,6 @@ This clear categorization helps users understand the practical applications of t
 [cols="1,5",caption='Use case 2: ']
 .Creating material data
 |===
-|*Type of use case*         |End user use cases
 |*Description*              |As a measurement engineer, I want to create material data for use in 3D assets creation. The data shall consist of physical or measured properties of materials that can be assigned to 3D meshes.
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |
@@ -50,7 +48,6 @@ This clear categorization helps users understand the practical applications of t
 [cols="1,5",caption='Use case 3: ']
 .Validating material properties and 3D geometries
 |===
-|*Type of use case*         |Technical use case
 |*Description*              |As a measurement engineer, I want to validate 3D geometries and material properties. This validation is performed as a comparison of the data, that is, material properties and defined points in the 3D geometry, against measurements from the real world.
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |
@@ -63,7 +60,6 @@ This clear categorization helps users understand the practical applications of t
 [cols="1,5",caption='Use case 4: ']
 .Title	Distributing and reusing material data and _3D assets_
 |===
-|*Type of use case*         |Technical use case
 |*Description*              |As a content creation company, we want to distribute material data and _3D assets_ under copyright and license considerations.
 To distribute material data and 3D assets efficiently, it shall be possible to reuse the data and assets in different simulation platforms and sensor models with varying sensor technologies, for example, wavelengths.
 |*Material and 3D Structure*|Materials and 3D Structure
@@ -77,7 +73,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 [cols="1,5",caption='Use case 5: ']
 .Importing _3D assets_ linked to material properties into shared sensor simulation models (FMU)
 |===
-|*Type of use case*         |Technical use case
 |*Description*              |As a sensor model developer, I want to import _3D assets_ that are packaged as FMUs into sensor models.
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |FMI, ASAM OSI (OSMP), ASAM OpenLABEL, ASAM OpenDRIVE, ASAM OpenSCENARIO
@@ -90,7 +85,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 [cols="1,5",caption='Use case 6: ']
 .Importing _3D assets_ linked to material properties into simulation platform
 |===
-|*Type of use case*         |Technical use case
 |*Description*              |As a simulation platform developer, I want to import _3D assets_ into a simulation platform.
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |
@@ -103,7 +97,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 [cols="1,5",caption='Use case 7: ']
 .Retrofitting or changing material properties independent of _3D assets_
 |===
-|*Type of use case*         |Technical use case
 |*Description*              |As a simulation platform developer, I want to be able to add or change material properties independently of _3D assets_ geometries in a simulation platform.
 |*Material and 3D Structure*|Materials
 |*Influencing standards*    |ASAM OpenLABEL
@@ -116,7 +109,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 [cols="1,5",caption='Use case 8: ']
 .Importing _3D assets_ with included material properties into simulation platform
 |===
-|*Type of use case*         |Technical use case
 |*Description*              |As a simulation platform developer, I want to import _3D assets_ with included material properties into a simulation platform.
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |
@@ -129,7 +121,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 [cols="1,5",caption='Use case 9: ']
 .Moving object parts in the environment simulation
 |===
-|*Type of use case*         |Technical use case
 |*Description*              |As a simulation platform or sensor model developer, I want to move objects as well as individual parts of the objects during simulation runtime. These can be parts of a vehicle, for example, wheels and doors or the skeleton bones of a pedestrian. One option to manipulate the imported _3D assets_ during simulation runtime is using ASAM OSI. In the https://opensimulationinterface.github.io/osi-antora-generator/asamosi/V3.6.0/gen/structosi3_1_1GroundTruth.html[osi3::GroundTruth] message, information about moving and stationary objects is provided from the _scenario_ engine to the sensor model. This entails object positions, orientations, velocities and son on for every simulation time step, but also a so-called model reference. This reference is the path to a 3D asset associated with the object or the stationary environment. Using the pose information together with the 3D mesh data, a _3D environment_ is constructed and updated for every simulation time step. Further attributes, such as https://opensimulationinterface.github.io/osi-antora-generator/asamosi/V3.6.0/gen/structosi3_1_1MovingObject_1_1VehicleAttributes_1_1WheelData.html[wheel positions] for vehicles or https://opensimulationinterface.github.io/osi-antora-generator/asamosi/V3.6.0/gen/structosi3_1_1MovingObject_1_1PedestrianAttributes_1_1Bone.html[bone poses] for pedestrians, enable a more refined movement of traffic participants in the _3D environment_.
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |ASAM OSI
@@ -142,7 +133,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 [cols="1,5",caption='Use case 10: ']
 .Simulating energy or signal propagation with _3D assets_ linked to material properties
 |===
-|*Type of use case*         |Technical use case
 |*Description*              |As a simulation platform or sensor model developer, I want to simulate the energy or signal propagation using imported _3D assets_ with linked material properties. This is, for example, done with ray tracing. Rays are launched in a virtual 3D scene to simulate the propagation of light beams, radio waves, or ultrasonic waves. The interaction of the rays with the surfaces of the objects in the _3D environment_ depends on the material properties of these surfaces. These properties are assigned to the 3D geometries of the objects and imported from a material database.
 The simulation shall be able to cope with different real-time requirements, for example, SiL, HiL, open-loop, closed-loop and so on.
 |*Material and 3D Structure*|Materials and 3D Structure
@@ -156,7 +146,6 @@ The simulation shall be able to cope with different real-time requirements, for 
 [cols="1,5",caption='Use case 11: ']
 .Using sensor simulation to train perception algorithms
 |===
-|*Type of use case*         |End user use cases
 |*Description*              |As a perception algorithm developer, I want to use simulated environments for model training and testing, as real-world information collection is too expensive and inconvenient.
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |ASAM OSI, ASAM OpenSCENARIO, ASAM OpenDRIVE
