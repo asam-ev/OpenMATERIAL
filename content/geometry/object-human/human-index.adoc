@@ -2,4 +2,3 @@
 
 include::human-general.adoc[leveloffset=+1]
 include::human-structure.adoc[leveloffset=+1]
-include::human-notes.adoc[leveloffset=+1]
