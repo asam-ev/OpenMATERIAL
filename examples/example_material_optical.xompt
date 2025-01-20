@@ -6,12 +6,12 @@
         "materialVersion": "1.0.0",
         "creationDate": "20241024T101728Z",
         "openMaterialVersion": "1.0.0",
-        "copyright": "(C) 2023-2024, Example Company",
+        "copyrights": ["(C) 2023-2024 Example Company"],
         "license": "MPL-2.0",
-        "author": "john.doe@asam.net",
-        "source": "https://www.filmetrics.com/refractive-index-database/Al/Aluminium"
+        "authors": ["john.doe@asam.net"],
+        "sources": "https://www.filmetrics.com/refractive-index-database/Al/Aluminium"
     },
-    "opticalProperties":[
+    "opticalProperties": [
         [1.8368e-07, 297, 2.0700, 0.102],
         [1.8505e-07, 297, 2.0850, 0.1044],
         [1.8644e-07, 297, 2.1033, 0.1062],

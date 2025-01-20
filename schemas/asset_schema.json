@@ -4,43 +4,43 @@
     "description": "ASAM OpenMATERIAL 3D Geometry Asset file definition.",
     "definitions": {
         "Axle": {
-        "type": "object",
-        "description": "The definition of vehicle axle. based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Axle.html[OpenSCENARIO vehicle axle definition].",
-        "properties": {
-            "maxSteering": {
-                "type": "number",
-                "description": "Maximum steering angle which can be performed by the wheels on this axle. Unit: rad; Range: [0;PI], symmetrical.",
-                "minimum": 0,
-                "maximum": 3.14159
+            "type": "object",
+            "description": "The definition of vehicle axle based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Axle.html[OpenSCENARIO vehicle axle definition].",
+            "properties": {
+                "maxSteering": {
+                    "type": "number",
+                    "description": "Maximum steering angle which can be performed by the wheels on this axle. Unit: rad; Range: [0;PI], symmetrical.",
+                    "minimum": 0,
+                    "maximum": 3.14159
+                },
+                "wheelDiameter": {
+                    "type": "number",
+                    "description": "Diameter of the wheels on this axle. Unit: meter; Range: ]0..inf[.",
+                    "exclusiveMinimum": 0
+                },
+                "trackWidth": {
+                    "type": "number",
+                    "description": "Distance of the wheels center lines at zero steering. Unit: meter; Range: [0..inf[.",
+                    "minimum": 0
+                },
+                "positionX": {
+                    "type": "number",
+                    "description": "Longitudinal position of the axle with respect to the vehicles center of the bounding box projected to the ground. Unit: meter; Range: [0..inf[."
+                },
+                "positionZ": {
+                    "type": "number",
+                    "description": "Z-position of the axle with respect to the vehicles center of the bounding box projected to the ground. Usually this is half of wheel diameter. Unit:meter; Range:[0..inf[.",
+                    "minimum": 0
+                }
             },
-            "wheelDiameter": {
-                "type": "number",
-                "description": "Diameter of the wheels on this axle. Unit: meter; Range: ]0..inf[.",
-                "exclusiveMinimum": 0
-            },
-            "trackWidth": {
-                "type": "number",
-                "description": "Distance of the wheels center lines at zero steering. Unit: meter; Range: [0..inf[.",
-                "minimum": 0
-            },
-            "positionX": {
-                "type": "number",
-                "description": "Longitudinal position of the axle with respect to the vehicles center of the bounding box projected to the ground. Unit: meter; Range: [0..inf[."
-          },
-            "positionZ": {
-                "type": "number",
-                "description": "Z-position of the axle with respect to the vehicles center of the bounding box projected to the ground. Usually this is half of wheel diameter. Unit:meter; Range:[0..inf[.",
-                "minimum": 0
-          }
-        },
-        "required": [
-            "maxSteering",
-            "wheelDiameter",
-            "trackWidth",
-            "positionX",
-            "positionZ"  
-        ]
-      }
+            "required": [
+                "maxSteering",
+                "wheelDiameter",
+                "trackWidth",
+                "positionX",
+                "positionZ"
+            ]
+        }
     },
     "properties": {
         "metadata": {
@@ -62,38 +62,46 @@
                 },
                 "assetVersion": {
                     "type": "string",
-                    "description": "The version number of the asset, following semantic versioning (e.g., '1.0.0').",
+                    "description": "The version number of the asset, following semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
                 "openMaterialVersion": {
                     "type": "string",
-                    "description": "The version of the OpenMATERIAL 3D specification used, adhering to semantic versioning (e.g., '1.0.0').",
+                    "description": "The version of the ASAM OpenMATERIAL 3D specification used, adhering to semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
-                "copyright": {
-                    "type": "string",
-                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.')."
+                "copyrights": {
+                    "type": "array",
+                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.').",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1
                 },
                 "license": {
                     "type": "string",
-                    "description": "Describes the license for asset distribution. Use an SPDX identifier for open-source licenses (e.g., 'MIT'), or provide a URL or filename for proprietary licenses."
+                    "description": "Describes the license for asset distribution. Use an SPDX identifier for open-source licenses (for example, 'MIT'), or provide a URL or filename for proprietary licenses."
                 },
-                "author": {
-                    "type": "string",
-                    "description": "Lists the author(s) of the asset as a name, email, or company. Multiple authors should be comma-separated."
+                "authors": {
+                    "type": "array",
+                    "description": "Lists the author(s) of the asset as a name, email, or company.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1
                 },
                 "modelCreationTool": {
                     "type": "string",
-                    "description": "Specifies the software or tool (and version) used to create the 3D model (e.g., 'Blender 3.5')."
+                    "description": "Specifies the software or tool (and version) used to create the 3D model (for example, 'Blender 3.5')."
                 },
                 "creationDate": {
                     "type": "string",
-                    "description": "The date and time of asset creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (e.g., '20240703T101728Z').",
+                    "description": "The date and time of asset creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (for example, '20240703T101728Z').",
                     "pattern": "^\\d{8}T\\d{6}Z$"
                 },
                 "modelingMethod": {
                     "type": "string",
-                    "description": "Indicates how the model was created, e.g., '3D scan', 'photo-based modeling', or 'freehand design'."
+                    "description": "Indicates how the model was created, for example, '3D scan', 'photo-based modeling', or 'freehand design'."
                 },
                 "validationDescription": {
                     "type": "string",
@@ -109,7 +117,7 @@
                 },
                 "objectClass": {
                     "type": "string",
-                    "description": "Classifies the object type when 'assetType' is 'object', i.e., 'vehicle', 'human', 'environment', 'other'.",
+                    "description": "Classifies the object type when 'assetType' is 'object', meaning, 'vehicle', 'human', 'environment', 'other'.",
                     "enum": [
                         "vehicle",
                         "human",
@@ -119,20 +127,31 @@
                 },
                 "vehicleClassData": {
                     "type": "object",
-                    "description": "Vehicle specific data. This SHALL be filled if 'objectClass' is 'vehicle' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Vehicle.html[OpenSCENARIO vehicle definition].",
+                    "description": "Vehicle specific data. This shall be filled if 'objectClass' is 'vehicle' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Vehicle.html[OpenSCENARIO vehicle definition].",
                     "properties": {
                         "vehicleCategory": {
                             "type": "string",
                             "description": "Type of the vehicle.",
-                            "enum": ["car", "van", "truck", "trailer", "semitrailer", "bus", "motorbike", "bicycle", "train", "tram"]
+                            "enum": [
+                                "car",
+                                "van",
+                                "truck",
+                                "trailer",
+                                "semitrailer",
+                                "bus",
+                                "motorbike",
+                                "bicycle",
+                                "train",
+                                "tram"
+                            ]
                         },
                         "performance": {
                             "type": "object",
                             "description": "Performance values of a vehicle.",
                             "properties": {
                                 "maxSpeed": {
-                                "type": "number",
-                                "description": "Maximum speed of the vehicle. Unit: meter/second."
+                                    "type": "number",
+                                    "description": "Maximum speed of the vehicle. Unit: meter/second."
                                 },
                                 "maxAcceleration": {
                                     "type": "number",
@@ -145,41 +164,54 @@
                                     "minimum": 0
                                 }
                             },
-                            "required": ["maxSpeed", "maxAcceleration", "maxDeceleration"]
+                            "required": [
+                                "maxSpeed",
+                                "maxAcceleration",
+                                "maxDeceleration"
+                            ]
                         },
                         "axles": {
                             "type": "object",
-                            "description": "A set of the axles of a vehicle. A vehicle must have a front axle and a rear axle. It might have additional axles.",
+                            "description": "A set of the axles of a vehicle. A vehicle must have a front axle and a rear axle. It might have additional axles. The information about the rear axle is needed to transform the origin of the model to coordinate systems of other ASAM standards, for example the ASAM OpenSCENARIO XML vehicle coordinate system or the ASAM OSI host vehicle coordinate system.",
                             "properties": {
                                 "frontAxle": {
-                                    "$ref": "#/definitions/Axle",
-                                    "description": "Details about the front axle."
+                                    "$ref": "#/definitions/Axle"
                                 },
                                 "rearAxle": {
-                                    "$ref": "#/definitions/Axle",
-                                    "description": "Details about the rear axle."
+                                    "$ref": "#/definitions/Axle"
                                 },
                                 "additionalAxles": {
                                     "type": "array",
                                     "description": "An optional array of additional axles with the same properties as frontAxle and rearAxle.",
-                                    "items": {"$ref": "#/definitions/Axle"}
+                                    "items": {
+                                        "$ref": "#/definitions/Axle"
+                                    }
                                 }
                             },
-                            "required": ["frontAxle", "rearAxle"]
+                            "required": [
+                                "frontAxle",
+                                "rearAxle"
+                            ]
                         }
                     },
-                    "required": ["vehicleCategory", "performance", "axles"]
+                    "required": [
+                        "vehicleCategory",
+                        "performance",
+                        "axles"
+                    ]
                 },
                 "humanClassData": {
-                    "type" : "object",
-                    "description": "Human specific data. This SHALL be filled if 'objectClass' is 'human' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Pedestrian.html[OpenSCENARIO pedestrian definition].",
+                    "type": "object",
+                    "description": "Human specific data. This shall be filled if 'objectClass' is 'human' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Pedestrian.html[OpenSCENARIO pedestrian definition].",
                     "properties": {
                         "mass": {
                             "type": "number",
                             "description": "The mass of a human. Unit: kg."
                         }
                     },
-                    "required": ["mass"]
+                    "required": [
+                        "mass"
+                    ]
                 },
                 "animated": {
                     "type": "boolean",
@@ -187,7 +219,7 @@
                 },
                 "pbrMaterialWorkflow": {
                     "type": "string",
-                    "description": "Indicates the usage of a Physically Based Rendering (PBR) material workflow as 'metallic', 'specular' or 'none'. This only applies to the internal materials of the 3D model file, not to mapped OpenMATERIAL 3D property files.",
+                    "description": "Indicates the usage of a Physically Based Rendering (PBR) material workflow as 'metallic', 'specular' or 'none'. This only applies to the internal materials of the 3D model file, not to mapped ASAM OpenMATERIAL 3D property files.",
                     "enum": [
                         "metallic",
                         "specular",
@@ -200,11 +232,11 @@
                 },
                 "meshCount": {
                     "type": "integer",
-                    "description": "The total number of meshes in the 3D geometry. A model geometry typically consists of several sub-meshes."
+                    "description": "The total number of meshes in the 3D model file. A model geometry typically consists of several sub-meshes."
                 },
                 "textureResolutions": {
                     "type": "array",
-                    "description": "Lists all the used texture resolutions in the 3D model i.e. albedo, normal or displacement textures. Possible values are '1K', '2K', '4K'. If no textures are used in the model, add empty element ''",
+                    "description": "Lists all the used texture resolutions in the 3D model, meaning albedo, normal, or displacement textures. Possible values are '1K', '2K', '4K'. If no textures are used in the model, add empty element ''",
                     "items": {
                         "type": "string",
                         "enum": [
@@ -270,9 +302,9 @@
                 "uuid",
                 "assetVersion",
                 "openMaterialVersion",
-                "copyright",
+                "copyrights",
                 "license",
-                "author",
+                "authors",
                 "assetType",
                 "objectClass",
                 "animated",
@@ -286,12 +318,12 @@
         },
         "materialMappingUri": {
             "type": "string",
-            "description": "Relative path to a material mapping file (.xomm). In this file, material names from the 3D model file or texture color codes from textures assigned in materialTextureAssignment are linked to OpenMATERIAL 3D property files.",
+            "description": "Relative path to a material mapping file (.xomm). In this file, material names from the 3D model file or texture color codes from textures assigned in materialTextureAssignment are linked to ASAM OpenMATERIAL 3D property files.",
             "pattern": ".*\\.xomm$"
         },
         "materialTextureAssignment": {
             "type": "array",
-            "description": "Optional array containing material texture assignments. It links material names contained in the 3D model file to OpenMATERIAL 3D assignment textures. In a separate material mapping file, the 'color' values in this texture are linked to OpenMATERIAL 3D property files.",
+            "description": "Optional array containing material texture assignments. It links material names contained in the 3D model file to ASAM OpenMATERIAL 3D assignment textures. In a separate material mapping file, the 'color' values in this texture are linked to ASAM OpenMATERIAL 3D property files.",
             "items": {
                 "type": "array",
                 "items": [
@@ -301,7 +333,7 @@
                     },
                     {
                         "type": "string",
-                        "description": "File path to the OpenMATERIAL 3D assignment texture. Supported texture formats are png and jpg.",
+                        "description": "File path to the ASAM OpenMATERIAL 3D assignment texture. Supported texture formats are png and jpg.",
                         "pattern": "^(\\./|/)?([a-zA-Z0-9_\\-./]+)\\.(png|jpg|jpeg)$"
                     }
                 ],
@@ -311,7 +343,7 @@
         },
         "customProperties": {
             "type": "object",
-            "description" : "Non-standardized asset properties for custom tools or tool chains.",
+            "description": "Non-standardized asset properties for custom tools or tool chains.",
             "additionalProperties": {
                 "type": "string"
             }

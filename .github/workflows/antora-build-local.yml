@@ -1,0 +1,63 @@
+# Antora configuration to build documentation from a branch
+# adapted from antora-build.yml
+name: Publish locally with Antora
+on:
+  pull_request:
+    types: [ opened, edited, synchronize, reopened ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  build:
+    name: Build OpenMATERIAL documentation and deploy it to gh-pages
+    runs-on: ubuntu-latest
+    services:
+      kroki:
+        image: yuzutech/kroki:0.15.1
+        env:
+          KROKI_MAX_URI_LENGTH: 8000
+          KROKI_BLOCKDIAG_HOST: blockdiag
+          KROKI_MERMAID_HOST: mermaid
+      blockdiag:
+        image: yuzutech/kroki-blockdiag:0.15.1
+      mermaid:
+        image: yuzutech/kroki-mermaid:0.15.1
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+    - name: Checkout with submodules
+      uses: actions/checkout@v4
+      with:
+         path: repo
+         fetch-depth: 0 # test if depth in fetch history is required
+         submodules: recursive
+
+    - name: Generate AsciiDoc from JSON
+      working-directory: repo/scripts
+      run: |
+        python3 generate_schema_docs.py
+
+    - name: Configure Pages
+      uses: actions/configure-pages@v4
+
+    - name: Generate site
+      uses: docker://ghcr.io/asam-ev/project-guide-docker:4
+      with:
+        entrypoint: sh
+        args: repo/run-build.sh # modified based on OSI
+
+   
+
+    - name: Upload Artifacts
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./repo/site

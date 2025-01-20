@@ -22,34 +22,42 @@
                 },
                 "materialVersion": {
                     "type": "string",
-                    "description": "The version number of the material, following semantic versioning (e.g., '1.0.0').",
+                    "description": "The version number of the material, following semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
                 "openMaterialVersion": {
                     "type": "string",
-                    "description": "The version of the OpenMATERIAL 3D specification used, adhering to semantic versioning (e.g., '1.0.0').",
+                    "description": "The version of the ASAM OpenMATERIAL 3D specification used, adhering to semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
-                "copyright": {
-                    "type": "string",
-                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.')."
+                "copyrights": {
+                    "type": "array",
+                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.').",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1
                 },
                 "license": {
                     "type": "string",
-                    "description": "Describes the license for material distribution. Use an SPDX identifier for open-source licenses (e.g., 'MIT'), or provide a URL or filename for proprietary licenses."
+                    "description": "Describes the license for material distribution. Use an SPDX identifier for open-source licenses (for example, 'MIT'), or provide a URL or filename for proprietary licenses."
                 },
-                "author": {
-                    "type": "string",
-                    "description": "Lists the author(s) of the material as a name, email, or company. Multiple authors should be comma-separated."
+                "authors": {
+                    "type": "array",
+                    "description": "Lists the author(s) of the material as a name, email, or company.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1
                 },
                 "creationDate": {
                     "type": "string",
-                    "description": "The date and time of material creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (e.g., '20240703T101728Z').",
+                    "description": "The date and time of material creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (for example, '20240703T101728Z').",
                     "pattern": "^\\d{8}T\\d{6}Z$"
                 },
-                "source": {
+                "sources": {
                     "type": "string",
-                    "description": "Source of the reflectance data. Was is measured, simulated, or taken from literature?"
+                    "description": "Sources of the reflectance data. Was is measured, simulated, or taken from literature? Multiple sources should be comma-separated."
                 }
             },
             "required": [
@@ -59,10 +67,10 @@
                 "materialVersion",
                 "creationDate",
                 "openMaterialVersion",
-                "copyright",
+                "copyrights",
                 "license",
-                "author",
-                "source"
+                "authors",
+                "sources"
             ]
         },
         "reflectance": {
@@ -78,36 +86,57 @@
                 },
                 "lookupTable": {
                     "type": "array",
-                    "description": "Array of reflectance values, with each item representing a different property. The array SHALL be sorted based on the columns starting with the first.",
+                    "description": "Array of reflectance values, with each item representing a different property. The array shall be sorted based on the columns starting with the first.",
                     "items": {
                         "type": "array",
                         "items": [
                             {
-                                "type": ["number", "null"],
+                                "type": [
+                                    "number",
+                                    "null"
+                                ],
                                 "description": "Wavelength in meters."
                             },
                             {
-                                "type": ["number", "null"],
+                                "type": [
+                                    "number",
+                                    "null"
+                                ],
                                 "description": "Incident elevation angle (= zenith angle) relative to the surface normal in rad."
                             },
                             {
-                                "type": ["number", "null"],
+                                "type": [
+                                    "number",
+                                    "null"
+                                ],
                                 "description": "Exit elevation angle (= zenith angle) relative to the surface normal in rad."
                             },
                             {
-                                "type": ["number", "null"],
+                                "type": [
+                                    "number",
+                                    "null"
+                                ],
                                 "description": "Exit azimuth angle in rad. For reflectance with incident and exit vectors on the same plane as the normal, exit azimuth angle is 0."
                             },
                             {
-                                "type": ["number", "null"],
+                                "type": [
+                                    "number",
+                                    "null"
+                                ],
                                 "description": "Polarized plane angle in rad. This is the angle between the plane containing the incident, exit, and normal vector, and the plane of polarization."
                             },
                             {
-                                "type": ["number", "null"],
+                                "type": [
+                                    "number",
+                                    "null"
+                                ],
                                 "description": "Amplitude within the linearly polarized plane. The amplitude is given as a relative value compared to an ideal reflector."
                             },
                             {
-                                "type": ["number", "null"],
+                                "type": [
+                                    "number",
+                                    "null"
+                                ],
                                 "description": "Phase within the linearly polarized plane. If the phase is not taken into account, it is null."
                             }
                         ],

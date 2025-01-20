@@ -2,7 +2,7 @@
 # Source: https://code.asam.net/common/templates/antora-base-repo-example/-/blob/standard_generator/site.yml
 # tag::site[]
 site:
-  title: ASAM OpenMATERIAL
+  title: ASAM OpenMATERIAL 3D®
   url: https://asam-ev.github.io/OpenMATERIAL/
   start_page: asamopenmaterial:specification:index.adoc 
 # end::site[]
@@ -49,7 +49,7 @@ asciidoc:
     xrefstyle: short@
     listing-caption: Code
     page-width-limit: none@
-    THIS_STANDARD: ASAM OpenMATERIAL
+    THIS_STANDARD: ASAM OpenMATERIAL 3D
 
 
 # end::attributes[]
