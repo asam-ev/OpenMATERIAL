@@ -11,8 +11,13 @@ The {THIS_STANDARD} standard supports the following object classes:
 * xref:../geometry/object-vehicle/vehicle-index.adoc[Vehicle] 
 * xref:../geometry/object-human/human-index.adoc[Human] 
 * xref:../geometry/object-environment/environment-index.adoc[Environment]
+* xref:../geometry/object-other/other-index.adoc[Other]
 
 If a human is clearly distinguishable from a vehicle, then both the
 human and the vehicle are represented by two different objects. Examples are
 bicycles, motorbikes, or scooters, where the human and the vehicle are
 perceived as separate entities.
+
+The other object class comprises all objects not yet specified by OpenMATERIAL 3D.
+It includes all objects that aren't specified by other object classes.
+Definitions specified in other object classes overwrite the specifications in other.
