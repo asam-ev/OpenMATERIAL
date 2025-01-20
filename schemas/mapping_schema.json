@@ -30,25 +30,17 @@
                     "description": "The version of the ASAM OpenMATERIAL 3D specification used, adhering to semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
-                "copyrights": {
-                    "type": "array",
-                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.').",
-                    "items": {
-                        "type": "string"
-                    },
-                    "minItems": 1
+                "copyright": {
+                    "type": "string",
+                    "description": "Indicates copyright details, including the year and copyright holder (for example, '© 2024 ACME Inc.')."
                 },
                 "license": {
                     "type": "string",
                     "description": "Describes the license for mapping table distribution. Use an SPDX identifier for open-source licenses (for example, 'MIT'), or provide a URL or filename for proprietary licenses."
                 },
-                "authors": {
-                    "type": "array",
-                    "description": "Lists the author(s) of the mapping table as a name, email, or company.",
-                    "items": {
-                        "type": "string"
-                    },
-                    "minItems": 1
+                "author": {
+                    "type": "string",
+                    "description": "Lists the author(s) of the mapping table as a name, email, or company. Multiple authors should be comma-separated."
                 },
                 "creationDate": {
                     "type": "string",
@@ -61,9 +53,9 @@
                 "uuid",
                 "mappingVersion",
                 "openMaterialVersion",
-                "copyrights",
+                "copyright",
                 "license",
-                "authors"
+                "author"
             ]
         },
         "materialMapping": {
