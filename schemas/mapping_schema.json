@@ -30,9 +30,13 @@
                     "description": "The version of the ASAM OpenMATERIAL 3D specification used, adhering to semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
-                "copyright": {
-                    "type": "string",
-                    "description": "Indicates copyright details, including the year and copyright holder (for example, '© 2024 ACME Inc.')."
+                "copyrights": {
+                    "type": "array",
+                    "description": "Indicates copyright details, including the year and copyright holder (for example, '© 2024 ACME Inc.').",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1
                 },
                 "license": {
                     "type": "string",
