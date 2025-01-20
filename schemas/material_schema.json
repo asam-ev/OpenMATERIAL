@@ -32,7 +32,7 @@
                 },
                 "copyrights": {
                     "type": "array",
-                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.').",
+                    "description": "Indicates copyright details, including the year and copyright holder (for example, '© 2024 ACME Inc.').",
                     "items": {
                         "type": "string"
                     },
