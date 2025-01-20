@@ -5,7 +5,7 @@
     "definitions": {
         "Axle": {
             "type": "object",
-            "description": "The definition of vehicle axle. based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Axle.html[OpenSCENARIO vehicle axle definition].",
+            "description": "The definition of vehicle axle based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Axle.html[OpenSCENARIO vehicle axle definition].",
             "properties": {
                 "maxSteering": {
                     "type": "number",
@@ -70,17 +70,25 @@
                     "description": "The version of the ASAM OpenMATERIAL 3D specification used, adhering to semantic versioning (for example, '1.0.0').",
                     "pattern": "^\\d+\\.\\d+\\.\\d+$"
                 },
-                "copyright": {
-                    "type": "string",
-                    "description": "Indicates copyright details, including the year and copyright holder (for example, '© 2024 ACME Inc.')."
+                "copyrights": {
+                    "type": "array",
+                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.').",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1
                 },
                 "license": {
                     "type": "string",
                     "description": "Describes the license for asset distribution. Use an SPDX identifier for open-source licenses (for example, 'MIT'), or provide a URL or filename for proprietary licenses."
                 },
-                "author": {
-                    "type": "string",
-                    "description": "Lists the author(s) of the asset as a name, email, or company. Multiple authors should be comma-separated."
+                "authors": {
+                    "type": "array",
+                    "description": "Lists the author(s) of the asset as a name, email, or company.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1
                 },
                 "modelCreationTool": {
                     "type": "string",
@@ -164,15 +172,13 @@
                         },
                         "axles": {
                             "type": "object",
-                            "description": "A set of the axles of a vehicle. A vehicle must have a front axle and a rear axle. It might have additional axles.",
+                            "description": "A set of the axles of a vehicle. A vehicle must have a front axle and a rear axle. It might have additional axles. The information about the rear axle is needed to transform the origin of the model to coordinate systems of other ASAM standards, for example the ASAM OpenSCENARIO XML vehicle coordinate system or the ASAM OSI host vehicle coordinate system.",
                             "properties": {
                                 "frontAxle": {
-                                    "$ref": "#/definitions/Axle",
-                                    "description": "Details about the front axle."
+                                    "$ref": "#/definitions/Axle"
                                 },
                                 "rearAxle": {
-                                    "$ref": "#/definitions/Axle",
-                                    "description": "Details about the rear axle."
+                                    "$ref": "#/definitions/Axle"
                                 },
                                 "additionalAxles": {
                                     "type": "array",
@@ -226,7 +232,7 @@
                 },
                 "meshCount": {
                     "type": "integer",
-                    "description": "The total number of meshes in the 3D geometry. A model geometry typically consists of several sub-meshes."
+                    "description": "The total number of meshes in the 3D model file. A model geometry typically consists of several sub-meshes."
                 },
                 "textureResolutions": {
                     "type": "array",
@@ -296,9 +302,9 @@
                 "uuid",
                 "assetVersion",
                 "openMaterialVersion",
-                "copyright",
+                "copyrights",
                 "license",
-                "author",
+                "authors",
                 "assetType",
                 "objectClass",
                 "animated",
