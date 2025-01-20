@@ -9,7 +9,7 @@ endif::[]
 
 == Motivation
 
-A _3D asset_ is a digital entity that includes a 3D geometric representation of an object (also known as _3D model_ or **3D Data File**) along with its attributes and metadata. 
+A _3D asset_ is a digital entity that includes a 3D geometric representation of an object (also known as _3D model_ or 3D Data File) along with its attributes and metadata. 
 Common formats for storing the geometry and visual materials of _3D models_ include glTF, FBX, and USD.
 
 However, these formats do not provide a standardized way to structure the geometry or provide extensive metadata storage and exchange capabilities. 
@@ -17,9 +17,9 @@ The {THIS_STANDARD} standard addresses these needs.
 
 This chapter includes all geometry related definitions of {THIS_STANDARD}, marked in red in <<fig-openmaterial-geometry-overview>>.
 
-The {THIS_STANDARD} **Asset File** (for example, "omg_my-model.xoma") contains essential information relevant to the display and interactivity attributes of the _3D model_ in various computer applications.
+The {THIS_STANDARD} asset file, for example, "omg_my-model.xoma", contains essential information relevant to the display and interactivity attributes of the _3D model_ in various computer applications.
 This includes metadata, _material_ mappings, and semantic information like coordinate system and pivot point descriptions.
-The mapping of materials is stored in a separate **Material Mapping File** (.xomm), which is linked in the Asset File.
+The mapping of materials is stored in a separate material mapping file (.xomm), which is linked in the asset file.
 This setup ensures that the _3D asset_ (or 3D Data File) can be consistently integrated into complex simulations or real-time environments with detailed _material_ and dynamic properties.
 
 [#fig-openmaterial-geometry-overview]
@@ -46,19 +46,19 @@ Users can continue using their familiar tools and processes to manage geometry, 
 
 == Interaction with other ASAM standards
 
-The ASAM OpenX standards strive to provide comprehensive, realistic, and most importantly, exchangeable simulation data for the development and testing of autonomous systems:
+The ASAM OpenX standards strive to provide comprehensive, realistic, and exchangeable simulation data for the development and testing of autonomous systems:
 
 * ASAM OpenDRIVE standardizes the description of road networks, including geometric definitions of the road, but primarily focuses on the semantic description of the road. 
   The {THIS_STANDARD} object class "Environment" enhances this by allowing the definition of a comprehensive _3D environment_ that aligns with an ASAM OpenDRIVE map.
 * ASAM OpenSCENARIO is a file format created to describe dynamic content in driving and traffic simulators, with a primary focus on complex maneuvers involving multiple entities like vehicles and pedestrians.
   {THIS_STANDARD} defines node structures and metadata for these object classes to seamlessly integrate ASAM OpenSCENARIO definitions with a _3D model_.
   The asset file (.xoma) of a static _3D environment_ shall be linked in ASAM OpenSCENARIO using the https://publications.pages.asam.net/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_XML/latest/generated/content/RoadNetwork.html[SceneGraphFile property].
-  Asset files (.xoma) of individual objects, such as vehicles, shall be linked using the https://publications.pages.asam.net/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_XML/latest/07_components_scenario/07_02_storyboard_entities.html#_3d_models_for_entities[model3d property].
+  Asset files (.xoma) of individual objects, such as vehicles, shall be linked using the https://publications.pages.asam.net/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_XML/latest/07_components_scenario/07_02_storyboard_entities.html[model3d property].
   Both environment and objects may either be given as an absolute path or as a path relative to the ASAM OpenSCENARIO file (.xosc).
   A relative path is indicated by a dot (.) as the first character.
-  The paths to _3D assets_ specified in the _scenario_ definition shall serve as single source of truth and be used consistently in simulation environments.
+  The paths to 3D assets specified in the _scenario_ definition shall serve as single source of truth and be used consistently in simulation environments.
   In the case of distributed simulation environments, the paths shall be synchronized between all relevant simulation components.
-  Synchronization may be implemented using ASAM Open Simulation Interface (OSI) (see below).
+  Synchronization may be implemented using ASAM Open Simulation Interface (OSI).
 * ASAM Open Simulation Interface is a specification for interfaces between models and components in a distributed simulation.
   ASAM OSI primarily focuses on the environmental perception of automated driving functions, but it also covers interfaces for models of traffic participants.
   The asset file (.xoma) of a _3D environment_ shall be linked in ASAM OSI using the https://opensimulationinterface.github.io/osi-antora-generator/asamosi/current/gen/structosi3_1_1GroundTruth.html#a83042861723a4a9e890a53aa98d88858[GroundTruth::model_reference].
@@ -68,6 +68,6 @@ The ASAM OpenX standards strive to provide comprehensive, realistic, and most im
   As ASAM OSI transfers the data between tools and simulation models, the root path that a relative model reference path is relative to, has to be given or known to all tools and models in the tool chain.
   This can be done with tool settings, configs, or model parameters, for example, an FMI parameter.
 
-The transformation of reference frames between these ASAM standards is described in the xref:../geometry/general.adoc#_local_coordinate_system[General section].
+The transformation of reference frames between these ASAM standards is described in xref:../geometry/general.adoc#_local_coordinate_system[].
 
   

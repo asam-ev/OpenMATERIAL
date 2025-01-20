@@ -166,8 +166,8 @@ Notes, footnotes, and examples shall not contain requirements or any information
 The following deliverables are provided for {THIS_STANDARD}:
 
 * https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/index.html[{THIS_STANDARD} BS 1-0-0 Specification, 2025-MM-DD] (this document, contained in this site)
-* https://github.com/asam-ev/OpenMATERIAL/tree/main/schemas[JSON schema files] for all json formats (contained in the open-source standard repository)
-* https://github.com/asam-ev/OpenMATERIAL/tree/main/examples[Example files] for all defined file formats (contained in the open-source standard repository) and further examples of
-** a https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/vehicle_example[vehicle] (contained in the open-source standard repository)
-** a https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/human_example[human] (contained in the open-source standard repository)
-** an https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/environment_example[environment] (contained in the open-source standard repository)
+* https://github.com/asam-ev/OpenMATERIAL/tree/main/schemas[JSON schema files] for all json formats (contained in the {THIS_STANDARD} Github repository)
+* https://github.com/asam-ev/OpenMATERIAL/tree/main/examples[Example files] for all defined file formats (contained in the {THIS_STANDARD} Github repository) and further examples of
+** a https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/vehicle_example[vehicle] (contained in the {THIS_STANDARD} Github repository)
+** a https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/human_example[human] (contained in the {THIS_STANDARD} Github repository)
+** an https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/environment_example[environment] (contained in the {THIS_STANDARD} Github repository)
