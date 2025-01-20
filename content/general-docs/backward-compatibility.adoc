@@ -6,6 +6,5 @@ ifndef::include-only-once[]
 include::{root-path}_config.adoc[]
 endif::[]
 
-{THIS_STANDARD} is backwards compatible with {THIS_STANDARD}
-
-
+This is the first release of this standard published by ASAM.
+Therefore, no information about the backward compatibility of this standard has been added to this section.

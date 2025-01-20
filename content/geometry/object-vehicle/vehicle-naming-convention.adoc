@@ -7,5 +7,5 @@ Count the wheel index per axle from right to left (in positive y-direction and a
 Count the door index per side from front to rear and right to left (in positive y-direction).
 Count the seat index per level from first level front to rear, and right to left, to the next level from right to left and front to rear. Note: A rear bench with 3 seats will be consideres as 3 seats, because 3 passengers could take a seat on it.
 
-If needed, the user is free to add more groups and new keywords, which are not part of the standard, for himself.
+If needed, the user is free to add more groups and new keywords, which are not part of the standard, for themself.
 
