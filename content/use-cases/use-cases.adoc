@@ -28,8 +28,6 @@ This clear categorization helps users understand the practical applications of t
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |OGC CDB
 |*Influencing technologies* |3D Modeling (for example, 3dsMax and Maya), 3D Engine (for example, Unreal Engine)
-|*Used 3D model formats*    |glTF, FBX, USD, OSG, OBJ, IVE, udatasmith, FLT, DirectX, 3DS, DAE
-|*Used material formats*    |MDL
 |*Relevant user*            |Content creator
 |===
 
@@ -40,8 +38,6 @@ This clear categorization helps users understand the practical applications of t
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |
 |*Influencing technologies* |
-|*Used 3D model formats*    |glTF, FBX, USD, OSG, OBJ, IVE, udatasmith
-|*Used material formats*    |glTF, MDL, AFX, MaterialX, .rrdata.xml (exported from RoadRunner)
 |*Relevant user*            |Measurement engineer
 |===
 
@@ -52,8 +48,6 @@ This clear categorization helps users understand the practical applications of t
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |
 |*Influencing technologies* |
-|*Used 3D model formats*    |glTF, FBX, USD, OSG, OBJ
-|*Used material formats*    |glTF, MDL, AFX, MaterialX
 |*Relevant user*            |Measurement engineer, regulator
 |===
 
@@ -65,8 +59,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |
 |*Influencing technologies* |
-|*Used 3D model formats*    |glTF, FBX, USD, OSG, OBJ
-|*Used material formats*    |
 |*Relevant user*            |Content creator
 |===
 
@@ -77,8 +69,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |FMI, ASAM OSI (OSMP), ASAM OpenLABEL, ASAM OpenDRIVE, ASAM OpenSCENARIO
 |*Influencing technologies* |Unreal Engine, Unity, OptiX, CUDA
-|*Used 3D model formats*    |glTF, FBX, USD, OSG, OBJ
-|*Used material formats*    |
 |*Relevant user*            |Sensor model developer
 |===
 
@@ -89,8 +79,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |
 |*Influencing technologies* |Unreal Engine, Unity, Unigine, OptiX, CUDA
-|*Used 3D model formats*    |glTF, FBX, USD, OSG, OBJ
-|*Used material formats*    |
 |*Relevant user*            |Simulation platform developer
 |===
 
@@ -101,8 +89,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 |*Material and 3D Structure*|Materials
 |*Influencing standards*    |ASAM OpenLABEL
 |*Influencing technologies* |Unreal Engine, Unity, OptiX, CUDA
-|*Used 3D model formats*    |
-|*Used material formats*    |
 |*Relevant user*            |Simulation platform developer
 |===
 
@@ -113,8 +99,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |
 |*Influencing technologies* |
-|*Used 3D model formats*    |glTF, FBX, USD, OSG, OBJ
-|*Used material formats*    |
 |*Relevant user*            |Simulation platform developer
 |===
 
@@ -125,8 +109,6 @@ To distribute material data and 3D assets efficiently, it shall be possible to r
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |ASAM OSI
 |*Influencing technologies* |
-|*Used 3D model formats*    |glTF, FBX, USD, OSG, OBJ
-|*Used material formats*    |
 |*Relevant user*            |Simulation platform developer
 |===
 
@@ -138,8 +120,6 @@ The simulation shall be able to cope with different real-time requirements, for 
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |
 |*Influencing technologies* |Nvidia OptiX
-|*Used 3D model formats*    |glTF, FBX, USD, OSG, OBJ
-|*Used material formats*    |
 |*Relevant user*            |Simulation platform developer, sensor model developer, end user
 |===
 
@@ -150,7 +130,5 @@ The simulation shall be able to cope with different real-time requirements, for 
 |*Material and 3D Structure*|Materials and 3D Structure
 |*Influencing standards*    |ASAM OSI, ASAM OpenSCENARIO, ASAM OpenDRIVE
 |*Influencing technologies* |Unity, OptiX, Regeneration AI
-|*Used 3D model formats*    |
-|*Used material formats*    |
 |*Relevant user*            |End user
 |===
