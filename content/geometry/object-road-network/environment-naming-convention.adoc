@@ -1,8 +1,0 @@
-=== Naming convention
-
-Every asset has a unique name and represents a part of the environment. All included meshes are part of a group to indicate which kind of asset type it represents.
-All meshes should be named meaningful.
-
-If needed, the user is free to add more groups and new keywords, which are not part of the standard, for himself.
-
-|===

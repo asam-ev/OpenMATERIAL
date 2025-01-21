@@ -1,4 +1,5 @@
 = Human structure
 
 include::human-general.adoc[leveloffset=+1]
+include::human-naming-convention.adoc[leveloffset=+1]
 include::human-structure.adoc[leveloffset=+1]
