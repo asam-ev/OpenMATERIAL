@@ -14,7 +14,7 @@ However, the geometry specification defines coordinate systems, units, node hier
 
 glTF::
 _3D models_ of {THIS_STANDARD} in glTF format shall comply with the official https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html[glTF specification].
-The glTF specification has two delivery options: glTF + bin + textures and the container format glb.
+The glTF specification has two delivery options: glTF + bin + textures, and the container format glb.
 Both delivery options are supported in {THIS_STANDARD}.
 +
 The glTF coordinate system is right-handed, with +Y as the up axis, +Z as forward, and -X as right. The front of a glTF asset faces +Z. 

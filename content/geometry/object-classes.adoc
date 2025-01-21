@@ -14,7 +14,7 @@ The {THIS_STANDARD} standard supports the following object classes:
 * xref:../geometry/object-other/other-index.adoc[Other]
 
 If a human is clearly distinguishable from a vehicle, then both the
-human and the vehicle are represented by two different objects. Examples are
+human and the vehicle are represented by two different objects respectively. Examples are
 bicycles, motorbikes, or scooters, where the human and the vehicle are
 perceived as separate entities.
 

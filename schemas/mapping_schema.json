@@ -17,7 +17,7 @@
                 },
                 "uuid": {
                     "type": "string",
-                    "description": "Universally unique identifier for the mapping table in 8-4-4-4-12 format, see https://en.wikipedia.org/wiki/Universally_unique_identifier. The uuid stays the same, even if version is updated.",
+                    "description": "Universally unique identifier for the mapping table in 8-4-4-4-12 format, see cite:[uui]. The uuid stays the same, even if version is updated.",
                     "pattern": "\\b[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\\b$"
                 },
                 "mappingVersion": {
@@ -32,7 +32,7 @@
                 },
                 "copyrights": {
                     "type": "array",
-                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.').",
+                    "description": "Indicates copyright details, including the year and copyright holder (for example, '© 2024 ACME Inc.').",
                     "items": {
                         "type": "string"
                     },

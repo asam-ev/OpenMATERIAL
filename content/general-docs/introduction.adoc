@@ -30,11 +30,11 @@ Standardization efforts have been made for scenarios and road data using ASAM Op
 
 === The two main chapters of {THIS_STANDARD}
 
-{THIS_STANDARD} is divided into distinct yet complementary chapters enabling a modular approach to implementation. Key to this is the distinction between Material and Geometry. Based on specific use-cases, users of {THIS_STANDARD} can implement the standard for one or both chapters.  At least one of the two chapters shall be implemented to conform with the standard.
+{THIS_STANDARD} is divided into distinct yet complementary chapters enabling a modular approach to implementation. Key to this is the distinction between material and geometry. Based on specific use-cases, users of {THIS_STANDARD} can implement the standard for one or both chapters.  At least one of the two chapters shall be implemented to conform with the standard.
 
-* *Material*: This chapter includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values. Tools or systems focusing on material properties can implement support for the Material chapter. For example: “This tool supports {THIS_STANDARD}: Material”.
+* *Material*: This chapter includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values. Tools or systems focusing on material properties can implement support for the material chapter. For example: “This tool supports {THIS_STANDARD}: Material”.
 
-* *Geometry*: This chapter contains structures for different object classes. These structures define uniform node structure, naming scheme and coordinate systems to enable exchange, common integration and animation of 3D models. Tools or systems working primarily with geometric data, such as 3D models or spatial structures, can implement support for the Geometry chapter. For example: “This tool supports {THIS_STANDARD}: Geometry”.
+* *Geometry*: This chapter contains structures for different object classes. These structures define uniform node structure, naming scheme and coordinate systems to enable exchange, common integration and animation of 3D models. Tools or systems working primarily with geometric data, such as 3D models or spatial structures, can implement support for the geometry chapter. For example: “This tool supports {THIS_STANDARD}: Geometry”.
 
 * *Full Compliance*: For a full exchange of simulation-ready 3D assets however, both chapters must be supported. Systems or tools providing full support for both material and geometric data can be described as follows: “This tool supports {THIS_STANDARD}”.
 
@@ -44,8 +44,8 @@ A list of use cases examples can be found in the https://asam-ev.github.io/OpenM
 
 {THIS_STANDARD} defines various file formats for specifying assets, _material properties_, and the mapping between them.
 <<fig-openmaterial-overview>> illustrates these file formats and their interconnections.
-The definitions of the geometry related data formats marked in red can be found in xref:geometry/geometry-index.adoc[].
-The definitions of the _material_ related data formats marked in blue can be found in xref:material/material-index.adoc[].
+The definitions of the geometry related data formats marked in red can be found in the geometry chapter.
+The definitions of the _material_ related data formats marked in blue can be found in the material chapter.
 
 [#fig-openmaterial-overview]
 .Overview of {THIS_STANDARD} file formats and data flow
@@ -55,7 +55,7 @@ The first interaction with an {THIS_STANDARD}-compliant _3D model_ is through th
 
 The *asset file* is a JSON file with the file extension .xoma ({THIS_STANDARD} Asset).
 A detailed definition of the https://github.com/asam-ev/OpenMATERIAL/blob/main/schemas/asset_schema.json[asset file JSON schema] is given in xref:geometry/asset-schema.adoc[].
-The asset file shall have the same name as a corresponding 3D data file in glTF, FBX or USD format.
+The asset file shall have the same name as a corresponding 3D data file in glTF, FBX, or USD format.
 To facilitate instancing, multiple asset file may be linked to a single _3D model_ file by adding an index separated by a dot (.) as a suffix to the asset file name.
 It contains metadata, such as description, unique identifier, version information, copyright details, and so on.
 It also includes a _material_ texture assignment table, allowing dedicated _material_ mapping textures to be assigned to materials within 3D data files.
@@ -65,10 +65,10 @@ For the mapping currently only the rba channels are used (first 24 Bit).
 The last channel is reserved for future use.
 An https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/example_asset.xoma[example asset] is provided in the examples folder of the repository.
 
-The *3D data file* is a standard _3D model_ file in glTF, FBX or USD format.
+The *3D data file* is a standard _3D model_ file in glTF, FBX, or USD format.
 Multiple formats can exist in parallel, so one asset file can have multiple 3D data files with different formats with the same name as the asset file.
-However, to be standard compliant, a simulation environment must support at least one of the named 3D data formats.
-More information about the file formats is given in is given in xref:geometry/file-format-support.adoc[].
+However, to be compliant with {THIS_STANDARD}, a simulation environment must support at least one of the named 3D data formats.
+More information about the file formats is given in in xref:geometry/file-format-support.adoc[].
 An https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/example_asset.gltf[example model] is provided in the examples folder of the repository.
 
 The *material mapping file* is separated from the asset file to facilitate reusability.
@@ -104,7 +104,7 @@ Examples for _material property_ files and look-up table files are provided in t
 
 To ensure compliance with the {THIS_STANDARD} specification, users need to be able to distinguish between requirements, recommendations, permissions, possibilities and capabilities, and external constraints.
 
-The following rules for using modal verbs apply:
+The rules listed in <<tab-modal-verbs>> for using modal verbs apply:
 
 [#tab-modal-verbs]
 .Verbal forms for expressions of provisions
@@ -165,9 +165,9 @@ Notes, footnotes, and examples shall not contain requirements or any information
 
 The following deliverables are provided for {THIS_STANDARD}:
 
-* https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/index.html[{THIS_STANDARD} BS 1-0-0 Specification, 2025-MM-DD] (this document, contained in this site)
-* https://github.com/asam-ev/OpenMATERIAL/tree/main/schemas[JSON schema files] for all json formats (contained in the open-source standard repository)
-* https://github.com/asam-ev/OpenMATERIAL/tree/main/examples[Example files] for all defined file formats (contained in the open-source standard repository) and further examples of
-** a https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/vehicle_example[vehicle] (contained in the open-source standard repository)
-** a https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/human_example[human] (contained in the open-source standard repository)
-** an https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/environment_example[environment] (contained in the open-source standard repository)
+* https://asam-ev.github.io/OpenMATERIAL/asamopenmaterial/latest/specification/index.html[{THIS_STANDARD}® BS 1-0-0 Specification, 2025-MM-DD] (this document, contained in this site)
+* https://github.com/asam-ev/OpenMATERIAL/tree/main/schemas[JSON schema files] for all json formats (contained in the {THIS_STANDARD} Github repository)
+* https://github.com/asam-ev/OpenMATERIAL/tree/main/examples[Example files] for all defined file formats (contained in the {THIS_STANDARD} Github repository) and further examples of
+** a https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/vehicle_example[vehicle] (contained in the {THIS_STANDARD} Github repository)
+** a https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/human_example[human] (contained in the {THIS_STANDARD} Github repository)
+** an https://github.com/asam-ev/OpenMATERIAL/tree/main/examples/environment_example[environment] (contained in the {THIS_STANDARD} Github repository)
