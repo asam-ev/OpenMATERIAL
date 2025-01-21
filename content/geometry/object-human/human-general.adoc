@@ -20,7 +20,7 @@ The naming convention makes it possible to mirror one side of the skeleton to th
 The bones follow a specific bone orientation: The y-axis of a bone always follows the bone direction, regardless of whether it points sidewards, upwards, or forwards. The x-axis usually faces forwards accordingly.
 
 The skeleton starts with a root bone positioned at the origin of the asset, the center of the bounding box projected to the ground.
-This position is static and does not change relativ to the asset during simulation.
+This position is static and does not change relative to the asset during simulation.
 When using an ASAM OpenMATERIAL 3D human asset in combination with ASAM OSI, the OSI field https://opensimulationinterface.github.io/osi-antora-generator/asamosi/latest/gen/structosi3_1_1MovingObject_1_1PedestrianAttributes.html#a75db7466abca2d283c8d64d424385c0a[bbcenter_to_root] must be set to the vector from the center of the bounding box to the center of the ground projection of the bounding box.
 This specifically means: x=0, y=0, z=-half of the bounding box height.
 
