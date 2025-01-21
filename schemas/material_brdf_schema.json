@@ -44,7 +44,7 @@
                 },
                 "authors": {
                     "type": "array",
-                    "description": "Lists the author(s) of the material as a name, email, or company. Multiple authors should be comma-separated.",
+                    "description": "Lists the author(s) of the material as a name, email, or company.",
                     "items": {
                         "type": "string"
                     },

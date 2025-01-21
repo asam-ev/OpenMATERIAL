@@ -17,7 +17,7 @@ The {THIS_STANDARD} standard addresses these needs.
 
 This chapter includes all geometry related definitions of {THIS_STANDARD}, marked in red in <<fig-openmaterial-geometry-overview>>.
 
-The {THIS_STANDARD} asset file, for example, "omg_my-model.xoma", contains essential information relevant to the display and interactivity attributes of the _3D model_ in various computer applications.
+The {THIS_STANDARD} asset file contains essential information relevant to the display and interactivity attributes of the _3D model_ in various computer applications.
 This includes metadata, _material_ mappings, and semantic information like coordinate system and pivot point descriptions.
 The mapping of materials is stored in a separate material mapping file (.xomm), which is linked in the asset file.
 This setup ensures that the _3D asset_ (or 3D Data File) can be consistently integrated into complex simulations or real-time environments with detailed _material_ and dynamic properties.
@@ -68,6 +68,6 @@ The ASAM OpenX standards strive to provide comprehensive, realistic, and exchang
   As ASAM OSI transfers the data between tools and simulation models, the root path that a relative model reference path is relative to, has to be given or known to all tools and models in the tool chain.
   This can be done with tool settings, configs, or model parameters, for example, an FMI parameter.
 
-The transformation of reference frames between these ASAM standards is described in xref:../geometry/general.adoc#_local_coordinate_system[].
+The transformation of reference frames between these ASAM standards is described in xref:../geometry/general.adoc#_local_coordinate_system[Local coordinate system].
 
   

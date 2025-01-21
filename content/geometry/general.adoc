@@ -135,7 +135,7 @@ Users are free to add more keywords for themself, if they are needed. The follow
 
 The following rules for metadata apply:
 
-* Fields shall be named according to the Camel case definition, starting with lowercase letters.
+* Fields shall be named according to the lowerCamelCase definition, starting with lowercase letters.
 * Naming of custom properties shall follow the predefined keys.
 * Objects, arrays (lists), and enums shall follow the notation in the corresponding json files.
 
