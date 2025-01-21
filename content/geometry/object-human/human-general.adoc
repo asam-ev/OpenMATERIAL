@@ -18,6 +18,8 @@ In the coordinate system for human 3D geometry, the x-axis points forwards, the 
 The default pose is the A-pose.
 The naming convention makes it possible to mirror one side of the skeleton to the other.
 The bones follow a specific bone orientation: The y-axis of a bone always follows the bone direction, regardless of whether it points sidewards, upwards, or forwards. The x-axis usually faces forwards accordingly.
+A bone's name, position, and orientation is defined by the end-point closer in the hierarchy to the root.
+For example, the "Lower_Arm_Left" defines the point in the left elbow of the model.
 
 The skeleton starts with a root bone positioned at the origin of the asset, the center of the bounding box projected to the ground.
 This position is static and does not change relative to the asset during simulation.
