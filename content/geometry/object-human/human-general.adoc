@@ -31,4 +31,4 @@ This specifically means: x=0, y=0, z=-half of the bounding box height.
 image::fig_human-structure.svg[,400]
 
 Bones with a local transform are indicated in the structure by a (T).
-This is only an indicator in the documentation and is not contained in the actual node name.
+This is only an indicator in the documentation and must not be contained in the actual node name.
