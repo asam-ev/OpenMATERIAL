@@ -18,7 +18,7 @@ include::use-cases/use-cases.adoc[leveloffset=+1]
 == 7 Geometry
 include::geometry/introduction.adoc[leveloffset=+2]
 include::geometry/general.adoc[leveloffset=+2]
-include::geometry/object-classes.adoc[leveloffset=+2]
+=== 7.3 Object classes
 include::geometry/object-classes-introduction.adoc[leveloffset=+3]
 include::geometry/object-vehicle/vehicle-index.adoc[leveloffset=+3]
 include::geometry/object-human/human-index.adoc[leveloffset=+3]
