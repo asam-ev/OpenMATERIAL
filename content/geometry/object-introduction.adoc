@@ -1,4 +1,5 @@
-== Introduction
+= Introduction
+
 In {THIS_STANDARD}, an object class is a collection of similar objects.
 Examples of object classes are vehicles, humans, and road networks.
 Each instance of an object class is described by the same properties, but has
