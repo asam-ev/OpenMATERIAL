@@ -6,6 +6,9 @@ ifndef::include-only-once[]
 include::{root-path}_config.adoc[]
 endif::[]
 
+AABB::
+Axis-Aligned Bounding Box
+
 ASAM::
 Association for Standardization of Automation and Measuring Systems
 
@@ -41,6 +44,9 @@ Level of Detail
 
 PBR::
 Physically Based Rendering
+
+SPDX::
+Software Package Data Exchange 
 
 USD::
 Universal Scene Description (proprietary file format)

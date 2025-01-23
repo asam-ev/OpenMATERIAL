@@ -52,16 +52,16 @@
                 },
                 "creationDate": {
                     "type": "string",
-                    "description": "The date and time of material creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (for example, '20240703T101728Z').",
+                    "description": "The date and time of material creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 cite:[iso8601] (for example, '20240703T101728Z').",
                     "pattern": "^\\d{8}T\\d{6}Z$"
                 },
                 "sources": {
                     "type": "string",
-                    "description": "Source of the BRDF data. Was is measured, simulated, or taken from literature? Multiple sources should be comma-separated."
+                    "description": "Source of the BRDF data (for example, was is measured, simulated, or taken from literature). Multiple sources should be comma-separated."
                 },
                 "typicalSensorTechnology": {
                     "type": "string",
-                    "description": "Typical sensor technology this BRDF table is used for. Examples: radar, lidar, camera. If multiply apply, use comma-separation."
+                    "description": "Typical sensor technology this BRDF table is used for. Examples: 'radar', 'lidar', 'camera'. If multiply apply, use comma-separation."
                 }
             },
             "required": [
@@ -97,7 +97,7 @@
                                     "number",
                                     "null"
                                 ],
-                                "description": "Wavelength of radiation in meters."
+                                "description": "Wavelength of radiation in meters (m)."
                             },
                             {
                                 "type": [

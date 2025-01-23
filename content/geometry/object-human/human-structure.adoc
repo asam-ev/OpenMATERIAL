@@ -71,7 +71,7 @@ This group is used as a parent for all following nodes. It can be used to place 
 
 This object or group represents the armature (skeleton) of the object and contains all bones. It is needed to ensure that the bone hierarchy can be exported and imported correctly.
 Depending on the 3D software, the armature is a separate _object type_ (for example in Blender) or represented by a group (for example in Maya).
-The postfix "_<Name>" is optional, but is recommended to use, if you prepare multiple human assets in one file of an 3D application to keep the names unique and within the naming convention.
+The postfix `_<Name>` is optional, but is recommended to use, if you prepare multiple human assets in one file of an 3D application to keep the names unique and within the naming convention.
 
 [#tab-human-Armature]
 .Armature
@@ -197,7 +197,7 @@ This object represents an additional or exchangeable hair part of the human.
 
 == Root
 
-The `Root` bone is the parent bone for all other bones. It can be used to control the whole skeleton.
+The `<Root>` bone is the parent bone for all other bones. It can be used to control the whole skeleton.
 
 [#tab-human-root]
 .Root bone
@@ -222,7 +222,7 @@ The `Root` bone is the parent bone for all other bones. It can be used to contro
 
 == Hip (T)
 
-The `Hip` bone represents the lowest parts and bones of the spine, that is, the Hip, Coccyx, and Sacrum spine bones of the human skeleton.
+The `<Hip>` bone represents the lowest parts and bones of the spine, that is, the Hip, Coccyx, and Sacrum spine bones of the human skeleton.
 
 [#tab-human-hip]
 .Hip bone
@@ -247,7 +247,7 @@ The `Hip` bone represents the lowest parts and bones of the spine, that is, the 
 
 == Lower_Spine (T)
 
-The `Lower_Spine` bone represents the middle parts und bones of the spine, that is, the Lumbar spine bones of the human skeleton.
+The `<Lower_Spine>` bone represents the middle parts und bones of the spine, that is, the Lumbar spine bones of the human skeleton.
 
 [#tab-human-lower-spine]
 .Lower_Spine bone
@@ -272,7 +272,7 @@ The `Lower_Spine` bone represents the middle parts und bones of the spine, that 
 
 == Upper_Spine (T)
 
-The `Upper_Spine` bone represents the upper parts und bones of the spine, that is, the Thoracic spine bones of the human skeleton.
+The `<Upper_Spine>` bone represents the upper parts und bones of the spine, that is, the Thoracic spine bones of the human skeleton.
 
 [#tab-human-upper-spine]
 .Upper_Spine bone
@@ -297,7 +297,7 @@ The `Upper_Spine` bone represents the upper parts und bones of the spine, that i
 
 == Neck (T)
 
-The `Neck` bone represents the most upper parts und bones of the spine, that is, the Cervical spine bones of the human skeleton.
+The `<Neck>` bone represents the most upper parts und bones of the spine, that is, the Cervical spine bones of the human skeleton.
 
 [#tab-human-neck]
 .Neck bone
@@ -322,7 +322,7 @@ The `Neck` bone represents the most upper parts und bones of the spine, that is,
 
 == Head (T)
 
-The `Head` bone represents the head, that is, the skull of the human skeleton.
+The `<Head>` bone represents the head, that is, the skull of the human skeleton.
 
 [#tab-human-head]
 .Head bone
@@ -347,7 +347,7 @@ The `Head` bone represents the head, that is, the skull of the human skeleton.
 
 == Eye_Left (T)
 
-The `Eye_Left` bone represents the left eye of the human body. It is used to calculate the eye level.
+The `<Eye_Left>` bone represents the left eye of the human body. It is used to calculate the eye level.
 
 [#tab-human-eye-left]
 .Eye_Left bone
@@ -372,7 +372,7 @@ The `Eye_Left` bone represents the left eye of the human body. It is used to cal
 
 == Eye_Right (T)
 
-The `Eye_Right` bone represents the right eye of the human body. It is used to calculate the eye level.
+The `<Eye_Right>` bone represents the right eye of the human body. It is used to calculate the eye level.
 
 [#tab-human-eye-right]
 .Eye_Right bone
@@ -397,7 +397,7 @@ The `Eye_Right` bone represents the right eye of the human body. It is used to c
 
 == Shoulder_Left (T)
 
-The `Shoulder_Left` bone represents the upper part of the left shoulder, that is, the interaction between the clavicle bone and the humerus head of the human skeleton.
+The `<Shoulder_Left>` bone represents the upper part of the left shoulder, that is, the interaction between the clavicle bone and the humerus head of the human skeleton.
 
 [#tab-human-shoulder-left]
 .Shoulder_Left bone
@@ -422,7 +422,7 @@ The `Shoulder_Left` bone represents the upper part of the left shoulder, that is
 
 == Upper_Arm_Left (T)
 
-The `Upper_Arm_Left` bone represents the upper part of the left arm, that is, the humerus head of the human skeleton.
+The `<Upper_Arm_Left>` bone represents the upper part of the left arm, that is, the humerus head of the human skeleton.
 
 [#tab-human-upper-arm-left]
 .Upper_Arm_Left bone
@@ -447,7 +447,7 @@ The `Upper_Arm_Left` bone represents the upper part of the left arm, that is, th
 
 == Lower_Arm_Left (T)
 
-The `Lower_Arm_Left` bone represents the lower part of the left arm, that is, the left elbow and Radius and Ulna of the human skeleton.
+The `<Lower_Arm_Left>` bone represents the lower part of the left arm, that is, the left elbow and Radius and Ulna of the human skeleton.
 
 [#tab-human-lower-arm-left]
 .Lower_Arm_Left bone
@@ -472,7 +472,7 @@ The `Lower_Arm_Left` bone represents the lower part of the left arm, that is, th
 
 == Hand_Left (T)
 
-The `Hand_Left` bone represents the left hand, that is, the left carpal bones of the human skeleton.
+The `<Hand_Left>` bone represents the left hand, that is, the left carpal bones of the human skeleton.
 
 [#tab-human-hand-left]
 .Hand_Left bone
@@ -497,7 +497,7 @@ The `Hand_Left` bone represents the left hand, that is, the left carpal bones of
 
 == Full_Thumb_Left (T)
 
-The `Full_Thumb_Left` bone represents the thumb of the left hand, that is, the full thumb of the human skeleton.
+The `<Full_Thumb_Left>` bone represents the thumb of the left hand, that is, the full thumb of the human skeleton.
 
 [#tab-human-full-thumb-left]
 .Full_Thumb_Left bone
@@ -522,7 +522,7 @@ The `Full_Thumb_Left` bone represents the thumb of the left hand, that is, the f
 
 == Full_Fingers_Left (T)
 
-The `Full_Fingers_Left` bone represents all other fingers of the left hand, that is, the full index finger, middle finger, ring finger, and pinkie finger of the human skeleton. The middle finger position and length are used to place the bone correctly.
+The `<Full_Fingers_Left>` bone represents all other fingers of the left hand, that is, the full index finger, middle finger, ring finger, and pinkie finger of the human skeleton. The middle finger position and length are used to place the bone correctly.
 
 [#tab-human-full-fingers-left]
 .Full_Fingers_Left bone
@@ -547,7 +547,7 @@ The `Full_Fingers_Left` bone represents all other fingers of the left hand, that
 
 == Shoulder_Right (T)
 
-The `Shoulder_Right` bone represents the upper part of the right shoulder, that is, the interaction between the clavicle bone and the humerus head of the human skeleton.
+The `<Shoulder_Right>` bone represents the upper part of the right shoulder, that is, the interaction between the clavicle bone and the humerus head of the human skeleton.
 
 [#tab-human-shouder-right]
 .Shoulder_Right bone
@@ -572,7 +572,7 @@ The `Shoulder_Right` bone represents the upper part of the right shoulder, that 
 
 == Upper_Arm_Right (T)
 
-The `Upper_Arm_Right` bone represents the upper part of the right arm, that is, the humerus head of the human skeleton.
+The `<Upper_Arm_Right>` bone represents the upper part of the right arm, that is, the humerus head of the human skeleton.
 
 [#tab-human-upper-arm-right]
 .Upper_Arm_Right bone
@@ -597,7 +597,7 @@ The `Upper_Arm_Right` bone represents the upper part of the right arm, that is, 
 
 == Lower_Arm_Right (T)
 
-The `Lower_Arm_Right` bone represents the lower part of the right arm, that is, the right elbow and Radius and Ulna of the human skeleton.
+The `<Lower_Arm_Right>` bone represents the lower part of the right arm, that is, the right elbow and Radius and Ulna of the human skeleton.
 
 [#tab-human-lower-arm-right]
 .Lower_Arm_Right bone
@@ -622,7 +622,7 @@ The `Lower_Arm_Right` bone represents the lower part of the right arm, that is, 
 
 == Hand_Right (T)
 
-The `Hand_Right` bone represents the right hand, that is, the right carpal bones of the human skeleton.
+The `<Hand_Right>` bone represents the right hand, that is, the right carpal bones of the human skeleton.
 
 [#tab-human-hand-right]
 .Hand_Right bone
@@ -647,7 +647,7 @@ The `Hand_Right` bone represents the right hand, that is, the right carpal bones
 
 == Full_Thumb_Right (T)
 
-The `Full_Thumb_Right` bone represents the thumb of the right hand, that is, the full thumb of the human skeleton.
+The `<Full_Thumb_Right>` bone represents the thumb of the right hand, that is, the full thumb of the human skeleton.
 
 [#tab-human-full-thumb-right]
 .Full_Thumb_Right bone
@@ -672,7 +672,7 @@ The `Full_Thumb_Right` bone represents the thumb of the right hand, that is, the
 
 == Full_Fingers_Right (T)
 
-The `Full_Fingers_Right` bone represents all other fingers of the right hand, that is, the full index finger, middle finger, ring finger, and pinkie finger. The middle finger position and length are used to place the bone correctly.
+The `<Full_Fingers_Right>` bone represents all other fingers of the right hand, that is, the full index finger, middle finger, ring finger, and pinkie finger. The middle finger position and length are used to place the bone correctly.
 
 [#tab-human-full-fingers-right]
 .Full_Fingers_Right bone
@@ -695,7 +695,7 @@ The `Full_Fingers_Right` bone represents all other fingers of the right hand, th
 |===
 
 
-The `Upper_Leg_Left` bone represents the upper part of the left leg, that is, the thigh of the human skeleton. It controls the hip joint.
+The `<Upper_Leg_Left>` bone represents the upper part of the left leg, that is, the thigh of the human skeleton. It controls the hip joint.
 
 [#tab-human-upper-leg-left]
 .Upper_Leg_Left bone
@@ -720,7 +720,7 @@ The `Upper_Leg_Left` bone represents the upper part of the left leg, that is, th
 
 == Lower_Leg_Left (T)
 
-The `Lower_Leg_Left` bone represents the lower part of the left leg, that is, the Tibula and Fibula of the human skeleton. It controls the knee.
+The `<Lower_Leg_Left>` bone represents the lower part of the left leg, that is, the Tibula and Fibula of the human skeleton. It controls the knee.
 
 [#tab-human-lower-leg-left]
 .Lower_Leg_Left bone
@@ -745,7 +745,7 @@ The `Lower_Leg_Left` bone represents the lower part of the left leg, that is, th
 
 == Foot_Left (T)
 
-The `Foot_Left` bone represents the left foot of the human skeleton without the toes. It controls the ankle.
+The `<Foot_Left>` bone represents the left foot of the human skeleton without the toes. It controls the ankle.
 
 [#tab-human-foot-left]
 .Foot_Left bone
@@ -770,7 +770,7 @@ The `Foot_Left` bone represents the left foot of the human skeleton without the 
 
 == Full_Toes_Left (T)
 
-The `Full_Toes_Left` bone represents all toes of the left foot of the human skeleton.
+The `<Full_Toes_Left>` bone represents all toes of the left foot of the human skeleton.
 
 [#tab-human-full-toes-left]
 .Full_Toes_Left bone
@@ -795,7 +795,7 @@ The `Full_Toes_Left` bone represents all toes of the left foot of the human skel
 
 == Upper_Leg_Right (T)
 
-The `Upper_Leg_Right` bone represents the upper part of the right leg, that is, the thigh of the human skeleton. It controls the hip joint.
+The `<Upper_Leg_Right>` bone represents the upper part of the right leg, that is, the thigh of the human skeleton. It controls the hip joint.
 
 [#tab-human-upper-leg-right]
 .Upper_Leg_Right bone
@@ -820,7 +820,7 @@ The `Upper_Leg_Right` bone represents the upper part of the right leg, that is, 
 
 == Lower_Leg_Right (T)
 
-The `Lower_Leg_Right` bone represents the lower part of the right leg, that is, the Tibula and Fibula of the human skeleton. It controls the knee.
+The `<Lower_Leg_Right>` bone represents the lower part of the right leg, that is, the Tibula and Fibula of the human skeleton. It controls the knee.
 
 [#tab-human-lower-leg-right]
 .Lower_Leg_Right bone
@@ -845,7 +845,7 @@ The `Lower_Leg_Right` bone represents the lower part of the right leg, that is, 
 
 == Foot_Right (T)
 
-The `Foot_Right` bone represents the right foot of the human skeleton without the toes. It controls the ankle.
+The `<Foot_Right>` bone represents the right foot of the human skeleton without the toes. It controls the ankle.
 
 [#tab-human-foot-right]
 .Foot_Right bone
@@ -870,7 +870,7 @@ The `Foot_Right` bone represents the right foot of the human skeleton without th
 
 == Full_Toes_Right (T)
 
-The `Full_Toes_Right` bone in a human skeleton represents all toes of the right foot of the human skeleton.
+The `<Full_Toes_Right>` bone in a human skeleton represents all toes of the right foot of the human skeleton.
 
 [#tab-human-full-toes-right]
 .Full_Toes_Right bone

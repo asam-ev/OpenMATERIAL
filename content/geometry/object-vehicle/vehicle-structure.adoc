@@ -381,8 +381,8 @@ image::Grp_Hitch_Front.svg[,600]
 
 This group defines the contact point to attach another vehicle.
 
-During simulation a vehicle's `Grp_Hitch_Rear_Contact_Point` and another
-vehicle's `Grp_Hitch_Front_Contact_Point` are placed at the same position.
+During simulation a vehicle's `<Grp_Hitch_Rear_Contact_Point>` and another
+vehicle's `<Grp_Hitch_Front_Contact_Point>` are placed at the same position.
 
 [#fig-Hitch-Front-Contact-Point]
 .Grp_Hitch_Front_Contact_Point
@@ -442,8 +442,8 @@ image::Grp_Hitch_Rear.svg[,600]
 
 This group defines the contact point to attach another vehicle.
 
-During simulation a vehicle's `Grp_Hitch_Rear_Contact_Point` and another
-vehicle's `Grp_Hitch_Front_Contact_Point` are placed at the same position.
+During simulation a vehicle's `<Grp_Hitch_Rear_Contact_Point>` and another
+vehicle's `<Grp_Hitch_Front_Contact_Point>` are placed at the same position.
 
 [#fig-Hitch-Rear-Contact-Point]
 .Grp_Hitch_Rear_Contact_Point

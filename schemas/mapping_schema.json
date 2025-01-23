@@ -52,7 +52,7 @@
                 },
                 "creationDate": {
                     "type": "string",
-                    "description": "The date and time of mapping table creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (for example, '20240703T101728Z').",
+                    "description": "The date and time of mapping table creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 cite:[iso8601] (for example, '20240703T101728Z').",
                     "pattern": "^\\d{8}T\\d{6}Z$"
                 }
             },
