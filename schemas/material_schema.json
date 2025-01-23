@@ -52,7 +52,7 @@
                 },
                 "creationDate": {
                     "type": "string",
-                    "description": "The date and time of material creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 (for example, '20240703T101728Z').",
+                    "description": "The date and time of material creation, formatted as YYYYMMDDTHHMMSSZ according to ISO 8601 cite:[iso8601] (for example, '20240703T101728Z').",
                     "pattern": "^\\d{8}T\\d{6}Z$"
                 }
             },
@@ -95,7 +95,7 @@
                 },
                 "emissivityData": {
                     "type": "object",
-                    "description": "Emissivity data of the material",
+                    "description": "Emissivity data of the material.",
                     "properties": {
                         "emissivityCoefficient": {
                             "type": "number",
@@ -122,7 +122,7 @@
                     "properties": {
                         "youngsModulus": {
                             "type": "number",
-                            "description": "Young's modulus of the material in Pa."
+                            "description": "Young's modulus of the material in Pascal (Pa)."
                         },
                         "poissonsRatio": {
                             "type": "number",
@@ -145,7 +145,7 @@
                     "properties": {
                         "density": {
                             "type": "number",
-                            "description": "Density of the material in kg/m^3."
+                            "description": "Density of the material in kg/m^3^."
                         },
                         "sources": {
                             "type": "string",
@@ -163,7 +163,7 @@
                     "properties": {
                         "coefficientOfRetroreflection": {
                             "type": "number",
-                            "description": "Coefficient of retro-reflection in cd lx^-1 m^-2."
+                            "description": "Coefficient of retro-reflection in candela per lux per square metre (cd lx^-1^ m^-2^)."
                         },
                         "sources": {
                             "type": "string",

@@ -112,7 +112,7 @@ Besides reference coordinate frames, _3D assets_ may incorporate other local coo
 The following naming conventions apply to {THIS_STANDARD} geometry files:
 
 * The _3D model_ file and the related _3D asset_ file shall have the same base name.
-  Example: Example.gltf, Example.xoma
+  Example: `Example.gltf`, `Example.xoma`
 * The naming convention inside the _3D model_ file (contains 3D information) must follow the capital Snake_Case definition, to improve human readability and enable consistent parsing of the file structure.
 * The naming convention inside the _3D asset_ file (contains metadata) must follow the lowerCamelCase definition, to allow a consistent naming convention in all .json files and consistent parsing.
 * Keywords are predefined names for objects inside the node structure.
@@ -126,7 +126,7 @@ Users are free to add more keywords for themself, if they are needed. The follow
 * All components shall be named according to capital snake case definition, starting with uppercase letters.
 * Group nodes (also known as empty nodes or parent nodes) shall have "Grp_" as a prefix.
 * Iterators shall be added as suffixes.
-  In the documentation, iterator names are written in angled brackets. Example: <type_idx>.
+  In the documentation, iterator names are written in angled brackets. Example: `<type_idx>`.
   In the node names itself, the iterator names are replaced by integer values, starting from 0.
 * Sequence of suffixes: 1: Iterator 2: Type Enumerator 3: Subtype Enumerator.
 * The predefined keywords shall be used for the corresponding asset parts and can be found in the corresponding subchapters.
@@ -143,7 +143,7 @@ The following rules for metadata apply:
 
 The _3D asset_ file provides metadata as well as a mapping table to {THIS_STANDARD} _material property_ files.
 This information extends the geometry of an asset given in standard _3D model_ file formats, for example, glTF, FBX, or USD.
-The _3D asset_ file is in JSON format with the file extension `xoma`.
+The _3D asset_ file is in JSON format with the file extension .xoma.
 As indicated above, the asset file has to have the same file name as the accompanying _3D model_.
 The following is an example of a _3D model_ file in glTF format with an accompanying _3D asset_ file:
 

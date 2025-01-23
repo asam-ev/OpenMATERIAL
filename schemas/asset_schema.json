@@ -182,7 +182,7 @@
                                 },
                                 "additionalAxles": {
                                     "type": "array",
-                                    "description": "An optional array of additional axles with the same properties as frontAxle and rearAxle.",
+                                    "description": "An optional array of additional axles with the same properties as 'frontAxle' and 'rearAxle'.",
                                     "items": {
                                         "$ref": "#/definitions/Axle"
                                     }
@@ -236,7 +236,7 @@
                 },
                 "textureResolutions": {
                     "type": "array",
-                    "description": "Lists all the used texture resolutions in the 3D model, meaning albedo, normal, or displacement textures. Possible values are '1K', '2K', '4K'. If no textures are used in the model, add empty element ''",
+                    "description": "Lists all the used texture resolutions in the 3D model, meaning 'albedo', 'normal', or 'displacement' textures. Possible values are '1K', '2K', '4K'. If no textures are used in the model, add empty element ' '.",
                     "items": {
                         "type": "string",
                         "enum": [
@@ -318,7 +318,7 @@
         },
         "materialMappingUri": {
             "type": "string",
-            "description": "Relative path to a material mapping file (.xomm). In this file, material names from the 3D model file or texture color codes from textures assigned in materialTextureAssignment are linked to ASAM OpenMATERIAL 3D property files.",
+            "description": "Relative path to a material mapping file (.xomm). In this file, material names from the 3D model file or texture color codes from textures assigned in 'materialTextureAssignment' are linked to ASAM OpenMATERIAL 3D property files.",
             "pattern": ".*\\.xomm$"
         },
         "materialTextureAssignment": {
@@ -333,7 +333,7 @@
                     },
                     {
                         "type": "string",
-                        "description": "File path to the ASAM OpenMATERIAL 3D assignment texture. Supported texture formats are png and jpg.",
+                        "description": "File path to the ASAM OpenMATERIAL 3D assignment texture. Supported texture formats are 'png' and 'jpg'.",
                         "pattern": "^(\\./|/)?([a-zA-Z0-9_\\-./]+)\\.(png|jpg|jpeg)$"
                     }
                 ],

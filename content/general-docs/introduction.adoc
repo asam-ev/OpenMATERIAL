@@ -121,6 +121,19 @@ The rules listed in <<tab-modal-verbs>> for using modal verbs apply:
                                                  They are given for the information of the user.
 |===
 
+
+=== Typographic conventions
+
+[#tab-typographic-conventions]
+.Typographic conventions
+[%header, cols=2*]
+|===
+|Mark-up             |Definition
+|`Code elements`     |This format is used for indexes, all data types and patterns, and example file names.
+|_Terms_             |This format is used to highlight terms from the "terms and definitions" section.
+|===
+
+
 [#sec-normative-and-informative-content]
 === Normative and informative content
 
