@@ -126,7 +126,7 @@ Users are free to add more keywords for themself, if they are needed. The follow
 * All components shall be named according to capital snake case definition, starting with uppercase letters.
 * Group nodes (also known as empty nodes or parent nodes) shall have "Grp_" as a prefix.
 * Iterators shall be added as suffixes.
-  In the documentation, iterator names are written in angled brackets. Example: `<type_idx>``.
+  In the documentation, iterator names are written in angled brackets. Example: `<type_idx>`.
   In the node names itself, the iterator names are replaced by integer values, starting from 0.
 * Sequence of suffixes: 1: Iterator 2: Type Enumerator 3: Subtype Enumerator.
 * The predefined keywords shall be used for the corresponding asset parts and can be found in the corresponding subchapters.

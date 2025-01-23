@@ -381,8 +381,8 @@ image::Grp_Hitch_Front.svg[,600]
 
 This group defines the contact point to attach another vehicle.
 
-During simulation a vehicle's `<Grp_Hitch_Rear_Contact_Point>` and another
-vehicle's `<Grp_Hitch_Front_Contact_Point>` are placed at the same position.
+During simulation a vehicle's Grp_Hitch_Rear_Contact_Point and another
+vehicle's Grp_Hitch_Front_Contact_Point are placed at the same position.
 
 [#fig-Hitch-Front-Contact-Point]
 .Grp_Hitch_Front_Contact_Point
@@ -442,8 +442,8 @@ image::Grp_Hitch_Rear.svg[,600]
 
 This group defines the contact point to attach another vehicle.
 
-During simulation a vehicle's `<Grp_Hitch_Rear_Contact_Point>` and another
-vehicle's `<Grp_Hitch_Front_Contact_Point>` are placed at the same position.
+During simulation a vehicle's Grp_Hitch_Rear_Contact_Point and another
+vehicle's Grp_Hitch_Front_Contact_Point are placed at the same position.
 
 [#fig-Hitch-Rear-Contact-Point]
 .Grp_Hitch_Rear_Contact_Point
@@ -1312,8 +1312,8 @@ image::Grp_Mirror_Blindspot_Joint.svg[,600]
 
 This group contains all parts of the vehicle's blindspot mirror mounting.
 
-It is a child node of `<Grp_Exterior_Dynamic>` if mounted directly to the
-vehicle body, or a child node of either `<Grp_Door_Left>` or `<Grp_Door_Right>` if
+It is a child node of Grp_Exterior_Dynamic if mounted directly to the
+vehicle body, or a child node of either Grp_Door_Left or Grp_Door_Right if
 mounted to the door.
 
 `<blindspot_mirror_mounting_idx>` denotes the index of blindspot mirror mountings.
@@ -1458,8 +1458,8 @@ image::Grp_Mirror_Side_Joint_Right.svg[,600]
 
 This group contains all parts of the side mirror on the vehicle's left side.
 
-It is a child node of `<Grp_Exterior_Dynamic>` if mounted directly to the
-vehicle body, or a child node of either `<Grp_Door_Left>` or `<Grp_Door_Right>` if
+It is a child node of Grp_Exterior_Dynamic if mounted directly to the
+vehicle body, or a child node of either Grp_Door_Left or Grp_Door_Right if
 mounted to the door.
 
 `<side_mirror_mounting_left_idx>` denotes the index of side mirrors on the left side. The index entries
@@ -1497,8 +1497,8 @@ image::Grp_Mirror_Side_Mounting_Left.svg[,600]
 
 This group contains all parts of the side mirror on the vehicle's right side.
 
-It is a child node of `<Grp_Exterior_Dynamic>` if mounted directly to the
-vehicle body, or a child node of either `<Grp_Door_Left>` or `<Grp_Door_Right>` if mounted
+It is a child node of Grp_Exterior_Dynamic if mounted directly to the
+vehicle body, or a child node of either Grp_Door_Left or Grp_Door_Right if mounted
 to the door.
 
 `<side_mirror_mounting_right_idx>` denotes the index of side mirrors on the
@@ -1637,7 +1637,7 @@ This group contains all geometries of a single wheel assembly, which may consist
 counting from front to rear, starting with 0.
 
 `<wheel_idx>` denotes the index of the wheel on the specified axle, counting from right to left in positive y-direction, starting with 0.
-For example, the wheel on the front left of a standard vehicle would be labeled `Grp_Wheel_0_1`.
+For example, the wheel on the front left of a standard vehicle would be labeled 'Grp_Wheel_0_1'.
 
 Wheel steering is represented by rotation around the z-axis.
 Wheel camber is defined by a rotation around the x-axis.
