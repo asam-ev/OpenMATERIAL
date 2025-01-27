@@ -136,7 +136,7 @@ image::Grp_Road_Objects.svg[,600]
 == Grp_Signals
 
 A signal in the context of traffic is a visual sign used to control the flow of traffic. A traffic signal can be both a sign and a light. Signals describe the relevant area or volume of a traffic signal only. Posts and gantries are considered road objects.
-Grp_Signals acts as parent to all road objects of an environment. It shares the coordinate system with Grp_Root.
+Grp_Signals acts as parent to all signals of an environment. It shares the coordinate system with Grp_Root.
 
 [#fig-signals]
 .Grp_Signals
