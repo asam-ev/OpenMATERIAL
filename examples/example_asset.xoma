@@ -5,21 +5,21 @@
         "uuid": "87769375-a510-9c68-9af8-cc3ad3dd8349",
         "assetVersion": "1.0.0",
         "openMaterialVersion": "1.0.0",
-        "copyrights": ["(C) 2023-2024 Example Company"],
+        "copyrights": ["(C) 2024 Persival GmbH"],
         "license": "MPL-2.0",
-        "authors": ["john.doe@asam.net"],
+        "authors": ["clemens.linnhoff@persival.de"],
         "modelCreationTool": "Blender",
         "creationDate": "20240703T101728Z",
-        "modelingMethod": "Modeled according to images",
+        "modelingMethod": "Modeled freely without real world counterpart",
         "validationDescription": "Not validated.",
         "assetType": "object",
         "objectClass": "other",
         "animated": false,
         "pbrMaterialWorkflow": "metallic",
-        "triangleCount": 100000,
-        "meshCount": 10,
+        "triangleCount": 492,
+        "meshCount": 1,
         "textureResolutions": [
-            "2K"
+            "1K"
         ],
         "normalMapFormat": "OpenGL",
         "boundingBox": {
