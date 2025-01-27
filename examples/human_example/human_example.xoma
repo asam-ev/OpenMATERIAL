@@ -14,16 +14,16 @@
         "validationDescription": "Since this is a fictional human, the geometry was not validated. Standard compliance was verified manually.",
         "assetType": "object",
         "objectClass": "human",
-        "animated": false,
+        "animated": true,
         "pbrMaterialWorkflow": "metallic",
-        "triangleCount": 46514,
+        "triangleCount": 46496,
         "meshCount": 4,
         "textureResolutions": [""],
         "normalMapFormat": "OpenGL",
         "boundingBox": {
-            "x": [-0.151239, 0.21534],
-            "y": [-0.54689, 0.54689],
-            "z": [0.0, 1.78]
+            "x": [-0.183, 0.183],
+            "y": [-0.547, 0.547],
+            "z": [0, 1.779]
         }
     }
 }
