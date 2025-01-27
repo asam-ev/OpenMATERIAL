@@ -1,7 +1,7 @@
 # ASAM OpenMATERIAL 3D
-ASAM OpenMATERIAL 3D is a new ASAM standard with the target to develop a 3D model exchange format with physical material properties for virtual development, test and validation of automated driving.
+ASAM OpenMATERIAL 3D has the target to develop a 3D asset exchange format with physical material properties for virtual development, test and validation of automated driving.
 
-The project group discussions led to renaming the standard from "ASAM OpenMATERIAL" to "ASAM OpenMATERIAL 3D".
+The project group discussions led to renaming the standard from "ASAM OpenMATERIAL" to "ASAM OpenMATERIAL 3D" to emphasize that the standard not only covers material properties but also 3D geometry.
 
 ## Project origin
 This project is a continuation of the [OpenMATERIAL](https://github.com/LudwigFriedmann/OpenMATERIAL/) project at [ASAM e.V.](https://www.asam.net/).
