@@ -56,13 +56,17 @@ If applicable, the origin of this inertial coordinate frame should match that of
 
 The terrain is characterized by the environment's ground structure, such as hills, mountains, or flat territory, meaning, the landscape in general. It does not include local elevations like vegetation, buildings, or other human-made structures.
 
+Grp_Terrain is used as parent for all nodes defining the terrain of an environment. It shares the coordinate system with Grp_Root, see <<tab-Environment-Grp-Root>>.
+
 [#fig-terrain]
 .Grp_Terrain
 image::Grp_Terrain.svg[,600]
 
 == Grp_Environment_Objects
 
-An environment object consists of buildings, vegetation, and any other (stationary) object of the surrounding. An environment object causes a local elevation or other additions in the terrain. 
+Environment objects includes buildings, vegetation, and any other (stationary) objects in the environment. An environment object causes a local elevation or other addition to the terrain.
+
+Grp_Environment_Objects is used as parent for all environment objects in an environment. It shares the coordinate system with Grp_Root, see <<tab-Environment-Grp-Root>>.
 
 [#fig-environment-objects]
 .Grp_Environment_Objects
@@ -72,13 +76,17 @@ image::Grp_Environment_Objects.svg[,600]
 
 A building is a human-made structure and includes houses, towers, or skyscrapers.
 
+Grp_Buildings is used as parent for all buildings of a Grp_Environment_Objects. It shares the coordinate system with Grp_Root, see <<tab-Environment-Grp-Root>>.
+
 [#fig-buildings]
 .Grp_Buildings
 image::Grp_Buildings.svg[,600]
 
 == Grp_Vegetation
 
-The vegetation includes all organic growths or plants that are part of the landscape. Vegetation can grow on the terrain or on human-made structures, for example between roads and buildings. 
+Vegetation includes all organic growth or plants that are part of the landscape. Vegetation can grow on the terrain or on human-made structures, for example between roads and buildings.
+
+Grp_Vegetation is used as parent for all vegetation objects of a Grp_Environment_Objects. It shares the coordinate system with Grp_Root, see <<tab-Environment-Grp-Root>>.
 
 [#fig-vegetation]
 .Grp_Vegetation
@@ -88,6 +96,8 @@ image::Grp_Vegetation.svg[,600]
 
 The road network is the entirety of a road. It includes the drivable area, sidewalks, and any other traffic objects, such as traffic signals, signs, or traffic lights.
 
+Grp_Road_Network is used as parent for all nodes defining the road network of an environment. It shares the coordinate system with Grp_Root, see <<tab-Environment-Grp-Root>>.
+
 [#fig-road-network]
 .Grp_Road_Network
 image::Grp_Road_Network.svg[,600]
@@ -96,13 +106,17 @@ image::Grp_Road_Network.svg[,600]
 
 The drivable area is a traffic space that is dedicated to vehicles. It is the surface part of the road structure on which vehicles drive and includes lanes and parking areas. The drivable area for {THIS_STANDARD} is comparable to the scope of the ASAM OpenDRIVE standard for on-road use cases.
 
+Grp_Drivable_Area is used as parent for all nodes defining the drivable area of a road network. It shares the coordinate system with Grp_Root, see <<tab-Environment-Grp-Root>>.
+
 [#fig-drivable-area]
 .Grp_Drivable_Area
 image::Grp_Drivable_Area.svg[,600]
 
 == Grp_Sidewalks 
 
-A sidewalk is a traffic space that is dedicated to pedestrians and sometimes cyclists. They are usually adjacent to the drivable area.
+A sidewalk is a traffic space that is dedicated to pedestrians and sometimes cyclists. Sidewalks are usually adjacent to the drivable area.
+
+Grp_Sidewalks is used as parent for all nodes defining the sidewalks of a road network. It shares the coordinate system with Grp_Root, see <<tab-Environment-Grp-Root>>.
 
 [#fig-sidewalks]
 .Grp_Sidewalks
@@ -110,7 +124,9 @@ image::Grp_Sidewalks.svg[,600]
 
 == Grp_Road_Marks
 
-A road mark includes any markings on the road and traffic spaces.
+Road marks include any markings on the road and traffic spaces.
+
+Grp_Road_Marks is used as parent for all nodes defining the road marks of a road network. It shares the coordinate system with Grp_Root, see <<tab-Environment-Grp-Root>>.
 
 [#fig-road-marks]
 .Grp_Road_Marks
@@ -118,7 +134,9 @@ image::Grp_Road_Marks.svg[,600]
 
 == Grp_Road_Objects
 
-A road object includes all other objects on or nearby the road, excluding signals.
+Road objects includes all other objects on or nearby the road, excluding signals.
+
+Grp_Road_Objects is used as parent for all road objects of a road network. It shares the coordinate system with Grp_Root, see <<tab-Environment-Grp-Root>>.
 
 [#fig-road-objects]
 .Grp_Road_Objects
@@ -126,7 +144,9 @@ image::Grp_Road_Objects.svg[,600]
 
 == Grp_Signals
 
-A signal in traffic is a visual sign used to control the flow of traffic. A traffic signal can be both a sign and a light. Signals describe the relevant area or volume of a traffic signal only. Posts and gantries are considered road objects.
+A signal in the context of traffic is a visual sign used to control the flow of traffic. A traffic signal can be both a sign and a light. Signals describe the relevant area or volume of a traffic signal only. Posts and gantries are considered road objects.
+
+Grp_Signals is used as parent for all signals of a road network. It shares the coordinate system with Grp_Root, see <<tab-Environment-Grp-Root>>.
 
 [#fig-signals]
 .Grp_Signals
