@@ -1,0 +1,18 @@
+:sectnums!:
+
+= Annex A: Checker Rules
+
+<Introduction>
+
+== E.1 <rule 1>
+=== E.1.1 only_speed_prioity
+
+UID:: tbd
+
+Description:: tbd
+
+== E.2 <rule 2>
+
+UID:: tbd
+
+Description:: tbd
