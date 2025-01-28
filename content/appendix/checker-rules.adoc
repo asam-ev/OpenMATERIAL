@@ -36,13 +36,33 @@ TIP: Visit the https://github.com/asam-ev/qc-framework[ASAM Quality Checker Fram
 
 == A.1 General rules
 
-=== A.1.1 xoma
+=== A.1.1 General
 
 ==== valid_json_document
 
 UID:: asam.net:xom:1.0.0:general.valid_json_document
 
 Description:: ASAM OpenMATERIAL 3D files with the file extensions .xoma, .xomm, .xomp or .xompt shall be valid json documents.
+
+==== valid_schema
+
+UID:: asam.net:xom:1.0.0:general.valid_schema
+
+Description:: ASAM OpenMATERIAL 3D files with the file extensions .xoma, .xomm, .xomp or .xompt shall be valid according to their corresponding json schema.
+
+==== uris_exist
+
+UID:: asam.net:xom:1.0.0:general.uris_exist
+
+Description:: If a URI property to other file is set in a json file, the file linked in that property shall exist.
+
+=== A.1.2 XOMA
+
+==== material_textures_exist
+
+UID:: asam.net:xom:1.0.0:xoma.material_textures_exist
+
+Description:: Textures mapped to material names in the materialTextureAssignment field of .xoma files shall exist.
 
 == A.2 Geometry
 
