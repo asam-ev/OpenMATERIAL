@@ -3,7 +3,7 @@ ASAM OpenMATERIAL 3D standardizes the exchange of 3D assets with physical materi
 
 The project group discussions led to renaming the standard from "ASAM OpenMATERIAL" to "ASAM OpenMATERIAL 3D" to emphasize that the standard not only covers material properties but also 3D geometry.
 
-ASAM OpenMATERIAL 3D is an open-source project that welcomes contributions from everyone.
+ASAM OpenMATERIAL 3D is an open-source standard that welcomes contributions from everyone.
 
 ## Published version
 The standard is still under development. The published HTML reflects the status of the main branch. It can be found here: [ASAM OpenMATERIAL](https://asam-ev.github.io/OpenMATERIAL-3D/asamopenmaterial/latest/specification/index.html).
