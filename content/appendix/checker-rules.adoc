@@ -15,10 +15,10 @@ The concepts for a rule UID are:
 
 * *Emanating Entity*: a domain name for the entity (organization or company) that declares the rule UID. In this case it is `asam.net`.
 * *Standard*: a short string that represents the standard or the domain to which the rule is applied. For {THIS_STANDARD} there are 3 different standard strings.
-** *xom*: General rules applicable for both parts or not categorizable because they are in-between
-** *xom-geo*: Rules that only apply to OpenMATERIAL 3D: Geometry
-** *xom-mat*: Rules that only apply to OpenMATERIAL 3D: Material
-* *Definition Setting*: the version of the standard or the domain to which the rule appears or is applied for the first time
+** `xom`: General rules applicable for both parts or not categorizable because they are in-between
+** `xom-geo`: Rules that only apply to OpenMATERIAL 3D: Geometry
+** `xom-mat`: Rules that only apply to OpenMATERIAL 3D: Material
+* *Definition Setting*: the version of the standard or the domain to which the rule appears or is applied for the first time, for example `1.0.0`.
 * *Rule Full Name*: the full name of the rule, as dot-separated, snake_lower_case string. The full name of a rule is composed by the rule set, and the rule name, a unique string inside the categorization. The rule set can be nested, meaning that it can be defined as an arbitrary sequence of dot-separated names, while the name is the snake_case string after the last dot of the full name.
 
 To provide a visual description for a rule UID:
@@ -66,4 +66,55 @@ Description:: Textures mapped to material names in the materialTextureAssignment
 
 == A.2 Geometry
 
+=== A.2.1 XOMA
+
+==== vehicle_class_data_defined
+
+UID:: asam.net:xom-geo:1.0.0:xoma.vehicle_class_data_defined
+
+Description:: If an asset is of type 'vehicle', the property 'vehicleClassData' must be set in the metadata.
+
+==== human_class_data_defined
+
+UID:: asam.net:xom-geo:1.0.0:xoma.human_class_data_defined
+
+Description:: If an asset is of type 'human', the property 'humanClassData' must be set in the metadata.
+
+==== texture_assignment_requires_mapping
+
+UID:: asam.net:xom-geo:1.0.0:xoma.texture_assignment_requires_mapping
+
+Description:: If the materialTextureAssignment property is set, the materialMappingUri also has to be set.
+
+==== all_texture_rgba_codes_defined
+
+UID:: asam.net:xom-geo:1.0.0:xoma.all_texture_rgba_codes_defined
+
+Description:: If the materialTextureAssignment property is set, all color codes of all referenced textures shall be covered by the material mapping table referenced in materialMappingUri.
+
 == A.2 Material
+
+=== A.2.1 XOMP
+
+==== look_up_tables_unique_wavelengths
+
+UID:: asam.net:xom-mat:1.0.0:xomp.look_up_tables_unique_wavelengths
+
+Description:: Look-up tables referenced in an .xomp file should not have overlapping wavelength ranges. (Warning level)
+
+
+=== A.2.2 XOMPT
+
+==== tables_sorted_correctly
+
+UID:: asam.net:xom-mat:1.0.0:xompt.tables_sorted_correctly
+
+Description:: Arrays in look-up tables shall be sorted based on the columns starting with the first.
+
+==== temperature_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xompt.temperature_valid_range
+
+Description:: A temperature property shall not be below 0 K.
+
+NOTE: Todo: the temperature example needs to be defined for all physical properties.
