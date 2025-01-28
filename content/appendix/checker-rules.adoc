@@ -2,17 +2,48 @@
 
 = Annex A: Checker Rules
 
-<Introduction>
+== Concept
 
-== E.1 <rule 1>
-=== E.1.1 only_speed_prioity
+Checker rules are semantic and syntactic requirements that shall be applied to material and geometry.
+{THIS_STANDARD} defines a basic set of rules that apply to the entire standard as well as individual rules for the two parts of {THIS_STANDARD}.
+Rules consist of a name, a UID (a unique identifier of the rule), and a description that specifies the requirements.
 
-UID:: tbd
+The UID is a string that encapsulates a sequence of concepts that allow to identify immediately a rule across the different domains.
+The concepts are ordered and separated via the separation character `:`.
 
-Description:: tbd
+The concepts for a rule UID are:
 
-== E.2 <rule 2>
+* *Emanating Entity*: a domain name for the entity (organization or company) that declares the rule UID. In this case it is `asam.net`.
+* *Standard*: a short string that represents the standard or the domain to which the rule is applied. For {THIS_STANDARD} there are 3 different standard strings.
+** *xom*: General rules applicable for both parts or not categorizable because they are in-between
+** *xom-geo*: Rules that only apply to OpenMATERIAL 3D: Geometry
+** *xom-mat*: Rules that only apply to OpenMATERIAL 3D: Material
+* *Definition Setting*: the version of the standard or the domain to which the rule appears or is applied for the first time
+* *Rule Full Name*: the full name of the rule, as dot-separated, snake_lower_case string. The full name of a rule is composed by the rule set, and the rule name, a unique string inside the categorization. The rule set can be nested, meaning that it can be defined as an arbitrary sequence of dot-separated names, while the name is the snake_case string after the last dot of the full name.
 
-UID:: tbd
+To provide a visual description for a rule UID:
 
-Description:: tbd
+[source]
+----
+<emanating-entity>:<standard>:x.y.z:rule_set.rule_name
+----
+
+NOTE: Third party rule UID creators (i.e., emanating entities different from ASAM) should still fill all the concepts above. If that is not possible, concepts shall be left blank, but separation : is still required (i.e., example.com:::rulename is valid).
+
+UIDs are designed to be queried, e.g., implementations may use UNIX pattern matching.
+
+TIP: Visit the https://github.com/asam-ev/qc-framework[ASAM Quality Checker Framework] documentation to see detailed information on how and which checks are implemented.
+
+== A.1 General rules
+
+=== A.1.1 xoma
+
+==== valid_json_document
+
+UID:: asam.net:xom:1.0.0:general.valid_json_document
+
+Description:: ASAM OpenMATERIAL 3D files with the file extensions .xoma, .xomm, .xomp or .xompt shall be valid json documents.
+
+== A.2 Geometry
+
+== A.2 Material
