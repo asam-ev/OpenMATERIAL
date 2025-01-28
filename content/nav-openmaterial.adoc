@@ -40,4 +40,8 @@ include::material/material-reflectance-schema.adoc[leveloffset=+2]
 [bibliography]
 include::bibliography.adoc[leveloffset=+1]
 
+:sectnums!:
+[appendix]
+include::appendix/checker-rules.adoc[leveloffset=+1]
+
 :!antora_mapping:
