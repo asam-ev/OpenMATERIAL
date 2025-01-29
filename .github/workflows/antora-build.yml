@@ -1,6 +1,6 @@
 # Minimal working Antora configuration to publish to GitHub Pages
 # Source: https://docs.antora.org/antora/latest/publish-to-github-pages/  (example 2)
-# Output URL: https://asam-ev.github.io/OpenMATERIAL
+# Output URL: https://asam-ev.github.io/OpenMATERIAL-3D
 name: Publish with Antora to GitHub Pages
 on:
   push:
