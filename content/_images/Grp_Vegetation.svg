@@ -53,6 +53,11 @@
                 <path d="M19300.8,2335.57L20679.9,2815.88" style="fill:none;stroke:rgb(127,127,127);stroke-width:51.05px;stroke-dasharray:102.1,102.1,0,0,0,0;"/>
             </g>
         </g>
+        <g transform="matrix(1.96053,0,0,1.70483,364.934,325.233)">
+            <g id="Bounding-box" serif:id="Bounding box">
+                <path d="M240.573,98.374L328.515,158.334L89.295,158.334L208.905,98.46L240.573,98.374Z" style="fill:rgb(234,234,234);fill-opacity:0.8;"/>
+            </g>
+        </g>
         <g id="cardinal-direction" serif:id="cardinal direction" transform="matrix(0.168986,0.137772,-0.119697,0.220314,-6888.03,11305.9)">
             <g transform="matrix(0.999531,-0.0287655,0.0325823,0.999531,1745.17,154.476)">
                 <g transform="matrix(-0.151565,0.928749,-1.05198,-0.151565,-49064.2,-67373.5)">
