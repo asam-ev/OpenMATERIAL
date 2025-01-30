@@ -21,6 +21,6 @@ It contains one vehicle that refers to the ASAM OpenMATERIAL 3D vehicle_example 
 To showcase the interaction with ASAM OSI, the ASAM OpenSCENARIO file described above was played with the scenario player [esmini](https://github.com/esmini/esmini).
 The output was stored in an ASAM OSI binary SensorView trace file: `20250130T100644Z_sv_370_2112_700_scenario_example_two_vehicles.osi`.
 The ASAM OpenMATERIAL 3D assets linked in the ASAM OpenSCENARIO file and the ASAM OpenSCENARIO vehicle catalog are contained in the ASAM OSI trace file as model_references.
-The figure below was taken with the Persival Simspector to visualize the content of the ASAM OSI trace file, including the referenced ASAM OpenMATERIAL 3D assets.
+The figure below was taken with Persival Simspector to visualize the content of the ASAM OSI trace file, including the referenced ASAM OpenMATERIAL 3D assets.
 
 ![scenario_example.png](scenario_example.png)
