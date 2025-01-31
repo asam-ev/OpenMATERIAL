@@ -111,10 +111,92 @@ UID:: asam.net:xom-mat:1.0.0:xompt.tables_sorted_correctly
 
 Description:: Arrays in look-up tables shall be sorted based on the columns starting with the first.
 
+==== wavelength_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xompt.wavelength_valid_range
+
+Description:: The wavelength shall be within the range of 1e-09 m to 17,16e-03 m.
+
 ==== temperature_valid_range
 
 UID:: asam.net:xom-mat:1.0.0:xompt.temperature_valid_range
 
 Description:: A temperature property shall not be below 0 K.
 
-NOTE: Todo: the temperature example needs to be defined for all physical properties.
+==== real_part_IOR_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xompt.real_part_IOR_valid_range
+
+Description:: The real part of index of refraction (refractive index n) shall be below 0.
+
+==== imaginary_part_IOR_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xompt.imaginary_part_IOR_valid_range
+
+Description:: The imaginary part of index (extinction coefficient k) of refraction shall not be below 0.
+
+==== humidity
+
+UID:: asam.net:xom-mat:1.0.0:xompt.humidity
+
+Description:: The humidity shall be within the range of 0 % to 100 %.
+
+==== real_part_permeability_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xompt.real_part_permeability_valid_range
+
+Description:: The real part of permeability shall be within the range of 1.256637e-06 to 1.256637 (µ_0 to µ_0 x 10e06).
+
+==== imaginary_part_permeability_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xompt.real_part_permeability_valid_range
+
+Description:: The imaginary part of permeability shall not be below 0.
+
+==== imaginary_part_permittivity_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xompt.imaginary_part_permitivity_valid_range
+
+Description:: The imaginary part of permittivity shall not be below 0.
+
+==== incident_elevation_angle_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xompt.incident_elevation_angle_valid_range
+
+Description:: The incident elevation angle shall be within the rang of -1.570796 rad to 1.570796 rad.
+
+==== exit_elevation_angle_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xompt.exit_elevation_angle_valid_range
+
+Description:: The exit elevation angle shall be within the range of -1.570796 rad to 1.570796 rad.
+
+==== exit_azimuth_angle_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xompt.exit_azimuth_angle_valid_range
+
+Description:: The exit azimuth angle shall be within the range of 0 rad to 6.283185 rad.
+
+==== BRDF_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xompt.BRDF_valid_range
+
+Description:: The BRDF shall not be below 0 (1/sr).
+
+==== polarized_plane_angle_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xompt.polarized_plane_angle_valid_range
+
+Description:: The polarized plane angle shall be within the range of 0 rad to 3.141592 rad.
+
+==== amplitude_linear_polarized_plane_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xompt.amplitude_linear_polarized_plane_valid_range
+
+Description:: The amplitude within the linearly polarized plane shall be within the range of 0 to 1.
+
+==== phase_linear_polarized_plane_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xompt.phase_linear_polarized_plane_valid_range
+
+Description:: The phase within the linearly polarized plane shall be within the range of -3.141592 rad to 3.141592 rad OR 'null'.
