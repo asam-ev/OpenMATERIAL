@@ -18,6 +18,12 @@ Automated Driving/Automated Driving Assistance Systems
 BRDF::
 Bidirectional Reflectance Distribution Function
 
+BSTF::
+Bidrectional Scattering Distribution Function
+
+BTDF::
+Bidirectional Transmittance Distribution Function
+
 CAD::
 Computer-Aided Design
 
