@@ -1991,7 +1991,7 @@ Standard passenger vehicles do not have separate parts.
 | Center of the joint to the main vehicle or the parent.
 
 | *x-axis*
-| Collinear with the parts longitudinal axis, pointing forwards
+| Collinear with the part's longitudinal axis, pointing forwards
 
 | *y-axis*
 | Completes the right-handed coordinate system

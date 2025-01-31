@@ -720,7 +720,7 @@ The Upper_Leg_Left bone represents the upper part of the left leg, that is, the 
 
 == Lower_Leg_Left (T)
 
-The Lower_Leg_Left bone represents the lower part of the left leg, that is, the Tibula and Fibula of the human skeleton. It controls the knee.
+The Lower_Leg_Left bone represents the lower part of the left leg, that is, the Tibia and Fibula of the human skeleton. It controls the knee.
 
 [#tab-human-lower-leg-left]
 .Lower_Leg_Left bone
@@ -820,7 +820,7 @@ The Upper_Leg_Right bone represents the upper part of the right leg, that is, th
 
 == Lower_Leg_Right (T)
 
-The Lower_Leg_Right bone represents the lower part of the right leg, that is, the Tibula and Fibula of the human skeleton. It controls the knee.
+The Lower_Leg_Right bone represents the lower part of the right leg, that is, the Tibia and Fibula of the human skeleton. It controls the knee.
 
 [#tab-human-lower-leg-right]
 .Lower_Leg_Right bone
