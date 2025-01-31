@@ -27,7 +27,7 @@ This clear organization helps users understand the practical applications of {TH
 .Use case 1: Creating _3D assets_
 |===
 |*Description*                      |As a content creator, I want to create _3D assets_ for perception sensor simulation in a standardized format. The assets shall be linked to _material properties_.
-|*Relevant OpenMATERIAL 3D parts*   |Geometry and Material
+|*Relevant OpenMATERIAL 3D chapters*|Geometry and Material
 |*Influencing standards*            |OGC CDB
 |*Influencing technologies*         |3D Modeling (for example, 3dsMax and Maya), 3D Engine (for example, Unreal Engine)
 |*Relevant user*                    |Content creator
@@ -37,7 +37,7 @@ This clear organization helps users understand the practical applications of {TH
 .Use case 2: Creating material data
 |===
 |*Description*                      |As a measurement engineer, I want to create material data for use in _3D asset_ creation. The data shall consist of _physical or measured properties_ of materials that can be assigned to 3D meshes.
-|*Relevant OpenMATERIAL 3D parts*   |Material
+|*Relevant OpenMATERIAL 3D chapters*|Material
 |*Influencing standards*            |-
 |*Influencing technologies*         |-
 |*Relevant user*                    |Measurement engineer
@@ -47,7 +47,7 @@ This clear organization helps users understand the practical applications of {TH
 .Use case 3: Validating _material properties_ and 3D geometries
 |===
 |*Description*                      |As a measurement engineer, I want to validate 3D geometries and _material properties_. This _validation_ is performed as a comparison of the data, that is, _material properties_ and defined points in the 3D geometry, against measurements from the real-world.
-|*Relevant OpenMATERIAL 3D parts*   |Geometry and Material
+|*Relevant OpenMATERIAL 3D chapters*|Geometry and Material
 |*Influencing standards*            |-
 |*Influencing technologies*         |-
 |*Relevant user*                    |Measurement engineer, regulator
@@ -58,7 +58,7 @@ This clear organization helps users understand the practical applications of {TH
 |===
 |*Description*                      |As a content creation company, we want to distribute material data and _3D assets_ under copyright and license considerations.
 To distribute material data and _3D assets_ efficiently, it shall be possible to reuse the data and assets in different _simulation platforms_ and sensor models with varying sensor technologies, for example, wavelengths.
-|*Relevant OpenMATERIAL 3D parts*   |Geometry and Material
+|*Relevant OpenMATERIAL 3D chapters*|Geometry and Material
 |*Influencing standards*            |-
 |*Influencing technologies*         |-
 |*Relevant user*                    |Content creator
@@ -68,7 +68,7 @@ To distribute material data and _3D assets_ efficiently, it shall be possible to
 .Use case 5: Importing _3D assets_ linked to _material properties_ into shared sensor simulation models (FMU)
 |===
 |*Description*                      |As a sensor model developer, I want to import _3D assets_ that are packaged as FMUs into sensor models.
-|*Relevant OpenMATERIAL 3D parts*   |Geometry and Material
+|*Relevant OpenMATERIAL 3D chapters*|Geometry and Material
 |*Influencing standards*            |FMI, ASAM OSI (OSMP), ASAM OpenLABEL, ASAM OpenDRIVE, ASAM OpenSCENARIO
 |*Influencing technologies*         |Unreal Engine, Unity, OptiX, CUDA
 |*Relevant user*                    |Sensor model developer
@@ -78,7 +78,7 @@ To distribute material data and _3D assets_ efficiently, it shall be possible to
 .Use case 6: Importing _3D assets_ linked to _material properties_ into _simulation platform_
 |===
 |*Description*                      |As a _simulation platform_ developer, I want to import _3D assets_ into a _simulation platform_.
-|*Relevant OpenMATERIAL 3D parts*   |Geometry and Material
+|*Relevant OpenMATERIAL 3D chapters*|Geometry and Material
 |*Influencing standards*            |-
 |*Influencing technologies*         |Unreal Engine, Unity, Unigine, OptiX, CUDA
 |*Relevant user*                    |Simulation platform developer
@@ -88,7 +88,7 @@ To distribute material data and _3D assets_ efficiently, it shall be possible to
 .Use case 7: Retrofitting or changing _material properties_ independent of _3D assets_
 |===
 |*Description*                      |As a simulation platform developer, I want to be able to add or change _material properties_ independently of _3D assets_ geometries in a _simulation platform_.
-|*Relevant OpenMATERIAL 3D parts*   |Material
+|*Relevant OpenMATERIAL 3D chapters*|Material
 |*Influencing standards*            |ASAM OpenLABEL
 |*Influencing technologies*         |Unreal Engine, Unity, OptiX, CUDA
 |*Relevant user*                    |Simulation platform developer
@@ -98,7 +98,7 @@ To distribute material data and _3D assets_ efficiently, it shall be possible to
 .Use case 8: Moving _object parts_ in the environment simulation
 |===
 |*Description*                      |As a _simulation platform_ or sensor model developer, I want to move _objects_ as well as individual parts of the _objects_ during simulation runtime. These can be parts of a vehicle, for example, wheels and doors or the skeleton bones of a pedestrian. One option to manipulate the imported _3D assets_ during simulation runtime is using ASAM OSI. In the https://opensimulationinterface.github.io/osi-antora-generator/asamosi/V3.6.0/gen/structosi3_1_1GroundTruth.html[osi3::GroundTruth] message, information about moving and stationary _objects_ is provided from the _scenario_ engine to the sensor model. This entails _object_ positions, orientations, velocities and so on for every simulation time step, but also a so-called model reference. This reference is the path to a _3D asset_ associated with the _object_ or the stationary environment. Using the pose information together with the 3D mesh data, a _3D environment_ is constructed and updated for every simulation time step. Further attributes, such as https://opensimulationinterface.github.io/osi-antora-generator/asamosi/V3.6.0/gen/structosi3_1_1MovingObject_1_1VehicleAttributes_1_1WheelData.html[wheel positions] for vehicles or https://opensimulationinterface.github.io/osi-antora-generator/asamosi/V3.6.0/gen/structosi3_1_1MovingObject_1_1PedestrianAttributes_1_1Bone.html[bone poses] for pedestrians, enable a more refined movement of traffic participants in the _3D environment_.
-|*Relevant OpenMATERIAL 3D parts*   |Geometry
+|*Relevant OpenMATERIAL 3D chapters*|Geometry
 |*Influencing standards*            |ASAM OSI
 |*Influencing technologies*         |-
 |*Relevant user*                    |Simulation platform developer
@@ -109,7 +109,7 @@ To distribute material data and _3D assets_ efficiently, it shall be possible to
 |===
 |*Description*                      |As a _simulation platform_ or sensor model developer, I want to simulate the energy or _signal propagation_ using imported _3D assets_ with linked _material properties_. This is, for example, done with ray tracing. Rays are launched in a virtual 3D scene to simulate the propagation of light beams, radio waves, or ultrasonic waves. The interaction of the rays with the surfaces of the _objects_ in the _3D environment_ depends on the _material properties_ of these surfaces. These properties are assigned to the 3D geometries of the _objects_ and imported from a material database.
 The simulation shall be able to cope with different real-time requirements, for example, SiL, HiL, open-loop, closed-loop and so on.
-|*Relevant OpenMATERIAL 3D parts*   |Geometry and Material
+|*Relevant OpenMATERIAL 3D chapters*|Geometry and Material
 |*Influencing standards*            |-
 |*Influencing technologies*         |Nvidia OptiX
 |*Relevant user*                    |Simulation platform developer, sensor model developer, end user
@@ -119,7 +119,7 @@ The simulation shall be able to cope with different real-time requirements, for 
 .Use case 10: Using sensor simulation to train perception algorithms
 |===
 |*Description*                      |As a perception algorithm developer, I want to use simulated environments for model training and testing, as real-world information collection is too expensive and inconvenient.
-|*Relevant OpenMATERIAL 3D parts*   |Geometry and Material
+|*Relevant OpenMATERIAL 3D chapters*|Geometry and Material
 |*Influencing standards*            |ASAM OSI, ASAM OpenSCENARIO, ASAM OpenDRIVE
 |*Influencing technologies*         |Unity, OptiX, Regeneration AI
 |*Relevant user*                    |End user
