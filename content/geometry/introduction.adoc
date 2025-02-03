@@ -70,4 +70,4 @@ The ASAM OpenX standards strive to provide comprehensive, realistic, and exchang
 
 The transformation of reference frames between these ASAM standards is described in xref:../geometry/general.adoc#_local_coordinate_system[Local coordinate system].
 
-  
+Examples for all interactions are provided in the https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/scenario_example[scenario_example folder].
