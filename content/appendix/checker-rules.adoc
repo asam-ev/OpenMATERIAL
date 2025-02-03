@@ -1,6 +1,6 @@
 :sectnums!:
 
-= Annex A: Checker Rules
+= Annex A: Checker rules (normative)
 
 == Concept
 
