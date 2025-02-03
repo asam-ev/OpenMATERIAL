@@ -115,7 +115,7 @@ Description:: Arrays in look-up tables shall be sorted based on the columns star
 
 UID:: asam.net:xom-mat:1.0.0:xompt.wavelength_valid_range
 
-Description:: The wavelength shall be within the range of 1e-09 m to 17,16e-03 m.
+Description:: The wavelength shall be within the range of 1e-09 m to 17.16e-03 m. The upper limit corresponds to 20 kHz.
 
 ==== temperature_valid_range
 
@@ -127,7 +127,7 @@ Description:: A temperature property shall not be below 0 K.
 
 UID:: asam.net:xom-mat:1.0.0:xompt.real_part_IOR_valid_range
 
-Description:: The real part of index of refraction (refractive index n) shall be below 0.
+Description:: The real part of index of refraction (refractive index n) shall not be below 0.
 
 ==== imaginary_part_IOR_valid_range
 
@@ -139,7 +139,7 @@ Description:: The imaginary part of index (extinction coefficient k) of refracti
 
 UID:: asam.net:xom-mat:1.0.0:xompt.humidity
 
-Description:: The humidity shall be within the range of 0 % to 100 %.
+Description:: The humidity shall be within the range of 0 to 100.
 
 ==== real_part_permeability_valid_range
 
