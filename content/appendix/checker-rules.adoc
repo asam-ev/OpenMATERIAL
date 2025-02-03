@@ -4,35 +4,35 @@
 
 == Concept
 
-Checker rules are semantic and syntactic requirements that shall be applied to material and geometry.
-{THIS_STANDARD} defines a basic set of rules that apply to the entire standard as well as individual rules for the two parts of {THIS_STANDARD}.
+Checker rules are semantic and syntactic requirements that shall be applied to both parts of {THIS_STANDARD} (material and geometry).
+{THIS_STANDARD} defines a basic set of rules that apply to the entire standard, as well as specific rules for the two parts of {THIS_STANDARD}.
 Rules consist of a name, a UID (a unique identifier of the rule), and a description that specifies the requirements.
 
-The UID is a string that encapsulates a sequence of concepts that allow to identify immediately a rule across the different domains.
-The concepts are ordered and separated via the separation character `:`.
+The UID is a string that encapsulates a sequence of concepts that identify  a rule across different domains.
+The concepts are ordered and separated by the separation character `:`.
 
 The concepts for a rule UID are:
 
-* *Emanating Entity*: a domain name for the entity (organization or company) that declares the rule UID. In this case it is `asam.net`.
-* *Standard*: a short string that represents the standard or the domain to which the rule is applied. For {THIS_STANDARD} there are 3 different standard strings.
-** `xom`: General rules applicable for both parts or not categorizable because they are in-between
-** `xom-geo`: Rules that only apply to OpenMATERIAL 3D: Geometry
-** `xom-mat`: Rules that only apply to OpenMATERIAL 3D: Material
-* *Definition Setting*: the version of the standard or the domain to which the rule appears or is applied for the first time, for example `1.0.0`.
-* *Rule Full Name*: the full name of the rule, as dot-separated, snake_lower_case string. The full name of a rule is composed by the rule set, and the rule name, a unique string inside the categorization. The rule set can be nested, meaning that it can be defined as an arbitrary sequence of dot-separated names, while the name is the snake_case string after the last dot of the full name.
+* *Emanating entity*: A domain name for the entity (organization or company) that declares the rule UID. For {THIS_STANDARD}, it is `asam.net`.
+* *Standard*: A short string that represents the standard or the domain to which the rule is applied. For {THIS_STANDARD}, there are three different standard strings:
+** `xom`: General rules applicable for both parts or not categorizable because they are in-between.
+** `xom-geo`: Rules that only apply to the geometry part of {THIS_STANDARD}.
+** `xom-mat`: Rules that only apply to the material part of {THIS_STANDARD}.
+* *Definition setting*: The version of the standard or the domain to which the rule appears or is applied for the first time, for example, `1.0.0`.
+* *Rule full name*: The full name of the rule, as dot-separated, snake_lower_case string. The full name of a rule is composed of the rule set and the rule name, a unique string inside the categorization. The rule set can be nested, meaning that it can be defined as an arbitrary sequence of dot-separated names. The name is the snake_case string after the last dot of the full name.
 
-To provide a visual description for a rule UID:
+The following is a visual description of a rule UID:
 
 [source]
 ----
 <emanating-entity>:<standard>:x.y.z:rule_set.rule_name
 ----
 
-NOTE: Third party rule UID creators (i.e., emanating entities different from ASAM) should still fill all the concepts above. If that is not possible, concepts shall be left blank, but separation : is still required (i.e., example.com:::rulename is valid).
+NOTE: Third party rule UID creators (that is, emanating entities different from ASAM) should still fill all the concepts above. If that is not possible, concepts shall be left blank. Separation by `:` is still required (for example, `example.com:::rulename` is valid).
 
-UIDs are designed to be queried, e.g., implementations may use UNIX pattern matching.
+UIDs are designed to be queried, for example, implementations may use UNIX pattern matching.
 
-TIP: Visit the https://github.com/asam-ev/qc-framework[ASAM Quality Checker Framework] documentation to see detailed information on how and which checks are implemented.
+TIP: Read the https://github.com/asam-ev/qc-framework[ASAM Quality Checker Framework] documentation to see detailed information on how and which checks are implemented.
 
 == A.1 General rules
 
@@ -42,19 +42,19 @@ TIP: Visit the https://github.com/asam-ev/qc-framework[ASAM Quality Checker Fram
 
 UID:: asam.net:xom:1.0.0:general.valid_json_document
 
-Description:: ASAM OpenMATERIAL 3D files with the file extensions .xoma, .xomm, .xomp or .xompt shall be valid json documents.
+Description:: {THIS_STANDARD} files with the file extensions .xoma, .xomm, .xomp, or .xompt shall be valid .json documents.
 
 ==== valid_schema
 
 UID:: asam.net:xom:1.0.0:general.valid_schema
 
-Description:: ASAM OpenMATERIAL 3D files with the file extensions .xoma, .xomm, .xomp or .xompt shall be valid according to their corresponding json schema.
+Description:: {THIS_STANDARD} files with the file extensions .xoma, .xomm, .xomp, or .xompt shall be valid according to their corresponding .json schema.
 
 ==== uris_exist
 
 UID:: asam.net:xom:1.0.0:general.uris_exist
 
-Description:: If a URI property to other file is set in a json file, the file linked in that property shall exist.
+Description:: If a URI property to other file is set in a .json file, the file linked in that property shall exist.
 
 === A.1.2 XOMA
 
@@ -62,7 +62,7 @@ Description:: If a URI property to other file is set in a json file, the file li
 
 UID:: asam.net:xom:1.0.0:xoma.material_textures_exist
 
-Description:: Textures mapped to material names in the materialTextureAssignment field of .xoma files shall exist.
+Description:: Textures mapped to material names in the 'materialTextureAssignment' field of .xoma files shall exist.
 
 == A.2 Geometry
 
@@ -84,13 +84,13 @@ Description:: If an asset is of type 'human', the property 'humanClassData' must
 
 UID:: asam.net:xom-geo:1.0.0:xoma.texture_assignment_requires_mapping
 
-Description:: If the materialTextureAssignment property is set, the materialMappingUri also has to be set.
+Description:: If the property 'materialTextureAssignment' is set, 'materialMappingUri' must also be set.
 
 ==== all_texture_rgba_codes_defined
 
 UID:: asam.net:xom-geo:1.0.0:xoma.all_texture_rgba_codes_defined
 
-Description:: If the materialTextureAssignment property is set, all color codes of all referenced textures shall be covered by the material mapping table referenced in materialMappingUri.
+Description:: If the property 'materialTextureAssignment' is set, all color codes of all referenced textures shall be covered by the material mapping table referenced in 'materialMappingUri'.
 
 == A.2 Material
 
@@ -100,8 +100,7 @@ Description:: If the materialTextureAssignment property is set, all color codes 
 
 UID:: asam.net:xom-mat:1.0.0:xomp.look_up_tables_unique_wavelengths
 
-Description:: Look-up tables referenced in an .xomp file should not have overlapping wavelength ranges. (Warning level)
-
+Description:: Look-up tables referenced in a .xomp file should not have overlapping wavelength ranges. (Warning level)
 
 === A.2.2 XOMPT
 
@@ -163,13 +162,13 @@ Description:: The imaginary part of permittivity shall not be below 0.
 
 UID:: asam.net:xom-mat:1.0.0:xompt.incident_elevation_angle_valid_range
 
-Description:: The incident elevation angle shall be within the rang of -1.570796 rad to 1.570796 rad.
+Description:: The incident elevation angle shall be within the range of -1.570796 rad to +1.570796 rad.
 
 ==== exit_elevation_angle_valid_range
 
 UID:: asam.net:xom-mat:1.0.0:xompt.exit_elevation_angle_valid_range
 
-Description:: The exit elevation angle shall be within the range of -1.570796 rad to 1.570796 rad.
+Description:: The exit elevation angle shall be within the range of -1.570796 rad to +1.570796 rad.
 
 ==== exit_azimuth_angle_valid_range
 
@@ -181,7 +180,7 @@ Description:: The exit azimuth angle shall be within the range of 0 rad to 6.283
 
 UID:: asam.net:xom-mat:1.0.0:xompt.BRDF_valid_range
 
-Description:: The BRDF shall not be below 0 (1/sr).
+Description:: The _BRDF_ shall not be below 0 (1/sr).
 
 ==== polarized_plane_angle_valid_range
 
@@ -199,4 +198,4 @@ Description:: The amplitude within the linearly polarized plane shall be within 
 
 UID:: asam.net:xom-mat:1.0.0:xompt.phase_linear_polarized_plane_valid_range
 
-Description:: The phase within the linearly polarized plane shall be within the range of -3.141592 rad to 3.141592 rad OR 'null'.
+Description:: The phase within the linearly polarized plane shall be within the range of -3.141592 rad to +3.141592 rad OR 'null'.
