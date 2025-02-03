@@ -134,9 +134,9 @@ UID:: asam.net:xom-mat:1.0.0:xompt.imaginary_part_IOR_valid_range
 
 Description:: The imaginary part of index (extinction coefficient k) of refraction shall not be below 0.
 
-==== humidity
+==== humidity_valid_range
 
-UID:: asam.net:xom-mat:1.0.0:xompt.humidity
+UID:: asam.net:xom-mat:1.0.0:xompt.humidity_valid_range
 
 Description:: The humidity shall be within the range of 0 to 100.
 
