@@ -55,18 +55,18 @@ The first interaction with an {THIS_STANDARD}-compliant _3D model_ is through th
 
 The *asset file* is a JSON file with the file extension .xoma ({THIS_STANDARD} Asset).
 A detailed definition of the https://github.com/asam-ev/OpenMATERIAL-3D/blob/main/schemas/asset_schema.json[asset file JSON schema] is given in xref:geometry/asset-schema.adoc[].
-The asset file shall have the same name as a corresponding 3D data file in glTF, FBX, or USD format.
+The asset file shall have the same name as a corresponding _3D data file_ in glTF, FBX, or USD format.
 To facilitate instancing, multiple asset file may be linked to a single _3D model_ file by adding an index separated by a dot (.) as a suffix to the asset file name.
 It contains metadata, such as description, unique identifier, version information, copyright details, and so on.
-It also includes a _material_ texture assignment table, allowing dedicated _material_ mapping textures to be assigned to materials within 3D data files.
+It also includes a _material_ texture assignment table, allowing dedicated _material_ mapping textures to be assigned to materials within _3D data files_.
 This enables comprehensive _material properties_ to be mapped to the geometry at a texture level.
 Each texel of the texture contains a 32 Bit code (8 Bit values in the rgba channels) which is mapped to a _material property_ file in a separate _material_ mapping file, linked in the asset file with a URI.
 For the mapping currently only the rba channels are used (first 24 Bit).
 The last channel is reserved for future use.
 An https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/example_asset.xoma[example asset] is provided in the examples folder of the repository.
 
-The *3D data file* is a standard _3D model_ file in glTF, FBX, or USD format.
-Multiple formats can exist in parallel, so one asset file can have multiple 3D data files with different formats with the same name as the asset file.
+The *_3D data file_* is a standard _3D model_ file in glTF, FBX, or USD format.
+Multiple formats can exist in parallel, so one asset file can have multiple _3D data files_ with different formats with the same name as the asset file.
 However, to be compliant with {THIS_STANDARD}, a simulation environment must support at least one of the named 3D data formats.
 More information about the file formats is given in in xref:geometry/file-format-support.adoc[].
 An https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/example_asset.gltf[example model] is provided in the examples folder of the repository.
