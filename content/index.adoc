@@ -2,7 +2,7 @@
 :root-path: ./
 include::{root-path}_config.adoc[]
 //NOTE: All central attributes for Asciidoctor have to be defined in the _config.adoc AND in the antora.yml in the .antora folder in root
-= ASAM OpenMATERIAL 3D
+= ASAM OpenMATERIAL 3D (Public Release Candidate)
 // DO NOT USE THE ATTRIBUTE {THIS_STANDARD} in the document title, it will break with Antora build pipeline!
 
 // DO NOT CHANGE!!!
@@ -20,6 +20,7 @@ In alteration to the regular https://www.asam.net/license[license terms], ASAM a
 
 ASAM OpenMATERIAL is a registered trademark of ASAM e.V.
 
+This document has the status of a Public Release Candidate (PRC). It may be changed during the public review based on the incorporation of reviewed comments and minor updates.
 //
 // DO NOT CHANGE!!!
 
