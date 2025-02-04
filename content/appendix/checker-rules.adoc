@@ -138,7 +138,7 @@ Description:: The imaginary part of index (extinction coefficient k) of refracti
 
 UID:: asam.net:xom-mat:1.0.0:xompt.humidity_valid_range
 
-Description:: The humidity shall be within the range of 0 to 100.
+Description:: The humidity in % shall be within the range of 0 to 100.
 
 ==== real_part_permeability_valid_range
 
