@@ -122,15 +122,15 @@ UID:: asam.net:xom-mat:1.0.0:xompt.temperature_valid_range
 
 Description:: A temperature property shall not be below 0 K.
 
-==== real_part_IOR_valid_range
+==== real_part_ior_valid_range
 
-UID:: asam.net:xom-mat:1.0.0:xompt.real_part_IOR_valid_range
+UID:: asam.net:xom-mat:1.0.0:xompt.real_part_ior_valid_range
 
 Description:: The real part of index of refraction (refractive index n) shall not be below 0.
 
-==== imaginary_part_IOR_valid_range
+==== imaginary_part_ior_valid_range
 
-UID:: asam.net:xom-mat:1.0.0:xompt.imaginary_part_IOR_valid_range
+UID:: asam.net:xom-mat:1.0.0:xompt.imaginary_part_ior_valid_range
 
 Description:: The imaginary part of index (extinction coefficient k) of refraction shall not be below 0.
 
