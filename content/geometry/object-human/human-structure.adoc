@@ -207,7 +207,7 @@ The Root bone is the parent bone for all other bones. It can be used to control 
 2+^| Root
 
 | *Origin*
-| World coordinate system
+| Center of the bounding box on the ground
 
 | *x-axis*
 | Pointing forwards
