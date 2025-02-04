@@ -102,6 +102,54 @@ UID:: asam.net:xom-mat:1.0.0:xomp.look_up_tables_unique_wavelengths
 
 Description:: Look-up tables referenced in a .xomp file should not have overlapping wavelength ranges. (Warning level)
 
+==== surface_height_rms_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xomp.surface_height_rms_valid_range
+
+Description:: The surface height root mean square in meters (m) shall not be below 0.
+
+==== surface_correlation_length_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xomp.surface_correlation_length_valid_range
+
+Description:: The surface correlation length in meters (m) shall not be below 0.
+
+==== emissivity_coefficient_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xomp.emissivity_coefficient_valid_range
+
+Description:: The emissivity coefficient shall be within the range of 0 to 1.
+
+==== temperature_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xomp.temperature_valid_range
+
+Description:: A temperature in Kelvin (K) shall not be below 0.
+
+==== youngs_modulus_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xomp.youngs_modulus_valid_range
+
+Description:: The youngs modulus in Pascal (Pa) shall be within the range of 0 to 1.5e12.
+
+==== poissons_ratio_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xomp.poissons_ratio_valid_range
+
+Description:: The poissons ratio shall be within the range of -1 to 0.5.
+
+==== density_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xomp.density_valid_range
+
+Description:: The density in (kg m^3^) shall be within the range of 0 to 25.
+
+==== retroreflection_coefficient_valid_range
+
+UID:: asam.net:xom-mat:1.0.0:xomp.retroreflection_coefficient_valid_range
+
+Description:: The coefficient of retroreflection in (cd lx^-1^ m^-2^) shall be within the range of 0 to 5000.
+
 === A.2.2 XOMPT
 
 ==== tables_sorted_correctly
@@ -114,13 +162,13 @@ Description:: Arrays in look-up tables shall be sorted based on the columns star
 
 UID:: asam.net:xom-mat:1.0.0:xompt.wavelength_valid_range
 
-Description:: The wavelength shall be within the range of 1e-09 m to 17.16e-03 m. The upper limit corresponds to 20 kHz.
+Description:: The wavelength in meters (m) shall be within the range of 1e-09 to 17.16e-03 . The upper limit corresponds to 20 kHz.
 
 ==== temperature_valid_range
 
 UID:: asam.net:xom-mat:1.0.0:xompt.temperature_valid_range
 
-Description:: A temperature property shall not be below 0 K.
+Description:: A temperature in Kelvin (K) shall not be below 0.
 
 ==== real_part_ior_valid_range
 
@@ -138,7 +186,7 @@ Description:: The imaginary part of index (extinction coefficient k) of refracti
 
 UID:: asam.net:xom-mat:1.0.0:xompt.humidity_valid_range
 
-Description:: The humidity in % shall be within the range of 0 to 100.
+Description:: The humidity in percent (%) shall be within the range of 0 to 100.
 
 ==== real_part_permeability_valid_range
 
@@ -162,31 +210,31 @@ Description:: The imaginary part of permittivity shall not be below 0.
 
 UID:: asam.net:xom-mat:1.0.0:xompt.incident_elevation_angle_valid_range
 
-Description:: The incident elevation angle shall be within the range of -1.570796 rad to +1.570796 rad.
+Description:: The incident elevation angle in radians (rad) shall be within the range of -1.570796 to +1.570796.
 
 ==== exit_elevation_angle_valid_range
 
 UID:: asam.net:xom-mat:1.0.0:xompt.exit_elevation_angle_valid_range
 
-Description:: The exit elevation angle shall be within the range of -1.570796 rad to +1.570796 rad.
+Description:: The exit elevation angle in raidans (rad) shall be within the range of -1.570796 to +1.570796.
 
 ==== exit_azimuth_angle_valid_range
 
 UID:: asam.net:xom-mat:1.0.0:xompt.exit_azimuth_angle_valid_range
 
-Description:: The exit azimuth angle shall be within the range of 0 rad to 6.283185 rad.
+Description:: The exit azimuth angle in radians (rad) shall be within the range of 0 to 6.283185.
 
 ==== BRDF_valid_range
 
 UID:: asam.net:xom-mat:1.0.0:xompt.BRDF_valid_range
 
-Description:: The _BRDF_ shall not be below 0 (1/sr).
+Description:: The _BRDF_ in steradians^-1^ (sr^-1^) shall not be below 0.
 
 ==== polarized_plane_angle_valid_range
 
 UID:: asam.net:xom-mat:1.0.0:xompt.polarized_plane_angle_valid_range
 
-Description:: The polarized plane angle shall be within the range of 0 rad to 3.141592 rad.
+Description:: The polarized plane angle in radians (rad) shall be within the range of 0 to 3.141592.
 
 ==== amplitude_linear_polarized_plane_valid_range
 
@@ -198,4 +246,4 @@ Description:: The amplitude within the linearly polarized plane shall be within 
 
 UID:: asam.net:xom-mat:1.0.0:xompt.phase_linear_polarized_plane_valid_range
 
-Description:: The phase within the linearly polarized plane shall be within the range of -3.141592 rad to +3.141592 rad OR 'null'.
+Description:: The phase within the linearly polarized plane in radians (rad) shall be within the range of -3.141592 to +3.141592 OR 'null'.
