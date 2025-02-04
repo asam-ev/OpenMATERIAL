@@ -12,7 +12,7 @@ legend
 [[../geometry/object-vehicle/vehicle-index.html#_grp_root Grp_Root]]
 |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_exterior Grp_Exterior]]
   |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_exterior_dynamic Grp_Exterior_Dynamic]]
-    |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_convertible_top_t Grp_Convertible_Top]] (T)
+    |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_convertible_top_t Grp_Convertible_Top]]
     |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_door_bottom_door_bottom_idx_t Grp_Door_Bottom_<door_bottom_idx>]] (T)
     |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_door_front_door_front_idx_t Grp_Door_Front_<door_front_idx>]] (T)
     |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_door_left_door_left_idx_t Grp_Door_Left_<door_left_idx>]] (T)
@@ -117,45 +117,18 @@ The origin of the Root node is the center of the vehicle's bounding box projecte
 
 == Grp_Exterior
 
-This group contains all parts of the vehicle's exterior.
-
-Typically, this group does not move in the simulation and therefore does not have their own transforms.
-The origin of this group is in the origin of the entire asset.
+This group contains all parts of the vehicle's exterior. It shares the coordinate system with Grp_Root.
 
 == Grp_Exterior_Dynamic
 
-This group contains all dynamic parts of the vehicle's exterior.
+This group contains all dynamic parts of the vehicle's exterior. It shares the coordinate system with Grp_Root.
 
 Dynamic parts are geometric structures whose position and orientation relative to the vehicle's origin may change throughout a simulation.
 They may also change their state during the simulation, which is why lights are considered dynamic.
 
-Typically, this group does not move in the simulation and therefore does not have its own transforms.
-The origin of this group is in the origin of the entire asset.
+== Grp_Convertible_Top
 
-== Grp_Convertible_Top (T)
-
-This group contains all parts of a vehicle's convertible top.
-
-[#tab-Grp-Convertible-Top]
-.Grp_Convertible_Top
-[%header, cols="20, 80"]
-|===
-
-2+^| Grp_Convertible_Top
-
-| *Origin*
-| Origin of the vehicle
-
-| *x-axis*
-| Collinear with the vehicle's longitudinal axis, pointing forwards
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
+This group contains all parts of a vehicle's convertible top. It shares the coordinate system with Grp_Root.
 
 == Grp_Door_Bottom_<door_bottom_idx> (T)
 
@@ -219,7 +192,6 @@ image::Grp_Door_Front.svg[,600]
 | Concentric and coaxial to the virtual hinge axis, pointing in the direction that enables the door to open with a positive rotation around the z-axis
 |===
 
-
 == Grp_Door_Left_<door_left_idx> (T)
 
 This group contains all parts of a door located on the left side of the vehicle, including its interior parts, as they move together as a unit.
@@ -282,7 +254,6 @@ image::Grp_Door_Rear.svg[,400]
 | Concentric and coaxial to the virtual hinge axis, pointing in the direction that enables the door to open with a positive rotation around the z-axis
 |===
 
-
 == Grp_Door_Right_<door_right_idx> (T)
 
 This group contains all parts of a door located on the right side of the vehicle, including its interior parts, as they move together as a unit.
@@ -313,9 +284,6 @@ image::Grp_Door_Right.svg[,600]
 | *z-axis*
 | Concentric and coaxial to the virtual hinge axis, pointing in the direction that enables the door to open with a positive rotation around the z-axis
 |===
-
-
-
 
 == Grp_Door_Top_<door_top_idx> (T)
 
@@ -350,7 +318,7 @@ image::Grp_Door_Top.svg[, 600]
 
 == Grp_Hitch_Front (T)
 
-This group contains a hitch at the front of the vehicle. It exists on some cars
+This group contains all parts of a hitch at the front of the vehicle. It exists on some cars
 and on most trailers.
 
 [#fig-Hitch-Front]
@@ -411,7 +379,7 @@ image::Grp_Hitch_Front_Contact_Point.svg[,600]
 
 == Grp_Hitch_Rear (T)
 
-This group contains a hitch on the rear of the vehicle. It exists on cars and
+This group contains all parts of a hitch on the rear of the vehicle. It exists on cars and
 on some trailers for multi-trailer setups.
 
 [#fig-Hitch-Rear]
@@ -1276,7 +1244,7 @@ image::Grp_Light_Warning.svg[,600]
 == Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx> (T)
 
 This group contains all parts of the movable structure that holds the blindspot mirror.
-The blindspot mirror automatically adjusts when the angle of the blindspot joint changes.
+The blindspot mirror view automatically adjusts when the angle of the blindspot joint changes.
 
 It is a child node of the corresponding mirror mounting group.
 
@@ -1385,7 +1353,7 @@ image::Grp_Mirror_Blindspot_View.svg[,600]
 == Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx> (T)
 
 This group contains all parts of the movable structure that holds the mirror on the vehicle's left side.
-The mirror automatically adjusts when the angle of the  joint changes.
+The mirror view automatically adjusts when the angle of the  joint changes.
 
 It is a child node of the corresponding mirror mounting group.
 
@@ -1421,7 +1389,7 @@ image::Grp_Mirror_Side_Joint_Left.svg[,600]
 == Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> (T)
 
 This group contains all parts of the movable structure that holds the mirror on  the vehicle's left side.
-The mirror automatically adjusts when the angle of the  joint changes.
+The mirror view automatically adjusts when the angle of the  joint changes.
 
 It is a child node of the corresponding mirror mounting group.
 
@@ -1631,7 +1599,7 @@ The coordinate origin of this group is aligned with the ASAM OSI host vehicle co
 
 == Grp_Wheel_<axle_idx>_<wheel_idx> (T)
 
-This group contains all geometries of a single wheel assembly, which may consist of the tire, rim, brake caliper, and so on.
+This group contains all parts of a wheel, which may consist of the tire, rim, brake caliper, and so on.
 
 `<axle_idx>` denotes the index of the axle to which the wheel is mounted,
 counting from front to rear, starting with 0.
@@ -1672,7 +1640,7 @@ image::Grp_Wheel.svg[,600]
 
 == Grp_Wheel_Steering_<axle_idx>_<wheel_idx> (T)
 
-This group contains all components of the wheel assembly that follow the steering motion but not the wheel's rotation, such as brake calipers.
+This group contains all parts of a wheel that follow the steering motion but not the wheel's rotation, such as brake calipers.
 
 The indices are the same as in the parent group.
 
@@ -1701,7 +1669,7 @@ This group typically does not move independently in the simulation, as it moves 
 
 == Grp_Wheel_Steering_Rotating_<axle_idx>_<wheel_idx> (T)
 
-This group contains all components of the wheel assembly that follow the steering motion as well as the rotation of the wheel, such as tire and rim.
+This group contains all parts of a wheel that follow the steering motion as well as the rotation of the wheel, such as tire and rim.
 
 The indices are the same as in the parent group.
 
@@ -1727,36 +1695,28 @@ The indices are the same as in the parent group.
 
 == Grp_Exterior_Static
 
-This group contains all static parts of the vehicle's exterior.
+This group contains all static parts of the vehicle's exterior. It shares the coordinate system with Grp_Root.
 Static elements are geometric structures that have a fixed position and
 orientation relative to the vehicle's origin throughout the simulation.
 
 In contrast to lights, which change their state depending on whether they are
 switched on or off, static elements never change state during the simulation.
 
-This group typically does not move in the simulation and therefore does not have its own transforms.
-The origin of this group is in the origin of the entire asset.
-
 == Grp_Interior
 
-This group contains all parts of the vehicle's interior.
+This group contains all parts of the vehicle's interior. It shares the coordinate system with Grp_Root.
 The interior is separated from the exterior to allow for disabling or exchanging it in the simulation.
-
-This group typically does not move in the simulation and therefore does not have its own transforms.
 
 == Grp_Interior_Dynamic
 
-This group contains all dynamic parts of the vehicle's interior.
+This group contains all dynamic parts of the vehicle's interior. It shares the coordinate system with Grp_Root.
 Dynamic elements are geometric structures whose position and orientation relative to the vehicle's origin may change throughout the simulation.
 
 They may also change their state during the simulation. Examples of dynamic elements are lights, which can be switched on and off.
 
-This group typically does not move in the simulation and therefore does not have its own transforms.
-The origin of this group is in the origin of the entire asset.
-
 == Grp_Eyepoint_<eyepoint_idx> (T)
 
-This group contains an empty element that contains the origin of an average passenger in the vehicle.
+This group is an empty node that represents the view direction of an average passenger in the vehicle.
 
 `<eyepoint_idx>` denotes the index of eye points. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
@@ -1789,7 +1749,7 @@ image::Grp_Eyepoint.svg[,600]
 == Grp_Mirror_Rearview_Joint_<rearview_mirror_joint_idx> (T)
 
 This group contains all parts of the movable structure that holds the rearview
-mirror. The mirror automatically adjusts when the angle of the joint changes.
+mirror. The mirror view automatically adjusts when the angle of the joint changes.
 
 `<rearview_mirror_joint_idx>` denotes the index of rearview mirror joints. The index entries
 are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
@@ -1955,21 +1915,18 @@ image::Grp_Steering_Wheel.svg[,600]
 
 == Grp_Interior_Static
 
-This group contains all static parts of the vehicle's interior.
+This group contains all static parts of the vehicle's interior. It shares the coordinate system with Grp_Root.
 Static elements are geometric structures that have a fixed position and orientation relative to the vehicle's origin throughout the simulation.
 
 In contrast to lights, which change their state depending on whether they are
 switched on or off, static elements never change state during the simulation.
 
-This group typically does not move in the simulation and therefore does not have its own transforms.
-The origin of this group is in the origin of the entire asset.
-
 == Grp_Vehicle_Part (T)
 
-One or more optional vehicle parts may be added to the main vehicle structure.
+One or more optional vehicle parts may be added to the main vehicle structure. This group contains all (sub-)parts of the vehicle part.
 
-A vehicle part is a large component of a vehicle that moves in a slightly
-different direction than other parts, for example, the vehicle part follows an
+A vehicle part is a large component of a vehicle that can move in a
+different direction than the rest of the vehicle, for example, the vehicle part follows an
 individual path during turns.
 
 A vehicle may have multiple vehicle parts at the same hierarchy level or in a parent-child relationship.
