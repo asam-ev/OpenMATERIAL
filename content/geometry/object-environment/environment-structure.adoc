@@ -64,7 +64,7 @@ image::Grp_Terrain.svg[,600]
 
 == Grp_Environment_Objects
 
-Environment objects includes buildings, vegetation, and any other (stationary) objects in the environment. An environment object causes a local elevation or other addition to the terrain.
+Environment objects include buildings, vegetation, and any other (stationary) objects in the environment. An environment object causes a local elevation or other addition to the terrain.
 
 Grp_Environment_Objects is used as parent for all environment objects in an environment. It shares the coordinate system with Grp_Root, see <<tab-Environment-Grp-Root>>.
 
@@ -134,7 +134,7 @@ image::Grp_Road_Marks.svg[,600]
 
 == Grp_Road_Objects
 
-Road objects includes all other objects on or nearby the road, excluding signals.
+Road objects include all other objects on or nearby the road, excluding signals.
 
 Grp_Road_Objects is used as parent for all road objects of a road network. It shares the coordinate system with Grp_Root, see <<tab-Environment-Grp-Root>>.
 

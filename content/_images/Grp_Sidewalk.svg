@@ -94,17 +94,17 @@
                 </g>
             </g>
         </g>
-        <g id="Drivable-area" serif:id="Drivable area">
-            <g id="label" transform="matrix(0.782017,1.92747e-16,1.56125e-16,1.06441,736.972,461.484)">
-                <g transform="matrix(19.1812,0,0,19.1812,116.073,0)">
+        <g id="Sidewalk" transform="matrix(1,0,0,1,32.2226,1.13687e-13)">
+            <g transform="matrix(1.96053,0,0,1.89425,332.712,295.076)">
+                <path d="M240.573,98.374L328.515,158.334L89.295,158.334L89.295,119.154L185.537,98.347L240.573,98.374Z" style="fill:rgb(234,234,234);fill-opacity:0.9;"/>
+            </g>
+            <g id="label" transform="matrix(0.782017,1.92747e-16,1.56125e-16,1.06441,787.458,461.484)">
+                <g transform="matrix(19.1812,0,0,19.1812,78.741,0)">
                 </g>
-                <text x="5.182px" y="0px" style="font-family:'ArialMT', 'Arial';font-size:19.181px;fill:rgb(127,127,127);">drivable area</text>
+                <text x="5.182px" y="0px" style="font-family:'ArialMT', 'Arial';font-size:19.181px;fill:rgb(127,127,127);">sidewalk</text>
             </g>
-            <g id="arrow" transform="matrix(1.71433,0,0,1.01455,451.691,382.769)">
-                <path d="M165.106,89.399L165.106,93.382L163.486,88.495L165.106,83.608L165.106,87.591L222.391,87.591L222.391,83.608L224.516,88.495L222.391,93.382L222.391,89.399L165.106,89.399Z" style="fill:rgb(127,127,127);"/>
-            </g>
-            <g transform="matrix(1.96053,0,0,1.89425,364.934,295.076)">
-                <path d="M256.937,98.487L328.515,120.373L328.535,158.334L240.865,98.487L256.937,98.487Z" style="fill:rgb(234,234,234);fill-opacity:0.9;"/>
+            <g id="arrow" transform="matrix(0.527975,0,0,1.01455,718.046,382.769)">
+                <path d="M168.745,89.399L168.745,93.382L163.486,88.495L168.745,83.608L168.745,87.591L217.616,87.591L217.616,83.608L224.516,88.495L217.616,93.382L217.616,89.399L168.745,89.399Z" style="fill:rgb(127,127,127);"/>
             </g>
         </g>
         <g id="cardinal-direction" serif:id="cardinal direction" transform="matrix(0.168986,0.153081,-0.119697,0.244794,-6887.63,12524.5)">
