@@ -76,23 +76,23 @@ The armature shares the coordinate system with Grp_Root.
 
 == Accessories_<Name>
 
-This object represents an additional or exchangeable accessory of the human. It shares the coordinate system with Grp_Root.
+This object represents an additional or exchangeable accessory of the human. It shares the coordinate system with Grp_Root, see <<tab-human-Grp_Root>>.
 
 == Body_<Name>
 
-This object represents the body of the human. It shares the coordinate system with Grp_Root.
+This object represents the body of the human. It shares the coordinate system with Grp_Root, see <<tab-human-Grp_Root>>.
 
 == Clothing_<Name>
 
-This object represents an additional or exchangeable clothing part of the human. It shares the coordinate system with Grp_Root.
+This object represents an additional or exchangeable clothing part of the human. It shares the coordinate system with Grp_Root, see <<tab-human-Grp_Root>>.
 
 == Hair_<Name>
 
-This object represents an additional or exchangeable hair part of the human. It shares the coordinate system with Grp_Root.
+This object represents an additional or exchangeable hair part of the human. It shares the coordinate system with Grp_Root, see <<tab-human-Grp_Root>>.
 
 == Root
 
-The Root bone is the parent bone for all other bones. It can be used to control the whole skeleton. It shares the coordinate system with Grp_Root.
+The Root bone is the parent bone for all other bones. It can be used to control the whole skeleton. It shares the coordinate system with Grp_Root, see <<tab-human-Grp_Root>>.
 
 == Hip (T)
 

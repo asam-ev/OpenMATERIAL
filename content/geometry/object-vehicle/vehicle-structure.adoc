@@ -117,18 +117,18 @@ The origin of the Root node is the center of the vehicle's bounding box projecte
 
 == Grp_Exterior
 
-This group contains all parts of the vehicle's exterior. It shares the coordinate system with Grp_Root.
+This group contains all parts of the vehicle's exterior. It shares the coordinate system with Grp_Root, see <<tab-Vehicle-Grp-Root>>.
 
 == Grp_Exterior_Dynamic
 
-This group contains all dynamic parts of the vehicle's exterior. It shares the coordinate system with Grp_Root.
+This group contains all dynamic parts of the vehicle's exterior. It shares the coordinate system with Grp_Root, see <<tab-Vehicle-Grp-Root>>.
 
 Dynamic parts are geometric structures whose position and orientation relative to the vehicle's origin may change throughout a simulation.
 They may also change their state during the simulation, which is why lights are considered dynamic.
 
 == Grp_Convertible_Top
 
-This group contains all parts of a vehicle's convertible top. It shares the coordinate system with Grp_Root.
+This group contains all parts of a vehicle's convertible top. It shares the coordinate system with Grp_Root, see <<tab-Vehicle-Grp-Root>>.
 
 == Grp_Door_Bottom_<door_bottom_idx> (T)
 
@@ -1695,7 +1695,7 @@ The indices are the same as in the parent group.
 
 == Grp_Exterior_Static
 
-This group contains all static parts of the vehicle's exterior. It shares the coordinate system with Grp_Root.
+This group contains all static parts of the vehicle's exterior. It shares the coordinate system with Grp_Root, see <<tab-Vehicle-Grp-Root>>.
 Static elements are geometric structures that have a fixed position and
 orientation relative to the vehicle's origin throughout the simulation.
 
@@ -1704,12 +1704,12 @@ switched on or off, static elements never change state during the simulation.
 
 == Grp_Interior
 
-This group contains all parts of the vehicle's interior. It shares the coordinate system with Grp_Root.
+This group contains all parts of the vehicle's interior. It shares the coordinate system with Grp_Root, see <<tab-Vehicle-Grp-Root>>.
 The interior is separated from the exterior to allow for disabling or exchanging it in the simulation.
 
 == Grp_Interior_Dynamic
 
-This group contains all dynamic parts of the vehicle's interior. It shares the coordinate system with Grp_Root.
+This group contains all dynamic parts of the vehicle's interior. It shares the coordinate system with Grp_Root, see <<tab-Vehicle-Grp-Root>>.
 Dynamic elements are geometric structures whose position and orientation relative to the vehicle's origin may change throughout the simulation.
 
 They may also change their state during the simulation. Examples of dynamic elements are lights, which can be switched on and off.
@@ -1915,7 +1915,7 @@ image::Grp_Steering_Wheel.svg[,600]
 
 == Grp_Interior_Static
 
-This group contains all static parts of the vehicle's interior. It shares the coordinate system with Grp_Root.
+This group contains all static parts of the vehicle's interior. It shares the coordinate system with Grp_Root, see <<tab-Vehicle-Grp-Root>>.
 Static elements are geometric structures that have a fixed position and orientation relative to the vehicle's origin throughout the simulation.
 
 In contrast to lights, which change their state depending on whether they are
