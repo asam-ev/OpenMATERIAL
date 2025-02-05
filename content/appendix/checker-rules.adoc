@@ -142,7 +142,7 @@ Description:: The Poisson's ratio shall be within the range of -1 to 0.5 (from e
 
 UID:: asam.net:xom-mat:1.0.0:xomp.density_valid_range
 
-Description:: The density in (kg/m^3^) shall be within the range of 0 to 25 (density of Osmium).
+Description:: The density in kilogram per cubic metre (kg m^-3^) shall be within the range of 0 to 25 (density of Osmium).
 
 ==== retroreflection_coefficient_valid_range
 
@@ -180,7 +180,7 @@ Description:: The real part of index of refraction (refractive index n) shall no
 
 UID:: asam.net:xom-mat:1.0.0:xompt.imaginary_part_ior_valid_range
 
-Description:: The imaginary part of index (extinction coefficient k) of refraction shall not be below 0.
+Description:: The imaginary part of index (extinction coefficient k) of refraction shall not be below 0 (= perfect transparent material).
 
 ==== humidity_valid_range
 
@@ -192,7 +192,7 @@ Description:: The humidity in percent (%) shall be within the range of 0 to 100.
 
 UID:: asam.net:xom-mat:1.0.0:xompt.real_part_permeability_valid_range
 
-Description:: The real part of permeability shall be within the range of 1.256637e-06 to 1.256637 (µ_0 to µ_0 x 10e06).
+Description:: The real part of permeability shall be within the range of 1.256637e-06 to 1.256637 (µ~0~ to µ~0~ x 10e06).
 
 ==== imaginary_part_permeability_valid_range
 
