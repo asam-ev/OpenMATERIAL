@@ -72,153 +72,27 @@ This group is used as a parent for all following nodes. It can be used to place 
 This object or group represents the armature (skeleton) of the object and contains all bones. It is needed to ensure that the bone hierarchy can be exported and imported correctly.
 Depending on the 3D software, the armature is a separate _object type_ (for example in Blender) or represented by a group (for example in Maya).
 The postfix `_<Name>` is optional, but is recommended to use, if you prepare multiple human assets in one file of an 3D application to keep the names unique and within the naming convention.
-
-[#tab-human-Armature]
-.Armature
-[%header, cols="20, 80"]
-|===
-
-2+^| Armature
-
-| *Origin*
-| Center of the bounding box on the ground
-
-| *x-axis*
-| Pointing forwards
-
-| *y-axis*
-| Pointing sidewards
-
-| *z-axis*
-| Pointing upwards
-|===
-
+The armature shares the coordinate system with Grp_Root.
 
 == Accessories_<Name>
 
-This object represents an additional or exchangeable accessory of the human.
-
-[#tab-human-Accessories]
-.Accessories 
-[%header, cols="20, 80"]
-|===
-
-2+^| Accessories
-
-| *Origin*
-| Center of the bounding box on the ground
-
-| *x-axis*
-| Pointing forwards
-
-| *y-axis*
-| Pointing sidewards
-
-| *z-axis*
-| Pointing upwards
-
-|===
-
+This object represents an additional or exchangeable accessory of the human. It shares the coordinate system with Grp_Root.
 
 == Body_<Name>
 
-This object represents the body of the human.
-
-[#tab-human-body]
-.Body
-[%header, cols="20, 80"]
-|===
-
-2+^| Body
-
-| *Origin*
-| Center of the bounding box on the ground
-
-| *x-axis*
-| Pointing forwards
-
-| *y-axis*
-| Pointing sidewards
-
-| *z-axis*
-| Pointing upwards
-|===
-
+This object represents the body of the human. It shares the coordinate system with Grp_Root.
 
 == Clothing_<Name>
 
-This object represents an additional or exchangeable clothing part of the human.
-
-[#tab-human-clothing]
-.Clothing
-[%header, cols="20, 80"]
-|===
-
-2+^| Clothing
-
-| *Origin*
-| Center of the bounding box on the ground
-
-| *x-axis*
-| Pointing forwards
-
-| *y-axis*
-| Pointing sidewards
-
-| *z-axis*
-| Pointing upwards
-|===
-
+This object represents an additional or exchangeable clothing part of the human. It shares the coordinate system with Grp_Root.
 
 == Hair_<Name>
 
-This object represents an additional or exchangeable hair part of the human.
-
-[#tab-human-hair]
-.Hair
-[%header, cols="20, 80"]
-|===
-
-2+^| Hair
-
-| *Origin*
-| Center of the bounding box on the ground
-
-| *x-axis*
-| Pointing forwards
-
-| *y-axis*
-| Pointing sidewards
-
-| *z-axis*
-| Pointing upwards
-|===
-
+This object represents an additional or exchangeable hair part of the human. It shares the coordinate system with Grp_Root.
 
 == Root
 
-The Root bone is the parent bone for all other bones. It can be used to control the whole skeleton.
-
-[#tab-human-root]
-.Root bone
-[%header, cols="20, 80"]
-|===
-
-2+^| Root
-
-| *Origin*
-| Center of the bounding box on the ground
-
-| *x-axis*
-| Pointing forwards
-
-| *y-axis*
-| Pointing upwards
-
-| *z-axis*
-| Pointing sidewards
-|===
-
+The Root bone is the parent bone for all other bones. It can be used to control the whole skeleton. It shares the coordinate system with Grp_Root.
 
 == Hip (T)
 
