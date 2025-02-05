@@ -100,7 +100,7 @@ The origin of the Root node is the center of the vehicle's bounding box projecte
 [%header, cols="20, 80"]
 |===
 
-2+^| <Header>
+2+^| Grp_Root
 
 | *Origin*
 | Center of the vehicle's bounding box projected to the ground, including all vehicle parts in their default positions
