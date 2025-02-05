@@ -1240,42 +1240,6 @@ image::Grp_Light_Warning.svg[,600]
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
 
-
-== Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx> (T)
-
-This group contains all parts of the movable structure that holds the blindspot mirror.
-The blindspot mirror view automatically adjusts when the angle of the blindspot joint changes.
-
-It is a child node of the corresponding mirror mounting group.
-
-`<blindspot_mirror_joint_idx>` denotes the index of blindspot mirror joints. The index entries
-are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
-
-[#fig-mirror-blindspot-joint]
-.Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx>
-image::Grp_Mirror_Blindspot_Joint.svg[,600]
-
-[#tab-Grp-Mirror-Blindspot-Joint-blindspot-mirror-joint-idx]
-.Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx>
-[%header, cols="20, 80"]
-|===
-
-2+^| Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx>
-
-| *Origin*
-| Joint of the movable structure of a mirror
-
-| *x-axis*
-| Collinear with the vehicle's longitudinal axis, pointing forwards
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-
 == Grp_Mirror_Blindspot_Mounting_<blindspot_mirror_mounting_idx> (T)
 
 This group contains all parts of the vehicle's blindspot mirror mounting.
@@ -1314,6 +1278,39 @@ image::Grp_Mirror_Blindspot_Mounting.svg[,600]
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
 
+== Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx> (T)
+
+This group contains all parts of the movable structure that holds the blindspot mirror.
+The blindspot mirror view automatically adjusts when the angle of the blindspot joint changes.
+
+It is a child node of the corresponding mirror mounting group.
+
+`<blindspot_mirror_joint_idx>` denotes the index of blindspot mirror joints. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
+
+[#fig-mirror-blindspot-joint]
+.Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx>
+image::Grp_Mirror_Blindspot_Joint.svg[,600]
+
+[#tab-Grp-Mirror-Blindspot-Joint-blindspot-mirror-joint-idx]
+.Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx>
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Mirror_Blindspot_Joint_<blindspot_mirror_joint_idx>
+
+| *Origin*
+| Joint of the movable structure of a mirror
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
 
 == Grp_Mirror_Blindspot_View_<blindspot_mirror_view_idx> (T)
 
@@ -1348,79 +1345,6 @@ image::Grp_Mirror_Blindspot_View.svg[,600]
 | *z-axis*
 | Perpendicular to the x-axis, pointing vertically upwards along the face of the mirror glass
 |===
-
-
-== Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx> (T)
-
-This group contains all parts of the movable structure that holds the mirror on the vehicle's left side.
-The mirror view automatically adjusts when the angle of the  joint changes.
-
-It is a child node of the corresponding mirror mounting group.
-
-`<side_mirror_joint_left_idx>` denotes the index of side mirror joints on the
-left side. The index entries are sorted from right to left in positive
-y-direction, and from front to rear, starting with 0.
-
-[#fig-mirror-side-joint-left]
-.Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx>
-image::Grp_Mirror_Side_Joint_Left.svg[,600]
-
-[#tab-Grp-Mirror-Side-Joint-Left]
-.Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx>
-[%header, cols="20, 80"]
-|===
-
-2+^| Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx>
-
-| *Origin*
-| Joint of the movable structure of a mirror
-
-| *x-axis*
-| Collinear with the vehicle's longitudinal axis, pointing forwards
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-
-== Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> (T)
-
-This group contains all parts of the movable structure that holds the mirror on  the vehicle's left side.
-The mirror view automatically adjusts when the angle of the  joint changes.
-
-It is a child node of the corresponding mirror mounting group.
-
-`<side_mirror_joint_right_idx>` denotes the index of side mirror joints on the
-right side. The index entries are sorted from right to left in positive
-y-direction, and from front to rear, starting with 0.
-
-[#fig-mirror-side-joint-right]
-.Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx>
-image::Grp_Mirror_Side_Joint_Right.svg[,600]
-
-[#tab-Grp-Mirror-Side-Joint-Right]
-.Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx>
-[%header, cols="20, 80"]
-|===
-
-2+^| Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx>
-
-| *Origin*
-| Joint of the movable structure of a mirror
-
-| *x-axis*
-| Collinear with the vehicle's longitudinal axis, pointing forwards
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
 
 == Grp_Mirror_Side_Mounting_Left_<side_mirror_mounting_left_idx> (T)
 
@@ -1500,6 +1424,75 @@ image::Grp_Mirror_Side_Mounting_Right.svg[,600]
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
 
+== Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx> (T)
+
+This group contains all parts of the movable structure that holds the mirror on the vehicle's left side.
+The mirror view automatically adjusts when the angle of the  joint changes.
+
+It is a child node of the corresponding mirror mounting group.
+
+`<side_mirror_joint_left_idx>` denotes the index of side mirror joints on the
+left side. The index entries are sorted from right to left in positive
+y-direction, and from front to rear, starting with 0.
+
+[#fig-mirror-side-joint-left]
+.Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx>
+image::Grp_Mirror_Side_Joint_Left.svg[,600]
+
+[#tab-Grp-Mirror-Side-Joint-Left]
+.Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx>
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx>
+
+| *Origin*
+| Joint of the movable structure of a mirror
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+== Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> (T)
+
+This group contains all parts of the movable structure that holds the mirror on  the vehicle's left side.
+The mirror view automatically adjusts when the angle of the  joint changes.
+
+It is a child node of the corresponding mirror mounting group.
+
+`<side_mirror_joint_right_idx>` denotes the index of side mirror joints on the
+right side. The index entries are sorted from right to left in positive
+y-direction, and from front to rear, starting with 0.
+
+[#fig-mirror-side-joint-right]
+.Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx>
+image::Grp_Mirror_Side_Joint_Right.svg[,600]
+
+[#tab-Grp-Mirror-Side-Joint-Right]
+.Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx>
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx>
+
+| *Origin*
+| Joint of the movable structure of a mirror
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
 
 == Grp_Mirror_Side_View_Left_<side_mirror_view_left_idx> (T)
 
@@ -1534,7 +1527,6 @@ image::Grp_Mirror_Side_View_Left.svg[,600]
 | *z-axis*
 | Perpendicular to the x-axis, pointing vertically upwards along the face of the mirror glass
 |===
-
 
 == Grp_Mirror_Side_View_Right_<side_mirror_view_right_idx> (T)
 
@@ -1745,40 +1737,6 @@ image::Grp_Eyepoint.svg[,600]
 | Perpendicular to the x-axis, pointing vertically upwards in neutral position
 |===
 
-
-== Grp_Mirror_Rearview_Joint_<rearview_mirror_joint_idx> (T)
-
-This group contains all parts of the movable structure that holds the rearview
-mirror. The mirror view automatically adjusts when the angle of the joint changes.
-
-`<rearview_mirror_joint_idx>` denotes the index of rearview mirror joints. The index entries
-are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
-
-[#fig-mirror-rearview-joint]
-.Grp_Mirror_Rearview_Joint_<rearview_mirror_joint_idx>
-image::Grp_Mirror_Rearview_Joint.svg[,600]
-
-[#tab-Grp-Mirror-Rearview-Joint-rearview-mirror-joint-idx]
-.Grp_Mirror_Rearview_Joint_<rearview_mirror_joint_idx>
-[%header, cols="20, 80"]
-|===
-
-2+^| Grp_Mirror_Rearview_Joint_<rearview_mirror_joint_idx>
-
-| *Origin*
-| Joint of the movable structure of a mirror
-
-| *x-axis*
-| Collinear with the vehicle's longitudinal axis, pointing forwards
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-
 == Grp_Mirror_Rearview_Mounting_<rearview_mirror_mounting_idx> (T)
 
 This group contains all parts of a vehicle's rearview mirror mounting.
@@ -1813,6 +1771,37 @@ image::Grp_Mirror_Rearview_Mounting.svg[,600]
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
 
+== Grp_Mirror_Rearview_Joint_<rearview_mirror_joint_idx> (T)
+
+This group contains all parts of the movable structure that holds the rearview
+mirror. The mirror view automatically adjusts when the angle of the joint changes.
+
+`<rearview_mirror_joint_idx>` denotes the index of rearview mirror joints. The index entries
+are sorted from right to left in positive y-direction, and from front to rear, starting with 0.
+
+[#fig-mirror-rearview-joint]
+.Grp_Mirror_Rearview_Joint_<rearview_mirror_joint_idx>
+image::Grp_Mirror_Rearview_Joint.svg[,600]
+
+[#tab-Grp-Mirror-Rearview-Joint-rearview-mirror-joint-idx]
+.Grp_Mirror_Rearview_Joint_<rearview_mirror_joint_idx>
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Mirror_Rearview_Joint_<rearview_mirror_joint_idx>
+
+| *Origin*
+| Joint of the movable structure of a mirror
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
 
 == Grp_Mirror_Rearview_View_<rearview_mirror_view_idx> (T)
 
@@ -1847,7 +1836,6 @@ image::Grp_Mirror_Rearview_View.svg[,600]
 | *z-axis*
 | Perpendicular to the x-axis, pointing vertically upwards along the face of the mirror glass
 |===
-
 
 == Grp_Seat_<seat_row>_<seat_idx> (T)
 
