@@ -84,7 +84,7 @@ legend
     |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_seat_seat_row_seat_idx_t Grp_Seat_<seat_row>_<seat_idx>]] (T)
     |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_steering_wheel_t Grp_Steering_Wheel]] (T)
   |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_interior_static Grp_Interior_Static]]
-|_ [[../geometry/object-vehicle/vehicle-index.html#_grp_vehicle_part_t Optional Grp_Vehicle_Part]] (T)
+|_ [[../geometry/object-vehicle/vehicle-index.html#_grp_vehicle_part_t Grp_Vehicle_Part]] (T)
 end legend
 ----
 
@@ -1384,46 +1384,6 @@ image::Grp_Mirror_Side_Mounting_Left.svg[,600]
 | Perpendicular to the x-axis, pointing vertically upwards
 |===
 
-
-== Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx> (T)
-
-This group contains all parts of the side mirror on the vehicle's right side.
-
-It is a child node of Grp_Exterior_Dynamic if mounted directly to the
-vehicle body, or a child node of either Grp_Door_Left or Grp_Door_Right if mounted
-to the door.
-
-`<side_mirror_mounting_right_idx>` denotes the index of side mirrors on the
-right side. The index entries are sorted from right to left in positive
-y-direction, and from front to rear, starting with 0.
-
-The index is used consistently, regardless of whether the mirror is mounted to
-the door or to the vehicle body.
-
-[#fig-mirror-side-mounting-right]
-.Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx>
-image::Grp_Mirror_Side_Mounting_Right.svg[,600]
-
-[#tab-Grp-Mirror-Side-Mounting-Right]
-.Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx>
-[%header, cols="20, 80"]
-|===
-
-2+^| Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx>
-
-| *Origin*
-| Base of the mirror mounting
-
-| *x-axis*
-| Collinear with the vehicle's longitudinal axis, pointing forwards
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
 == Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx> (T)
 
 This group contains all parts of the movable structure that holds the mirror on the vehicle's left side.
@@ -1445,41 +1405,6 @@ image::Grp_Mirror_Side_Joint_Left.svg[,600]
 |===
 
 2+^| Grp_Mirror_Side_Joint_Left_<side_mirror_joint_left_idx>
-
-| *Origin*
-| Joint of the movable structure of a mirror
-
-| *x-axis*
-| Collinear with the vehicle's longitudinal axis, pointing forwards
-
-| *y-axis*
-| Completes the right-handed coordinate system
-
-| *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards
-|===
-
-== Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> (T)
-
-This group contains all parts of the movable structure that holds the mirror on  the vehicle's left side.
-The mirror view automatically adjusts when the angle of the  joint changes.
-
-It is a child node of the corresponding mirror mounting group.
-
-`<side_mirror_joint_right_idx>` denotes the index of side mirror joints on the
-right side. The index entries are sorted from right to left in positive
-y-direction, and from front to rear, starting with 0.
-
-[#fig-mirror-side-joint-right]
-.Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx>
-image::Grp_Mirror_Side_Joint_Right.svg[,600]
-
-[#tab-Grp-Mirror-Side-Joint-Right]
-.Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx>
-[%header, cols="20, 80"]
-|===
-
-2+^| Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx>
 
 | *Origin*
 | Joint of the movable structure of a mirror
@@ -1526,6 +1451,80 @@ image::Grp_Mirror_Side_View_Left.svg[,600]
 
 | *z-axis*
 | Perpendicular to the x-axis, pointing vertically upwards along the face of the mirror glass
+|===
+
+== Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx> (T)
+
+This group contains all parts of the side mirror on the vehicle's right side.
+
+It is a child node of Grp_Exterior_Dynamic if mounted directly to the
+vehicle body, or a child node of either Grp_Door_Left or Grp_Door_Right if mounted
+to the door.
+
+`<side_mirror_mounting_right_idx>` denotes the index of side mirrors on the
+right side. The index entries are sorted from right to left in positive
+y-direction, and from front to rear, starting with 0.
+
+The index is used consistently, regardless of whether the mirror is mounted to
+the door or to the vehicle body.
+
+[#fig-mirror-side-mounting-right]
+.Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx>
+image::Grp_Mirror_Side_Mounting_Right.svg[,600]
+
+[#tab-Grp-Mirror-Side-Mounting-Right]
+.Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx>
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Mirror_Side_Mounting_Right_<side_mirror_mounting_right_idx>
+
+| *Origin*
+| Base of the mirror mounting
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
+|===
+
+== Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx> (T)
+
+This group contains all parts of the movable structure that holds the mirror on  the vehicle's left side.
+The mirror view automatically adjusts when the angle of the  joint changes.
+
+It is a child node of the corresponding mirror mounting group.
+
+`<side_mirror_joint_right_idx>` denotes the index of side mirror joints on the
+right side. The index entries are sorted from right to left in positive
+y-direction, and from front to rear, starting with 0.
+
+[#fig-mirror-side-joint-right]
+.Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx>
+image::Grp_Mirror_Side_Joint_Right.svg[,600]
+
+[#tab-Grp-Mirror-Side-Joint-Right]
+.Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx>
+[%header, cols="20, 80"]
+|===
+
+2+^| Grp_Mirror_Side_Joint_Right_<side_mirror_joint_right_idx>
+
+| *Origin*
+| Joint of the movable structure of a mirror
+
+| *x-axis*
+| Collinear with the vehicle's longitudinal axis, pointing forwards
+
+| *y-axis*
+| Completes the right-handed coordinate system
+
+| *z-axis*
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 == Grp_Mirror_Side_View_Right_<side_mirror_view_right_idx> (T)
