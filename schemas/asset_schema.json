@@ -5,7 +5,7 @@
     "definitions": {
         "Axle": {
             "type": "object",
-            "description": "The definition of vehicle axle based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Axle.html[OpenSCENARIO vehicle axle definition].",
+            "description": "The definition of vehicle axle based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Axle.html[OpenSCENARIO XML vehicle axle definition].",
             "properties": {
                 "maxSteering": {
                     "type": "number",
@@ -127,7 +127,7 @@
                 },
                 "vehicleClassData": {
                     "type": "object",
-                    "description": "Vehicle specific data. This shall be filled if 'objectClass' is 'vehicle' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Vehicle.html[OpenSCENARIO vehicle definition].",
+                    "description": "Vehicle specific data. This shall be filled if 'objectClass' is 'vehicle' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Vehicle.html[OpenSCENARIO XML vehicle definition].",
                     "properties": {
                         "vehicleCategory": {
                             "type": "string",
@@ -202,7 +202,7 @@
                 },
                 "humanClassData": {
                     "type": "object",
-                    "description": "Human specific data. This shall be filled if 'objectClass' is 'human' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Pedestrian.html[OpenSCENARIO pedestrian definition].",
+                    "description": "Human specific data. This shall be filled if 'objectClass' is 'human' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Pedestrian.html[OpenSCENARIO XML pedestrian definition].",
                     "properties": {
                         "mass": {
                             "type": "number",

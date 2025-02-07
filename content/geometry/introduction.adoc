@@ -50,11 +50,11 @@ The ASAM OpenX standards strive to provide comprehensive, realistic, and exchang
 
 * ASAM OpenDRIVE standardizes the description of road networks, including geometric definitions of the road, but primarily focuses on the semantic description of the road. 
   The {THIS_STANDARD} object class "Environment" enhances this by allowing the definition of a comprehensive _3D environment_ that aligns with an ASAM OpenDRIVE map.
-* ASAM OpenSCENARIO is a file format created to describe dynamic content in driving and traffic simulators, with a primary focus on complex maneuvers involving multiple entities like vehicles and pedestrians.
-  {THIS_STANDARD} defines node structures and metadata for these object classes to seamlessly integrate ASAM OpenSCENARIO definitions with a _3D model_.
-  The asset file (.xoma) of a static _3D environment_ shall be linked in ASAM OpenSCENARIO using the https://publications.pages.asam.net/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_XML/latest/generated/content/RoadNetwork.html[SceneGraphFile property].
+* ASAM OpenSCENARIO XML is a file format created to describe dynamic content in driving and traffic simulators, with a primary focus on complex maneuvers involving multiple entities like vehicles and pedestrians.
+  {THIS_STANDARD} defines node structures and metadata for these object classes to seamlessly integrate ASAM OpenSCENARIO XML definitions with a _3D model_.
+  The asset file (.xoma) of a static _3D environment_ shall be linked in ASAM OpenSCENARIO XML using the https://publications.pages.asam.net/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_XML/latest/generated/content/RoadNetwork.html[SceneGraphFile property].
   Asset files (.xoma) of individual objects, such as vehicles, shall be linked using the https://publications.pages.asam.net/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_XML/latest/07_components_scenario/07_02_storyboard_entities.html[model3d property].
-  Both environment and objects may either be given as an absolute path or as a path relative to the ASAM OpenSCENARIO file (.xosc).
+  Both environment and objects may either be given as an absolute path or as a path relative to the ASAM OpenSCENARIO XML file (.xosc).
   A relative path is indicated by a dot (.) as the first character.
   The paths to 3D assets specified in the _scenario_ definition shall serve as single source of truth and be used consistently in simulation environments.
   In the case of distributed simulation environments, the paths shall be synchronized between all relevant simulation components.

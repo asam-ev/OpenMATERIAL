@@ -99,7 +99,7 @@ environmental conditions on the driving infrastructure over an interval of time,
 including the movement of traffic participants or the change of environmental
 conditions.
 +
-Source: ASAM OpenSCENARIO v1.3.0 standard, 2024
+Source: ASAM OpenSCENARIO XML v1.3.0 standard, 2024
 
 [[sec-Signal-energy-propagation]] Signal energy propagation::
 The act of a signal traveling through the environment and potentially

@@ -1,6 +1,6 @@
 # Scenario example
 
-This example showcases the interaction between ASAM OpenMATERIAL 3D, ASAM OpenDRIVE, ASAM OpenSCENARIO, and ASAM OSI.
+This example showcases the interaction between ASAM OpenMATERIAL 3D, ASAM OpenDRIVE, ASAM OpenSCENARIO XML, and ASAM OSI.
 
 ## ASAM OpenDRIVE
 
@@ -8,9 +8,9 @@ This example showcases the interaction between ASAM OpenMATERIAL 3D, ASAM OpenDR
 This means, that the environment example asset shares the same coordinate frame as the corresponding ASAM OpenDRIVE file.
 Furthermore, the road network geometry in the asset corresponds to the road network description of the ASAM OpenDRIVE file.
 
-## ASAM OpenSCENARIO
+## ASAM OpenSCENARIO XML
 
-The `scenario_example_two_vehicles.xosc` is an ASAM OpenSCENARIO file.
+The `scenario_example_two_vehicles.xosc` is an ASAM OpenSCENARIO XML file.
 The following figure shows the bare scenario with the connected OpenDRIVE map and moving objects as bounding boxes.
 It was generated with the scenario player [esmini](https://github.com/esmini/esmini).
 
@@ -30,9 +30,9 @@ The scenario contains two moving objects of the same type, as shown in the follo
 
 ## ASAM OSI
 
-To showcase the interaction with ASAM OSI, the ASAM OpenSCENARIO file described above was played with the scenario player [esmini](https://github.com/esmini/esmini).
+To showcase the interaction with ASAM OSI, the ASAM OpenSCENARIO XML file described above was played with the scenario player [esmini](https://github.com/esmini/esmini).
 The output was stored in an ASAM OSI binary SensorView trace file: `20250130T100644Z_sv_370_2112_700_scenario_example_two_vehicles.osi`.
-The ASAM OpenMATERIAL 3D assets linked in the ASAM OpenSCENARIO file and the ASAM OpenSCENARIO vehicle catalog are contained in the ASAM OSI trace file as model_references.
+The ASAM OpenMATERIAL 3D assets linked in the ASAM OpenSCENARIO XML file and the ASAM OpenSCENARIO XML vehicle catalog are contained in the ASAM OSI trace file as model_references.
 The figure below was taken with Persival Simspector to visualize the content of the ASAM OSI trace file, including the referenced ASAM OpenMATERIAL 3D assets.
 
 ![scenario_example_simspector.png](img/scenario_example_simspector.png)
