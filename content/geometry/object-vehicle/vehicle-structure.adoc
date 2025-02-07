@@ -12,7 +12,7 @@ legend
 [[../geometry/object-vehicle/vehicle-index.html#_grp_root Grp_Root]]
 |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_exterior Grp_Exterior]]
   |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_exterior_dynamic Grp_Exterior_Dynamic]]
-    |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_convertible_top_t Grp_Convertible_Top]]
+    |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_convertible_top Grp_Convertible_Top]]
     |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_door_bottom_door_bottom_idx_t Grp_Door_Bottom_<door_bottom_idx>]] (T)
     |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_door_front_door_front_idx_t Grp_Door_Front_<door_front_idx>]] (T)
     |_ [[../geometry/object-vehicle/vehicle-index.html#_grp_door_left_door_left_idx_t Grp_Door_Left_<door_left_idx>]] (T)

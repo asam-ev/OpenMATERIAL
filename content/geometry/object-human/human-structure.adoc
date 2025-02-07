@@ -7,6 +7,10 @@
 legend
 |_ [[../geometry/object-human/human-index.html#_grp_root Grp_Root]]
   |_ [[../geometry/object-human/human-index.html#_armature_name Armature_<Name>]]
+    |_ [[../geometry/object-human/human-index.html#_accessories_name Accessories_<Name>]]
+    |_ [[../geometry/object-human/human-index.html#_body_name Body_<Name>]]
+    |_ [[../geometry/object-human/human-index.html#_clothing_name Clothing_<Name>]]
+    |_ [[../geometry/object-human/human-index.html#_hair_name Hair_<Name>]]
     |_ [[../geometry/object-human/human-index.html#_root Root]]
       |_ [[../geometry/object-human/human-index.html#_hip_t Hip]] (T)
         |_ [[../geometry/object-human/human-index.html#_lower_spine_t Lower_Spine]] (T)
@@ -19,7 +23,7 @@ legend
             |_ [[../geometry/object-human/human-index.html#_upper_arm_left_t Upper_Arm_Left]] (T)
               |_ [[../geometry/object-human/human-index.html#_lower_arm_left_t Lower_Arm_Left]] (T)
                 |_ [[../geometry/object-human/human-index.html#_hand_left_t Hand_Left]] (T)
-                  |_ [[../geometry/object-human/human-index.html#_full_lingers_left_t Full_Fingers_Left]] (T)
+                  |_ [[../geometry/object-human/human-index.html#_full_fingers_left_t Full_Fingers_Left]] (T)
                   |_ [[../geometry/object-human/human-index.html#_full_thumb_left_t Full_Thumb_Left]] (T)
           |_ [[../geometry/object-human/human-index.html#_shoulder_right_t Shoulder_Right]] (T)
             |_ [[../geometry/object-human/human-index.html#_upper_arm_right_t Upper_Arm_Right]] (T)
@@ -35,10 +39,6 @@ legend
           |_ [[../geometry/object-human/human-index.html#_lower_leg_right_t Lower_Leg_Right]] (T)
             |_ [[../geometry/object-human/human-index.html#_foot_right_t Foot_Right]] (T)
               |_ [[../geometry/object-human/human-index.html#_full_toes_right_t Full_Toes_Right]] (T)
-    |_ [[../geometry/object-human/human-index.html#_accessories_name Accessories_<Name>]]
-    |_ [[../geometry/object-human/human-index.html#_body_name Body_<Name>]]
-    |_ [[../geometry/object-human/human-index.html#_clothing_name Clothing_<Name>]]
-    |_ [[../geometry/object-human/human-index.html#_hair_name Hair_<Name>]]
 end legend
 ----
 
@@ -568,6 +568,7 @@ The Full_Fingers_Right bone represents all other fingers of the right hand, that
 | Pointing sidewards
 |===
 
+== Upper_Leg_Left (T)
 
 The Upper_Leg_Left bone represents the upper part of the left leg, that is, the thigh of the human skeleton. It controls the hip joint.
 
