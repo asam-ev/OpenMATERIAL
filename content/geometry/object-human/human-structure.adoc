@@ -19,7 +19,7 @@ legend
             |_ [[../geometry/object-human/human-index.html#_upper_arm_left_t Upper_Arm_Left]] (T)
               |_ [[../geometry/object-human/human-index.html#_lower_arm_left_t Lower_Arm_Left]] (T)
                 |_ [[../geometry/object-human/human-index.html#_hand_left_t Hand_Left]] (T)
-                  |_ [[../geometry/object-human/human-index.html#_full_lingers_left_t Full_Fingers_Left]] (T)
+                  |_ [[../geometry/object-human/human-index.html#_full_fingers_left_t Full_Fingers_Left]] (T)
                   |_ [[../geometry/object-human/human-index.html#_full_thumb_left_t Full_Thumb_Left]] (T)
           |_ [[../geometry/object-human/human-index.html#_shoulder_right_t Shoulder_Right]] (T)
             |_ [[../geometry/object-human/human-index.html#_upper_arm_right_t Upper_Arm_Right]] (T)
@@ -74,21 +74,6 @@ Depending on the 3D software, the armature is a separate _object type_ (for exam
 The postfix `_<Name>` is optional, but is recommended to use, if you prepare multiple human assets in one file of an 3D application to keep the names unique and within the naming convention.
 The armature shares the coordinate system with Grp_Root.
 
-== Accessories_<Name>
-
-This object represents an additional or exchangeable accessory of the human. It shares the coordinate system with Grp_Root, see <<tab-human-Grp_Root>>.
-
-== Body_<Name>
-
-This object represents the body of the human. It shares the coordinate system with Grp_Root, see <<tab-human-Grp_Root>>.
-
-== Clothing_<Name>
-
-This object represents an additional or exchangeable clothing part of the human. It shares the coordinate system with Grp_Root, see <<tab-human-Grp_Root>>.
-
-== Hair_<Name>
-
-This object represents an additional or exchangeable hair part of the human. It shares the coordinate system with Grp_Root, see <<tab-human-Grp_Root>>.
 
 == Root
 
@@ -568,6 +553,7 @@ The Full_Fingers_Right bone represents all other fingers of the right hand, that
 | Pointing sidewards
 |===
 
+== Upper_Leg_Left (T)
 
 The Upper_Leg_Left bone represents the upper part of the left leg, that is, the thigh of the human skeleton. It controls the hip joint.
 
@@ -766,3 +752,18 @@ The Full_Toes_Right bone in a human skeleton represents all toes of the right fo
 | Pointing sidewards
 |===
 
+== Accessories_<Name>
+
+This object represents an additional or exchangeable accessory of the human. It shares the coordinate system with Grp_Root, see <<tab-human-Grp_Root>>.
+
+== Body_<Name>
+
+This object represents the body of the human. It shares the coordinate system with Grp_Root, see <<tab-human-Grp_Root>>.
+
+== Clothing_<Name>
+
+This object represents an additional or exchangeable clothing part of the human. It shares the coordinate system with Grp_Root, see <<tab-human-Grp_Root>>.
+
+== Hair_<Name>
+
+This object represents an additional or exchangeable hair part of the human. It shares the coordinate system with Grp_Root, see <<tab-human-Grp_Root>>.
