@@ -88,11 +88,11 @@ The origin of the world coordinate system in ASAM OSI should also be aligned wit
 === Local coordinate system
 
 Top-most local coordinate frames of _3D assets_ (so-called reference coordinate frames) in {THIS_STANDARD} are defined in the center of the bounding box of the corresponding asset, projected to the bottom of the bounding box.
-By static transformations, these coordinate frames may be synchronized with reference coordinate frames in ASAM OpenSCENARIO and ASAM OSI.
+By static transformations, these coordinate frames may be synchronized with reference coordinate frames in ASAM OpenSCENARIO XML and ASAM OSI.
 <<tab-local-coordinates>> provides an overview of the translations between {THIS_STANDARD} asset reference coordinates and ASAM OpenSCENARIO XML and ASAM OSI reference coordinates.
 
 [#tab-local-coordinates]
-.Transformation of asset coordinates to ASAM OpenSCENARIO and ASAM OSI
+.Transformation of asset coordinates to ASAM OpenSCENARIO XML and ASAM OSI
 [cols="1,1,1"]
 |===
 |Standard |Coordinate System | Transformation
