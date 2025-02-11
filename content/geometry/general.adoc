@@ -114,7 +114,7 @@ The following naming conventions apply to {THIS_STANDARD} geometry files:
 * The _3D model_ file and the related _3D asset_ file shall have the same base name.
   Example: `Example.gltf`, `Example.xoma`
 * The naming convention inside the _3D model_ file (contains 3D information) must follow the capital Snake_Case definition, to improve human readability and enable consistent parsing of the file structure.
-* The naming convention inside the _3D asset_ file (contains metadata) must follow the lowerCamelCase definition, to allow a consistent naming convention in all .json files and consistent parsing.
+* The naming convention inside the _3D asset_ file (contains metadata) must follow the lowerCamelCase definition, to allow a consistent naming convention in all JSON files and consistent parsing.
 * Keywords are predefined names for objects inside the node structure.
 
 === Node structure
@@ -127,8 +127,11 @@ Users are free to add more keywords for themself, if they are needed. The follow
 * Group nodes (also known as empty nodes or parent nodes) shall have "Grp_" as a prefix.
 * Iterators shall be added as suffixes.
   In the documentation, iterator names are written in angled brackets. Example: `<type_idx>`.
-  In the node names itself, the iterator names are replaced by integer values, starting from 0.
-* Sequence of suffixes: 1: Iterator 2: Type Enumerator 3: Subtype Enumerator.
+  In the node name itself, the iterator names are replaced by integer values, starting from 0.
+* Sequence of suffixes: 
+** 1: Iterator 
+** 2: Type Enumerator 
+** 3: Subtype Enumerator.
 * The predefined keywords shall be used for the corresponding asset parts and can be found in the corresponding subchapters.
 
 === Metadata
@@ -137,14 +140,14 @@ The following rules for metadata apply:
 
 * Fields shall be named according to the lowerCamelCase definition, starting with lowercase letters.
 * Naming of custom properties shall follow the predefined keys.
-* Objects, arrays (lists), and enums shall follow the notation in the corresponding json files.
+* Objects, arrays (lists), and enums shall follow the notation in the corresponding JSON files.
 
 == _3D asset_ file
 
 The _3D asset_ file provides metadata as well as a mapping table to {THIS_STANDARD} _material property_ files.
 This information extends the geometry of an asset given in standard _3D model_ file formats, for example, glTF, FBX, or USD.
 The _3D asset_ file is in JSON format with the file extension .xoma.
-As indicated above, the asset file has to have the same file name as the accompanying _3D model_.
+The asset file has to have the same file name as the accompanying _3D model_.
 The following is an example of a _3D model_ file in glTF format with an accompanying _3D asset_ file:
 
 * `my-model.gltf`
@@ -153,10 +156,10 @@ The following is an example of a _3D model_ file in glTF format with an accompan
 == Requirements
 
 * The geometry of the object shall be in real-word scale, using meters as the unit for measurement distances.
-* The object's origins and pivot points shall coincide with position and orientation of the origin of the object's reference coordinate frame, unless otherwise specified .
+* The object's origins and pivot points shall coincide with position and orientation of the origin of the object's reference coordinate frame, unless otherwise specified.
 * Meshes shall not contain problematic characteristics such as doubled, isolated, coincident, coplanar, degenerate, or primitives.
 * Meshes shall have outside facing normals. Soft or hard edges shall be set correctly.
-* Meshes shall not be empty or contain multiple LODs.
+* Meshes shall not be empty or contain multiple level of details (LoDs).
 * Meshes shall be triangulated. Potential normal maps shall match that triangulation.
 * Rendering materials shall support physically based rendering (PBR) workflows and there shall not be geometry without assigned material.
 * Additional requirements apply when {THIS_STANDARD} assignment textures are used:
@@ -178,5 +181,5 @@ The following is an example of a _3D model_ file in glTF format with an accompan
 * Texel density should be homogeneous and as low as possible.
 * UV stretching should be minimized.
 * Naming of files, nodes, meshes, and materials should be meaningful.
-* Usage of multiple PBR maps is encouraged (for example, albedo, roughness, metallic, normals).
-* Smaller objects should have one _material_ per object (for example, baked traffic cone), while larger objects should contain multiple seamless repeatable materials (for example, brick building).
+* Usage of multiple PBR maps is encouraged, for example, albedo, roughness, metallic, normals.
+* Smaller objects should have one _material_ per object, for example, baked traffic cone. Larger objects should contain multiple seamless repeatable materials, for example, brick building.

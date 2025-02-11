@@ -10,7 +10,7 @@
         "authors": ["clemens.linnhoff@persival.de", "simone.graf@ipg-automotive.com"],
         "modelCreationTool": "Blender",
         "creationDate": "20241025T180000Z",
-        "modelingMethod": "Modeled freely without real world counterpart",
+        "modelingMethod": "Modeled freely without real-world counterpart",
         "validationDescription": "Since this is a fictional human, the geometry was not validated. Standard compliance was verified manually.",
         "assetType": "object",
         "objectClass": "human",

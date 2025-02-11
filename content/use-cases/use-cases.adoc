@@ -46,7 +46,7 @@ This clear organization helps users understand the practical applications of {TH
 [#tab-use-case-3, cols="1,5"]
 .Use case 3: Validating _material properties_ and 3D geometries
 |===
-|*Description*                      |As a measurement engineer, I want to validate 3D geometries and _material properties_. This _validation_ is performed as a comparison of the data, that is, _material properties_ and defined points in the 3D geometry, against measurements from the real-world.
+|*Description*                      |As a measurement engineer, I want to validate 3D geometries and _material properties_. This _validation_ is performed as a comparison of the data, that is, _material properties_ and defined points in the 3D geometry, against measurements from the real world.
 |*Relevant OpenMATERIAL 3D chapters*|Geometry and Material
 |*Influencing standards*            |-
 |*Influencing technologies*         |-
@@ -108,7 +108,7 @@ To distribute material data and _3D assets_ efficiently, it shall be possible to
 .Use case 9: Simulating energy or _signal propagation_ with _3D assets_ linked to _material properties_
 |===
 |*Description*                      |As a _simulation platform_ or sensor model developer, I want to simulate the energy or _signal propagation_ using imported _3D assets_ with linked _material properties_. This is, for example, done with ray tracing. Rays are launched in a virtual 3D scene to simulate the propagation of light beams, radio waves, or ultrasonic waves. The interaction of the rays with the surfaces of the _objects_ in the _3D environment_ depends on the _material properties_ of these surfaces. These properties are assigned to the 3D geometries of the _objects_ and imported from a material database.
-The simulation shall be able to cope with different real-time requirements, for example, SiL, HiL, open-loop, closed-loop and so on.
+The simulation shall be able to cope with different real-time requirements, for example, SiL, HiL, open-loop, closed-loop.
 |*Relevant OpenMATERIAL 3D chapters*|Geometry and Material
 |*Influencing standards*            |-
 |*Influencing technologies*         |Nvidia OptiX

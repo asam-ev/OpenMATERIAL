@@ -29,7 +29,7 @@
                 },
                 "positionZ": {
                     "type": "number",
-                    "description": "Z-position of the axle with respect to the vehicles center of the bounding box projected to the ground. Usually this is half of wheel diameter. Unit:meter; Range:[0..inf[.",
+                    "description": "z-position of the axle with respect to the vehicles center of the bounding box projected to the ground. Usually this is half of wheel diameter. Unit:meter; Range:[0..inf[.",
                     "minimum": 0
                 }
             },
@@ -53,7 +53,7 @@
                 },
                 "description": {
                     "type": "string",
-                    "description": "A concise summary of the asset's purpose or features (2-3 sentences)."
+                    "description": "A concise summary of the asset's purpose or features in 2 - 3 sentences."
                 },
                 "uuid": {
                     "type": "string",
@@ -72,7 +72,7 @@
                 },
                 "copyrights": {
                     "type": "array",
-                    "description": "Indicates copyright details, including the year and copyright holder (e.g., '© 2024 ACME Inc.').",
+                    "description": "Indicates copyright details, including the year and copyright holder (for example, '© 2024 ACME Inc.').",
                     "items": {
                         "type": "string"
                     },
@@ -202,7 +202,7 @@
                 },
                 "humanClassData": {
                     "type": "object",
-                    "description": "Human specific data. This shall be filled if 'objectClass' is 'human' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Pedestrian.html[OpenSCENARIO XML pedestrian definition].",
+                    "description": "Human-specific data. This shall be filled if 'objectClass' is 'human' based on the https://releases.asam.net/OpenSCENARIO/1.0.0/Model-Documentation/content/Pedestrian.html[OpenSCENARIO XML pedestrian definition].",
                     "properties": {
                         "mass": {
                             "type": "number",
@@ -260,7 +260,7 @@
                 },
                 "boundingBox": {
                     "type": "object",
-                    "description": "Defines the Axis-Aligned Bounding Box (AABB) which defines the spatial boundaries of an asset in a 3D space. Example: \"boundingBox\": { \"x\": [-2.5, 2.5], \"y\": [-1.1, 1.1],\"z\": [0, 1.8]}",
+                    "description": "Defines the Axis-Aligned Bounding Box (AABB), which defines the spatial boundaries of an asset in a 3D space. Example: \"boundingBox\": { \"x\": [-2.5, 2.5], \"y\": [-1.1, 1.1],\"z\": [0, 1.8]}",
                     "properties": {
                         "x": {
                             "type": "array",

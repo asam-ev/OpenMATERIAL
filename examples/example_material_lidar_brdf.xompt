@@ -1,7 +1,7 @@
 {
     "metadata": {
         "name": "asphalt_brdf_for_lidar",
-        "description": "Reflectance properties of asphalt for lidar sensor.",
+        "description": "Reflectance properties of asphalt for LiDAR sensor.",
         "uuid": "c83d3856-db38-40a5-b64e-49b52869d780",
         "materialVersion": "1.0.0",
         "creationDate": "20240919T101728Z",

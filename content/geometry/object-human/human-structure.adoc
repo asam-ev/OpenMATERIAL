@@ -256,7 +256,7 @@ The Eye_Right bone represents the right eye of the human body. It is used to cal
 
 == Shoulder_Left (T)
 
-The Shoulder_Left bone represents the upper part of the left shoulder, that is, the interaction between the clavicle bone and the humerus head of the human skeleton.
+The Shoulder_Left bone represents the upper part of the left shoulder, that is, the interaction between the Clavicle bone and the Humerus head of the human skeleton.
 
 [#tab-human-shoulder-left]
 .Shoulder_Left bone
@@ -266,7 +266,7 @@ The Shoulder_Left bone represents the upper part of the left shoulder, that is, 
 2+^| Shoulder_Left
 
 | *Origin*
-| At the height of the clavicle bone and in the middle of the geometry
+| At the height of the Clavicle bone and in the middle of the geometry
 
 | *x-axis*
 | Pointing forwards
@@ -281,7 +281,7 @@ The Shoulder_Left bone represents the upper part of the left shoulder, that is, 
 
 == Upper_Arm_Left (T)
 
-The Upper_Arm_Left bone represents the upper part of the left arm, that is, the humerus head of the human skeleton.
+The Upper_Arm_Left bone represents the upper part of the left arm, that is, the Humerus head of the human skeleton.
 
 [#tab-human-upper-arm-left]
 .Upper_Arm_Left bone
@@ -291,7 +291,7 @@ The Upper_Arm_Left bone represents the upper part of the left arm, that is, the 
 2+^| Upper_Arm_Left
 
 | *Origin*
-| At the height of the humerus head and in the middle of the geometry
+| At the height of the Humerus head and in the middle of the geometry
 
 | *x-axis*
 | Pointing forwards
@@ -406,7 +406,7 @@ The Full_Fingers_Left bone represents all other fingers of the left hand, that i
 
 == Shoulder_Right (T)
 
-The Shoulder_Right bone represents the upper part of the right shoulder, that is, the interaction between the clavicle bone and the humerus head of the human skeleton.
+The Shoulder_Right bone represents the upper part of the right shoulder, that is, the interaction between the Clavicle bone and the Humerus head of the human skeleton.
 
 [#tab-human-shouder-right]
 .Shoulder_Right bone
@@ -416,7 +416,7 @@ The Shoulder_Right bone represents the upper part of the right shoulder, that is
 2+^| Shoulder_Right
 
 | *Origin*
-| At the height of the clavicle bone and in the middle of the geometry
+| At the height of the Clavicle bone and in the middle of the geometry
 
 | *x-axis*
 | Pointing forwards
@@ -431,7 +431,7 @@ The Shoulder_Right bone represents the upper part of the right shoulder, that is
 
 == Upper_Arm_Right (T)
 
-The Upper_Arm_Right bone represents the upper part of the right arm, that is, the humerus head of the human skeleton.
+The Upper_Arm_Right bone represents the upper part of the right arm, that is, the Humerus head of the human skeleton.
 
 [#tab-human-upper-arm-right]
 .Upper_Arm_Right bone
@@ -441,7 +441,7 @@ The Upper_Arm_Right bone represents the upper part of the right arm, that is, th
 2+^| Upper_Arm_Right
 
 | *Origin*
-| At the height of the humerus head and in the middle of the geometry
+| At the height of the Humerus head and in the middle of the geometry
 
 | *x-axis*
 | Pointing forwards

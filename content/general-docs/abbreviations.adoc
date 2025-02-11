@@ -19,13 +19,16 @@ BRDF::
 Bidirectional Reflectance Distribution Function
 
 BSDF::
-Bidrectional Scattering Distribution Function
+Bidirectional Scattering Distribution Function
 
 BTDF::
 Bidirectional Transmittance Distribution Function
 
 CAD::
 Computer-Aided Design
+
+EMP::
+Electromagnetic Property
 
 FBX::
 Filmbox (proprietary file format)

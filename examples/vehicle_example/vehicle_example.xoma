@@ -10,7 +10,7 @@
         "authors": ["ludwig.friedmann@bmw.de", "clemens.linnhoff@persival.de"],
         "modelCreationTool": "Blender",
         "creationDate": "20241023T180000Z",
-        "modelingMethod": "Modeled freely without real world counterpart",
+        "modelingMethod": "Modeled freely without real-world counterpart",
         "validationDescription": "Since this is a fictional vehicle, the geometry was not validated. Standard compliance was verified manually.",
         "assetType": "object",
         "objectClass": "vehicle",

@@ -57,11 +57,11 @@
                 },
                 "sources": {
                     "type": "string",
-                    "description": "Source of the BRDF data (for example, was is measured, simulated, or taken from literature). Multiple sources should be comma-separated."
+                    "description": "Source of the BRDF data. Was it measured, simulated, or taken from literature? Multiple sources should be comma-separated."
                 },
                 "typicalSensorTechnology": {
                     "type": "string",
-                    "description": "Typical sensor technology this BRDF table is used for. Examples: 'radar', 'lidar', 'camera'. If multiply apply, use comma-separation."
+                    "description": "Typical sensor technology this BRDF table is used for. Examples: 'radar', 'lidar', 'camera'. If more than one applies, use comma-separation."
                 }
             },
             "required": [
