@@ -94,60 +94,20 @@
                 </g>
             </g>
         </g>
-        <g transform="matrix(1,0,0,1,32.2226,1.13687e-13)">
-            <g transform="matrix(1.96053,0,0,1.89425,332.712,295.076)">
-                <path d="M240.573,98.374L328.515,158.334L89.295,158.334L89.295,119.154L185.537,98.347L240.573,98.374Z" style="fill:rgb(234,234,234);fill-opacity:0.9;"/>
-            </g>
-            <g transform="matrix(0.782017,1.92747e-16,1.56125e-16,1.06441,787.458,461.484)">
-                <g transform="matrix(19.1812,0,0,19.1812,78.741,0)">
-                </g>
-                <text x="5.182px" y="0px" style="font-family:'ArialMT', 'Arial';font-size:19.181px;fill:rgb(127,127,127);">sidewalk</text>
-            </g>
-            <g transform="matrix(0.527975,0,0,1.01455,718.046,382.769)">
-                <path d="M168.745,89.399L168.745,93.382L163.486,88.495L168.745,83.608L168.745,87.591L217.616,87.591L217.616,83.608L224.516,88.495L217.616,93.382L217.616,89.399L168.745,89.399Z" style="fill:rgb(127,127,127);"/>
-            </g>
-            <g id="Coordinate-system" serif:id="Coordinate system" transform="matrix(1,0,1.17097e-30,1.225,72.0009,91.8904)">
-                <g transform="matrix(0.999999,-2.77556e-17,-4.33681e-19,1,539.435,196.543)">
-                    <g id="arrow-blue" serif:id="arrow blue">
-                        <g>
-                            <path d="M288.925,128.5L291.925,122.5L294.925,128.5L288.925,128.5Z" style="fill:rgb(0,113,180);"/>
-                            <path d="M291.925,153.129L291.925,127.3" style="fill:none;stroke:rgb(0,113,180);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        <g id="Sidewalk" transform="matrix(1,0,0,1,32.2226,1.13687e-13)">
+            <g id="Overlays">
+                <g id="Sidewalk1" serif:id="Sidewalk">
+                    <g id="label" transform="matrix(0.782017,1.92747e-16,1.56125e-16,1.06441,787.458,461.484)">
+                        <g transform="matrix(19.1812,0,0,19.1812,78.741,0)">
                         </g>
+                        <text x="5.182px" y="0px" style="font-family:'ArialMT', 'Arial';font-size:19.181px;fill:rgb(127,127,127);">sidewalk</text>
                     </g>
-                </g>
-                <g id="arrow-blue1" serif:id="arrow blue" transform="matrix(-0.000549454,1,-0.999999,-7.03087e-05,983.647,57.8701)">
-                    <g>
-                        <g>
-                            <path d="M288.925,128.5L291.925,122.5L294.925,128.5L288.925,128.5Z" style="fill:rgb(0,113,180);"/>
-                            <path d="M291.925,153.129L291.925,127.3" style="fill:none;stroke:rgb(0,113,180);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-                        </g>
+                    <g id="arrow" transform="matrix(0.527975,0,0,1.01455,718.046,382.769)">
+                        <path d="M168.745,89.399L168.745,93.382L163.486,88.495L168.745,83.608L168.745,87.591L217.616,87.591L217.616,83.608L224.516,88.495L217.616,93.382L217.616,89.399L168.745,89.399Z" style="fill:rgb(127,127,127);"/>
                     </g>
-                </g>
-                <g id="arrow-blue2" serif:id="arrow blue" transform="matrix(0.356584,-0.93637,0.934188,0.351261,589.814,571.768)">
-                    <g>
-                        <g>
-                            <path d="M288.925,128.5L291.925,122.5L294.925,128.5L288.925,128.5Z" style="fill:rgb(0,113,180);"/>
-                            <g transform="matrix(1,-1.66533e-16,-1.11022e-16,0.73768,0,33.3934)">
-                                <path d="M291.925,153.129L291.925,127.3" style="fill:none;stroke:rgb(0,113,180);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-                            </g>
-                        </g>
+                    <g transform="matrix(1.96053,0,0,1.89425,332.712,295.076)">
+                        <path d="M240.573,98.374L328.515,158.334L89.295,158.334L89.295,119.154L185.537,98.347L240.573,98.374Z" style="fill:rgb(234,234,234);fill-opacity:0.9;"/>
                     </g>
-                </g>
-                <g transform="matrix(1,0,-1.75162e-46,1,804.293,338.822)">
-                    <g transform="matrix(16,0,0,16,8,0)">
-                    </g>
-                    <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:16px;fill:rgb(0,113,180);">y</text>
-                </g>
-                <g transform="matrix(1.11514,0,0,1.11514,834.196,322.695)">
-                    <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:14.348px;fill:rgb(0,113,180);">z</text>
-                </g>
-                <g transform="matrix(1,0,-3.50325e-46,1,856.932,346.786)">
-                    <g transform="matrix(16,0,0,16,8,0)">
-                    </g>
-                    <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:16px;fill:rgb(0,113,180);">x</text>
-                </g>
-                <g transform="matrix(1.12889,0,-5.93217e-46,1.12889,826.045,364.639)">
-                    <text x="0px" y="0px" style="font-family:'TimesNewRomanPS-BoldMT', 'Times New Roman';font-weight:700;font-size:14.173px;fill:rgb(0,113,180);">O</text>
                 </g>
             </g>
         </g>
