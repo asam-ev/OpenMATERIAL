@@ -97,7 +97,7 @@
                                     "number",
                                     "null"
                                 ],
-                                "description": "Wavelength of radiation in meters (m)."
+                                "description": "Wavelength of radiation in free-space in meters (m)."
                             },
                             {
                                 "type": [

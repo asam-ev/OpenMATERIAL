@@ -82,7 +82,7 @@
                             "number",
                             "null"
                         ],
-                        "description": "Wavelength of radiation in meters (m)."
+                        "description": "Wavelength of radiation in free-space in meters (m)."
                     },
                     {
                         "type": [
@@ -96,7 +96,7 @@
                             "number",
                             "null"
                         ],
-                        "description": "Humidity of material in percent (%)."
+                        "description": "Relative humidity of material in percent (%)."
                     },
                     {
                         "type": [
