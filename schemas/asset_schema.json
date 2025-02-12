@@ -29,7 +29,7 @@
                 },
                 "positionZ": {
                     "type": "number",
-                    "description": "z-position of the axle with respect to the vehicles center of the bounding box projected to the ground. Usually this is half of wheel diameter. Unit:meter; Range:[0..inf[.",
+                    "description": "The z-position of the axle with respect to the vehicles center of the bounding box projected to the ground. Usually this is half of wheel diameter. Unit:meter; Range:[0..inf[.",
                     "minimum": 0
                 }
             },

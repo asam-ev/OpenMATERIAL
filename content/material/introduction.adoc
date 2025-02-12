@@ -10,7 +10,7 @@ endif::[]
 == Motivation
 
 In virtual environments and simulations, the accurate representation of materials plays a critical role in achieving realism and ensuring proper interaction between objects and perception sensors.
-_Material properties_, such as roughness, permittivity, and index of refraction, influence how sensors like cameras, radars, and LiDARs perceive and interact with objects.
+_Material properties_, such as roughness, permittivity, and index of refraction, influence how sensors like cameras, radars, and lidars perceive and interact with objects.
 However, existing formats for materials in _3D models_ lack a standardized way to represent and manage multi-spectral materials, which can lead to inconsistencies in simulation scenarios and are not exchangeable between simulation tools.
 
 The {THIS_STANDARD} standard addresses this gap by providing a robust framework for defining materials in a way that is comprehensive, multi-spectral, and interchangeable.

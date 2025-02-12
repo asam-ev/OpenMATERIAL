@@ -29,7 +29,7 @@ image::overview_geometry.png[,1100]
 
 == Applications
 
-To accurately replicate how sensors interact with objects in the real world, it is essential to model the behavior of sensors like cameras, radars, and LiDARs based on the _material_ and geometric properties of objects in a virtual environment. For this purpose, assets that conform to the {THIS_STANDARD} standards may be necessary in various scenarios, such as:
+To accurately replicate how sensors interact with objects in the real world, it is essential to model the behavior of sensors like cameras, radars, and lidars based on the _material_ and geometric properties of objects in a virtual environment. For this purpose, assets that conform to the {THIS_STANDARD} standards may be necessary in various scenarios, such as:
 
 * *Accurate simulation of sensor perception*: _3D assets_ are essential to ensure that sensors interact realistically with their environment. This includes both the visual representation, such as how objects appear and are detected by the sensor, and the _material_ properties, like how objects reflect or absorb signals such as light or radar waves.
 * *Dynamic and real-time environment simulation*: _3D assets_ with changing materials or dynamic properties, such as moving parts like wheels, are necessary to simulate environments where the interaction between sensors and objects is constantly evolving.
