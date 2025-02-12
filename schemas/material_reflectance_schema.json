@@ -57,7 +57,7 @@
                 },
                 "sources": {
                     "type": "string",
-                    "description": "Sources of the reflectance data (for example, was is measured, simulated, or taken from literature?) Multiple sources should be comma-separated."
+                    "description": "Sources of the reflectance data. Was it measured, simulated, or taken from literature? Multiple sources should be comma-separated."
                 }
             },
             "required": [

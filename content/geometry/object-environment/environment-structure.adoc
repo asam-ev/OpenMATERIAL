@@ -27,7 +27,7 @@ end legend
 
 == Grp_Root
 
-The environment consists of the terrain, buildings, objects, and traffic areas, for example roads. It also includes all stationary traffic items, such as traffic signals, signs or lights.
+The environment consists of the terrain, buildings, objects, and traffic areas, for example roads. It also includes all stationary traffic items, such as traffic signals, signs, or lights.
 
 If applicable, the origin of the root should match the https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/08_coordinate_systems/08_02_inertial_coordinate_system.html[inertial coordinate frame] of a corresponding OpenDRIVE map.
 
@@ -39,22 +39,22 @@ If applicable, the origin of the root should match the https://publications.page
 2+^| Grp_Root
 
 | *Origin*
-| Origin matching the https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/08_coordinate_systems/08_02_inertial_coordinate_system.html[inertial coordinate frame] of an associated OpenDRIVE map (if available).
+| Origin matching the https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/08_coordinate_systems/08_02_inertial_coordinate_system.html[inertial coordinate frame] of an associated OpenDRIVE map (if available)
 
 | *x-axis*
-| Pointing to the right (east for maps with geographic reference).
+| Pointing to the right (east for maps with geographic reference)
 
 | *y-axis*
-| Pointing up (north for maps with geographic reference).
+| Pointing up (north for maps with geographic reference)
 
 | *z-axis*
-| Pointing out of the drawing plane (up for maps with geographic reference).
+| Pointing out of the drawing plane (up for maps with geographic reference)
 |===
 
 
 == Grp_Terrain
 
-The terrain is characterized by the environment's ground structure, such as hills, mountains, or flat territory, meaning, the landscape in general. It does not include local elevations like vegetation, buildings, or other human-made structures.
+The terrain is characterized by the environment's ground structure, such as hills, mountains, or flat territory, meaning the landscape in general. It does not include local elevations like vegetation, buildings, or other human-made structures.
 
 Grp_Terrain is used as parent for all nodes defining the terrain of an environment. It shares the coordinate system with Grp_Root, see <<tab-Environment-Grp-Root>>.
 
@@ -168,16 +168,16 @@ image::Grp_Sign.svg[,600]
 2+^| Grp_Sign
 
 | *Origin*
-| Geometric center of the signs face.
+| Geometric center of the signs face
 
 | *x-axis*
-| Concentric and coaxial to the surface normal of the sign face.
+| Concentric and coaxial to the surface normal of the sign face
 
 | *y-axis*
-| Completes the right-handed coordinate system.
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards.
+| Perpendicular to the x-axis, pointing vertically upwards
 |===
 
 == Grp_Traffic_Light_<signal_idx> (T)
@@ -196,14 +196,14 @@ image::Grp_Traffic_Light.svg[,600]
 2+^| Grp_Traffic_Light
 
 | *Origin*
-| Geometric center of the traffic light signal area surface.
+| Geometric center of the traffic light signal area surface
 
 | *x-axis*
-| Concentric and coaxial to the surface normal of the signal area surface.
+| Concentric and coaxial to the surface normal of the signal area surface
 
 | *y-axis*
-| Completes the right-handed coordinate system.
+| Completes the right-handed coordinate system
 
 | *z-axis*
-| Perpendicular to the x-axis, pointing vertically upwards.
+| Perpendicular to the x-axis, pointing vertically upwards
 |===

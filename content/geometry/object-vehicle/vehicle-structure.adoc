@@ -93,7 +93,7 @@ end legend
 
 This group is the root node of the entire vehicle.
 All components of the vehicle shall be children of this node.
-The origin of the Root node is the center of the vehicle's bounding box projected to the ground, including all vehicle parts in their default positions, meaning the vehicle is under neutral load conditions, the wheels are running straight, the doors are closed and the lights are off.
+The origin of the Root node is the center of the vehicle's bounding box projected to the ground, including all vehicle parts in their default positions, meaning the vehicle is under neutral load conditions, the wheels are running straight, the doors are closed, and the lights are off.
 
 [#tab-Vehicle-Grp-Root]
 .Grp_Root
@@ -1564,7 +1564,7 @@ image::Grp_Mirror_Side_View_Right.svg[,600]
 
 == Grp_Rear_Axle_Center (T)
 
-This group is an empty node in the center or the rear axle.
+This group is an empty node in the center of the rear axle.
 
 The coordinate origin of this group is aligned with the ASAM OSI host vehicle coordinate system and may be used as the reference frame for perception sensor data.
 
@@ -1859,7 +1859,7 @@ image::Grp_Seat.svg[,600]
 2+^| Grp_Seat_<seat_row>_<seat_idx>
 
 | *Origin*
-| Center of the seat cushion.
+| Center of the seat cushion
 
 | *x-axis*
 | Collinear with the vehicle's longitudinal axis, pointing in the direction of the seat

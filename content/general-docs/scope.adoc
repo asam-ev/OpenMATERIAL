@@ -8,8 +8,8 @@ endif::[]
 
 {THIS_STANDARD} specifies the following:
 
-* Structure and coordinate frames for _3D models_ (*3D Data Files*), supporting common 3D exchange formats such as FBX, glTF, and USD. 
-* Metadata for _3D models_ and references to *Material Mapping Files* based on JSON schemas in *Asset Files*.
-* _Material_ mapping based on JSON schemas in *Material Mapping Files*.
-* Physics-based or measured _material properties_ based on JSON schemas in *Material Data Files*.
-* Variable _material properties_ based on JSON schemas in *Look-Up Table Files*.
+* Structure and coordinate frames for _3D models_ (*3D data files*), supporting common 3D exchange formats such as FBX, glTF, and USD. 
+* Metadata for _3D models_ and references to *material mapping files* based on JSON schemas in *asset files*.
+* _Material_ mapping based on JSON schemas in *material mapping files*.
+* Physics-based or measured _material properties_ based on JSON schemas in *material data files*.
+* Variable _material properties_ based on JSON schemas in *look-up table files*.

@@ -14,14 +14,14 @@ endif::[]
 
 === Motivation
 
-Accurate sensor simulation that replicates physical phenomena is essential for evaluating the safety of AD/ADAS in virtual environments. 
+Accurate sensor simulation that replicates physical phenomena is essential for evaluating the safety of AD/ADAS (automated driving/automated driving assistance systems) in virtual environments. 
 
 However, previous simulations were limited by computational power and memory, making them visually believable but not physically accurate. 
 Consequently, these simulations were mainly used in the early development stages, where precise physical modeling was not necessary.
 
 With increased computing power and improved simulation techniques, virtual testing now plays a crucial role at all stages of system development. 
-This aligns with the growing need to accurately represent the real-world in simulations, known as digital twins, especially as the demand for physical sensor simulation rises. 
-A fundamental step in virtually describing the real-world is providing a full physical description of all objects, including their _material properties_ and 3D geometries.
+This aligns with the growing need to accurately represent the real world in simulations, known as digital twins, especially as the demand for physical sensor simulation rises. 
+A fundamental step in virtually describing the real world is providing a full physical description of all objects, including their _material properties_ and 3D geometries.
 
 Standardizing the representation of data and attributes, such as scenarios, road data, and asset data, is extremely important for AD/ADAS simulation. This promotes data circulation and ensures consistent results across different systems. 
 
@@ -30,13 +30,13 @@ Standardization efforts have been made for scenarios and road data using ASAM Op
 
 === The two main chapters of {THIS_STANDARD}
 
-{THIS_STANDARD} is divided into distinct yet complementary chapters enabling a modular approach to implementation. Key to this is the distinction between material and geometry. Based on specific use-cases, users of {THIS_STANDARD} can implement the standard for one or both chapters.  At least one of the two chapters shall be implemented to conform with the standard.
+{THIS_STANDARD} is divided into distinct yet complementary chapters enabling a modular approach to implementation. Key to this is the distinction between material and geometry. Based on specific use cases, users of {THIS_STANDARD} can implement the standard for one or both chapters.  At least one of the two chapters shall be implemented to conform with the standard.
 
 * *Material*: This chapter includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values. Tools or systems focusing on material properties can implement support for the material chapter. For example: “This tool supports {THIS_STANDARD}: Material”.
 
 * *Geometry*: This chapter contains structures for different object classes. These structures define uniform node structure, naming scheme and coordinate systems to enable exchange, common integration and animation of 3D models. Tools or systems working primarily with geometric data, such as 3D models or spatial structures, can implement support for the geometry chapter. For example: “This tool supports {THIS_STANDARD}: Geometry”.
 
-* *Full Compliance*: For a full exchange of simulation-ready 3D assets however, both chapters must be supported. Systems or tools providing full support for both material and geometric data can be described as follows: “This tool supports {THIS_STANDARD}”.
+For a full exchange of simulation-ready _3D assets_ however, both chapters must be supported. Systems or tools providing full support for both material and geometric data can be described as follows: “This tool supports {THIS_STANDARD}”.
 
 A list of use cases examples can be found in the https://asam-ev.github.io/OpenMATERIAL-3D/asamopenmaterial/latest/specification/use-cases/use-cases.html[Use Cases] chapter, each highlighting its relevance to the material chapter, the geometry chapter, or both.
 
@@ -56,12 +56,12 @@ The first interaction with an {THIS_STANDARD}-compliant _3D model_ is through th
 The *asset file* is a JSON file with the file extension .xoma ({THIS_STANDARD} Asset).
 A detailed definition of the https://github.com/asam-ev/OpenMATERIAL-3D/blob/main/schemas/asset_schema.json[asset file JSON schema] is given in xref:geometry/asset-schema.adoc[].
 The asset file shall have the same name as a corresponding _3D data file_ in glTF, FBX, or USD format.
-To facilitate instancing, multiple asset file may be linked to a single _3D model_ file by adding an index separated by a dot (.) as a suffix to the asset file name.
+To facilitate instancing, multiple asset files may be linked to a single _3D model_ file by adding an index separated by a dot (.) as a suffix to the asset file name.
 It contains metadata, such as description, unique identifier, version information, copyright details, and so on.
 It also includes a _material_ texture assignment table, allowing dedicated _material_ mapping textures to be assigned to materials within _3D data files_.
 This enables comprehensive _material properties_ to be mapped to the geometry at a texture level.
 Each texel of the texture contains a 32 Bit code (8 Bit values in the rgba channels) which is mapped to a _material property_ file in a separate _material_ mapping file, linked in the asset file with a URI.
-For the mapping currently only the rba channels are used (first 24 Bit).
+For the mapping currently only the rba channels are used (first 24 Bits).
 The last channel is reserved for future use.
 An https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/example_asset.xoma[example asset] is provided in the examples folder of the repository.
 

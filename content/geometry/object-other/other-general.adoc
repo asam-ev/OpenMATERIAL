@@ -5,8 +5,8 @@
 :includedir: {home-path}/_images
 
 The other object class comprises all objects not yet specified by {THIS_STANDARD}.
-It includes all objects that aren't specified by type specific object classes.
-Definitions in type specific object classes overwrite the specifications in the other object class.
+It includes all objects that are not specified by type-specific object classes.
+Definitions in type-specific object classes overwrite the specifications in the other object class.
 
 For objects of class other, only the presence of the Grp_Root node is mandatory.
 All object components shall be children of Grp_Root.
