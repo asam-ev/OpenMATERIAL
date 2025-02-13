@@ -3,38 +3,38 @@
 :antora_mapping: true
 
 [preface]
-include::general-docs/foreword.adoc[leveloffset=+1]
+include::00_preface/foreword.adoc[leveloffset=+1]
 [preface]
-include::general-docs/introduction.adoc[leveloffset=+1]
+include::00_preface/introduction.adoc[leveloffset=+1]
 
 :sectnums:
-include::general-docs/scope.adoc[leveloffset=+1]
-include::general-docs/normative-references.adoc[leveloffset=+1]
-include::general-docs/abbreviations.adoc[leveloffset=+1]
-include::general-docs/backward-compatibility.adoc[leveloffset=+1]
-include::terms-and-definitions/terms-and-definitions.adoc[leveloffset=+1]
-include::use-cases/use-cases.adoc[leveloffset=+1]
+include::01_scope/scope.adoc[leveloffset=+1]
+include::02_normative_references/normative-references.adoc[leveloffset=+1]
+include::03_abbreviations/abbreviations.adoc[leveloffset=+1]
+include::04_backward-compatibility/backward-compatibility.adoc[leveloffset=+1]
+include::05_terms_and_definitions/terms-and-definitions.adoc[leveloffset=+1]
+include::06_use-cases/use-cases.adoc[leveloffset=+1]
 
 == 7 Geometry
-include::geometry/introduction.adoc[leveloffset=+2]
-include::geometry/general.adoc[leveloffset=+2]
+include::07_geometry/introduction.adoc[leveloffset=+2]
+include::07_geometry/general.adoc[leveloffset=+2]
 === 7.3 Object classes
-include::geometry/object-classes-introduction.adoc[leveloffset=+3]
-include::geometry/object-vehicle/vehicle-index.adoc[leveloffset=+3]
-include::geometry/object-human/human-index.adoc[leveloffset=+3]
-include::geometry/object-environment/environment-index.adoc[leveloffset=+3]
-include::geometry/object-other/other-index.adoc[leveloffset=+3]
-include::geometry/file-format-support.adoc[leveloffset=+2]
-include::geometry/asset-schema.adoc[leveloffset=+2]
-include::geometry/mapping-schema.adoc[leveloffset=+2]
+include::07_geometry/object-classes-introduction.adoc[leveloffset=+3]
+include::07_geometry/object-vehicle/vehicle-index.adoc[leveloffset=+3]
+include::07_geometry/object-human/human-index.adoc[leveloffset=+3]
+include::07_geometry/object-environment/environment-index.adoc[leveloffset=+3]
+include::07_geometry/object-other/other-index.adoc[leveloffset=+3]
+include::07_geometry/file-format-support.adoc[leveloffset=+2]
+include::07_geometry/asset-schema.adoc[leveloffset=+2]
+include::07_geometry/mapping-schema.adoc[leveloffset=+2]
 
 == 8 Material
-include::material/introduction.adoc[leveloffset=+2]
-include::material/material-schema.adoc[leveloffset=+2]
-include::material/material-emp-schema.adoc[leveloffset=+2]
-include::material/material-optical-schema.adoc[leveloffset=+2]
-include::material/material-brdf-schema.adoc[leveloffset=+2]
-include::material/material-reflectance-schema.adoc[leveloffset=+2]
+include::08_material/introduction.adoc[leveloffset=+2]
+include::08_material/material-schema.adoc[leveloffset=+2]
+include::08_material/material-emp-schema.adoc[leveloffset=+2]
+include::08_material/material-optical-schema.adoc[leveloffset=+2]
+include::08_material/material-brdf-schema.adoc[leveloffset=+2]
+include::08_material/material-reflectance-schema.adoc[leveloffset=+2]
 
 :sectnums!:
 [bibliography]
@@ -42,6 +42,6 @@ include::bibliography.adoc[leveloffset=+1]
 
 :sectnums!:
 [appendix]
-include::appendix/checker-rules.adoc[leveloffset=+1]
+include::09_annexes/checker-rules.adoc[leveloffset=+1]
 
 :!antora_mapping:
