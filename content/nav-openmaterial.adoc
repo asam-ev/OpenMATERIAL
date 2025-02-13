@@ -11,9 +11,9 @@ include::00_preface/introduction.adoc[leveloffset=+1]
 include::01_scope/scope.adoc[leveloffset=+1]
 include::02_normative_references/normative-references.adoc[leveloffset=+1]
 include::03_abbreviations/abbreviations.adoc[leveloffset=+1]
-include::04_backward-compatibility/backward-compatibility.adoc[leveloffset=+1]
+include::04_backward_compatibility/backward-compatibility.adoc[leveloffset=+1]
 include::05_terms_and_definitions/terms-and-definitions.adoc[leveloffset=+1]
-include::06_use-cases/use-cases.adoc[leveloffset=+1]
+include::06_use_cases/use-cases.adoc[leveloffset=+1]
 
 == 7 Geometry
 include::07_geometry/introduction.adoc[leveloffset=+2]
