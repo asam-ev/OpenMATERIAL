@@ -2,7 +2,7 @@
 
 The environment consists of the terrain, buildings, objects, and traffic areas, for example roads. It also includes all stationary traffic items, such as traffic signals, signs or lights.
 
-The environment's 3D geometry is structured according to the node structure defined in xref:../geometry/object-environment/environment-index.adoc#_model_structure[Model structure].
+The environment's 3D geometry is structured according to the node structure defined in xref:../07_geometry/object-environment/environment-index.adoc#_model_structure[Model structure].
 The structure begins with a root node, which is the parent of all other nodes. If applicable, the origin of the root node should match that of the corresponding OpenDRIVE map.
 Children of the root node are terrain, environment objects, and the road network.
 The latter is further detailed by its child nodes, the drivable area, sidewalks, roadmarks, road objects, and signals.

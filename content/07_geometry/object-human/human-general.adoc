@@ -6,7 +6,7 @@
 
 A human is a bipedal being that can be represented by an object in 3D geometry.
 
-The human 3D geometry is generically structured into the node structure and skeleton (also often called armature) defined in the xref:../geometry/object-human/human-index.adoc#_model_structure[Model structure].
+The human 3D geometry is generically structured into the node structure and skeleton (also often called armature) defined in the xref:../07_geometry/object-human/human-index.adoc#_model_structure[Model structure].
 The structure starts with a Root node as a parent group for all other nodes in the structure.
 
 Splitting the object into different parts, such as clothing, hair, and accessories, enables animation and exchange of parts. If a piece of equipment or accessory is specific to a human, rather small, and not self-contained or animated, it can be part of the human asset itself.

@@ -9,7 +9,7 @@
 [plantuml]
 ----
 legend
-[[../geometry/object-other/other-index.html#_grp_root Grp_Root]]
+[[../07_geometry/object-other/other-index.html#_grp_root Grp_Root]]
 end legend
 ----
 
