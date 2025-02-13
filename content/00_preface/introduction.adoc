@@ -38,7 +38,7 @@ Standardization efforts have been made for scenarios and road data using ASAM Op
 
 For a full exchange of simulation-ready _3D assets_ however, both chapters must be supported. Systems or tools providing full support for both material and geometric data can be described as follows: “This tool supports {THIS_STANDARD}”.
 
-A list of use cases examples can be found in the https://asam-ev.github.io/OpenMATERIAL-3D/asamopenmaterial/latest/specification/06_use_cases/use-cases.html[Use Cases] chapter, each highlighting its relevance to the material chapter, the geometry chapter, or both.
+A list of use cases examples can be found in the xref:06_use_cases/use-cases.adoc[] chapter, each highlighting its relevance to the material chapter, the geometry chapter, or both.
 
 === Structure and file formats
 
