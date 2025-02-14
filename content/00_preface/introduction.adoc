@@ -71,7 +71,7 @@ However, to be compliant with {THIS_STANDARD}, a simulation environment must sup
 3D data files may contain conventional materials, supporting visual rendering.
 These materials are unaffected by {THIS_STANDARD} and may still be used in parallel.
 However, the material names given in the 3D data files are used to map _material properties_ in the _material_ mapping file, as described in the next section.
-More information about the file formats is given in xref:geometry/file-format-support.adoc[].
+More information about the file formats is given in xref:07_geometry/file-format-support.adoc[].
 An https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/example_asset.gltf[example model] is provided in the examples folder of the repository.
 
 The *material mapping file* is separated from the asset file to facilitate reusability.
