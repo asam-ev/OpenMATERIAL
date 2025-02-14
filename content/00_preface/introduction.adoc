@@ -60,26 +60,30 @@ To facilitate instancing, multiple asset files may be linked to a single _3D mod
 It contains metadata, such as description, unique identifier, version information, copyright details, and so on.
 It also includes a _material_ texture assignment table, allowing dedicated _material_ mapping textures to be assigned to materials within _3D data files_.
 This enables comprehensive _material properties_ to be mapped to the geometry at a texture level.
-Each texel of the texture contains a 32 Bit code (8 Bit values in the rgba channels) which is mapped to a _material property_ file in a separate _material_ mapping file, linked in the asset file with a URI.
-For the mapping currently only the rba channels are used (first 24 Bits).
+Each texel of this dedicated texture contains a 32 Bit code (8 Bit values in the RGBA channels) which is mapped to a _material property_ file (.xomp) in a separate _material_ mapping file (.xomm), linked in the asset file with a URI.
+For the mapping currently only the RGB channels are used (first 24 Bits).
 The last channel is reserved for future use.
 An https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/example_asset.xoma[example asset] is provided in the examples folder of the repository.
 
 The *_3D data file_* is a standard _3D model_ file in glTF, FBX, or USD format.
 Multiple formats can exist in parallel, so one asset file can have multiple _3D data files_ with different formats with the same name as the asset file.
 However, to be compliant with {THIS_STANDARD}, a simulation environment must support at least one of the named 3D data formats.
-More information about the file formats is given in in xref:07_geometry/file-format-support.adoc[].
+3D data files may contain conventional materials, supporting visual rendering.
+These materials are unaffected by {THIS_STANDARD} and may still be used in parallel.
+However, the material names given in the 3D data files are used to map _material properties_ in the _material_ mapping file, as described in the next section.
+More information about the file formats is given in xref:geometry/file-format-support.adoc[].
 An https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/example_asset.gltf[example model] is provided in the examples folder of the repository.
 
 The *material mapping file* is separated from the asset file to facilitate reusability.
 Multiple assets can link to the same _material_ mapping, allowing simulation systems to have a unified mapping table for all assets. 
 A detailed definition of the https://github.com/asam-ev/OpenMATERIAL-3D/blob/main/schemas/mapping_schema.json[mapping file JSON schema] is given in xref:07_geometry/mapping-schema.adoc[].
 It contains metadata, such as description, unique identifier, version information, and the _material_ mapping table.
-Each row in this table maps a _material_ name or an RGB value to a _material property_ file and includes a human-readable description of the material.
-This setup allows for two mapping possibilities:
+Each row in this table maps a _material_ name, given in the 3D data file, or an RGB value, given in a dedicated assignment texture, to a _material property_ file (.xomp).
+The table also includes a human-readable description of the material.
+This setup therefore allows for two mapping possibilities:
 
-* Mapping one _material property_ file per _material_ in the _3D model_.
-* Mapping a texture code of an {THIS_STANDARD} assignment texture to a _material property_ file, enabling detailed differentiation between _material properties_.
+* Mapping one _material property_ file per _material_ name in the _3D model_.
+* Mapping a color code from a dedicated {THIS_STANDARD} assignment texture to a _material property_ file, enabling detailed differentiation between _material properties_.
 
 An https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/example_mapping.xomm[example mapping file] is provided in the examples folder of the repository.
 
