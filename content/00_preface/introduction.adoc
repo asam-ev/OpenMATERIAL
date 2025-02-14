@@ -38,7 +38,7 @@ Standardization efforts have been made for scenarios and road data using ASAM Op
 
 For a full exchange of simulation-ready _3D assets_ however, both chapters must be supported. Systems or tools providing full support for both material and geometric data can be described as follows: “This tool supports {THIS_STANDARD}”.
 
-A list of use cases examples can be found in the https://asam-ev.github.io/OpenMATERIAL-3D/asamopenmaterial/latest/specification/use-cases/use-cases.html[Use Cases] chapter, each highlighting its relevance to the material chapter, the geometry chapter, or both.
+A list of use cases examples can be found in the xref:06_use_cases/use-cases.adoc[Use Cases] chapter, each highlighting its relevance to the material chapter, the geometry chapter, or both.
 
 === Structure and file formats
 
@@ -54,7 +54,7 @@ image::overview.png[,1100]
 The first interaction with an {THIS_STANDARD}-compliant _3D model_ is through the asset file.
 
 The *asset file* is a JSON file with the file extension .xoma ({THIS_STANDARD} Asset).
-A detailed definition of the https://github.com/asam-ev/OpenMATERIAL-3D/blob/main/schemas/asset_schema.json[asset file JSON schema] is given in xref:geometry/asset-schema.adoc[].
+A detailed definition of the https://github.com/asam-ev/OpenMATERIAL-3D/blob/main/schemas/asset_schema.json[asset file JSON schema] is given in xref:07_geometry/asset-schema.adoc[].
 The asset file shall have the same name as a corresponding _3D data file_ in glTF, FBX, or USD format.
 To facilitate instancing, multiple asset files may be linked to a single _3D model_ file by adding an index separated by a dot (.) as a suffix to the asset file name.
 It contains metadata, such as description, unique identifier, version information, copyright details, and so on.
@@ -71,12 +71,12 @@ However, to be compliant with {THIS_STANDARD}, a simulation environment must sup
 3D data files may contain conventional materials, supporting visual rendering.
 These materials are unaffected by {THIS_STANDARD} and may still be used in parallel.
 However, the material names given in the 3D data files are used to map _material properties_ in the _material_ mapping file, as described in the next section.
-More information about the file formats is given in xref:geometry/file-format-support.adoc[].
+More information about the file formats is given in xref:07_geometry/file-format-support.adoc[].
 An https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/example_asset.gltf[example model] is provided in the examples folder of the repository.
 
 The *material mapping file* is separated from the asset file to facilitate reusability.
 Multiple assets can link to the same _material_ mapping, allowing simulation systems to have a unified mapping table for all assets. 
-A detailed definition of the https://github.com/asam-ev/OpenMATERIAL-3D/blob/main/schemas/mapping_schema.json[mapping file JSON schema] is given in xref:geometry/mapping-schema.adoc[].
+A detailed definition of the https://github.com/asam-ev/OpenMATERIAL-3D/blob/main/schemas/mapping_schema.json[mapping file JSON schema] is given in xref:07_geometry/mapping-schema.adoc[].
 It contains metadata, such as description, unique identifier, version information, and the _material_ mapping table.
 Each row in this table maps a _material_ name, given in the 3D data file, or an RGB value, given in a dedicated assignment texture, to a _material property_ file (.xomp).
 The table also includes a human-readable description of the material.
@@ -89,15 +89,15 @@ An https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/example_mapping
 
 The *material property file* contains metadata and the properties of one material.
 Similar to the mapping file, _material property_ files can also be reused for different assets.
-A detailed definition of the https://github.com/asam-ev/OpenMATERIAL-3D/blob/main/schemas/material_schema.json[material file JSON schema] is given in xref:material/material-schema.adoc[].
+A detailed definition of the https://github.com/asam-ev/OpenMATERIAL-3D/blob/main/schemas/material_schema.json[material file JSON schema] is given in xref:08_material/material-schema.adoc[].
 Some material properties depend on other simulation quantities, such as wavelength of the simulated sensor, temperature, and humidity.
 To avoid overloading one material file with large look-up tables, these are placed in auxiliary look-up table files linked with URIs in the main _material property_ file. 
 The defined look-up tables include:
 
-* xref:material/material-emp-schema.adoc[Electromagnetic properties]
-* xref:material/material-optical-schema.adoc[Optical properties]
-* xref:material/material-brdf-schema.adoc[Bidirectional reflectance distribution functions (BRDFs)]
-* xref:material/material-reflectance-schema.adoc[Reflectance table]
+* xref:08_material/material-emp-schema.adoc[Electromagnetic properties]
+* xref:08_material/material-optical-schema.adoc[Optical properties]
+* xref:08_material/material-brdf-schema.adoc[Bidirectional reflectance distribution functions (BRDFs)]
+* xref:08_material/material-reflectance-schema.adoc[Reflectance table]
 
 Examples for _material property_ files and look-up table files are provided in the https://github.com/asam-ev/OpenMATERIAL-3D/tree/main/examples/[examples folder] of the repository.
 

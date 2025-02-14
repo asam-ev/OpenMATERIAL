@@ -9,19 +9,19 @@
 [plantuml]
 ----
 legend
-[[../geometry/object-environment/environment-index.html#_grp_root Grp_Root]]
-|_[[../geometry/object-environment/environment-index.html#_grp_terrain Grp_Terrain]]
-|_[[../geometry/object-environment/environment-index.html#_grp_environment_objects Grp_Environment_Objects]]
-  |_ [[../geometry/object-environment/environment-index.html#_grp_buildings Grp_Buildings]]
-  |_ [[../geometry/object-environment/environment-index.html#_grp_vegetation Grp_Vegetation]]
-|_[[../geometry/object-environment/environment-index.html#_grp_road_network Grp_Road_Network]]
-  |_ [[../geometry/object-environment/environment-index.html#_grp_drivable_area Grp_Drivable_Area]]
-  |_ [[../geometry/object-environment/environment-index.html#_grp_sidewalks Grp_Sidewalks]]
-  |_ [[../geometry/object-environment/environment-index.html#_grp_road_marks Grp_Road_Marks]]
-  |_ [[../geometry/object-environment/environment-index.html#_grp_road_objects Grp_Road_Objects]]
-  |_ [[../geometry/object-environment/environment-index.html#_grp_signals Grp_Signals]]
-    |_ [[../geometry/object-environment/environment-index.html#_grp_sign_signal_idx_t Grp_Sign_<signal_idx>]] (T) 
-    |_ [[../geometry/object-environment/environment-index.html#_grp_traffic_light_signal_idx_t Grp_Traffic_Light_<signal_idx>]] (T) 
+[[../07_geometry/object-environment/environment-index.html#_grp_root Grp_Root]]
+|_[[../07_geometry/object-environment/environment-index.html#_grp_terrain Grp_Terrain]]
+|_[[../07_geometry/object-environment/environment-index.html#_grp_environment_objects Grp_Environment_Objects]]
+  |_ [[../07_geometry/object-environment/environment-index.html#_grp_buildings Grp_Buildings]]
+  |_ [[../07_geometry/object-environment/environment-index.html#_grp_vegetation Grp_Vegetation]]
+|_[[../07_geometry/object-environment/environment-index.html#_grp_road_network Grp_Road_Network]]
+  |_ [[../07_geometry/object-environment/environment-index.html#_grp_drivable_area Grp_Drivable_Area]]
+  |_ [[../07_geometry/object-environment/environment-index.html#_grp_sidewalks Grp_Sidewalks]]
+  |_ [[../07_geometry/object-environment/environment-index.html#_grp_road_marks Grp_Road_Marks]]
+  |_ [[../07_geometry/object-environment/environment-index.html#_grp_road_objects Grp_Road_Objects]]
+  |_ [[../07_geometry/object-environment/environment-index.html#_grp_signals Grp_Signals]]
+    |_ [[../07_geometry/object-environment/environment-index.html#_grp_sign_signal_idx_t Grp_Sign_<signal_idx>]] (T) 
+    |_ [[../07_geometry/object-environment/environment-index.html#_grp_traffic_light_signal_idx_t Grp_Traffic_Light_<signal_idx>]] (T) 
 end legend
 ----
 
@@ -29,7 +29,7 @@ end legend
 
 The environment consists of the terrain, buildings, objects, and traffic areas, for example roads. It also includes all stationary traffic items, such as traffic signals, signs, or lights.
 
-If applicable, the origin of the root should match the https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/08_coordinate_systems/08_02_inertial_coordinate_system.html[inertial coordinate frame] of a corresponding OpenDRIVE map.
+If applicable, the origin of the root should match the https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/08_coordinate_systems/08_02_inertial_coordinate_system.html[inertial coordinate frame] of a corresponding ASAM OpenDRIVE map.
 
 [#tab-Environment-Grp-Root]
 .Grp_Root
@@ -39,7 +39,7 @@ If applicable, the origin of the root should match the https://publications.page
 2+^| Grp_Root
 
 | *Origin*
-| Origin matching the https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/08_coordinate_systems/08_02_inertial_coordinate_system.html[inertial coordinate frame] of an associated OpenDRIVE map (if available)
+| Origin matching the https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/08_coordinate_systems/08_02_inertial_coordinate_system.html[inertial coordinate frame] of an associated ASAM OpenDRIVE map (if available)
 
 | *x-axis*
 | Pointing to the right (east for maps with geographic reference)
