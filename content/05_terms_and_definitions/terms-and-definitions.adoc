@@ -70,8 +70,9 @@ Multispectral material shows up in imagery as 3-10 wider bands.
 Hyperspectral material shows hundreds of narrow bands. 
 
 [[sec-Object]] Object::
-A tangible thing with defined 3D boundaries and discrete meshes. An object ID
-can be assigned.
+A tangible thing with defined 3D boundaries and discrete meshes. An object ID can be assigned.
+In the JSON schemas, the term _object_ also refers to the JSON data type.
+This is not to be confused with a 3D object, but it is clearly marked as "Type: `object`" in the schemas.
 
 [[sec-Object-part]] Object part::
 A segment of an object that has distinct characteristics, for example, material,
