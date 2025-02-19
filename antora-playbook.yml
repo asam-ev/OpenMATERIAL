@@ -2,7 +2,7 @@
 # Source: https://code.asam.net/common/templates/antora-base-repo-example/-/blob/standard_generator/site.yml
 # tag::site[]
 site:
-  title: OpenMATERIAL® 3D
+  title: ASAM OpenMATERIAL® 3D
   url: https://asam-ev.github.io/OpenMATERIAL-3D/
   start_page: asamopenmaterial:specification:index.adoc 
 # end::site[]
@@ -24,7 +24,7 @@ ui:
   bundle:
     url: https://code.asam.net/common/antora-ui/-/jobs/artifacts/main/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
-#  supplemental_files: ./supplemental_ui # Activate this if you need to make local UI changes. Check the official Antora documentation for more information.
+  supplemental_files: ./supplemental_ui # Activate this if you need to make local UI changes. Check the official Antora documentation for more information.
 
 output:
   clean: true
