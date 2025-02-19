@@ -1,7 +1,7 @@
 = Introduction
 
 In {THIS_STANDARD}, an object class is a collection of similar objects.
-Examples of object classes are vehicles, humans, and road networks.
+Examples of object classes are vehicles, humans, and environment.
 Each instance of an object class is described by the same properties but has
 individual property values.
 
@@ -13,9 +13,11 @@ The {THIS_STANDARD} standard supports the following object classes:
 * xref:../07_geometry/object-other/other-index.adoc[Other]
 
 If a human is clearly distinguishable from a vehicle, then both the
-human and the vehicle are represented by two different objects respectively. Examples are
-bicycles, motorbikes, or scooters, where the human and the vehicle are
+human and the vehicle are represented by two different objects respectively.
+Examples are bicycles, motorbikes, or scooters, where the human and the vehicle are
 perceived as separate entities.
+Stationary objects, for example, the road network, traffic infrastructure, vegetation, buildings, are part
+of the environment object class.
 
 The other object class comprises all objects not yet specified by {THIS_STANDARD}.
 It includes all objects that are not specified by type-specific object classes.
